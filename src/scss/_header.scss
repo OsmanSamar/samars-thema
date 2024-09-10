@@ -1,3 +1,320 @@
-.header {
-    
+/*
+Theme Name: samars thema
+Author: Samar
+Version: 1.0
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body,
+html {
+  /* padding-top: 80px;  */
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
+
+/*  */
+
+/* Container for background image */
+/* height: 500px; */
+.bg-container {
+  position: relative;
+  background-image: url("images/herobg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Ensure it sits above the background image */
+}
+
+/* Navbar and hero section content */
+.header,
+.hero {
+  position: relative; /* Ensure content is above the overlay */
+  z-index: 2; /* Above the overlay */
+}
+
+/* Navbar styling */
+.header {
+  padding: 30px 0;
+}
+
+/* The navbar  */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar stays above the content */
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Style the Logo  */
+
+.navbar-brand img {
+  max-height: 50px;
+  height: auto;
+  width: auto;
+  max-width: 130px;
+}
+
+// .container {
+//   padding: " 0.30rem 2rem 0.30rem 2rem";
+// }
+
+/* Ensure the logo and menu are aligned properly */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  flex-grow: 1;
+  justify-content: center; /* Centers the menu */
+}
+
+/* NavBar Links */
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  text-align: center;
+  font: normal normal normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Hero section styling */
+// .hero {
+//   height: 100vh;
+//   display: flex;
+//   align-items: start;
+//   justify-content: left;
+// }
+
+/* Small Screen Style */
+// .hero-content {
+//   /* color: red; */
+//   text-align: center;
+// }
+
+/* Responsive heading Style */
+// .hero-content h1 {
+//   font-size: 28px;
+//   font: normal normal bold;
+//   letter-spacing: 0px;
+//   opacity: 1;
+
+//   font-family: sans-serif;
+//   font-weight: bold;
+// }
+
+/* Inner Button */
+
+/* transition: transform 0.3s ease; */
+
+// .btn {
+//   padding: 10px 20px;
+//   border-radius: 9999px;
+//   text-decoration: none;
+//   display: inline-block;
+//   margin: 5px;
+//   text-align: center;
+//   cursor: pointer;
+//   outline: none;
+//   font-size: 16px;
+//   z-index: 1;
+// }
+
+// .btn-primary {
+//   background-color: #f5a287;
+//   color: #2a3f31;
+// }
+
+// .btn-secondary {
+//   background-color: #5b7d6c;
+//   color: #f8f4ea;
+// }
+
+/* Button group layout */
+// .button-group {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+/* Outer Circle (with border) */
+
+// .circle-border {
+//   display: inline-block;
+//   padding: 3px;
+//   border-radius: 9999px;
+//   border: 2px solid #ffffff;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+/* Hover effect for the button */
+
+// .btn:hover {
+//   transform: scale(1.2); /* Scale up button size */
+//   background-color: #f5a287;
+//   color: #2a3f31;
+// }
+
+/*  */
+
+/* Container for buttons and line */
+// .button-line-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 20px;
+// }
+
+/* Buttons group */
+// .button-group {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-right: 20px;
+
+// }
+
+/* Line container */
+// .line-container {
+//   display: flex;
+//   align-items: center;
+//   position: relative;
+// }
+
+// .line {
+//   height: 2px;
+//   width: 100%;
+//   background-color: #ffffff;
+//   color: #ffffff;
+//   position: relative;
+//   margin-right: 10px;
+// }
+
+/* Instagram icon styling */
+// .instagram-icon {
+//   font-size: 24px;
+//   color: #ffffff;
+//   margin-left: 10px;
+//   position: relative;
+//   top: -10px;
+// }
+
+/* Instagram icon hover effect */
+// .instagram-icon:hover {
+//   color: #e1306c;
+//   transition: color 0.3s ease;
+// }
+
+// @media (min-width: 768px) {
+//   .button-group {
+//     flex-direction: row;
+//   }
+// }
+
+/*  */
+
+/* .navbar-collapse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+/* Responsive adjustments for mobile and desktop */
+@media (min-width: 768px) {
+  /* .hero-content h1 {
+    text-align: left;
+    font-size: 90px;
+    color: blueviolet;
+    padding: 20px;
+    
+  } */
+}
+
+@media (max-width: 767px) {
+  /* .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  /* .hero-content h1 {
+    color: #f8f4ea;
+    color: rgb(170, 255, 0);
+    text-align: center;
+    padding: 30px;
+    font: normal normal bold;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+  } */
+
+  /* .btn-green {
+    justify-content: center;
+  }
+  .btn-salmon {
+    align-items: center;
+  } */
+}
+
+/*  */
+
+/* Media query for tablets and larger screens */
+/* @media (min-width: 768px) {
+  .hero-content {
+    text-align: left;
+  }
+
+  .button-group {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .btn {
+    margin-right: 15px; 
+  }
+} */
+
+/* Media query for large screens */
+
+/* @media (min-width: 992px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .button-group {
+    justify-content: flex-start;
+  }
+} */

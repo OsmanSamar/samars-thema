@@ -7,6 +7,7 @@
         <title><?php wp_title() ?>WebSite Name</title>
         <?php wp_head(); ?>
         <title><?php wp_title() ?></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         
     </head>
 
@@ -22,11 +23,11 @@
            <header class="header">
             <!-- Creating Navbar -->
             <nav  class="navbar navbar-expand-lg navbar-light sans-serif" >
-                <div class="container"> <!-- Bootstrap container start-->
+                <div class="container "> <!-- Bootstrap container start-->
                           <!-- Logo -->
                   <a class="navbar-brand" href="<?= home_url(); ?>">
                   <img src="<?= get_template_directory_uri(); ?>/images/groenlogo.png" alt="<?php bloginfo('name'); ?>" />
-                         </a>
+                  </a>
 
                         <!-- Hamburger button for mobile -->
 
@@ -47,42 +48,60 @@
                                 'walker'          => new WP_Bootstrap_Navwalker(),
                             ));
                             ?>
+
+                            
                             <!-- Button on the Right side  -->
                              <div class="circle-border">
-<!-- ms-lg-3 -->
                                <a  href="#" class="btn btn-primary "> Contact </a>
                                </div>
-                             
-                        </div>
+                
+                         </div>
                     
                 </div> <!-- Bootstrap container ends-->
             </nav>
         </header>
+
+        <!-- Hero Section -->
+         <div>
           <div class="container"> <!-- Bootstrap container start-->
             <section class="hero">
              <div class="hero-content">
-              <h1>Tuinen precies zoals geplant</h1>
-            
+              <h1>Tuinen precies </h1>
+              <h1>zoals geplant </h1>
 
-                          <!-- Buttons   -->
-                             <div class="circle-border">
 
-                               <a  href="#" class="btn btn-salmon ">Tuin op maat </a>
-                               </div>
 
+                   <div class="button-line-container">
+                            <!-- Buttons -->
+                            <div class="button-group">
                                 <div class="circle-border">
+                                <a href="#" class="btn btn-primary">Tuin op maat</a>
+                                </div>
+                                <div class="circle-border">
+                                <a href="#" class="btn btn-secondary">Projecten</a>
+                                </div>
+                            </div>
+                            <!-- End of Button-group -->
 
-                               <a  href="#" class="btn btn-green "> Projecten </a>
-                               </div>
-                             
-                        </div>
-
-             </div>
-             </section>
-           </div> <!-- Bootstrap container ends-->
+                            <!-- Line and Instagram Icon -->
+                            <div class="line-container">
+                                <div class="line"></div>
+                                <a href="https://www.instagram.com" target="_blank" class="instagram-container">
+                                <i class="fab fa-instagram"></i> <!-- FontAwesome icon -->
+                                </a>
+                              </div>
+                     </div> 
+                     <!--End of  button-line-container -->
+            </div>
+          <!--End of  hero-content -->
+        </section>
+    </div> <!-- Bootstrap container ends-->
+    <div>
+       
     </div>
+    <h1?> HIIIIIIIIIIIIIIIIIIIIIIIIIIII</h1>
+    <h1>Samar</h1>
      </body>
-
     </html>
 
 

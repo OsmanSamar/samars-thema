@@ -1,4 +1,5 @@
-<?php get_header() ?>        
+<?php get_header() ;
+//Template Name: werkwijze?>        
 
 <main class="page">
     <div class="container">
