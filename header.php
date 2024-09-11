@@ -48,11 +48,33 @@
     </style>
 
     <script>
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     setTimeout(function() {
+    //         var whatsappIcon = document.querySelector('.whatsapp-fixed');
+    //         whatsappIcon.classList.add('open'); // Trigger the slide-in effect
+    //     }, 900);
+    // });
+
     document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
             var whatsappIcon = document.querySelector('.whatsapp-fixed');
             whatsappIcon.classList.add('open'); // Trigger the slide-in effect
-        }, 900);
+
+            // Add a delay before adjusting the position
+            setTimeout(function() {
+                whatsappIcon.classList.add('adjust-position');
+            }, 500); // Delay should match the transition time
+        }, 900); // Initial delay before slide-in
+
+        // Close button functionality
+        var closeButton = document.querySelector('.close-button');
+        if (closeButton) {
+            closeButton.addEventListener('click', function() {
+                var whatsappIcon = document.querySelector('.whatsapp-fixed');
+                whatsappIcon.classList.remove('open', 'adjust-position'); // Hide the icon
+                whatsappIcon.classList.add('hide'); // Add class to hide element
+            });
+        }
     });
     </script>
 
@@ -130,14 +152,14 @@
                             <!-- The button here for smaller screens -->
                             <li><a class="d-block d-lg-none nav-link"
                                     href="<?= esc_url(home_url('/contact')); ?>">Contact</a></li>
-                            <li>
-                                <a href="https://www.instagram.com" target="_blank"
-                                    class="d-block d-lg-none text-center instagram ">
-                                    <i class=" fab fa-instagram"></i> <!-- FontAwesome icon -->
-                                </a>
-                            </li>
-
                         </ul>
+                        <div class="instagram d-flex d-lg-none text-center ">
+
+                            <a href="https://www.instagram.com" target="_blank" class=" ">
+                                <i class=" fab fa-instagram"></i>
+                            </a>
+
+                        </div>
                     </div>
                     <!-- Button on the Right side (visible only on large screens) -->
                     <div class="d-none d-lg-block ms-auto  circle-border">
@@ -190,27 +212,23 @@
             <div>
             </div>
 
-            <!-- WhatsApp Icon with fixed position -->
-            <div class="whatsapp-fixed ">
-                <!-- Background Text with z-index -->
-                <div class="background-text">
-                    <p>een vraag of advies nodig?</p>
-                    <p>Stuur ons een appje!</p>
+            <div class="container">
+                <!-- WhatsApp Icon with fixed position -->
+                <div class="whatsapp-fixed ">
+                    <!-- Background Text with z-index -->
+                    <span class="close-button">&times;</span> <!-- Close button -->
+                    <div class="background-text">
+
+                        <p>een vraag of advies nodig?</p>
+                        <p>Stuur ons een appje!</p>
+                    </div>
+
+                    <a href="https://wa.me/yourphonenumber" target="_blank">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/whatsappicon.svg"
+                            alt="WhatsApp Icon" class="whatsapp-icon" />
+                    </a>
                 </div>
-
-                <a href="https://wa.me/yourphonenumber" target="_blank">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/whatsappicon.svg" alt="WhatsApp Icon"
-                        class="whatsapp-icon" />
-                </a>
-            </div>
-
-
-
-
-            <!-- Close Button -->
-            <!-- <div class="close-button">
-                <i class="fas fa-times"></i> 
-            </div> -->
+            </div> <!-- End of whatsapp container -->
 
 
 
