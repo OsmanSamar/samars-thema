@@ -296,6 +296,47 @@ html {
   color: #ffff;
 }
 
+// ////////////////////////////////////////
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  width: 100%;
+  margin: 5px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .image-text-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-section {
+    order: 1;
+  }
+
+  .images-section {
+    order: 2;
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .image-grid {
+    flex-wrap: nowrap;
+  }
+
+  .image-grid img {
+    width: auto;
+    height: 100px;
+  }
+}
+
+// ///////////////////////////////////////////////////
+
 /* Media query for tablets screens */
 @media (min-width: 768px) {
   .hero-content {
