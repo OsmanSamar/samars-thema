@@ -38,6 +38,46 @@ function register_menu() {
 }
 add_action( 'init', 'register_menu' );
 
+
+
+//Register dropdownmenu 
+//Error 
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+//   var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+//     return new bootstrap.Dropdown(dropdownToggleEl, {
+//       autoClose: 'outside', // Allows closing the dropdown by clicking outside
+//     })
+//   })
+// });
+
+
+//Added To Ensure Bootstrap CSS and JS are Loaded
+
+function theme_enqueue_styles_scripts() {
+    // Bootstrap CSS
+    wp_enqueue_style( 'bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css' );
+    
+    // Bootstrap JS (include jQuery dependency)
+    wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js', array('jquery'), null, true );
+}
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles_scripts' );
+
+///////Added
+
+
+function load_fonts() {
+    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+}
+add_action('wp_enqueue_scripts', 'load_fonts');
+
+
+//////
+
+
+
+
 // Register the Primary Menu
 
 function theme_register_menus() {
@@ -50,6 +90,7 @@ function theme_register_menus() {
 add_action( 'init', 'theme_register_menus'  );
 
 // Register Custom Navigations Walker 
+// Error
 
 // function register_navwalker(){
 

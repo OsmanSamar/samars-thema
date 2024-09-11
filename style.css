@@ -26,7 +26,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 90vh;
+  height: 100vh;
 }
 
 /* Overlay styling */
@@ -36,16 +36,19 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(64, 95, 79, 0.6); */
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1; /* Ensure it sits above the background image */
+  z-index: 1; /* Make sure the overlay is behind the navbar */
 }
 
 /* Navbar and hero section content */
 .header,
 .hero {
   position: relative; /* Ensure content is above the overlay */
-  z-index: 2; /* Above the overlay */
+  /* z-index: 2;  */
+  /* Above the overlay */
+  /* z-index: 1050; */
+  /* Ensure the header is above other elements */
+  z-index: 1;
 }
 
 /* Navbar styling */
@@ -53,15 +56,20 @@ html {
   padding: 50px 0;
 } */
 
-/* The navbar  */
+/* The navbar Style  */
+
 .navbar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   /* position: fixed; */
   top: 0;
   width: 100%;
-  z-index: 1000; /* Ensures the navbar stays above the content */
+  /* z-index: 1000; */
+  /* Ensures the navbar stays above the content */
+
+  z-index: 1050; /* Ensure the navbar and dropdown are above the background */
   /* padding: 40px; */
   box-sizing: border-box;
 }
@@ -79,19 +87,24 @@ html {
   padding: " 0.30rem 2rem 0.30rem 2rem";
 } */
 
+/*  Navbar Toggler Icon Style */
+.navbar-toggler {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  color: #5b7d6c;
+  background-color: #f5a287;
+}
+
 /* Ensure the logo and menu are aligned properly */
 .navbar-brand {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-/* .navbar-nav {
-  flex-grow: 1;
-  justify-content: center;
-   
-} */
-/* Centers the menu */
 
 /* NavBar Links */
 
@@ -111,16 +124,27 @@ html {
   color: #f5a287;
 }
 
-/* Hero section styling */
-/* .hero {
-  height: 100vh;
-  display: flex;
-  align-items: start;
-  justify-content: left;
-} */
+/* Custom Dropdown Styling */
+.navbar-nav .dropdown-menu {
+  background-color: #f5a287;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  position: absolute;
+  z-index: 1050; /* Ensure it's above other elements */
+  /* display: none;  */
+}
+
+.navbar-nav .dropdown-item {
+  color: #fff;
+  padding: 8px 20px;
+  border-bottom: 1px solid #000;
+}
 
 /* ok  sm*/
 .hero-content {
+  position: relative; /* Ensure the hero content is above the background */
+  z-index: 1; /* Set z-index lower than the dropdown */
   text-align: center;
 }
 /* ok sm */
@@ -203,11 +227,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  text-align: center;
   margin-top: 70px;
   margin-bottom: 70px;
 }
 
-/* Buttons group */
+/* Buttons group on small screen */
 .button-group {
   display: flex;
   flex-direction: column;
@@ -225,6 +251,34 @@ html {
   display: none;
 }
 
+.instagram {
+  display: inline-flex; /* Ensure it's in-line and centered */
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #ffff;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+
+  margin: 20px;
+}
+
+.instagram i {
+  color: #334b3b;
+}
+
+/* Instagram Icon Hover Effect */
+.instagram:hover {
+  background-color: #334b3b;
+  color: #ffffff;
+}
+
+.instagram:hover i {
+  color: #ffffff;
+}
+
 /* Instagram icon styling */
 .instagram-container {
   display: inline-flex;
@@ -237,7 +291,8 @@ html {
   border: none;
   text-align: center;
   line-height: 40px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  margin-left: 1%; /* Default margin-left as a percentage for responsiveness */
   position: relative;
   top: -60px; /* Adjust the position above the line */
 }
@@ -255,6 +310,70 @@ html {
 .instagram-container:hover i {
   color: #ffff;
 }
+
+/*  */
+
+/* WhatsApp icon container styling */
+.whatsapp-fixed {
+  position: fixed;
+  bottom: 10px;
+  right: -300px;
+  /* Initially hide the icon from view */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: right 0.5s ease;
+  /* z-index: 9999; */
+  /* Ensure it's on top */
+}
+
+/* Slide-in effect */
+.whatsapp-fixed.open {
+  right: 20px; /* Slide in from the right side */
+}
+
+/* WhatsApp icon styling */
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 162, 135, 0.7),
+    rgba(255, 249, 245, 0.7)
+  );
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-left: -20px; /* Negative margin to overlay icon on text */
+  /* Ensure the icon is above the text */
+  /* z-index: 2; 
+  position: relative; */
+}
+
+/* Text styling */
+.background-text {
+  background-color: #fff;
+  color: #2a3f31;
+  font-size: 14px;
+  white-space: nowrap; /* Prevent text from breaking */
+  z-index: -1;
+  padding: 15px 25px;
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+  bottom: 20px;
+}
+
+/* Close Button styling */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*  */
 
 /* Media query for tablets screens */
 @media (min-width: 768px) {
@@ -290,6 +409,14 @@ html {
     font-size: 30px;
   }
 
+  .button-line-container {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
   /* Line container */
   .line-container {
     display: flex;
@@ -299,7 +426,7 @@ html {
 
   .line {
     height: 1px;
-    width: 40vw; /* Line stretches across the page */
+    width: 100%; /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
     position: relative;
@@ -353,6 +480,14 @@ html {
     justify-content: flex-start;
   }
 
+  .button-line-container {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
   /* Line container */
   .line-container {
     display: flex;
@@ -369,11 +504,16 @@ html {
     margin-right: 2px; /* Space between line and Instagram icon */
     display: block;
   }
+
+  .instagram-container {
+    margin-left: 90px;
+  }
 }
 
 /* Hamburger Icon */
-
-@media (max-width: 768px) {
+/* Styles for tablets */
+/* @media (max-width: 768px) { */
+@media (min-width: 576px) and (max-width: 1024px) {
   .navbar-brand {
     margin-right: auto;
   }
@@ -403,5 +543,87 @@ html {
     border-bottom: 1px solid #fff;
     text-align: left;
     font-size: small;
+  }
+
+  /* Ensure the navbar and dropdown are correctly styled on smaller screens */
+  .navbar-collapse {
+    background-color: #f5a287;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    background-color: #f5a287;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+  }
+
+  .navbar-nav .dropdown-menu {
+    background-color: #f5a287;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    position: relative; /* Adjust positioning for small screens */
+    z-index: 1050; /* Ensure it's above other elements but below the header */
+  }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 576px) {
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Background color for the expanded hamburger menu */
+  .navbar-collapse {
+    background-color: #f5a287;
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin-top: 2px;
+  }
+
+  /* Menu items background and bottom border */
+  .navbar-nav .nav-link {
+    background-color: #f5a287;
+    color: #fff;
+    padding: 10px 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    font-size: small;
+  }
+
+  /* Ensure the navbar and dropdown are correctly styled on smaller screens */
+  .navbar-collapse {
+    background-color: #f5a287;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    background-color: #f5a287;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+  }
+
+  .navbar-nav .dropdown-menu {
+    background-color: #f5a287;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    position: relative; /* Adjust positioning for small screens */
+    z-index: 1050; /* Ensure it's above other elements but below the header */
   }
 }

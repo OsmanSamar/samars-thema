@@ -26,6 +26,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  height: 90vh;
 }
 
 /* Overlay styling */
@@ -36,48 +37,55 @@ html {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1; /* Ensure it sits above the background image */
+  z-index: 1; /* Make sure the overlay is behind the navbar */
 }
 
 /* Navbar and hero section content */
 .header,
 .hero {
   position: relative; /* Ensure content is above the overlay */
-  z-index: 2; /* Above the overlay */
+  /* z-index: 2;  */
+  /* Above the overlay */
+  /* z-index: 1050; */
+  /* Ensure the header is above other elements */
+  z-index: 1;
 }
 
 /* Navbar styling */
-.header {
-  padding: 30px 0;
-}
+/* .header {
+  padding: 50px 0;
+} */
 
-/* The navbar  */
+/* The navbar Style  */
+
 .navbar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   /* position: fixed; */
   top: 0;
   width: 100%;
-  z-index: 1000; /* Ensures the navbar stays above the content */
-  /* padding-left: 15px;
-  padding-right: 15px; */
-  padding: 40px;
+  /* z-index: 1000; */
+  /* Ensures the navbar stays above the content */
+
+  z-index: 1050; /* Ensure the navbar and dropdown are above the background */
+  /* padding: 40px; */
   box-sizing: border-box;
 }
 
 /* Style the Logo  */
 
 .navbar-brand img {
-  max-height: 50px;
+  max-height: 90px;
   height: auto;
   width: auto;
-  max-width: 130px;
+  max-width: 170px;
 }
 
-// .container {
-//   padding: " 0.30rem 2rem 0.30rem 2rem";
-// }
+/* .container {
+  padding: " 0.30rem 2rem 0.30rem 2rem";
+} */
 
 /* Ensure the logo and menu are aligned properly */
 .navbar-brand {
@@ -86,10 +94,12 @@ html {
   justify-content: space-between;
 }
 
-.navbar-nav {
+/* .navbar-nav {
   flex-grow: 1;
-  justify-content: center; /* Centers the menu */
-}
+  justify-content: center;
+   
+} */
+/* Centers the menu */
 
 /* NavBar Links */
 
@@ -101,220 +111,361 @@ html {
   color: #ffffff;
   opacity: 1;
   font-size: 18px;
-  padding: 20px;
+  /* padding: 10px; */
+  margin: 0 10px;
 }
 
-/* Hero section styling */
-// .hero {
-//   height: 100vh;
-//   display: flex;
-//   align-items: start;
-//   justify-content: left;
-// }
+.navbar-nav .nav-link:hover {
+  color: #f5a287;
+}
 
-/* Small Screen Style */
-// .hero-content {
-//   /* color: red; */
-//   text-align: center;
-// }
+/* /////////////////////////////////////////////////////////////// */
+/* Custom Dropdown Styling */
+.navbar-nav .dropdown-menu {
+  background-color: #f5a287;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  position: absolute;
+  z-index: 1050; /* Ensure it's above other elements */
+  // display: none;
+}
 
-/* Responsive heading Style */
-// .hero-content h1 {
-//   font-size: 28px;
-//   font: normal normal bold;
-//   letter-spacing: 0px;
+// .navbar-nav .dropdown-menu.show {
+//   display: block;
 //   opacity: 1;
-
-//   font-family: sans-serif;
-//   font-weight: bold;
+//   visibility: visible;
 // }
 
-/* Inner Button */
+.navbar-nav .dropdown-item {
+  color: #fff;
+  padding: 8px 20px;
+  border-bottom: 1px solid #000;
+}
 
-/* transition: transform 0.3s ease; */
-
-// .btn {
-//   padding: 10px 20px;
-//   border-radius: 9999px;
-//   text-decoration: none;
-//   display: inline-block;
-//   margin: 5px;
-//   text-align: center;
-//   cursor: pointer;
-//   outline: none;
-//   font-size: 16px;
-//   z-index: 1;
+// .navbar-nav .dropdown-item:hover {
+//   color: #334b3b;
 // }
 
-// .btn-primary {
-//   background-color: #f5a287;
-//   color: #2a3f31;
-// }
+/* ////////////////////////////////////////////////////////////////// */
 
-// .btn-secondary {
-//   background-color: #5b7d6c;
-//   color: #f8f4ea;
-// }
+/* Hero section styling */
+/* .hero {
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: left;
+} */
 
-/* Button group layout */
-// .button-group {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
+/* ok  sm*/
+.hero-content {
+  position: relative; /* Ensure the hero content is above the background */
+  z-index: 1; /* Set z-index lower than the dropdown */
+  text-align: center;
+}
+/* ok sm */
+
+/* Responsive heading Style for sm ok */
+.hero-content h1 {
+  font-size: 20px;
+  font: normal normal bold;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #f8f4ea;
+  font-family: sans-serif;
+  font-weight: bold;
+}
 
 /* Outer Circle (with border) */
 
-// .circle-border {
-//   display: inline-block;
-//   padding: 3px;
-//   border-radius: 9999px;
-//   border: 2px solid #ffffff;
-//   position: relative;
-//   overflow: hidden;
-// }
+.circle-border {
+  display: inline-block;
+  /* padding: 1px; */
+  border-radius: 9999px;
+  border: 1px solid #ffffff;
+  position: relative;
+  overflow: hidden;
+  margin: 8px;
+  /* margin-right: 8px; */
+}
+
+/* Inner Button */
+.btn {
+  border-radius: 9999px;
+  border: none;
+  /* padding: 6px 18px; */
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  /* z-index: 1; */
+  text-decoration: none;
+
+  margin: 4px;
+  /* display: inline-block; */
+}
+/* transition: transform 0.3s ease; */
+
+.btn-primary {
+  background-color: #f5a287;
+  color: #2a3f31;
+}
 
 /* Hover effect for the button */
+.btn-primary:hover {
+  transform: scale(1.3); /* Scale up button size */
+  background-color: #f5a287;
+  color: #2a3f31;
+}
 
-// .btn:hover {
-//   transform: scale(1.2); /* Scale up button size */
-//   background-color: #f5a287;
-//   color: #2a3f31;
-// }
+.btn-secondary {
+  background-color: #5b7d6c;
+  color: #f8f4ea;
+}
 
-/*  */
+/* Hover effect for the button */
+.btn-secondary:hover {
+  transform: scale(1.3);
+  background-color: #5b7d6c;
+  color: #f8f4ea;
+}
+
+/* Button group layout for sm */
+.button-group {
+  display: flex;
+  flex-direction: column; /* for mobile/small screens) */
+  align-items: center; /* Center buttons on small screens */
+}
 
 /* Container for buttons and line */
-// .button-line-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-top: 20px;
-// }
+.button-line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 
 /* Buttons group */
-// .button-group {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin-right: 20px;
-
-// }
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-right: 20px; */
+  /* Space between buttons and line */
+}
 
 /* Line container */
-// .line-container {
-//   display: flex;
-//   align-items: center;
-//   position: relative;
-// }
+.line-container {
+  display: none;
+}
 
-// .line {
-//   height: 2px;
-//   width: 100%;
-//   background-color: #ffffff;
-//   color: #ffffff;
-//   position: relative;
-//   margin-right: 10px;
-// }
+.line {
+  display: none;
+}
 
 /* Instagram icon styling */
-// .instagram-icon {
-//   font-size: 24px;
-//   color: #ffffff;
-//   margin-left: 10px;
-//   position: relative;
-//   top: -10px;
-// }
+.instagram-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffff;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 10px;
+  position: relative;
+  top: -60px; /* Adjust the position above the line */
+}
+.instagram-container i {
+  color: #0000;
+}
 
 /* Instagram icon hover effect */
-// .instagram-icon:hover {
-//   color: #e1306c;
-//   transition: color 0.3s ease;
-// }
+.instagram-container:hover {
+  background-color: #334b3b;
+  color: #ffff;
+  transition: color 0.3s ease;
+}
 
-// @media (min-width: 768px) {
-//   .button-group {
-//     flex-direction: row;
-//   }
-// }
+.instagram-container:hover i {
+  color: #ffff;
+}
 
-/*  */
-
-/* .navbar-collapse {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
-
-/* Responsive adjustments for mobile and desktop */
+/* Media query for tablets screens */
 @media (min-width: 768px) {
-  /* .hero-content h1 {
-    text-align: left;
-    font-size: 90px;
-    color: blueviolet;
-    padding: 20px;
-    
-  } */
-}
-
-@media (max-width: 767px) {
-  /* .navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
-
-  /* .hero-content h1 {
-    color: #f8f4ea;
-    color: rgb(170, 255, 0);
-    text-align: center;
-    padding: 30px;
-    font: normal normal bold;
-    letter-spacing: 0px;
-    opacity: 1;
-    font-size: 50px;
-    font-family: sans-serif;
-    font-weight: bold;
-  } */
-
-  /* .btn-green {
-    justify-content: center;
-  }
-  .btn-salmon {
-    align-items: center;
-  } */
-}
-
-/*  */
-
-/* Media query for tablets and larger screens */
-/* @media (min-width: 768px) {
   .hero-content {
-    text-align: left;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  /* Line container */
+  .line-container {
+    display: none;
+  }
+
+  .line {
+    display: none;
   }
 
   .button-group {
     flex-direction: row;
     justify-content: flex-start;
   }
+}
 
-  .btn {
-    margin-right: 15px; 
+/* Media query for  larger screens */
+@media (min-width: 1024px) {
+  .hero-content {
+    text-align: left;
   }
-} */
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  /* Line container */
+  .line-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .line {
+    height: 1px;
+    width: 40vw; /* Line stretches across the page */
+    background-color: #ffffff;
+    color: #ffffff;
+    position: relative;
+    margin-right: 10px; /* Space between line and Instagram icon */
+    display: block;
+  }
+
+  .button-group {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+  /* .hero-content {
+    text-align: left;
+  } */
+
+  /* Line container */
+  .line-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .line {
+    height: 1px;
+    width: 40vw; /* Line stretches across the page */
+    background-color: #ffffff;
+    color: #ffffff;
+    position: relative;
+    margin-right: 10px; /* Space between line and Instagram icon */
+    display: block;
+  }
+
+  .button-group {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
 
 /* Media query for large screens */
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .hero-content h1 {
-    font-size: 40px;
-  }
-
-  .hero-content p {
-    font-size: 18px;
+    font-size: 80px;
   }
 
   .button-group {
     justify-content: flex-start;
   }
-} */
+
+  /* Line container */
+  .line-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .line {
+    height: 1px;
+    width: 58vw; /* Line stretches across the page */
+    background-color: #ffffff;
+    color: #ffffff;
+    position: relative;
+    margin-right: 2px; /* Space between line and Instagram icon */
+    display: block;
+  }
+}
+
+/* Hamburger Icon */
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Background color for the expanded hamburger menu */
+  .navbar-collapse {
+    background-color: #f5a287;
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin-top: 2px;
+  }
+
+  /* Menu items background and bottom border */
+  .navbar-nav .nav-link {
+    background-color: #f5a287;
+    color: #fff;
+    padding: 10px 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    font-size: small;
+  }
+
+  /* Ensure the navbar and dropdown are correctly styled on smaller screens */
+  .navbar-collapse {
+    background-color: #f5a287;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    background-color: #f5a287;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+  }
+
+  .navbar-nav .dropdown-menu {
+    background-color: #f5a287;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    position: relative; /* Adjust positioning for small screens */
+    z-index: 1050; /* Ensure it's above other elements but below the header */
+  }
+}
