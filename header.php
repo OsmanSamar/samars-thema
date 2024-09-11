@@ -43,7 +43,8 @@
     }
 
     .image-text-section {
-        /* padding: 50px 0; */
+        /* position: relative; */
+        padding: 50px 0;
         /* Padding to give space around the section */
         /* background-color: #f9f9f9; */
         /* Add a background color to distinguish the section */
@@ -51,13 +52,33 @@
     }
 
     .image-grid {
-        display: flex;
-        flex-wrap: wrap;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        /*  */
+        /* align-items: start;
+        overflow: visible; */
+        /* Ensure grid items can overflow */
+        /* position: relative; */
+        /* Position relative for the negative margin effect */
+        /* margin-top: -80px; */
     }
+
+    /* Adjust container padding to prevent content overlap */
+    /* .images-section {
+        position: relative;
+        padding-top: 80px;
+        /* This value should match or exceed the negative margin 
+    } */
 
     .image-grid img {
         width: 100%;
-        margin: 5px;
+        /* margin: 5px; */
+        height: auto;
+        /* Maintain aspect ratio */
+        object-fit: cover;
+        /* Ensure images cover the area without stretching */
     }
 
     /* Mobile styles */
@@ -75,15 +96,23 @@
             order: 2;
             display: flex;
             overflow-x: scroll;
+            white-space: nowrap;
         }
 
         .image-grid {
-            flex-wrap: nowrap;
+
+            display: flex;
+            flex-direction: row;
+            gap: 0;
         }
 
         .image-grid img {
-            width: auto;
-            height: 100px;
+            /* width: auto;
+            height: 100px; */
+            /* width: auto;
+            height: 100px; */
+            display: inline-block;
+            margin: 0 5px;
         }
     }
     </style>
@@ -253,14 +282,14 @@
                         <!-- Right  side: Images -->
                         <div class="col-lg-6 images-section">
                             <div class="image-grid">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/greendesign.png"
-                                    alt="Image 1">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
-                                    alt="Image 2">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/Rick.png" alt="Image 3">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/naturalgrass.png"
-                                    alt="Image 4">
+                                    alt="Image 1">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/Rick.png" alt="Image 2">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flower.png"
+                                    alt="Image 3">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/greendesign.png"
+                                    alt="Image 4">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/naturalgrass.png"
                                     alt="Image 5">
                             </div>
                         </div>
@@ -268,11 +297,6 @@
                 </div>
             </section>
 
-            <!-- <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-            <h1><?php the_title(); ?></h1>
-
-            <?php the_content(); ?>
-        <?php endwhile; endif; ?> -->
         </div>
     </main>
 

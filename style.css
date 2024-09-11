@@ -37,7 +37,7 @@ html {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1; /* Make sure the overlay is behind the navbar */
+  z-index: 1; /* Make sure the overlay is behind the elements */
 }
 
 /* Navbar and hero section content */
@@ -330,7 +330,7 @@ html {
   align-items: center;
   padding: 10px;
   transition: right 0.5s ease;
-  /* z-index: 9999; */
+  z-index: 9999;
   /* Ensure it's on top */
 }
 
@@ -345,6 +345,11 @@ html {
   /* Move slightly to the left */
   /* right: 20px; */
 }
+
+/* .whatsapp-fixed.hide {
+  right: -300px; /* Move it out of view 
+  transition: right 0.5s ease;
+} */
 
 /* WhatsApp icon styling */
 .whatsapp-icon {
@@ -363,6 +368,7 @@ html {
   /* Ensure the icon is above the text */
   /* z-index: 2; 
   position: relative; */
+  z-index: 10000; /* Ensure the icon is above all content */
 }
 
 /* Text styling */
