@@ -9,52 +9,55 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body,
 html {
-  /* padding-top: 80px;  */
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
 
-/*  */
+
 
 /* Container for background image */
-/* height: 500px; */
+
 .bg-container {
   position: relative;
-  background-image: url("images/herobg.png");
+  background-image: url("../images/herobg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 90vh;
+  height: 100vh;
+  width: 100%;
+  padding-top: 20px;
 }
 
 /* Overlay styling */
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1; /* Make sure the overlay is behind the navbar */
+  z-index: 0; /* Make sure the overlay is behind the elements */
+  background: linear-gradient(239deg, #212e25 0%, #0c2c16 100%);
+  background-color: transparent;
+  opacity: 0.6;
 }
 
-/* Navbar and hero section content */
-.header,
-.hero {
+/* Navbar  content */
+.header {
   position: relative; /* Ensure content is above the overlay */
-  /* z-index: 2;  */
-  /* Above the overlay */
-  /* z-index: 1050; */
   /* Ensure the header is above other elements */
-  z-index: 1;
+  z-index: 2;
+ 
 }
 
-/* Navbar styling */
-/* .header {
-  padding: 50px 0;
-} */
+
+.hero {
+  z-index: 1;
+  position: relative;
+  margin-top: 79px;
+}
 
 /* The navbar Style  */
 
@@ -64,14 +67,22 @@ html {
   align-items: center;
   justify-content: center;
   /* position: fixed; */
-  top: 0;
+  // top: 0;
   width: 100%;
   /* z-index: 1000; */
   /* Ensures the navbar stays above the content */
-
-  z-index: 1050; /* Ensure the navbar and dropdown are above the background */
-  /* padding: 40px; */
+  /* z-index: 1050; */
+  /* Ensure the navbar and dropdown are above the background */
   box-sizing: border-box;
+  // background-color: aqua;
+  margin-top: 20px;
+
+  // Cancled positiob absolute
+  // &-collapse {
+  //   position: absolute;
+  //   width: 100%;
+  //   top: 100%;
+  // }
 }
 
 /* Style the Logo  */
@@ -83,9 +94,19 @@ html {
   max-width: 170px;
 }
 
-/* .container {
-  padding: " 0.30rem 2rem 0.30rem 2rem";
-} */
+
+
+/*  Navbar Toggler Icon Style */
+.navbar-toggler {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  color: #5b7d6c;
+  background-color: #f5a287;
+}
 
 /* Ensure the logo and menu are aligned properly */
 .navbar-brand {
@@ -93,13 +114,6 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-
-/* .navbar-nav {
-  flex-grow: 1;
-  justify-content: center;
-   
-} */
-/* Centers the menu */
 
 /* NavBar Links */
 
@@ -115,27 +129,7 @@ html {
   margin: 0 10px;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #f5a287;
-}
 
-/* /////////////////////////////////////////////////////////////// */
-/* Custom Dropdown Styling */
-.navbar-nav .dropdown-menu {
-  background-color: #f5a287;
-  border-radius: 5px;
-  padding: 10px;
-  border: none;
-  position: absolute;
-  z-index: 1050; /* Ensure it's above other elements */
-  // display: none;
-}
-
-// .navbar-nav .dropdown-menu.show {
-//   display: block;
-//   opacity: 1;
-//   visibility: visible;
-// }
 
 .navbar-nav .dropdown-item {
   color: #fff;
@@ -143,37 +137,30 @@ html {
   border-bottom: 1px solid #000;
 }
 
-// .navbar-nav .dropdown-item:hover {
-//   color: #334b3b;
-// }
-
-/* ////////////////////////////////////////////////////////////////// */
-
-/* Hero section styling */
-/* .hero {
-  height: 100vh;
-  display: flex;
-  align-items: start;
-  justify-content: left;
-} */
-
 /* ok  sm*/
 .hero-content {
   position: relative; /* Ensure the hero content is above the background */
-  z-index: 1; /* Set z-index lower than the dropdown */
+  /* z-index: 1;  */
+  /* Set z-index lower than the dropdown */
   text-align: center;
+  margin-top: 79px;
 }
-/* ok sm */
 
-/* Responsive heading Style for sm ok */
+/*  Small Screen */
+
 .hero-content h1 {
-  font-size: 20px;
+  font-size: 40px;
   font: normal normal bold;
   letter-spacing: 0px;
   opacity: 1;
-  color: #f8f4ea;
+  color: red;
+  //   color: #f8f4ea;
   font-family: sans-serif;
   font-weight: bold;
+  /* position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 1;*/
 }
 
 /* Outer Circle (with border) */
@@ -243,11 +230,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  text-align: center;
   margin-top: 70px;
   margin-bottom: 70px;
 }
 
-/* Buttons group */
+/* Buttons group on small screen */
 .button-group {
   display: flex;
   flex-direction: column;
@@ -265,6 +254,42 @@ html {
   display: none;
 }
 
+/* Instagram Container */
+.instagram {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Full width to allow centering */
+  margin: 20px 0;
+}
+
+.instagram a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+  border-radius: 50px;
+  border: none;
+  width: 28px;
+  height: 28px;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.instagram i {
+  font-size: 4px;
+}
+
+.instagram a {
+  color: #334b3b;
+}
+
+/* Instagram Icon Hover Effect */
+.instagram a:hover {
+  background-color: #334b3b;
+  color: #ffffff;
+}
+
+//2
 /* Instagram icon styling */
 .instagram-container {
   display: inline-flex;
@@ -278,8 +303,9 @@ html {
   text-align: center;
   line-height: 40px;
   margin-left: 10px;
+  margin-left: 1%;
   position: relative;
-  top: -60px; /* Adjust the position above the line */
+  top: -60px;
 }
 .instagram-container i {
   color: #0000;
@@ -296,46 +322,103 @@ html {
   color: #ffff;
 }
 
-// ////////////////////////////////////////
+/*  */
 
-.image-grid {
+/* WhatsApp icon container styling */
+.whatsapp-fixed {
+  position: fixed;
+  bottom: 10px;
+  right: -300px;
+  /* Initially hide the icon from view */
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  transition: right 0.5s ease;
+  z-index: 9999;
+  /* Ensure it's on top */
 }
 
-.image-grid img {
-  width: 100%;
-  margin: 5px;
+/* Slide-in effect */
+.whatsapp-fixed.open {
+  /* Slide in from the right side */
+  right: 20px;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .image-text-section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .text-section {
-    order: 1;
-  }
-
-  .images-section {
-    order: 2;
-    display: flex;
-    overflow-x: scroll;
-  }
-
-  .image-grid {
-    flex-wrap: nowrap;
-  }
-
-  .image-grid img {
-    width: auto;
-    height: 100px;
-  }
+/* Adjust position slightly after sliding in */
+.whatsapp-fixed.open.adjust-position {
+  /* Move slightly to the left */
+  /* right: 20px; */
 }
 
-// ///////////////////////////////////////////////////
+/* .whatsapp-fixed.hide {
+  right: -300px; /* Move it out of view 
+  transition: right 0.5s ease;
+} */
+
+/* WhatsApp icon styling */
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 162, 135, 0.7),
+    rgba(255, 249, 245, 0.7)
+  );
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: -20px; /* Negative margin to overlay icon on text */
+  /* Ensure the icon is above the text */
+  /* z-index: 2; 
+  position: relative; */
+  z-index: 10000; /* Ensure the icon is above all content */
+}
+
+/* Text styling */
+.background-text {
+  background-color: #fff;
+  color: #2a3f31;
+  font-size: 12px;
+  /* Prevent text from breaking */
+  /* white-space: nowrap;  */
+  z-index: -1;
+  padding: 4px 12px;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  bottom: 20px;
+}
+
+/* Close Button styling */
+.close-button {
+  position: absolute;
+  top: -25px;
+  right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  border: 1px #fff solid;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  padding-top: 2px;
+}
+
+/* Hide WhatsApp icon */
+.whatsapp-fixed.hide {
+  right: -300px; /* Move it out of view */
+  transition: right 0.5s ease; /* Match the transition time */
+}
+
+/*  */
 
 /* Media query for tablets screens */
 @media (min-width: 768px) {
@@ -369,6 +452,16 @@ html {
   }
   .hero-content h1 {
     font-size: 30px;
+    /* position: relative;
+    z-index: 1; */
+  }
+
+  .button-line-container {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 
   /* Line container */
@@ -380,7 +473,7 @@ html {
 
   .line {
     height: 1px;
-    width: 40vw; /* Line stretches across the page */
+    width: 100%; /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
     position: relative;
@@ -428,10 +521,35 @@ html {
 @media (min-width: 992px) {
   .hero-content h1 {
     font-size: 80px;
+    /* position: relative;
+    z-index: 1; */
   }
 
+  .navbar-nav .nav-link:hover {
+    color: #f5a287;
+  }
+
+  .navbar-nav .dropdown-menu {
+    background-color: #f5a287;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    position: relative;
+    z-index: 1050;
+    top: 100%;
+    width: 100%;
+    left: 0;
+  }
   .button-group {
     justify-content: flex-start;
+  }
+
+  .button-line-container {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 
   /* Line container */
@@ -450,11 +568,101 @@ html {
     margin-right: 2px; /* Space between line and Instagram icon */
     display: block;
   }
+
+  // 1
+  .instagram-container {
+    margin-left: 90px;
+  }
 }
 
 /* Hamburger Icon */
+/* Styles for tablets */
+/* @media (max-width: 768px) { */
+@media (min-width: 576px) and (max-width: 1024px) {
+  .navbar-brand {
+    margin-right: auto;
+  }
 
-@media (max-width: 768px) {
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Background color for the expanded hamburger menu */
+  .navbar-collapse {
+    background-color: #f5a287;
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin-top: 2px;
+  }
+
+  /* Menu items background and bottom border */
+  .navbar-nav .nav-link {
+    background-color: #f5a287;
+    color: #fff;
+    padding: 10px 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    font-size: small;
+  }
+
+  /* Ensure the navbar and dropdown are correctly styled on smaller screens */
+  .navbar-collapse {
+    background-color: #f5a287;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    background-color: #f5a287;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+  }
+
+  // .navbar-nav .dropdown-menu {
+  //    background-color: #f5a287;
+  //   border-radius: 5px;
+  //   padding: 10px;
+  //   border: none;
+  //   position: absolute;
+  //   z-index: 999;
+  //   top: 100%;
+  //   width: 100%;
+  //   left: 0;
+  // }
+
+  // .navbar-nav .dropdown-menu {
+  //    background-color: #f5a287;
+  //   border-radius: 5px;
+  //   padding: 10px;
+  //   border: none;
+  //   position: relative;
+  //   z-index: 1050;
+  //   top: 100%;
+  //   width: 100%;
+  //   left: 0;
+  // }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 576px) {
+  hero-content h1 {
+    font-size: 40px;
+    font: normal normal bold;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: red;
+    // color: #f8f4ea;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
   .navbar-brand {
     margin-right: auto;
   }
@@ -502,7 +710,7 @@ html {
   }
 
   .navbar-nav .dropdown-menu {
-    background-color: #f5a287;
+    // background-color: #f5a287;
     border-radius: 5px;
     padding: 10px;
     border: none;
