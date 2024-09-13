@@ -192,7 +192,7 @@
         .images-section {
             order: 2;
             display: flex;
-            overflow-x: scroll;
+            /* overflow-x: scroll; */
             scroll-behavior: smooth;
             white-space: nowrap;
         }
