@@ -135,7 +135,7 @@
     }
 
 
-    /*  */
+    /* New Section */
 
     .text-line-button-section {
         padding: 50px 0;
@@ -146,7 +146,7 @@
         width: 100%;
         height: 2px;
         /* Line thickness */
-        background-color: #000;
+        background-color: #fff;
         /* Adjust the color of the line */
         margin: 0 20px;
         /* Adjust spacing between the line and other elements */
@@ -231,7 +231,7 @@
 
 
 
-        /*  */
+        /*  New Section */
 
         .text-line-button-section .row {
             flex-direction: column;
@@ -244,9 +244,28 @@
             margin: 20px auto;
         }
 
-        .text-line-button-section .btn {
+        .text-line-button-section .text-left,
+        .text-line-button-section .text-right {
+            text-align: center;
+            /* Center-align text and button */
+            margin: 0;
+        }
+
+        .text-line-button-section .text-left {
+            order: 2;
+            /* Position text below the line */
             margin-top: 20px;
         }
+
+        .text-line-button-section .text-right {
+            order: 3;
+            /* Position button below the text */
+            margin-top: 20px;
+        }
+
+        /* .text-line-button-section .btn {
+            margin-top: 20px;
+        } */
 
         /*  */
 
