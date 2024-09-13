@@ -137,42 +137,111 @@
 
     /* New Section */
 
-    .text-line-button-section {
-        padding: 50px 0;
-        /* Adjust padding as needed */
+
+
+    /*  */
+
+    /* Styling for the horizontal divider */
+    /* .text-line-button-section .horizontal-divider {
+        width: 50%;
+        height: 2px;
+        background-color: red;
+        margin: 20px auto;
+    } */
+
+    /*  */
+
+
+    .text-line-button-section .row {
+        flex-direction: row;
+        text-align: center;
     }
 
     .text-line-button-section .horizontal-divider {
-        width: 100%;
-        height: 2px;
-        /* Line thickness */
-        background-color: #fff;
-        /* Adjust the color of the line */
-        margin: 0 20px;
-        /* Adjust spacing between the line and other elements */
+        order: 1;
+        margin: 20px auto;
+        width: 50%;
     }
+
+    .text-line-button-section .text-left {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .testimonials-section-sm {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .testimonial {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .testimonial-img {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .text-line-button-section .text-right {
+        order: 4;
+        margin-top: 20px;
+    }
+
+
+    /*  */
+
+    /* New Section */
+
+    .text-line-button-section {
+        padding: 50px 0;
+
+    }
+
+
 
     .text-line-button-section h2 {
         font-size: 24px;
-        /* Adjust the heading size */
+
         margin-bottom: 20px;
     }
 
     .text-line-button-section p {
         font-size: 16px;
-        /* Adjust text size */
+
     }
 
     .text-line-button-section .btn {
         padding: 10px 20px;
-        /* Adjust the button size */
+
         font-size: 16px;
     }
 
     /*  */
 
+    /* Styling for the horizontal divider */
+    .text-line-button-section .horizontal-divider {
+        width: 50%;
+        height: 2px;
+        background-color: red;
+        margin: 20px auto;
+    }
 
+    /*  */
 
+    .testimonial h1 {
+        color: #F5A287;
+        font-size: 22px;
+
+    }
+
+    .testimonial p {
+        color: #FFFFFF;
+        font-size: 18px;
+    }
 
 
 
@@ -230,44 +299,95 @@
         }
 
 
-
         /*  New Section */
+
+
 
         .text-line-button-section .row {
             flex-direction: column;
             text-align: center;
         }
 
+        /* Ensure the line appears first */
         .text-line-button-section .horizontal-divider {
-            width: 50%;
-            /* Reduce width of the line on smaller screens */
-            margin: 20px auto;
+            order: 1;
+            margin-bottom: 20px;
         }
 
-        .text-line-button-section .text-left,
-        .text-line-button-section .text-right {
-            text-align: center;
-            /* Center-align text and button */
-            margin: 0;
-        }
-
+        /* Text appears after the line */
         .text-line-button-section .text-left {
             order: 2;
-            /* Position text below the line */
             margin-top: 20px;
         }
 
-        .text-line-button-section .text-right {
+        /* Testimonials come next */
+        .testimonials-section-sm {
             order: 3;
-            /* Position button below the text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-top: 20px;
         }
 
-        /* .text-line-button-section .btn {
+        .testimonial {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .testimonial-img {
+            max-width: 84px;
+            height: 126px;
+            margin-bottom: 10px;
+
+        }
+
+        /* Button comes last */
+        .text-line-button-section .text-right {
+            order: 4;
             margin-top: 20px;
+        }
+
+        /* End of New Section */
+    }
+
+
+    /* Large screen layout */
+    @media (min-width: 769px) {
+        /* .testimonials-section-sm {
+            display: none;
+
         } */
 
-        /*  */
+        .testimonials-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            text-align: center;
+        }
+
+
+        .testimonial h1 {
+            color: #F5A287;
+            font-size: 22px;
+
+        }
+
+        .testimonial p {
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+
+
+        .testimonial-img {
+            max-width: 84px;
+            height: 126px;
+            margin-bottom: 10px;
+
+        }
 
 
 
@@ -394,10 +514,6 @@
                 <div class="hero-content">
                     <h1>Tuinen precies</h1>
                     <h1>zoals geplant</h1>
-
-
-
-
                     <div class="button-line-container">
                         <div class="button-group">
                             <div class="circle-border">
@@ -406,7 +522,6 @@
                             <div class="circle-border">
                                 <a href="#" class="btn btn-secondary">Projecten</a>
                             </div>
-
                         </div>
                         <div class="line-container">
                             <div class="line"></div>
@@ -451,6 +566,8 @@
                             </div>
                         </div>
 
+                        <!--  -->
+
                         <!-- Right side: Images On Small Screen with Carousel -->
                         <div id="carouselExampleIndicators"
                             class="carousel slide smrow col-lg-6 relative flex items-center group images-section"
@@ -492,8 +609,6 @@
                                         class="d-block w-100" alt="Image 5">
                                 </div>
                             </div>
-
-                            <!-- Controls -->
                             <button class="carousel-control-prev" type="button"
                                 data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -506,10 +621,8 @@
                             </button>
                         </div>
 
-
-
                         <!-- Right  side: Images on Bige Screen  -->
-                        <div class=" col-lg-8 images-section2 ">
+                        <div class="container col-lg-8 images-section2 ">
                             <div class="row2">
                                 <div class="column1">
                                     <img class="backyardgarden"
@@ -544,24 +657,85 @@
         <section class="text-line-button-section">
             <div class="container">
                 <div class="row align-items-center">
-                    <!-- Left: Text -->
-                    <div class="col-lg-5 text-left">
-                        <h2>Custom Heading</h2>
-                        <p>Your text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-
                     <!-- Center: Horizontal Line -->
                     <div class="col-lg-2 text-center">
                         <div class="horizontal-divider"></div>
                     </div>
 
-                    <!-- Right: Button -->
+                    <!-- Left: Text -->
+                    <div class="col-lg-5 text-left">
+                        <p>Waarom GroenTuinen?</p>
+                    </div>
+
+                    <!-- Testimonials Section on Small Screen -->
+                    <div class="row testimonials-section-sm d-md-none text-center2">
+                        <div class="col-sm-12 col-lg-4 testimonial">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
+                                class="testimonial-img" />
+                            <h1>Titel van een USP</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore.</p>
+
+                        </div>
+                        <div class="col-sm-12 col-lg-4 testimonial">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
+                                class="testimonial-img w-84 h-126" />
+                            <h1>Titel van een USP</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore.</p>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 testimonial">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
+                                class="testimonial-img" />
+                            <h1>Titel van een USP</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Button (Will be under testimonials on small screens) -->
                     <div class="col-lg-5 text-right">
-                        <a href="#" class="btn btn-primary">Click Here</a>
+                        <a href="#" class="btn btn-primary">Kennis maken?</a>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <!-- Testimonials Section on Large Screen -->
+                <div class="row testimonials-section d-none d-md-flex">
+                    <div class="col-sm-12 col-lg-4 testimonial">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
+                            class="testimonial-img  w-84 h-126" />
+                        <h1>Titel van een USP</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore.</p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 testimonial">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
+                            class="testimonial-img  w-84 h-126" />
+                        <h1>Titel van een USP</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore.</p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 testimonial">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
+                            class="testimonial-img  " />
+                        <h1>Titel van een USP</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+        <!--  -->
+
+
 
 
 
