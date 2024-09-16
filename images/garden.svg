@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="531" height="530" viewBox="0 0 531 530">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.754" y1="0.232" x2="0.083" y2="0.945" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#212e25"/>
+      <stop offset="1" stop-color="#0c2c16"/>
+    </linearGradient>
+  </defs>
+  <rect id="garden-with-seating-area-lawn" width="531" height="530" rx="10" opacity="0.11" fill="url(#linear-gradient)"/>
+</svg>
