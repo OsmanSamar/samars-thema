@@ -61,7 +61,7 @@
 
     .text-section {
         position: relative;
-        margin-left: -1rem;
+        /* margin-left: -1rem; */
         text-align: left;
         color: #FFFFFF;
         padding: 50px 0;
@@ -85,6 +85,198 @@
     }
 
     /* Desktop styles */
+
+
+    /* Enthousiast Section */
+
+    .bottom-text {
+        margin-bottom: 45px;
+        padding-bottom: 200px;
+        padding-top: 165px;
+        position: relative;
+    }
+
+    .row {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -.75rem;
+        margin-left: calc(var(--bs-gutter-x)* -.5);
+        margin-right: -.75rem;
+        margin-right: calc(var(--bs-gutter-x)* -.5);
+        margin-top: 0;
+        margin-top: calc(var(--bs-gutter-y)* -1);
+    }
+
+    .bottom-text .grid-bottom {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        height: calc(100% + 230px);
+        margin-bottom: -100px;
+        margin-top: -130px;
+        position: absolute;
+        grid-gap: 25px;
+    }
+
+
+    .bottom-text .grid-bottom :first-child {
+        grid-area: 3 / 1 / 13 / 4;
+    }
+
+    .bottom-text .grid-bottom :nth-child(2) {
+        grid-area: 1 / 4 / 7 / 7;
+    }
+
+
+    .bottom-text .grid-bottom :nth-child(3) {
+        grid-area: 7 / 4 / 13 / 6;
+    }
+
+    .line.left,
+    .line.right {
+        display: flex;
+    }
+
+    .line {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        position: relative;
+    }
+
+
+    .line::after {
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+
+
+        margin-left: 30px;
+    }
+
+    /*End of  Enthousiast Section */
+
+    /*CircleType.js Style  */
+    /* 1 */
+
+    /* .text-circle {
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-name: rotating;
+        animation-timing-function: linear;
+        height: 200px;
+        width: 200px;
+
+        position: relative;
+        right: 0;
+    }
+
+    #demo3 {
+        height: 160px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+
+    }
+
+    @keyframes rotating {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        50% {
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(1turn);
+        }
+    } */
+
+
+    /* 2 */
+    /* #textdemo {
+        height: 400px;
+        width: 200px;
+        font-size: 16px;
+        font-weight: 600;
+        animation: animate 5s linear infinite;
+        position: absolute;
+        transform-origin: 0 80px;
+
+    }
+
+    @keyframes animate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    } */
+
+
+    /*  /*CircleType.js Style  */
+
+
+
+
+
+
+    /* Instagram */
+
+    /* .socials {
+        bottom: 70px;
+        gap: 25px;
+        position: absolute;
+        right: 0;
+    } */
+
+
+    /* Line With two buttons on hero section */
+
+    /* .line {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        position: relative;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    .line.left,
+    .line.right {
+        display: flex;
+    }
+
+
+
+    line.center:after,
+    .line.center:before,
+    .line.left:before,
+    .line.right:after {
+        content: "";
+    }
+
+    .line:after,
+    .line:before {
+        background-color: #fff;
+        display: block;
+        flex-grow: 1;
+        height: 1px;
+        opacity: .5;
+        position: relative;
+    } */
+
+
+    /* Line With two buttons on hero section */
+
+
+
 
     .images-section2 {
         position: relative;
@@ -125,11 +317,6 @@
         padding: 0 4px;
     }
 
-    /* .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-    } */
 
 
 
@@ -298,35 +485,11 @@
 
     /*swiper  */
 
-
-
-    .swiper {
+    /* .swiper {
 
         width: 100%;
         height: 100%;
-
-
-    }
-
-    .swiper-slide {
-
-        /* display: flex; */
-        display: block;
-        justify-content: center;
-        align-items: center;
-        width: calc(100% / 2.5);
-        transform: scale(1.2);
-    }
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-        border-radius: 12px;
-
-    }
+    } */
 
     .swiper {
         width: 100%;
@@ -334,7 +497,35 @@
         margin: 20px auto;
     }
 
-    .append-buttons {
+    /* Large Screen */
+    .swiper-slide {
+
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 2.5);
+        transform: scale(1.2);
+        border-radius: 12px;
+    }
+
+
+    .swiper-slide img {
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .swiper-slide img:focus {
+        border-radius: 12px;
+    }
+
+
+
+
+    /* .append-buttons {
         text-align: center;
         margin-top: 20px;
     }
@@ -351,17 +542,60 @@
         font-size: 13px;
     }
 
+    */
+    /* HR With Text */
+
+    .hr-text {
+        border: 0;
+        /* line-height: 1em; */
+        position: relative;
+        text-align: center;
+        height: 1.5em;
+        margin: 30px 15px;
+        color: white;
+        font-size: 39px;
+        font-weight: 300;
+        line-height: 60px;
+
+    }
+
+    /* This is the visible line we want to achieve */
+    .hr-text::before {
+        content: "";
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+
+    }
+
+
+
+    /* Text Style */
+    .hr-text::after {
+        content: attr(data-content);
+        position: relative;
+        padding: 0 7px;
+        line-height: 1.5em;
+        color: white;
+        background-color: #405F4F;
+
+    }
+
 
 
 
     /*  */
 
-    /* Mobile styles */
+
     /* max-width: 768px */
     /* Mobile and Tablet styles */
     @media (max-width: 1024px) {
 
 
+        .image-text-section {}
 
 
         .image-text-section {
@@ -372,18 +606,8 @@
 
         .text-section {
             order: 1;
+
         }
-
-
-
-
-        /* the first tring */
-
-
-
-        /*swiper  */
-
-
 
         .swiper-wrapper {
 
@@ -405,50 +629,48 @@
             list-style: none;
             margin-left: auto;
             margin-right: auto;
-            /* overflow: hidden; */
             overflow: visible;
             padding: 0;
             position: relative;
             z-index: 1;
         }
 
-        .swiper-slide {
 
-            /* display: flex; */
-            /* justify-content: center;
-            align-items: center; */
+        .swiper-slide {
 
             display: block;
             flex-shrink: 0;
             height: 100%;
             position: relative;
-            transition-property: transform;
-            width: 100%;
-
-            /* width: 80%; */
-            /*  to show part of the next slide */
             margin-right: 2px;
+            width: calc(100% / 2.5);
             transform: scale(1.2);
         }
+
+        /*  display: block;
+            flex-shrink: 0;
+            height: 100%;
+            position: relative;
+            margin-right: 2px;
+            width: calc(100% / 2.5);
+            transform: scale(1.2); */
 
         .swiper-slide img {
             position: absolute;
             display: block;
             width: 100%;
             height: 100%;
-
-
-
             object-fit: cover;
-
+            border-radius: 12px;
         }
+
+
 
         /* Position navigation buttons below the images */
         .swiper-button-next,
         .swiper-button-prev {
             position: absolute;
             bottom: -30px;
-            /* Adjust this value to position the buttons as needed */
             width: 44px;
             height: 44px;
             z-index: 10;
@@ -456,17 +678,14 @@
 
         .swiper-button-next {
             right: 10px;
-            /* Adjust this value to position the button as needed */
+
         }
 
         .swiper-button-prev {
             left: 10px;
-            /* Adjust this value to position the button as needed */
+
         }
 
-
-
-        /*  */
 
         .images-section {
             order: 2;
@@ -510,10 +729,6 @@
             background-color: #000;
 
         }
-
-
-
-
 
 
         .text-line-button-section .row {
@@ -572,10 +787,13 @@
 
     /* Large screen layout */
     @media (min-width: 769px) {
-        /* .testimonials-section-sm {
-            display: none;
 
-        } */
+        .testimonials-section-sm {}
+
+        .col-lg-9 {
+            flex: 0 0 auto;
+            width: 75%;
+        }
 
         .testimonials-section {
             display: flex;
@@ -592,12 +810,13 @@
         .testimonial h1 {
             color: #F5A287;
             font-size: 22px;
-
+            font-family: 'Inclusive Sans', sans-serif;
         }
 
         .testimonial p {
             color: #FFFFFF;
             font-size: 18px;
+            font-family: 'Inclusive Sans', sans-serif;
         }
 
 
@@ -607,24 +826,6 @@
             margin-bottom: 10px;
 
         }
-
-        /* Hre  lg Screene */
-        /* .text-line-button-section .horizontal-divider {
-            order: 2;
-            margin-bottom: 20px;
-            width: 50%;
-            height: 2px;
-            background-color: red;
-        }
-
-
-        .text-line-button-section .text-left {
-            order: 1;
-            margin-top: 20px;
-        } */
-
-
-
 
     }
     </style>
@@ -653,6 +854,7 @@
     </script>
 
 
+
     <!-- jQuery for dropdown menu -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -671,7 +873,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<<?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
     <div class="bg-container">
@@ -758,7 +960,7 @@
                         </div>
                         <!-- </div> -->
                     </div>
-
+                </div>
             </nav>
         </header>
 
@@ -779,11 +981,13 @@
                             </span>
                         </h1>
                     </div>
+                    <!-- Line for Small Screen -->
                     <div class="line height d-flex d-md-none d-lg-none" style="--height:80px"></div>
-                    <!-- <div class="line right"> -->
-                    <div>
 
-                        <div class="button-line-container">
+
+
+                    <div>
+                        <div class=" button-line-container">
                             <div class="button-group">
                                 <div class="circle-border">
                                     <a href="#" class="btn btn-primary">Tuin op maat</a>
@@ -799,25 +1003,30 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- <div class="button-group d-flex flex-column align-items-center flex-lg-row gap-4">
-                            <div class="circle-border">
-                                <a href="#" class="btn btn-primary">Tuin op maat</a>
-                            </div>
-                            <div class="circle-border">
-                                <a href="#" class="btn btn-secondary">Projecten</a>
-                            </div>
+
+                    </div>
+
+
+                    <!--1 Trying line right With socials   -->
+
+                    <!-- <div class="line right">
+                        <div class="buttons d-flex flex-column align-items-center flex-lg-row gap-4">
+                            <a href="/contact" class="btn btn-secondary">
+                                Tuin op maat
+                            </a>
+                            <a href="/projecten" class="btn btn-primary">
+                                Projecten
+                            </a>
                         </div>
                     </div>
-                    <div class="line-container d-none d-lg-flex flex-column"> -->
-                        <!-- <div class="line"></div> -->
-                        <!-- <a href="https://www.instagram.com" target="_blank" class="instagram-container">
+                    <div class="socials d-none d-lg-flex flex-column">
+                        <a href="https://www.instagram.com" target="_blank" class="instagram-container">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div> -->
-                        <!-- <h1>Tuinen precies</h1>
-                    <h1>zoals geplant</h1>
-                    -->
-                    </div>
+
+
+                </div>
             </section>
         </div>
 
@@ -825,8 +1034,8 @@
         <div class="whatsapp-fixed">
             <span class="close-button">&times;</span>
             <div class="background-text">
-                <p>een vraag of advies nodig?</p>
-                <p>Stuur ons een appje!</p>
+                <span>Een vraag of advies nodig?</span>
+                <span>Stuur ons een appje!</span>
             </div>
             <a href="https://wa.me/yourphonenumber" target="_blank">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/whatsappicon.svg" alt="WhatsApp Icon"
@@ -834,6 +1043,7 @@
             </a>
         </div>
     </div>
+    <!-- End Of bg-container -->
 
 
     <main class="page">
@@ -853,13 +1063,11 @@
                             </div>
                         </div>
 
-                        <!--  -->
 
-                        <!-- 1 -->
                         <!-- Swiper On Small Screen -->
 
-                        <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider " 
-                         style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                        <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider "
+                            style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
@@ -870,86 +1078,25 @@
                                         class=" " alt="Image 2">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/Rick.png"
-                                        class=" " alt="Image 3">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/Rick.png" class=" "
+                                        alt="Image 3">
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/naturalgrass.png"
                                         class="" alt="Image 4">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flower.png"
-                                        class=" " alt="Image 5">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flower.png" class=" "
+                                        alt="Image 5">
                                 </div>
-
-
                             </div>
 
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
-                            <!-- <div class="swiper-pagination"></div> -->
+
                         </div>
 
-                      
-
-
-
-
-<!--  -->
-                        <!--Oraginal Code  -->
-                        <!-- Right side: Images On Small Screen with Carousel -->
-                        <!-- <div id="carouselExampleIndicators"
-                            class="carousel slide smrow col-lg-6 relative flex items-center group images-section"
-                            data-bs-ride="carousel"> -->
-                        <!-- Indicators -->
-                        <!-- <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                aria-label="Slide 5"></button>
-                        </div> -->
-
-                        <!-- Carousel Inner -->
-                        <!-- <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
-                                    class="d-block w-100" alt="Image 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/greendesign.png"
-                                    class="d-block w-100" alt="Image 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/Rick.png"
-                                    class="d-block w-100" alt="Image 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/naturalgrass.png"
-                                    class="d-block w-100" alt="Image 4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flower.png"
-                                    class="d-block w-100" alt="Image 5">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div> -->
 
                         <!-- Right  side: Images on Bige Screen  -->
                         <div class="container col-lg-8 images-section2 ">
@@ -981,16 +1128,13 @@
         </div>
     </main>
 
-    <div class="container bg-red">
+    <div class="container ">
 
         <!-- New Section after the main section -->
         <section class="text-line-button-section">
             <div class="container">
                 <div class="row align-items-center">
-                    <!-- Center: Horizontal Line -->
-                    <!-- <div class="  col-lg-2 text-center order-lg-2 order-1">
-                        <div class="horizontal-divider"></div>
-                    </div> -->
+
                     <div class="  col-lg-2 text-center d-lg-none order-1">
                         <div class="horizontal-divider"></div>
                     </div>
@@ -998,10 +1142,6 @@
                         <p>Waarom GroenTuinen?</p>
                     </div>
 
-                    <!-- Left: Text -->
-                    <!-- <div class="col-lg-5 text-left order-lg-1 order-2">
-                        <p>Waarom GroenTuinen?</p>
-                    </div> -->
 
 
                     <div class="title d-none d-lg-flex align-items-center gap-3">
@@ -1044,10 +1184,9 @@
                         <a href="/contact" class="btn btn-primary">Kennis maken?</a>
                     </div>
 
-                    <!-- <a class="btn btn-secondary d-lg-none d-block mt-btn mb-5 mx-auto" href="/contact"> Kennismaken?</a> -->
                 </div>
 
-                <!--  -->
+
 
                 <!-- Testimonials Section on Large Screen -->
                 <div class="row testimonials-section d-none d-md-flex">
@@ -1078,18 +1217,26 @@
 
 
 
-        <!--  -->
+        <!--Projecten Slider  -->
         <div class="container">
-            <div #swiperRef="" class="swiper mySwiper projecten-slider" style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+            <!-- HR With Text -->
+            <div class=" mt-50 mb-50">
+                <hr class="hr-text gradient" data-content="Projecten">
+            </div>
+
+            <div #swiperRef="" class="swiper mySwiper projecten-slider"
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img loading="lazy" class="object-fit-cover"
-                            src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt="">
+                        <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
+                            class="">
                     </div>
+
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
                             alt="Image 2">
                     </div>
+
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
                             alt="Image 2">
@@ -1101,33 +1248,51 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
-                <!-- <div class="swiper-pagination"></div> -->
+
             </div>
-
-
         </div>
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <!-- Initialize Swiper -->
-        <!-- <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 15,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+        <!-- Circle On The Right Side Of Projecten Slider -->
+
+
+        <!-- 1 -->
+        <!-- <a href="/projecten" id="demo3" class="circle text-circle mob-invisible">
+            - Bekijk alle projecten -- Bekijk alle projecten -- Bekijk alle projecten -
+        </a>
+        <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.1/dist/circletype.min.js">
+        </script>
+        <script>
+        new CircleType(document.getElementById('demo3'));
         </script> -->
 
 
+        <!--  2-->
+        <!-- <a href="/projecten" id="textdemo" class=" text-circle mob-invisible">
+            - Bekijk alle projecten -- Bekijk alle projecten -- Bekijk alle projecten -
+        </a>
+        <script>
+        const textdemo = document.getElementById('textdemo');
+
+        // Replace each non-whitespace character with a span
+        textdemo.innerHTML = textdemo.textContent.replace(/\S/g, "<span>$&</span>");
+
+        // Select all span elements within the textdemo element
+        const spans = textdemo.querySelectorAll('span');
+
+        // Apply transformation to each span element
+        for (var i = 0; i < spans.length; i++) {
+            spans[i].style.transform = "rotate(" + (i * 16.5) + "deg)";
+        }
+        </script> -->
+        <!-- Circle On The Right Side Of Projecten Slider -->
+
+
+
+
 
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
 
         <!-- Initialize Swiper -->
         <script>
@@ -1148,8 +1313,8 @@
             },
             breakpoints: {
                 992: {
-                   
-            slidesPerView: 3.5, 
+
+                    slidesPerView: 3.5,
                 }
             }
         });
@@ -1195,15 +1360,43 @@
 
         <!--  -->
 
-        <div>
-            <h1>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</h1>
+        <div class="container">
+            <div class="bottom-text">
+                <div class="row">
+                    <div class="col-lg-6 d-none d-lg-block position-relative fadeIn visible" data-side="left">
+                        <div class="grid-bottom">
+                            <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
+                                src="//groentuinen.b-cdn.net/wp-content/uploads/2024/04/bus.png" alt="">
+                            <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
+                                src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-56-scaled.jpg"
+                                alt="">
+                            <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
+                                src="//groentuinen.b-cdn.net/wp-content/uploads/2024/04/bg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 fadeIn visible" data-side="right">
+                        <h2>Enthousiast?<br> Laat het ons weten</h2>
+                        <div class="col-lg-9">
+                            <div class="text">
+                                <p><span style="font-weight: 400;">Ook een uniek tuinontwerp? Of op zoek naar de
+                                        hovenier voor jouw klus? Ga vrijblijvend in gesprek met GROENtuinen!</span></p>
+                            </div>
+                        </div>
+                        <div class="line-full line right offwhite align-items-center mt-8">
+                            <a class="btn btn-secondary " href="/contact">Neem contact op</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
 
 
+
     <?php wp_footer(); ?>
-</body>
+
+    <!-- </body> -->
 
 </html>
