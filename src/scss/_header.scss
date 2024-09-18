@@ -541,7 +541,7 @@ html {
     color: #ffffff;
     position: relative;
     // margin-right: 2px;
-    display: block;
+    // display: block;
   }
 
   .line {
@@ -789,6 +789,16 @@ html {
     border: none;
     position: relative; /* Adjust positioning for small screens */
     z-index: 1050; /* Ensure it's above other elements but below the header */
+  }
+
+  .line-contact {
+    height: 1px;
+    width: 36vw;
+    background-color: #ffffff;
+    color: #ffffff;
+    position: relative;
+   
+    // display: block;
   }
 }
 //
