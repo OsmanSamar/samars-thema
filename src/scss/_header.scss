@@ -54,7 +54,6 @@ html {
   z-index: 1;
   position: relative;
   // margin-top: 79px;
-
   margin-top: 100px;
 }
 
@@ -68,13 +67,14 @@ html {
   /* position: fixed; */
   // top: 0;
   width: 100%;
-  /* z-index: 1000; */
   /* Ensures the navbar stays above the content */
-  /* z-index: 1050; */
+  /* z-index: 1000; */
   /* Ensure the navbar and dropdown are above the background */
+  /* z-index: 1050; */
+
   box-sizing: border-box;
-  // background-color: aqua;
-  margin-top: 20px;
+  // margin-top: 20px;
+  //  margin-top: 73px;
 
   // Cancled positiob absolute
   // &-collapse {
@@ -317,10 +317,6 @@ html {
   //  position: absolute;
 }
 
-
-
-
-
 .instagram-container i {
   color: #0000;
 }
@@ -415,7 +411,7 @@ html {
   /* white-space: nowrap;  */
   z-index: -1;
   // padding: 2px 10px;
-   padding: 0px 8px;
+  padding: 0px 8px;
   position: relative;
   display: inline-block;
   border-radius: 5px;
@@ -506,7 +502,8 @@ html {
 
   .line {
     height: 1px;
-    width: 100%; /* Line stretches across the page */
+    // width: 100%; 1
+    /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
     position: relative;
@@ -522,10 +519,7 @@ html {
 
 /* Media query for tablets and larger screens */
 @media (min-width: 768px) {
-
-
-
-  // 
+  //
   /* Line container */
   .line-container {
     display: flex;
@@ -535,7 +529,8 @@ html {
 
   .line {
     height: 1px;
-    width: 40vw; /* Line stretches across the page */
+    // width: 40vw; 2
+    /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
     position: relative;
@@ -595,7 +590,7 @@ html {
   .line {
     height: 1px;
     // width: 58%;
-    width: 58vw;
+    // width: 58vw; 3
     /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
@@ -689,16 +684,16 @@ html {
 
 /* Styles for mobile devices */
 @media (max-width: 576px) {
-  hero-content h1 {
-    font-size: 40px;
-    font: normal normal bold;
-    letter-spacing: 0px;
-    opacity: 1;
-    color: red;
-    // color: #f8f4ea;
-    font-family: sans-serif;
-    font-weight: bold;
-  }
+  // .hero-content h1 {
+  //   font-size: 40px;
+  //   font: normal normal bold;
+  //   letter-spacing: 0px;
+  //   opacity: 1;
+  //   color: red;
+
+  //   font-family: sans-serif;
+  //   font-weight: bold;
+  // }
 
   .navbar-brand {
     margin-right: auto;

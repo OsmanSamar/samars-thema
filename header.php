@@ -419,7 +419,6 @@
 
     .text-line-button-section h2 {
         font-size: 24px;
-
         margin-bottom: 20px;
     }
 
@@ -806,6 +805,8 @@
 
         .testimonials-section-sm {}
 
+        /* Button comes last */
+
         .col-lg-9 {
             flex: 0 0 auto;
             width: 75%;
@@ -1164,7 +1165,7 @@
                         <h2 class="mb-0  ">Waarom GROENtuinen?</h2>
                         <div class="line between d-none d-lg-block"></div>
                         <div class="circle-border">
-                            <a class="btn btn-secondary d-none d-lg-block" href="/contact">Kennismaken? </a>
+                            <a class="btn btn-primary d-none d-lg-block" href="/contact">Kennismaken? </a>
                         </div>
                     </div>
 
@@ -1197,7 +1198,9 @@
 
                     <!-- Right: Button (Will be under testimonials on small screens) -->
                     <div class="col-lg-5 text-right d-sm-block d-md-block d-lg-none">
-                        <a href="/contact" class="btn btn-primary">Kennis maken?</a>
+                        <div class="circle-border"> <a href="/contact" class="btn btn-primary">Kennismaken?</a>
+                        </div>
+
                     </div>
 
                 </div>
