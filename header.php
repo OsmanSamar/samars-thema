@@ -133,7 +133,7 @@
         grid-area: 7 / 4 / 13 / 6;
     }
 
-    .line.left,
+    /* .line.left,
     .line.right {
         display: flex;
     }
@@ -143,6 +143,7 @@
         align-items: center;
         gap: 30px;
         position: relative;
+
     }
 
 
@@ -150,9 +151,20 @@
         content: "";
         flex-grow: 1;
         height: 1px;
-
-
         margin-left: 30px;
+
+    } */
+    a .btn {
+        display: flex;
+        align-items: center;
+    }
+
+    a ::after {
+        content: "";
+        flex: 1;
+        margin-left: 1rem;
+        height: 1px;
+        background-color: #000;
     }
 
     /*End of  Enthousiast Section */
@@ -416,11 +428,15 @@
 
     }
 
-    .text-line-button-section .btn {
+
+    /* text-line-button-section .btn  Kennismaken*/
+
+    /* .text-line-button-section .btn {
         padding: 10px 20px;
+        padding: 8px 16px;
 
         font-size: 16px;
-    }
+    } */
 
     /*  */
 
@@ -958,7 +974,7 @@
                         <div class="d-none d-lg-block ms-auto  ">
                             <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Contact</a>
                         </div>
-                        <!-- </div> -->
+
                     </div>
                 </div>
             </nav>
@@ -1148,7 +1164,7 @@
                         <h2 class="mb-0  ">Waarom GROENtuinen?</h2>
                         <div class="line between d-none d-lg-block"></div>
                         <div class="circle-border">
-                            <a class="btn btn-secondary d-none d-lg-block" href="/contact"> Kennismaken?</a>
+                            <a class="btn btn-secondary d-none d-lg-block" href="/contact">Kennismaken? </a>
                         </div>
                     </div>
 
@@ -1360,7 +1376,7 @@
 
         <!--  -->
 
-        <div class="container">
+        <div class="container mt-20">
             <div class="bottom-text">
                 <div class="row">
                     <div class="col-lg-6 d-none d-lg-block position-relative fadeIn visible" data-side="left">
@@ -1382,9 +1398,13 @@
                                         hovenier voor jouw klus? Ga vrijblijvend in gesprek met GROENtuinen!</span></p>
                             </div>
                         </div>
-                        <div class="line-full line right offwhite align-items-center mt-8">
-                            <a class="btn btn-secondary " href="/contact">Neem contact op</a>
-                        </div>
+                        <!-- <div class="line-full line right  align-items-center mt-12">
+                            <div class="circle-border">
+                                <a class="btn btn-secondary " href="/contact">Neem contact op</a>
+                            </div>
+                        </div> -->
+
+                        <a class="btn btn-secondary " href="/contact">Neem contact op </a>
                     </div>
                 </div>
             </div>

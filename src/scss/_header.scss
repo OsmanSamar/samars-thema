@@ -167,13 +167,14 @@ html {
   position: relative;
   overflow: hidden;
   margin: 8px;
+  // width: object-fit;
   /* margin-right: 8px; */
 }
 
 /* Inner Button */
 .btn {
   border-radius: 9999px;
-  font-size: 18px;
+  // font-size: 18px;
   border: none;
   padding: 8px 16px;
   line-height: 22px;
