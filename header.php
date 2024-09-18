@@ -86,23 +86,25 @@
 
     /* Desktop styles */
 
-    /* .downarrow {
-        background-image: url(//groentuinen.b-cdn.net/wp-content/themes/groentuinen/public/images/chevron-circle.a3f0ce.svg);
-        bottom: -83px;
+    .downarrow {
+        /* background-image: url(//groentuinen.b-cdn.net/wp-content/themes/groentuinen/public/images/chevron-circle.a3f0ce.svg); */
+        bottom: -50px;
         height: 45px;
         left: 0;
         position: absolute;
-        rotate: -90deg;
+        rotate: -360deg;
         width: 45px;
-    } */
+        background-color: transparent;
+
+    }
 
 
-    /* 
+
     @media screen and (min-width: 992px) {
         .downarrow {
-            left: calc(var(--bs-gutter-x)* .5);
+            left: calc(var(--bs-gutter-x)* 1.5);
         }
-    } */
+    }
 
 
 
@@ -543,7 +545,17 @@
         width: calc(100% / 2.5);
         transform: scale(1.2);
         border-radius: 12px;
+        /* transform: scale(1.6); */
+        /* transition: transform .66s cubic-bezier(.4, 0, 0, 1), left .66s cubic-bezier(.4, 0, 0, 1), opacity .66s cubic-bezier(.4, 0, 0, 1); */
     }
+
+    /*  display: block;
+            flex-shrink: 0;
+            height: 100%;
+            position: relative;
+            margin-right: 2px;
+            width: calc(100% / 2.5);
+            transform: scale(1.6); */
 
 
     .swiper-slide img {
@@ -681,7 +693,9 @@
             position: relative;
             margin-right: 2px;
             width: calc(100% / 2.5);
-            transform: scale(1.2);
+            transform: scale(1.6);
+
+            /* transition: transform .66s cubic-bezier(.4, 0, 0, 1), left .66s cubic-bezier(.4, 0, 0, 1), opacity .66s cubic-bezier(.4, 0, 0, 1); */
         }
 
         /*  display: block;
@@ -1046,28 +1060,11 @@
                     </div>
 
                     <div>
-                        <a class="downarrow" aria-label="Go to the content" href="#content"></a>
-                    </div>
-
-
-                    <!--1 Trying line right With socials   -->
-
-                    <!-- <div class="line right">
-                        <div class="buttons d-flex flex-column align-items-center flex-lg-row gap-4">
-                            <a href="/contact" class="btn btn-secondary">
-                                Tuin op maat
-                            </a>
-                            <a href="/projecten" class="btn btn-primary">
-                                Projecten
-                            </a>
-                        </div>
-                    </div>
-                    <div class="socials d-none d-lg-flex flex-column">
-                        <a href="https://www.instagram.com" target="_blank" class="instagram-container">
-                            <i class="fab fa-instagram"></i>
+                        <a class="downarrow" aria-label="Go to the content" href="#content">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                alt="WhatsApp Icon" class="whatsapp-icon" />
                         </a>
-                    </div> -->
-
+                    </div>
 
                 </div>
             </section>
@@ -1090,7 +1087,7 @@
 
 
     <main class="page">
-        <div class="container">
+        <div class="container" id="content">
             <!-- New Section under Hero Section  -->
             <section class="image-text-section">
                 <div class="container">
@@ -1347,7 +1344,7 @@
 
             slidesPerView: 1.2,
             centeredSlides: true,
-            spaceBetween: 30,
+            spaceBetween: 5,
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
@@ -1403,7 +1400,7 @@
         </script>
 
 
-        <!--  -->
+        <!--Contact Opnemen Section  -->
 
         <div class="container mt-20">
             <div class="bottom-text">
@@ -1427,17 +1424,19 @@
                                         hovenier voor jouw klus? Ga vrijblijvend in gesprek met GROENtuinen!</span></p>
                             </div>
                         </div>
-                        <!-- <div class="line-full line right  align-items-center mt-12">
+                        <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
                             <div class="circle-border">
-                                <a class="btn btn-secondary " href="/contact">Neem contact op</a>
+                                <a class="btn btn-primary " href="/contact">Neem contact op </a>
                             </div>
-                        </div> -->
+                            <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
 
-                        <a class="btn btn-secondary " href="/contact">Neem contact op </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
 

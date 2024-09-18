@@ -17,17 +17,21 @@ body {
   overflow-x: hidden;
 }
 
-body {
-
-  background-color:#405f4f ;
+//To ensure that when the down arrow is clicked, the page will smoothly scroll to the section with the ID #content
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    color: #fff;
-    font-family: Inclusive Sans, sans-serif;
-    font-size: 20px;
-    line-height: 35px;
-    text-wrap: pretty;
+  background-color: #405f4f;
+}
+
+body {
+  color: #fff;
+  font-family: Inclusive Sans, sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+  text-wrap: pretty;
 }
 
 a:any-link {

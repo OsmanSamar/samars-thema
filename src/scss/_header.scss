@@ -541,10 +541,19 @@ html {
     margin-right: 10px; /* Space between line and Instagram icon */
     display: block;
   }
+  .line-contact {
+    height: 1px;
+    width: 18vw;
+    background-color: #ffffff;
+    color: #ffffff;
+    position: relative;
+    // margin-right: 2px;
+    display: block;
+  }
 
   .line {
     height: 1px;
-    width: 40vw;
+    width: 47vw;
     /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
