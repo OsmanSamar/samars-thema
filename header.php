@@ -87,7 +87,7 @@
     /* Desktop styles */
 
     .downarrow {
-        /* background-image: url(//groentuinen.b-cdn.net/wp-content/themes/groentuinen/public/images/chevron-circle.a3f0ce.svg); */
+
         bottom: -50px;
         height: 45px;
         left: 0;
@@ -103,6 +103,16 @@
     @media screen and (min-width: 992px) {
         .downarrow {
             left: calc(var(--bs-gutter-x)* 1.5);
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        .downarrow {
+            bottom: -50px;
+            left: 50%;
+            rotate: -360deg;
+            transform: translateY(-50%) translateX(-50%);
+
         }
     }
 
@@ -641,10 +651,14 @@
 
     /* max-width: 768px */
     /* Mobile and Tablet styles */
+
+
+
     @media (max-width: 1024px) {
 
 
         .image-text-section {}
+
 
 
         .image-text-section {
@@ -1060,7 +1074,7 @@
                     </div>
 
                     <div>
-                        <a class="downarrow" aria-label="Go to the content" href="#content">
+                        <a class="downarrow" aria-label="Go to the content" href="#Maaktuin">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
                                 alt="WhatsApp Icon" class="whatsapp-icon" />
                         </a>
@@ -1087,7 +1101,7 @@
 
 
     <main class="page">
-        <div class="container" id="content">
+        <div class="container" id="Maaktuin">
             <!-- New Section under Hero Section  -->
             <section class="image-text-section">
                 <div class="container">
@@ -1405,7 +1419,7 @@
         <div class="container mt-20">
             <div class="bottom-text">
                 <div class="row">
-                    <div class="col-lg-6 d-none d-lg-block position-relative fadeIn visible" data-side="left">
+                    <div class="col-lg-6 d-none  d-lg-block position-relative fadeIn visible" data-side="left">
                         <div class="grid-bottom">
                             <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
                                 src="//groentuinen.b-cdn.net/wp-content/uploads/2024/04/bus.png" alt="">
@@ -1445,6 +1459,6 @@
 
     <?php wp_footer(); ?>
 
-    <!-- </body> -->
+    </body>
 
 </html>
