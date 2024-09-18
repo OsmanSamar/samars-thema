@@ -230,12 +230,12 @@ html {
   align-items: center; /* Center buttons on small screens */
 }
 
-/* Container for buttons and line */
+/* Container for buttons and line 1*/
+
 .button-line-container {
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   margin-top: 70px;
   margin-bottom: 70px;
@@ -484,7 +484,7 @@ html {
     /* position: relative;
     z-index: 1; */
   }
-
+  // 2
   .button-line-container {
     display: flex;
     align-items: left;
@@ -527,9 +527,22 @@ html {
     position: relative;
   }
 
+  // Added width to Line on Tablets
+
+  .line-hero {
+    height: 1px;
+    width: 40vw;
+    /* Line stretches across the page */
+    background-color: #ffffff;
+    color: #ffffff;
+    position: relative;
+    margin-right: 10px; /* Space between line and Instagram icon */
+    display: block;
+  }
+
   .line {
     height: 1px;
-    // width: 40vw; 2
+    width: 40vw;
     /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
@@ -572,6 +585,7 @@ html {
     justify-content: flex-start;
   }
 
+  // 3
   .button-line-container {
     display: flex;
     align-items: left;
@@ -586,6 +600,17 @@ html {
     align-items: center;
     position: relative;
   }
+  // Added wtg to line on bg on lg Screen
+  .line-hero {
+    height: 1px;
+    width: 64vw;
+    /* Line stretches across the page */
+    background-color: #ffffff;
+    color: #ffffff;
+    position: relative;
+    margin-right: 10px; /* Space between line and Instagram icon */
+    display: block;
+  }
 
   .line {
     height: 1px;
@@ -599,17 +624,26 @@ html {
     display: block;
   }
 
+  .between {
+    background-color: #ffffff;
+    color: #ffffff;
+    position: relative;
+    margin-right: 2px;
+    display: block;
+  }
+
   // 1
   .instagram-container {
-    // margin-left: 90px;
     // Its  should between 30-38
-    margin-left: 30px;
+    // margin-left: 30px;
+    //  right: calc(var(--bs-gutter-x) * -1.5);
   }
 }
 
 /* Hamburger Icon */
 /* Styles for tablets */
 /* @media (max-width: 768px) { */
+
 @media (min-width: 576px) and (max-width: 1024px) {
   .navbar-brand {
     margin-right: auto;

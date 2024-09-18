@@ -86,6 +86,26 @@
 
     /* Desktop styles */
 
+    /* .downarrow {
+        background-image: url(//groentuinen.b-cdn.net/wp-content/themes/groentuinen/public/images/chevron-circle.a3f0ce.svg);
+        bottom: -83px;
+        height: 45px;
+        left: 0;
+        position: absolute;
+        rotate: -90deg;
+        width: 45px;
+    } */
+
+
+    /* 
+    @media screen and (min-width: 992px) {
+        .downarrow {
+            left: calc(var(--bs-gutter-x)* .5);
+        }
+    } */
+
+
+
 
     /* Enthousiast Section */
 
@@ -497,6 +517,8 @@
         position: relative;
     }
 
+
+    /*End Line On Small Screen  */
 
     /*swiper  */
 
@@ -1004,7 +1026,7 @@
 
 
                     <div>
-                        <div class=" button-line-container">
+                        <div class="button-line-container">
                             <div class="button-group">
                                 <div class="circle-border">
                                     <a href="#" class="btn btn-primary">Tuin op maat</a>
@@ -1014,13 +1036,17 @@
                                 </div>
                             </div>
                             <div class="line-container">
-                                <div class="line"></div>
+                                <div class="line-hero"></div>
                                 <a href="https://www.instagram.com" target="_blank" class="instagram-container">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
                         </div>
 
+                    </div>
+
+                    <div>
+                        <a class="downarrow" aria-label="Go to the content" href="#content"></a>
                     </div>
 
 
