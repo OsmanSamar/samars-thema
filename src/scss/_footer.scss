@@ -1,7 +1,61 @@
 .footer {
   background-color: #334b3b;
-
-  color: #fff;
+  // color: #fff;
   line-height: 45px;
   padding: 100px 0 90px;
+}
+
+.footer .nav-link,
+.footer .copyright a,
+.footer .adres a {
+  color: #fff;
+}
+
+.logo img {
+  max-height: 90px;
+  height: auto;
+  width: auto;
+  max-width: 351px;
+}
+
+.social-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+  padding: 13px;
+  color: #334b3b;
+}
+
+.social-icon:hover {
+  // background-color: #405f4f;
+
+  background-color: #5b7d6c;
+}
+
+.social-icon img {
+  transition: color 0.3s;
+}
+
+.social-icon:hover img {
+  filter: invert(1);
+}
+
+.footer .nav-link,
+.footer .copyright,
+.footer .adres a {
+  font-size: 16px;
+}
+
+.footer .nav-link {
+  font-size: 16px;
+}
+
+.footer .copyright {
+  font-size: 16px;
+}
+
+.footer .adres a {
+  font-size: 16px;
 }

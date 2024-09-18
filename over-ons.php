@@ -1,5 +1,5 @@
 <?php get_header();
-//Template Name: contact
+//Template Name: over ons
 ?>
 
 <main class="page">
