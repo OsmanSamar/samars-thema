@@ -247,42 +247,6 @@
 
 
 
-    <!--Projecten Slider  -->
-    <div class="container">
-        <!-- HR With Text -->
-        <div class=" mt-50 mb-50">
-            <hr class="hr-text gradient" data-content="Projecten">
-        </div>
-
-        <div #swiperRef="" class="swiper mySwiper projecten-slider"
-            style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
-                        class="">
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
-                        alt="Image 2">
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
-                        alt="Image 2">
-                </div>
-
-
-            </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-
-        </div>
-    </div>
-
-
     <style>
     #demo3 {
         display: flex;
@@ -290,11 +254,11 @@
         justify-content: center;
         height: 200px;
         width: 200px;
-        overflow: visible;
-        position: relative;
+        overflow: hidden;
+        position: absolute;
+        bottom: -50px;
+        transform: translate(50%, 50%);
         /* position: fixed; */
-        top: 50%;
-        /* Center vertically */
         right: 0;
         /* Position it at the right edge */
         transform: translateY(-50%);
@@ -336,23 +300,68 @@
     }
     </style>
 
-    <!-- Circle On The Right Side Of Projecten Slider -->
-    <a href="/projecten" id="demo3" class="circle text-circle">
-        <div style="position: relative; height: 200px;">
-            <?php
-            $text = '- Bekijk alle projecten -- Bekijk alle projecten -- Bekijk alle projecten -';
-            $characters = str_split($text);
-            $totalCharacters = count($characters);
-            $rotationStep = 360 / $totalCharacters;
+
+    <!--Projecten Slider  -->
+    <div class="container" style="position: relative;">
+
+        <!-- Circle On The Right Side Of Projecten Slider -->
+        <a href="/projecten" id="demo3" class="circle text-circle">
+            <div style="position: relative; height: 200px;">
+                <?php
+        $text = '- Bekijk alle projecten -- Bekijk alle projecten -- Bekijk alle projecten -';
+        $characters = str_split($text);
+        $totalCharacters = count($characters);
+        $rotationStep = 360 / $totalCharacters;
 
 
-            foreach ($characters as $index => $character) {
-                $rotationAngle = $rotationStep * $index;
-                echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
-            }
-            ?>
+        foreach ($characters as $index => $character) {
+            $rotationAngle = $rotationStep * $index;
+            echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
+        }
+        ?>
+            </div>
+        </a>
+
+
+
+        <!-- HR With Text -->
+        <div class=" mt-50 mb-50">
+            <hr class="hr-text gradient" data-content="Projecten">
         </div>
-    </a>
+
+        <div #swiperRef="" class="swiper mySwiper projecten-slider"
+            style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
+                        class="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
+                        alt="Image 2">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
+                        alt="Image 2">
+                </div>
+
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
 
 
 
