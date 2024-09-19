@@ -283,39 +283,80 @@
     </div>
 
 
+    <style>
+    #demo3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        overflow: visible;
+        position: relative;
+        /* position: fixed; */
+        top: 50%;
+        /* Center vertically */
+        right: 0;
+        /* Position it at the right edge */
+        transform: translateY(-50%);
+        color: #fff;
+        border-radius: 50%;
+        font-size: 12px;
+        letter-spacing: 3px;
+        z-index: 1000;
+
+    }
+
+    #demo3 span {
+        position: absolute;
+
+        left: 50%;
+        transform-origin: 0 100px;
+
+    }
+
+    @keyframes rotating {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .text-circle {
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-name: rotating;
+        animation-timing-function: linear;
+        height: 200px;
+        width: 200px;
+        overflow: visible;
+
+    }
+    </style>
+
     <!-- Circle On The Right Side Of Projecten Slider -->
+    <a href="/projecten" id="demo3" class="circle text-circle">
+        <div style="position: relative; height: 200px;">
+            <?php
+            $text = '- Bekijk alle projecten -- Bekijk alle projecten -- Bekijk alle projecten -';
+            $characters = str_split($text);
+            $totalCharacters = count($characters);
+            $rotationStep = 360 / $totalCharacters;
 
 
-    <!-- 1 -->
-    <!-- <a href="/projecten" id="demo3" class="circle text-circle mob-invisible">
-                - Bekijk alle projecten -- Bekijk alle projecten -- Bekijk alle projecten -
-            </a>
-            <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.1/dist/circletype.min.js">
-            </script>
-            <script>
-            new CircleType(document.getElementById('demo3'));
-            </script> -->
-
-
-    <!--  2-->
-    <!-- <a href="/projecten" id="textdemo" class=" text-circle mob-invisible">
-                - Bekijk alle projecten -- Bekijk alle projecten -- Bekijk alle projecten -
-            </a>
-            <script>
-            const textdemo = document.getElementById('textdemo');
-    
-            // Replace each non-whitespace character with a span
-            textdemo.innerHTML = textdemo.textContent.replace(/\S/g, "<span>$&</span>");
-    
-            // Select all span elements within the textdemo element
-            const spans = textdemo.querySelectorAll('span');
-    
-            // Apply transformation to each span element
-            for (var i = 0; i < spans.length; i++) {
-                spans[i].style.transform = "rotate(" + (i * 16.5) + "deg)";
+            foreach ($characters as $index => $character) {
+                $rotationAngle = $rotationStep * $index;
+                echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
             }
-            </script> -->
-    <!-- Circle On The Right Side Of Projecten Slider -->
+            ?>
+        </div>
+    </a>
+
+
+
+
 
 
 

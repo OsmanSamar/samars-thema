@@ -1,3 +1,26 @@
 .page-template-contact{
     
 }
+
+
+.text-circle {
+    display: inline-block;
+    width: 200px; 
+    height: 200px; 
+    position: relative;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.text-circle {
+    animation: spin 10s linear infinite;
+}
