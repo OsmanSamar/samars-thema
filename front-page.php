@@ -248,31 +248,40 @@
 
 
     <style>
+    /* Hide the CircleType by default */
     #demo3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 200px;
-        width: 200px;
-        overflow: hidden;
-        position: absolute;
-        bottom: -50px;
-        transform: translate(50%, 50%);
-        /* position: fixed; */
-        right: 0;
-        /* Position it at the right edge */
-        transform: translateY(-50%);
-        color: #fff;
-        border-radius: 50%;
-        font-size: 12px;
-        letter-spacing: 3px;
-        z-index: 1000;
+        display: none;
+    }
 
+    /* Show the CircleType on devices with a width of 1024px and up */
+    @media (min-width: 1024px) {
+        #demo3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            position: absolute;
+            bottom: -129px;
+            /* bottom: -50px; */
+            transform: translate(50%, 50%);
+            /* position: fixed; */
+            right: 0;
+            /* right: 0; */
+            /* Position it at the right edge */
+            transform: translateY(-50%);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            letter-spacing: 3px;
+            z-index: 1000;
+
+        }
     }
 
     #demo3 span {
         position: absolute;
-
         left: 50%;
         transform-origin: 0 100px;
 
@@ -296,6 +305,50 @@
         height: 200px;
         width: 200px;
         overflow: visible;
+
+    }
+
+
+
+    /* Hide the text and button container by default */
+    .slider-text-button-container {
+        display: none;
+    }
+
+    /* Show text and button for devices less than 1024px */
+    @media (max-width: 1023px) {
+
+
+        .slider-text-button-container {
+            display: flex;
+            position: absolute;
+            bottom: 20px;
+            /* Position from bottom */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            /* Add padding from edges */
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+    }
+
+
+
+    /* Text styling */
+    .slider-text-button-container .text {
+        flex: 1;
+        /* Take up available space */
+        text-align: left;
+
+    }
+
+    /* Button styling */
+    .slider-text-button-container button {
+        flex: 0;
+        /* Do not grow */
+        text-align: right;
 
     }
     </style>
@@ -335,16 +388,32 @@
                 <div class="swiper-slide">
                     <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
                         class="">
+                    <!-- Overlay Text and Button -->
+                    <div class="slider-text-button-container">
+                        <div class="text">Tuin in Voorthuizen</div>
+                        <button>Bekijk projecten</button>
+                    </div>
                 </div>
 
                 <div class="swiper-slide">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
                         alt="Image 2">
+                    <!-- Overlay Text and Button -->
+                    <div class="slider-text-button-container">
+                        <div class="text">Tuinonderhoud in Ede</div>
+                        <button>Bekijk projecten</button>
+                    </div>
                 </div>
 
                 <div class="swiper-slide">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
                         alt="Image 2">
+
+                    <!-- Overlay Text and Button -->
+                    <div class="slider-text-button-container">
+                        <div class="text">Tuin bij Tiny House</div>
+                        <button>Bekijk projecten</button>
+                    </div>
                 </div>
 
 
@@ -353,8 +422,9 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
-
         </div>
+
+
     </div>
 
 
