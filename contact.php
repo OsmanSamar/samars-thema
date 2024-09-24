@@ -95,8 +95,6 @@
 
         }
 
-
-
     }
 
 
@@ -186,6 +184,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- 2 -->
                         <div class="col-12 col-md-4 col-lg-4 fadIn visible">
                             <div class="d-flex flex-column gap-3 text-center align-items-center contact-icon">
