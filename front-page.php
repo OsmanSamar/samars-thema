@@ -51,7 +51,7 @@
                 <div>
                     <a class="downarrow" aria-label="Go to the content" href="#Maaktuin">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                            alt="WhatsApp Icon" class="whatsapp-icon" />
+                            alt="downarrow Icon" class="downarrow-icon" />
                     </a>
                 </div>
 
@@ -426,20 +426,6 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

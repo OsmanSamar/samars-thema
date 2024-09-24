@@ -11,9 +11,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="logo col-lg-5 d-flex flex-column order-1 order-lg-2">
+
+
+
+            <div class="logo col-lg-5 d-flex flex-column   order-1 order-lg-2">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenlogo.png"
-                    alt="<?php bloginfo('name'); ?>" />
+                    alt="<?php bloginfo('name'); ?>" class="" />
                 <div class="d-none d-lg-block">
                     <p class="text-center mt-3 text-white text-opacity-50 copyright">
                         © GROENtuinen -
