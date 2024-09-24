@@ -111,6 +111,33 @@
         }
 
 
+        .img1 {
+            border-radius: 10px;
+
+            width: 626px;
+            height: 377px;
+        }
+
+        .img2 {
+            border-radius: 10px;
+
+            width: 370px;
+            height: 591px;
+        }
+
+        .img3 {
+            border-radius: 10px;
+            width: 626px;
+            height: 382px;
+        }
+
+        .img3,
+        .img1,
+        .img2,
+        .groentuinen {
+            object-fit: cover;
+        }
+
     }
 
     .text {
@@ -203,6 +230,54 @@
                 </div>
             </div>
         </div>
+
+        <!-- 3 -->
+
+        <div class=" ">
+            <div class="">
+                <div class="row">
+                    <!-- Column Wrapper -->
+                    <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
+                        <div class="row gx-5">
+                            <!-- 1st Column -->
+
+                            <div class="d-flex justify-content-center flex-row gap-4  ">
+
+
+                                <div class="mt-auto mb-5">
+
+                                    <img src="
+                                            <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
+                                        alt="groenoverons" class="img1" />
+                                </div>
+
+
+
+                                <div class="">
+
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
+                                        alt="groenoverons" class="img2" />
+
+                                </div>
+
+                                <div class="mt-auto">
+
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png"
+                                        alt="groediverons" class="img3" />
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End Column -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 </main>
