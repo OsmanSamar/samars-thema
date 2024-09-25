@@ -53,7 +53,7 @@
         transform: translate(-50%, -50%);
     }
 
-    h1 {
+    .content h1 {
 
         margin-bottom: 193px;
         font-size: 40px;
@@ -74,6 +74,17 @@
         height: 650px;
     }
 
+    /* h2 {
+        font-family: 'Henderson Sans Basic', sans-serif;
+
+    } */
+    h2 {
+        color: #fff;
+        font-size: 39px;
+        font-weight: 300;
+        line-height: 60px;
+    }
+
     @media (min-width: 992px) {
 
         /* Hide arrow on large screens */
@@ -81,7 +92,7 @@
             display: none;
         }
 
-        h1 {
+        .content h1 {
 
             font-size: 90px;
             font-weight: 700;
@@ -101,6 +112,13 @@
         .text {
             font-size: 20px;
             margin-left: 50px;
+        }
+
+        .text2 {
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Inclusive Sans', sans-serif;
+
         }
 
         .text-header {
@@ -147,6 +165,12 @@
         margin-bottom: 48px;
     }
 
+    .text2 {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Inclusive Sans', sans-serif;
+    }
+
     .text-header {
 
         font-size: 40px;
@@ -154,6 +178,18 @@
         align-items: start;
         margin-bottom: 48px;
 
+    }
+
+    @media (min-width: 768px) {
+        .line2 {
+            height: 1px;
+            width: 52vw;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            margin-right: 10px;
+            display: block;
+        }
     }
     </style>
 
@@ -234,48 +270,244 @@
         <!-- 3 -->
 
         <div class=" ">
-            <div class="">
-                <div class="row">
-                    <!-- Column Wrapper -->
-                    <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
+
+
+
+
+            <div class="row">
+                <!-- Column Wrapper -->
+                <div class="">
+                    <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5 ">
                         <div class="row gx-5">
                             <!-- 1st Column -->
 
-                            <div class="d-flex justify-content-center flex-row gap-4  ">
-
-
+                            <div class="d-none d-md-flex justify-content-center flex-row gap-4  ">
                                 <div class="mt-auto mb-5">
-
                                     <img src="
                                             <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
                                         alt="groenoverons" class="img1" />
                                 </div>
-
-
-
                                 <div class="">
-
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
                                         alt="groenoverons" class="img2" />
-
                                 </div>
-
                                 <div class="mt-auto">
-
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png"
                                         alt="groediverons" class="img3" />
-
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <!-- End Column -->
+                </div>
+                <!-- End Column -->
 
+            </div>
+
+            <!-- Text -->
+            <div class="order-1 order-lg-2 ">
+                <div class="text-block py-1">
+                    <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
+                        <h2 style="font-size:px">Laat jouw tuin
+                            opvallen
+                        </h2>
+                        <div class="text2 text-fix">
+                            <div class="inner" style="font-size:20px">
+                                <p><span style="font-weight: 400;">De favoriete bomen en planten van Peter? Een
+                                        prachtige meerstammige steeneik, vrouwenmantel (Alchemilla mollis), witte
+                                        knoop (Anaphalis) en de dropplant (Agastache). Maar voor het ontwerp en de
+                                        aanleg van jouw tuin, staan jouw wensen voorop. Of het nu gaat om de aanleg
+                                        van je voortuin, achtertuin, stadstuin of dakterras.</span></p>
+                            </div>
+                            <div class="read-more"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- End of textSection -->
+
+
+
+            <!-- Swiper On Small Screen -->
+
+            <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-none"
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="
+                         <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png" alt="groenoverons"
+                            class="img1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
+                            alt="groenoverons" class="img2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="groediverons"
+                            class="img3" />
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
         </div>
+
+        <!-- New Section after the text section -->
+        <section class="text-line-button-section">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="  col-lg-2 text-center d-lg-none order-1">
+                        <div class="horizontal-divider"></div>
+                    </div>
+                    <div class="col-lg-5 text-left  d-lg-none order-2">
+                        <p>Waarom GroenTuinen?</p>
+                    </div>
+
+
+
+                    <div class="title d-none d-lg-flex align-items-center gap-3">
+                        <h2 class="mb-0" style="font-size:40px ">Waarom
+                            GROENtuinen?</h2>
+                        <div class="line2 between d-none d-lg-block"></div>
+
+                    </div>
+
+
+                    <!-- Testimonials Section on Small Screen -->
+                    <div class="row testimonials-section-sm d-md-none text-center2">
+                        <div class="col-sm-12 col-lg-4 testimonial">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
+                                class="testimonial-img" />
+                            <h1>Vakkundig maatwerk</h1>
+                            <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
+                                    gemaakt</span></p>
+
+                        </div>
+                        <div class="col-sm-12 col-lg-4 testimonial">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
+                                class="testimonial-img w-84 h-126" />
+                            <h1>Passie voor groen</h1>
+                            <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
+                                    natuur</span></p>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 testimonial">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
+                                class="testimonial-img" />
+                            <h1>Écht out of the box</h1>
+                            <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
+                                    aanleg</span></p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- Testimonials Section on Large Screen -->
+                <div class="row testimonials-section d-none d-md-flex">
+                    <div class="col-sm-12 col-lg-4 testimonial">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
+                            class="testimonial-img  w-84 h-126" />
+                        <h1>Vakkundig maatwerk</h1>
+                        <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
+                                gemaakt</span></p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 testimonial">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
+                            class="testimonial-img  w-84 h-126" />
+                        <h1>Passie voor groen</h1>
+                        <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
+                                natuur</span></p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 testimonial">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
+                            class="testimonial-img  " />
+                        <h1>Écht out of the box</h1>
+                        <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
+                                aanleg</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+
+        // slidesPerView: 2.5,
+
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        spaceBetween: 5,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            992: {
+
+                slidesPerView: 3.5,
+            }
+        }
+    });
+
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            ]);
+        });
+    document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            ]);
+        });
+    </script>
 
 
 
