@@ -99,7 +99,7 @@
         <div class="container bg-img mt-lg-auto mb-0">
             <div class="position-relative">
                 <div class=" overlay"></div>
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijze.png" alt="groentuinen"
                     class="groentuinen" style="height:745px" />
                 <div class="content center">
                     <div class=" bottom-center">
@@ -117,9 +117,13 @@
 
                     </div>
                     <div class=" bottom-center"><a class="down d-lg-none d-block" aria-label="Go to the content"
-                            href="#content"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                alt="downarrow Icon" class="downarrow-icon" /></a></div>
+                            href="#content">
+
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ontwerptuin.png"
+                                alt="downarrow Icon" class="downarrow-icon" style="height:800px" /></a>
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,10 +141,13 @@
                                 <div class="d-flex flex-column  text-left align-items-start ">
                                     <span class="text-header ">Hoe wij te werk gaan <span>-</span></span>
                                     <div class="text ">
-                                        <p>We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven. Je
-                                            geeft aan welke stijl je mooi vindt en laat indien mogelijk een moodboard
+                                        <p>We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven.
+                                            Je
+                                            geeft aan welke stijl je mooi vindt en laat indien mogelijk een
+                                            moodboard
                                             zien. We kijken hoe de stijl in je woning is, zodat we deze kunnen
-                                            doorvoeren in je tuin. Wij vertellen wat we voor je kunnen betekenen en
+                                            doorvoeren in je tuin. Wij vertellen wat we voor je kunnen betekenen
+                                            en
                                             meten je tuin in.
 
 
@@ -154,19 +161,27 @@
                                 </div>
 
                                 <div class="d-flex flex-column  text-left align-items-start ">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ontwerptuin.png"
                                         alt="groenoverons" class="groenoverons" />
                                 </div>
 
                                 <div class="d-flex flex-column  text-left align-items-start ">
                                     <span class="text-header ">Ontwerp van jouw tuin <span>-</span></span>
                                     <div class="text ">
-                                        <p>Vervolgens gaan we aan de slag met het ontwerp van je tuin. Dit doen we op
-                                            basis van alle input uit het eerste gesprek. We maken een offerte voor het
+                                        <p>Vervolgens gaan we aan de slag met het ontwerp van je tuin. Dit doen
+                                            we
+                                            op
+                                            basis van alle input uit het eerste gesprek. We maken een offerte
+                                            voor
+                                            het
                                             realiseren van je droomtuin.
 
-                                            We presenteren het ontwerp en bespreken de mogelijkheden en de kosten met
-                                            je. Zijn we het eens en is de offerte akkoord? Dan spreken we af wanneer we
+                                            We presenteren het ontwerp en bespreken de mogelijkheden en de
+                                            kosten
+                                            met
+                                            je. Zijn we het eens en is de offerte akkoord? Dan spreken we af
+                                            wanneer
+                                            we
                                             voor je aan de slag gaan.
                                         </p>
                                         <p>
@@ -196,9 +211,13 @@
                                 <div class="d-flex flex-column  text-left align-items-start ">
                                     <span class="text-header ">Wat je krijgt <span>-</span></span>
                                     <div class="text ">
-                                        <p>Bij GROENtuinen staan we voor duidelijkheid en transparantie. We ontwerpen
-                                            jouw tuin, leggen de tuin aan en/of onderhouden deze voor een eerlijke en
-                                            vaste prijs. Ook maken we samen afspraken over de planten in je tuin. Zo
+                                        <p>Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
+                                            ontwerpen
+                                            jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
+                                            eerlijke
+                                            en
+                                            vaste prijs. Ook maken we samen afspraken over de planten in je
+                                            tuin. Zo
                                             weet je precies waar je aan toe bent.
                                         </p>
                                         <p>
