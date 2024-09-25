@@ -7,21 +7,24 @@
     .bg-img {
         position: relative;
         text-align: center;
-        /* padding: 20px 0; */
         color: #F8F4EA;
         /* font-family: 'Henderson Sans'; */
         font-weight: bold;
-
-
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: auto;
+        margin-bottom: 0;
+        background-size: cover;
 
     }
 
     .bg-img .groentuinen {
         /* width: 100%; */
         height: 52vh;
+        border-radius: 15px;
     }
 
-    .overlay {
+    /* .overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -31,7 +34,7 @@
         background: linear-gradient(239deg, #212e25 0%, #0c2c16 100%);
         background-color: transparent;
         opacity: 0.6;
-    }
+    } */
 
 
 
@@ -55,7 +58,7 @@
 
     .content h1 {
 
-        margin-bottom: 193px;
+        margin-bottom: 338px;
         font-size: 40px;
         line-height: 70px;
         font-weight: bold;
@@ -72,6 +75,7 @@
 
     .groenoverons {
         height: 650px;
+        width: 325px;
     }
 
     /* h2 {
@@ -191,6 +195,32 @@
             display: block;
         }
     }
+
+    /* .down {
+        display: inline-block;
+
+        margin-bottom: 0;
+
+        margin-top: 0;
+
+    }
+
+    .downarrow-icon {
+        width: 24px;
+
+        height: auto;
+
+    }
+
+    .groenoverons {
+        margin-top: 0;
+
+    }
+
+    .d-flex.align-items-center {
+        gap: 0;
+
+    } */
     </style>
 
     <div class="container">
@@ -201,7 +231,7 @@
 
 
         <div class="container bg-img mt-lg-auto mb-0">
-            <div class="overlay"></div>
+            <div class=" overlay"></div>
             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
                 class="groentuinen" />
 
@@ -223,21 +253,29 @@
 
 
 
+
         <div class="text-lg-start text-center" id="content">
             <div class="container">
                 <div class="row">
                     <!-- Column Wrapper -->
                     <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
                         <div class="row gx-5">
+
+
                             <!-- 1st Column -->
-                            <div class="col-12 col-md-6 col-lg-5 order-2 order-lg-1 mb-4 mb-lg-0">
+                            <div class="col-12 col-md-5 col-lg-5 order-2 order-lg-1 mb-4 mb-lg-0">
                                 <div class="d-flex flex-column text-center align-items-center ">
+                                    <!-- Down Arrow -->
+                                    <!-- <a class="down d-lg-flex d-none mb-0" aria-label="Go to the content"
+                                        href="#content"> -->
+
+
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
                                         alt="groenoverons" class="groenoverons" />
                                 </div>
                             </div>
-                            <!-- 2nd Column -->
-                            <div class="col-12 col-md-6 col-lg-7 ml-lg-4 order-1 order-lg-2 ">
+                            <!--2nd Column -->
+                            <div class="col-12 col-md-5 col-lg-7 ml-lg-4 order-1 order-lg-2 ">
                                 <div class="d-flex flex-column  text-left align-items-start ">
                                     <span class="text-header ">Vakkundig maatwerk <span>-</span></span>
                                     <div class="text ">
@@ -437,6 +475,67 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact Information Section on Lg Screen -->
+
+        <div>
+            <div class="row  flex-lg-row  d-flex flex-column align-items-center d-none d-lg-flex"
+                style="background-color:#2A3F31; border-radius: 50px; margin-top:40px; margin-bottom:40px;gap-20px; padding:20px ">
+                <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
+                        class="groentuinen" style="width:50px; height:50px" />
+                </div>
+                <div class="col-12 col-lg-4 text-center text-lg-left">
+                    <span>Ook een GROENtuin? Neem contact op!</span>
+                </div>
+                <div
+                    class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column justify-content-center justify-content-lg-start ">
+                    <div class="circle-border ">
+                        <a class="btn btn-secondary" aria-label="telefoon Contact" href="tel:+31621830806">+31 6
+                            21830806</a>
+                    </div>
+                    <div class="circle-border">
+                        <a class="btn btn-primary" aria-label="Mail Contact"
+                            href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Contact Information Section on Sm Screen -->
+
+    <div>
+
+        <div style="background-color:#2A3F31; margin-top:40px; gap-20px; padding:20px "
+            class="row  flex-lg-row  d-flex flex-column align-items-center d-flex d-lg-none">
+
+
+            <div class="col-12 col-lg-4 text-center text-lg-left" style="margin-top:20px; ">
+                <h2 style="font-size:40px; padding-bottom: 40px; color: #fff;
+        line-height: 50px;     font-family: henderson-sans-basic, sans-serif;">Ook een GROENtuin? Neem contact op!</h2>
+            </div>
+            <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column justify-content-center justify-content-lg-start "
+                style="margin-bottom:70px">
+                <div class="circle-border ">
+                    <a class="btn btn-secondary" aria-label="telefoon Contact" href="tel:+31621830806">+31 6
+                        21830806</a>
+                </div>
+                <div class="circle-border">
+                    <a class="btn btn-primary" aria-label="Mail Contact"
+                        href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
+                style="margin-bottom:-50px">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
+                    class="groentuinen" style="width:90px; height:90px" />
+            </div>
+        </div>
     </div>
 
 
@@ -508,6 +607,8 @@
             ]);
         });
     </script>
+
+
 
 
 
