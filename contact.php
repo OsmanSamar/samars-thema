@@ -140,21 +140,29 @@
 
     <div class="container">
 
-        <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
-        <span class="separator"> // </span><span class="last">Contact</span>
+
+        <div class="d-inline-block">
+            <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
+            <span class="separator"> // </span>
+            <span class="last">Contact</span>
+        </div>
 
         <div class="container bg-img mt-lg-auto mb-0">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groentuinen.png" alt="groentuinen" />
-            <div class="content center">
-                <div class="col-12 col-lg-7 bottom-center">
+            <div class="position-relative">
+                <div class=" overlay"></div>
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groentuinen.png" alt="groentuinen"
+                    style="height:690px" />
+                <div class="content center">
+                    <div class="col-12 col-lg-7 bottom-center">
 
-                    <h1>Contact</h1>
-                </div>
-                <div class="col-12 col-lg-7 bottom-center">
-                    <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                            alt="downarrow Icon" class="downarrow-icon" />
-                    </a>
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="col-12 col-lg-7 bottom-center">
+                        <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                alt="downarrow Icon" class="downarrow-icon" />
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -176,9 +184,11 @@
                                     class="mx-auto" />
                                 <span class="text-header">Barneveld</span>
                                 <div class="text">
-                                    <p><span style="font-weight: 400;">GROENtuinen is gevestigd in Barneveld. Wij werken
+                                    <p><span style="font-weight: 400;">GROENtuinen is gevestigd in Barneveld. Wij
+                                            werken
                                             in
-                                            een straal van zo’n 50 kilometer rondom Barneveld. Neem dus ook contact op
+                                            een straal van zo’n 50 kilometer rondom Barneveld. Neem dus ook contact
+                                            op
                                             als
                                             je niet in Barneveld woont!</span></p>
                                 </div>
@@ -192,7 +202,8 @@
                                     alt="Contact Icon" class="mx-auto" />
                                 <span class="text-header">+316 123 456 78</span>
                                 <div class="text">
-                                    <p><span style="font-weight: 400;">Enthousiast en direct een afspraak maken? Laat
+                                    <p><span style="font-weight: 400;">Enthousiast en direct een afspraak maken?
+                                            Laat
                                             het
                                             ons weten en neem telefonisch contact op.</span></p>
                                 </div>
@@ -205,7 +216,8 @@
                                     alt="Email Icon" class="mx-auto" />
                                 <span class="text-header">info@groentuinen.nl</span>
                                 <div class="text">
-                                    <p><span style="font-weight: 400;">Interesse in een GROENtuin? Stuur vrijblijvend
+                                    <p><span style="font-weight: 400;">Interesse in een GROENtuin? Stuur
+                                            vrijblijvend
                                             een
                                             e-mail voor meer informatie over onze diensten of om een afspraak te
                                             maken.</span></p>

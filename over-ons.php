@@ -20,25 +20,37 @@
 
     .bg-img .groentuinen {
         /* width: 100%; */
-        height: 52vh;
-        border-radius: 15px;
+        /* height: 52vh;
+        border-radius: 15px; */
     }
 
-    /* .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        background: linear-gradient(239deg, #212e25 0%, #0c2c16 100%);
-        background-color: transparent;
-        opacity: 0.6;
-    } */
-
-
+    .groentuinen {
+        display: block;
+        /* width: 100%;
+        height: auto; */
+    }
 
     .content {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        color: white;
+
+    }
+
+    .bottom-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    /* .content {
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -54,7 +66,7 @@
         top: 100%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
+    } */
 
     .content h1 {
 
@@ -195,32 +207,6 @@
             display: block;
         }
     }
-
-    /* .down {
-        display: inline-block;
-
-        margin-bottom: 0;
-
-        margin-top: 0;
-
-    }
-
-    .downarrow-icon {
-        width: 24px;
-
-        height: auto;
-
-    }
-
-    .groenoverons {
-        margin-top: 0;
-
-    }
-
-    .d-flex.align-items-center {
-        gap: 0;
-
-    } */
     </style>
 
     <div class="container">
@@ -231,22 +217,25 @@
 
 
         <div class="container bg-img mt-lg-auto mb-0">
-            <div class=" overlay"></div>
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
-                class="groentuinen" />
+            <div class="position-relative">
+                <div class=" overlay"></div>
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
+                    class="groentuinen" style="height:745px" />
 
 
-            <div class="content center">
-                <div class=" bottom-center">
-                    <h1>Expert in groen en duurzaam</h1>
-                </div>
-                <div class=" bottom-center">
-                    <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                            alt="downarrow Icon" class="downarrow-icon" />
-                    </a>
+                <div class="content center">
+                    <div class=" bottom-center">
+                        <h1>Expert in groen en duurzaam</h1>
+                    </div>
+                    <div class=" bottom-center">
+                        <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                alt="downarrow Icon" class="downarrow-icon" />
+                        </a>
+                    </div>
                 </div>
             </div>
+
 
         </div>
 
@@ -479,24 +468,25 @@
         <!-- Contact Information Section on Lg Screen -->
 
         <div>
-            <div class="row  flex-lg-row  d-flex flex-column align-items-center d-none d-lg-flex"
+            <div class="  flex-lg-row  d-flex flex-column align-items-center d-none d-lg-flex"
                 style="background-color:#2A3F31; border-radius: 50px; margin-top:40px; margin-bottom:40px;gap-20px; padding:20px ">
-                <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start">
+                <div class="d-flex justify-content-center justify-content-lg-start">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                        class="groentuinen" style="width:50px; height:50px" />
+                        class="groentuinen" style="width:80px; height:80px" />
                 </div>
-                <div class="col-12 col-lg-4 text-center text-lg-left">
+                <div class=" text-center text-lg-left" style="margin-left:50px; font-size: 30px;">
                     <span>Ook een GROENtuin? Neem contact op!</span>
                 </div>
-                <div
-                    class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column justify-content-center justify-content-lg-start ">
+                <div class="button-group" style="margin-left:50px">
                     <div class="circle-border ">
-                        <a class="btn btn-secondary" aria-label="telefoon Contact" href="tel:+31621830806">+31 6
+                        <a class="btn btn-secondary" aria-label="telefoon Contact" href="tel:+31621830806"
+                            style="padding-left: 40px;padding-right: 40px"> +31
+                            6
                             21830806</a>
                     </div>
                     <div class="circle-border">
-                        <a class="btn btn-primary" aria-label="Mail Contact"
-                            href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
+                        <a class="btn btn-primary" aria-label="Mail Contact" href="mailto:info@groentuinen.nl"
+                            style="padding-left: 40px;padding-right: 40px">info@groentuinen.nl</a>
                     </div>
                 </div>
             </div>
