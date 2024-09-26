@@ -18,26 +18,26 @@
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            setTimeout(function () {
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            var whatsappIcon = document.querySelector('.whatsapp-fixed');
+            whatsappIcon.classList.add('open'); // Trigger the slide-in effect
+
+            setTimeout(function() {
+                whatsappIcon.classList.add('adjust-position');
+            }, 500); // Delay to adjust position after the animation
+        }, 900); // Initial delay before slide-in
+
+        // Close button functionality
+        var closeButton = document.querySelector('.close-button');
+        if (closeButton) {
+            closeButton.addEventListener('click', function() {
                 var whatsappIcon = document.querySelector('.whatsapp-fixed');
-                whatsappIcon.classList.add('open'); // Trigger the slide-in effect
-
-                setTimeout(function () {
-                    whatsappIcon.classList.add('adjust-position');
-                }, 500); // Delay to adjust position after the animation
-            }, 900); // Initial delay before slide-in
-
-            // Close button functionality
-            var closeButton = document.querySelector('.close-button');
-            if (closeButton) {
-                closeButton.addEventListener('click', function () {
-                    var whatsappIcon = document.querySelector('.whatsapp-fixed');
-                    whatsappIcon.classList.remove('open', 'adjust-position');
-                    whatsappIcon.classList.add('hide'); // Hide the icon after closing
-                });
-            }
-        });
+                whatsappIcon.classList.remove('open', 'adjust-position');
+                whatsappIcon.classList.add('hide'); // Hide the icon after closing
+            });
+        }
+    });
     </script>
 
 
@@ -45,13 +45,13 @@
     <!-- jQuery for dropdown menu -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.nav-item.dropdown').hover(function () {
-                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-            }, function () {
-                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
-            });
+    $(document).ready(function() {
+        $('.nav-item.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+        }, function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
         });
+    });
     </script>
 
 
@@ -138,7 +138,7 @@
             </div>
 
             <!-- Button on the Right side (visible only on large screens) -->
-            <div class="circle-border">
+            <div class="circle-border d-none d-lg-block ms-auto">
                 <div class="d-none d-lg-block ms-auto  ">
                     <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Contact</a>
                 </div>

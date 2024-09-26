@@ -158,12 +158,10 @@ html {
   display: inline-block;
   /* padding: 1px; */
   border-radius: 9999px;
-  border: 1px solid #ffffff;
+  // border: 1px solid #ffffff;
   position: relative;
   overflow: hidden;
   margin: 8px;
-  // width: object-fit;
-  /* margin-right: 8px; */
 }
 
 /* Inner Button */
@@ -724,8 +722,6 @@ html {
 
 /* Styles for mobile devices */
 @media (max-width: 576px) {
- 
-
   .navbar-brand {
     margin-right: auto;
   }
@@ -1568,8 +1564,6 @@ a ::after {
   }
 }
 
-
-
 // <style>
 //     #demo3 {
 //         display: flex;
@@ -1583,15 +1577,15 @@ a ::after {
 
 //         overflow: visible;
 
-//         position: relative; 
+//         position: relative;
 //          position: fixed;
 //         top: 50%;
-//          Center vertically 
+//          Center vertically
 //         right: 0;
-//          Position it at the right edge 
+//          Position it at the right edge
 //         transform: translateY(-50%);
-//         Adjust to perfectly center vertically 
-//          background-color: #fff; 
+//         Adjust to perfectly center vertically
+//          background-color: #fff;
 
 //         color: #fff;
 //         border-radius: 50%;
@@ -1629,4 +1623,3 @@ a ::after {
 //         overflow: visible;
 
 //     }
-    
