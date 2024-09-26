@@ -71,9 +71,15 @@ h4 {
   font-size: 20px;
 }
 
-h1, h2, h1, h2 {
+ h1, h2, h3 {
     
      font-family: 'Henderson Sans Basic', sans-serif;
+}
+
+@media (max-width: 991.98px) {
+    .h2, .h3, h2, h3 {
+        font-size: 30px;
+    }
 }
 
 .bg-contain {

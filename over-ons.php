@@ -8,7 +8,6 @@
         position: relative;
         text-align: center;
         color: #F8F4EA;
-        /* font-family: 'Henderson Sans'; */
         font-weight: bold;
         background-position: center;
         background-repeat: no-repeat;
@@ -18,21 +17,17 @@
 
     }
 
-    .bg-img .groentuinen {
-        /* width: 100%; */
-        /* height: 52vh;
-        border-radius: 15px; */
-    }
+
 
     .groentuinen {
         display: block;
-        /* width: 100%;
-        height: auto; */
+        object-fit: cover;
+        border-radius: 20px;
     }
 
     .content {
         position: absolute;
-        top: 100%;
+        top: 94%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -49,31 +44,13 @@
     }
 
 
-
-    /* .content {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-    }
-
-    .bottom-center {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } */
-
     .content h1 {
 
-        margin-bottom: 338px;
+        /* margin-bottom: 338px; */
         font-size: 40px;
         line-height: 70px;
         font-weight: bold;
+        margin-top: -38px;
     }
 
 
@@ -82,30 +59,44 @@
         transition: transform 0.3s ease;
         width: 45px;
         cursor: pointer;
+
     }
+
+
 
 
     .groenoverons {
-        height: 650px;
-        width: 325px;
+        height: 750px;
+        max-width: 425px;
+        object-fit: cover;
+        border-radius: 10px;
     }
 
-    /* h2 {
-        font-family: 'Henderson Sans Basic', sans-serif;
+    @media (min-width: 768px) {}
 
-    } */
-    h2 {
+    /* h2 {
         color: #fff;
         font-size: 39px;
         font-weight: 300;
         line-height: 60px;
-    }
+    } */
 
     @media (min-width: 992px) {
 
         /* Hide arrow on large screens */
         .down {
             display: none;
+        }
+
+        .content {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+
         }
 
         .content h1 {
@@ -147,15 +138,13 @@
 
         .img1 {
             border-radius: 10px;
-
             width: 626px;
             height: 377px;
         }
 
         .img2 {
             border-radius: 10px;
-
-            width: 370px;
+            width: 470px;
             height: 591px;
         }
 
@@ -184,7 +173,7 @@
     .text2 {
         font-size: 20px;
         text-align: center;
-        font-family: 'Inclusive Sans', sans-serif;
+        /* font-family: 'Inclusive Sans', sans-serif; */
     }
 
     .text-header {
@@ -218,8 +207,8 @@
 
         <div class="container bg-img mt-lg-auto mb-0">
             <div class="position-relative">
-                <div class=" overlay"></div>
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
+                <div class=" overlay" style=" border-radius: 20px;"></div>
+                <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
                     class="groentuinen" style="height:745px" />
 
 
@@ -227,7 +216,7 @@
                     <div class=" bottom-center">
                         <h1>Expert in groen en duurzaam</h1>
                     </div>
-                    <div class=" bottom-center">
+                    <div class=" bottom-center" style="margin-top: ;">
                         <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
                                 alt="downarrow Icon" class="downarrow-icon" />
@@ -252,7 +241,7 @@
 
 
                             <!-- 1st Column -->
-                            <div class="col-12 col-md-5 col-lg-5 order-2 order-lg-1 mb-4 mb-lg-0">
+                            <div class="col-12 col-md-12 col-lg-5 order-2 order-lg-1 mb-4 mb-lg-0">
                                 <div class="d-flex flex-column text-center align-items-center ">
                                     <!-- Down Arrow -->
                                     <!-- <a class="down d-lg-flex d-none mb-0" aria-label="Go to the content"
@@ -260,11 +249,11 @@
 
 
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                        alt="groenoverons" class="groenoverons" />
+                                        alt="Groenoverons" class="groenoverons" />
                                 </div>
                             </div>
                             <!--2nd Column -->
-                            <div class="col-12 col-md-5 col-lg-7 ml-lg-4 order-1 order-lg-2 ">
+                            <div class="col-12 col-md-12 col-lg-7 ml-lg-4 order-1 order-lg-2 ">
                                 <div class="d-flex flex-column  text-left align-items-start ">
                                     <span class="text-header ">Vakkundig maatwerk <span>-</span></span>
                                     <div class="text ">
@@ -304,23 +293,24 @@
             <div class="row">
                 <!-- Column Wrapper -->
                 <div class="">
-                    <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5 ">
+                    <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
+                        <!-- py-5 -->
                         <div class="row gx-5">
                             <!-- 1st Column -->
 
-                            <div class="d-none d-md-flex justify-content-center flex-row gap-4  ">
+                            <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-4  ">
                                 <div class="mt-auto mb-5">
                                     <img src="
-                                            <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                        alt="groenoverons" class="img1" />
+                                            <?= esc_url(get_template_directory_uri()); ?>/images/flowers.png"
+                                        alt="Groenoverons" class="img1" />
                                 </div>
                                 <div class="">
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                                        alt="groenoverons" class="img2" />
+                                        alt="Beautifulpinkflowers" class="img2" />
                                 </div>
                                 <div class="mt-auto">
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png"
-                                        alt="groediverons" class="img3" />
+                                        alt="Ladybug" class="img3" />
                                 </div>
                             </div>
 
@@ -331,12 +321,15 @@
 
             </div>
 
-            <!-- Text -->
-            <div class="order-1 order-lg-2 ">
+            <!-- Text Section -->
+            <div class="order-1 order-md-1 order-lg-2 ">
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
-                        <h2 style="font-size:px">Laat jouw tuin
-                            opvallen
+                        <h2 style="font-size:36px;
+                                  padding-bottom: 39px; 
+                                color: #fff;
+                               line-height: 55px;">
+                            Laat jouw tuin opvallen
                         </h2>
                         <div class="text2 text-fix">
                             <div class="inner" style="font-size:20px">
@@ -357,20 +350,21 @@
 
             <!-- Swiper On Small Screen -->
 
-            <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-none"
+            <div #swiperRef=""
+                class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="
-                         <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png" alt="groenoverons"
+                         <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png" alt="Groen Overons"
                             class="img1" />
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                            alt="groenoverons" class="img2" />
+                            alt="Beautifulpinkflowers" class="img2" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="groediverons"
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="Ladybug"
                             class="img3" />
                     </div>
 
@@ -393,13 +387,13 @@
                         <div class="horizontal-divider"></div>
                     </div>
                     <div class="col-lg-5 text-left  d-lg-none order-2">
-                        <p>Waarom GroenTuinen?</p>
+                        <p style="font-size:31px;">Waarom GroenTuinen?</p>
                     </div>
 
 
 
                     <div class="title d-none d-lg-flex align-items-center gap-3">
-                        <h2 class="mb-0" style="font-size:40px ">Waarom
+                        <h2 class="mb-0" style="font-size:32px ">Waarom
                             GROENtuinen?</h2>
                         <div class="line2 between d-none d-lg-block"></div>
 
@@ -505,17 +499,25 @@
 
 
             <div class="col-12 col-lg-4 text-center text-lg-left" style="margin-top:20px; ">
-                <h2 style="font-size:40px; padding-bottom: 40px; color: #fff;
-        line-height: 50px;     font-family: henderson-sans-basic, sans-serif;">Ook een GROENtuin? Neem contact op!</h2>
+                <h2 style="font-size:40px;
+                 padding-bottom: 39px; 
+                 color: #fff;
+                line-height: 60px;
+                font-weight: 100">
+
+                    Ook een GROENtuin? Neem contact
+                    op!
+                </h2>
             </div>
             <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column justify-content-center justify-content-lg-start "
                 style="margin-bottom:70px">
                 <div class="circle-border ">
-                    <a class="btn btn-secondary" aria-label="telefoon Contact" href="tel:+31621830806">+31 6
+                    <a class="btn btn-secondary" style="padding:10px 40px;" aria-label="telefoon Contact"
+                        href="tel:+31621830806">+31 6
                         21830806</a>
                 </div>
                 <div class="circle-border">
-                    <a class="btn btn-primary" aria-label="Mail Contact"
+                    <a class="btn btn-primary" style="padding:10px 40px;" aria-label="Mail Contact"
                         href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
                 </div>
             </div>
@@ -523,7 +525,7 @@
             <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
                 style="margin-bottom:-50px">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                    class="groentuinen" style="width:90px; height:90px" />
+                    class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
             </div>
         </div>
     </div>
