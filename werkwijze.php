@@ -1,5 +1,5 @@
-<?php get_header() ;
-//Template Name: werkwijze?>
+<?php get_header();
+//Template Name: werkwijze ?>
 
 <main class="flex-grow-1">
     <style>
@@ -64,6 +64,15 @@
         cursor: pointer;
     }
 
+
+
+
+    .border-left {
+        height: 100%;
+        border-left: 1px solid #ffffff;
+        padding-right: 10px;
+    }
+
     @media (min-width: 992px) {
 
         /* Hide arrow on large screens */
@@ -85,23 +94,8 @@
 
         }
 
-        /* .text {
-            font-size: 20px;
-            margin-left: 50px;
-            text-align: left;
-            align-items: start;
-        }
 
 
-
-        .text-header {
-
-            font-size: 40px;
-            margin-left: 50px;
-            margin-top: 80px;
-            text-align: left;
-            align-items: start;
-        } */
     }
 
     @media (min-width: 768px) {
@@ -114,6 +108,8 @@
             margin-right: 10px;
             display: block;
         }
+
+        .border-left {}
     }
     </style>
     <div class="container">
@@ -168,10 +164,10 @@
 
 
                     <!-- Column Wrapper -->
-                    <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
+                    <div class=" col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
                         <div class="row gx-5">
                             <!--1st Column -->
-                            <div class="col-12 col-md-12 col-lg-6   ">
+                            <div class="col-12 col-md-12 col-lg-6    ">
                                 <div class="d-flex flex-column  text-left align-items-start gap-4 ">
                                     <div>
                                         <h2 class="text-header">Hoe wij
@@ -232,9 +228,12 @@
 
                                 </div>
                             </div>
+                            <!-- Line Betwwen Cols -->
+
+                            <!-- <div class="vl  col-lg-1 order-2 d-none d-lg-flex"> </div> -->
 
                             <!-- 2nd  Column  mb-4 mb-lg-0-->
-                            <div class="col-12 col-md-12 col-lg-6  ">
+                            <div class="col-12 col-md-12 col-lg-6 border-left  ">
                                 <div class="d-flex flex-column text-left align-items-start gap-4">
 
 
@@ -377,13 +376,13 @@
                 <div class="button-group" style="margin-left:50px">
                     <div class="circle-border ">
                         <a class="btn btn-secondary" aria-label="telefoon Contact" href="tel:+31621830806"
-                            style="padding-left: 40px;padding-right: 40px"> +31
+                            style="padding-left: 40px;padding-right: 30px"> +31
                             6
                             21830806</a>
                     </div>
                     <div class="circle-border">
                         <a class="btn btn-primary" aria-label="Mail Contact" href="mailto:info@groentuinen.nl"
-                            style="padding-left: 40px;padding-right: 40px">info@groentuinen.nl</a>
+                            style="padding-left: 40px;padding-right: 30px">info@groentuinen.nl</a>
                     </div>
                 </div>
             </div>
