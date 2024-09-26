@@ -181,16 +181,12 @@
                         src="<?=esc_url(get_template_directory_uri());?>/images/flowerdroplets.png"
                         alt="Flower with droplets.png" class="img1" /></div>
                 <div class="col-12 col-lg-6 mb-4">
-                    <div class="text-header">Landelijke tuin <span>-</span></div>
+                    <div class="text-header">Moderne tuin <span>-</span></div>
                     <div class="text">
-                        <p>Een tuin met een natuurlijke uitstraling: dat is een landelijke tuin.
-                            Deze tuin heeft een gazon,
-                            veel groen,
-                            is volop beplant en ruim ingedeeld. Natuurlijk moet je tuin goed
-                            onderhouden worden,
-                            maar bij een landelijke tuin laat je de natuur ook haar gang gaan.
-                            In een landelijke tuin worden vooral natuurlijke en duurzame
-                            materialen gebruikt. </p>
+                        <p>Een moderne tuin heeft strakke lijnen, is overzichtelijk en vraagt wat minder onderhoud. Een
+                            moderne tuin heeft meer bestrating en er is over het algemeen minder groen te vinden. Toch
+                            kiezen wij voor een moderne tuin met meer groene elementen. We zijn niet voor niets
+                            GROENtuinen! </p>
                     </div>
                 </div>
                 <!-- 2nd Row: Two Images on LG, Stacked on SM -->
@@ -231,16 +227,12 @@
             <div class="row">
                 <!-- 1st Row: Text and Image on LG, Stacked on SM -->
                 <div class="col-12 col-lg-6 mb-4">
-                    <div class="text-header">Landelijke tuin <span>-</span></div>
+                    <div class="text-header">Ecologische tuin <span>-</span></div>
                     <div class="text">
-                        <p>Een tuin met een natuurlijke uitstraling: dat is een
-                            landelijke tuin. Deze tuin heeft een gazon,
-                            veel groen,
-                            is volop beplant en ruim ingedeeld. Natuurlijk moet je tuin
-                            goed onderhouden worden,
-                            maar bij een landelijke tuin laat je de natuur ook haar gang
-                            gaan. In een landelijke tuin worden vooral natuurlijke en
-                            duurzame materialen gebruikt. </p>
+                        <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te leggen dat er
+                            zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin wordt geen gif
+                            gebruikt. Er groeien vooral inheemse planten uit de streek, die hun gang mogen gaan. En
+                            onkruid? Dat bestaat niet in een ecologische tuin! </p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
