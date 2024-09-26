@@ -66,13 +66,22 @@
 
 
     .groenoverons {
-        height: 750px;
-        max-width: 425px;
+
+        width: 100%;
+        height: 823px;
         object-fit: cover;
         border-radius: 10px;
     }
 
-    @media (min-width: 768px) {}
+
+
+    @media (min-width: 768px) {
+        .swiper {
+            width: 100%;
+            height: 716px;
+            margin: 20px auto;
+        }
+    }
 
     /* h2 {
         color: #fff;
@@ -138,20 +147,24 @@
 
         .img1 {
             border-radius: 10px;
-            width: 626px;
-            height: 377px;
+            /* width: 626px;
+            height: 377px; */
+            width: 640px;
+            height: 438px;
         }
 
         .img2 {
             border-radius: 10px;
-            width: 470px;
-            height: 591px;
+            width: 525px;
+            height: 616px;
         }
 
         .img3 {
             border-radius: 10px;
-            width: 626px;
-            height: 382px;
+            /* width: 626px;
+            height: 382px; */
+            width: 630px;
+            height: 438px;
         }
 
         .img3,
@@ -298,7 +311,7 @@
                         <div class="row gx-5">
                             <!-- 1st Column -->
 
-                            <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-4  ">
+                            <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
                                 <div class="mt-auto mb-5">
                                     <img src="
                                             <?= esc_url(get_template_directory_uri()); ?>/images/flowers.png"
@@ -328,7 +341,8 @@
                         <h2 style="font-size:36px;
                                   padding-bottom: 39px; 
                                 color: #fff;
-                               line-height: 55px;">
+                               line-height: 55px;
+                               margin-top:20px;">
                             Laat jouw tuin opvallen
                         </h2>
                         <div class="text2 text-fix">
@@ -357,15 +371,15 @@
                     <div class="swiper-slide">
                         <img src="
                          <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png" alt="Groen Overons"
-                            class="img1" />
+                            class="swiper-img" style="width:100% ;" />
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                            alt="Beautifulpinkflowers" class="img2" />
+                            alt="Beautifulpinkflowers" class="swiper-img" style="width:100% ;" />
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="Ladybug"
-                            class="img3" />
+                            class="swiper-img" style="width:100% ;" />
                     </div>
 
                 </div>

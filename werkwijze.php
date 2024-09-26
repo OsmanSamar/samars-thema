@@ -171,7 +171,7 @@
                     <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
                         <div class="row gx-5">
                             <!--1st Column -->
-                            <div class="col-12 col-md-6 col-lg-6   ">
+                            <div class="col-12 col-md-12 col-lg-6   ">
                                 <div class="d-flex flex-column  text-left align-items-start gap-4 ">
                                     <div>
                                         <h2 class="text-header">Hoe wij
@@ -200,7 +200,7 @@
 
                                     <div>
                                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ontwerptuin.png"
-                                            alt="groenoverons" class="groenoverons" style="object-fit: cover;" />
+                                            alt="Ontwerptuin" class="" style="object-fit: cover; width:100% ;" />
                                     </div>
                                     <div>
                                         <h2 class="text-header ">Ontwerp van jouw tuin <span>-</span></h2>
@@ -233,15 +233,15 @@
                                 </div>
                             </div>
 
-                            <!-- 2nd  Column -->
-                            <div class="col-12 col-md-6 col-lg-6   mb-4 mb-lg-0">
+                            <!-- 2nd  Column  mb-4 mb-lg-0-->
+                            <div class="col-12 col-md-12 col-lg-6  ">
                                 <div class="d-flex flex-column text-left align-items-start gap-4">
 
 
 
                                     <div>
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                            alt="groenoverons" class="groenoverons" style="object-fit: cover;" />
+                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
+                                            alt="Groenoverons" class="" style="object-fit: cover; width:100% ;" />
                                     </div>
 
                                     <div>
@@ -263,8 +263,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                            alt="groenoverons" class="groenoverons" style="object-fit: cover;" />
+                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijzetuin.png"
+                                            alt="Werkwijzetuin" class="" style="object-fit: cover; width:100% ;" />
                                     </div>
                                 </div>
                             </div>
@@ -372,7 +372,7 @@
                         class="groentuinen" style="width:80px; height:80px" />
                 </div>
                 <div class=" text-center text-lg-left" style="margin-left:50px; font-size: 30px;">
-                    <span>Ook een GROENtuin? Neem contact op!</span>
+                    <span>Samen met ons aan de slag? Neem contact op!</span>
                 </div>
                 <div class="button-group" style="margin-left:50px">
                     <div class="circle-border ">
