@@ -82,9 +82,16 @@
             </div>
         </div>
         <!-- Swiper Text -->
+        <div class="position-relative">
+            <div class="d-none d-lg-block">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
         <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-flex"
             style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
             <div class="swiper-wrapper">
+
                 <div class="swiper-slide">
                     <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek landelijke tuinen </a>
                     </div>
@@ -108,10 +115,11 @@
                     <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek encologische tuinen</a>
                     </div>
                 </div>
+
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
 
         <!-- End Of swiper -->
@@ -133,10 +141,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
-                    <img src="
-                                                    <?=esc_url(get_template_directory_uri());
-   
-   ?>/images/groenoverons.png" alt="groenoverons" class="img1" />
+                    <img src=" <?=esc_url(get_template_directory_uri());?>/images/groenoverons.png" alt="groenoverons"
+                        class="img1" />
                 </div>
                 <!-- 2nd Row: Two Images on LG, Stacked on SM -->
                 <div class="col-12 col-lg-6 mb-4 text-center d-none  d-none d-md-none d-lg-flex">
@@ -152,9 +158,9 @@
             <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="
-<?=esc_url(get_template_directory_uri());
-    ?>/images/groenoverons.png" alt="groenoverons" class="img1" /></div>
+                    <div class="swiper-slide"><img
+                            src="<?=esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
+                            alt="groenoverons" class="img1" /></div>
                     <div class="swiper-slide"><img
                             src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
                             alt="groenoverons" class="img2" /></div>
@@ -171,9 +177,9 @@
         <div class="container" style="margin-top: 80px">
             <div class="row">
                 <!-- 1st Row: Text and Image on LG, Stacked on SM -->
-                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex"><img src="
-<?=esc_url(get_template_directory_uri());
-    ?>/images/flowerdroplets.png" alt="Flower with droplets.png" class="img1" /></div>
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex"><img
+                        src="<?=esc_url(get_template_directory_uri());?>/images/flowerdroplets.png"
+                        alt="Flower with droplets.png" class="img1" /></div>
                 <div class="col-12 col-lg-6 mb-4">
                     <div class="text-header">Landelijke tuin <span>-</span></div>
                     <div class="text">
@@ -204,9 +210,9 @@
             <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="
-<?=esc_url(get_template_directory_uri());
-    ?>/images/houseinbackground.png" alt="groenoverons" class="img1" /></div>
+                    <div class="swiper-slide"><img
+                            src="<?=esc_url(get_template_directory_uri());?>/images/houseinbackground.png"
+                            alt="groenoverons" class="img1" /></div>
                     <div class="swiper-slide"><img
                             src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
                             alt="groenoverons" class="img2" /></div>
@@ -238,9 +244,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
-                    <img src="
-<?=esc_url(get_template_directory_uri());
-    ?>/images/22scaled.jpg" alt="Scaled" class="img1" />
+                    <img src="<?=esc_url(get_template_directory_uri());?>/images/22scaled.jpg" alt="Scaled"
+                        class="img1" />
                 </div>
                 <!-- 2nd Row: Two Images on LG, Stacked on SM -->
                 <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
@@ -258,19 +263,24 @@
         <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
             style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="
-<?=esc_url(get_template_directory_uri());
-    ?>/images/22scaled.jpg" alt="Scaled" class="img1" /></div>
+                <div class="swiper-slide">
+                    <img src="<?=esc_url(get_template_directory_uri());?>/images/22scaled.jpg" alt="Scaled"
+                        class="img1" />
+                </div>
                 <div class="swiper-slide"><img
                         src="<?= esc_url(get_template_directory_uri()); ?>/images/dutchgarden.png" alt="Dutch garden"
-                        class="img2" /></div>
+                        class="img2" />
+                </div>
                 <div class="swiper-slide"><img
                         src="<?= esc_url(get_template_directory_uri()); ?>/images/gardeninsunlight.png"
-                        alt="Garden in sunlight" class="img3" /></div>
+                        alt="Garden in sunlight" class="img3" />
+                </div>
+
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
+
         </div>
     </div>
     </div>
@@ -304,10 +314,9 @@
             class="row  flex-lg-row  d-flex flex-column align-items-center d-flex d-lg-none">
             <div class="col-12 col-lg-4 text-center text-lg-left" style="margin-top:20px; ">
                 <h2 style="font-size:36px;
-padding-bottom: 39px;
-    color: #fff;
-    line-height: 55px;
-    ">
+                           padding-bottom: 39px;
+                          color: #fff;
+                         line-height: 55px; ">
                     Enthousiast? Neem contact op ! </h2>
             </div>
             <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column justify-content-center justify-content-lg-start "
@@ -331,14 +340,16 @@ padding-bottom: 39px;
     <script>
     var swiper = new Swiper(".mySwiper", {
 
-            // slidesPerView: 2.5,
+
 
             slidesPerView: 1.2,
             centeredSlides: true,
+            loop: true,
+            grabCursor: true,
             spaceBetween: 5,
             pagination: {
                 el: ".swiper-pagination",
-                type: "fraction",
+
             }
 
             ,
