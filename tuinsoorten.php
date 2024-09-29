@@ -51,6 +51,37 @@
             height: 382px;
             margin-left: 120px;
         }
+
+        .position-relative {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .swiper {
+            flex-grow: 1;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #f5a287;
+            width: 50px;
+            /* Adjust as necessary */
+            height: 50px;
+            /* Adjust as necessary */
+        }
+
+        /* Adjust button position for responsiveness if needed */
+        @media (max-width: 768px) {
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
     }
 
     /* @media (min-width: 768px) {
@@ -82,13 +113,13 @@
             </div>
         </div>
         <!-- Swiper Text -->
-        <div class="position-relative">
+        <!-- <div class="position-relative">
             <div class="d-none d-lg-block">
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-        </div>
-        <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-flex"
+        </div> -->
+        <!-- <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-flex"
             style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
             <div class="swiper-wrapper">
 
@@ -117,10 +148,53 @@
                 </div>
 
             </div>
-            <!-- <div class="swiper-button-next"></div> -->
-            <!-- <div class="swiper-button-prev"></div> -->
-            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div> -->
+
+        <!-- Swiper Text -->
+        <div class="position-relative d-flex align-items-center justify-content-between">
+            <!-- Swiper Button Prev -->
+            <div class="swiper-button-prev"></div>
+
+            <!-- Swiper Slides Container -->
+            <div #swiperRef class="swiper mySwiper smrow order-2 projecten-slider"
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287; flex-grow: 1;">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek landelijke tuinen</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek Moderne tuinen</a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek ecologische tuinen</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek ecologische tuinen</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek ecologische tuinen</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek ecologische tuinen</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+            <!-- Swiper Button Next -->
+            <div class="swiper-button-next"></div>
         </div>
+
 
         <!-- End Of swiper -->
         <!-- First Container -->
@@ -183,8 +257,10 @@
                 <div class="col-12 col-lg-6 mb-4">
                     <div class="text-header">Moderne tuin <span>-</span></div>
                     <div class="text">
-                        <p>Een moderne tuin heeft strakke lijnen, is overzichtelijk en vraagt wat minder onderhoud. Een
-                            moderne tuin heeft meer bestrating en er is over het algemeen minder groen te vinden. Toch
+                        <p>Een moderne tuin heeft strakke lijnen, is overzichtelijk en vraagt wat minder onderhoud.
+                            Een
+                            moderne tuin heeft meer bestrating en er is over het algemeen minder groen te vinden.
+                            Toch
                             kiezen wij voor een moderne tuin met meer groene elementen. We zijn niet voor niets
                             GROENtuinen! </p>
                     </div>
@@ -229,8 +305,10 @@
                 <div class="col-12 col-lg-6 mb-4">
                     <div class="text-header">Ecologische tuin <span>-</span></div>
                     <div class="text">
-                        <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te leggen dat er
-                            zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin wordt geen gif
+                        <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te leggen dat
+                            er
+                            zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin wordt geen
+                            gif
                             gebruikt. Er groeien vooral inheemse planten uit de streek, die hun gang mogen gaan. En
                             onkruid? Dat bestaat niet in een ecologische tuin! </p>
                     </div>
