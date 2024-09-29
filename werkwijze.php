@@ -73,6 +73,25 @@
         padding-right: 10px;
     }
 
+
+    /*  */
+    /* Initially hide the additional text */
+    /* .more-text {
+        display: none;
+    } */
+
+    /* Styling for the toggle arrow */
+    /* .read-more-toggle .arrow {
+        transition: transform 0.3s;
+    } */
+
+    /* Rotate arrow on click */
+    /* .read-more-toggle.active .arrow {
+        transform: rotate(180deg);
+    } */
+
+    /*  */
+
     @media (min-width: 992px) {
 
         /* Hide arrow on large screens */
@@ -175,7 +194,7 @@
                                             <span>-</span>
                                         </h2>
                                         <div class=" text ">
-                                            <p>We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven.
+                                            <!-- <p>We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven.
                                                 Je
                                                 geeft aan welke stijl je mooi vindt en laat indien mogelijk een
                                                 moodboard
@@ -183,13 +202,49 @@
                                                 doorvoeren in je tuin. Wij vertellen wat we voor je kunnen betekenen
                                                 en
                                                 meten je tuin in.
-
-
+                                            </p> -->
+                                            <p class="content1">
+                                                We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven. Je
+                                                geeft aan welke stijl je mooi vindt en laat indien mogelijk een
+                                                moodboard zien.
+                                                We kijken hoe de stijl in je woning is, zodat we deze kunnen doorvoeren
+                                                in je tuin. Wij vertellen wat we voor je kunnen betekenen en meten je
+                                                tuin in.
+                                                <span class="more-text d-none">Vervolgens gaan we aan de slag met het
+                                                    ontwerp van je tuin. Dit doen we op basis van alle input uit het
+                                                    eerste gesprek.
+                                                    We maken een offerte voor het realiseren van je droomtuin.</span>
                                             </p>
+                                            <a href="#" class="read-more-toggle btn btn-primary">Read More <span
+                                                    class="arrow">↓</span></a>
                                         </div>
                                         <div class=" circle-border">
                                             <a href="#" class="btn btn-primary">Samen aan de slag</a>
                                         </div>
+                                        <script>
+                                        $(document).ready(function() {
+                                            $('.read-more-toggle').click(function(e) {
+                                                e.preventDefault();
+                                                var moreText = $(this).prev('.content1').find(
+                                                    '.more-text');
+
+                                                // Toggle visibility of additional text
+                                                moreText.toggleClass('d-none');
+
+                                                // Toggle button text and arrow direction
+                                                if (moreText.hasClass('d-none')) {
+                                                    $(this).html(
+                                                        'Read More <span class="arrow">↓</span>');
+                                                } else {
+                                                    $(this).html(
+                                                        'Read Less <span class="arrow">↑</span>');
+                                                }
+
+                                                // Add or remove active class for arrow animation
+                                                $(this).toggleClass('active');
+                                            });
+                                        });
+                                        </script>
 
                                     </div>
 
