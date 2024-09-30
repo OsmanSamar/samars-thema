@@ -59,6 +59,34 @@
             height: 1px;
         }
     }
+
+    .ratio-custom {
+
+        --bs-aspect-ratio: calc(var(--y) / var(--x)* 100%);
+    }
+
+    .grid-7,
+    .grid-7 {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+    }
+
+    .grid-7>:first-child,
+    .grid-7>:first-child {
+        grid-area: 1 / 1 / 2 / 5;
+    }
+
+    .grid-7>:nth-child(2),
+    .grid-7>:nth-child(2) {
+        grid-area: 1 / 5 / 2 / 8;
+    }
+
+    .grid-item img {
+        object-fit: cover;
+        width: 100%;
+    }
     </style>
     <div>
         <div class="container  ">
@@ -82,28 +110,48 @@
                             </div>
                             <div class="nline"></div>
                         </div>
-                    </div>
-
-                    <div class="col-12 col-lg-7 mb-4 text-center ">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                            alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
-                    </div>
 
 
-                    <div class="image-grid col-12 d-lg-grid ">
+
                         <div class="grid-item" style="grid-row: span 2;  ">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
                                 class="object-fit-cover rounded" style="height:400px;" />
                         </div>
-                        <div class="grid-item">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
-                                class="object-fit-cover rounded" style="height:550px; width:; margin-left:; " />
+                    </div>
+
+                    <div class="col-12 col-lg-7 mb-4 text-center.grid-7 ">
+                        <div class="img-wrap">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
+                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
                         </div>
-                        <div class="grid-item">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
-                                class="object-fit-cover rounded"
-                                style="height:450px; width:330px; margin-left:115px;" />
+                        <div class="grid-7">
+                            <div class="row me-0">
+                                <div class="col-12">
+                                    <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
+                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
+                                            alt="scaled19" class="object-fit-cover rounded"
+                                            style="height:550px; width:; margin-left:; " />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ms-0">
+                                <div class="col-12">
+
+                                    <div class="grid-item ratio ratio-custom" style="--x:39;--y:53;">
+                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg"
+                                            alt="scaled5" class="object-fit-cover rounded"
+                                            style="height:450px; width:330px; margin-left:;" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
+
+                    <div class="image-grid col-12 d-lg-grid ">
+
+
+
 
                         <div class="grid-item" style="grid-row: span 2;">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
