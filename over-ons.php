@@ -2,8 +2,15 @@
 //Template Name: over ons
 ?>
 
-<main class="flex-grow-1">
+< class="flex-grow-1">
     <style>
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-size: 1600px; */
+    }
+
     .bg-img {
         position: relative;
         text-align: center;
@@ -66,14 +73,11 @@
     }
 
     .vl {
-        border-left: 1px solid white;
-        height: 237px;
-        position: absolute;
-        left: 50%;
-        margin-left: -3px;
-        top: 1722px;
+
         display: none;
     }
+
+
 
 
 
@@ -208,6 +212,7 @@
             margin-left: -3px;
             top: 1722px;
             display: flex;
+            opacity: .5;
         }
 
     }
@@ -247,14 +252,57 @@
     }
     </style>
 
+
     <div class="container">
 
-        <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
-        <span class="separator"> // </span><span class="last">Over ons</span>
+        <div class="bg-leaf">
+            <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
+                <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
+                <span class="separator"> // </span>
+                <span class="last">Over ons</span>
+            </div>
 
 
 
-        <div class="container bg-img mt-lg-auto mb-0">
+
+            <div class="container bg-img mt-lg-auto mb-0">
+
+
+                <div class="position-relative">
+                    <div class=" overlay" style=" border-radius: 20px;"></div>
+                    <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
+                        class="groentuinen" style="height:745px" />
+
+
+                    <div class="content center">
+                        <div class=" bottom-center">
+                            <h1>Expert in groen en duurzaam</h1>
+                        </div>
+                        <div class=" bottom-center" style="margin-top: ;">
+                            <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                    alt="downarrow Icon" class="downarrow-icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
+            <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
+            <span class="separator"> // </span>
+            <span class="last">Over ons</span>
+        </div> -->
+
+
+
+
+        <!-- <div class="container bg-img mt-lg-auto mb-0">
+
+
             <div class="position-relative">
                 <div class=" overlay" style=" border-radius: 20px;"></div>
                 <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
@@ -275,7 +323,7 @@
             </div>
 
 
-        </div>
+        </div> -->
 
 
 
@@ -543,7 +591,6 @@
 
 
     </div>
-
     <!-- Contact Information Section on Sm Screen -->
 
     <div>
@@ -659,6 +706,6 @@
 
 
 
-</main>
+    </main>
 
-<?php get_footer() ?>
+    <?php get_footer() ?>

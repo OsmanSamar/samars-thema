@@ -3,6 +3,13 @@
 
 <main class="flex-grow-1">
     <style>
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 1600px;
+    }
+
     .content {
         position: absolute;
         /* top: 50%; */
@@ -130,7 +137,15 @@
             height: 100%;
             border-left: 1px solid #ffffff;
             padding-right: 10px;
+            /* opacity: .5; */
         }
+
+        /* .nextline {
+            opacity: .5;
+            border: 1px solid #ffffff;
+            width: 53%;
+            display: inline-flex;
+        } */
     }
 
 
@@ -146,57 +161,78 @@
             display: block;
         }
 
+        .line3 {
+            height: 1px;
+            width: 50%;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            margin-right: 2px;
+            display: block;
+        }
+
+
 
 
         .border-left {}
     }
     </style>
-    <div class="container">
+    <div class="bg-leaf ">
 
-        <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
+        <!-- <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
             <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
             <span class="separator"> // </span>
             <span class="last">Werkwijze</span>
-        </div>
+        </div> -->
 
 
+        <div class="container">
 
-        <div class=" bg-img mt-lg-auto mb-0">
-            <!-- Removed container class from bg-img div -->
-            <div class="position-relative">
-                <div class=" overlay" style="  border-radius: 20px;"></div>
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijze.png" alt="groentuinen"
-                    class="groentuinen" style="height:745px" />
-                <div class="content center">
-                    <div class=" bottom-center">
-                        <h1>Onze Werkwijze</h1>
+            <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
+                <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
+                <span class="separator"> // </span>
+                <span class="last">Werkwijze</span>
+            </div>
 
-                    </div>
-                    <div class=" bottom-center" style=" width: ;">
-                        <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:20px;">We
-                            steken
-                            onze
-                            handen
-                            uit de mouwen voor jouw tuin. Of het nu gaat</p>
-                        <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:20px;">om
-                            tuinontwerp,
-                            tuinaanleg of het onderhoud van je tuin. Zo wordt jouw</p>
-                        <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:20px;">tuin
-                            geen muurbloempje maar een
-                            echte
-                            eyecatcher ! Weten hoe we dat aanpakken?</p>
+            <div class=" bg-img mt-lg-auto mb-0">
+                <!-- Removed container class from bg-img div -->
+                <div class="position-relative">
+                    <div class=" overlay" style="  border-radius: 20px;"></div>
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijze.png" alt="groentuinen"
+                        class="groentuinen" style="height:745px" />
+                    <div class="content center">
+                        <div class=" bottom-center">
+                            <h1>Onze Werkwijze</h1>
 
-                    </div>
+                        </div>
+                        <div class=" bottom-center" style=" width: ;">
+                            <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:20px;">We
+                                steken
+                                onze
+                                handen
+                                uit de mouwen voor jouw tuin. Of het nu gaat</p>
+                            <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:20px;">om
+                                tuinontwerp,
+                                tuinaanleg of het onderhoud van je tuin. Zo wordt jouw</p>
+                            <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:20px;">
+                                tuin
+                                geen muurbloempje maar een
+                                echte
+                                eyecatcher ! Weten hoe we dat aanpakken?</p>
 
-                    <div class=" bottom-center">
-                        <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                alt="downarrow Icon" class="downarrow-icon" />
-                        </a>
+                        </div>
+
+                        <div class=" bottom-center">
+                            <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                    alt="downarrow Icon" class="downarrow-icon" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
         <div class="text-lg-start text-center" id="content">
             <div class="container">
@@ -212,7 +248,8 @@
                                     <div class="" style="">
                                         <h2 class=" text-header">Hoe wij
                                             te werk gaan
-                                            <span style="font-weight:100; cursor:pointer;">-</span>
+                                            <span style="font-weight:100; cursor:pointer;  opacity: .5; width:20px;">-
+                                            </span>
                                         </h2>
                                         <div class=" text ">
                                             <!-- <p>We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven.
@@ -237,11 +274,10 @@
                                                     We maken een offerte voor het realiseren van je droomtuin.</span>
                                             </p>
                                             <a href="#" class="read-more-toggle btn btn-primary d-flex  d-lg-none ">
-                                                <span class="arrow ">↓</span></a>
-                                            <!-- <a>
                                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
                                                     alt="downarrow Icon" class="arrow" />
-                                            </a> -->
+                                            </a>
+
                                         </div>
                                         <div class=" circle-border">
                                             <a href="#" class="btn btn-primary">Samen aan de slag</a>
@@ -281,26 +317,27 @@
                                             alt="Ontwerptuin" class="" style="object-fit: cover; width:100% ;" />
                                     </div>
                                     <div>
-                                        <h2 class="text-header ">Ontwerp van jouw tuin <span>-</span></h2>
-                                        <div class="text ">
-                                            <p>Vervolgens gaan we aan de slag met het ontwerp van je tuin. Dit doen
-                                                we
-                                                op
-                                                basis van alle input uit het eerste gesprek. We maken een offerte
-                                                voor
-                                                het
-                                                realiseren van je droomtuin.
+                                        <div class=" d-lg-flex  align-items-center gap-3">
+                                            <h2 class="text-header   ">Wat je krijgt</h2>
+                                            <div class="line3 between d-none d-lg-inline-flex align-items-center">
+                                            </div>
 
-                                                We presenteren het ontwerp en bespreken de mogelijkheden en de
-                                                kosten
-                                                met
-                                                je. Zijn we het eens en is de offerte akkoord? Dan spreken we af
-                                                wanneer
-                                                we
-                                                voor je aan de slag gaan.
+                                        </div>
+
+                                        <div class=" text ">
+                                            <p>
+                                                Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
+                                                ontwerpen
+                                                jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
+                                                eerlijke
+                                                en
+                                                vaste prijs. Ook maken we samen afspraken over de planten in je
+                                                tuin. Zo
+                                                weet je precies waar je aan toe bent.
+
                                             </p>
 
-                                            <div class="circle-border">
+                                            <div class=" circle-border">
                                                 <a href="#" class="btn btn-primary">Bekijk onze
                                                     projecten</a>
                                             </div>
@@ -362,16 +399,23 @@
                                     </div>
 
                                     <div>
-                                        <h2 class="text-header ">Wat je krijgt <span>-</span></h2>
+                                        <h2 class="text-header ">Ontwerp van jouw tuin</h2>
                                         <div class="text ">
-                                            <p>Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
-                                                ontwerpen
-                                                jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
-                                                eerlijke
-                                                en
-                                                vaste prijs. Ook maken we samen afspraken over de planten in je
-                                                tuin. Zo
-                                                weet je precies waar je aan toe bent.
+                                            <p>Vervolgens gaan we aan de slag met het ontwerp van je tuin. Dit doen
+                                                we
+                                                op
+                                                basis van alle input uit het eerste gesprek. We maken een offerte
+                                                voor
+                                                het
+                                                realiseren van je droomtuin.
+
+                                                We presenteren het ontwerp en bespreken de mogelijkheden en de
+                                                kosten
+                                                met
+                                                je. Zijn we het eens en is de offerte akkoord? Dan spreken we af
+                                                wanneer
+                                                we
+                                                voor je aan de slag gaan.
                                             </p>
 
                                             <div class="circle-border">
