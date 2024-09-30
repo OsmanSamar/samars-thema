@@ -252,15 +252,7 @@
                                             </span>
                                         </h2>
                                         <div class=" text ">
-                                            <!-- <p>We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven.
-                                                Je
-                                                geeft aan welke stijl je mooi vindt en laat indien mogelijk een
-                                                moodboard
-                                                zien. We kijken hoe de stijl in je woning is, zodat we deze kunnen
-                                                doorvoeren in je tuin. Wij vertellen wat we voor je kunnen betekenen
-                                                en
-                                                meten je tuin in.
-                                            </p> -->
+
                                             <p class="content1">
                                                 We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven. Je
                                                 geeft aan welke stijl je mooi vindt en laat indien mogelijk een
@@ -273,12 +265,14 @@
                                                     eerste gesprek.
                                                     We maken een offerte voor het realiseren van je droomtuin.</span>
                                             </p>
-                                            <a href="#" class="read-more-toggle btn btn-primary d-flex  d-lg-none ">
+                                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
                                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
-                                                    alt="downarrow Icon" class="arrow" />
+                                                    alt="down arrow" class="arrow-icon down">
                                             </a>
 
+
                                         </div>
+
                                         <div class=" circle-border">
                                             <a href="#" class="btn btn-primary">Samen aan de slag</a>
                                         </div>
@@ -288,19 +282,22 @@
                                                 e.preventDefault();
                                                 var moreText = $(this).prev('.content1').find(
                                                     '.more-text');
+                                                var arrowIcon = $(this).find('img.arrow-icon');
 
                                                 // Toggle visibility of additional text
                                                 moreText.toggleClass('d-none');
 
-                                                // Toggle button text and arrow direction
+                                                // Toggle arrow icon
                                                 if (moreText.hasClass('d-none')) {
-                                                    $(this).html(
-                                                        'Read More <span class="arrow">↓</span>'
+                                                    arrowIcon.attr('src',
+                                                        '<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg'
                                                     );
+                                                    arrowIcon.attr('alt', 'down arrow');
                                                 } else {
-                                                    $(this).html(
-                                                        'Read Less <span class="arrow">↑</span>'
+                                                    arrowIcon.attr('src',
+                                                        '<?= esc_url(get_template_directory_uri()); ?>/images/up-arrow.svg'
                                                     );
+                                                    arrowIcon.attr('alt', 'up arrow');
                                                 }
 
                                                 // Add or remove active class for arrow animation
@@ -325,17 +322,21 @@
                                         </div>
 
                                         <div class=" text ">
-                                            <p>
+                                            <p class="content1">
                                                 Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
                                                 ontwerpen
                                                 jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
                                                 eerlijke
                                                 en
                                                 vaste prijs. Ook maken we samen afspraken over de planten in je
-                                                tuin. Zo
-                                                weet je precies waar je aan toe bent.
+                                                tuin.<span class="more-text d-none">Zo weet je precies waar je
+                                                    aan toe
+                                                    bent.</span> </p>
+                                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
+                                                    alt="down arrow" class="arrow-icon down">
+                                            </a>
 
-                                            </p>
 
                                             <div class=" circle-border">
                                                 <a href="#" class="btn btn-primary">Bekijk onze
@@ -401,7 +402,8 @@
                                     <div>
                                         <h2 class="text-header ">Ontwerp van jouw tuin</h2>
                                         <div class="text ">
-                                            <p>Vervolgens gaan we aan de slag met het ontwerp van je tuin. Dit doen
+                                            <p class="content1">Vervolgens gaan we aan de slag met het ontwerp van je
+                                                tuin. Dit doen
                                                 we
                                                 op
                                                 basis van alle input uit het eerste gesprek. We maken een offerte
@@ -412,11 +414,18 @@
                                                 We presenteren het ontwerp en bespreken de mogelijkheden en de
                                                 kosten
                                                 met
-                                                je. Zijn we het eens en is de offerte akkoord? Dan spreken we af
-                                                wanneer
-                                                we
-                                                voor je aan de slag gaan.
+                                                je.<span class="more-text d-none">Zijn we het eens en is de
+                                                    offerte akkoord? Dan spreken
+                                                    we af
+                                                    wanneer
+                                                    we
+                                                    voor je aan de slag gaan.</span>
                                             </p>
+                                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
+                                                    alt="down arrow" class="arrow-icon down">
+                                            </a>
+
 
                                             <div class="circle-border">
                                                 <a href="#" class="btn btn-secondary">Over duurzaamheid</a>
