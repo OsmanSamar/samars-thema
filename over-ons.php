@@ -2,14 +2,15 @@
 //Template Name: over ons
 ?>
 
-< class="flex-grow-1">
+<main class="flex-grow-1">
     <style>
     .bg-leaf {
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        /* background-size: 1600px; */
+        background-size: 1600px;
     }
+
 
     .bg-img {
         position: relative;
@@ -252,7 +253,7 @@
     }
     </style>
 
-
+    <div></div>
     <div class="container">
 
         <div class="bg-leaf">
@@ -706,6 +707,5 @@
 
 
 
-    </main>
-
-    <?php get_footer() ?>
+</main>
+<?php get_footer() ?>
