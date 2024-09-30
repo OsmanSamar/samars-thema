@@ -54,12 +54,25 @@
     }
 
 
-    .down {
-        display: inline-block;
+    .down1 {
+        display: none;
         transition: transform 0.3s ease;
         width: 45px;
         cursor: pointer;
+        top: 94%;
+        left: 50%;
+        transform: translate(95%, 360%);
 
+    }
+
+    .vl {
+        border-left: 1px solid white;
+        height: 237px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 1722px;
+        display: none;
     }
 
 
@@ -96,6 +109,19 @@
         .down {
             display: none;
         }
+
+
+        .down1 {
+            display: flex;
+            transition: transform 0.3s ease;
+            width: 45px;
+            cursor: pointer;
+            top: 94%;
+            left: 50%;
+            transform: translate(95%, 360%);
+
+        }
+
 
         .content {
             position: absolute;
@@ -174,6 +200,16 @@
             object-fit: cover;
         }
 
+        .vl {
+            border-left: 1px solid white;
+            height: 237px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 1722px;
+            display: flex;
+        }
+
     }
 
     .text {
@@ -246,7 +282,13 @@
 
 
         <div class="text-lg-start text-center" id="content">
+
             <div class="container">
+                <!-- Down Arrow -->
+                <a class="down1 d-lg-flex d-none mb-0" aria-label="Go to the content" href="#content">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg" alt="downarrow Icon"
+                        class="downarrow-icon" />
+                </a>
                 <div class="row">
                     <!-- Column Wrapper -->
                     <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
@@ -255,12 +297,7 @@
 
                             <!-- 1st Column -->
                             <div class="col-12 col-md-12 col-lg-5 order-2 order-lg-1 mb-4 mb-lg-0">
-                                <div class="d-flex flex-column text-center align-items-center ">
-                                    <!-- Down Arrow -->
-                                    <!-- <a class="down d-lg-flex d-none mb-0" aria-label="Go to the content"
-                                        href="#content"> -->
-
-
+                                <div class="d-flex flex-column text-center align-items-center  ">
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
                                         alt="Groenoverons" class="groenoverons" />
                                 </div>
@@ -284,11 +321,14 @@
 
                                         </p>
                                         <div class="circle-border">
-                                            <a href="#" class="btn btn-primary">kennismaken?</a>
+                                            <a href="#" class="btn btn-primary"
+                                                style="padding-left: 40px;padding-right: 40px; font-size:18px;">kennismaken?</a>
                                         </div>
                                     </div>
 
                                 </div>
+                                <!--Verticall line  -->
+                                <div class="vl"></div>
                             </div>
                         </div>
                     </div>
