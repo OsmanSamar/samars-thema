@@ -5,7 +5,8 @@
     <style>
     .content {
         position: absolute;
-        top: 50%;
+        /* top: 50%; */
+        top: 82%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -68,9 +69,8 @@
 
 
     .border-left {
-        height: 100%;
-        border-left: 1px solid #ffffff;
-        padding-right: 10px;
+        /* display: none; */
+
     }
 
 
@@ -99,6 +99,17 @@
             display: none;
         }
 
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+
+        }
+
         .content h1 {
 
             font-size: 90px;
@@ -114,8 +125,15 @@
         }
 
 
-
+        .border-left {
+            display: flex;
+            height: 100%;
+            border-left: 1px solid #ffffff;
+            padding-right: 10px;
+        }
     }
+
+
 
     @media (min-width: 768px) {
         .line2 {
@@ -128,12 +146,14 @@
             display: block;
         }
 
+
+
         .border-left {}
     }
     </style>
     <div class="container">
 
-        <div class="d-inline-block">
+        <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
             <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
             <span class="separator"> // </span>
             <span class="last">Werkwijze</span>
@@ -141,7 +161,8 @@
 
 
 
-        <div class="container bg-img mt-lg-auto mb-0">
+        <div class=" bg-img mt-lg-auto mb-0">
+            <!-- Removed container class from bg-img div -->
             <div class="position-relative">
                 <div class=" overlay" style="  border-radius: 20px;"></div>
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijze.png" alt="groentuinen"
@@ -188,10 +209,10 @@
                             <!--1st Column -->
                             <div class="col-12 col-md-12 col-lg-6    ">
                                 <div class="d-flex flex-column  text-left align-items-start gap-4 ">
-                                    <div>
-                                        <h2 class="text-header">Hoe wij
+                                    <div class="" style="">
+                                        <h2 class=" text-header">Hoe wij
                                             te werk gaan
-                                            <span>-</span>
+                                            <span style="font-weight:100; cursor:pointer;">-</span>
                                         </h2>
                                         <div class=" text ">
                                             <!-- <p>We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven.
@@ -215,8 +236,12 @@
                                                     eerste gesprek.
                                                     We maken een offerte voor het realiseren van je droomtuin.</span>
                                             </p>
-                                            <a href="#" class="read-more-toggle btn btn-primary">Read More <span
-                                                    class="arrow">↓</span></a>
+                                            <a href="#" class="read-more-toggle btn btn-primary d-flex  d-lg-none ">
+                                                <span class="arrow ">↓</span></a>
+                                            <!-- <a>
+                                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
+                                                    alt="downarrow Icon" class="arrow" />
+                                            </a> -->
                                         </div>
                                         <div class=" circle-border">
                                             <a href="#" class="btn btn-primary">Samen aan de slag</a>
@@ -234,10 +259,12 @@
                                                 // Toggle button text and arrow direction
                                                 if (moreText.hasClass('d-none')) {
                                                     $(this).html(
-                                                        'Read More <span class="arrow">↓</span>');
+                                                        'Read More <span class="arrow">↓</span>'
+                                                    );
                                                 } else {
                                                     $(this).html(
-                                                        'Read Less <span class="arrow">↑</span>');
+                                                        'Read Less <span class="arrow">↑</span>'
+                                                    );
                                                 }
 
                                                 // Add or remove active class for arrow animation
@@ -249,7 +276,7 @@
                                     </div>
 
 
-                                    <div>
+                                    <div class="">
                                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ontwerptuin.png"
                                             alt="Ontwerptuin" class="" style="object-fit: cover; width:100% ;" />
                                     </div>
@@ -288,6 +315,42 @@
                             <!-- <div class="vl  col-lg-1 order-2 d-none d-lg-flex"> </div> -->
 
                             <!-- 2nd  Column  mb-4 mb-lg-0-->
+                            <!-- <div class="border-left">
+                                <div class="col-12 col-md-12 col-lg-6  ">
+                                    <div class="d-flex flex-column text-left align-items-start gap-4">
+
+
+
+                                        <div>
+                                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
+                                                alt="Groenoverons" class="" style="object-fit: cover; width:100% ;" />
+                                        </div>
+
+                                        <div>
+                                            <h2 class="text-header ">Wat je krijgt <span>-</span></h2>
+                                            <div class="text ">
+                                                <p>Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
+                                                    ontwerpen
+                                                    jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
+                                                    eerlijke
+                                                    en
+                                                    vaste prijs. Ook maken we samen afspraken over de planten in je
+                                                    tuin. Zo
+                                                    weet je precies waar je aan toe bent.
+                                                </p>
+
+                                                <div class="circle-border">
+                                                    <a href="#" class="btn btn-secondary">Over duurzaamheid</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijzetuin.png"
+                                                alt="Werkwijzetuin" class="" style="object-fit: cover; width:100% ;" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
                             <div class="col-12 col-md-12 col-lg-6 border-left  ">
                                 <div class="d-flex flex-column text-left align-items-start gap-4">
 
@@ -359,7 +422,7 @@
 
                     <!-- Testimonials Section on Small Screen -->
                     <div class="row testimonials-section-sm d-md-none text-center2">
-                        <div class="col-sm-12 col-lg-4 testimonial">
+                        <div class="col-12   col-lg-4 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                                 class="testimonial-img" />
                             <h1>Vakkundig maatwerk</h1>
@@ -367,14 +430,14 @@
                                     gemaakt</span></p>
 
                         </div>
-                        <div class="col-sm-12 col-lg-4 testimonial">
+                        <div class="col-sm-12  col-lg-4 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
                                 class="testimonial-img w-84 h-126" />
                             <h1>Passie voor groen</h1>
                             <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
                                     natuur</span></p>
                         </div>
-                        <div class="col-sm-12 col-lg-4 testimonial">
+                        <div class="col-sm-12  col-lg-4 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
                                 class="testimonial-img" />
                             <h1>Écht out of the box</h1>
@@ -391,21 +454,21 @@
 
                 <!-- Testimonials Section on Large Screen -->
                 <div class="row testimonials-section d-none d-md-flex">
-                    <div class="col-sm-12 col-lg-4 testimonial">
+                    <div class="col-sm-12  col-lg-4 testimonial">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                             class="testimonial-img  w-84 h-126" />
                         <h1>Vakkundig maatwerk</h1>
                         <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
                                 gemaakt</span></p>
                     </div>
-                    <div class="col-sm-12 col-lg-4 testimonial">
+                    <div class="col-sm-12  col-lg-4 testimonial">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
                             class="testimonial-img  w-84 h-126" />
                         <h1>Passie voor groen</h1>
                         <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
                                 natuur</span></p>
                     </div>
-                    <div class="col-sm-12 col-lg-4 testimonial">
+                    <div class="col-sm-12  col-lg-4 testimonial">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
                             class="testimonial-img  " />
                         <h1>Écht out of the box</h1>

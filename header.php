@@ -115,10 +115,10 @@
                         <a class="nav-link" href="<?= esc_url(home_url('/werkwijze')); ?>">Werkwijze</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= esc_url(home_url('/tuinsoorten')); ?>">Tuinsoorten</a>
+                        <a class="nav-link" href="<?= esc_url(home_url('/over-ons')); ?>">Over ons</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= esc_url(home_url('/over-ons')); ?>">Over ons</a>
+                        <a class="nav-link" href="<?= esc_url(home_url('/tuinsoorten')); ?>">Tuinsoorten</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= esc_url(home_url('/projecten')); ?>">Projecten</a>
