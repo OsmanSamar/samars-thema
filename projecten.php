@@ -71,11 +71,8 @@
 
             <!-- First Container -->
             <div class="container d-lg-grid d-none  " style="margin-top: 300px">
-
-                <!-- 1st Row: Text and Image on LG,  -->
-
                 <div class="row ">
-                    <!-- 1st Row: Text and Image on LG -->
+
                     <div class="col-12 col-lg-5 mb-4 ">
                         <div class="text-header ">Projecten</div>
                         <div class="text d-lg-flex flex-row  align-items-center">
@@ -92,7 +89,7 @@
                             alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
                     </div>
 
-                    <!-- Using CSS grid for layout control -->
+
                     <div class="image-grid col-12 d-lg-grid ">
                         <div class="grid-item" style="grid-row: span 2;  ">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
@@ -129,96 +126,149 @@
 
 
             </div>
-            <!-- 1 -->
-            <div class="container">
 
-                <!-- Swiper On Small Screen -->
-                <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
-                                class="object-fit-cover rounded" style=" " />
-                        </div>
 
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </div>
             <!-- 2 -->
-
-            <div class="container">
-
-                <!-- Swiper On Small Screen -->
-                <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
-                                class="object-fit-cover rounded" style="  " />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
-                                class="object-fit-cover rounded" style="" />
+            <!-- <div class="row">
+                <div class="col-12 col-lg-5 mb-4">
+                    <div class="text-header">Projecten </div>
+                    <div class="text">
+                        <div class="circle-border">
+                            <a href="#" class="btn btn-primary"
+                                style="padding-left: 40px;padding-right: 40px; font-size:18px;">kennismaken?</a>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="col-12 col-lg-7 mb-4 text-center d-none d-md-none d-lg-flex">
+                    <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
+                        alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
                 </div>
 
-            </div>
-            <div class="bg-leaf">
-
-                <div>
-                    <p>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
-
-
+                <div class="col-12 col-lg-5 mb-4 text-center d-none  d-none d-md-none d-lg-flex ">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
+                        class="object-fit-cover rounded  " style="height:400px; margin-bottom:60px;" />
+                </div>
+                <div class="col-12 col-lg-4 mb-4 text-center d-none  d-none d-md-none d-lg-flex">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt=" scaled19"
+                        class="object-fit-cover rounded" style="height:600px;" />
+                </div>
+                <div class=" col-12 col-lg-3 mb-4 text-center d-none d-none d-md-none d-lg-flex">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
+                        class="object-fit-cover rounded" style="height:400px;" />
                 </div>
 
-            </div>
+                <div class="col-12 col-lg-5 mb-4 text-center d-none  d-none d-md-none d-lg-flex ">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled13"
+                        class="object-fit-cover rounded" style="height:800px;" />
+                </div>
+                <div class="col-12 col-lg-4 mb-4 text-center d-none  d-none d-md-none d-lg-flex">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt=" scaled65"
+                        class="object-fit-cover rounded" style="height:300px;" />
+                </div>
+                <div class=" col-12 col-lg-3 mb-4 text-center d-none d-none d-md-none d-lg-flex">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled51"
+                        class="object-fit-cover rounded" style="height:400px;" />
+                </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div> -->
 
 
         </div>
+
+
+
+
+    </div>
+    <!-- 1 -->
+    <div class="container">
+
+        <!-- Swiper On Small Screen -->
+        <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+            style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
+                        alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
+                        class="object-fit-cover rounded" style="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
+                        class="object-fit-cover rounded" style=" " />
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <!-- 2 -->
+
+    <div class="container">
+
+        <!-- Swiper On Small Screen -->
+        <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+            style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
+                        class="object-fit-cover rounded" style="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
+                        class="object-fit-cover rounded" style="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
+                        class="object-fit-cover rounded" style="  " />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
+                        class="object-fit-cover rounded" style="" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <div class="bg-leaf">
+
+        <div>
+            <p>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
     </div>
 
     <!-- Swiper JS -->
