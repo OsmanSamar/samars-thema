@@ -166,9 +166,7 @@
             width: 50%;
             background-color: #ffffff;
             color: #ffffff;
-            position: relative;
-            margin-right: 2px;
-            display: block;
+
         }
 
 
@@ -314,9 +312,11 @@
                                             alt="Ontwerptuin" class="" style="object-fit: cover; width:100% ;" />
                                     </div>
                                     <div>
-                                        <div class=" d-lg-flex  align-items-center gap-3">
+
+
+                                        <div class=" d-lg-flex flex-row align-items-center gap-3">
                                             <h2 class="text-header   ">Wat je krijgt</h2>
-                                            <div class="line3 between d-none d-lg-inline-flex align-items-center">
+                                            <div class="line3 between d-none d-lg-inline-flex ">
                                             </div>
 
                                         </div>
