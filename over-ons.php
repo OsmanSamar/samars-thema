@@ -25,6 +25,13 @@
 
     }
 
+    .nline {
+        border: 1px solid #ffffff;
+        opacity: 0.3;
+        width: 50%;
+        height: 1px;
+    }
+
 
 
     .groentuinen {
@@ -369,14 +376,29 @@
                                             passie voor het vak. Peter is tuinontwerper en all
 
                                         </p>
-                                        <div class="circle-border">
-                                            <a href="#" class="btn btn-primary"
-                                                style="padding-left: 40px;padding-right: 40px; font-size:18px;">kennismaken?</a>
+                                        <div class=" d-none d-lg-flex">
+                                            <div class="circle-border">
+                                                <a href="#" class="btn btn-primary"
+                                                    style="padding-left: 40px;padding-right: 40px; font-size:18px;">kennismaken?</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="text d-lg-none d-flex flex-row  align-items-center">
+                                            <div class="circle-border">
+                                                <a href="#" class="btn btn-primary"
+                                                    style="padding-left:;padding-right: ; font-size:18px;">kennismaken?</a>
+                                            </div>
+                                            <div class="nline"></div>
                                         </div>
                                     </div>
 
+
                                 </div>
-                                <!--Verticall line  -->
+
+
+
+
+                                <!--Verticall line On Lg Screen  -->
                                 <div class="vl"></div>
                             </div>
                         </div>
