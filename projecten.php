@@ -3,6 +3,24 @@
 
 <main class="flex-grow-1">
     <style>
+    .line-top {
+
+        border: 1px solid #ffffff;
+        height: 1px;
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    .vlsm {
+        margin: 20px;
+        border-left: 1px solid white;
+        height: 80px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 250px;
+    }
+
     .bg-leaf {
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
@@ -26,10 +44,6 @@
         /* Spans second image across 2 rows */
     }
 
-    /* .grid-item:last-child {
-        align-self: start;
-        Moves the last image to the top
-    } */
 
     .lin3 {
         border: 1px solid #ffffff;
@@ -41,7 +55,7 @@
 
     .text-header {
         color: #F8F4EA;
-        font-size: 90px;
+        font-size: 60px;
     }
 
 
@@ -103,7 +117,7 @@
 
 
             <!-- First Container -->
-            <div class="container d-lg-grid d-none  " style="margin-top: 300px">
+            <div class="container d-lg-grid d-none  " style="margin-top: 140px">
                 <div class="row ">
 
                     <div class="col-12 col-lg-5 mb-4 ">
@@ -167,6 +181,66 @@
                             </div>
                         </div>
                     </div>
+                    <!-- New  3Lines -->
+
+                    <!-- <div class="col-12 col-lg-4 mb-4  ">
+
+                        <div class="row me-0">
+                            <div class="col-12">
+                                <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
+                                        alt="scaled19" class="object-fit-cover rounded"
+                                        style="height:; width:; margin-left:; " />
+                                </div>
+                                <div class="grid-item  ratio ratio-custom mt-4" style="--x:53;--y:67;">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
+                                        alt="scaled19" class="object-fit-cover rounded"
+                                        style="height:; width:; margin-left:; " />
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-12 col-lg-4 mb-4  ">
+
+                        <div class="row me-0">
+                            <div class="col-12">
+                                <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
+                                        alt="scaled19" class="object-fit-cover rounded"
+                                        style="height:; width:; margin-left:; " />
+                                </div>
+                                <div class="grid-item  ratio ratio-custom mt-4" style="--x:53;--y:67;">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
+                                        alt="scaled19" class="object-fit-cover rounded"
+                                        style="height:; width:; margin-left:; " />
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="col-12 col-lg-4 mb-4  ">
+
+                        <div class="row me-0">
+                            <div class="col-12">
+                                <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
+                                        alt="scaled19" class="object-fit-cover rounded"
+                                        style="height:; width:; margin-left:; " />
+                                </div>
+                                <div class="grid-item  ratio ratio-custom mt-4" style="--x:53;--y:67;">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
+                                        alt="scaled19" class="object-fit-cover rounded"
+                                        style="height:; width:; margin-left:; " />
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div> -->
 
 
 
@@ -181,6 +255,20 @@
 
 
 
+    </div>
+    <div class="container d-flex d-lg-none  align-items-center">
+        <div class="col-12 text-center">
+            <div class="text-header ">Projecten</div>
+
+            <div class="vlsm"></div>
+            <div class="text" style="margin-top:120px;">
+                <div class="circle-border">
+                    <a href="#" class="btn btn-primary"
+                        style="padding-left: 40px;padding-right: 40px; font-size:18px;">kennismaken?</a>
+                </div>
+
+            </div>
+        </div>
     </div>
     <!-- The first swiper  -->
     <div class="container">
@@ -268,6 +356,14 @@
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
                         class="object-fit-cover rounded" style="" />
                 </div>
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
+                        alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
+                        class="object-fit-cover rounded" style="" />
+                </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -279,14 +375,99 @@
 
     <div class="bg-leaf">
 
-        <div>
-            <p>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+        <!--Contact Opnemen Section  -->
 
+        <div class="container d-none d-lg-block" style="margin-top:60px;">
+            <div class="bottom-text">
+                <div class="row">
+                    <div class="col-lg-6  position-relative fadeIn visible" data-side="left">
+                        <div class="grid-bottom">
 
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
+                                alt="Groenoverons" class="object-fit-cover rounded" style="height:500px;" />
+
+                            <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
+                                src="<?= esc_url(get_template_directory_uri()); ?>/images/41scaled.jpg" alt="">
+                            <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
+                                src="<?= esc_url(get_template_directory_uri()); ?>/images/43scaled.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 fadeIn visible" data-side="right">
+                        <h2>Enthousiast?<br> Neem contact op!</h2>
+                        <div class="col-lg-9">
+                            <div class="text">
+                                <p><span style="font-weight: 400;">Ook zo’n groene tuin? Laat dat maar aan
+                                        GROENtuinen
+                                        over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
+                            <div class="circle-border">
+                                <a class="btn btn-primary " href="/contact" style="padding: 10px 20px;">Neem contact
+                                    op
+                                </a>
+                            </div>
+                            <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
+
+    <!-- Contact Information Section on Sm Screen -->
+
+    <div>
+
+        <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
+            class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
+            <div class="line-top"></div>
+
+
+            <div class="col-12 col-lg-4  text-left" style="margin-top:20px; ">
+                <h2 style="font-size:36px;
+                padding-bottom: 39px; 
+                color: #fff;
+                line-height: 55px;">
+                    Enthousiast? Neem contact
+                    op!
+                </h2>
+                <div class="col-lg-9">
+                    <div class="">
+                        <p><span style="font-weight: 400; ;">Ook zo’n groene tuin? Laat dat maar aan
+                                GROENtuinen
+                                over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column  justify-content-start  "
+                style="margin-bottom:70px">
+                <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
+                    <div class="circle-border">
+                        <a class="btn btn-primary " href="/contact" style="padding: 10px 40px; font-size:;">Neem
+                            contact
+                            op
+                        </a>
+                    </div>
+                    <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
+                style="margin-bottom:-50px">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
+                    class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
+            </div>
+        </div>
+    </div>
 
 
 
