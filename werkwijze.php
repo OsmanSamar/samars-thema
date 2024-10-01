@@ -272,7 +272,8 @@
                                         </div>
 
                                         <div class=" circle-border">
-                                            <a href="#" class="btn btn-primary">Samen aan de slag</a>
+                                            <a href="<?= esc_url(home_url('/contact')); ?>"
+                                                class="btn btn-primary">Samen aan de slag</a>
                                         </div>
                                         <script>
                                         $(document).ready(function() {
@@ -339,7 +340,8 @@
 
 
                                             <div class=" circle-border">
-                                                <a href="#" class="btn btn-primary">Bekijk onze
+                                                <a href="<?= esc_url(home_url('/projecten')); ?>"
+                                                    class="btn btn-primary">Bekijk onze
                                                     projecten</a>
                                             </div>
                                         </div>

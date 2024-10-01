@@ -813,6 +813,12 @@ html {
   padding: 8px 20px;
   border-bottom: 1px solid #fff;
 }
+// Remove the border-bottom from the last child
+
+.navbar-nav .dropdown-item:last-child{
+ 
+  border-bottom: none;
+}
 
 .navbar-nav .dropdown-item:hover {
   color: #334b3b;

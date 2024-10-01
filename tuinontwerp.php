@@ -120,6 +120,8 @@
             <!-- Breadcrumb Links -->
             <div class="d-inline-block"><a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span
                     class="separator"> // </span>
+                <span class="last">Onze diensten</span>
+                <span class="separator"> // </span>
                 <span class="last">Tuinontwerp</span>
             </div>
         </div>

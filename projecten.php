@@ -140,8 +140,8 @@
                         <div class="text-header ">Projecten</div>
                         <div class="text d-lg-flex flex-row  align-items-center">
                             <div class="circle-border">
-                                <a href="#" class="btn btn-primary"
-                                    style="padding-left: 40px;padding-right: 40px; font-size:18px;">kennismaken?</a>
+                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
+                                    style="padding-left: 40px;padding-right: 40px; font-size:18px;">Tuin op maat</a>
                             </div>
                             <div class="nline"></div>
                         </div>
@@ -279,8 +279,8 @@
             <div class="vlsm"></div>
             <div class="text" style="margin-top:120px;">
                 <div class="circle-border">
-                    <a href="#" class="btn btn-primary"
-                        style="padding-left: 40px;padding-right: 40px; font-size:18px;">kennismaken?</a>
+                    <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
+                        style="padding-left: 40px;padding-right: 40px; font-size:18px;">Tuin op maat</a>
                 </div>
 
             </div>

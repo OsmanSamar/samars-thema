@@ -18,26 +18,26 @@
 
 
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-            var whatsappIcon = document.querySelector('.whatsapp-fixed');
-            whatsappIcon.classList.add('open'); // Trigger the slide-in effect
-
-            setTimeout(function() {
-                whatsappIcon.classList.add('adjust-position');
-            }, 500); // Delay to adjust position after the animation
-        }, 900); // Initial delay before slide-in
-
-        // Close button functionality
-        var closeButton = document.querySelector('.close-button');
-        if (closeButton) {
-            closeButton.addEventListener('click', function() {
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
                 var whatsappIcon = document.querySelector('.whatsapp-fixed');
-                whatsappIcon.classList.remove('open', 'adjust-position');
-                whatsappIcon.classList.add('hide'); // Hide the icon after closing
-            });
-        }
-    });
+                whatsappIcon.classList.add('open'); // Trigger the slide-in effect
+
+                setTimeout(function () {
+                    whatsappIcon.classList.add('adjust-position');
+                }, 500); // Delay to adjust position after the animation
+            }, 900); // Initial delay before slide-in
+
+            // Close button functionality
+            var closeButton = document.querySelector('.close-button');
+            if (closeButton) {
+                closeButton.addEventListener('click', function () {
+                    var whatsappIcon = document.querySelector('.whatsapp-fixed');
+                    whatsappIcon.classList.remove('open', 'adjust-position');
+                    whatsappIcon.classList.add('hide'); // Hide the icon after closing
+                });
+            }
+        });
     </script>
 
 
@@ -45,13 +45,13 @@
     <!-- jQuery for dropdown menu -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $('.nav-item.dropdown').hover(function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-        }, function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+        $(document).ready(function () {
+            $('.nav-item.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+            });
         });
-    });
     </script>
 
 
@@ -95,18 +95,18 @@
                             Onze diensten
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="<?= esc_url(home_url('/doen wij')); ?>">Dit
+                            <li><a class="dropdown-item" href="<?= esc_url(home_url('/dit-doen-wij')); ?>">Dit
                                     doen
                                     wij</a></li>
                             <li><a class="dropdown-item"
                                     href="<?= esc_url(home_url('/tuinontwerp')); ?>">Tuinontwerp</a>
                             </li>
-                            <li><a class="dropdown-item" href="<?= esc_url(home_url('/page-slug-3')); ?>">Tuinaanleg</a>
+                            <li><a class="dropdown-item" href="<?= esc_url(home_url('/tuinaanleg')); ?>">Tuinaanleg</a>
                             </li>
                             <li><a class="dropdown-item"
-                                    href="<?= esc_url(home_url('/page-slug-4')); ?>">Tuinderhoud</a>
+                                    href="<?= esc_url(home_url('/tuinderhoud')); ?>">Tuinderhoud</a>
                             </li>
-                            <li><a class="dropdown-item" href="<?= esc_url(home_url('/page-slug-5')); ?>">Advies</a>
+                            <li><a class="dropdown-item" href="<?= esc_url(home_url('/advies')); ?>">Advies</a>
                             </li>
 
                         </ul>

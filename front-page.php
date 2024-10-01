@@ -88,7 +88,7 @@
                         <p style="font-size: 15px;">Met een tuin van GROENTuin maak je jouw tuin uniek. Speciaal
                             ontworpen,aangelegd en onderhouden voor jou.</p>
                         <div class="circle-border">
-                            <a href="#" class="btn btn-secondary">Projecten</a>
+                            <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-secondary">Projecten</a>
                         </div>
                     </div>
 
@@ -248,109 +248,109 @@
 
 
     <style>
-    /* Hide the CircleType by default */
-    #demo3 {
-        display: none;
-    }
-
-    /* Show the CircleType on devices with a width of 1024px and up */
-    @media (min-width: 1024px) {
+        /* Hide the CircleType by default */
         #demo3 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: none;
+        }
+
+        /* Show the CircleType on devices with a width of 1024px and up */
+        @media (min-width: 1024px) {
+            #demo3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+                width: 200px;
+                overflow: hidden;
+                position: absolute;
+                bottom: -129px;
+                /* bottom: -50px; */
+                transform: translate(50%, 50%);
+                /* position: fixed; */
+                right: 0;
+                /* right: 0; */
+                /* Position it at the right edge */
+                transform: translateY(-50%);
+                color: #fff;
+                border-radius: 50%;
+                font-size: 12px;
+                letter-spacing: 3px;
+                z-index: 1000;
+
+            }
+        }
+
+        #demo3 span {
+            position: absolute;
+            left: 50%;
+            transform-origin: 0 100px;
+
+        }
+
+        @keyframes rotating {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .text-circle {
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-name: rotating;
+            animation-timing-function: linear;
             height: 200px;
             width: 200px;
-            overflow: hidden;
-            position: absolute;
-            bottom: -129px;
-            /* bottom: -50px; */
-            transform: translate(50%, 50%);
-            /* position: fixed; */
-            right: 0;
-            /* right: 0; */
-            /* Position it at the right edge */
-            transform: translateY(-50%);
-            color: #fff;
-            border-radius: 50%;
-            font-size: 12px;
-            letter-spacing: 3px;
-            z-index: 1000;
+            overflow: visible;
 
         }
-    }
-
-    #demo3 span {
-        position: absolute;
-        left: 50%;
-        transform-origin: 0 100px;
-
-    }
-
-    @keyframes rotating {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    .text-circle {
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-        animation-name: rotating;
-        animation-timing-function: linear;
-        height: 200px;
-        width: 200px;
-        overflow: visible;
-
-    }
 
 
 
-    /* Hide the text and button container by default */
-    .slider-text-button-container {
-        display: none;
-    }
-
-    /* Show text and button for devices less than 1024px */
-    @media (max-width: 1023px) {
-
-
+        /* Hide the text and button container by default */
         .slider-text-button-container {
-            display: flex;
-            position: absolute;
-            bottom: 20px;
-            /* Position from bottom */
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
-            /* Add padding from edges */
-            box-sizing: border-box;
-            z-index: 1000;
+            display: none;
         }
-    }
+
+        /* Show text and button for devices less than 1024px */
+        @media (max-width: 1023px) {
+
+
+            .slider-text-button-container {
+                display: flex;
+                position: absolute;
+                bottom: 20px;
+                /* Position from bottom */
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;
+                /* Add padding from edges */
+                box-sizing: border-box;
+                z-index: 1000;
+            }
+        }
 
 
 
-    /* Text styling */
-    .slider-text-button-container .text {
-        flex: 1;
-        /* Take up available space */
-        text-align: left;
+        /* Text styling */
+        .slider-text-button-container .text {
+            flex: 1;
+            /* Take up available space */
+            text-align: left;
 
-    }
+        }
 
-    /* Button styling */
-    .slider-text-button-container button {
-        flex: 0;
-        /* Do not grow */
-        text-align: right;
+        /* Button styling */
+        .slider-text-button-container button {
+            flex: 0;
+            /* Do not grow */
+            text-align: right;
 
-    }
+        }
     </style>
 
 
@@ -361,17 +361,17 @@
         <a href="/projecten" id="demo3" class="circle text-circle">
             <div style="position: relative; height: 200px;">
                 <?php
-        $text = '- Bekijk alle projecten -- Bekijk alle projecten -- Bekijk alle projecten -';
-        $characters = str_split($text);
-        $totalCharacters = count($characters);
-        $rotationStep = 360 / $totalCharacters;
+                $text = '- Bekijk alle projecten -- Bekijk alle projecten -- Bekijk alle projecten -';
+                $characters = str_split($text);
+                $totalCharacters = count($characters);
+                $rotationStep = 360 / $totalCharacters;
 
 
-        foreach ($characters as $index => $character) {
-            $rotationAngle = $rotationStep * $index;
-            echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
-        }
-        ?>
+                foreach ($characters as $index => $character) {
+                    $rotationAngle = $rotationStep * $index;
+                    echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
+                }
+                ?>
             </div>
         </a>
 
@@ -432,65 +432,65 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper", {
 
-        // slidesPerView: 2.5,
+            // slidesPerView: 2.5,
 
-        slidesPerView: 1.2,
-        centeredSlides: true,
-        spaceBetween: 5,
-        pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            992: {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            spaceBetween: 5,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                992: {
 
-                slidesPerView: 3.5,
+                    slidesPerView: 3.5,
+                }
             }
-        }
-    });
+        });
 
-    var appendNumber = 4;
-    var prependNumber = 1;
-    document
-        .querySelector(".prepend-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-            ]);
-        });
-    document
-        .querySelector(".prepend-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-            ]);
-        });
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                ]);
+            });
     </script>
 
 

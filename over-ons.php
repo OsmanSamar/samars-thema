@@ -380,14 +380,15 @@
                                         </p>
                                         <div class=" d-none d-lg-flex">
                                             <div class="circle-border">
-                                                <a href="#" class="btn btn-primary"
-                                                    style="padding-left: 40px;padding-right: 40px; font-size:18px;">kennismaken?</a>
+                                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
+                                                    style="padding-left: 40px;padding-right: 40px; font-size:18px;">
+                                                    kennismaken?</a>
                                             </div>
                                         </div>
 
                                         <div class="text d-lg-none d-flex flex-row  align-items-center">
                                             <div class="circle-border">
-                                                <a href="#" class="btn btn-primary"
+                                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
                                                     style="padding-left:;padding-right: ; font-size:18px;">kennismaken?</a>
                                             </div>
                                             <div class="nline"></div>
