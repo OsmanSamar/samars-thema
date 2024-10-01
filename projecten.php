@@ -3,6 +3,22 @@
 
 <main class="flex-grow-1">
     <style>
+    /* .swiper-container {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+    } */
+
+    /* .swiper-container .swiper-pagination {
+        bottom: -50px !important;
+
+    }
+
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    } */
+
     .line-top {
 
         border: 1px solid #ffffff;
@@ -274,27 +290,33 @@
     <div class="container">
 
         <!-- Swiper On Small Screen -->
-        <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-            style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                        alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+        <div>
+            <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
+                            alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
+                            class="object-fit-cover rounded" style="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
+                            class="object-fit-cover rounded" style=" " />
+                    </div>
+
                 </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
-                        class="object-fit-cover rounded" style="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
-                        class="object-fit-cover rounded" style=" " />
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
 
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+
+
         </div>
+
 
     </div>
     <!-- The second swiper -->
@@ -336,39 +358,45 @@
     <div class="container">
 
         <!-- Swiper On Small Screen -->
-        <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-            style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-            <div class="swiper-wrapper">
+        <div>
+            <div #swiperRef="" class=" swiper mySwiper smrow order-2 projecten-slider d-flex d-md-flex d-lg-none"
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
-                        class="object-fit-cover rounded" style="" />
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
+                            class="object-fit-cover rounded" style="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
+                            class="object-fit-cover rounded" style="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
+                            class="object-fit-cover rounded" style="  " />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
+                            class="object-fit-cover rounded" style="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
+                            alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
+                            class="object-fit-cover rounded" style="" />
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
-                        class="object-fit-cover rounded" style="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
-                        class="object-fit-cover rounded" style="  " />
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
-                        class="object-fit-cover rounded" style="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                        alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
-                        class="object-fit-cover rounded" style="" />
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+
         </div>
+
 
     </div>
 

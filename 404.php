@@ -3,36 +3,36 @@
 
 <main id="page" class="404">
     <style>
-        .img-container {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
+    .img-container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
 
-        .top {
-            position: absolute;
-            top: 240px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 90px;
-        }
+    .top {
+        position: absolute;
+        top: 240px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 90px;
+    }
 
 
 
-        .centered {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 60px;
-        }
+    .centered {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+    }
 
-        .bottom {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+    .bottom {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     </style>
     <div class="container">
         <!-- <h1>404 - Pagina niet gevonden</h1>
@@ -49,7 +49,7 @@
         <div class="d-flex clo-12 col-lg-12 align-items-center justify-content-center img-container">
 
 
-            <div class="d-flex flex-column text-center align-items-center  ">
+            <div class="  ">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/404.svg" alt="Groenoverons"
                     class="groenoverons" />
 
