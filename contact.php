@@ -141,7 +141,7 @@
     <div class="container">
 
 
-        <div class="d-inline-block">
+        <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
             <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
             <span class="separator"> // </span>
             <span class="last">Contact</span>
@@ -149,9 +149,9 @@
 
         <div class="container bg-img mt-lg-auto mb-0">
             <div class="position-relative">
-                <div class=" overlay"></div>
+                <div class=" overlay" style=" border-radius: 20px;"></div>
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groentuinen.png" alt="groentuinen"
-                    style="height:690px" />
+                    style="height:690px;  object-fit: cover; border-radius: 20px;" />
                 <div class="content center">
                     <div class="col-12 col-lg-7 bottom-center">
 

@@ -38,6 +38,8 @@
         display: block;
         object-fit: cover;
         border-radius: 20px;
+        /* width: 100%;
+        height: auto; */
     }
 
     .content {
@@ -218,7 +220,7 @@
             position: absolute;
             left: 50%;
             margin-left: -3px;
-            top: 1722px;
+            top: 1590px;
             display: flex;
             opacity: .5;
         }
@@ -279,7 +281,7 @@
                 <div class="position-relative">
                     <div class=" overlay" style=" border-radius: 20px;"></div>
                     <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
-                        class="groentuinen" style="height:745px" />
+                        class=groentuinen style=" height:566px; width:;" />
 
 
                     <div class="content center">
@@ -394,9 +396,6 @@
 
 
                                 </div>
-
-
-
 
                                 <!--Verticall line On Lg Screen  -->
                                 <div class="vl"></div>
