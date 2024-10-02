@@ -8,6 +8,14 @@
 
     <!-- Hero Section -->
     <div class="container mt-5">
+        <div style="   
+     color: #fff;
+    min-height: 100vh;
+    padding-bottom: 300px;
+    padding-top: 150px; ">
+
+        </div>
+
         <section class="hero">
             <div class="hero-content">
                 <div class="col-12  col-lg-12  pe-0 pe-lg-5">
@@ -58,6 +66,7 @@
 
             </div>
         </section>
+
     </div>
 
     <!-- WhatsApp Icon with fixed position -->
