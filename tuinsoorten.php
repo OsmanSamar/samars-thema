@@ -4,11 +4,21 @@
 <main class="flex-grow-1">
     <style>
     /*First Swiper Buttons  */
+    .header {
+        margin-bottom: 60px;
+        color: #FFFFFF;
+        opacity: 1;
+        font-family: 'Henderson Sans-basic', sans-serif;
+        letter-spacing: 5px;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 60px;
+    }
 
     .swiper1 {
         width: 100%;
         /* height: 300px; */
-        margin: 20px auto;
+        /* margin: 20px auto; */
     }
 
     .swiper1 {
@@ -27,7 +37,7 @@
 
 
 
-    /*  */
+    /*Img Swiper  */
 
     .swiper-container {
         position: relative;
@@ -43,6 +53,33 @@
     .swiper-container .swiper-pagination-bullet {
         width: 15px;
         height: 15px;
+    }
+
+
+
+
+
+    .text-header {
+        margin-bottom: 30px;
+        color: #FFFFFF;
+        opacity: 1;
+        font-family: 'Henderson Sans-basic', sans-serif;
+        letter-spacing: 2px;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 60px;
+
+    }
+
+    .text {
+        margin-bottom: 35px;
+        font-size: 18px;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        font-weight: 300;
+        line-height: 40px;
+
     }
 
     @media (min-width: 992px) {
@@ -126,21 +163,38 @@
 
         }
 
-        .text-header {
+        .header {
             margin-bottom: 60px;
-            font-size: 40px;
-            letter-spacing: 0px;
             color: #FFFFFF;
             opacity: 1;
+            font-family: 'Henderson Sans-basic', sans-serif;
+            letter-spacing: 5px;
+            font-size: 125px;
+            font-weight: 600;
+            line-height: 60px;
+            margin-top: 60px;
+        }
+
+        .text-header {
+            margin-bottom: 60px;
+            color: #FFFFFF;
+            opacity: 1;
+            font-family: 'Henderson Sans-basic', sans-serif;
+            letter-spacing: 5px;
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 60px;
 
         }
 
         .text {
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             font-size: 20px;
             letter-spacing: 2px;
             color: #FFFFFF;
             opacity: 1;
+            font-weight: 400;
+            line-height: 40px;
 
         }
 
@@ -148,6 +202,7 @@
             border-left: 1px #FFFFFF solid;
             height: 440px;
             opacity: 0.5;
+
         }
     }
 
@@ -176,60 +231,81 @@
     </style>
     <div class="bg-leaf">
         <div class="container">
-            <div class=" d-flex flex-column text-center my-4 ">
-                <h1 class=" mb-3">Tuinsoorten</h1>
-                <!-- Breadcrumb Links -->
+            <div class=" d-flex flex-column text-center " style="margin-top:80px;">
+
+
                 <div class="d-inline-block"><a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span
-                        class="separator"> // </span>
-                    <span class="last">Tuinsoorten</span>
+                        class="separator">
+                        // </span>
+                    <span class="" style="font-size:18px;">Tuinsoorten</span>
                 </div>
+                <h1 class="header ">Tuinsoorten</h1>
+                <!-- Breadcrumb Links -->
+
             </div>
 
             <!-- Swiper -->
-            <div>
-                <div class="position-relative d-flex align-items-center justify-content-between">
+            <div style="margin-top:160px;">
+                <div class="position-relative d-flex align-items-center justify-content-center ">
                     <!-- Swiper Button Prev -->
-                    <div class="swiper-button-prev" style="--swiper-navigation-color: #ffffff;"></div>
+                    <div class="swiper-button-prev" style="--swiper-navigation-color: #ffffff; ">
+                    </div>
 
                     <!-- Swiper Slides Container -->
-                    <div #swiperRef class=" swiper1 mySwiper1 smrow order-2 projecten-slider"
+                    <div #swiperRef class=" swiper1 mySwiper1 "
                         style="--swiper-navigation-color: #ffffff; --swiper-pagination-color: #f5a287; flex-grow: 1;">
                         <div class="swiper-wrapper">
 
-                            <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary"
-                                        style="padding:10px 40px; font-size:20px;">Ontdek
+                            <div class="swiper-slide" style="">
+                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                   padding: 18px 40px; font-size:20px;  
+                                        font-family: 'Henderson Sans-basic', sans-serif; 
+                                        letter-spacing:1px;">Ontdek
                                         landelijke
                                         tuinen</a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary"
-                                        style="padding:10px 40px;font-size:20px; ">Ontdek Moderne
+                            <div class="swiper-slide" style="">
+                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                   padding: 18px 40px; font-size:20px;
+                                        font-family: 'Henderson Sans-basic', sans-serif;
+                                         letter-spacing:1px; ">Ontdek
+                                        Moderne
                                         tuinen</a>
                                 </div>
                             </div>
-                            <div class=" swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary"
-                                        style="padding:10px 40px;font-size:20px;">Ontdek ecologische
+                            <div class=" swiper-slide" style="">
+                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                   padding: 18px 40px; font-size:20px;
+                                        letter-spacing:1px;">Ontdek
+                                        ecologische
                                         tuinen</a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary"
-                                        style="padding:10px 40px;font-size:20px;">Ontdek ecologische
+                            <div class="swiper-slide" style="">
+                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                   padding: 18px 40px; font-size:20px;
+                                        font-family: 'Henderson Sans-basic', sans-serif; 
+                                        letter-spacing:1px;">Ontdek
+                                        ecologische
                                         tuinen</a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary"
-                                        style="padding:10px 40px;font-size:20px;">Ontdek ecologische
+                            <div class="swiper-slide" style="">
+                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                   padding: 18px 40px; font-size:20px;
+                                        font-family: 'Henderson Sans-basic', sans-serif; 
+                                        letter-spacing:1px;">Ontdek
+                                        ecologische
                                         tuinen</a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary"
-                                        style="padding:10px 40px;font-size:20px;">Ontdek ecologische
+                            <div class="swiper-slide" style="">
+                                <div class=" circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                   padding: 18px 40px; font-size:20px;
+                                        font-family: 'Henderson Sans-basic', sans-serif; 
+                                        letter-spacing:1px;">Ontdek
+                                        ecologische
                                         tuinen</a>
                                 </div>
                             </div>
@@ -327,19 +403,21 @@
                             </div>
                             <div class="col-lg-10 ">
                                 <h2 class=" text-header">Moderne tuin</h2>
-                                <div class="text pt-3">
-                                    <p><span style="font-weight: 400;">Een moderne tuin heeft strakke lijnen, is
+                                <div class="text ">
+                                    <p><span>Een moderne tuin heeft strakke lijnen, is
                                             overzichtelijk en vraagt wat minder onderhoud. Een moderne tuin heeft meer
                                             bestrating en er is over het algemeen minder groen te vinden. Toch kiezen
                                             wij voor een moderne tuin met meer groene elementen. We zijn niet voor niets
-                                            GROENtuinen!</span></p>
+                                            GROENtuinen!
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <!-- 2nd Row: Two Images on LG, Stacked on SM -->
+                    <!-- 2nd Row: Two -->
 
                     <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
@@ -465,8 +543,8 @@
                             </div>
                             <div class="col-lg-10 ">
                                 <h2 class=" text-header">Daktuin of dakterras</h2>
-                                <div class="text pt-3">
-                                    <p><span style="font-weight: 400;">Heb je geen tuin, maar wel een dakterras? Daar
+                                <div class="text ">
+                                    <p><span>Heb je geen tuin, maar wel een dakterras? Daar
                                             kun je een prachtige daktuin van maken! Door een terras aan te leggen en te
                                             werken met grote plantenbakken, maak je je dakterras groen. Wij denken mee
                                             in het ontwerp en de realisatie van je groene daktuin.</span></p>
@@ -521,23 +599,27 @@
 
     <!--Contact Information Section on Lg Screen  -->
     <div class="container" style="margin-top:269px">
-        <div class="  flex-lg-row  d-flex flex-column align-items-center d-none d-lg-flex"
+        <div class=" d-flex flex-lg-row    align-items-center justify-content-center d-none d-lg-flex"
             style="background-color:#2A3F31; border-radius: 50px; margin-top:40px; margin-bottom:40px;gap-20px; padding:20px ">
             <div class="d-flex justify-content-center justify-content-lg-start">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
                     class="groentuinen" style="width:80px; height:80px" />
             </div>
-            <div class=" text-center text-lg-left" style="margin-left:50px; font-size: 30px;">
+            <div class=" text-center text-lg-left" style="margin-left:50px;
+             font-size: 30px; 
+            font-weight:300; line-height:2px;
+                  font-family: 'Henderson Sans-basic', sans-serif;
+                   ">
                 <span>Enthousiast?
                     Neem contact op !</span>
             </div>
             <div class="button-group" style="margin-left:50px">
                 <div class="circle-border "><a class="btn btn-secondary" aria-label="telefoon Contact"
-                        href="tel:+31621830806" style="padding-left: 40px;padding-right: 30px">+31 6
+                        href="tel:+31621830806" style="padding-left: 40px; padding-right: 30px;font-size:18px;">+31 6
                         21830806</a></div>
                 <div class="circle-border"><a class="btn btn-primary" aria-label="Mail Contact"
                         href="mailto:info@groentuinen.nl"
-                        style="padding-left: 40px;padding-right: 30px">info@groentuinen.nl</a>
+                        style="padding-left: 40px;padding-right: 30px;font-size:18px;">info@groentuinen.nl</a>
                 </div>
             </div>
         </div>
