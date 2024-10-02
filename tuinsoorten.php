@@ -257,7 +257,7 @@
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide" style="">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                <div class="circle-border"><a href="#landelijke tuin" class="btn btn-secondary" style="line-height: 22px;
                                    padding: 18px 40px; font-size:20px;  
                                         font-family: 'Henderson Sans-basic', sans-serif; 
                                         letter-spacing:1px;">Ontdek
@@ -266,7 +266,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide" style="">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                <div class="circle-border"><a href="#moderne-tuin" class="btn btn-secondary" style="line-height: 22px;
                                    padding: 18px 40px; font-size:20px;
                                         font-family: 'Henderson Sans-basic', sans-serif;
                                          letter-spacing:1px; ">Ontdek
@@ -275,7 +275,7 @@
                                 </div>
                             </div>
                             <div class=" swiper-slide" style="">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                <div class="circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
                                    padding: 18px 40px; font-size:20px;
                                         letter-spacing:1px;">Ontdek
                                         ecologische
@@ -283,7 +283,16 @@
                                 </div>
                             </div>
                             <div class="swiper-slide" style="">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                <div class="circle-border"><a href="#daktuin-of-dakterras" class="btn btn-secondary"
+                                        style="line-height: 22px;
+                                   padding: 18px 40px; font-size:20px;
+                                        font-family: 'Henderson Sans-basic', sans-serif; 
+                                        letter-spacing:1px;">Ontdek daktuin of dakterras
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <div class="circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
                                    padding: 18px 40px; font-size:20px;
                                         font-family: 'Henderson Sans-basic', sans-serif; 
                                         letter-spacing:1px;">Ontdek
@@ -292,16 +301,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide" style="">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 18px 40px; font-size:20px;
-                                        font-family: 'Henderson Sans-basic', sans-serif; 
-                                        letter-spacing:1px;">Ontdek
-                                        ecologische
-                                        tuinen</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" style="">
-                                <div class=" circle-border"><a href="#" class="btn btn-secondary" style="line-height: 22px;
+                                <div class=" circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
                                    padding: 18px 40px; font-size:20px;
                                         font-family: 'Henderson Sans-basic', sans-serif; 
                                         letter-spacing:1px;">Ontdek
@@ -323,7 +323,7 @@
 
 
             <!-- First Container -->
-            <div class=" container " style=" margin-top: 300px">
+            <div id="landelijke tuin" class=" container " style=" margin-top: 300px">
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
                     <div class="col-12 col-lg-6 mb-4">
@@ -388,7 +388,7 @@
 
 
             <!-- 2  -->
-            <div class="container" style="margin-top: 80px">
+            <div id="moderne-tuin" class="container" style="margin-top: 80px">
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
                     <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex"><img
@@ -453,7 +453,7 @@
             </div>
 
             <!-- 3 -->
-            <div class="container" style="margin-top: 80px">
+            <div id="ecologische-tuin" class=" container" style="margin-top: 80px">
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
                     <div class="col-12 col-lg-6 mb-4">
@@ -528,7 +528,7 @@
 
 
             <!-- 4  -->
-            <div class="container" style="margin-top: 80px">
+            <div id="daktuin-of-dakterras" class="container" style="margin-top: 80px">
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
                     <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex"><img

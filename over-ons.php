@@ -53,9 +53,9 @@
     .groentuinen {
         display: block;
         object-fit: cover;
-        border-radius: 20px;
-        /* width: 100%;
-        height: auto; */
+        border-radius: 10px;
+        width: 100%;
+        height: 34vh;
     }
 
     .content {
@@ -134,6 +134,15 @@
     } */
 
     @media (min-width: 992px) {
+
+        /* height:566px */
+        .groentuinen {
+            display: block;
+            object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+            height: 566px;
+        }
 
         .swiper-container .swiper-pagination {
             display: none;
@@ -299,9 +308,9 @@
 
 
                 <div class="position-relative">
-                    <div class=" overlay" style=" border-radius: 20px;"></div>
+                    <div class=" overlay" style=" border-radius: 10px;"></div>
                     <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
-                        class=groentuinen style=" height:566px; width:;" />
+                        class=groentuinen style=" ; width:;" />
 
 
                     <div class="content center">

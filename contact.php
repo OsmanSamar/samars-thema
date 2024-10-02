@@ -95,6 +95,11 @@
 
         }
 
+        .bg-img img {
+
+            height: 690px
+        }
+
     }
 
 
@@ -154,7 +159,7 @@
             <div class="position-relative">
                 <div class=" overlay" style=" border-radius: 10px; "></div>
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groentuinen.png" alt="groentuinen"
-                    style=" height:;max-height:690px;  object-fit: cover; border-radius: 10px; ;" />
+                    style=" ;  object-fit: cover; border-radius: 10px; ;" />
                 <div class="content center">
                     <div class="col-12 col-lg-7 bottom-center">
 
