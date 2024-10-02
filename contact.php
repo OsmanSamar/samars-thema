@@ -111,10 +111,12 @@
 
     /* Image styling */
     .contact-icon img {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-
+        /* width: 80px;
+        height: 80px; */
+        object-fit: cover;
+        max-width: 130px;
+        height: 130px;
+        margin-bottom: 40px;
     }
 
     .text-header {
@@ -128,6 +130,7 @@
 
     .text-contact {
         font-size: 20px;
+        line-height: 40px;
     }
     </style>
 
@@ -149,9 +152,9 @@
 
         <div class="container bg-img mt-lg-auto mb-0">
             <div class="position-relative">
-                <div class=" overlay" style=" border-radius: 20px;"></div>
+                <div class=" overlay" style=" border-radius: 10px; "></div>
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groentuinen.png" alt="groentuinen"
-                    style="height:690px;  object-fit: cover; border-radius: 20px;" />
+                    style=" height:;max-height:690px;  object-fit: cover; border-radius: 10px; ;" />
                 <div class="content center">
                     <div class="col-12 col-lg-7 bottom-center">
 
@@ -178,7 +181,7 @@
                 <div class="col-10 mx-auto mt-5 my-lg-5 py-5">
                     <div class="row">
                         <!-- 1 -->
-                        <div class="col-12 col-md-4 col-lg-4 fadIn visible">
+                        <div class="col-12 col-md-12 col-lg-4 fadIn visible">
                             <div class="d-flex flex-column gap-3 text-center align-items-center contact-icon">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/map.svg" alt="Map Icon"
                                     class="mx-auto" />
@@ -196,7 +199,7 @@
                         </div>
 
                         <!-- 2 -->
-                        <div class="col-12 col-md-4 col-lg-4 fadIn visible">
+                        <div class="col-12 col-md-12 col-lg-4 fadIn visible">
                             <div class="d-flex flex-column gap-3 text-center align-items-center contact-icon">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/contacticon.svg"
                                     alt="Contact Icon" class="mx-auto" />
@@ -210,7 +213,7 @@
                             </div>
                         </div>
                         <!-- 3 -->
-                        <div class="col-12 col-md-4 col-lg-4 fadIn visible">
+                        <div class="col-12 col-md-12 col-lg-4 fadIn visible">
                             <div class="d-flex flex-column gap-3 text-center align-items-center contact-icon">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/email.svg"
                                     alt="Email Icon" class="mx-auto" />
@@ -234,7 +237,7 @@
 
 
 
-        <div class="contact-text">
+        <div class="contact-text" style="margin-top:120px; margin-bottom:110px;">
             <div class="col-lg-7 mx-auto">
                 <div class="text-contact text-center">
                     <p><span style="font-weight: 400;">Met GROENtuinen krijg je gegarandeerd een unieke en groene
@@ -248,6 +251,25 @@
         </div>
 
 
+    </div>
+
+    <!-- Contact Information Section on Sm Screen -->
+
+    <div>
+
+        <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
+            class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
+
+
+
+
+
+            <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
+                style="margin-bottom:-62px">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
+                    class="groentuinen" style="width:140px; height:140px;  object-fit: cover;" />
+            </div>
+        </div>
     </div>
 </main>
 

@@ -177,19 +177,15 @@
     </style>
     <div class="bg-leaf ">
 
-        <!-- <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
-            <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
-            <span class="separator"> // </span>
-            <span class="last">Werkwijze</span>
-        </div> -->
+
 
 
         <div class="container">
 
             <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
-                <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
+                <a class="text-white" style="font-size:18px;" href="<?= esc_url(home_url('/')); ?>">Home</a>
                 <span class="separator"> // </span>
-                <span class="last">Werkwijze</span>
+                <span class="" style="font-size:16px;">Onze werkwijze</span>
             </div>
 
             <div class=" bg-img mt-lg-auto mb-0">
