@@ -3,6 +3,32 @@
 
 <main class="flex-grow-1">
     <style>
+    /*First Swiper Buttons  */
+
+    .swiper1 {
+        width: 100%;
+        /* height: 300px; */
+        margin: 20px auto;
+    }
+
+    .swiper1 {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+    }
+
+
+
+
+
+
+    /*  */
+
     .swiper-container {
         position: relative;
         /* width: 70%;
@@ -94,7 +120,7 @@
 
         .swiper-button-prev,
         .swiper-button-next {
-            color: #f5a287;
+            color: #ffffff;
             width: 50px;
             height: 50px;
 
@@ -107,6 +133,7 @@
             .swiper-button-next {
                 width: 40px;
                 height: 40px;
+
             }
         }
 
@@ -132,86 +159,52 @@
                     <span class="last">Tuinsoorten</span>
                 </div>
             </div>
-            <!-- Swiper Text -->
-            <!-- <div class="position-relative">
-            <div class="d-none d-lg-block">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-           </div> -->
-            <!-- <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-flex"
-            style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-            <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                    <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek landelijke tuinen </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek Moderne tuinen</a></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek encologische tuinen</a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek encologische tuinen</a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek encologische tuinen</a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek encologische tuinen</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-            </div> -->
-
-            <!-- Swiper Text -->
-
+            <!-- Swiper -->
             <div>
                 <div class="position-relative d-flex align-items-center justify-content-between">
                     <!-- Swiper Button Prev -->
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-prev" style="--swiper-navigation-color: #ffffff;"></div>
 
                     <!-- Swiper Slides Container -->
-                    <div #swiperRef class="swiper mySwiper smrow order-2 projecten-slider"
-                        style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287; flex-grow: 1;">
+                    <div #swiperRef class=" swiper1 mySwiper1 smrow order-2 projecten-slider"
+                        style="--swiper-navigation-color: #ffffff; --swiper-pagination-color: #f5a287; flex-grow: 1;">
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek landelijke
+                                <div class="circle-border"><a href="#" class="btn btn-secondary"
+                                        style="padding:10px 40px; font-size:20px;">Ontdek
+                                        landelijke
                                         tuinen</a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek Moderne
+                                <div class="circle-border"><a href="#" class="btn btn-secondary"
+                                        style="padding:10px 40px;font-size:20px;">Ontdek Moderne
+                                        tuinen</a>
+                                </div>
+                            </div>
+                            <div class=" swiper-slide">
+                                <div class="circle-border"><a href="#" class="btn btn-secondary"
+                                        style="padding:10px 40px;font-size:20px;">Ontdek ecologische
                                         tuinen</a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek ecologische
+                                <div class="circle-border"><a href="#" class="btn btn-secondary"
+                                        style="padding:10px 40px;font-size:20px;">Ontdek ecologische
                                         tuinen</a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek ecologische
+                                <div class="circle-border"><a href="#" class="btn btn-secondary"
+                                        style="padding:10px 40px;font-size:20px;">Ontdek ecologische
                                         tuinen</a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek ecologische
-                                        tuinen</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="circle-border"><a href="#" class="btn btn-secondary">Ontdek ecologische
+                                <div class="circle-border"><a href="#" class="btn btn-secondary"
+                                        style="padding:10px 40px;font-size:20px;">Ontdek ecologische
                                         tuinen</a>
                                 </div>
                             </div>
@@ -221,14 +214,14 @@
                     </div>
 
                     <!-- Swiper Button Next -->
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-next" style="--swiper-navigation-color: #ffffff;"></div>
                 </div>
             </div>
 
 
             <!-- End Of swiper -->
             <!-- First Container -->
-            <div class="container " style="margin-top: 300px">
+            <div class=" container " style=" margin-top: 300px">
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
                     <div class="col-12 col-lg-6 mb-4">
@@ -308,7 +301,8 @@
                                 moderne tuin heeft meer bestrating en er is over het algemeen minder groen te
                                 vinden.
                                 Toch
-                                kiezen wij voor een moderne tuin met meer groene elementen. We zijn niet voor niets
+                                kiezen wij voor een moderne tuin met meer groene elementen. We zijn niet voor
+                                niets
                                 GROENtuinen! </p>
                         </div>
                     </div>
@@ -354,13 +348,16 @@
                     <div class="col-12 col-lg-6 mb-4">
                         <div class="text-header">Ecologische tuin <span>-</span></div>
                         <div class="text">
-                            <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te leggen
+                            <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te
+                                leggen
                                 dat
                                 er
-                                zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin wordt
+                                zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin
+                                wordt
                                 geen
                                 gif
-                                gebruikt. Er groeien vooral inheemse planten uit de streek, die hun gang mogen gaan.
+                                gebruikt. Er groeien vooral inheemse planten uit de streek, die hun gang mogen
+                                gaan.
                                 En
                                 onkruid? Dat bestaat niet in een ecologische tuin! </p>
                         </div>
@@ -482,6 +479,96 @@
             loop: true,
             grabCursor: true,
             spaceBetween: 5,
+            pagination: {
+                el: ".swiper-pagination",
+
+            }
+
+            ,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+
+            ,
+            breakpoints: {
+                992: {
+
+                    slidesPerView: 3.5,
+                }
+            }
+        }
+
+    );
+
+    var appendNumber = 4;
+    var prependNumber = 1;
+
+    document.querySelector(".prepend-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>",
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber + "</div>",
+            ]);
+        }
+
+    );
+
+    document.querySelector(".prepend-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>");
+        }
+
+    );
+
+    document.querySelector(".append-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>");
+        }
+
+    );
+
+    document.querySelector(".append-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+            ]);
+        }
+
+    );
+    </script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper1", {
+
+
+
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            loop: true,
+            grabCursor: true,
+            // spaceBetween: 1,
             pagination: {
                 el: ".swiper-pagination",
 
