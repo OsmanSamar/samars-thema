@@ -4,6 +4,22 @@
 
 <main class="flex-grow-1">
     <style>
+    .swiper-container {
+        position: relative;
+        /* width: 70%;
+        margin: 0 auto; */
+    }
+
+    .swiper-container .swiper-pagination {
+        bottom: -50px !important;
+        display: block;
+    }
+
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
+
     .bg-leaf {
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
@@ -118,6 +134,10 @@
     } */
 
     @media (min-width: 992px) {
+
+        .swiper-container .swiper-pagination {
+            display: none;
+        }
 
         /* Hide arrow on large screens */
         .down {
@@ -474,32 +494,35 @@
 
 
             <!-- Swiper On Small Screen -->
-
-            <div #swiperRef=""
-                class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="
+            <div class="swiper-container" style="--swiper-pagination-color: #fff">
+                <div #swiperRef=""
+                    class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="
                          <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png" alt="Groen Overons"
-                            class="swiper-img" style="width:100% ;" />
+                                class="swiper-img" style="width:100% ;" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
+                                alt="Beautifulpinkflowers" class="swiper-img" style="width:100% ;" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="Ladybug"
+                                class="swiper-img" style="width:100% ;" />
+                        </div>
+
                     </div>
-                    <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                            alt="Beautifulpinkflowers" class="swiper-img" style="width:100% ;" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="Ladybug"
-                            class="swiper-img" style="width:100% ;" />
-                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
 
                 </div>
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
 
             </div>
+
 
         </div>
 
@@ -672,7 +695,7 @@
         spaceBetween: 5,
         pagination: {
             el: ".swiper-pagination",
-            type: "fraction",
+            // type: "fraction",
         },
         navigation: {
             nextEl: ".swiper-button-next",
