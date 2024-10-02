@@ -96,6 +96,7 @@
 
                     <!-- Swiper On Small Screen -->
 
+
                     <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider "
                         style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                         <div class="swiper-wrapper">
@@ -126,6 +127,13 @@
                         <div class="swiper-pagination"></div>
 
                     </div>
+
+
+
+
+
+
+
 
 
                     <!-- Right  side: Images on Bige Screen  -->

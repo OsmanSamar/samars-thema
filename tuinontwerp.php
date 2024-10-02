@@ -116,7 +116,7 @@
 
 
         <div class=" d-flex flex-column text-center my-4 ">
-            <h1 class=" mb-3">Tuinsoorten</h1>
+            <h1 class=" mb-3">Tuinontwerp</h1>
             <!-- Breadcrumb Links -->
             <div class="d-inline-block"><a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span
                     class="separator"> // </span>

@@ -3,7 +3,29 @@
 
 <main class="flex-grow-1">
     <style>
+    .swiper-container {
+        position: relative;
+        /* width: 70%;
+        margin: 0 auto; */
+    }
+
+    .swiper-container .swiper-pagination {
+        bottom: -50px !important;
+        display: block;
+    }
+
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
+
     @media (min-width: 992px) {
+
+        .swiper-container .swiper-pagination {
+            display: none;
+        }
+
+
 
         .bg-leaf {
             background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
@@ -74,12 +96,11 @@
         .swiper-button-next {
             color: #f5a287;
             width: 50px;
-            /* Adjust as necessary */
             height: 50px;
-            /* Adjust as necessary */
+
         }
 
-        /* Adjust button position for responsiveness if needed */
+
         @media (max-width: 768px) {
 
             .swiper-button-prev,
@@ -91,15 +112,7 @@
 
     }
 
-    /* @media (min-width: 768px) {
-        .lin3 {
-            border: 1px solid #ffffff;
-            height: 1px;
-            width: 100%;
-            margin-top: 120px;
 
-        }
-    } */
 
     .lin3 {
         border: 1px solid #ffffff;
@@ -125,7 +138,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-        </div> -->
+           </div> -->
             <!-- <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-flex"
             style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
             <div class="swiper-wrapper">
@@ -158,7 +171,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
-        </div> -->
+            </div> -->
 
             <!-- Swiper Text -->
 
@@ -245,25 +258,40 @@
                             alt="Paarsflowers" class="img3" /></div>
                     <div class="lin3"></div>
                 </div>
-                <!-- Swiper On Small Screen -->
+
+
+                <!-- Swiper On Small Screen  First Swiper -->
+
+
+
                 <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: ">
+
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img
                                 src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                alt="groenoverons" class="img1" /></div>
+                                alt="groenoverons" class="img1" />
+                        </div>
                         <div class="swiper-slide"><img
                                 src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                                alt="groenoverons" class="img2" /></div>
+                                alt="groenoverons" class="img2" />
+                        </div>
                         <div class="swiper-slide"><img
                                 src="<?= esc_url(get_template_directory_uri()); ?>/images/paarsflowers.png"
-                                alt="groediverons" class="img3" /></div>
+                                alt="groediverons" class="img3" />
+                        </div>
                     </div>
+
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
+
                 </div>
+
             </div>
+
+
+
             <!-- 2 -->
             <div class="container" style="margin-top: 80px">
                 <div class="row">
@@ -274,9 +302,11 @@
                     <div class="col-12 col-lg-6 mb-4">
                         <div class="text-header">Moderne tuin <span>-</span></div>
                         <div class="text">
-                            <p>Een moderne tuin heeft strakke lijnen, is overzichtelijk en vraagt wat minder onderhoud.
+                            <p>Een moderne tuin heeft strakke lijnen, is overzichtelijk en vraagt wat minder
+                                onderhoud.
                                 Een
-                                moderne tuin heeft meer bestrating en er is over het algemeen minder groen te vinden.
+                                moderne tuin heeft meer bestrating en er is over het algemeen minder groen te
+                                vinden.
                                 Toch
                                 kiezen wij voor een moderne tuin met meer groene elementen. We zijn niet voor niets
                                 GROENtuinen! </p>
@@ -313,6 +343,8 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+
+
             </div>
 
             <!-- 3 -->
@@ -322,11 +354,14 @@
                     <div class="col-12 col-lg-6 mb-4">
                         <div class="text-header">Ecologische tuin <span>-</span></div>
                         <div class="text">
-                            <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te leggen dat
+                            <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te leggen
+                                dat
                                 er
-                                zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin wordt geen
+                                zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin wordt
+                                geen
                                 gif
-                                gebruikt. Er groeien vooral inheemse planten uit de streek, die hun gang mogen gaan. En
+                                gebruikt. Er groeien vooral inheemse planten uit de streek, die hun gang mogen gaan.
+                                En
                                 onkruid? Dat bestaat niet in een ecologische tuin! </p>
                         </div>
                     </div>
@@ -347,28 +382,37 @@
                 </div>
             </div>
             <!-- Swiper On Small Screen -->
-            <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="Scaled"
-                            class="img1" />
+
+
+            <div class="swiper-container" style="--swiper-pagination-color: #fff">
+                <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="Scaled"
+                                class="img1" />
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="<?= esc_url(get_template_directory_uri()); ?>/images/dutchgarden.png"
+                                alt="Dutch garden" class="img2" />
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="<?= esc_url(get_template_directory_uri()); ?>/images/gardeninsunlight.png"
+                                alt="Garden in sunlight" class="img3" />
+                        </div>
+
                     </div>
-                    <div class="swiper-slide"><img
-                            src="<?= esc_url(get_template_directory_uri()); ?>/images/dutchgarden.png"
-                            alt="Dutch garden" class="img2" />
-                    </div>
-                    <div class="swiper-slide"><img
-                            src="<?= esc_url(get_template_directory_uri()); ?>/images/gardeninsunlight.png"
-                            alt="Garden in sunlight" class="img3" />
-                    </div>
+
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
 
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
 
+                <div class="swiper-pagination"></div>
             </div>
+
         </div>
 
     </div>
