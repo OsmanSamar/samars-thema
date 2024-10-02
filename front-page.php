@@ -424,17 +424,18 @@
                         <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
                             class="">
                         <!-- Overlay Text and Button -->
-                        <div class="slider-text-button-container">
+                        <div class="slider-text-button-container d-flex d-lg-none">
                             <div class="text">Tuin in Voorthuizen</div>
-
-                        </div>
-                        <div
-                            class="slider-text-button-container-right d-flex align-items-center justify-content-center">
-                            <div class="line-before"></div>
-                            <div class="circle-border">
-                                <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
-                                    projecten</a>
+                            <div
+                                class="slider-text-button-container-right d-flex align-items-center justify-content-center">
+                                <div class="line-before"></div>
+                                <div class="circle-border">
+                                    <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
+                                        projecten</a>
+                                </div>
                             </div>
+
+
                         </div>
 
                     </div>
@@ -443,18 +444,19 @@
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
                             alt="Image 2">
                         <!-- Overlay Text and Button -->
-                        <div class="slider-text-button-container">
+                        <div class="slider-text-button-container d-flex d-lg-none">
                             <div class="text">Tuinonderhoud in Ede</div>
+                            <div
+                                class="slider-text-button-container-right d-flex align-items-center justify-content-center">
+                                <div class="line-before"></div>
+                                <div class="circle-border">
+                                    <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
+                                        projecten</a>
+                                </div>
+                            </div>
 
                         </div>
-                        <div
-                            class="slider-text-button-container-right d-flex align-items-center justify-content-center">
-                            <div class="line-before"></div>
-                            <div class="circle-border">
-                                <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
-                                    projecten</a>
-                            </div>
-                        </div>
+
 
 
                     </div>
@@ -464,18 +466,18 @@
                             alt="Image 2">
 
                         <!-- Overlay Text and Button -->
-                        <div class="slider-text-button-container">
+                        <div class="slider-text-button-container d-flex d-lg-none">
                             <div class="text">Tuin bij Tiny House</div>
-
-                        </div>
-                        <div
-                            class="slider-text-button-container-right d-flex align-items-center justify-content-center">
-                            <div class="line-before"></div>
-                            <div class="circle-border">
-                                <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
-                                    projecten</a>
+                            <div
+                                class="slider-text-button-container-right d-flex align-items-center justify-content-center">
+                                <div class="line-before"></div>
+                                <div class="circle-border">
+                                    <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
+                                        projecten</a>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
 

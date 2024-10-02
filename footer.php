@@ -2,11 +2,11 @@
     <style>
     .border-top {
         border: 1px solid #ffff;
-        width: 100vw;
+        width: 100%;
         height: 1px;
         opacity: 0.5;
         margin-bottom: 90px;
-        /* margin-left: -34px; */
+
     }
     </style>
     <div class="container">
@@ -70,7 +70,8 @@
             </div>
         </div>
 
-        <div class="d-block d-lg-none order-5 border-top">
+        <div class="col-12 border-top d-block d-lg-none"></div>
+        <div class="d-block d-lg-none order-5 ">
             <p class="text-center text-balance text-white text-opacity-50 copyright">
                 GROENtuinen <br>
                 Uit de grond gestampt <br>door <a href="">Code Blauw</a>

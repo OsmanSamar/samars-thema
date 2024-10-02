@@ -249,7 +249,7 @@
                                             <span style="font-weight:100; cursor:pointer;  opacity: .5; width:20px;">-
                                             </span>
                                         </h2>
-                                        <div class=" text ">
+                                        <div class=" text d-flex flex-column align-items-center ">
 
                                             <p class="content1">
                                                 We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven. Je
@@ -265,7 +265,7 @@
                                             </p>
                                             <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
                                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
-                                                    alt="down arrow" class="arrow-icon down">
+                                                    alt="down arrow" class="arrow-icon down" style="border:none;  ">
                                             </a>
 
 
@@ -275,6 +275,7 @@
                                             <a href="<?= esc_url(home_url('/contact')); ?>"
                                                 class="btn btn-primary">Samen aan de slag</a>
                                         </div>
+
                                         <script>
                                         $(document).ready(function() {
                                             $('.read-more-toggle').click(function(e) {
@@ -322,8 +323,8 @@
 
                                         </div>
 
-                                        <div class=" text ">
-                                            <p class="content1">
+                                        <div class=" text d-flex flex-column align-items-center ">
+                                            <p class="content1 ">
                                                 Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
                                                 ontwerpen
                                                 jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
@@ -403,7 +404,7 @@
 
                                     <div>
                                         <h2 class="text-header ">Ontwerp van jouw tuin</h2>
-                                        <div class="text ">
+                                        <div class="text d-flex flex-column align-items-center">
                                             <p class="content1">Vervolgens gaan we aan de slag met het ontwerp van je
                                                 tuin. Dit doen
                                                 we

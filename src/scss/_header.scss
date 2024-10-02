@@ -485,6 +485,7 @@ html {
     position: relative;
     margin-right: 10px; /* Space between line and Instagram icon */
     display: block;
+    opacity: 0.5;
   }
 
   .button-group {
@@ -1184,34 +1185,6 @@ a ::after {
   font-size: 16px;
 }
 
-/* text-line-button-section .btn  Kennismaken*/
-
-/* .text-line-button-section .btn {
-        padding: 10px 20px;
-        padding: 8px 16px;
-
-        font-size: 16px;
-    } */
-
-/*  */
-
-/* Styling for the horizontal divider Lg Screen */
-
-/* .text-line-button-section .text-left {
-        order: 1;
-        margin-top: 20px;
-    }
-
-    .text-line-button-section .horizontal-divider {
-        order: 2;
-        width: 50%;
-        height: 2px;
-        background-color: red;
-        margin: 20px auto;
-    } */
-
-/*  */
-
 .testimonial h1 {
   color: #f5a287;
   font-size: 22px;
@@ -1490,9 +1463,10 @@ a ::after {
     order: 1;
     margin-bottom: 20px;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: white;
     text-align: center;
+    opacity: 0.5;
   }
 
   /* Text appears after the line */
