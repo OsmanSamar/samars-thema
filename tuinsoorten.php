@@ -3,71 +3,188 @@
 
 <main class="flex-grow-1">
     <style>
-        .swiper-container {
-            position: relative;
-            /* width: 70%;
-        margin: 0 auto; */
-        }
+    .swiper-container {
+        position: relative;
+
+    }
+
+    .swiper-container .swiper-pagination {
+        bottom: -50px !important;
+        display: block;
+    }
+
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+
+    }
+
+
+
+
+    /*First Swiper Buttons  */
+    .header {
+        margin-bottom: 60px;
+        color: #FFFFFF;
+        opacity: 1;
+        font-family: 'Henderson Sans-basic', sans-serif;
+        letter-spacing: 5px;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 60px;
+    }
+
+    .swiper1 {
+        width: 100%;
+        /* height: 300px; */
+        /* margin: 20px auto; */
+    }
+
+    .swiper1 {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .text-header {
+        margin-bottom: 30px;
+        color: #FFFFFF;
+        opacity: 1;
+        font-family: 'Henderson Sans-basic', sans-serif;
+        letter-spacing: 2px;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 60px;
+
+    }
+
+    .text {
+        margin-bottom: 35px;
+        font-size: 18px;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        font-weight: 300;
+        line-height: 40px;
+
+    }
+
+    @media (min-width: 992px) {
 
         .swiper-container .swiper-pagination {
-            bottom: -50px !important;
-            display: block;
-        }
-
-        .swiper-container .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
-
+            display: none;
         }
 
 
 
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 1228px;
+            background-position: 669px 11px;
 
-        /*First Swiper Buttons  */
+
+        }
+
+
+
+        .img1 {
+            border-radius: 10px;
+
+            width: 626px;
+            height: 440px;
+        }
+
+        .img2 {
+            border-radius: 10px;
+
+            /* width: 370px;
+            height: 591px; */
+            width: 626px;
+            height: 440px;
+        }
+
+        .img3 {
+            border-radius: 10px;
+            width: 526px;
+            height: 382px;
+        }
+
+        .img3,
+        .img1,
+        .img2,
+        .groentuinen {
+            object-fit: cover;
+        }
+
+
+        /* .lin3 {
+            border: 1px solid #ffffff;
+            height: 1px;
+            width: 100%;
+            margin-top: 120px;
+
+        } */
+
+        .houseinbackground {
+            width: 500px;
+            height: 382px;
+            margin-left: 120px;
+        }
+
+        .position-relative {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .swiper {
+            flex-grow: 1;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #ffffff;
+            width: 50px;
+            height: 50px;
+
+        }
+
         .header {
             margin-bottom: 60px;
             color: #FFFFFF;
             opacity: 1;
             font-family: 'Henderson Sans-basic', sans-serif;
             letter-spacing: 5px;
-            font-size: 50px;
-            font-weight: 300;
+            font-size: 125px;
+            font-weight: 600;
             line-height: 60px;
+            margin-top: 60px;
         }
-
-        .swiper1 {
-            width: 100%;
-            /* height: 300px; */
-            /* margin: 20px auto; */
-        }
-
-        .swiper1 {
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            overflow: hidden;
-            list-style: none;
-            padding: 0;
-            z-index: 1;
-            display: block;
-        }
-
-
-
-
-
-
-
-
-
-
 
         .text-header {
-            margin-bottom: 30px;
+            margin-bottom: 60px;
             color: #FFFFFF;
             opacity: 1;
             font-family: 'Henderson Sans-basic', sans-serif;
-            letter-spacing: 2px;
+            letter-spacing: 5px;
             font-size: 40px;
             font-weight: 300;
             line-height: 60px;
@@ -76,171 +193,53 @@
 
         .text {
             margin-bottom: 35px;
-            font-size: 18px;
-            letter-spacing: 0px;
+            font-size: 20px;
+            letter-spacing: 2px;
             color: #FFFFFF;
             opacity: 1;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 40px;
 
         }
 
-        @media (min-width: 992px) {
-
-            .swiper-container .swiper-pagination {
-                display: none;
-            }
-
-
-
-            .bg-leaf {
-                background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-size: 1228px;
-                background-position: 669px 11px;
-
-
-            }
-
-
-
-            .img1 {
-                border-radius: 10px;
-
-                width: 626px;
-                height: 440px;
-            }
-
-            .img2 {
-                border-radius: 10px;
-
-                /* width: 370px;
-            height: 591px; */
-                width: 626px;
-                height: 440px;
-            }
-
-            .img3 {
-                border-radius: 10px;
-                width: 526px;
-                height: 382px;
-            }
-
-            .img3,
-            .img1,
-            .img2,
-            .groentuinen {
-                object-fit: cover;
-            }
-
-
-            /* .lin3 {
-            border: 1px solid #ffffff;
-            height: 1px;
-            width: 100%;
-            margin-top: 120px;
-
-        } */
-
-            .houseinbackground {
-                width: 500px;
-                height: 382px;
-                margin-left: 120px;
-            }
-
-            .position-relative {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-            }
-
-            .swiper {
-                flex-grow: 1;
-            }
-
-            .swiper-button-prev,
-            .swiper-button-next {
-                color: #ffffff;
-                width: 50px;
-                height: 50px;
-
-            }
-
-            .header {
-                margin-bottom: 60px;
-                color: #FFFFFF;
-                opacity: 1;
-                font-family: 'Henderson Sans-basic', sans-serif;
-                letter-spacing: 5px;
-                font-size: 125px;
-                font-weight: 600;
-                line-height: 60px;
-                margin-top: 60px;
-            }
-
-            .text-header {
-                margin-bottom: 60px;
-                color: #FFFFFF;
-                opacity: 1;
-                font-family: 'Henderson Sans-basic', sans-serif;
-                letter-spacing: 5px;
-                font-size: 40px;
-                font-weight: 300;
-                line-height: 60px;
-
-            }
-
-            .text {
-                margin-bottom: 35px;
-                font-size: 20px;
-                letter-spacing: 2px;
-                color: #FFFFFF;
-                opacity: 1;
-                font-weight: 400;
-                line-height: 40px;
-
-            }
-
-            .border-left {
-                border-left: 1px #FFFFFF solid;
-                height: 440px;
-                opacity: 0.5;
-
-            }
-        }
-
-
-
-        @media (max-width: 768px) {
-
-            .swiper-button-prev,
-            .swiper-button-next {
-                width: 40px;
-                height: 40px;
-
-            }
-        }
-
-
-
-        .lin3 {
-            border: 1px solid #ffffff;
-            height: 1px;
-            width: 100%;
-            margin-top: 120px;
+        .border-left {
+            border-left: 1px #FFFFFF solid;
+            height: 440px;
             opacity: 0.5;
 
         }
+    }
 
-        /* Set font size for swiper buttons */
-        .swiper-button-prev:after,
-        .swiper-rtl .swiper-button-next:after,
-        .swiper-button-next:before,
-        .swiper-rtl .swiper-button-prev:before {
-            font-size: 16px;
+
+
+    @media (max-width: 768px) {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 40px;
+            height: 40px;
+
         }
+    }
+
+
+
+    .lin3 {
+        border: 1px solid #ffffff;
+        height: 1px;
+        width: 100%;
+        margin-top: 120px;
+        opacity: 0.5;
+
+    }
+
+    /* Set font size for swiper buttons */
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after,
+    .swiper-button-next::after,
+    .swiper-rtl .swiper-button-prev::after {
+        font-size: 16px;
+    }
     </style>
     <div class="bg-leaf">
         <div class="container">
@@ -264,7 +263,7 @@
                 <div class="position-relative d-flex align-items-center justify-content-center ">
                     <!-- Swiper Button Prev -->
                     <div class="swiper-button-prev d-none d-md-none d-lg-flex"
-                        style="--swiper-navigation-color: #ffffff; font-size:24px; border: 1px solid #fff;border-radius: 25px; ">
+                        style="--swiper-navigation-color: #ffffff;  border: 1px solid #fff;border-radius: 25px; ">
                     </div>
 
                     <!-- Swiper Slides Container -->
@@ -333,7 +332,7 @@
 
                     <!-- Swiper Button Next -->
                     <div class="swiper-button-next d-none d-md-none d-lg-flex"
-                        style="--swiper-navigation-color: #ffffff; font-size:24px; border: 1px solid #fff;border-radius: 25px;">
+                        style="--swiper-navigation-color: #ffffff;  border: 1px solid #fff;border-radius: 25px;">
                     </div>
                 </div>
 
@@ -716,8 +715,8 @@
     </script>
     <!-- Initialize Swiper -->
     <script>
-        document.querySelectorAll(".swiper-container").forEach(container => {
-            var swiper = new Swiper(container.querySelector(".mySwiper"), {
+    document.querySelectorAll(".swiper-container").forEach(container => {
+        var swiper = new Swiper(container.querySelector(".mySwiper"), {
                 slidesPerView: 1.2,
                 centeredSlides: true,
                 loop: true,
@@ -743,70 +742,70 @@
                 }
             }
 
-            );
-        })
-
-
-        var appendNumber = 4;
-        var prependNumber = 1;
-
-        document.querySelector(".prepend-2-slides").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.prependSlide([
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber +
-                    "</div>",
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber + "</div>",
-                ]);
-            }
-
         );
+    })
 
-        document.querySelector(".prepend-slide").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.prependSlide(
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber +
-                    "</div>");
-            }
 
-        );
+    var appendNumber = 4;
+    var prependNumber = 1;
 
-        document.querySelector(".append-slide").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.appendSlide(
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>");
-            }
+    document.querySelector(".prepend-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>",
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber + "</div>",
+            ]);
+        }
 
-        );
+    );
 
-        document.querySelector(".append-2-slides").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.appendSlide([
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>",
-                ]);
-            }
+    document.querySelector(".prepend-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>");
+        }
 
-        );
+    );
+
+    document.querySelector(".append-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>");
+        }
+
+    );
+
+    document.querySelector(".append-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+            ]);
+        }
+
+    );
     </script>
 
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper1", {
+    var swiper = new Swiper(".mySwiper1", {
 
 
 
@@ -838,62 +837,62 @@
             }
         }
 
-        );
+    );
 
-        var appendNumber = 4;
-        var prependNumber = 1;
+    var appendNumber = 4;
+    var prependNumber = 1;
 
-        document.querySelector(".prepend-2-slides").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.prependSlide([
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber +
-                    "</div>",
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber + "</div>",
-                ]);
-            }
+    document.querySelector(".prepend-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>",
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber + "</div>",
+            ]);
+        }
 
-        );
+    );
 
-        document.querySelector(".prepend-slide").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.prependSlide(
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber +
-                    "</div>");
-            }
+    document.querySelector(".prepend-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>");
+        }
 
-        );
+    );
 
-        document.querySelector(".append-slide").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.appendSlide(
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>");
-            }
+    document.querySelector(".append-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>");
+        }
 
-        );
+    );
 
-        document.querySelector(".append-2-slides").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.appendSlide([
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>",
-                ]);
-            }
+    document.querySelector(".append-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+            ]);
+        }
 
-        );
+    );
     </script>
 </main>
 <?php get_footer() ?>

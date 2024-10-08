@@ -3,13 +3,12 @@
 
 <main class="flex-grow-1">
     <style>
-    /* .swiper-container {
+    .swiper-container {
         position: relative;
-        width: 70%;
-        margin: 0 auto;
-    } */
 
-    /* .swiper-container .swiper-pagination {
+    }
+
+    .swiper-container .swiper-pagination {
         bottom: -50px !important;
 
     }
@@ -17,7 +16,7 @@
     .swiper-container .swiper-pagination-bullet {
         width: 15px;
         height: 15px;
-    } */
+    }
 
     /* Circle Style */
 
@@ -303,17 +302,17 @@
                             <a href="/projecten" id="demo3" class="circle text-circle">
                                 <div style="position: relative; height: 200px;">
                                     <?php
-                                $text = '- Tuinonderhoud in Ede -- Tuinonderhoud in Ede -- Tuinonderhoud in Ede -';
-                                $characters = str_split($text);
-                                $totalCharacters = count($characters);
-                                $rotationStep = 360 / $totalCharacters;
+                                    $text = '- Tuinonderhoud in Ede -- Tuinonderhoud in Ede -- Tuinonderhoud in Ede -';
+                                    $characters = str_split($text);
+                                    $totalCharacters = count($characters);
+                                    $rotationStep = 360 / $totalCharacters;
 
 
-                                foreach ($characters as $index => $character) {
-                                    $rotationAngle = $rotationStep * $index;
-                                    echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
-                                }
-                                ?>
+                                    foreach ($characters as $index => $character) {
+                                        $rotationAngle = $rotationStep * $index;
+                                        echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
+                                    }
+                                    ?>
                                 </div>
                             </a>
                             <div class=" img-wrap">
@@ -335,17 +334,17 @@
                                         <a href="/projecten" id="demo1" class="circle text-circle">
                                             <div style="position: relative; height: 200px;">
                                                 <?php
-                                            $text = '- Tuin in Voorthuizen -- Tuin in Voorthuizen -- Tuin in Voorthuizen -';
-                                            $characters = str_split($text);
-                                            $totalCharacters = count($characters);
-                                            $rotationStep = 360 / $totalCharacters;
+                                                $text = '- Tuin in Voorthuizen -- Tuin in Voorthuizen -- Tuin in Voorthuizen -';
+                                                $characters = str_split($text);
+                                                $totalCharacters = count($characters);
+                                                $rotationStep = 360 / $totalCharacters;
 
 
-                                            foreach ($characters as $index => $character) {
-                                                $rotationAngle = $rotationStep * $index;
-                                                echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
-                                            }
-                                            ?>
+                                                foreach ($characters as $index => $character) {
+                                                    $rotationAngle = $rotationStep * $index;
+                                                    echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
+                                                }
+                                                ?>
                                             </div>
                                         </a>
                                         <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
@@ -377,17 +376,17 @@
                                         <a href="/projecten" id="demo2" class="circle text-circle">
                                             <div style="position: relative; height: 200px;">
                                                 <?php
-                                            $text = '- Tuin Bij Tiny House -- Tuin Bij Tiny House -- Tuin Bij Tiny House -';
-                                            $characters = str_split($text);
-                                            $totalCharacters = count($characters);
-                                            $rotationStep = 360 / $totalCharacters;
+                                                $text = '- Tuin Bij Tiny House -- Tuin Bij Tiny House -- Tuin Bij Tiny House -';
+                                                $characters = str_split($text);
+                                                $totalCharacters = count($characters);
+                                                $rotationStep = 360 / $totalCharacters;
 
 
-                                            foreach ($characters as $index => $character) {
-                                                $rotationAngle = $rotationStep * $index;
-                                                echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
-                                            }
-                                            ?>
+                                                foreach ($characters as $index => $character) {
+                                                    $rotationAngle = $rotationStep * $index;
+                                                    echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
+                                                }
+                                                ?>
                                             </div>
                                         </a>
                                         <div class="grid-item ratio ratio-custom mt-4" style="--x:39;--y:53;">
@@ -490,11 +489,13 @@
             </div>
         </div>
     </div>
+
+
     <!-- The first swiper  -->
-    <div class="container">
+    <div class="container" style="margin-bottom:80px;">
 
         <!-- Swiper On Small Screen -->
-        <div>
+        <div class="swiper-container" style="--swiper-pagination-color: #fff">
             <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                 <div class="swiper-wrapper">
@@ -512,57 +513,64 @@
                     </div>
 
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <!-- <div class="swiper-pagination"></div> -->
 
             </div>
-
-
+            <div class="swiper-pagination d-lg-none "></div>
         </div>
 
 
     </div>
+
+
+
+
     <!-- The second swiper -->
+    <div class="container" style="margin-bottom:80px;">
 
-    <div class="container">
+        <div class="swiper-container" style="--swiper-pagination-color: #fff">
 
-        <!-- Swiper On Small Screen -->
-        <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-            style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-            <div class="swiper-wrapper">
+            <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
-                        class="object-fit-cover rounded" style="" />
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
+                            class="object-fit-cover rounded" style="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
+                            class="object-fit-cover rounded" style="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
+                            class="object-fit-cover rounded" style="  " />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
+                            class="object-fit-cover rounded" style="" />
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
-                        class="object-fit-cover rounded" style="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
-                        class="object-fit-cover rounded" style="  " />
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
-                        class="object-fit-cover rounded" style="" />
-                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div> -->
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
+
         </div>
+
 
     </div>
 
 
     <!-- The third swiper -->
 
-    <div class="container">
+    <div class="container" style="margin-bottom:80px;">
 
-        <!-- Swiper On Small Screen -->
-        <div>
+
+        <div class="swiper-container" style="--swiper-pagination-color: #fff">
             <div #swiperRef="" class=" swiper mySwiper smrow order-2 projecten-slider d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                 <div class="swiper-wrapper">
@@ -592,12 +600,12 @@
                             class="object-fit-cover rounded" style="" />
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
+                <!-- <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div> -->
             </div>
 
-            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-pagination"></div>
 
         </div>
 
@@ -605,10 +613,9 @@
     </div>
 
 
+
+    <!--Contact Opnemen Section  -->
     <div class="bg-leaf">
-
-        <!--Contact Opnemen Section  -->
-
         <div class="container d-none d-lg-block" style="margin-top:60px;">
             <div class="bottom-text">
                 <div class="row">
@@ -707,36 +714,66 @@
     </script>
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
+    // var swiper = new Swiper(".mySwiper", {
 
 
 
-            slidesPerView: 1.2,
-            centeredSlides: true,
-            loop: true,
-            grabCursor: true,
-            spaceBetween: 5,
-            pagination: {
-                el: ".swiper-pagination",
+    //         slidesPerView: 1.2,
+    //         centeredSlides: true,
+    //         loop: true,
+    //         grabCursor: true,
+    //         spaceBetween: 5,
+    //         pagination: {
+    //             el: ".swiper-pagination",
 
-            }
+    //         }
 
-            ,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            }
+    //         ,
+    //         navigation: {
+    //             nextEl: ".swiper-button-next",
+    //             prevEl: ".swiper-button-prev",
+    //         }
 
-            ,
-            breakpoints: {
-                992: {
+    //         ,
+    //         breakpoints: {
+    //             992: {
 
-                    slidesPerView: 3.5,
+    //                 slidesPerView: 3.5,
+    //             }
+    //         }
+    //     }
+
+    // );
+
+    document.querySelectorAll(".swiper-container").forEach(container => {
+        var swiper = new Swiper(container.querySelector(".mySwiper"), {
+                slidesPerView: 1.2,
+                centeredSlides: true,
+                loop: true,
+                grabCursor: true,
+                spaceBetween: 5,
+                pagination: {
+                    el: container.querySelector(".swiper-pagination"),
+
+                }
+
+                ,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                }
+
+                ,
+                breakpoints: {
+                    992: {
+
+                        slidesPerView: 3.5,
+                    }
                 }
             }
-        }
 
-    );
+        );
+    })
 
     var appendNumber = 4;
     var prependNumber = 1;
