@@ -19,6 +19,142 @@
         height: 15px;
     } */
 
+    /* Circle Style */
+
+    /* Hide the CircleType by default */
+    #demo3 {
+        display: none;
+    }
+
+    #demo2 {
+        display: none;
+    }
+
+    #demo1 {
+        display: none;
+    }
+
+    /* Show the CircleType on devices with a width of 1024px and up */
+    @media (min-width: 1024px) {
+        #demo3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            position: absolute;
+            bottom: -55px;
+            /* bottom: -50px; */
+            transform: translate(50%, 50%);
+            /* position: fixed; */
+            right: -70px;
+
+            /* Position it at the right edge */
+            transform: translateY(-50%);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            letter-spacing: 3px;
+            z-index: 1000;
+
+        }
+
+        #demo2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            position: absolute;
+            bottom: -255px;
+
+            transform: translate(50%, 50%);
+            /* position: fixed; */
+            right: -70px;
+
+            /* Position it at the right edge */
+            transform: translateY(-50%);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            letter-spacing: 3px;
+            z-index: 1000;
+
+        }
+
+        #demo1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            position: absolute;
+            bottom: -65px;
+
+            transform: translate(50%, 50%);
+            /* position: fixed; */
+            /* Position it at the right edge */
+            right: -97px;
+            transform: translateY(-50%);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            letter-spacing: 3px;
+            z-index: 1000;
+
+        }
+    }
+
+    #demo3 span {
+        position: absolute;
+        left: 50%;
+        transform-origin: 0 100px;
+
+    }
+
+    #demo2 span {
+        position: absolute;
+        left: 50%;
+        transform-origin: 0 100px;
+
+    }
+
+    #demo1 span {
+        position: absolute;
+        left: 50%;
+        transform-origin: 0 100px;
+
+    }
+
+
+    @keyframes rotating {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .text-circle {
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-name: rotating;
+        animation-timing-function: linear;
+        height: 280px;
+        width: 280px;
+        overflow: visible;
+
+    }
+
+
+
+    /*  */
+
     .line-top {
 
         border: 1px solid #ffffff;
@@ -161,18 +297,65 @@
                     </div>
 
                     <div class="col-12 col-lg-7 mb-4 text-center.grid-7 ">
-                        <div class="img-wrap">
+                        <div style="position: relative;">
+
+                            <!-- Circle On The Right Side Of Projecten Slider -->
+                            <a href="/projecten" id="demo3" class="circle text-circle">
+                                <div style="position: relative; height: 200px;">
+                                    <?php
+                                $text = '- Tuinonderhoud in Ede -- Tuinonderhoud in Ede -- Tuinonderhoud in Ede -';
+                                $characters = str_split($text);
+                                $totalCharacters = count($characters);
+                                $rotationStep = 360 / $totalCharacters;
+
+
+                                foreach ($characters as $index => $character) {
+                                    $rotationAngle = $rotationStep * $index;
+                                    echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
+                                }
+                                ?>
+                                </div>
+                            </a>
+                            <div class=" img-wrap">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
+                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                            </div>
+                        </div>
+                        <!-- <div class="img-wrap">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
                                 alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
-                        </div>
+                        </div> -->
                         <div class="grid-7 mt-4">
                             <div class="row me-0">
                                 <div class="col-12">
-                                    <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
-                                            alt="scaled19" class="object-fit-cover rounded"
-                                            style="height:; width:; margin-left:; " />
+                                    <div style="position: relative;">
+
+
+                                        <!-- Circle On The Right Side Of Projecten Slider -->
+                                        <a href="/projecten" id="demo1" class="circle text-circle">
+                                            <div style="position: relative; height: 200px;">
+                                                <?php
+                                            $text = '- Tuin in Voorthuizen -- Tuin in Voorthuizen -- Tuin in Voorthuizen -';
+                                            $characters = str_split($text);
+                                            $totalCharacters = count($characters);
+                                            $rotationStep = 360 / $totalCharacters;
+
+
+                                            foreach ($characters as $index => $character) {
+                                                $rotationAngle = $rotationStep * $index;
+                                                echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
+                                            }
+                                            ?>
+                                            </div>
+                                        </a>
+                                        <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
+                                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
+                                                alt="scaled19" class="object-fit-cover rounded"
+                                                style="height:; width:; margin-left:; " />
+                                        </div>
+
                                     </div>
+
                                     <div class="grid-item  ratio ratio-custom mt-4" style="--x:53;--y:67;">
                                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
                                             alt="scaled19" class="object-fit-cover rounded"
@@ -188,11 +371,32 @@
                                             alt="scaled5" class="object-fit-cover rounded"
                                             style="height:; width:; margin-left:;" />
                                     </div>
-                                    <div class="grid-item ratio ratio-custom mt-4" style="--x:39;--y:53;">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg"
-                                            alt="scaled65" class="object-fit-cover rounded"
-                                            style="height:; width:; margin-left:;" />
+                                    <div style="position: relative;">
+
+                                        <!-- Circle On The Right Side Of Projecten Slider -->
+                                        <a href="/projecten" id="demo2" class="circle text-circle">
+                                            <div style="position: relative; height: 200px;">
+                                                <?php
+                                            $text = '- Tuin Bij Tiny House -- Tuin Bij Tiny House -- Tuin Bij Tiny House -';
+                                            $characters = str_split($text);
+                                            $totalCharacters = count($characters);
+                                            $rotationStep = 360 / $totalCharacters;
+
+
+                                            foreach ($characters as $index => $character) {
+                                                $rotationAngle = $rotationStep * $index;
+                                                echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
+                                            }
+                                            ?>
+                                            </div>
+                                        </a>
+                                        <div class="grid-item ratio ratio-custom mt-4" style="--x:39;--y:53;">
+                                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg"
+                                                alt="scaled65" class="object-fit-cover rounded"
+                                                style="height:620px; width:; margin-left:;" />
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>

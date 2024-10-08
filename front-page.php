@@ -407,7 +407,7 @@
 
 
         <!--Projecten Slider  -->
-        <div class="container" style="position: relative;">
+        <div class="container" style="position: relative; margin-bottom:70px;">
 
             <!-- Circle On The Right Side Of Projecten Slider -->
             <a href="/projecten" id="demo3" class="circle text-circle">
@@ -515,7 +515,7 @@
 
         <!--Contact Opnemen Section  -->
 
-        <div class="container mt-20 d-none d-lg-block">
+        <div class="container mt-50 d-none d-lg-block">
             <div class="bottom-text">
                 <div class="row">
                     <div class="col-lg-6  position-relative fadeIn visible" data-side="left">

@@ -3,184 +3,71 @@
 
 <main class="flex-grow-1">
     <style>
-    /*First Swiper Buttons  */
-    .header {
-        margin-bottom: 60px;
-        color: #FFFFFF;
-        opacity: 1;
-        font-family: 'Henderson Sans-basic', sans-serif;
-        letter-spacing: 5px;
-        font-size: 50px;
-        font-weight: 300;
-        line-height: 60px;
-    }
-
-    .swiper1 {
-        width: 100%;
-        /* height: 300px; */
-        /* margin: 20px auto; */
-    }
-
-    .swiper1 {
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        overflow: hidden;
-        list-style: none;
-        padding: 0;
-        z-index: 1;
-        display: block;
-    }
-
-
-
-
-
-
-    /*Img Swiper  */
-
-    .swiper-container {
-        position: relative;
-        /* width: 70%;
+        .swiper-container {
+            position: relative;
+            /* width: 70%;
         margin: 0 auto; */
-    }
-
-    .swiper-container .swiper-pagination {
-        bottom: -50px !important;
-        display: block;
-    }
-
-    .swiper-container .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
-    }
-
-
-
-
-
-    .text-header {
-        margin-bottom: 30px;
-        color: #FFFFFF;
-        opacity: 1;
-        font-family: 'Henderson Sans-basic', sans-serif;
-        letter-spacing: 2px;
-        font-size: 40px;
-        font-weight: 300;
-        line-height: 60px;
-
-    }
-
-    .text {
-        margin-bottom: 35px;
-        font-size: 18px;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-        font-weight: 300;
-        line-height: 40px;
-
-    }
-
-    @media (min-width: 992px) {
+        }
 
         .swiper-container .swiper-pagination {
-            display: none;
+            bottom: -50px !important;
+            display: block;
+        }
+
+        .swiper-container .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+
         }
 
 
 
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: 1200px;
 
-        }
-
-
-
-        .img1 {
-            border-radius: 10px;
-
-            width: 626px;
-            height: 440px;
-        }
-
-        .img2 {
-            border-radius: 10px;
-
-            /* width: 370px;
-            height: 591px; */
-            width: 626px;
-            height: 440px;
-        }
-
-        .img3 {
-            border-radius: 10px;
-            width: 526px;
-            height: 382px;
-        }
-
-        .img3,
-        .img1,
-        .img2,
-        .groentuinen {
-            object-fit: cover;
-        }
-
-
-        /* .lin3 {
-            border: 1px solid #ffffff;
-            height: 1px;
-            width: 100%;
-            margin-top: 120px;
-
-        } */
-
-        .houseinbackground {
-            width: 500px;
-            height: 382px;
-            margin-left: 120px;
-        }
-
-        .position-relative {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-        }
-
-        .swiper {
-            flex-grow: 1;
-        }
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            color: #ffffff;
-            width: 50px;
-            height: 50px;
-
-        }
-
+        /*First Swiper Buttons  */
         .header {
             margin-bottom: 60px;
             color: #FFFFFF;
             opacity: 1;
             font-family: 'Henderson Sans-basic', sans-serif;
             letter-spacing: 5px;
-            font-size: 125px;
-            font-weight: 600;
+            font-size: 50px;
+            font-weight: 300;
             line-height: 60px;
-            margin-top: 60px;
         }
 
+        .swiper1 {
+            width: 100%;
+            /* height: 300px; */
+            /* margin: 20px auto; */
+        }
+
+        .swiper1 {
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            z-index: 1;
+            display: block;
+        }
+
+
+
+
+
+
+
+
+
+
+
         .text-header {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
             color: #FFFFFF;
             opacity: 1;
             font-family: 'Henderson Sans-basic', sans-serif;
-            letter-spacing: 5px;
+            letter-spacing: 2px;
             font-size: 40px;
             font-weight: 300;
             line-height: 60px;
@@ -189,45 +76,171 @@
 
         .text {
             margin-bottom: 35px;
-            font-size: 20px;
-            letter-spacing: 2px;
+            font-size: 18px;
+            letter-spacing: 0px;
             color: #FFFFFF;
             opacity: 1;
-            font-weight: 400;
+            font-weight: 300;
             line-height: 40px;
 
         }
 
-        .border-left {
-            border-left: 1px #FFFFFF solid;
-            height: 440px;
+        @media (min-width: 992px) {
+
+            .swiper-container .swiper-pagination {
+                display: none;
+            }
+
+
+
+            .bg-leaf {
+                background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-size: 1228px;
+                background-position: 669px 11px;
+
+
+            }
+
+
+
+            .img1 {
+                border-radius: 10px;
+
+                width: 626px;
+                height: 440px;
+            }
+
+            .img2 {
+                border-radius: 10px;
+
+                /* width: 370px;
+            height: 591px; */
+                width: 626px;
+                height: 440px;
+            }
+
+            .img3 {
+                border-radius: 10px;
+                width: 526px;
+                height: 382px;
+            }
+
+            .img3,
+            .img1,
+            .img2,
+            .groentuinen {
+                object-fit: cover;
+            }
+
+
+            /* .lin3 {
+            border: 1px solid #ffffff;
+            height: 1px;
+            width: 100%;
+            margin-top: 120px;
+
+        } */
+
+            .houseinbackground {
+                width: 500px;
+                height: 382px;
+                margin-left: 120px;
+            }
+
+            .position-relative {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .swiper {
+                flex-grow: 1;
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                color: #ffffff;
+                width: 50px;
+                height: 50px;
+
+            }
+
+            .header {
+                margin-bottom: 60px;
+                color: #FFFFFF;
+                opacity: 1;
+                font-family: 'Henderson Sans-basic', sans-serif;
+                letter-spacing: 5px;
+                font-size: 125px;
+                font-weight: 600;
+                line-height: 60px;
+                margin-top: 60px;
+            }
+
+            .text-header {
+                margin-bottom: 60px;
+                color: #FFFFFF;
+                opacity: 1;
+                font-family: 'Henderson Sans-basic', sans-serif;
+                letter-spacing: 5px;
+                font-size: 40px;
+                font-weight: 300;
+                line-height: 60px;
+
+            }
+
+            .text {
+                margin-bottom: 35px;
+                font-size: 20px;
+                letter-spacing: 2px;
+                color: #FFFFFF;
+                opacity: 1;
+                font-weight: 400;
+                line-height: 40px;
+
+            }
+
+            .border-left {
+                border-left: 1px #FFFFFF solid;
+                height: 440px;
+                opacity: 0.5;
+
+            }
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 40px;
+                height: 40px;
+
+            }
+        }
+
+
+
+        .lin3 {
+            border: 1px solid #ffffff;
+            height: 1px;
+            width: 100%;
+            margin-top: 120px;
             opacity: 0.5;
 
         }
-    }
 
-
-
-    @media (max-width: 768px) {
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            width: 40px;
-            height: 40px;
-
+        /* Set font size for swiper buttons */
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after,
+        .swiper-button-next:before,
+        .swiper-rtl .swiper-button-prev:before {
+            font-size: 16px;
         }
-    }
-
-
-
-    .lin3 {
-        border: 1px solid #ffffff;
-        height: 1px;
-        width: 100%;
-        margin-top: 120px;
-        opacity: 0.5;
-
-    }
     </style>
     <div class="bg-leaf">
         <div class="container">
@@ -244,11 +257,14 @@
 
             </div>
 
-            <!-- Swiper -->
-            <div style="margin-top:160px;">
+            <!-- Buttons Swiper -->
+            <div style="margin-top:140px;">
+
+
                 <div class="position-relative d-flex align-items-center justify-content-center ">
                     <!-- Swiper Button Prev -->
-                    <div class="swiper-button-prev" style="--swiper-navigation-color: #ffffff; ">
+                    <div class="swiper-button-prev d-none d-md-none d-lg-flex"
+                        style="--swiper-navigation-color: #ffffff; font-size:24px; border: 1px solid #fff;border-radius: 25px; ">
                     </div>
 
                     <!-- Swiper Slides Container -->
@@ -256,27 +272,29 @@
                         style="--swiper-navigation-color: #ffffff; --swiper-pagination-color: #f5a287; flex-grow: 1;">
                         <div class="swiper-wrapper">
 
-                            <div class="swiper-slide" style="">
-                                <div class="circle-border"><a href="#landelijke tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 18px 40px; font-size:20px;  
+                            <div class="swiper-slide" style="width:object-fit">
+                                <div class="circle-border">
+                                    <a href="#landelijke tuin" class="btn btn-secondary" style="line-height: 22px;
+                                   padding: 10px 20px; font-size:15px;  
                                         font-family: 'Henderson Sans-basic', sans-serif; 
                                         letter-spacing:1px;">Ontdek
                                         landelijke
-                                        tuinen</a>
+                                        tuinen
+                                    </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide" style="">
+                            <div class="swiper-slide" style=" ">
                                 <div class="circle-border"><a href="#moderne-tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 18px 40px; font-size:20px;
+                                   padding: 10px 20px; font-size:15px;
                                         font-family: 'Henderson Sans-basic', sans-serif;
                                          letter-spacing:1px; ">Ontdek
                                         Moderne
                                         tuinen</a>
                                 </div>
                             </div>
-                            <div class=" swiper-slide" style="">
+                            <div class=" swiper-slide" style="width:object-fit">
                                 <div class="circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 18px 40px; font-size:20px;
+                                   padding: 10px 20px; font-size:15px;
                                         letter-spacing:1px;">Ontdek
                                         ecologische
                                         tuinen</a>
@@ -285,7 +303,7 @@
                             <div class="swiper-slide" style="">
                                 <div class="circle-border"><a href="#daktuin-of-dakterras" class="btn btn-secondary"
                                         style="line-height: 22px;
-                                   padding: 18px 40px; font-size:20px;
+                                   padding: 10px 20px; font-size:15px;
                                         font-family: 'Henderson Sans-basic', sans-serif; 
                                         letter-spacing:1px;">Ontdek daktuin of dakterras
                                     </a>
@@ -293,7 +311,7 @@
                             </div>
                             <div class="swiper-slide" style="">
                                 <div class="circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 18px 40px; font-size:20px;
+                                   padding: 10px 20px; font-size:15px;
                                         font-family: 'Henderson Sans-basic', sans-serif; 
                                         letter-spacing:1px;">Ontdek
                                         ecologische
@@ -302,21 +320,23 @@
                             </div>
                             <div class="swiper-slide" style="">
                                 <div class=" circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 18px 40px; font-size:20px;
+                                   padding:10px 20px ; font-size:15px;
                                         font-family: 'Henderson Sans-basic', sans-serif; 
-                                        letter-spacing:1px;">Ontdek
-                                        ecologische
-                                        tuinen</a>
+                                        letter-spacing:1px; ">Ontdek
+                                        ecologische tuinen</a>
                                 </div>
                             </div>
 
                         </div>
-                        <!-- <div class="swiper-pagination"></div> -->
+
                     </div>
 
                     <!-- Swiper Button Next -->
-                    <div class="swiper-button-next" style="--swiper-navigation-color: #ffffff;"></div>
+                    <div class="swiper-button-next d-none d-md-none d-lg-flex"
+                        style="--swiper-navigation-color: #ffffff; font-size:24px; border: 1px solid #fff;border-radius: 25px;">
+                    </div>
                 </div>
+
             </div>
             <!-- End Of swiper -->
 
@@ -351,7 +371,7 @@
                     <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex"><img
                             src="<?= esc_url(get_template_directory_uri()); ?>/images/paarsflowers.png"
                             alt="Paarsflowers" class="img3" /></div>
-                    <div class="lin3"></div>
+                    <div class="lin3 d-none d-md-none d-lg-block"></div>
                 </div>
 
 
@@ -359,31 +379,37 @@
 
 
                 <!-- Swiper On Small Screen  First Swiper -->
-                <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: ">
+                <div class="swiper-container" style="--swiper-pagination-color: #fff">
 
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                alt="groenoverons" class="img1" />
+                    <div #swiperRef=""
+                        class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                        style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: ">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img
+                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
+                                    alt="groenoverons" class="img1" />
+                            </div>
+                            <div class="swiper-slide"><img
+                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
+                                    alt="groenoverons" class="img2" />
+                            </div>
+                            <div class="swiper-slide"><img
+                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/paarsflowers.png"
+                                    alt="groediverons" class="img3" />
+                            </div>
                         </div>
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                                alt="groenoverons" class="img2" />
-                        </div>
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/paarsflowers.png"
-                                alt="groediverons" class="img3" />
-                        </div>
+
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
                     </div>
-
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
 
                 </div>
 
+
             </div>
+            <div class="lin3 d-block d-md-block d-lg-none"></div>
 
 
 
@@ -427,30 +453,39 @@
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
                             alt="Beautifulpinkflowers" class="img2" />
                     </div>
-                    <div class="lin3"></div>
+                    <div class="lin3 d-none d-md-none d-lg-block"></div>
                 </div>
                 <!-- Swiper On Small Screen -->
+                <div class="swiper-container" style="--swiper-pagination-color: #fff">
 
-                <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
-                                alt="groenoverons" class="img1" /></div>
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
-                                alt="groenoverons" class="img2" /></div>
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
-                                alt="groediverons" class="img3" /></div>
+                    <div #swiperRef=""
+                        class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                        style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img
+                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
+                                    alt="groenoverons" class="img1" /></div>
+                            <div class="swiper-slide"><img
+                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
+                                    alt="groenoverons" class="img2" /></div>
+                            <div class="swiper-slide"><img
+                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
+                                    alt="groediverons" class="img3" /></div>
+                        </div>
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+
                     <div class="swiper-pagination"></div>
+
+
                 </div>
+
 
 
             </div>
+            <div class="lin3 d-block d-md-block d-lg-none"></div>
 
             <!-- 3 -->
             <div id="ecologische-tuin" class=" container" style="margin-top: 80px">
@@ -489,7 +524,7 @@
                     <!-- <div class="lin3"> -->
                 </div>
 
-                <div class="lin3"></div>
+                <div class="lin3  d-none d-md-none d-lg-block"></div>
             </div>
 
 
@@ -515,14 +550,15 @@
                     </div>
 
 
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
                     <!-- <div class="swiper-pagination"></div> -->
 
                 </div>
 
                 <div class="swiper-pagination"></div>
             </div>
+            <div class="lin3 d-block d-md-block d-lg-none"></div>
 
 
 
@@ -566,23 +602,35 @@
 
 
                 <!-- Swiper On Small Screen -->
-                <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
-                                alt="groenoverons" class="img1" /></div>
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
-                                alt="groenoverons" class="img2" /></div>
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
-                                alt="groediverons" class="img3" /></div>
+
+                <div class="swiper-container" style="--swiper-pagination-color: #fff">
+
+                    <div #swiperRef=""
+                        class=" swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                        style="--swiper-navigation-color: #f5a287; ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
+                                    alt="groenoverons" class="img1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
+                                    alt="groenoverons" class="img2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
+                                    alt="groediverons" class="img3" />
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+                        <!-- <div class="swiper-pagination"></div> -->
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
+
+
                 </div>
+
 
 
             </div>
@@ -590,9 +638,21 @@
 
 
 
+
+
+
+
         </div>
 
+
+
+
+
+
     </div>
+
+
+
 
 
 
@@ -649,102 +709,104 @@
             </div>
         </div>
     </div>
+
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
     </script>
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
+        document.querySelectorAll(".swiper-container").forEach(container => {
+            var swiper = new Swiper(container.querySelector(".mySwiper"), {
+                slidesPerView: 1.2,
+                centeredSlides: true,
+                loop: true,
+                grabCursor: true,
+                spaceBetween: 5,
+                pagination: {
+                    el: container.querySelector(".swiper-pagination"),
 
+                }
 
+                ,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                }
 
-            slidesPerView: 1.2,
-            centeredSlides: true,
-            loop: true,
-            grabCursor: true,
-            spaceBetween: 5,
-            pagination: {
-                el: ".swiper-pagination",
+                ,
+                breakpoints: {
+                    992: {
 
-            }
-
-            ,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            }
-
-            ,
-            breakpoints: {
-                992: {
-
-                    slidesPerView: 3.5,
+                        slidesPerView: 3.5,
+                    }
                 }
             }
-        }
 
-    );
+            );
+        })
 
-    var appendNumber = 4;
-    var prependNumber = 1;
 
-    document.querySelector(".prepend-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>",
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber + "</div>",
-            ]);
-        }
+        var appendNumber = 4;
+        var prependNumber = 1;
 
-    );
+        document.querySelector(".prepend-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>",
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber + "</div>",
+                ]);
+            }
 
-    document.querySelector(".prepend-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>");
-        }
+        );
 
-    );
+        document.querySelector(".prepend-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>");
+            }
 
-    document.querySelector(".append-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>");
-        }
+        );
 
-    );
+        document.querySelector(".append-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>");
+            }
 
-    document.querySelector(".append-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-            ]);
-        }
+        );
 
-    );
+        document.querySelector(".append-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                ]);
+            }
+
+        );
     </script>
 
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper1", {
+        var swiper = new Swiper(".mySwiper1", {
 
 
 
@@ -766,6 +828,9 @@
 
             ,
             breakpoints: {
+                556: {
+                    slidesPerView: 2.5,
+                },
                 992: {
 
                     slidesPerView: 3.5,
@@ -773,62 +838,62 @@
             }
         }
 
-    );
+        );
 
-    var appendNumber = 4;
-    var prependNumber = 1;
+        var appendNumber = 4;
+        var prependNumber = 1;
 
-    document.querySelector(".prepend-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>",
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber + "</div>",
-            ]);
-        }
+        document.querySelector(".prepend-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>",
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber + "</div>",
+                ]);
+            }
 
-    );
+        );
 
-    document.querySelector(".prepend-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>");
-        }
+        document.querySelector(".prepend-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>");
+            }
 
-    );
+        );
 
-    document.querySelector(".append-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>");
-        }
+        document.querySelector(".append-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>");
+            }
 
-    );
+        );
 
-    document.querySelector(".append-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-            ]);
-        }
+        document.querySelector(".append-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                ]);
+            }
 
-    );
+        );
     </script>
 </main>
 <?php get_footer() ?>
