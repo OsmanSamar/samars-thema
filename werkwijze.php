@@ -3,112 +3,17 @@
 
 <main class="flex-grow-1">
     <style>
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-size: 1600px;
-    }
-
-    .content {
-        position: absolute;
-        /* top: 50%; */
-        top: 82%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        text-align: center;
-        color: white;
-
-    }
-
-    .bottom-center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .groentuinen {
-        display: block;
-        object-fit: cover;
-        border-radius: 20px;
-    }
-
-    .text-header {
-
-        font-size: 31px;
-
-        margin-bottom: 48px;
-
-    }
-
-    .text {
-        font-size: 20px;
-
-        margin-bottom: 48px;
-    }
-
-    .content h1 {
-
-
-        font-size: 40px;
-        line-height: 70px;
-        font-weight: bold;
-    }
-
-    .content p {
-
-        font-size: 16px;
-        line-height: 20px;
-
-    }
-
-    .down {
-        display: inline-block;
-        transition: transform 0.3s ease;
-        width: 45px;
-        cursor: pointer;
-    }
-
-
-
-
-    .border-left {
-        /* display: none; */
-
-    }
-
-
-    /*  */
-    /* Initially hide the additional text */
-    /* .more-text {
-        display: none;
-    } */
-
-    /* Styling for the toggle arrow */
-    /* .read-more-toggle .arrow {
-        transition: transform 0.3s;
-    } */
-
-    /* Rotate arrow on click */
-    /* .read-more-toggle.active .arrow {
-        transform: rotate(180deg);
-    } */
-
-    /*  */
-
-    @media (min-width: 992px) {
-
-        /* Hide arrow on large screens */
-        .down {
-            display: none;
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 1600px;
         }
 
         .content {
             position: absolute;
-            top: 50%;
+            /* top: 50%; */
+            top: 82%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
@@ -117,63 +22,158 @@
 
         }
 
+        .bottom-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .groentuinen {
+            display: block;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .text-header {
+
+            font-size: 31px;
+
+            margin-bottom: 48px;
+
+        }
+
+        .text {
+            font-size: 20px;
+
+            margin-bottom: 48px;
+        }
+
         .content h1 {
 
-            font-size: 90px;
-            font-weight: 700;
-            line-height: 125px;
+
+            font-size: 40px;
+            line-height: 70px;
+            font-weight: bold;
         }
 
         .content p {
 
-            font-size: 20px;
-            line-height: 35px;
+            font-size: 16px;
+            line-height: 20px;
 
         }
+
+        .down {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            width: 45px;
+            cursor: pointer;
+        }
+
+
 
 
         .border-left {
-            display: flex;
-            height: 100%;
-            border-left: 1px solid #ffffff;
-            padding-right: 10px;
-            /* opacity: .5; */
+            /* display: none; */
+
         }
 
-        /* .nextline {
+
+        /*  */
+        /* Initially hide the additional text */
+        /* .more-text {
+        display: none;
+    } */
+
+        /* Styling for the toggle arrow */
+        /* .read-more-toggle .arrow {
+        transition: transform 0.3s;
+    } */
+
+        /* Rotate arrow on click */
+        /* .read-more-toggle.active .arrow {
+        transform: rotate(180deg);
+    } */
+
+        /*  */
+
+        @media (min-width: 992px) {
+
+            /* Hide arrow on large screens */
+            .down {
+                display: none;
+            }
+
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+                color: white;
+
+            }
+
+            .content h1 {
+
+                font-size: 90px;
+                font-weight: 700;
+                line-height: 125px;
+            }
+
+            .content p {
+
+                font-size: 20px;
+                line-height: 35px;
+
+            }
+
+
+            .border-left {
+                display: flex;
+                height: 100%;
+                border-left: 1px solid #ffffff;
+                padding-right: 10px;
+                /* opacity: .5; */
+            }
+
+            /* .nextline {
             opacity: .5;
             border: 1px solid #ffffff;
             width: 53%;
             display: inline-flex;
         } */
-    }
-
-
-
-    @media (min-width: 768px) {
-        .line2 {
-            height: 1px;
-            width: 52vw;
-            background-color: #ffffff;
-            color: #ffffff;
-            position: relative;
-            margin-right: 10px;
-            display: block;
-        }
-
-        .line3 {
-            height: 1px;
-            width: 50%;
-            background-color: #ffffff;
-            color: #ffffff;
-
         }
 
 
 
+        @media (min-width: 768px) {
+            .line2 {
+                height: 1px;
+                width: 52vw;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                margin-right: 10px;
+                display: block;
+            }
 
-        .border-left {}
-    }
+            .line3 {
+                height: 1px;
+                width: 50%;
+                background-color: #ffffff;
+                color: #ffffff;
+
+            }
+
+
+
+
+            .border-left {}
+        }
     </style>
     <div class="bg-leaf ">
 
@@ -276,36 +276,36 @@
                                                 class="btn btn-primary">Samen aan de slag</a>
                                         </div>
 
-                                        </script>
+
 
                                         <script>
-                                        $(document).ready(function() {
-                                            $('.read-more-toggle').click(function(e) {
-                                                e.preventDefault();
-                                                var moreText = $(this).prev('.content1').find(
-                                                    '.more-text');
+                                            $(document).ready(function () {
+                                                $('.read-more-toggle').click(function (e) {
+                                                    e.preventDefault();
+                                                    var moreText = $(this).prev('.content1').find(
+                                                        '.more-text');
 
 
-                                                // Toggle visibility of additional text
-                                                moreText.toggleClass('d-none');
+                                                    // Toggle visibility of additional text
+                                                    moreText.toggleClass('d-none');
 
-                                                // Toggle arrow icon
+                                                    // Toggle arrow icon
 
 
-                                                if (moreText.hasClass('d-none')) {
-                                                    $(this).html(
-                                                        '<span class="arrow fas fa-angle-down"></span>'
-                                                    );
-                                                } else {
-                                                    $(this).html(
-                                                        '<span class="arrow fas fa-angle-up" > </span>'
-                                                    );
-                                                }
+                                                    if (moreText.hasClass('d-none')) {
+                                                        $(this).html(
+                                                            '<span class="arrow fas fa-angle-down"></span>'
+                                                        );
+                                                    } else {
+                                                        $(this).html(
+                                                            '<span class="arrow fas fa-angle-up" > </span>'
+                                                        );
+                                                    }
 
-                                                // Add or remove active class for arrow animation
-                                                $(this).toggleClass('active');
+                                                    // Add or remove active class for arrow animation
+                                                    $(this).toggleClass('active');
+                                                });
                                             });
-                                        });
                                         </script>
 
                                     </div>

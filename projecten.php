@@ -3,255 +3,287 @@
 
 <main class="flex-grow-1">
     <style>
-    .swiper-container {
-        position: relative;
+        .swiper-container {
+            position: relative;
 
-    }
+        }
 
-    .swiper-container .swiper-pagination {
-        bottom: -50px !important;
+        .swiper-container .swiper-pagination {
+            bottom: -50px !important;
 
-    }
+        }
 
-    .swiper-container .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
-    }
+        .swiper-container .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+        }
 
-    /* Circle Style */
+        /* Circle Style */
 
-    /* Hide the CircleType by default */
-    #demo3 {
-        display: none;
-    }
-
-    #demo2 {
-        display: none;
-    }
-
-    #demo1 {
-        display: none;
-    }
-
-    /* Show the CircleType on devices with a width of 1024px and up */
-    @media (min-width: 1024px) {
+        /* Hide the CircleType by default */
         #demo3 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-            width: 200px;
-            overflow: hidden;
-            position: absolute;
-            bottom: -55px;
-            /* bottom: -50px; */
-            transform: translate(50%, 50%);
-            /* position: fixed; */
-            right: -70px;
-
-            /* Position it at the right edge */
-            transform: translateY(-50%);
-            color: #fff;
-            border-radius: 50%;
-            font-size: 12px;
-            letter-spacing: 3px;
-            z-index: 1000;
-
+            display: none;
         }
 
         #demo2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-            width: 200px;
-            overflow: hidden;
-            position: absolute;
-            bottom: -255px;
-
-            transform: translate(50%, 50%);
-            /* position: fixed; */
-            right: -70px;
-
-            /* Position it at the right edge */
-            transform: translateY(-50%);
-            color: #fff;
-            border-radius: 50%;
-            font-size: 12px;
-            letter-spacing: 3px;
-            z-index: 1000;
-
+            display: none;
         }
 
         #demo1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-            width: 200px;
-            overflow: hidden;
+            display: none;
+        }
+
+        /* Show the CircleType on devices with a width of 1024px and up */
+        @media (min-width: 1024px) {
+            #demo3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+                width: 200px;
+                overflow: hidden;
+                position: absolute;
+                bottom: -55px;
+                /* bottom: -50px; */
+                transform: translate(50%, 50%);
+                /* position: fixed; */
+                right: -70px;
+
+                /* Position it at the right edge */
+                transform: translateY(-50%);
+                color: #fff;
+                border-radius: 50%;
+                font-size: 12px;
+                letter-spacing: 3px;
+                z-index: 1000;
+
+            }
+
+            #demo2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+                width: 200px;
+                overflow: hidden;
+                position: absolute;
+                bottom: -255px;
+
+                transform: translate(50%, 50%);
+                /* position: fixed; */
+                right: -70px;
+
+                /* Position it at the right edge */
+                transform: translateY(-50%);
+                color: #fff;
+                border-radius: 50%;
+                font-size: 12px;
+                letter-spacing: 3px;
+                z-index: 1000;
+
+            }
+
+            #demo1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+                width: 200px;
+                overflow: hidden;
+                position: absolute;
+                bottom: -65px;
+
+                transform: translate(50%, 50%);
+                /* position: fixed; */
+                /* Position it at the right edge */
+                right: -97px;
+                transform: translateY(-50%);
+                color: #fff;
+                border-radius: 50%;
+                font-size: 12px;
+                letter-spacing: 3px;
+                z-index: 1000;
+
+            }
+        }
+
+        #demo3 span {
             position: absolute;
-            bottom: -65px;
-
-            transform: translate(50%, 50%);
-            /* position: fixed; */
-            /* Position it at the right edge */
-            right: -97px;
-            transform: translateY(-50%);
-            color: #fff;
-            border-radius: 50%;
-            font-size: 12px;
-            letter-spacing: 3px;
-            z-index: 1000;
+            left: 50%;
+            transform-origin: 0 100px;
 
         }
-    }
 
-    #demo3 span {
-        position: absolute;
-        left: 50%;
-        transform-origin: 0 100px;
+        #demo2 span {
+            position: absolute;
+            left: 50%;
+            transform-origin: 0 100px;
 
-    }
-
-    #demo2 span {
-        position: absolute;
-        left: 50%;
-        transform-origin: 0 100px;
-
-    }
-
-    #demo1 span {
-        position: absolute;
-        left: 50%;
-        transform-origin: 0 100px;
-
-    }
-
-
-    @keyframes rotating {
-        from {
-            transform: rotate(0deg);
         }
 
-        to {
-            transform: rotate(360deg);
-        }
-    }
+        #demo1 span {
+            position: absolute;
+            left: 50%;
+            transform-origin: 0 100px;
 
-    .text-circle {
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-        animation-name: rotating;
-        animation-timing-function: linear;
-        height: 280px;
-        width: 280px;
-        overflow: visible;
-
-    }
-
-
-
-    /*  */
-
-    .line-top {
-
-        border: 1px solid #ffffff;
-        height: 1px;
-        width: 100%;
-        opacity: 0.3;
-    }
-
-    .vlsm {
-        margin: 20px;
-        border-left: 1px solid white;
-        height: 80px;
-        position: absolute;
-        left: 50%;
-        margin-left: -3px;
-        top: 250px;
-    }
-
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* background-size: 1600px; */
-    }
-
-    .image-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-    }
-
-    .grid-item {
-        display: flex;
-        justify-content: center;
-    }
-
-    .grid-item:nth-child(2) {
-        grid-row: span 2;
-        /* Spans second image across 2 rows */
-    }
-
-
-    .lin3 {
-        border: 1px solid #ffffff;
-        height: 1px;
-        width: 100%;
-        margin-top: 50px;
-        opacity: 0.3;
-    }
-
-    .text-header {
-        color: #F8F4EA;
-        font-size: 60px;
-    }
-
-
-    @media (min-width: 992px) {
-        .text-header {
-
-            font-size: 120px;
-            margin-bottom: 120px;
         }
 
-        .nline {
+
+        @keyframes rotating {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .text-circle {
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-name: rotating;
+            animation-timing-function: linear;
+            height: 280px;
+            width: 280px;
+            overflow: visible;
+
+        }
+
+
+
+        /*  */
+
+        .line-top {
+
             border: 1px solid #ffffff;
-            opacity: 0.3;
-            width: 50%;
             height: 1px;
+            width: 100%;
+            opacity: 0.3;
         }
-    }
 
-    .ratio-custom {
+        .vlsm {
+            margin: 20px;
+            border-left: 1px solid white;
+            height: 80px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 250px;
+        }
 
-        --bs-aspect-ratio: calc(var(--y) / var(--x)* 100%);
-    }
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-size: 1600px; */
+        }
 
-    .grid-7,
-    .grid-7 {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 1fr;
-        grid-gap: 0;
-    }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
 
-    .grid-7>:first-child,
-    .grid-7>:first-child {
-        grid-area: 1 / 1 / 2 / 5;
-    }
+        .grid-item {
+            display: flex;
+            justify-content: center;
+        }
 
-    .grid-7>:nth-child(2),
-    .grid-7>:nth-child(2) {
-        grid-area: 1 / 5 / 2 / 8;
-    }
+        .grid-item:nth-child(2) {
+            grid-row: span 2;
+            /* Spans second image across 2 rows */
+        }
 
-    .grid-item img {
-        object-fit: cover;
-        width: 100%;
-    }
+
+        .lin3 {
+            border: 1px solid #ffffff;
+            height: 1px;
+            width: 100%;
+            margin-top: 50px;
+            opacity: 0.3;
+        }
+
+        .text-header {
+            color: #F8F4EA;
+            font-size: 60px;
+        }
+
+
+        @media (min-width: 992px) {
+            .text-header {
+
+                font-size: 120px;
+                margin-bottom: 120px;
+            }
+
+            .nline {
+                border: 1px solid #ffffff;
+                opacity: 0.3;
+                width: 50%;
+                height: 1px;
+            }
+        }
+
+        .ratio-custom {
+
+            --bs-aspect-ratio: calc(var(--y) / var(--x)* 100%);
+        }
+
+        .grid-7,
+        .grid-7 {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 1fr;
+            grid-gap: 0;
+        }
+
+        .grid-7>:first-child,
+        .grid-7>:first-child {
+            grid-area: 1 / 1 / 2 / 5;
+        }
+
+        .grid-7>:nth-child(2),
+        .grid-7>:nth-child(2) {
+            grid-area: 1 / 5 / 2 / 8;
+        }
+
+        .grid-item img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .overlay1 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-circle:hover .overlay1 {
+            opacity: 0.5;
+        }
+
+        .circle-text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
     </style>
     <div>
         <div class="container  ">
@@ -370,7 +402,7 @@
                                             alt="scaled5" class="object-fit-cover rounded"
                                             style="height:; width:; margin-left:;" />
                                     </div>
-                                    <div style="position: relative;">
+                                    <div class="container-circle" style="position: relative;">
 
                                         <!-- Circle On The Right Side Of Projecten Slider -->
                                         <a href="/projecten" id="demo2" class="circle text-circle">
@@ -389,10 +421,15 @@
                                                 ?>
                                             </div>
                                         </a>
-                                        <div class="grid-item ratio ratio-custom mt-4" style="--x:39;--y:53;">
+                                        <div class="grid-item ratio ratio-custom  mt-4" style="--x:39;--y:53;">
                                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg"
                                                 alt="scaled65" class="object-fit-cover rounded"
-                                                style="height:620px; width:; margin-left:;" />
+                                                style="height:620px; width:; margin-left:; display:block" />
+                                            <div class="overlay1">
+
+                                                <div class="circle-text">Tuin Bij Tiny House</div>
+
+                                            </div>
                                         </div>
                                     </div>
 
@@ -557,7 +594,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div> -->
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination d-lg-none"></div>
 
         </div>
 
@@ -605,7 +642,7 @@
                 <div class="swiper-pagination"></div> -->
             </div>
 
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination d-lg-none"></div>
 
         </div>
 
@@ -714,39 +751,39 @@
     </script>
     <!-- Initialize Swiper -->
     <script>
-    // var swiper = new Swiper(".mySwiper", {
+        // var swiper = new Swiper(".mySwiper", {
 
 
 
-    //         slidesPerView: 1.2,
-    //         centeredSlides: true,
-    //         loop: true,
-    //         grabCursor: true,
-    //         spaceBetween: 5,
-    //         pagination: {
-    //             el: ".swiper-pagination",
+        //         slidesPerView: 1.2,
+        //         centeredSlides: true,
+        //         loop: true,
+        //         grabCursor: true,
+        //         spaceBetween: 5,
+        //         pagination: {
+        //             el: ".swiper-pagination",
 
-    //         }
+        //         }
 
-    //         ,
-    //         navigation: {
-    //             nextEl: ".swiper-button-next",
-    //             prevEl: ".swiper-button-prev",
-    //         }
+        //         ,
+        //         navigation: {
+        //             nextEl: ".swiper-button-next",
+        //             prevEl: ".swiper-button-prev",
+        //         }
 
-    //         ,
-    //         breakpoints: {
-    //             992: {
+        //         ,
+        //         breakpoints: {
+        //             992: {
 
-    //                 slidesPerView: 3.5,
-    //             }
-    //         }
-    //     }
+        //                 slidesPerView: 3.5,
+        //             }
+        //         }
+        //     }
 
-    // );
+        // );
 
-    document.querySelectorAll(".swiper-container").forEach(container => {
-        var swiper = new Swiper(container.querySelector(".mySwiper"), {
+        document.querySelectorAll(".swiper-container").forEach(container => {
+            var swiper = new Swiper(container.querySelector(".mySwiper"), {
                 slidesPerView: 1.2,
                 centeredSlides: true,
                 loop: true,
@@ -772,63 +809,63 @@
                 }
             }
 
+            );
+        })
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+
+        document.querySelector(".prepend-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>",
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber + "</div>",
+                ]);
+            }
+
         );
-    })
 
-    var appendNumber = 4;
-    var prependNumber = 1;
+        document.querySelector(".prepend-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>");
+            }
 
-    document.querySelector(".prepend-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>",
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber + "</div>",
-            ]);
-        }
+        );
 
-    );
+        document.querySelector(".append-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>");
+            }
 
-    document.querySelector(".prepend-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>");
-        }
+        );
 
-    );
+        document.querySelector(".append-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                ]);
+            }
 
-    document.querySelector(".append-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>");
-        }
-
-    );
-
-    document.querySelector(".append-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-            ]);
-        }
-
-    );
+        );
     </script>
 
 

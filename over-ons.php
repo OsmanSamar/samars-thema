@@ -6,8 +6,7 @@
     <style>
     .swiper-container {
         position: relative;
-        /* width: 70%;
-        margin: 0 auto; */
+
     }
 
     .swiper-container .swiper-pagination {
@@ -111,7 +110,7 @@
     .groenoverons {
 
         width: 100%;
-        height: 823px;
+        /* height: 823px; */
         object-fit: cover;
         border-radius: 10px;
     }
@@ -126,14 +125,16 @@
         }
     }
 
-    /* h2 {
-        color: #fff;
-        font-size: 39px;
-        font-weight: 300;
-        line-height: 60px;
-    } */
 
     @media (min-width: 992px) {
+
+        .groenoverons {
+
+
+            height: 823px;
+
+        }
+
 
         /* height:566px */
         .groentuinen {
