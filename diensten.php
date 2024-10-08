@@ -171,44 +171,51 @@
                         <div class=" d-flex flex-row align-items-center justify-content-between  border-bottom  "
                             style="margin:10px; ">
                             <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/04/design.svg" alt="" class="icon"
-                                style="width:26px; height: 26px;">
+                                style="width:36px; height: 36px;">
 
-                            <p style="font-size:18px;">Tuinontwerp</p>
+                            <p style="font-size:24px; line-height:32px; ">Tuinontwerp</p>
 
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                alt="downarrow Icon" class="downarrow-icon" style="width:26px; height: 26px;" />
+                                alt="downarrow Icon" class="downarrow-icon" style="width:36px; height: 36px;" />
 
 
                         </div>
+
                         <div class=" d-flex flex-row align-items-center justify-content-between border-bottom "
                             style="margin:10px; ">
 
                             <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/04/design.svg" alt="" class="icon"
-                                style="width:26px; height: 26px;">
-                            <p>Tuinaanleg</p>
+                                style="width:36px; height: 36px;">
+
+
+                            <p style="font-size:24px; line-height:32px; ">Tuinaanleg</p>
 
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                alt="downarrow Icon" class="downarrow-icon" style="width:26px; height: 26px;" />
+                                alt="downarrow Icon" class="downarrow-icon" style="width:36px; height: 36px;" />
                         </div>
+
                         <div class=" d-flex flex-row align-items-center justify-content-between border-bottom  "
                             style="margin:10px; ">
 
                             <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/04/design.svg" alt="" class="icon"
-                                style="width:26px; height: 26px;">
-                            <p>Tuinonderhoud</p>
+                                style="width:36px; height: 36px;">
+
+                            <p style="font-size:24px; line-height:32px; ">Tuinonderhoud</p>
 
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                alt="downarrow Icon" class="downarrow-icon" style="width:26px; height: 26px;" />
+                                alt="downarrow Icon" class="downarrow-icon" style="width:36px; height: 36px;" />
                         </div>
+
                         <div class=" d-flex flex-row align-items-center justify-content-between  "
                             style="margin:10px; ">
 
                             <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/04/design.svg" alt="" class="icon"
-                                style="width:26px; height: 26px;">
-                            <p>Advies</p>
+                                style="width:36px; height: 36px;">
+
+                            <p style="font-size:24px; line-height:32px; ">Advies</p>
 
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                alt="downarrow Icon" class="downarrow-icon" style="width:26px; height: 26px;" />
+                                alt="downarrow Icon" class="downarrow-icon" style="width:36px; height: 36px;" />
                         </div>
 
 
@@ -222,7 +229,7 @@
 
             <div class="col-12 col-lg-7">
 
-                <div class="" style="margin-left:70px; margin-right:40px;">
+                <div class="" style="margin-left:70px; ">
 
 
                     <p class="" style=";">
