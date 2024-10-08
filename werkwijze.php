@@ -234,6 +234,7 @@
 
 
                     <!-- Column Wrapper -->
+                    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
                     <div class=" col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
                         <div class="row gx-5">
                             <!--1st Column -->
@@ -260,9 +261,13 @@
                                                     We maken een offerte voor het realiseren van je droomtuin.</span>
                                             </p>
                                             <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-                                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
-                                                    alt="down arrow" class="arrow-icon down" style="border:none;  ">
+                                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
+                                                    alt="down arrow" class="arrow-icon down" style="border:none;  "> -->
+                                                <span class="arrow fas fa-angle-down "
+                                                    style='font-size:24px;color:white'></span>
                                             </a>
+
+
 
 
                                         </div>
@@ -272,28 +277,40 @@
                                                 class="btn btn-primary">Samen aan de slag</a>
                                         </div>
 
+                                        </script>
+
                                         <script>
                                         $(document).ready(function() {
                                             $('.read-more-toggle').click(function(e) {
                                                 e.preventDefault();
                                                 var moreText = $(this).prev('.content1').find(
                                                     '.more-text');
-                                                var arrowIcon = $(this).find('img.arrow-icon');
+                                                //  var arrowIcon = $(this).find('img.arrow-icon');
 
                                                 // Toggle visibility of additional text
                                                 moreText.toggleClass('d-none');
 
                                                 // Toggle arrow icon
+                                                // if (moreText.hasClass('d-none')) {
+                                                //     arrowIcon.attr('src',
+                                                //         '<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg'
+                                                //     );
+                                                //     arrowIcon.attr('alt', 'down arrow');
+                                                // } else {
+                                                //     arrowIcon.attr('src',
+                                                //         '<?= esc_url(get_template_directory_uri()); ?>/images/up-arrow.svg'
+                                                //     );
+                                                //     arrowIcon.attr('alt', 'up arrow');
+                                                // }
+
                                                 if (moreText.hasClass('d-none')) {
-                                                    arrowIcon.attr('src',
-                                                        '<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg'
+                                                    $(this).html(
+                                                        '<span class="arrow fas fa-angle-down"></span>'
                                                     );
-                                                    arrowIcon.attr('alt', 'down arrow');
                                                 } else {
-                                                    arrowIcon.attr('src',
-                                                        '<?= esc_url(get_template_directory_uri()); ?>/images/up-arrow.svg'
+                                                    $(this).html(
+                                                        '<span class="arrow fas fa-angle-up" > </span>'
                                                     );
-                                                    arrowIcon.attr('alt', 'up arrow');
                                                 }
 
                                                 // Add or remove active class for arrow animation
@@ -331,8 +348,10 @@
                                                     aan toe
                                                     bent.</span> </p>
                                             <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-                                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
-                                                    alt="down arrow" class="arrow-icon down">
+                                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
+                                                    alt="down arrow" class="arrow-icon down"> -->
+                                                <span class="arrow fas fa-angle-down "
+                                                    style='font-size:24px;color:white'></span>
                                             </a>
 
 
@@ -421,8 +440,10 @@
                                                     voor je aan de slag gaan.</span>
                                             </p>
                                             <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-                                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
-                                                    alt="down arrow" class="arrow-icon down">
+                                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
+                                                    alt="down arrow" class="arrow-icon down"> -->
+                                                <span class="arrow fas fa-angle-down "
+                                                    style='font-size:24px;color:white'></span>
                                             </a>
 
 
