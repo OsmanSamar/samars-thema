@@ -318,10 +318,13 @@
                                     <div>
 
 
-                                        <div class=" d-lg-flex flex-row align-items-center gap-3">
+                                        <div
+                                            class=" d-lg-flex flex-row align-items-center justify-content-center gap-3">
                                             <h2 class="text-header   ">Wat je krijgt</h2>
-                                            <div class="line3 between d-none d-lg-inline-flex ">
-                                            </div>
+
+
+
+                                            <div class="line3  d-none d-lg-block "></div>
 
                                         </div>
 
@@ -341,13 +344,12 @@
                                                 <span class="arrow fas fa-angle-down "
                                                     style='font-size:24px;color:white'></span>
                                             </a>
+                                        </div>
 
-
-                                            <div class=" circle-border">
-                                                <a href="<?= esc_url(home_url('/projecten')); ?>"
-                                                    class="btn btn-primary">Bekijk onze
-                                                    projecten</a>
-                                            </div>
+                                        <div class=" circle-border">
+                                            <a href="<?= esc_url(home_url('/projecten')); ?>"
+                                                class="btn btn-primary">Bekijk onze
+                                                projecten</a>
                                         </div>
                                     </div>
 
@@ -442,11 +444,10 @@
                                                 <span class="arrow fas fa-angle-down "
                                                     style='font-size:24px;color:white'></span>
                                             </a>
+                                        </div>
 
-
-                                            <div class="circle-border">
-                                                <a href="#" class="btn btn-secondary">Over duurzaamheid</a>
-                                            </div>
+                                        <div class="circle-border">
+                                            <a href="/duurzaamheid" class="btn btn-secondary">Over duurzaamheid</a>
                                         </div>
                                     </div>
                                     <div>
@@ -454,14 +455,7 @@
                                             alt="Werkwijzetuin" class="" style="object-fit: cover; width:100% ;" />
                                     </div>
                                 </div>
-
-
-
                             </div>
-
-
-
-
                         </div>
 
                     </div>

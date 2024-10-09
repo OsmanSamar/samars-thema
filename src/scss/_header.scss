@@ -66,17 +66,22 @@ html {
   align-items: center;
   justify-content: center;
   // position: fixed;
-  position: sticky;
+  position: absolute;
   z-index: 10;
   top: 0;
   width: 100%;
   box-sizing: border-box;
   margin-top: 46px;
 }
+.bg-container,
+main {
+  padding-top: 140px;
+}
 
 /* Style the Logo  */
 
 .navbar-brand img {
+  height: 65px;
   max-height: 90px;
   height: auto;
   width: auto;

@@ -70,17 +70,7 @@
     </div>
 
     <!-- WhatsApp Icon with fixed position -->
-    <div class="whatsapp-fixed">
-        <span class="close-button">&times;</span>
-        <div class="background-text">
-            <span>Een vraag of advies nodig?</span>
-            <span>Stuur ons een appje!</span>
-        </div>
-        <a href="https://wa.me/0621493752" target="_blank">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/whatsappicon.svg" alt="WhatsApp Icon"
-                class="whatsapp-icon" />
-        </a>
-    </div>
+
 </div>
 <!-- End Of bg-container -->
 
