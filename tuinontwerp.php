@@ -147,14 +147,26 @@
 
 
         <div class=" d-flex flex-column text-center my-4 ">
-            <h1 class=" mb-3">Tuinontwerp</h1>
+
             <!-- Breadcrumb Links -->
-            <div class="d-inline-block"><a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span
-                    class="separator"> // </span>
+            <div class="d-inline-block" style="color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 45px;
+        margin-top:45px;">
+                <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span class="separator"> // </span>
                 <span class="last">Onze diensten</span>
                 <span class="separator"> // </span>
                 <span class="last">Tuinontwerp</span>
             </div>
+
+            <h1 class=" mb-3" style="color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 125px;
+        margin-bottom: 45px;">Tuinontwerp</h1>
         </div>
 
         <div class="row ">

@@ -619,11 +619,13 @@
 
 
                 </div>
-                <div class=" d-flex flex-row align-items-center ">
+                <!-- <div class=" d-flex flex-row align-items-center ">
                     <div class="swiper-button-next d-none d-lg-block"></div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev  d-none d-lg-block"></div>
-                </div>
+                </div> -->
+
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
@@ -750,6 +752,7 @@
     <script>
     document.querySelectorAll(".swiper-container").forEach(container => {
         var swiper = new Swiper(container.querySelector(".mySwiper"), {
+
                 slidesPerView: 1.2,
                 centeredSlides: true,
                 loop: true,

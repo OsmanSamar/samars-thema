@@ -76,7 +76,7 @@
             <span>Een vraag of advies nodig?</span>
             <span>Stuur ons een appje!</span>
         </div>
-        <a href="https://wa.me/yourphonenumber" target="_blank">
+        <a href="https://wa.me/0621493752" target="_blank">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/whatsappicon.svg" alt="WhatsApp Icon"
                 class="whatsapp-icon" />
         </a>
@@ -369,24 +369,7 @@
             }
         }
 
-        /* .slider-text-button-container-right {
-            position: absolute;
-            bottom: 8px;
-            right: -20px;
-            width: 100%;
-            padding: 0 20px;
-           
-        box-sizing: border-box;
-        z-index: 1000;
-        }
 
-        .line-before {
-            border: 1px #fff solid;
-            width: 340px;
-            height: 1px;
-        }
-
-        */
 
         /* Text styling */
         .slider-text-button-container .text {

@@ -586,6 +586,7 @@ html {
     position: relative;
     margin-right: 10px; /* Space between line and Instagram icon */
     display: block;
+    opacity: 0.5;
   }
 
   .line {
@@ -1095,6 +1096,7 @@ a ::after {
   order: 1;
   margin: 20px auto;
   width: 50%;
+  opacity: 0.5;
 }
 
 .text-line-button-section .text-left {
@@ -1215,7 +1217,6 @@ a ::after {
 
 .hr-text {
   border: 0;
-  /* line-height: 1em; */
   position: relative;
   text-align: center;
   height: 1.5em;
@@ -1247,9 +1248,6 @@ a ::after {
   background-color: #405f4f;
 }
 
-/*  */
-
-/* max-width: 768px */
 /* Mobile and Tablet styles */
 
 @media (max-width: 1024px) {
@@ -1299,8 +1297,6 @@ a ::after {
     margin-right: 2px;
     width: calc(100% / 2.5);
     transform: scale(1.6);
-
-    /* transition: transform .66s cubic-bezier(.4, 0, 0, 1), left .66s cubic-bezier(.4, 0, 0, 1), opacity .66s cubic-bezier(.4, 0, 0, 1); */
   }
 
   .swiper-slide img {
@@ -1313,14 +1309,14 @@ a ::after {
   }
 
   /* Position navigation buttons below the images */
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: absolute;
-    bottom: -30px;
-    width: 44px;
-    height: 44px;
-    z-index: 10;
-  }
+  // .swiper-button-next,
+  // .swiper-button-prev {
+  //   position: absolute;
+  //   bottom: -30px;
+  //   width: 44px;
+  //   height: 44px;
+  //   z-index: 10;
+  // }
 
   .swiper-button-next {
     right: 10px;
