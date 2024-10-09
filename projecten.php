@@ -253,24 +253,40 @@
         width: 100%;
     }
 
-    .overlay1 {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
+    .middle {
         transition: .5s ease;
-        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        /* background-color: rgba(0, 0, 0, 0.5);
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
 
-    .container-circle:hover .overlay1 {
-        opacity: 0.5;
+    .container-circle:hover #demo1 {
+        display: none;
+    }
+
+    .container-circle:hover #demo2 {
+        display: none;
+    }
+
+    .container-circle:hover #demo3 {
+        display: none;
+    }
+
+    .container-circle:hover .tiny-house {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+    }
+
+    .container-circle:hover .middle {
+        opacity: 1;
     }
 
     .circle-text {
@@ -328,7 +344,7 @@
                     </div>
 
                     <div class="col-12 col-lg-7 mb-4 text-center.grid-7 ">
-                        <div style="position: relative;">
+                        <div class="container-circle" style="position: relative;">
 
                             <!-- Circle On The Right Side Of Projecten Slider -->
                             <a href="/projecten" id="demo3" class="circle text-circle">
@@ -349,7 +365,23 @@
                             </a>
                             <div class=" img-wrap">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded " style="opacity:0.7;" />
+
+                                <div class="middle">
+
+                                    <div class="circle-text">
+                                        <h1>
+                                            Tuinonderhoud in Ede
+                                        </h1>
+
+                                        <span>
+                                            In Ede voert GROENtuinen regelmatig onderhoud uit aan deze tuin. Zo komt de
+                                            tuin het beste z'n recht en bloeit aj he groen op hun mooist.
+                                        </span>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                         <!-- <div class="img-wrap">
@@ -359,7 +391,7 @@
                         <div class="grid-7 mt-4">
                             <div class="row me-0">
                                 <div class="col-12">
-                                    <div style="position: relative;">
+                                    <div class="container-circle" style="position: relative;">
 
 
                                         <!-- Circle On The Right Side Of Projecten Slider -->
@@ -382,7 +414,23 @@
                                         <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
                                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
                                                 alt="scaled19" class="object-fit-cover rounded"
-                                                style="height:; width:; margin-left:; " />
+                                                style="height:; width:; margin-left:; opacity:0.7;" />
+
+
+                                            <div class="middle">
+
+                                                <div class="circle-text">
+                                                    <h1>
+                                                        Tuin in Voorthuizen
+                                                    </h1>
+
+                                                    <span>
+                                                        GROENtuinen heeft in Voorthuizen een botanische tuin ontworpen
+                                                        en gerealiseerd.
+                                                    </span>
+                                                </div>
+
+                                            </div>
                                         </div>
 
                                     </div>
@@ -402,6 +450,8 @@
                                             alt="scaled5" class="object-fit-cover rounded"
                                             style="height:; width:; margin-left:;" />
                                     </div>
+
+
                                     <div class="container-circle" style="position: relative;">
 
                                         <!-- Circle On The Right Side Of Projecten Slider -->
@@ -423,11 +473,20 @@
                                         </a>
                                         <div class="grid-item ratio ratio-custom  mt-4" style="--x:39;--y:53;">
                                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg"
-                                                alt="scaled65" class="object-fit-cover rounded"
-                                                style="height:620px; width:; margin-left:; display:block" />
-                                            <div class="overlay1">
+                                                alt="scaled65" class="tiny-house object-fit-cover rounded"
+                                                style="height:620px; width:; margin-left:; display:block; opacity:0.7;" />
+                                            <div class="middle">
 
-                                                <div class="circle-text">Tuin Bij Tiny House</div>
+                                                <div class="circle-text">
+                                                    <h1>
+                                                        Tuin Bij Tiny House
+                                                    </h1>
+
+                                                    <span>
+                                                        GROENtuinen heeft de aanleg van deze prachtige botanische tuin
+                                                        in Barneveld verzorgd.
+                                                    </span>
+                                                </div>
 
                                             </div>
                                         </div>
