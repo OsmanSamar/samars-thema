@@ -62,11 +62,13 @@
     <?php wp_body_open(); ?>
     <header>
 
-        <nav class="navbar navbar-expand-xl  navbar-light sans-serif">
+        <nav class="navbar navbar-expand-lg   navbar-light sans-serif">
 
             <div class="container ">
                 <!-- Hier can word the hamburfer menu on small screen on right side  -->
                 <!-- <div class="position-relative d-flex w-100"> -->
+
+
                 <!-- Logo -->
                 <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenlogo.png"
@@ -85,6 +87,7 @@
                         justify-content: center;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
 
                 <!-- Navigation Menu -->
                 <div class="collapse navbar-collapse justify-content-lg-end justify-content-start"

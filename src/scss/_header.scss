@@ -72,13 +72,6 @@ html {
   width: 100%;
   box-sizing: border-box;
   margin-top: 46px;
-
-  // Cancled positiob absolute
-  // &-collapse {
-  //   position: absolute;
-  //   width: 100%;
-  //   top: 100%;
-  // }
 }
 
 /* Style the Logo  */
@@ -1469,27 +1462,3 @@ a ::after {
     margin-bottom: 10px;
   }
 }
-
-// Swiper On Small Screen
-
-// .swiper-container {
-//   position: relative;
-//   width: 70%;
-//   margin: 0 auto;
-// }
-
-// .swiper-container .swiper-pagination {
-//   bottom: -50px !important;
-//   display: block;
-// }
-
-// .swiper-container .swiper-pagination-bullet {
-//   width: 15px;
-//   height: 15px;
-// }
-
-// @media (min-width: 992px) {
-//   .swiper-container .swiper-pagination {
-//     display: none;
-//   }
-// }
