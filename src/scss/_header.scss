@@ -61,7 +61,6 @@ html {
 /* The navbar Style  */
 
 .navbar {
-  // position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,8 +122,16 @@ main {
 .navbar-nav .dropdown-item {
   color: #fff;
   padding: 8px 20px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
 }
+
+// .navbar-nav .dropdown-item {
+//   background-color: #f5a287;
+//   color: #fff;
+//   padding: 10px;
+//   border-bottom: 1px solid #fff;
+//   text-align: left;
+// }
 
 /* ok  sm*/
 .hero-content {

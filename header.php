@@ -99,9 +99,11 @@
                                 Onze diensten
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?= esc_url(home_url('/dit-doen-wij')); ?>">Dit
+                                <li>
+                                    <a class=" dropdown-item" href="<?= esc_url(home_url('/dit-doen-wij')); ?>">Dit
                                         doen
-                                        wij</a></li>
+                                        wij</a>
+                                </li>
                                 <li><a class="dropdown-item"
                                         href="<?= esc_url(home_url('/tuinontwerp')); ?>">Tuinontwerp</a>
                                 </li>
