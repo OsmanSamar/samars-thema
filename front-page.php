@@ -5,12 +5,14 @@
 
 
     <!-- Hero Section -->
-    <div class="container mt-5">
+    <div class="container my-4">
         <div style="   
      color: #fff;
     /* min-height: 100vh; */
-    padding-bottom: 300px;
-    padding-top: 150px; ">
+    /* padding-bottom: 150px;
+    padding-top: 100px;  */
+    
+    ">
 
         </div>
 
