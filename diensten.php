@@ -118,7 +118,7 @@
     .border-bottom {
 
         border-bottom-width: 1px;
-        margin-bottom: 22px;
+        /* margin-bottom: 22px; */
 
     }
 
@@ -380,74 +380,74 @@
 
 
 
-                        <div class="second-container d-flex flex-column">
-
-                            <div class="border-bottom">
-
-                                <div class=" d-flex flex-row align-items-center" style="margin:20px 28px; ">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/design.svg"
-                                        alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
-
-                                    <p class="flex-grow-1"
-                                        style="font-size:24px; line-height:33px; margin:0; text-align: center; ">
-                                        Tuinontwerp
-                                    </p>
-
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                        alt="downarrow Icon" class="downarrow-icon"
-                                        style=" width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
+                        <div class="second-container d-flex flex-column gap-2" style="">
 
 
-                                </div>
+
+                            <div class=" d-flex flex-row align-items-center border-bottom" style="padding:30px ">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/design.svg"
+                                    alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
+
+                                <p class="flex-grow-1"
+                                    style="font-size:24px; line-height:33px; margin:0; text-align: center; ">
+                                    Tuinontwerp
+                                </p>
+
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                    alt="downarrow Icon" class="downarrow-icon"
+                                    style=" width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
+
 
                             </div>
 
-                            <div class="border-bottom ">
-
-                                <div class=" d-flex flex-row align-items-center  " style="margin:20px 28px; ">
-
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tools.svg"
-                                        alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
 
 
-                                    <p class="flex-grow-1"
-                                        style="font-size:24px; line-height:33px; margin:0; text-align: center; ">
-                                        Tuinaanleg
-                                    </p>
 
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                        alt="downarrow Icon" class="downarrow-icon"
-                                        style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
-                                </div>
 
+                            <div class=" d-flex flex-row align-items-center border-bottom  " style="padding:30px ">
+
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tools.svg"
+                                    alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
+
+
+                                <p class="flex-grow-1"
+                                    style="font-size:24px; line-height:33px; margin:0; text-align: center; ">
+                                    Tuinaanleg
+                                </p>
+
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                    alt="downarrow Icon" class="downarrow-icon"
+                                    style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
                             </div>
 
-                            <div class="border-bottom">
 
 
-                                <div class=" d-flex flex-row align-items-center    " style="margin:20px 28px; ">
-
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/gardening.svg"
-                                        alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
 
 
-                                    <p class="flex-grow-1" style=" font-size:24px; 
+
+                            <div class=" d-flex flex-row align-items-center border-bottom    " style=" padding:30px">
+
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/gardening.svg"
+                                    alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
+
+
+                                <p class="flex-grow-1" style=" font-size:24px; 
                                     line-height:33px; 
                                     text-align: center;
                                             margin:0; ">
-                                        Tuinonderhoud
-                                    </p>
+                                    Tuinonderhoud
+                                </p>
 
-                                    <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                        alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;
+                                <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                    alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;
                                          margin-left:auto; rotate:270deg;" />
-                                </div>
                             </div>
+
 
                             <div>
 
 
-                                <div class=" d-flex flex-row align-items-center   " style="margin:20px 28px; ">
+                                <div class=" d-flex flex-row align-items-center   " style="padding:30px ">
 
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/growth.svg"
                                         alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />

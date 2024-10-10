@@ -260,7 +260,7 @@
             <div style="margin-top:140px;">
 
 
-                <div class="position-relative d-flex align-items-center justify-content-center ">
+                <div class="position-relative d-flex align-items-center  ">
                     <!-- Swiper Button Prev -->
                     <div class="swiper-button-prev d-none d-md-none d-lg-flex"
                         style="--swiper-navigation-color: #ffffff;  border: 1px solid #fff;border-radius: 25px; ">
@@ -271,7 +271,7 @@
                         style="--swiper-navigation-color: #ffffff; --swiper-pagination-color: #f5a287; flex-grow: 1;">
                         <div class="swiper-wrapper">
 
-                            <div class="swiper-slide" style="width:object-fit">
+                            <div class="swiper-slide" style="">
                                 <div class="circle-border">
                                     <a href="#landelijke tuin" class="btn btn-secondary" style="line-height: 22px;
                                    padding: 10px 20px; font-size:15px;  
@@ -282,6 +282,7 @@
                                     </a>
                                 </div>
                             </div>
+
                             <div class="swiper-slide" style=" ">
                                 <div class="circle-border"><a href="#moderne-tuin" class="btn btn-secondary" style="line-height: 22px;
                                    padding: 10px 20px; font-size:15px;
@@ -291,7 +292,7 @@
                                         tuinen</a>
                                 </div>
                             </div>
-                            <div class=" swiper-slide" style="width:object-fit">
+                            <div class=" swiper-slide" style="">
                                 <div class="circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
                                    padding: 10px 20px; font-size:15px;
                                         letter-spacing:1px;">Ontdek
@@ -802,7 +803,7 @@
     );
     </script>
 
-
+    <!-- Button Swiper -->
     <!-- Initialize Swiper -->
     <script>
     var swiper = new Swiper(".mySwiper1", {
@@ -813,7 +814,7 @@
             centeredSlides: true,
             loop: true,
             grabCursor: true,
-            // spaceBetween: 1,
+            spaceBetween: 0,
             pagination: {
                 el: ".swiper-pagination",
 

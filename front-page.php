@@ -40,7 +40,8 @@
                     <div class="button-line-container">
                         <div class="button-group">
                             <div class="circle-border">
-                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Tuin op maat</a>
+                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
+                                    style=" white-space: nowrap;">Tuin op maat</a>
                             </div>
                             <div class="circle-border">
                                 <a href="<?= esc_url(home_url('/projecten')); ?>"
@@ -96,7 +97,7 @@
                     <!-- Swiper On Small Screen -->
 
 
-                    <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider "
+                    <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider d-flex d-lg-none"
                         style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -121,8 +122,8 @@
                             </div>
                         </div>
 
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
                         <div class="swiper-pagination"></div>
 
                     </div>
@@ -217,7 +218,8 @@
 
                     <!-- Right: Button (Will be under testimonials on small screens) -->
                     <div class="col-lg-5 text-right d-sm-block d-md-block d-lg-none">
-                        <div class="circle-border"> <a href="/contact" class="btn btn-primary">Kennismaken?</a>
+                        <div class="circle-border"> <a href="/contact" class="btn btn-primary"
+                                style=" white-space: nowrap;">Kennismaken?</a>
                         </div>
 
                     </div>
@@ -407,9 +409,11 @@
                 <hr class="hr-text gradient" data-content="Projecten">
             </div>
 
+
             <div #swiperRef="" class="swiper mySwiper projecten-slider"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide">
                         <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
                             class="">
@@ -446,9 +450,6 @@
                             </div>
 
                         </div>
-
-
-
                     </div>
 
                     <div class="swiper-slide">
@@ -469,14 +470,14 @@
                         </div>
 
                     </div>
-
-
                 </div>
 
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
                 <div class="swiper-pagination"></div>
             </div>
+            <!--  -->
+
 
 
         </div>

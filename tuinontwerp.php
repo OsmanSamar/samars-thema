@@ -375,7 +375,8 @@
                             </div>
                             <div class="col-12  title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
                                 <div class="circle-border">
-                                    <a class="btn btn-primary " href="/contact" style="padding: 10px 20px;">Neem contact
+                                    <a class="btn btn-primary " href="/contact"
+                                        style="padding: 10px 20px; white-space: nowrap;">Neem contact
                                         op
                                     </a>
                                 </div>
