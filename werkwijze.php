@@ -247,7 +247,6 @@
                                             </span>
                                         </h2>
                                         <div class=" text d-flex flex-column align-items-center ">
-
                                             <p class="content1">
                                                 We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven. Je
                                                 geeft aan welke stijl je mooi vindt en laat indien mogelijk een
@@ -262,19 +261,28 @@
                                             </p>
                                             <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
 
-                                                <span class="arrow fas fa-angle-down "
-                                                    style='font-size:24px;color:white'></span>
+                                                <span class="arrow fas fa-angle-down down-arrow">
+                                                </span>
                                             </a>
-
-
-
-
                                         </div>
 
                                         <div class=" circle-border">
                                             <a href="<?= esc_url(home_url('/contact')); ?>"
                                                 class="btn btn-primary">Samen aan de slag</a>
                                         </div>
+
+                                        <style>
+                                        .down-arrow {
+                                            font-size: 24px;
+                                            color: white;
+                                        }
+
+                                        .up-arrow {
+                                            font-size: 24px;
+                                            color: white;
+
+                                        }
+                                        </style>
 
 
 
@@ -289,16 +297,15 @@
                                                 // Toggle visibility of additional text
                                                 moreText.toggleClass('d-none');
 
+
                                                 // Toggle arrow icon
-
-
                                                 if (moreText.hasClass('d-none')) {
                                                     $(this).html(
-                                                        '<span class="arrow fas fa-angle-down"></span>'
+                                                        '<span class="arrow fas fa-angle-down down-arrow"></span>'
                                                     );
                                                 } else {
                                                     $(this).html(
-                                                        '<span class="arrow fas fa-angle-up" > </span>'
+                                                        '<span class="arrow fas fa-angle-up up-arrow" > </span>'
                                                     );
                                                 }
 
