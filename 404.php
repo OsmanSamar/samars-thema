@@ -9,12 +9,21 @@
         color: white;
     }
 
+    .groenoverons {
+        width: 100%;
+        /* Limits the image width on large screens */
+        max-width: 600px;
+        height: auto;
+    }
+
     .top {
         position: absolute;
-        top: 240px;
+        /* top: 240px; */
+        top: 15%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 90px;
+        /* Responsive font size based on viewport width */
+        font-size: 9vw;
     }
 
 
@@ -24,21 +33,53 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 60px;
+        font-size: 5vw;
     }
 
     .bottom {
         position: absolute;
-        top: 60%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+
+    /* Smaller screens */
+    @media (max-width: 768px) {
+        .top {
+            font-size: 12vw;
+        }
+
+        .centered {
+            font-size: 7vw;
+        }
+
+        .bottom .btn {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+
+    /* Very small screens */
+    @media (max-width: 480px) {
+        .top {
+            font-size: 14vw;
+            top: 20%;
+        }
+
+        .centered {
+            font-size: 8vw;
+            top: 45%;
+        }
+
+        .bottom .btn {
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+    }
     </style>
     <div class="container">
-        <!-- <h1>404 - Pagina niet gevonden</h1>
-        <p>
-            <a href="<?= home_url() ?>">Ga terug naar de homepagina</a>
-        </p> -->
+
 
         <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
             <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
@@ -49,12 +90,12 @@
         <div class="d-flex clo-12 col-lg-12 align-items-center justify-content-center img-container">
 
 
-            <div class="  ">
+            <div>
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/404.svg" alt="Groenoverons"
                     class="groenoverons" />
 
                 <div class="top">Oeps!</div>
-                <div class="centered">Te diep gegraven</div>
+                <div class="centered"><span>Te diep</span> <br><br> <span>gegraven</span></div>
                 <div class=" bottom d-flex d-lg-flex">
                     <div class="circle-border">
                         <a href="#" class="btn btn-primary"
