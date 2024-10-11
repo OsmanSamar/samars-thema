@@ -286,20 +286,20 @@
     </style>
     <div class="bg-leaf">
         <div class="container">
+
+            <!-- Breadcrumb Links -->
             <div class=" d-flex flex-column text-center " style="margin-top:80px;">
-
-
                 <div class="d-inline-block"><a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span
                         class="separator">
                         // </span>
                     <span class="" style="font-size:18px;">Tuinsoorten</span>
                 </div>
                 <h1 class="header ">Tuinsoorten</h1>
-                <!-- Breadcrumb Links -->
-
             </div>
 
-            <!-- Buttons Swiper -->
+
+
+            <!--  Swiper1 -->
             <div style="margin-top:140px;">
                 <!-- Swiper Buttons -->
                 <div class="swiper-button-prev custom-swiper-prev d-none d-md-none d-lg-flex"></div>
@@ -662,21 +662,7 @@
 
 
             </div>
-
-
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
     </div>
 
 
@@ -831,7 +817,7 @@
     );
     </script>
 
-    <!-- Button Swiper -->
+    <!--  Swiper1 -->
     <!-- Initialize Swiper -->
     <script>
     var swiper = new Swiper(".mySwiper1", {
