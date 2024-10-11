@@ -381,8 +381,14 @@
         </style>
 
 
-        <!--Projecten Slider  -->
-        <div class="container" style="position: relative; margin-bottom:70px;">
+
+
+
+
+
+        <!-- Full-Width Swiper Slider -->
+        <div class="swiper-container-fullwidth"
+            style="position: relative; margin-bottom:70px; width: 100vw; left: 50%; transform: translateX(-50%);">
 
             <!-- Circle On The Right Side Of Projecten Slider -->
             <a href="/projecten" id="demo3" class="circle text-circle">
@@ -393,7 +399,6 @@
                     $totalCharacters = count($characters);
                     $rotationStep = 360 / $totalCharacters;
 
-
                     foreach ($characters as $index => $character) {
                         $rotationAngle = $rotationStep * $index;
                         echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
@@ -402,18 +407,15 @@
                 </div>
             </a>
 
-
-
             <!-- HR With Text swiper on Sm Screen -->
-            <div class=" mt-50 mb-50">
+            <div class="mt-50 mb-50">
                 <hr class="hr-text gradient" data-content="Projecten">
             </div>
 
-
+            <!-- Swiper Slider -->
             <div #swiperRef="" class="swiper mySwiper projecten-slider"
-                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
                 <div class="swiper-wrapper">
-
                     <div class="swiper-slide">
                         <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
                             class="">
@@ -424,14 +426,11 @@
                                 class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                 <div class="line-before"></div>
                                 <div class="circle-border">
-                                    <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
+                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
                                         projecten</a>
                                 </div>
                             </div>
-
-
                         </div>
-
                     </div>
 
                     <div class="swiper-slide">
@@ -444,11 +443,10 @@
                                 class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                 <div class="line-before"></div>
                                 <div class="circle-border">
-                                    <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
+                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
                                         projecten</a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -463,24 +461,20 @@
                                 class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                 <div class="line-before"></div>
                                 <div class="circle-border">
-                                    <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
+                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
                                         projecten</a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
                 <div class="swiper-pagination"></div>
             </div>
-            <!--  -->
-
-
-
         </div>
+
+
+
+
 
 
 
@@ -581,6 +575,19 @@
     </div>
 
 
+
+
+
+    <style>
+    .swiper-container-fullwidth {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    </style>
+
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -595,7 +602,7 @@
         spaceBetween: 5,
         pagination: {
             el: ".swiper-pagination",
-            type: "fraction",
+            // type: "fraction",
         },
         navigation: {
             nextEl: ".swiper-button-next",
