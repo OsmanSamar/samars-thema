@@ -40,9 +40,14 @@
         /* margin: 20px auto; */
     }
 
+    .swiper1 .swiper-slide {
+        margin: 0;
+        padding: 0;
+    }
+
     .swiper1 {
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
         position: relative;
         overflow: hidden;
         list-style: none;
@@ -51,14 +56,52 @@
         display: block;
     }
 
+    .swiper-slide .btn {
+        font-size: 18px;
+        padding: 12px 24px;
+        /* border: 2px solid #fff; */
+        /* Add a contrasting border */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        line-height: 22px;
+        font-family: 'Henderson Sans-basic', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .custom-swiper-prev {
+        position: absolute;
+        top: 607px;
+        z-index: 10;
+        right: 56px;
+        --swiper-navigation-color: #ffffff;
+        border: 1px solid #fff;
+        border-radius: 25px;
+
+    }
+
+    .custom-swiper-next {
+        position: absolute;
+        top: 607px;
+        z-index: 10;
+        right: 56px;
+        --swiper-navigation-color: #ffffff;
+        border: 1px solid #fff;
+        border-radius: 25px;
+    }
 
 
+    @media (max-width: 768px) {
+        .swiper-slide .btn {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
 
-
-
-
-
-
+    @media (min-width: 769px) {
+        .swiper-slide .btn {
+            font-size: 20px;
+            padding: 14px 28px;
+        }
+    }
 
 
     .text-header {
@@ -258,13 +301,15 @@
 
             <!-- Buttons Swiper -->
             <div style="margin-top:140px;">
-
+                <!-- Swiper Buttons -->
+                <div class="swiper-button-prev custom-swiper-prev d-none d-md-none d-lg-flex"></div>
+                <div class="swiper-button-next custom-swiper-next d-none d-md-none d-lg-flex"></div>
 
                 <div class="position-relative d-flex align-items-center  ">
                     <!-- Swiper Button Prev -->
-                    <div class="swiper-button-prev d-none d-md-none d-lg-flex"
+                    <!-- <div class="swiper-button-prev d-none d-md-none d-lg-flex"
                         style="--swiper-navigation-color: #ffffff;  border: 1px solid #fff;border-radius: 25px; ">
-                    </div>
+                    </div> -->
 
                     <!-- Swiper Slides Container -->
                     <div #swiperRef class=" swiper1 mySwiper1 "
@@ -273,10 +318,7 @@
 
                             <div class="swiper-slide" style="">
                                 <div class="circle-border">
-                                    <a href="#landelijke tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 10px 20px; font-size:15px;  
-                                        font-family: 'Henderson Sans-basic', sans-serif; 
-                                        letter-spacing:1px;">Ontdek
+                                    <a href="#landelijke tuin" class="btn btn-secondary">Ontdek
                                         landelijke
                                         tuinen
                                     </a>
@@ -284,45 +326,31 @@
                             </div>
 
                             <div class="swiper-slide" style=" ">
-                                <div class="circle-border"><a href="#moderne-tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 10px 20px; font-size:15px;
-                                        font-family: 'Henderson Sans-basic', sans-serif;
-                                         letter-spacing:1px; ">Ontdek
+                                <div class="circle-border"><a href="#moderne-tuin" class="btn btn-secondary">Ontdek
                                         Moderne
                                         tuinen</a>
                                 </div>
                             </div>
                             <div class=" swiper-slide" style="">
-                                <div class="circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 10px 20px; font-size:15px;
-                                        letter-spacing:1px;">Ontdek
+                                <div class="circle-border"><a href="#ecologische-tuin" class="btn btn-secondary">Ontdek
                                         ecologische
                                         tuinen</a>
                                 </div>
                             </div>
                             <div class="swiper-slide" style="">
-                                <div class="circle-border"><a href="#daktuin-of-dakterras" class="btn btn-secondary"
-                                        style="line-height: 22px;
-                                   padding: 10px 20px; font-size:15px;
-                                        font-family: 'Henderson Sans-basic', sans-serif; 
-                                        letter-spacing:1px;">Ontdek daktuin of dakterras
+                                <div class="circle-border"><a href="#daktuin-of-dakterras"
+                                        class="btn btn-secondary">Ontdek daktuin of dakterras
                                     </a>
                                 </div>
                             </div>
                             <div class="swiper-slide" style="">
-                                <div class="circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding: 10px 20px; font-size:15px;
-                                        font-family: 'Henderson Sans-basic', sans-serif; 
-                                        letter-spacing:1px;">Ontdek
+                                <div class="circle-border"><a href="#ecologische-tuin" class="btn btn-secondary">Ontdek
                                         ecologische
                                         tuinen</a>
                                 </div>
                             </div>
                             <div class="swiper-slide" style="">
-                                <div class=" circle-border"><a href="#ecologische-tuin" class="btn btn-secondary" style="line-height: 22px;
-                                   padding:10px 20px ; font-size:15px;
-                                        font-family: 'Henderson Sans-basic', sans-serif; 
-                                        letter-spacing:1px; ">Ontdek
+                                <div class=" circle-border"><a href="#ecologische-tuin" class="btn btn-secondary">Ontdek
                                         ecologische tuinen</a>
                                 </div>
                             </div>
@@ -332,9 +360,9 @@
                     </div>
 
                     <!-- Swiper Button Next -->
-                    <div class="swiper-button-next d-none d-md-none d-lg-flex"
+                    <!-- <div class="swiper-button-next d-none d-md-none d-lg-flex"
                         style="--swiper-navigation-color: #ffffff;  border: 1px solid #fff;border-radius: 25px;">
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -828,13 +856,24 @@
 
             ,
             breakpoints: {
+
+
+                540: {
+                    slidesPerView: 2,
+                    spaceBetween: 4,
+                },
+
                 556: {
                     slidesPerView: 2.5,
+                    spaceBetween: 1,
                 },
                 992: {
 
                     slidesPerView: 3.5,
+                    spaceBetween: 5,
                 }
+
+
             }
         }
 
