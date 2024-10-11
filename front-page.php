@@ -258,6 +258,13 @@
 
 
         <style>
+        .swiper-container-fullwidth {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
         /* Hide the CircleType by default */
         #demo3 {
             display: none;
@@ -320,24 +327,20 @@
 
 
 
-        /* Hide the text and button container by default */
-        .slider-text-button-container {
-            display: none;
-        }
+
 
         /* Show text and button for devices less than 1024px */
         @media (max-width: 1023px) {
 
 
             .slider-text-button-container {
-                display: flex;
                 position: absolute;
-                bottom: 20px;
                 /* Position from bottom */
+                bottom: 20px;
                 width: 100%;
                 justify-content: space-between;
-                padding: 0 20px;
                 /* Add padding from edges */
+                padding: 0 20px;
                 box-sizing: border-box;
                 z-index: 1000;
                 margin-bottom: 40px;
@@ -345,18 +348,20 @@
 
             .slider-text-button-container-right {
                 position: absolute;
-                bottom: 8px;
-                right: -11px;
+                bottom: -38px;
+                right: 0px;
                 width: 100%;
-                padding: 0 20px;
                 /* Add padding from edges */
+                padding: 0 20px;
                 box-sizing: border-box;
                 z-index: 1000;
+
+
             }
 
             .line-before {
                 border: 1px #fff solid;
-                width: 40px;
+                width: 100%;
                 height: 1px;
             }
         }
@@ -365,16 +370,19 @@
 
         /* Text styling */
         .slider-text-button-container .text {
-            flex: 1;
+
+
             /* Take up available space */
+            flex: 1;
             text-align: left;
 
         }
 
         /* Button styling */
         .slider-text-button-container button {
-            flex: 0;
+
             /* Do not grow */
+            flex: 0;
             text-align: right;
 
         }
@@ -421,12 +429,13 @@
                             class="">
                         <!-- Overlay Text and Button -->
                         <div class="slider-text-button-container d-flex d-lg-none">
-                            <div class="text">Tuin in Voorthuizen</div>
+                            <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
                             <div
-                                class="slider-text-button-container-right d-flex align-items-center justify-content-center">
+                                class="slider-text-button-container-right d-flex align-items-center justify-content-center ">
                                 <div class="line-before"></div>
                                 <div class="circle-border">
-                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
+                                    <a class="btn btn-secondary" href="/contact"
+                                        style="padding: 8px 12px; white-space: nowrap;  min-width: 120px;">Bekijk
                                         projecten</a>
                                 </div>
                             </div>
@@ -578,14 +587,7 @@
 
 
 
-    <style>
-    .swiper-container-fullwidth {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    </style>
+
 
 
     <!-- Swiper JS -->
