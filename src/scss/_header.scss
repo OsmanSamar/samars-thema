@@ -791,9 +791,12 @@ main {
 }
 
 // Remove the border-bottom from the last child
-
-.navbar-nav .dropdown-menu:last-child .dropdown-item {
-  border-bottom: none;
+@media screen and (min-width: 992px) {
+  .navbar-nav .dropdown-menu li:last-child .dropdown-item,
+  .nav-item.dropdown a:not(.dropdown-item),
+  .nav-item:not(.dropdown) a {
+    border-bottom: none;
+  }
 }
 
 .navbar-nav .dropdown-item:hover {

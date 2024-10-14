@@ -3,51 +3,152 @@
 
 <main class="flex-grow-1">
     <style>
-        .dienst-line {
+    .dienst-line {
+        height: 1px;
+        width: 122px;
+        background-color: #ffffff;
+        color: #ffffff;
+        position: relative;
+        opacity: 0.5;
+    }
+
+
+    @media (min-width: 768px) {
+
+
+        .dienstline {
             height: 1px;
-            width: 122px;
+            width: 428px;
             background-color: #ffffff;
             color: #ffffff;
             position: relative;
             opacity: 0.5;
         }
+    }
 
 
-        @media (min-width: 768px) {
+    .bg-img {
+        position: relative;
+        text-align: center;
+        color: #F8F4EA;
+        /* font-family: 'Henderson Sans'; */
+        font-weight: bold;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: auto;
+        margin-bottom: 0;
+        background-size: cover;
 
 
-            .dienstline {
-                height: 1px;
-                width: 428px;
-                background-color: #ffffff;
-                color: #ffffff;
-                position: relative;
-                opacity: 0.5;
-            }
-        }
+    }
+
+    .bg-img img {
+        width: 100%;
+        height: 34vh;
+
+    }
 
 
-        .bg-img {
-            position: relative;
-            text-align: center;
-            color: #F8F4EA;
-            /* font-family: 'Henderson Sans'; */
-            font-weight: bold;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-top: auto;
-            margin-bottom: 0;
-            background-size: cover;
 
 
-        }
+    .content {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        /* bottom: 11%; */
+    }
 
-        .bg-img img {
-            width: 100%;
-            height: 34vh;
+    /* .content h1 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
 
-        }
+    } */
 
+    .bottom-center {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+
+    h1 {
+
+        margin-bottom: 180px;
+        font-size: 40px;
+        line-height: 70px;
+        font-weight: bold;
+    }
+
+
+
+
+
+    .down {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        width: 45px;
+        cursor: pointer;
+    }
+
+    .first-container {
+        border: 1px solid #fff;
+        border-radius: 10px;
+        height: 461px;
+
+    }
+
+    .second-container {
+        background-color: #5B7D6C;
+        margin: 10px 10px;
+        border-radius: 10px;
+
+        height: 437px;
+    }
+
+    .border-bottom {
+
+        border-bottom-width: 1px;
+        /* margin-bottom: 22px; */
+
+    }
+
+    .swiper-container {
+        position: relative;
+
+    }
+
+    .swiper-container .swiper-pagination {
+        bottom: -50px !important;
+
+    }
+
+    .swiper-container .swiper-button-next {
+        bottom: -50px !important;
+
+    }
+
+    .swiper-container .swiper-button-prev {
+        bottom: -50px !important;
+
+    }
+
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
+
+
+
+    @media (min-width: 992px) {
 
 
 
@@ -56,279 +157,182 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
-            /* bottom: 11%; */
+            bottom: 11%;
         }
 
-        /* .content h1 {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-
-    } */
-
-        .bottom-center {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
+        /* Hide arrow on large screens */
+        .down {
+            display: none;
         }
-
-
-
-        h1 {
-
-            margin-bottom: 180px;
-            font-size: 40px;
-            line-height: 70px;
-            font-weight: bold;
-        }
-
 
 
 
 
         .down {
-            display: inline-block;
-            transition: transform 0.3s ease;
-            width: 45px;
-            cursor: pointer;
-        }
-
-        .first-container {
-            border: 1px solid #fff;
-            border-radius: 10px;
-            height: 461px;
-
-        }
-
-        .second-container {
-            background-color: #5B7D6C;
-            margin: 10px 10px;
-            border-radius: 10px;
-
-            height: 437px;
-        }
-
-        .border-bottom {
-
-            border-bottom-width: 1px;
-            /* margin-bottom: 22px; */
-
-        }
-
-        .swiper-container {
-            position: relative;
-
-        }
-
-        .swiper-container .swiper-pagination {
-            bottom: -50px !important;
-
-        }
-
-        .swiper-container .swiper-button-next {
-            bottom: -50px !important;
-
-        }
-
-        .swiper-container .swiper-button-prev {
-            bottom: -50px !important;
-
-        }
-
-        .swiper-container .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
-        }
-
-
-
-        @media (min-width: 992px) {
-
-            .content {
-                position: absolute;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                bottom: 11%;
-            }
-
-            /* Hide arrow on large screens */
-            .down {
-                display: none;
-            }
-
-
-
-
-            .down {
-                display: none;
-            }
-
-            h1 {
-
-                margin-bottom: 0;
-                font-size: 90px;
-                line-height: 70px;
-                font-weight: bold;
-
-            }
-
-            .bg-img img {
-
-                height: 690px
-            }
-
-
-            .content h1 {
-
-                font-size: 90px;
-                font-weight: 700;
-                line-height: 125px;
-            }
-
-            .bottom-center {
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                top: 100%;
-                left: 73%;
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        .swiper-container-fullwidth {
-            width: 100vw;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-
-        /* Hide the CircleType by default */
-        #demo3 {
             display: none;
         }
 
-        /* Show the CircleType on devices with a width of 1024px and up */
-        @media (min-width: 1024px) {
-            #demo3 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 200px;
-                width: 200px;
-                overflow: hidden;
-                position: absolute;
-                bottom: -129px;
-                /* bottom: -50px; */
-                transform: translate(50%, 50%);
-                /* position: fixed; */
-                right: 0;
-                /* right: 0; */
-                /* Position it at the right edge */
-                transform: translateY(-50%);
-                color: #fff;
-                border-radius: 50%;
-                font-size: 12px;
-                letter-spacing: 3px;
-                z-index: 1000;
+        h1 {
 
-            }
+            margin-bottom: 0;
+            font-size: 90px;
+            line-height: 70px;
+            font-weight: bold;
+
         }
 
-        #demo3 span {
+        .bg-img img {
+
+            height: 690px
+        }
+
+
+        .content h1 {
+
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 125px;
+        }
+
+        .bottom-center {
             position: absolute;
-            left: 50%;
-            transform-origin: 0 100px;
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 100%;
+            left: 73%;
+            transform: translate(-50%, -50%);
         }
+    }
 
-        @keyframes rotating {
-            from {
-                transform: rotate(0deg);
-            }
+    /* .swiper-container-fullwidth {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    } */
 
-            to {
-                transform: rotate(360deg);
-            }
-        }
 
-        .text-circle {
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-            animation-name: rotating;
-            animation-timing-function: linear;
+
+
+    /* Hide the CircleType by default */
+    #demo3 {
+        display: none;
+    }
+
+    /* Show the CircleType on devices with a width of 1024px and up */
+    @media (min-width: 1024px) {
+        #demo3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             height: 200px;
             width: 200px;
-            overflow: visible;
+            overflow: hidden;
+            position: absolute;
+            bottom: -129px;
+            /* bottom: -50px; */
+            transform: translate(50%, 50%);
+            /* position: fixed; */
+            right: 0;
+            /* right: 0; */
+            /* Position it at the right edge */
+            transform: translateY(-50%);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            letter-spacing: 3px;
+            z-index: 1000;
 
         }
+    }
+
+    #demo3 span {
+        position: absolute;
+        left: 50%;
+        transform-origin: 0 100px;
+
+    }
+
+    @keyframes rotating {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .text-circle {
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-name: rotating;
+        animation-timing-function: linear;
+        height: 200px;
+        width: 200px;
+        overflow: visible;
+
+    }
 
 
 
-        /* Hide the text and button container by default */
+    /* Hide the text and button container by default */
+    .slider-text-button-container {
+        display: none;
+    }
+
+    /* Show text and button for devices less than 1024px */
+    @media (max-width: 1023px) {
+
+
         .slider-text-button-container {
-            display: none;
+            position: absolute;
+            /* Position from bottom */
+            bottom: 20px;
+            width: 100%;
+            justify-content: space-between;
+            /* Add padding from edges */
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 1000;
+            margin-bottom: 40px;
         }
 
-        /* Show text and button for devices less than 1024px */
-        @media (max-width: 1023px) {
-
-
-            .slider-text-button-container {
-                position: absolute;
-                /* Position from bottom */
-                bottom: 20px;
-                width: 100%;
-                justify-content: space-between;
-                /* Add padding from edges */
-                padding: 0 20px;
-                box-sizing: border-box;
-                z-index: 1000;
-                margin-bottom: 40px;
-            }
-
-            .slider-text-button-container-right {
-                position: absolute;
-                bottom: -38px;
-                right: 0px;
-                width: 100%;
-                /* Add padding from edges */
-                padding: 0 20px;
-                box-sizing: border-box;
-                z-index: 1000;
-            }
-
-            .line-before {
-                border: 1px #fff solid;
-                width: 100%;
-                height: 1px;
-            }
+        .slider-text-button-container-right {
+            position: absolute;
+            bottom: -38px;
+            right: 0px;
+            width: 100%;
+            /* Add padding from edges */
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 1000;
         }
 
-
-        /* Text styling */
-        .slider-text-button-container .text {
-            flex: 1;
-            /* Take up available space */
-            text-align: left;
-
+        .line-before {
+            border: 1px #fff solid;
+            width: 100%;
+            height: 1px;
         }
+    }
 
-        /* Button styling */
-        .slider-text-button-container button {
-            flex: 0;
-            /* Do not grow */
-            text-align: right;
 
-        }
+    /* Text styling */
+    .slider-text-button-container .text {
+        flex: 1;
+        /* Take up available space */
+        text-align: left;
+
+    }
+
+    /* Button styling */
+    .slider-text-button-container button {
+        flex: 0;
+        /* Do not grow */
+        text-align: right;
+
+    }
     </style>
     <div class="container">
         <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
@@ -531,8 +535,8 @@
 
 
 
-        <!--Projecten Slider  -->
-        <div class="swiper-container-fullwidth "
+        <!-- Full-Width Swiper Slider -->
+        <div class="swiper-container swiper-container-fullwidth"
             style="position: relative; margin-bottom:70px; width: 100vw; left: 50%; transform: translateX(-50%);">
 
             <!-- Circle On The Right Side Of Projecten Slider -->
@@ -544,7 +548,6 @@
                     $totalCharacters = count($characters);
                     $rotationStep = 360 / $totalCharacters;
 
-
                     foreach ($characters as $index => $character) {
                         $rotationAngle = $rotationStep * $index;
                         echo '<span style="transform: translateX(-50%) rotate(' . $rotationAngle . 'deg);">' . $character . '</span>';
@@ -553,89 +556,72 @@
                 </div>
             </a>
 
-
-
             <!-- HR With Text swiper on Sm Screen -->
-            <div class=" mt-50 mb-50">
+            <div class="mt-50 mb-50">
                 <hr class="hr-text gradient" data-content="Projecten">
             </div>
 
             <!-- Swiper Slider -->
-
-            <div class="swiper-container" style="--swiper-pagination-color: #fff; --swiper-navigation-color: #fff">
-
-                <div #swiperRef="" class="swiper mySwiper projecten-slider" style="; ">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg"
-                                alt="" class="">
-                            <!-- Overlay Text and Button -->
-                            <div class="slider-text-button-container d-flex d-lg-none">
-                                <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
-                                <div
-                                    class="slider-text-button-container-right d-flex align-items-center justify-content-center">
-                                    <div class="line-before"></div>
-                                    <div class="circle-border">
-                                        <a class="btn btn-secondary " href="/contact"
-                                            style="padding: 8px 12px; white-space: nowrap;  min-width: 120px;">Bekijk
-                                            projecten</a>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" class=""
-                                alt="Image 2">
-                            <!-- Overlay Text and Button -->
-                            <div class="slider-text-button-container d-flex d-lg-none">
-                                <div class="text">Tuinonderhoud in Ede</div>
-                                <div
-                                    class="slider-text-button-container-right d-flex align-items-center justify-content-center">
-                                    <div class="line-before"></div>
-                                    <div class="circle-border">
-                                        <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
-                                            projecten</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" class=""
-                                alt="Image 2">
-
-                            <!-- Overlay Text and Button -->
-                            <div class="slider-text-button-container d-flex d-lg-none">
-                                <div class="text">Tuin bij Tiny House</div>
-                                <div
-                                    class="slider-text-button-container-right d-flex align-items-center justify-content-center">
-                                    <div class="line-before"></div>
-                                    <div class="circle-border">
-                                        <a class="btn btn-secondary " href="/contact" style="paddin: 4px 5px;">Bekijk
-                                            projecten</a>
-                                    </div>
+            <div #swiperRef="" class="swiper mySwiper projecten-slider"
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
+                            class="">
+                        <!-- Overlay Text and Button -->
+                        <div class="slider-text-button-container d-flex d-lg-none">
+                            <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
+                            <div
+                                class="slider-text-button-container-right d-flex align-items-center justify-content-center ">
+                                <div class="line-before"></div>
+                                <div class="circle-border">
+                                    <a class="btn btn-secondary" href="/contact"
+                                        style="padding: 8px 12px; white-space: nowrap;  min-width: 120px;">Bekijk
+                                        projecten</a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
+                            alt="Image 2">
+                        <!-- Overlay Text and Button -->
+                        <div class="slider-text-button-container d-flex d-lg-none">
+                            <div class="text">Tuinonderhoud in Ede</div>
+                            <div
+                                class="slider-text-button-container-right d-flex align-items-center justify-content-center">
+                                <div class="line-before"></div>
+                                <div class="circle-border">
+                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
+                                        projecten</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
+                            alt="Image 2">
+
+                        <!-- Overlay Text and Button -->
+                        <div class="slider-text-button-container d-flex d-lg-none">
+                            <div class="text">Tuin bij Tiny House</div>
+                            <div
+                                class="slider-text-button-container-right d-flex align-items-center justify-content-center">
+                                <div class="line-before"></div>
+                                <div class="circle-border">
+                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
+                                        projecten</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- <div class=" d-flex flex-row align-items-center ">
-                    <div class="swiper-button-next d-none d-lg-block"></div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev  d-none d-lg-block"></div>
-                </div> -->
-
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+
 
 
 
@@ -758,14 +744,17 @@
     <!-- Initialize Swiper -->
 
     <script>
-        document.querySelectorAll(".swiper-container").forEach(container => {
-            var swiper = new Swiper(container.querySelector(".mySwiper"), {
+    document.querySelectorAll(".swiper-container").forEach(container => {
+
+        console.log(container);
+        var swiper = new Swiper(container.querySelector(".mySwiper"), {
+
 
                 slidesPerView: 1.2,
                 centeredSlides: true,
                 loop: true,
                 grabCursor: true,
-                _ur _ur spaceBetween: 5,
+                spaceBetween: 5,
                 pagination: {
                     el: container.querySelector(".swiper-pagination"),
 
@@ -786,63 +775,63 @@
                 }
             }
 
-            );
-        })
-
-        var appendNumber = 4;
-        var prependNumber = 1;
-
-        document.querySelector(".prepend-2-slides").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.prependSlide([
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber +
-                    "</div>",
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber + "</div>",
-                ]);
-            }
-
         );
+    })
 
-        document.querySelector(".prepend-slide").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.prependSlide(
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber +
-                    "</div>");
-            }
+    var appendNumber = 4;
+    var prependNumber = 1;
 
-        );
+    document.querySelector(".prepend-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>",
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber + "</div>",
+            ]);
+        }
 
-        document.querySelector(".append-slide").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.appendSlide(
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>");
-            }
+    );
 
-        );
+    document.querySelector(".prepend-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>");
+        }
 
-        document.querySelector(".append-2-slides").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.appendSlide([
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>",
-                ]);
-            }
+    );
 
-        );
+    document.querySelector(".append-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>");
+        }
+
+    );
+
+    document.querySelector(".append-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+            ]);
+        }
+
+    );
     </script>
 </main>
 
