@@ -408,10 +408,7 @@
 
                             </div>
                         </div>
-                        <!-- <div class="img-wrap">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
-                        </div> -->
+
                         <div class="grid-7 mt-4">
                             <div class="row me-0">
                                 <div class="col-12">
@@ -520,68 +517,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- New  3Lines -->
-
-                    <!-- <div class="col-12 col-lg-4 mb-4  ">
-
-                        <div class="row me-0">
-                            <div class="col-12">
-                                <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
-                                        alt="scaled19" class="object-fit-cover rounded"
-                                        style="height:; width:; margin-left:; " />
-                                </div>
-                                <div class="grid-item  ratio ratio-custom mt-4" style="--x:53;--y:67;">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
-                                        alt="scaled19" class="object-fit-cover rounded"
-                                        style="height:; width:; margin-left:; " />
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-12 col-lg-4 mb-4  ">
-
-                        <div class="row me-0">
-                            <div class="col-12">
-                                <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
-                                        alt="scaled19" class="object-fit-cover rounded"
-                                        style="height:; width:; margin-left:; " />
-                                </div>
-                                <div class="grid-item  ratio ratio-custom mt-4" style="--x:53;--y:67;">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
-                                        alt="scaled19" class="object-fit-cover rounded"
-                                        style="height:; width:; margin-left:; " />
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="col-12 col-lg-4 mb-4  ">
-
-                        <div class="row me-0">
-                            <div class="col-12">
-                                <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
-                                        alt="scaled19" class="object-fit-cover rounded"
-                                        style="height:; width:; margin-left:; " />
-                                </div>
-                                <div class="grid-item  ratio ratio-custom mt-4" style="--x:53;--y:67;">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
-                                        alt="scaled19" class="object-fit-cover rounded"
-                                        style="height:; width:; margin-left:; " />
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div> -->
-
-
 
                 </div>
                 <div class="lin3"></div>
@@ -633,9 +568,7 @@
                     </div>
 
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
-                <!-- <div class="swiper-pagination"></div> -->
+
 
             </div>
             <div class="swiper-pagination d-lg-none "></div>
@@ -673,9 +606,7 @@
                             class="object-fit-cover rounded" style="" />
                     </div>
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div> -->
+
             </div>
             <div class="swiper-pagination d-lg-none"></div>
 
@@ -720,9 +651,7 @@
                             class="object-fit-cover rounded" style="" />
                     </div>
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div> -->
+
             </div>
 
             <div class="swiper-pagination d-lg-none"></div>
@@ -782,11 +711,12 @@
 
     <!-- Contact Information Section on Sm Screen -->
 
-    <div>
+    <div class="container">
 
+        <div class="line-top d-block d-lg-none"></div>
         <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
             class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
-            <div class="line-top"></div>
+            <!-- <div class="line-top"></div> -->
 
 
             <div class="col-12 col-lg-4  text-left" style="margin-top:20px; ">
