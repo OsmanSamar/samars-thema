@@ -179,11 +179,11 @@
 
 
     .line-top {
-
         border: 1px solid #ffffff;
         height: 1px;
         width: 100%;
         opacity: 0.3;
+        margin-top: 135px;
     }
 
     .vlsm {
