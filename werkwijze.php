@@ -436,14 +436,11 @@
 
 
 
-                            <div class="col-12 col-md-12 col-lg-6 border-left  ">
 
 
-
+                            <div class="col-12 col-md-12 col-lg-6  border-left  ">
+                                <!-- border-left -->
                                 <div class="d-flex flex-column text-left align-items-start gap-4">
-
-
-
                                     <div>
                                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
                                             alt="Groenoverons" class="groenoverons"
@@ -477,7 +474,7 @@
                                             </p>
                                             <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
                                                 <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
-                                                                                        alt="down arrow" class="arrow-icon down"> -->
+                                                                                                                        alt="down arrow" class="arrow-icon down"> -->
                                                 <span class="arrow fas fa-angle-down "
                                                     style='font-size:24px;color:white'></span>
                                             </a>
@@ -493,6 +490,15 @@
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+
+
+
+
+
                         </div>
 
                     </div>
