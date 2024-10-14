@@ -24,6 +24,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-size: 1600px;
+        background-position: 39% -33%;
     }
 
 
@@ -43,7 +44,7 @@
     .nline {
         border: 1px solid #ffffff;
         opacity: 0.3;
-        width: 50%;
+        width: 1308px;
         height: 1px;
     }
 
@@ -59,13 +60,13 @@
 
     .content {
         position: absolute;
-        top: 94%;
+        /* top: 94%; */
+        top: 73%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
         text-align: center;
         color: white;
-
     }
 
     .bottom-center {
@@ -83,6 +84,55 @@
         line-height: 70px;
         font-weight: bold;
         margin-top: -38px;
+    }
+
+
+    .vl3 {
+        border-left: 1px solid white;
+        height: 110px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 1837px;
+        display: flex;
+        opacity: .5;
+    }
+
+
+    /* Md Screen */
+    @media (min-width: 768px) {
+
+        .content h1 {
+
+            font-size: 40px;
+            line-height: 70px;
+            font-weight: bold;
+            margin-top: -38px;
+        }
+
+        .content {
+            position: absolute;
+            /* top: 94%; */
+            top: 83%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+
+        .vl2 {
+            border-left: 1px solid white;
+            height: 113px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 2071px;
+            display: flex;
+            opacity: .5;
+        }
+
+
     }
 
 
@@ -299,19 +349,21 @@
                 <span class="last">Over ons</span>
             </div>
 
-
             <div class="container bg-img mt-lg-auto mb-0">
-
-
                 <div class="position-relative">
                     <div class=" overlay" style=" border-radius: 10px;"></div>
                     <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
                         class=groentuinen style=" ; width:;" />
-
-
                     <div class="content center">
                         <div class=" bottom-center">
-                            <h1>Expert in groen en duurzaam</h1>
+
+                            <h1>
+                                <span class="d-lg-none d-block">
+                                    <span style="--i:1;">Expert in</span> <br> <span style="--i:2;"> groen en</span>
+                                    <span style="--i:3;">duurzaam</span>
+                                </span>
+                            </h1>
+                            <h1 class="d-lg-block d-none">Expert in groen en duurzaam</h1>
                         </div>
                         <div class=" bottom-center" style="margin-top: ;">
                             <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
@@ -321,19 +373,8 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
         </div>
-
-
-
-
-
-
-
     </div>
 
     <div class="container">
@@ -364,7 +405,8 @@
                             <!--2nd Column -->
                             <div class="col-12 col-md-12 col-lg-7 ml-lg-4 order-1 order-lg-2 ">
                                 <div class="d-flex flex-column  text-left align-items-start ">
-                                    <span class="text-header ">Vakkundig maatwerk <span>-</span></span>
+                                    <span class="text-header ">Vakkundig maatwerk <span
+                                            style=" opacity: 0.3; ">-</span></span>
                                     <div class="text ">
                                         <p>Het mooiste aan het hoveniersvak? Voor Peter, het gezicht achter
                                             GROENtuinen,
@@ -379,7 +421,7 @@
                                             passie voor het vak. Peter is tuinontwerper en all
 
                                         </p>
-                                        <div class=" d-none d-lg-flex">
+                                        <div class=" d-none d-lg-flex " style="margin-top:70px;">
                                             <div class="circle-border">
                                                 <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
                                                     style="padding-left: 40px;padding-right: 40px; font-size:18px;">
@@ -387,13 +429,22 @@
                                             </div>
                                         </div>
 
-                                        <div class="text d-lg-none d-flex flex-row  align-items-center">
+                                        <!-- <div class="text d-lg-none d-flex flex-row  align-items-center ">
                                             <div class="circle-border">
                                                 <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
                                                     style="padding-left:;padding-right: ; font-size:18px;">kennismaken?</a>
                                             </div>
                                             <div class="nline"></div>
+                                        </div> -->
+                                    </div>
+
+                                    <div class="text d-lg-none d-flex flex-row  align-items-center "
+                                        style="white-space:no-wrap;">
+                                        <div class="circle-border">
+                                            <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
+                                                style="padding-left:;padding-right: ; font-size:18px;">kennismaken?</a>
                                         </div>
+                                        <div class="nline"></div>
                                     </div>
 
 
@@ -446,6 +497,11 @@
 
             </div>
 
+
+            <!--Verticall line On Lg Screen  -->
+            <div class="vl3 d-lg-none d-md-none d-block"></div>
+            <div class="vl2 d-lg-none d-md-block"></div>
+
             <!-- Text Section -->
             <div class="order-1 order-md-1 order-lg-2 ">
                 <div class="text-block py-1">
@@ -458,15 +514,74 @@
                             Laat jouw tuin opvallen
                         </h2>
                         <div class="text2 text-fix">
-                            <div class="inner" style="font-size:20px">
-                                <p><span style="font-weight: 400;">De favoriete bomen en planten van Peter? Een
+                            <div class="  d-flex flex-column align-items-center" style="font-size:20px">
+                                <p class="content1">
+                                    <span style="font-weight: 400;">De favoriete bomen en planten van
+                                        Peter? Een
                                         prachtige meerstammige steeneik, vrouwenmantel (Alchemilla mollis), witte
                                         knoop (Anaphalis) en de dropplant (Agastache). Maar voor het ontwerp en de
-                                        aanleg van jouw tuin, staan jouw wensen voorop. Of het nu gaat om de aanleg
-                                        van je voortuin, achtertuin, stadstuin of dakterras.</span></p>
+                                        aanleg van jouw tuin, staan jouw wensen voorop.
+                                        <span class="more-text d-none"> Of het nu gaat om de aanleg
+                                            van je voortuin, achtertuin, stadstuin of dakterras.
+                                        </span>
+                                    </span>
+                                </p>
+                                <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+
+                                    <span class="arrow fas fa-angle-down down-arrow">
+                                    </span>
+                                </a>
                             </div>
-                            <div class="read-more"></div>
+
                         </div>
+
+                        <style>
+                        .down-arrow {
+                            font-size: 24px;
+                            color: white;
+                        }
+
+                        .up-arrow {
+                            font-size: 24px;
+                            color: white;
+
+                        }
+                        </style>
+
+
+
+                        <script>
+                        $(document).ready(function() {
+                            $('.read-more-toggle').click(function(e) {
+                                e.preventDefault();
+                                var moreText = $(this).prev('.content1').find(
+                                    '.more-text');
+
+
+                                // Toggle visibility of additional text
+                                moreText.toggleClass('d-none');
+
+
+                                // Toggle arrow icon
+                                if (moreText.hasClass('d-none')) {
+                                    $(this).html(
+                                        '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                                    );
+                                } else {
+                                    $(this).html(
+                                        '<span class="arrow fas fa-angle-up up-arrow" > </span>'
+                                    );
+                                }
+
+                                // Add or remove active class for arrow animation
+                                $(this).toggleClass('active');
+                            });
+                        });
+                        </script>
+
+
+
+
                     </div>
                 </div>
             </div>
