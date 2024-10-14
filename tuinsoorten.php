@@ -282,6 +282,7 @@
     .swiper-button-next::after,
     .swiper-rtl .swiper-button-prev::after {
         font-size: 16px;
+        font-weight: 900;
     }
     </style>
     <div class="bg-leaf">
@@ -437,6 +438,9 @@
 
 
             </div>
+
+
+
             <div class="lin3 d-block d-md-block d-lg-none"></div>
 
 
@@ -663,6 +667,8 @@
 
             </div>
         </div>
+
+
     </div>
 
 
