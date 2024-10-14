@@ -70,7 +70,6 @@
 
     </div>
 
-    <!-- WhatsApp Icon with fixed position -->
 
 </div>
 <!-- End Of bg-container -->
@@ -258,134 +257,134 @@
 
 
         <style>
-        .swiper-container-fullwidth {
-            width: 100vw;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+            .swiper-container-fullwidth {
+                width: 100vw;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
 
-        /* Hide the CircleType by default */
-        #demo3 {
-            display: none;
-        }
-
-        /* Show the CircleType on devices with a width of 1024px and up */
-        @media (min-width: 1024px) {
+            /* Hide the CircleType by default */
             #demo3 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                display: none;
+            }
+
+            /* Show the CircleType on devices with a width of 1024px and up */
+            @media (min-width: 1024px) {
+                #demo3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 200px;
+                    width: 200px;
+                    overflow: hidden;
+                    position: absolute;
+                    bottom: -129px;
+                    /* bottom: -50px; */
+                    transform: translate(50%, 50%);
+                    /* position: fixed; */
+                    right: 0;
+                    /* right: 0; */
+                    /* Position it at the right edge */
+                    transform: translateY(-50%);
+                    color: #fff;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    letter-spacing: 3px;
+                    z-index: 1000;
+
+                }
+            }
+
+            #demo3 span {
+                position: absolute;
+                left: 50%;
+                transform-origin: 0 100px;
+
+            }
+
+            @keyframes rotating {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .text-circle {
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-name: rotating;
+                animation-timing-function: linear;
                 height: 200px;
                 width: 200px;
-                overflow: hidden;
-                position: absolute;
-                bottom: -129px;
-                /* bottom: -50px; */
-                transform: translate(50%, 50%);
-                /* position: fixed; */
-                right: 0;
-                /* right: 0; */
-                /* Position it at the right edge */
-                transform: translateY(-50%);
-                color: #fff;
-                border-radius: 50%;
-                font-size: 12px;
-                letter-spacing: 3px;
-                z-index: 1000;
-
-            }
-        }
-
-        #demo3 span {
-            position: absolute;
-            left: 50%;
-            transform-origin: 0 100px;
-
-        }
-
-        @keyframes rotating {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .text-circle {
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-            animation-name: rotating;
-            animation-timing-function: linear;
-            height: 200px;
-            width: 200px;
-            overflow: visible;
-
-        }
-
-
-
-
-
-        /* Show text and button for devices less than 1024px */
-        @media (max-width: 1023px) {
-
-
-            .slider-text-button-container {
-                position: absolute;
-                /* Position from bottom */
-                bottom: 20px;
-                width: 100%;
-                justify-content: space-between;
-                /* Add padding from edges */
-                padding: 0 20px;
-                box-sizing: border-box;
-                z-index: 1000;
-                margin-bottom: 40px;
-            }
-
-            .slider-text-button-container-right {
-                position: absolute;
-                bottom: -38px;
-                right: 0px;
-                width: 100%;
-                /* Add padding from edges */
-                padding: 0 20px;
-                box-sizing: border-box;
-                z-index: 1000;
-
+                overflow: visible;
 
             }
 
-            .line-before {
-                border: 1px #fff solid;
-                width: 100%;
-                height: 1px;
+
+
+
+
+            /* Show text and button for devices less than 1024px */
+            @media (max-width: 1023px) {
+
+
+                .slider-text-button-container {
+                    position: absolute;
+                    /* Position from bottom */
+                    bottom: 20px;
+                    width: 100%;
+                    justify-content: space-between;
+                    /* Add padding from edges */
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    z-index: 1000;
+                    margin-bottom: 40px;
+                }
+
+                .slider-text-button-container-right {
+                    position: absolute;
+                    bottom: -38px;
+                    right: 0px;
+                    width: 100%;
+                    /* Add padding from edges */
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    z-index: 1000;
+
+
+                }
+
+                .line-before {
+                    border: 1px #fff solid;
+                    width: 100%;
+                    height: 1px;
+                }
             }
-        }
 
 
 
-        /* Text styling */
-        .slider-text-button-container .text {
+            /* Text styling */
+            .slider-text-button-container .text {
 
 
-            /* Take up available space */
-            flex: 1;
-            text-align: left;
+                /* Take up available space */
+                flex: 1;
+                text-align: left;
 
-        }
+            }
 
-        /* Button styling */
-        .slider-text-button-container button {
+            /* Button styling */
+            .slider-text-button-container button {
 
-            /* Do not grow */
-            flex: 0;
-            text-align: right;
+                /* Do not grow */
+                flex: 0;
+                text-align: right;
 
-        }
+            }
         </style>
 
 
@@ -595,65 +594,65 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper", {
 
-        // slidesPerView: 2.5,
+            // slidesPerView: 2.5,
 
-        slidesPerView: 1.2,
-        centeredSlides: true,
-        spaceBetween: 5,
-        pagination: {
-            el: ".swiper-pagination",
-            // type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            992: {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            spaceBetween: 5,
+            pagination: {
+                el: ".swiper-pagination",
+                // type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                992: {
 
-                slidesPerView: 3.5,
+                    slidesPerView: 3.5,
+                }
             }
-        }
-    });
+        });
 
-    var appendNumber = 4;
-    var prependNumber = 1;
-    document
-        .querySelector(".prepend-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-            ]);
-        });
-    document
-        .querySelector(".prepend-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-            ]);
-        });
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                ]);
+            });
     </script>
 </main>
 <?php get_footer() ?>
