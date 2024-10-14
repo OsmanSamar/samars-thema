@@ -403,10 +403,6 @@
                     <div class="lin3 d-none d-md-none d-lg-block"></div>
                 </div>
 
-
-
-
-
                 <!-- Swiper On Small Screen  First Swiper -->
                 <div class="swiper-container" style="--swiper-pagination-color: #fff">
 
@@ -429,8 +425,7 @@
                             </div>
                         </div>
 
-                        <!-- <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div> -->
+
                     </div>
                     <div class="swiper-pagination"></div>
 
@@ -439,13 +434,14 @@
 
             </div>
 
+        </div>
+
+        <div class="lin3 d-block d-md-block d-lg-none"></div>
 
 
-            <div class="lin3 d-block d-md-block d-lg-none"></div>
+        <!-- 2  -->
+        <div class="container">
 
-
-
-            <!-- 2  -->
             <div id="moderne-tuin" class="container" style="margin-top: 80px">
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
@@ -504,172 +500,151 @@
                                     src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
                                     alt="groediverons" class="img3" /></div>
                         </div>
-                        <!-- <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div> -->
-
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-
-
-                </div>
-
-
-
-            </div>
-            <div class="lin3 d-block d-md-block d-lg-none"></div>
-
-            <!-- 3 -->
-            <div id="ecologische-tuin" class=" container" style="margin-top: 80px">
-                <div class="row">
-                    <!-- 1st Row: Text and Image on LG, Stacked on SM -->
-                    <div class="col-12 col-lg-6 mb-4">
-                        <div class="text-header">Ecologische tuin <span>-</span></div>
-                        <div class="text">
-                            <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te
-                                leggen
-                                dat
-                                er
-                                zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin
-                                wordt
-                                geen
-                                gif
-                                gebruikt. Er groeien vooral inheemse planten uit de streek, die hun gang mogen
-                                gaan.
-                                En
-                                onkruid? Dat bestaat niet in een ecologische tuin! </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="Scaled"
-                            class="img1" />
-                    </div>
-                    <!-- 2nd Row: Two Images on LG, Stacked on SM -->
-                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/dutchgarden.png"
-                            alt="Dutch garden" class="img2" />
-                    </div>
-                    <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/gardeninsunlight.png"
-                            alt="Gardeninsunlight" class="img3" />
-                    </div>
-                    <!-- <div class="lin3"> -->
-                </div>
-
-                <div class="lin3  d-none d-md-none d-lg-block"></div>
-            </div>
-
-
-
-            <!-- Swiper On Small Screen -->
-            <div class="swiper-container" style="--swiper-pagination-color: #fff">
-                <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: ">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="Scaled"
-                                class="img1" />
-                        </div>
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/dutchgarden.png"
-                                alt="Dutch garden" class="img2" />
-                        </div>
-                        <div class="swiper-slide"><img
-                                src="<?= esc_url(get_template_directory_uri()); ?>/images/gardeninsunlight.png"
-                                alt="Garden in sunlight" class="img3" />
-                        </div>
-
-                    </div>
-
-
-                    <!-- <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div> -->
-                    <!-- <div class="swiper-pagination"></div> -->
-
-                </div>
-
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="lin3 d-block d-md-block d-lg-none"></div>
-
-
-
-
-            <!-- 4  -->
-            <div id="daktuin-of-dakterras" class="container" style="margin-top: 80px">
-                <div class="row">
-                    <!-- 1st Row: Text and Image on LG, Stacked on SM -->
-                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex"><img
-                            src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
-                            alt="Flower with droplets.png" class="img1" /></div>
-
-
-                    <div class="col-lg-6">
-                        <div class="row soort-row">
-                            <div class="col-2 justify-content-center d-flex ">
-                                <div class="border-left h-100"></div>
-                            </div>
-                            <div class="col-lg-10 ">
-                                <h2 class=" text-header">Daktuin of dakterras</h2>
-                                <div class="text ">
-                                    <p><span>Heb je geen tuin, maar wel een dakterras? Daar
-                                            kun je een prachtige daktuin van maken! Door een terras aan te leggen en te
-                                            werken met grote plantenbakken, maak je je dakterras groen. Wij denken mee
-                                            in het ontwerp en de realisatie van je groene daktuin.</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
-                            alt="Houseinbackground" class="houseinbackground" />
-                    </div>
-                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
-                            alt="Beautifulpinkflowers" class="img2" />
-                    </div>
-
-                </div>
-
-
-                <!-- Swiper On Small Screen -->
-
-                <div class="swiper-container" style="--swiper-pagination-color: #fff">
-
-                    <div #swiperRef=""
-                        class=" swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                        style="--swiper-navigation-color: #f5a287; ">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
-                                    alt="groenoverons" class="img1" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
-                                    alt="groenoverons" class="img2" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
-                                    alt="groediverons" class="img3" />
-                            </div>
-                        </div>
-                        <!-- <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div> -->
-                        <!-- <div class="swiper-pagination"></div> -->
                     </div>
                     <div class="swiper-pagination"></div>
-
-
                 </div>
-
-
-
             </div>
         </div>
 
-
+        <div class="lin3 d-block d-md-block d-lg-none"></div>
     </div>
+
+
+    <!-- 3 -->
+    <div class="container">
+        <div id="ecologische-tuin" class=" container" style="margin-top: 80px">
+            <div class="row">
+                <!-- 1st Row: Text and Image on LG, Stacked on SM -->
+                <div class="col-12 col-lg-6 mb-4">
+                    <div class="text-header">Ecologische tuin <span>-</span></div>
+                    <div class="text">
+                        <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te
+                            leggen
+                            dat
+                            er
+                            zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin
+                            wordt
+                            geen
+                            gif
+                            gebruikt. Er groeien vooral inheemse planten uit de streek, die hun gang mogen
+                            gaan.
+                            En
+                            onkruid? Dat bestaat niet in een ecologische tuin! </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="Scaled"
+                        class="img1" />
+                </div>
+                <!-- 2nd Row: Two Images on LG, Stacked on SM -->
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/dutchgarden.png" alt="Dutch garden"
+                        class="img2" />
+                </div>
+                <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/gardeninsunlight.png"
+                        alt="Gardeninsunlight" class="img3" />
+                </div>
+
+            </div>
+            <div class="lin3  d-none d-md-none d-lg-block"></div>
+        </div>
+
+
+
+        <!-- Swiper On Small Screen -->
+        <div class="swiper-container" style="--swiper-pagination-color: #fff">
+            <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="Scaled"
+                            class="img1" />
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="<?= esc_url(get_template_directory_uri()); ?>/images/dutchgarden.png"
+                            alt="Dutch garden" class="img2" />
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="<?= esc_url(get_template_directory_uri()); ?>/images/gardeninsunlight.png"
+                            alt="Garden in sunlight" class="img3" />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="lin3 d-block d-md-block d-lg-none"></div>
+
+
+    <!-- 4 -->
+    <div class="container">
+        <div id="daktuin-of-dakterras" class="container" style="margin-top: 80px">
+            <div class="row">
+                <!-- 1st Row: Text and Image on LG, Stacked on SM -->
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex"><img
+                        src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
+                        alt="Flower with droplets.png" class="img1" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="row soort-row">
+                        <div class="col-2 justify-content-center d-flex ">
+                            <div class="border-left h-100"></div>
+                        </div>
+                        <div class="col-lg-10 ">
+                            <h2 class=" text-header">Daktuin of dakterras</h2>
+                            <div class="text ">
+                                <p><span>Heb je geen tuin, maar wel een dakterras? Daar
+                                        kun je een prachtige daktuin van maken! Door een terras aan te leggen en te
+                                        werken met grote plantenbakken, maak je je dakterras groen. Wij denken mee
+                                        in het ontwerp en de realisatie van je groene daktuin.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
+                        alt="Houseinbackground" class="houseinbackground" />
+                </div>
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
+                        alt="Beautifulpinkflowers" class="img2" />
+                </div>
+
+            </div>
+
+
+            <!-- Swiper On Small Screen -->
+
+            <div class="swiper-container" style="--swiper-pagination-color: #fff">
+
+                <div #swiperRef="" class=" swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                    style="--swiper-navigation-color: #f5a287; ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
+                                alt="groenoverons" class="img1" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
+                                alt="groenoverons" class="img2" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
+                                alt="groediverons" class="img3" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
