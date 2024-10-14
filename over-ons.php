@@ -129,10 +129,7 @@
     @media (min-width: 992px) {
 
         .groenoverons {
-
-
             height: 823px;
-
         }
 
 
@@ -330,16 +327,6 @@
 
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
 
         <div class="text-lg-start text-center" id="content">
 

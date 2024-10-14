@@ -84,7 +84,13 @@
         cursor: pointer;
     }
 
+    .groenoverons {
 
+        width: 100%;
+        /* height: 823px; */
+        object-fit: cover;
+        border-radius: 10px;
+    }
 
 
     .border-left {
@@ -149,6 +155,10 @@
 
         }
 
+        .groenoverons {
+            height: 823px;
+        }
+
 
         .border-left {
             display: flex;
@@ -208,7 +218,7 @@
             </div>
 
             <div class="  container bg-img mt-lg-auto mb-0">
-                <!-- Removed container class from bg-img div -->
+
                 <div class="position-relative">
                     <div class=" overlay" style="  border-radius: 10px;"></div>
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijze.png" alt="groentuinen"
@@ -436,7 +446,8 @@
 
                                     <div>
                                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
-                                            alt="Groenoverons" class="" style="object-fit: cover; width:100% ;" />
+                                            alt="Groenoverons" class="groenoverons"
+                                            style="object-fit: cover; width:100% ;" />
                                     </div>
 
                                     <div>
