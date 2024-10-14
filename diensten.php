@@ -3,64 +3,63 @@
 
 <main class="flex-grow-1">
     <style>
-    .dienst-line {
-        height: 1px;
-        width: 122px;
-        background-color: #ffffff;
-        color: #ffffff;
-        position: relative;
-        opacity: 0.5;
-
-    }
-
-
-    @media (min-width: 768px) {
-
-
-        .dienstline {
+        .dienst-line {
             height: 1px;
-            width: 428px;
+            width: 122px;
             background-color: #ffffff;
             color: #ffffff;
             position: relative;
             opacity: 0.5;
         }
-    }
 
 
-    .bg-img {
-        position: relative;
-        text-align: center;
-        color: #F8F4EA;
-        /* font-family: 'Henderson Sans'; */
-        font-weight: bold;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-top: auto;
-        margin-bottom: 0;
-        background-size: cover;
+        @media (min-width: 768px) {
 
 
-    }
+            .dienstline {
+                height: 1px;
+                width: 428px;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                opacity: 0.5;
+            }
+        }
 
-    .bg-img img {
-        width: 100%;
-        height: 34vh;
 
-    }
+        .bg-img {
+            position: relative;
+            text-align: center;
+            color: #F8F4EA;
+            /* font-family: 'Henderson Sans'; */
+            font-weight: bold;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: auto;
+            margin-bottom: 0;
+            background-size: cover;
+
+
+        }
+
+        .bg-img img {
+            width: 100%;
+            height: 34vh;
+
+        }
 
 
 
 
-    .content {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        /* bottom: 11%; */
-    }
+        .content {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            /* bottom: 11%; */
+        }
 
-    /* .content h1 {
+        /* .content h1 {
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -68,268 +67,268 @@
 
     } */
 
-    .bottom-center {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-
-
-    h1 {
-
-        margin-bottom: 180px;
-        font-size: 40px;
-        line-height: 70px;
-        font-weight: bold;
-    }
-
-
-
-
-
-    .down {
-        display: inline-block;
-        transition: transform 0.3s ease;
-        width: 45px;
-        cursor: pointer;
-    }
-
-    .first-container {
-        border: 1px solid #fff;
-        border-radius: 10px;
-        height: 461px;
-
-    }
-
-    .second-container {
-        background-color: #5B7D6C;
-        margin: 10px 10px;
-        border-radius: 10px;
-
-        height: 437px;
-    }
-
-    .border-bottom {
-
-        border-bottom-width: 1px;
-        /* margin-bottom: 22px; */
-
-    }
-
-    .swiper-container {
-        position: relative;
-
-    }
-
-    .swiper-container .swiper-pagination {
-        bottom: -50px !important;
-
-    }
-
-    .swiper-container .swiper-button-next {
-        bottom: -50px !important;
-
-    }
-
-    .swiper-container .swiper-button-prev {
-        bottom: -50px !important;
-
-    }
-
-    .swiper-container .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
-    }
-
-
-
-    @media (min-width: 992px) {
-
-        .content {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            bottom: 11%;
-        }
-
-        /* Hide arrow on large screens */
-        .down {
-            display: none;
-        }
-
-
-
-
-        .down {
-            display: none;
-        }
-
-        h1 {
-
-            margin-bottom: 0;
-            font-size: 90px;
-            line-height: 70px;
-            font-weight: bold;
-
-        }
-
-        .bg-img img {
-
-            height: 690px
-        }
-
-
-        .content h1 {
-
-            font-size: 90px;
-            font-weight: 700;
-            line-height: 125px;
-        }
-
         .bottom-center {
             position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: flex;
             flex-direction: column;
             align-items: center;
-            top: 100%;
-            left: 73%;
-            transform: translate(-50%, -50%);
+
         }
-    }
-
-    .swiper-container-fullwidth {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 
 
-    /* Hide the CircleType by default */
-    #demo3 {
-        display: none;
-    }
 
-    /* Show the CircleType on devices with a width of 1024px and up */
-    @media (min-width: 1024px) {
+        h1 {
+
+            margin-bottom: 180px;
+            font-size: 40px;
+            line-height: 70px;
+            font-weight: bold;
+        }
+
+
+
+
+
+        .down {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            width: 45px;
+            cursor: pointer;
+        }
+
+        .first-container {
+            border: 1px solid #fff;
+            border-radius: 10px;
+            height: 461px;
+
+        }
+
+        .second-container {
+            background-color: #5B7D6C;
+            margin: 10px 10px;
+            border-radius: 10px;
+
+            height: 437px;
+        }
+
+        .border-bottom {
+
+            border-bottom-width: 1px;
+            /* margin-bottom: 22px; */
+
+        }
+
+        .swiper-container {
+            position: relative;
+
+        }
+
+        .swiper-container .swiper-pagination {
+            bottom: -50px !important;
+
+        }
+
+        .swiper-container .swiper-button-next {
+            bottom: -50px !important;
+
+        }
+
+        .swiper-container .swiper-button-prev {
+            bottom: -50px !important;
+
+        }
+
+        .swiper-container .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+        }
+
+
+
+        @media (min-width: 992px) {
+
+            .content {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                bottom: 11%;
+            }
+
+            /* Hide arrow on large screens */
+            .down {
+                display: none;
+            }
+
+
+
+
+            .down {
+                display: none;
+            }
+
+            h1 {
+
+                margin-bottom: 0;
+                font-size: 90px;
+                line-height: 70px;
+                font-weight: bold;
+
+            }
+
+            .bg-img img {
+
+                height: 690px
+            }
+
+
+            .content h1 {
+
+                font-size: 90px;
+                font-weight: 700;
+                line-height: 125px;
+            }
+
+            .bottom-center {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                top: 100%;
+                left: 73%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .swiper-container-fullwidth {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        /* Hide the CircleType by default */
         #demo3 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: none;
+        }
+
+        /* Show the CircleType on devices with a width of 1024px and up */
+        @media (min-width: 1024px) {
+            #demo3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+                width: 200px;
+                overflow: hidden;
+                position: absolute;
+                bottom: -129px;
+                /* bottom: -50px; */
+                transform: translate(50%, 50%);
+                /* position: fixed; */
+                right: 0;
+                /* right: 0; */
+                /* Position it at the right edge */
+                transform: translateY(-50%);
+                color: #fff;
+                border-radius: 50%;
+                font-size: 12px;
+                letter-spacing: 3px;
+                z-index: 1000;
+
+            }
+        }
+
+        #demo3 span {
+            position: absolute;
+            left: 50%;
+            transform-origin: 0 100px;
+
+        }
+
+        @keyframes rotating {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .text-circle {
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-name: rotating;
+            animation-timing-function: linear;
             height: 200px;
             width: 200px;
-            overflow: hidden;
-            position: absolute;
-            bottom: -129px;
-            /* bottom: -50px; */
-            transform: translate(50%, 50%);
-            /* position: fixed; */
-            right: 0;
-            /* right: 0; */
-            /* Position it at the right edge */
-            transform: translateY(-50%);
-            color: #fff;
-            border-radius: 50%;
-            font-size: 12px;
-            letter-spacing: 3px;
-            z-index: 1000;
+            overflow: visible;
 
         }
-    }
-
-    #demo3 span {
-        position: absolute;
-        left: 50%;
-        transform-origin: 0 100px;
-
-    }
-
-    @keyframes rotating {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    .text-circle {
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-        animation-name: rotating;
-        animation-timing-function: linear;
-        height: 200px;
-        width: 200px;
-        overflow: visible;
-
-    }
 
 
 
-    /* Hide the text and button container by default */
-    .slider-text-button-container {
-        display: none;
-    }
-
-    /* Show text and button for devices less than 1024px */
-    @media (max-width: 1023px) {
-
-
+        /* Hide the text and button container by default */
         .slider-text-button-container {
-            position: absolute;
-            /* Position from bottom */
-            bottom: 20px;
-            width: 100%;
-            justify-content: space-between;
-            /* Add padding from edges */
-            padding: 0 20px;
-            box-sizing: border-box;
-            z-index: 1000;
-            margin-bottom: 40px;
+            display: none;
         }
 
-        .slider-text-button-container-right {
-            position: absolute;
-            bottom: -38px;
-            right: 0px;
-            width: 100%;
-            /* Add padding from edges */
-            padding: 0 20px;
-            box-sizing: border-box;
-            z-index: 1000;
+        /* Show text and button for devices less than 1024px */
+        @media (max-width: 1023px) {
+
+
+            .slider-text-button-container {
+                position: absolute;
+                /* Position from bottom */
+                bottom: 20px;
+                width: 100%;
+                justify-content: space-between;
+                /* Add padding from edges */
+                padding: 0 20px;
+                box-sizing: border-box;
+                z-index: 1000;
+                margin-bottom: 40px;
+            }
+
+            .slider-text-button-container-right {
+                position: absolute;
+                bottom: -38px;
+                right: 0px;
+                width: 100%;
+                /* Add padding from edges */
+                padding: 0 20px;
+                box-sizing: border-box;
+                z-index: 1000;
+            }
+
+            .line-before {
+                border: 1px #fff solid;
+                width: 100%;
+                height: 1px;
+            }
         }
 
-        .line-before {
-            border: 1px #fff solid;
-            width: 100%;
-            height: 1px;
+
+        /* Text styling */
+        .slider-text-button-container .text {
+            flex: 1;
+            /* Take up available space */
+            text-align: left;
+
         }
-    }
 
+        /* Button styling */
+        .slider-text-button-container button {
+            flex: 0;
+            /* Do not grow */
+            text-align: right;
 
-    /* Text styling */
-    .slider-text-button-container .text {
-        flex: 1;
-        /* Take up available space */
-        text-align: left;
-
-    }
-
-    /* Button styling */
-    .slider-text-button-container button {
-        flex: 0;
-        /* Do not grow */
-        text-align: right;
-
-    }
+        }
     </style>
     <div class="container">
         <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
@@ -720,7 +719,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="button-group col-12 col-lg-4  d-flex flex-row    justify-content-start  "
+                <div class="button-group col-12 col-lg-4  d-flex flex-row  justify-content-start"
                     style="margin-bottom:70px">
                     <div
                         class="title d-flex  flex-row d-md-flex d-lg-none align-items-center justify-content-start gap-1">
@@ -759,14 +758,14 @@
     <!-- Initialize Swiper -->
 
     <script>
-    document.querySelectorAll(".swiper-container").forEach(container => {
-        var swiper = new Swiper(container.querySelector(".mySwiper"), {
+        document.querySelectorAll(".swiper-container").forEach(container => {
+            var swiper = new Swiper(container.querySelector(".mySwiper"), {
 
                 slidesPerView: 1.2,
                 centeredSlides: true,
                 loop: true,
                 grabCursor: true,
-                spaceBetween: 5,
+                _ur _ur spaceBetween: 5,
                 pagination: {
                     el: container.querySelector(".swiper-pagination"),
 
@@ -787,63 +786,63 @@
                 }
             }
 
+            );
+        })
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+
+        document.querySelector(".prepend-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>",
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber + "</div>",
+                ]);
+            }
+
         );
-    })
 
-    var appendNumber = 4;
-    var prependNumber = 1;
+        document.querySelector(".prepend-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>");
+            }
 
-    document.querySelector(".prepend-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>",
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber + "</div>",
-            ]);
-        }
+        );
 
-    );
+        document.querySelector(".append-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>");
+            }
 
-    document.querySelector(".prepend-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>");
-        }
+        );
 
-    );
+        document.querySelector(".append-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                ]);
+            }
 
-    document.querySelector(".append-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>");
-        }
-
-    );
-
-    document.querySelector(".append-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-            ]);
-        }
-
-    );
+        );
     </script>
 </main>
 

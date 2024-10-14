@@ -3,6 +3,30 @@
 
 <main class="flex-grow-1">
     <style>
+    .dienst-line {
+        height: 1px;
+        width: 195px;
+        /* background-color: #ffffff; */
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        position: relative;
+        opacity: 0.3;
+    }
+
+
+    @media (min-width: 768px) {
+
+
+        .dienstline {
+            height: 1px;
+            width: 928px;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            opacity: 0.5;
+        }
+    }
+
     .swiper-container {
         position: relative;
 
@@ -152,7 +176,7 @@
 
 
 
-    /*  */
+
 
     .line-top {
 
@@ -781,16 +805,17 @@
                     </div>
                 </div>
             </div>
-            <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column  justify-content-start  "
-                style="margin-bottom:70px">
-                <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
+            <div class="button-group col-12 col-lg-4 d-flex flex-row  justify-content-start" style="margin-bottom:70px">
+                <div class="title d-flex  flex-row d-md-flex d-lg-none align-items-center justify-content-start gap-1">
                     <div class="circle-border">
                         <a class="btn btn-primary " href="/contact" style="padding: 10px 40px; font-size:;">Neem
                             contact
                             op
                         </a>
                     </div>
-                    <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+                    <!-- <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div> -->
+                    <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
+                    <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
 
                 </div>
 
