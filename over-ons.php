@@ -290,16 +290,14 @@
     </style>
 
     <div></div>
-    <div class="container">
 
-        <div class="bg-leaf">
+    <div class="bg-leaf">
+        <div class="container">
             <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
                 <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
                 <span class="separator"> // </span>
                 <span class="last">Over ons</span>
             </div>
-
-
 
 
             <div class="container bg-img mt-lg-auto mb-0">
@@ -326,7 +324,21 @@
 
 
             </div>
+
+
         </div>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="container">
+
+
 
         <div class="text-lg-start text-center" id="content">
 
