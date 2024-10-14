@@ -425,7 +425,7 @@
             <div #swiperRef="" class="swiper mySwiper projecten-slider"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" style="width:;">
                         <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
                             class="">
                         <!-- Overlay Text and Button -->
@@ -443,7 +443,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" style="width:;">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
                             alt="Image 2">
                         <!-- Overlay Text and Button -->
@@ -460,7 +460,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" style="width:;">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
                             alt="Image 2">
 
@@ -498,13 +498,12 @@
                 <div class="row">
                     <div class="col-lg-6  position-relative fadeIn visible" data-side="left">
                         <div class="grid-bottom">
-                            <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                src="//groentuinen.b-cdn.net/wp-content/uploads/2024/04/bus.png" alt="">
-                            <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-56-scaled.jpg"
-                                alt="">
-                            <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                src="//groentuinen.b-cdn.net/wp-content/uploads/2024/04/bg.png" alt="">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
+                                class="w-100 h-100 object-fit-cover rounded" alt="">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
+                                class="w-100 h-100 object-fit-cover rounded" alt="">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bg.png"
+                                class="w-100 h-100 object-fit-cover rounded" alt="">
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1 fadeIn visible" data-side="right">
@@ -535,7 +534,7 @@
     <style>
     .dienst-line {
         height: 1px;
-        width: 395px;
+        width: 5595px;
         /* background-color: #ffffff; */
         border: 1px solid #ffffff;
         color: #ffffff;

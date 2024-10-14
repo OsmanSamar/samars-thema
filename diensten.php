@@ -5,7 +5,7 @@
     <style>
     .dienst-line {
         height: 1px;
-        width: 122px;
+        width: 522px;
         background-color: #ffffff;
         color: #ffffff;
         position: relative;
@@ -18,7 +18,7 @@
 
         .dienstline {
             height: 1px;
-            width: 428px;
+            width: 928px;
             background-color: #ffffff;
             color: #ffffff;
             position: relative;

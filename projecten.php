@@ -5,7 +5,7 @@
     <style>
     .dienst-line {
         height: 1px;
-        width: 395px;
+        width: 595px;
         /* background-color: #ffffff; */
         border: 1px solid #ffffff;
         color: #ffffff;
