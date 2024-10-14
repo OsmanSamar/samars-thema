@@ -10,16 +10,28 @@
         background-size: 1600px;
     }
 
+
+    .bg-img {
+        position: relative;
+        text-align: center;
+        color: #F8F4EA;
+        font-weight: bold;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: auto;
+        margin-bottom: 0;
+        background-size: cover;
+
+    }
+
     .content {
         position: absolute;
-        /* top: 50%; */
-        top: 82%;
+        top: 62%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
         text-align: center;
         color: white;
-
     }
 
     .bottom-center {
@@ -33,7 +45,9 @@
     .groentuinen {
         display: block;
         object-fit: cover;
-        border-radius: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: 34vh
     }
 
     .text-header {
@@ -51,16 +65,14 @@
     }
 
     .content h1 {
-
-
-        font-size: 40px;
+        font-size: 24px;
         line-height: 70px;
         font-weight: bold;
     }
 
     .content p {
 
-        font-size: 16px;
+        font-size: 15px;
         line-height: 20px;
 
     }
@@ -80,26 +92,32 @@
 
     }
 
+    /* MD Screens */
+    @media (min-width: 768px) {
 
-    /*  */
-    /* Initially hide the additional text */
-    /* .more-text {
-        display: none;
-    } */
+        .content {
+            position: absolute;
+            /* top: 50%; */
+            top: 73%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+    }
 
-    /* Styling for the toggle arrow */
-    /* .read-more-toggle .arrow {
-        transition: transform 0.3s;
-    } */
-
-    /* Rotate arrow on click */
-    /* .read-more-toggle.active .arrow {
-        transform: rotate(180deg);
-    } */
-
-    /*  */
 
     @media (min-width: 992px) {
+
+        .groentuinen {
+            display: block;
+            object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+            height: 566px;
+        }
+
 
         /* Hide arrow on large screens */
         .down {
@@ -186,29 +204,30 @@
                 <a class="text-white" style="font-size:18px;" href="<?= esc_url(home_url('/')); ?>">Home</a>
                 <span class="separator"> // </span>
                 <span class="" style="font-size:16px;">Onze werkwijze</span>
+
             </div>
 
-            <div class=" bg-img mt-lg-auto mb-0">
+            <div class="  container bg-img mt-lg-auto mb-0">
                 <!-- Removed container class from bg-img div -->
                 <div class="position-relative">
-                    <div class=" overlay" style="  border-radius: 20px;"></div>
+                    <div class=" overlay" style="  border-radius: 10px;"></div>
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijze.png" alt="groentuinen"
-                        class="groentuinen" style="height:745px" />
+                        class="groentuinen" style="" />
                     <div class="content center">
                         <div class=" bottom-center">
-                            <h1>Onze Werkwijze</h1>
+                            <h1>Onze werkwijze</h1>
 
                         </div>
                         <div class=" bottom-center" style=" width: ;">
-                            <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:20px;">We
+                            <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:;">We
                                 steken
                                 onze
                                 handen
                                 uit de mouwen voor jouw tuin. Of het nu gaat</p>
-                            <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:20px;">om
+                            <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:;">om
                                 tuinontwerp,
                                 tuinaanleg of het onderhoud van je tuin. Zo wordt jouw</p>
-                            <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:20px;">
+                            <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:;">
                                 tuin
                                 geen muurbloempje maar een
                                 echte

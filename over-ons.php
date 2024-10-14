@@ -4,90 +4,159 @@
 
 <main class="flex-grow-1">
     <style>
-        .swiper-container {
-            position: relative;
+    .swiper-container {
+        position: relative;
+
+    }
+
+    .swiper-container .swiper-pagination {
+        bottom: -50px !important;
+        display: block;
+    }
+
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
+
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 1600px;
+    }
+
+
+    .bg-img {
+        position: relative;
+        text-align: center;
+        color: #F8F4EA;
+        font-weight: bold;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: auto;
+        margin-bottom: 0;
+        background-size: cover;
+
+    }
+
+    .nline {
+        border: 1px solid #ffffff;
+        opacity: 0.3;
+        width: 50%;
+        height: 1px;
+    }
+
+
+
+    .groentuinen {
+        display: block;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 34vh;
+    }
+
+    .content {
+        position: absolute;
+        top: 94%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        color: white;
+
+    }
+
+    .bottom-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .content h1 {
+
+        /* margin-bottom: 338px; */
+        font-size: 40px;
+        line-height: 70px;
+        font-weight: bold;
+        margin-top: -38px;
+    }
+
+
+    .down1 {
+        display: none;
+        transition: transform 0.3s ease;
+        width: 45px;
+        cursor: pointer;
+        top: 94%;
+        left: 50%;
+        transform: translate(95%, 360%);
+
+    }
+
+    .vl {
+
+        display: none;
+    }
+
+
+
+
+
+
+    .groenoverons {
+
+        width: 100%;
+        /* height: 823px; */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+
+
+    @media (min-width: 768px) {
+        .swiper {
+            width: 100%;
+            height: 716px;
+            margin: 20px auto;
+        }
+    }
+
+
+    @media (min-width: 992px) {
+
+        .groenoverons {
+
+
+            height: 823px;
 
         }
 
-        .swiper-container .swiper-pagination {
-            bottom: -50px !important;
-            display: block;
-        }
 
-        .swiper-container .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
-        }
-
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: 1600px;
-        }
-
-
-        .bg-img {
-            position: relative;
-            text-align: center;
-            color: #F8F4EA;
-            font-weight: bold;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-top: auto;
-            margin-bottom: 0;
-            background-size: cover;
-
-        }
-
-        .nline {
-            border: 1px solid #ffffff;
-            opacity: 0.3;
-            width: 50%;
-            height: 1px;
-        }
-
-
-
+        /* height:566px */
         .groentuinen {
             display: block;
             object-fit: cover;
             border-radius: 10px;
             width: 100%;
-            height: 34vh;
+            height: 566px;
         }
 
-        .content {
-            position: absolute;
-            top: 94%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            text-align: center;
-            color: white;
-
+        .swiper-container .swiper-pagination {
+            display: none;
         }
 
-        .bottom-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-        .content h1 {
-
-            /* margin-bottom: 338px; */
-            font-size: 40px;
-            line-height: 70px;
-            font-weight: bold;
-            margin-top: -38px;
+        /* Hide arrow on large screens */
+        .down {
+            display: none;
         }
 
 
         .down1 {
-            display: none;
+            display: flex;
             transition: transform 0.3s ease;
             width: 45px;
             cursor: pointer;
@@ -97,199 +166,130 @@
 
         }
 
-        .vl {
 
-            display: none;
-        }
-
-
-
-
-
-
-        .groenoverons {
-
+        .content {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100%;
-            /* height: 823px; */
-            object-fit: cover;
-            border-radius: 10px;
+            text-align: center;
+            color: white;
+
         }
 
+        .content h1 {
 
-
-        @media (min-width: 768px) {
-            .swiper {
-                width: 100%;
-                height: 716px;
-                margin: 20px auto;
-            }
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 125px;
         }
 
-
-        @media (min-width: 992px) {
-
-            .groenoverons {
-
-
-                height: 823px;
-
-            }
-
-
-            /* height:566px */
-            .groentuinen {
-                display: block;
-                object-fit: cover;
-                border-radius: 10px;
-                width: 100%;
-                height: 566px;
-            }
-
-            .swiper-container .swiper-pagination {
-                display: none;
-            }
-
-            /* Hide arrow on large screens */
-            .down {
-                display: none;
-            }
-
-
-            .down1 {
-                display: flex;
-                transition: transform 0.3s ease;
-                width: 45px;
-                cursor: pointer;
-                top: 94%;
-                left: 50%;
-                transform: translate(95%, 360%);
-
-            }
-
-
-            .content {
-                position: absolute;
-                top: 85%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                text-align: center;
-                color: white;
-
-            }
-
-            .content h1 {
-
-                font-size: 90px;
-                font-weight: 700;
-                line-height: 125px;
-            }
-
-            .bottom-center {
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                top: 100%;
-                left: 73%;
-                transform: translate(-50%, -50%);
-            }
-
-            .text {
-                font-size: 20px;
-                margin-left: 50px;
-            }
-
-            .text2 {
-                font-size: 20px;
-                text-align: center;
-                font-family: 'Inclusive Sans', sans-serif;
-
-            }
-
-            .text-header {
-
-                font-size: 40px;
-                margin-left: 50px;
-                margin-top: 80px;
-            }
-
-
-            .img1 {
-                border-radius: 10px;
-                /* width: 626px;
-            height: 377px; */
-                width: 640px;
-                height: 438px;
-            }
-
-            .img2 {
-                border-radius: 10px;
-                width: 525px;
-                height: 616px;
-            }
-
-            .img3 {
-                border-radius: 10px;
-                /* width: 626px;
-            height: 382px; */
-                width: 630px;
-                height: 438px;
-            }
-
-            .img3,
-            .img1,
-            .img2,
-            .groentuinen {
-                object-fit: cover;
-            }
-
-            .vl {
-                border-left: 1px solid white;
-                height: 237px;
-                position: absolute;
-                left: 50%;
-                margin-left: -3px;
-                top: 1590px;
-                display: flex;
-                opacity: .5;
-            }
-
+        .bottom-center {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 100%;
+            left: 73%;
+            transform: translate(-50%, -50%);
         }
 
         .text {
             font-size: 20px;
-            text-align: left;
-            align-items: start;
-            margin-bottom: 48px;
+            margin-left: 50px;
         }
 
         .text2 {
             font-size: 20px;
             text-align: center;
-            /* font-family: 'Inclusive Sans', sans-serif; */
+            font-family: 'Inclusive Sans', sans-serif;
+
         }
 
         .text-header {
 
             font-size: 40px;
-            text-align: left;
-            align-items: start;
-            margin-bottom: 48px;
-
+            margin-left: 50px;
+            margin-top: 80px;
         }
 
-        @media (min-width: 768px) {
-            .line2 {
-                height: 1px;
-                width: 52vw;
-                background-color: #ffffff;
-                color: #ffffff;
-                position: relative;
-                margin-right: 10px;
-                display: block;
-            }
+
+        .img1 {
+            border-radius: 10px;
+            /* width: 626px;
+            height: 377px; */
+            width: 640px;
+            height: 438px;
         }
+
+        .img2 {
+            border-radius: 10px;
+            width: 525px;
+            height: 616px;
+        }
+
+        .img3 {
+            border-radius: 10px;
+            /* width: 626px;
+            height: 382px; */
+            width: 630px;
+            height: 438px;
+        }
+
+        .img3,
+        .img1,
+        .img2,
+        .groentuinen {
+            object-fit: cover;
+        }
+
+        .vl {
+            border-left: 1px solid white;
+            height: 237px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 1590px;
+            display: flex;
+            opacity: .5;
+        }
+
+    }
+
+    .text {
+        font-size: 20px;
+        text-align: left;
+        align-items: start;
+        margin-bottom: 48px;
+    }
+
+    .text2 {
+        font-size: 20px;
+        text-align: center;
+        /* font-family: 'Inclusive Sans', sans-serif; */
+    }
+
+    .text-header {
+
+        font-size: 40px;
+        text-align: left;
+        align-items: start;
+        margin-bottom: 48px;
+
+    }
+
+    @media (min-width: 768px) {
+        .line2 {
+            height: 1px;
+            width: 52vw;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            margin-right: 10px;
+            display: block;
+        }
+    }
     </style>
 
     <div></div>
@@ -331,39 +331,11 @@
             </div>
         </div>
 
-        <!-- <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
-            <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a>
-            <span class="separator"> // </span>
-            <span class="last">Over ons</span>
-        </div> -->
 
 
 
 
-        <!-- <div class="container bg-img mt-lg-auto mb-0">
 
-
-            <div class="position-relative">
-                <div class=" overlay" style=" border-radius: 20px;"></div>
-                <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
-                    class="groentuinen" style="height:745px" />
-
-
-                <div class="content center">
-                    <div class=" bottom-center">
-                        <h1>Expert in groen en duurzaam</h1>
-                    </div>
-                    <div class=" bottom-center" style="margin-top: ;">
-                        <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                alt="downarrow Icon" class="downarrow-icon" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div> -->
 
 
 
@@ -700,65 +672,65 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", {
 
-            // slidesPerView: 2.5,
+        // slidesPerView: 2.5,
 
-            slidesPerView: 1.2,
-            centeredSlides: true,
-            spaceBetween: 5,
-            pagination: {
-                el: ".swiper-pagination",
-                // type: "fraction",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                992: {
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        spaceBetween: 5,
+        pagination: {
+            el: ".swiper-pagination",
+            // type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            992: {
 
-                    slidesPerView: 3.5,
-                }
+                slidesPerView: 3.5,
             }
-        });
+        }
+    });
 
-        var appendNumber = 4;
-        var prependNumber = 1;
-        document
-            .querySelector(".prepend-2-slides")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.prependSlide([
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                ]);
-            });
-        document
-            .querySelector(".prepend-slide")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.prependSlide(
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-                );
-            });
-        document
-            .querySelector(".append-slide")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.appendSlide(
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-                );
-            });
-        document
-            .querySelector(".append-2-slides")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.appendSlide([
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                ]);
-            });
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            ]);
+        });
+    document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            ]);
+        });
     </script>
 
 
