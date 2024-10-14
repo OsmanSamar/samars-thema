@@ -2,6 +2,18 @@
 
 
 <div class="bg-container">
+
+    <style>
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 1200px;
+
+    }
+    </style>
+
+
     <div class="overlay"></div>
 
 
@@ -85,7 +97,7 @@
                 <div class="row  g-4">
 
                     <!-- Left side: Text  -->
-                    <div class="col-lg-4 text-center  text-section" style="margin-top:80px;">
+                    <div class="col-lg-3   text-section" style="margin-top:8px;">
                         <h1 style="font-size: 40px;">Maak van jouw tuin een bijzondere plek om te zijn.</h1>
                         <p style="font-size: 15px;">Met een tuin van GROENTuin maak je jouw tuin uniek. Speciaal
                             ontworpen,aangelegd en onderhouden voor jou.</p>
@@ -138,23 +150,24 @@
 
 
                     <!-- Right  side: Images on Bige Screen  -->
-                    <div class="container col-lg-8 images-section2 ">
+                    <div class="container col-lg-9 images-section2 ">
                         <div class="row2">
                             <div class="column1">
                                 <img class="backyardgarden"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
+                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/69scaled.jpg"
                                     alt="Image 1">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/greendesign.png"
-                                    alt="Image 4">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/13scaled.jpg"
+                                    alt="Image 4" class="img2">
                             </div>
                             <div class="column2">
-                                <img class="Rick" src="<?= esc_url(get_template_directory_uri()); ?>/images/Rick.png"
+                                <img class="Rick"
+                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/56scaled.jpg"
                                     alt="Image 2">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/naturalgrass.png"
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/16scaled.jpg"
                                     alt="Image 5">
                             </div>
                             <div class="column3">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flower.png"
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/43scaled.jpg"
                                     alt="Image 3">
                             </div>
                         </div>
@@ -182,7 +195,7 @@
 
 
 
-                    <div class="title d-none d-lg-flex align-items-center gap-3">
+                    <div class="title d-none d-lg-flex align-items-center gap-1">
                         <h2 class="mb-0  ">Waarom GROENtuinen?</h2>
                         <div class="line between d-none d-lg-block"></div>
                         <div class="circle-border">
@@ -193,7 +206,7 @@
 
                     <!-- Testimonials Section on Small Screen -->
                     <div class="row testimonials-section-sm d-md-none text-center2">
-                        <div class="col-sm-12 col-lg-4 testimonial">
+                        <div class="col-12 col-lg-3 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                                 class="testimonial-img" />
                             <h1>Vakkundig maatwerk</h1>
@@ -201,14 +214,14 @@
                                     gemaakt</span></p>
 
                         </div>
-                        <div class="col-sm-12 col-lg-4 testimonial">
+                        <div class="col-12 col-lg-3 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
                                 class="testimonial-img w-84 h-126" />
                             <h1>Passie voor groen</h1>
                             <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
                                     natuur</span></p>
                         </div>
-                        <div class="col-sm-12 col-lg-4 testimonial">
+                        <div class="col-12 col-lg-3 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
                                 class="testimonial-img" />
                             <h1>Écht out of the box</h1>
@@ -417,7 +430,7 @@
             </a>
 
             <!-- HR With Text swiper on Sm Screen -->
-            <div class="mt-50 mb-50">
+            <div class="container mt-50 mb-50">
                 <hr class="hr-text gradient" data-content="Projecten">
             </div>
 
@@ -492,40 +505,51 @@
 
 
         <!--Contact Opnemen Section  -->
-
-        <div class="container mt-50 d-none d-lg-block">
-            <div class="bottom-text">
-                <div class="row">
-                    <div class="col-lg-6  position-relative fadeIn visible" data-side="left">
-                        <div class="grid-bottom">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
-                                class="w-100 h-100 object-fit-cover rounded" alt="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
-                                class="w-100 h-100 object-fit-cover rounded" alt="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bg.png"
-                                class="w-100 h-100 object-fit-cover rounded" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 fadeIn visible" data-side="right">
-                        <h2>Enthousiast?<br> Laat het ons weten</h2>
-                        <div class="col-lg-9">
-                            <div class="text">
-                                <p><span style="font-weight: 400;">Ook een uniek tuinontwerp? Of op zoek naar de
-                                        hovenier voor jouw klus? Ga vrijblijvend in gesprek met GROENtuinen!</span></p>
+        <div class="bg-leaf">
+            <div class="container mt-50 d-none d-lg-block">
+                <div class="bottom-text">
+                    <div class="row">
+                        <div class="col-lg-6  position-relative fadeIn visible" data-side="left">
+                            <div class="grid-bottom">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
+                                    class="w-100 h-100 object-fit-cover rounded" alt="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
+                                    class="w-100 h-100 object-fit-cover rounded" alt="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bg.png"
+                                    class="w-100 h-100 object-fit-cover rounded" alt="">
                             </div>
                         </div>
-                        <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
-                            <div class="circle-border">
-                                <a class="btn btn-primary " href="/contact">Neem contact op </a>
+                        <div class="col-lg-5 offset-lg-1 fadeIn visible" data-side="right">
+                            <h2>Enthousiast?<br> Laat het ons weten</h2>
+                            <div class="col-lg-9">
+                                <div class="text">
+                                    <p><span style="font-weight: 400;">Ook een uniek tuinontwerp? Of op zoek naar de
+                                            hovenier voor jouw klus? Ga vrijblijvend in gesprek met GROENtuinen!</span>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+                            <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
+                                <div class="circle-border">
+                                    <a class="btn btn-primary " href="/contact">Neem contact op </a>
+                                </div>
+                                <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+
+                            </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>
+
+
         </div>
+
+
+
+
+    </div>
+
+
     </div>
 
 
