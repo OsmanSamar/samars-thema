@@ -166,11 +166,12 @@
     }
 
 
-
+    /* MD Screen */
     @media (min-width: 768px) {
         .swiper {
             width: 100%;
-            height: 716px;
+            /* height: 716px; */
+            height: 629px;
             margin: 20px auto;
         }
     }

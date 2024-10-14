@@ -3,6 +3,15 @@
 
 <main class="flex-grow-1">
     <style>
+    /* MD Screen */
+    @media (min-width: 768px) {
+        .swiper {
+            width: 781px;
+            height: 529px;
+            margin: 20px auto;
+        }
+    }
+
     .dienst-line {
         height: 1px;
         width: 522px;
@@ -149,6 +158,12 @@
 
 
     @media (min-width: 992px) {
+
+        .swiper {
+            width: 1781px;
+            height: 529px;
+            margin: 20px auto;
+        }
 
 
 
