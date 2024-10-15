@@ -7,14 +7,18 @@
 
 @import "tailwindcss/utilities";
 
+@import url("https://fonts.googleapis.com/css2?family=Henderson+Sans&display=swap");
+
 /* General styling */
 html,
 body {
   margin: 0 !important;
   padding: 0;
   width: 100%;
-  font-family: Arial, sans-serif;
+  // font-family: Arial, sans-serif;
+
   overflow-x: hidden;
+  font-family: "Henderson-sans-basic", sans-serif;
 }
 
 //To ensure that when the down arrow is clicked, the page will smoothly scroll to the section with the ID #content
@@ -42,17 +46,6 @@ img {
   width: 100%;
   height: auto;
 }
-
-// .h2, h2 {
-//     color: #fff;
-//     font-size: 39px;
-//     font-weight: 300;
-//     line-height: 60px;
-// }
-
-//  h1 {
-//    font-size: 28px;
-// }
 
 h2 {
   font-size: 30px;

@@ -848,7 +848,7 @@ main {
 /* Desktop styles */
 
 .downarrow {
-  bottom: -50px;
+  bottom: -120px;
   height: 45px;
   left: 0;
   position: absolute;
@@ -859,7 +859,8 @@ main {
 
 @media screen and (min-width: 992px) {
   .downarrow {
-    left: calc(var(--bs-gutter-x) * 1.5);
+    // left: calc(var(--bs-gutter-x) * 1.5);
+    left: calc(var(--bs-gutter-x) * 0.5);
   }
 }
 

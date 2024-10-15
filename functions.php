@@ -43,6 +43,16 @@ add_action('init', 'register_menu');
 
 
 
+// Font
+
+
+function enqueue_henderson_sans_basic_font()
+{
+    wp_enqueue_style('henderson-sans-basic', 'https://fonts.googleapis.com/css2?family=Henderson+Sans&display=swap');
+}
+add_action('wp_enqueue_scripts', 'enqueue_henderson_sans_basic_font');
+
+
 //Register dropdownmenu 
 //Error 
 
