@@ -3,6 +3,12 @@
 
 <main id="page" class="flex-grow-1">
     <style>
+    .line-left {
+        background-color: #fff;
+        opacity: .5;
+        width: 1px;
+    }
+
     .swiper-container {
         position: relative;
 
@@ -47,7 +53,18 @@
         background-size: ;
     }
 
+
+
     @media (min-width: 992px) {
+
+        .dienstlinelg {
+            height: 1px;
+            width: 169px;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            opacity: 0.5;
+        }
 
         .first-img {
             height: 800px
@@ -70,8 +87,7 @@
         .text {
 
             font-size: 24px;
-
-            margin-top: 80px;
+            margin-top: 50px;
         }
 
 
@@ -111,36 +127,10 @@
             height: 1px;
             width: 100%;
             opacity: 0.5;
+            margin-top: 194px;
 
         }
     }
-
-    /* Probleem on line on Small and Tables Screen */
-    /* .line-contact {
-        height: 1px;
-        width: 14vw;
-        background-color: #ffffff;
-        color: #ffffff;
-        position: relative;
-    }
-
-    @media (max-width: 768px) {
-        .line-contact {
-            height: 1px;
-            width: 50vw;
-            background-color: #ffffff;
-            color: #ffffff;
-            position: relative;
-        }
-    } */
-
-    /* .border-left {
-        display: flex;
-        height: 100%;
-        border-left: 1px solid #ffffff;
-        padding-right: 10px;
-        opacity: .5;
-    } */
     </style>
     <div class="container">
 
@@ -167,7 +157,8 @@
         font-size: 40px;
         font-weight: 700;
         line-height: 125px;
-        margin-bottom: 45px;">Tuinontwerp
+        margin-bottom: 45px;
+        letter-spacing:2px;">Tuinontwerp
             </h1>
 
             <h1 class="d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
@@ -175,41 +166,65 @@
         font-size: 90px;
         font-weight: 700;
         line-height: 125px;
-        margin-bottom: 45px;">Tuinontwerp
+        margin-bottom: 45px;
+        letter-spacing:2px;">Tuinontwerp
             </h1>
         </div>
 
-        <div class="row ">
+        <div class="row " style="margin-bottom:80px;">
 
             <div class="col-12 col-lg-6 flex-container   " style="margin-top:80px;">
-                <div class="text-header">In goede aarde <span>-</span></div>
+                <div class="d-flex flex-row   d-lg-flex align-items-center justify-content-center gap-1">
 
-                <div class="text  d-flex flex-column align-items-center border-left ">
-                    <p class="content1 ">Wij maken een tuinontwerp op basis van jouw wensen. Maar daarbij geven
-                        wij ook onze eerlijke
-                        mening en kijken we naar de mogelijkheden. Deel je moodboard met ons en vertel wat je graag in
-                        je tuin zou willen zien.
+                    <div class="text-header" style="margin-bottom:40px; margin-right:40px;">In goede aarde</div>
+                    <div class="dienstlinelg d-none  d-md-none  d-lg-flex "></div>
 
-                        Tuinontwerp houdt in dat we een schets maken met daarbij een beplantingsplan. In de schets is te
-                        zien hoe de opzet van de tuin zal worden: waar komen planten en waar bestrating.
-                        <span class="more-text d-none"> En als je de
-                            wens hebt voor een veranda, buitenkeuken of waterpartij, komt deze ook terug in de schets.
-                            Weten
-                            hoe je schets er in het echt uit komt te zien? Het is mogelijk om een 3D-ontwerp te
-                            ontvangen
-                            van je tuin.
-                        </span>
-                    </p>
-                    <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-                        <span class="arrow fas fa-angle-down " style='font-size:24px;color:white'>
-
-                        </span>
-                    </a>
                 </div>
-                <div class=" circle-border">
-                    <a href="#" class="btn btn-primary">Samen aan de slag</a>
+                <!-- <div class="text-header" style="margin-bottom:40px;">In goede aarde <span>-</span></div> -->
+
+                <div class="row pb-lg-5 pb-0">
+                    <div class="col-2">
+                        <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
+                    </div>
+                    <div class="col-lg-9 mt-lg-1 mt-4">
+
+                        <div class="text  d-flex flex-column align-items-center  ">
+                            <p class="content1 ">Wij maken een tuinontwerp op basis van jouw wensen. Maar daarbij geven
+                                wij ook onze eerlijke
+                                mening en kijken we naar de mogelijkheden. Deel je moodboard met ons en vertel wat je
+                                graag in
+                                je tuin zou willen zien.
+
+                                Tuinontwerp houdt in dat we een schets maken met daarbij een beplantingsplan. In de
+                                schets is te
+                                zien hoe de opzet van de tuin zal worden: waar komen planten en waar bestrating.
+                                <span class="more-text d-none"> En als je de
+                                    wens hebt voor een veranda, buitenkeuken of waterpartij, komt deze ook terug in de
+                                    schets.
+                                    Weten
+                                    hoe je schets er in het echt uit komt te zien? Het is mogelijk om een 3D-ontwerp te
+                                    ontvangen
+                                    van je tuin.
+                                </span>
+                            </p>
+                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                                <span class="arrow fas fa-angle-down " style='font-size:24px;color:white'>
+
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class=" circle-border">
+                            <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies nodig?</a>
+                        </div>
+
+
+
+
+                    </div>
                 </div>
 
+                <!-- Read More Read Less -->
                 <script>
                 $(document).ready(function() {
                     $('.read-more-toggle').click(function(e) {
@@ -292,11 +307,23 @@
             <div class="order-1 order-md-1 order-lg-2 ">
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
-                        <h2 style="font-size:36px;
+
+                        <h2 class="d-block d-md-block d-lg-none" style="font-size:36px;
                                           padding-bottom: 39px; 
                                         color: #fff;
                                        line-height: 55px;
-                                       margin-top:20px;">
+                                       margin-top:110px;
+                                       line-height:57px;
+                                          ">
+                            Van schets naar beplantingsplan
+                        </h2>
+                        <h2 class="d-none d-md-none d-lg-block" style="font-size:36px;
+                                          padding-bottom: 39px; 
+                                        color: #fff;
+                                       line-height: 55px;
+                                       margin-top:110px;
+                                       line-height:57px;
+                                           letter-spacing: 8px;">
                             Van schets naar beplantingsplan
                         </h2>
                         <div class="text2 text-fix">
@@ -373,7 +400,7 @@
 
                             </div>
                         </div>
-                        <div class="col-12  col-lg-5 offset-lg-1 " data-side="right">
+                        <div class="col-12  col-lg-5 offset-lg-8 " data-side="right">
                             <h2>Enthousiast?<br> Neem contact op!</h2>
                             <div class="col-lg-9">
                                 <div class="text">
@@ -391,8 +418,6 @@
                                     </a>
                                 </div>
                                 <div class="line-contact between  "></div>
-
-
                             </div>
 
                         </div>
@@ -452,8 +477,8 @@
                     </div>
                 </div>
                 <div class="button-group col-12   d-flex flex-row  justify-content-start  " style="margin-bottom:70px">
-                    <divf
-                        class="title d-flex flex-row  d-md-flex d-lg-flex align-items-center gjustify-content-start gap-1">
+                    <div
+                        class="title d-flex flex-row  d-md-flex d-lg-flex align-items-center justify-content-start gap-1">
                         <div class="circle-border">
                             <a class="btn btn-primary " href="/contact" style="padding: 10px 40px; font-size:;">Neem
                                 contact
@@ -464,7 +489,7 @@
                         <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
                         <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
 
-                    </divf>
+                    </div>
 
                 </div>
 

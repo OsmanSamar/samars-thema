@@ -2,110 +2,110 @@
 
 <main class="page" class="flex-grow-1">
     <style>
-    .line-left {
-        background-color: #fff;
-        opacity: .5;
-        width: 1px;
-    }
+        .line-left {
+            background-color: #fff;
+            opacity: .5;
+            width: 1px;
+        }
 
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-size: ;
-    }
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: ;
+        }
 
-    .swiper-container {
-        position: relative;
-        /* width: 70%;
+        .swiper-container {
+            position: relative;
+            /* width: 70%;
         margin: 0 auto; */
-    }
-
-    .swiper-container .swiper-pagination {
-        bottom: -50px !important;
-        display: block;
-    }
-
-    .swiper-container .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
-    }
-
-    .flex-container {
-        text-align: center;
-    }
-
-    .text-header {
-        font-family: 'Inclusive Sans', sans-serif;
-        font-size: 40px;
-        color: #FFFFFF;
-        opacity: 1;
-        letter-spacing: 0px;
-    }
-
-    .text {
-        font-family: 'Inclusive Sans', sans-serif;
-        font-size: 20px;
-        color: #FFFFFF;
-        opacity: 1;
-        letter-spacing: 0px;
-        margin-top: 80px;
-    }
-
-    @media (min-width: 992px) {
-
-        .first-img {
-            height: 700px
         }
 
         .swiper-container .swiper-pagination {
-            display: none;
+            bottom: -50px !important;
+            display: block;
+        }
+
+        .swiper-container .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
         }
 
         .flex-container {
-            text-align: left;
+            text-align: center;
         }
 
+        .text-header {
+            font-family: 'Inclusive Sans', sans-serif;
+            font-size: 40px;
+            color: #FFFFFF;
+            opacity: 1;
+            letter-spacing: 0px;
+        }
 
-        .img1 {
-            border-radius: 10px;
-            /* width: 626px;
+        .text {
+            font-family: 'Inclusive Sans', sans-serif;
+            font-size: 20px;
+            color: #FFFFFF;
+            opacity: 1;
+            letter-spacing: 0px;
+            margin-top: 80px;
+        }
+
+        @media (min-width: 992px) {
+
+            .first-img {
+                height: 700px
+            }
+
+            .swiper-container .swiper-pagination {
+                display: none;
+            }
+
+            .flex-container {
+                text-align: left;
+            }
+
+
+            .img1 {
+                border-radius: 10px;
+                /* width: 626px;
             height: 377px; */
-            width: 640px;
-            height: 438px;
-        }
+                width: 640px;
+                height: 438px;
+            }
 
-        .img2 {
-            border-radius: 10px;
-            width: 525px;
-            height: 616px;
-        }
+            .img2 {
+                border-radius: 10px;
+                width: 525px;
+                height: 616px;
+            }
 
-        .img3 {
-            border-radius: 10px;
-            /* width: 626px;
+            .img3 {
+                border-radius: 10px;
+                /* width: 626px;
             height: 382px; */
-            width: 630px;
-            height: 438px;
+                width: 630px;
+                height: 438px;
+            }
+
+            .img3,
+            .img1,
+            .img2,
+            .groentuinen,
+            .first-img {
+                object-fit: cover;
+            }
+
+            .bottom-under {
+
+                border: 1px #FFFFFF solid;
+                height: 1px;
+                width: 100%;
+                opacity: 0.5;
+
+            }
         }
-
-        .img3,
-        .img1,
-        .img2,
-        .groentuinen,
-        .first-img {
-            object-fit: cover;
-        }
-
-        .bottom-under {
-
-            border: 1px #FFFFFF solid;
-            height: 1px;
-            width: 100%;
-            opacity: 0.5;
-
-        }
-    }
     </style>
     <div class="container">
 
@@ -114,9 +114,9 @@
             <!-- Breadcrumb Links -->
             <div class="d-inline-block" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
-        line-height: 45px;
+        line-height: -4px;
         margin-top:45px;">
                 <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span class="separator"> // </span>
                 <span class="last">Onze diensten</span>
@@ -124,7 +124,15 @@
                 <span class="last">Tuinaanleg</span>
             </div>
 
-            <h1 class=" mb-3" style="color: #fff9f4;
+            <h1 class="d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 125px;
+        margin-bottom: 45px;">Tuinaanleg</h1>
+
+
+            <h1 class="d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
@@ -354,10 +362,33 @@
 
         <!-- Contact Information Section on Sm Screen -->
 
+        <style>
+            .dienst-line {
+                height: 1px;
+                width: 5595px;
+                /* background-color: #ffffff; */
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                position: relative;
+                opacity: 0.3;
+            }
+
+            @media (min-width: 768px) {
+                .dienstline {
+                    height: 1px;
+                    width: 928px;
+                    background-color: #ffffff;
+                    color: #ffffff;
+                    position: relative;
+                    opacity: 0.5;
+                }
+            }
+        </style>
+
         <div class="bg-leaf">
 
             <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
-                class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
+                class="row d-lg-none  d-flex flex-column align-items-left justify-content-start ">
                 <div class="line-top"></div>
 
 
@@ -377,16 +408,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column  justify-content-start  "
-                    style="margin-bottom:70px">
-                    <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
+                <div class="button-group col-12 d-flex flex-row  justify-content-start  " style="margin-bottom:70px">
+                    <div
+                        class="title d-flex flex-row  d-md-flex d-lg-flex align-items-center justify-content-start gap-1">
                         <div class="circle-border">
                             <a class="btn btn-primary " href="/contact" style="padding: 10px 20px; font-size:;">Neem
                                 contact
                                 op
                             </a>
                         </div>
-                        <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+                        <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
+                        <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
 
                     </div>
 
@@ -416,67 +448,67 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper", {
 
-        // slidesPerView: 2.5,
+            // slidesPerView: 2.5,
 
-        slidesPerView: 1.2,
-        centeredSlides: true,
-        loop: true,
-        grabCursor: true,
-        spaceBetween: 5,
-        pagination: {
-            el: ".swiper-pagination",
-            // type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            992: {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 5,
+            pagination: {
+                el: ".swiper-pagination",
+                // type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                992: {
 
-                slidesPerView: 3.5,
+                    slidesPerView: 3.5,
+                }
             }
-        }
-    });
+        });
 
-    var appendNumber = 4;
-    var prependNumber = 1;
-    document
-        .querySelector(".prepend-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-            ]);
-        });
-    document
-        .querySelector(".prepend-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-            ]);
-        });
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                ]);
+            });
     </script>
 </main>
 
