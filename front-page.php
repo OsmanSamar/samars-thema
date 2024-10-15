@@ -4,6 +4,21 @@
 <div class="bg-container">
 
     <style>
+    .swiper-container {
+        position: relative;
+
+    }
+
+    .swiper-container .swiper-pagination {
+        bottom: -50px !important;
+
+    }
+
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
+
     .bg-leaf {
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
@@ -461,12 +476,12 @@
             </div>
 
             <!-- Swiper Slider -->
-            <div #swiperRef="" class="swiper mySwiper projecten-slider"
+            <div id="#swiperRef" class="swiper mySwiper projecten-slider"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="width:;">
                         <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
-                            class="" style="position: relative;">
+                            class="" style="position:sitelative;">
                         <!-- Overlay Img -->
                         <!-- <div class="overlay" style="border-radius: 12px;"></div> -->
                         <!-- Overlay Text and Button -->
@@ -521,6 +536,12 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+
+
+
+
+
+
         </div>
 
 
@@ -673,15 +694,12 @@
     <!-- Initialize Swiper -->
     <script>
     var swiper = new Swiper(".mySwiper", {
-
-        // slidesPerView: 2.5,
-
         slidesPerView: 1.2,
         centeredSlides: true,
         spaceBetween: 5,
         pagination: {
             el: ".swiper-pagination",
-            // type: "fraction",
+
         },
         navigation: {
             nextEl: ".swiper-button-next",
@@ -694,6 +712,9 @@
             }
         }
     });
+
+
+
 
     var appendNumber = 4;
     var prependNumber = 1;
