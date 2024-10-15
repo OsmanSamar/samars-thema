@@ -151,22 +151,32 @@
             <!-- Breadcrumb Links -->
             <div class="d-inline-block" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 45px;
-        margin-top:45px;">
+        margin-top:-4px;">
+
                 <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span class="separator"> // </span>
                 <span class="last">Onze diensten</span>
                 <span class="separator"> // </span>
                 <span class="last">Tuinontwerp</span>
             </div>
 
-            <h1 class=" mb-3" style="color: #fff9f4;
+            <h1 class="d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 125px;
+        margin-bottom: 45px;">Tuinontwerp
+            </h1>
+
+            <h1 class="d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
         line-height: 125px;
-        margin-bottom: 45px;">Tuinontwerp</h1>
+        margin-bottom: 45px;">Tuinontwerp
+            </h1>
         </div>
 
         <div class="row ">
@@ -395,6 +405,29 @@
 
         <!-- Contact Information Section on Sm Screen -->
 
+        <style>
+        .dienst-line {
+            height: 1px;
+            width: 5595px;
+            /* background-color: #ffffff; */
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            position: relative;
+            opacity: 0.3;
+        }
+
+        @media (min-width: 768px) {
+            .dienstline {
+                height: 1px;
+                width: 928px;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                opacity: 0.5;
+            }
+        }
+        </style>
+
         <div class="bg-leaf">
 
             <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
@@ -419,16 +452,19 @@
                     </div>
                 </div>
                 <div class="button-group col-12   d-flex flex-row  justify-content-start  " style="margin-bottom:70px">
-                    <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
+                    <divf
+                        class="title d-flex flex-row  d-md-flex d-lg-flex align-items-center gjustify-content-start gap-1">
                         <div class="circle-border">
-                            <a class="btn btn-primary " href="/contact" style="padding: 10px 20px; font-size:;">Neem
+                            <a class="btn btn-primary " href="/contact" style="padding: 10px 40px; font-size:;">Neem
                                 contact
                                 op
                             </a>
                         </div>
-                        <div class="line-contact  d-flex  d-md-flex  d-lg-flex "></div>
+                        <!-- <div class="line-contact  d-flex  d-md-flex  d-lg-flex "></div> -->
+                        <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
+                        <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
 
-                    </div>
+                    </divf>
 
                 </div>
 
