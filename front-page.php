@@ -98,11 +98,19 @@
 
                     <!-- Left side: Text  -->
                     <div class="col-lg-3   text-section" style="margin-top:8px;">
-                        <h1 style="font-size: 40px;">Maak van jouw tuin een bijzondere plek om te zijn.</h1>
-                        <p style="font-size: 15px;">Met een tuin van GROENTuin maak je jouw tuin uniek. Speciaal
+                        <h1 style="font-size: 40px;
+                         font-family: Henderson-sans-basic, sans-serif;">
+                            Maak van jouw tuin een bijzondere plek om te zijn.</h1>
+                        <p style="font-size: 23px;
+                         opacity: 1;
+                        letter-spacing: 0px;
+                         margin-top: 50px;
+                        line-height: 2;
+                         font-family: Inclusive Sans, sans-serif; ">
+                            Met een tuin van GROENTuin maak je jouw tuin uniek. Speciaal
                             ontworpen,aangelegd en onderhouden voor jou.</p>
                         <div class="circle-border">
-                            <a href="<?= esc_url(home_url('/projecten')); ?>" class="btn btn-secondary">Projecten</a>
+                            <a href="<?= esc_url(home_url('/over-ons')); ?>" class="btn btn-secondary">Over ons</a>
                         </div>
                     </div>
 
@@ -186,20 +194,21 @@
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="  col-lg-2 text-center d-lg-none order-1">
+                    <!-- Small Screen -->
+                    <div class="col-lg-2 text-center  d-lg-none order-1">
                         <div class="horizontal-divider"></div>
                     </div>
-                    <div class="col-lg-5 text-left  d-lg-none order-2">
-                        <p>Waarom GroenTuinen?</p>
+                    <div class="col-lg-5 text-left d-block  d-lg-none order-2">
+                        <p style="font-size:36px; line-height:2;">Waarom GroenTuinen?</p>
                     </div>
 
-
+                    <!-- Lg Screen -->
 
                     <div class="title d-none d-lg-flex align-items-center gap-1">
-                        <h2 class="mb-0  ">Waarom GROENtuinen?</h2>
+                        <h2 class="mb-0">Waarom GROENtuinen?</h2>
                         <div class="line between d-none d-lg-block"></div>
                         <div class="circle-border">
-                            <a class="btn btn-primary d-none d-lg-block" href="/contact">Kennismaken? </a>
+                            <a class="btn btn-primary d-none d-md-none d-lg-block" href="/contact">Kennismaken? </a>
                         </div>
                     </div>
 
@@ -362,7 +371,7 @@
 
             .slider-text-button-container-right {
                 position: absolute;
-                bottom: -38px;
+                bottom: -55px;
                 right: 0px;
                 width: 100%;
                 /* Add padding from edges */
@@ -375,10 +384,24 @@
 
             .line-before {
                 border: 1px #fff solid;
-                width: 100%;
+                /* width: 100%; */
+                width: 39%;
                 height: 1px;
             }
         }
+
+        /* 'md': '768px', */
+        @media (min-width: 768px) {
+
+            .line-before {
+                border: 1px #fff solid;
+                /* width: 100%; */
+                width: 67%;
+                height: 1px;
+            }
+
+        }
+
 
 
 
@@ -430,8 +453,11 @@
             </a>
 
             <!-- HR With Text swiper on Sm Screen -->
-            <div class="container mt-50 mb-50">
+            <div class="container mt-50 mb-50 d-none d-md-none d-lg-block">
                 <hr class="hr-text gradient" data-content="Projecten">
+            </div>
+            <div class=" mt-50 mb-50 d-block d-md-block d-lg-none">
+                <hr class="hr-text gradient" data-content="Projecten" style="margin: 30px -75px;">
             </div>
 
             <!-- Swiper Slider -->
@@ -440,7 +466,9 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="width:;">
                         <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
-                            class="">
+                            class="" style="position: relative;">
+                        <!-- Overlay Img -->
+                        <!-- <div class="overlay" style="border-radius: 12px;"></div> -->
                         <!-- Overlay Text and Button -->
                         <div class="slider-text-button-container d-flex d-lg-none">
                             <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
@@ -449,7 +477,7 @@
                                 <div class="line-before"></div>
                                 <div class="circle-border">
                                     <a class="btn btn-secondary" href="/contact"
-                                        style="padding: 8px 12px; white-space: nowrap;  min-width: 120px;">Bekijk
+                                        style="padding: 8px 12px; white-space: nowrap;  min-width: 160px; font-size:16px; text-align:center;">Bekijk
                                         projecten</a>
                                 </div>
                             </div>
@@ -457,7 +485,7 @@
                     </div>
 
                     <div class="swiper-slide" style="width:;">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" class=""
                             alt="Image 2">
                         <!-- Overlay Text and Button -->
                         <div class="slider-text-button-container d-flex d-lg-none">
@@ -474,7 +502,7 @@
                     </div>
 
                     <div class="swiper-slide" style="width:;">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" class=""
                             alt="Image 2">
 
                         <!-- Overlay Text and Button -->

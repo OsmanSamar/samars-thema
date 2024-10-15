@@ -18,7 +18,6 @@ body {
   // font-family: Arial, sans-serif;
 
   overflow-x: hidden;
-  font-family: "Henderson-sans-basic", sans-serif;
 }
 
 //To ensure that when the down arrow is clicked, the page will smoothly scroll to the section with the ID #content
@@ -26,11 +25,12 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #405f4f;
-}
+// body {
+//   font-family: "Henderson-sans-basic", sans-serif;
+// }
 
 body {
+  background-color: #405f4f;
   color: #fff;
   font-family: Inclusive Sans, sans-serif;
   font-size: 20px;

@@ -81,7 +81,17 @@
             </div>
         </div>
 
-        <div class="col-12 border-top d-block d-lg-none"></div>
+        <!-- <div class="col-12 border-top d-block d-lg-none"></div>
+        <div class="d-block d-lg-none order-5 ">
+            <p class="text-center text-balance text-white text-opacity-50 copyright">
+                GROENtuinen <br>
+                Uit de grond gestampt <br>door <a href="">Code Blauw</a>
+            </p>
+        </div> -->
+    </div>
+
+    <div class="col-12 border-top d-block d-lg-none"></div>
+    <div class="container">
         <div class="d-block d-lg-none order-5 ">
             <p class="text-center text-balance text-white text-opacity-50 copyright">
                 GROENtuinen <br>
