@@ -88,6 +88,7 @@
 
             font-size: 24px;
             margin-top: 50px;
+            margin-bottom: 60px;
         }
 
 
@@ -208,8 +209,7 @@
                                 </span>
                             </p>
                             <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-                                <span class="arrow fas fa-angle-down " style='font-size:24px;color:white'>
-
+                                <span class="arrow fas fa-angle-down down-arrow">
                                 </span>
                             </a>
                         </div>
@@ -217,12 +217,21 @@
                         <div class=" circle-border">
                             <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies nodig?</a>
                         </div>
-
-
-
-
                     </div>
                 </div>
+
+                <style>
+                .down-arrow {
+                    font-size: 24px;
+                    color: white;
+                }
+
+                .up-arrow {
+                    font-size: 24px;
+                    color: white;
+
+                }
+                </style>
 
                 <!-- Read More Read Less -->
                 <script>
@@ -236,16 +245,15 @@
                         // Toggle visibility of additional text
                         moreText.toggleClass('d-none');
 
+
                         // Toggle arrow icon
-
-
                         if (moreText.hasClass('d-none')) {
                             $(this).html(
-                                '<span class="arrow fas fa-angle-down"></span>'
+                                '<span class="arrow fas fa-angle-down down-arrow"></span>'
                             );
                         } else {
                             $(this).html(
-                                '<span class="arrow fas fa-angle-up" > </span>'
+                                '<span class="arrow fas fa-angle-up up-arrow" > </span>'
                             );
                         }
 
@@ -367,14 +375,7 @@
                         </div>
 
                     </div>
-
-                    <!-- <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div> -->
-                    <!-- <div class="swiper-pagination"></div> -->
-
                 </div>
-
-
                 <div class="swiper-pagination"></div>
             </div>
 
@@ -413,8 +414,9 @@
                             <div class="col-12  title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
                                 <div class="circle-border">
                                     <a class="btn btn-primary " href="/contact"
-                                        style="padding: 10px 20px; white-space: nowrap;">Neem contact
-                                        op
+                                        style="padding:10px 20px; white-space:nowrap; letter-spacing:1px; ">
+                                        Contact opnemen
+
                                     </a>
                                 </div>
                                 <div class="line-contact between  "></div>
