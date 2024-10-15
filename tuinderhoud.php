@@ -124,12 +124,22 @@
                 <span class="last">Tuinonderhoud</span>
             </div>
 
-            <h1 class=" mb-3" style="color: #fff9f4;
+            <h1 class="d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 125px;
+        margin-bottom: 45px;
+        letter-spacing:2px;">Tuinsonderhoud
+            </h1>
+
+
+            <h1 class="d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
         line-height: 125px;
-        margin-bottom: 45px;">Tuinsonderhoud</h1>
+        letter-spacing:2px;">Tuinsonderhoud</h1>
         </div>
 
 
@@ -149,10 +159,6 @@
 
                     </h2>
                 </div>
-
-
-
-
                 <div class="row pb-lg-5 pb-0">
                     <div class="col-2">
                         <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
@@ -175,9 +181,6 @@
                     </div>
                 </div>
             </div>
-
-
-
             <div class="col-12 col-lg-6 " style="margin-top:80px; ;">
                 <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="22scaled"
                     class="first-img rounded object-fit" style="" />
@@ -189,10 +192,6 @@
 
 
         <div class=" ">
-
-
-
-
             <div class="row" style="margin-top:50px;">
                 <!-- Column Wrapper -->
                 <div class="">
@@ -221,7 +220,6 @@
                     </div>
                 </div>
                 <!-- End Column -->
-
             </div>
 
             <!-- Text Section -->
@@ -278,14 +276,7 @@
                         </div>
 
                     </div>
-
-                    <!--  <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div> -->
-
                 </div>
-
-
                 <div class="swiper-pagination"></div>
             </div>
         </div>
@@ -301,7 +292,7 @@
             <div class="container d-none d-lg-block" style="margin-top:60px;">
                 <div class="bottom-text">
                     <div class="row">
-                        <div class="col-lg-6  position-relative fadeIn visible" data-side="left">
+                        <div class="col-lg-6  position-relative" data-side="left">
                             <div class="grid-bottom">
 
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/herobg.png"
@@ -315,7 +306,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-1 fadeIn visible" data-side="right">
+                        <div class="col-lg-5 offset-lg-8" data-side="right">
                             <h2>Enthousiast?<br> Neem contact op!</h2>
                             <div class="col-lg-9">
                                 <div class="text">
@@ -327,11 +318,12 @@
                             </div>
                             <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
                                 <div class="circle-border">
-                                    <a class="btn btn-primary " href="/contact" style="padding: 10px 20px;">Neem contact
+                                    <a class="btn btn-primary " href="/contact"
+                                        style="padding: 10px 20px; white-space:nowrap; letter-spacing:1px;">Neem contact
                                         op
                                     </a>
                                 </div>
-                                <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+                                <div class="line-contact between "></div>
 
                             </div>
 
@@ -344,6 +336,29 @@
 
 
         <!-- Contact Information Section on Sm Screen -->
+
+        <style>
+        .dienst-line {
+            height: 1px;
+            width: 5595px;
+            /* background-color: #ffffff; */
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            position: relative;
+            opacity: 0.3;
+        }
+
+        @media (min-width: 768px) {
+            .dienstline {
+                height: 1px;
+                width: 928px;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                opacity: 0.5;
+            }
+        }
+        </style>
 
         <div class="bg-leaf">
 
@@ -368,16 +383,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column  justify-content-start  "
-                    style="margin-bottom:70px">
-                    <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
+                <div class="button-group col-12 d-flex flex-row  justify-content-start" style="margin-bottom:70px">
+                    <div
+                        class="title d-flex flex-row  d-md-flex d-lg-flex align-items-center justify-content-start gap-1">
                         <div class="circle-border">
                             <a class="btn btn-primary " href="/contact" style="padding: 10px 20px; font-size:;">Neem
                                 contact
                                 op
                             </a>
                         </div>
-                        <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+                        <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
+                        <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
 
                     </div>
 
@@ -385,7 +401,7 @@
 
                 <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
                     style="margin-bottom:-50px">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" altget_atar Image"
                         class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
                 </div>
             </div>
