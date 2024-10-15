@@ -3,138 +3,138 @@
 
 <main id="page" class="flex-grow-1">
     <style>
-        .line-left {
-            background-color: #fff;
-            opacity: .5;
-            width: 1px;
+    .line-left {
+        background-color: #fff;
+        opacity: .5;
+        width: 1px;
+    }
+
+    .swiper-container {
+        position: relative;
+
+    }
+
+    .swiper-container .swiper-pagination {
+        bottom: -50px !important;
+        display: block;
+    }
+
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
+
+    .flex-container {
+        text-align: center;
+    }
+
+    .text-header {
+        font-family: 'Inclusive Sans', sans-serif;
+        font-size: 40px;
+        color: #FFFFFF;
+        opacity: 1;
+        letter-spacing: 0px;
+    }
+
+    .text {
+        font-family: 'Inclusive Sans', sans-serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        opacity: 1;
+        letter-spacing: 0px;
+        /* margin-top: 80px; */
+    }
+
+
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: ;
+    }
+
+
+
+    @media (min-width: 992px) {
+
+        .dienstlinelg {
+            height: 1px;
+            width: 169px;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            opacity: 0.5;
         }
 
-        .swiper-container {
-            position: relative;
-
+        .first-img {
+            height: 800px
         }
 
         .swiper-container .swiper-pagination {
-            bottom: -50px !important;
-            display: block;
-        }
-
-        .swiper-container .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
+            display: none;
         }
 
         .flex-container {
-            text-align: center;
+            text-align: left;
         }
 
         .text-header {
             font-family: 'Inclusive Sans', sans-serif;
-            font-size: 40px;
-            color: #FFFFFF;
-            opacity: 1;
-            letter-spacing: 0px;
+            font-size: 60px;
+
         }
 
         .text {
-            font-family: 'Inclusive Sans', sans-serif;
-            font-size: 20px;
-            color: #FFFFFF;
-            opacity: 1;
-            letter-spacing: 0px;
-            /* margin-top: 80px; */
-        }
 
-
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: ;
+            font-size: 24px;
+            margin-top: 50px;
+            margin-top: 80px;
+            margin-bottom: 60px;
         }
 
 
 
-        @media (min-width: 992px) {
 
-            .dienstlinelg {
-                height: 1px;
-                width: 169px;
-                background-color: #ffffff;
-                color: #ffffff;
-                position: relative;
-                opacity: 0.5;
-            }
-
-            .first-img {
-                height: 800px
-            }
-
-            .swiper-container .swiper-pagination {
-                display: none;
-            }
-
-            .flex-container {
-                text-align: left;
-            }
-
-            .text-header {
-                font-family: 'Inclusive Sans', sans-serif;
-                font-size: 60px;
-
-            }
-
-            .text {
-
-                font-size: 24px;
-                margin-top: 50px;
-                margin-top: 80px;
-                margin-bottom: 60px;
-            }
-
-
-
-
-            .img1 {
-                border-radius: 10px;
-                /* width: 626px;
+        .img1 {
+            border-radius: 10px;
+            /* width: 626px;
             height: 377px; */
-                width: 640px;
-                height: 438px;
-            }
-
-            .img2 {
-                border-radius: 10px;
-                width: 525px;
-                height: 616px;
-            }
-
-            .img3 {
-                border-radius: 10px;
-                /* width: 626px;
-            height: 382px; */
-                width: 630px;
-                height: 438px;
-            }
-
-            .img3,
-            .img1,
-            .img2,
-            .groentuinen,
-            first-img {
-                object-fit: cover;
-            }
-
-            .bottom-under {
-
-                border: 1px #FFFFFF solid;
-                height: 1px;
-                width: 100%;
-                opacity: 0.5;
-                margin-top: 194px;
-
-            }
+            width: 640px;
+            height: 438px;
         }
+
+        .img2 {
+            border-radius: 10px;
+            width: 525px;
+            height: 616px;
+        }
+
+        .img3 {
+            border-radius: 10px;
+            /* width: 626px;
+            height: 382px; */
+            width: 630px;
+            height: 438px;
+        }
+
+        .img3,
+        .img1,
+        .img2,
+        .groentuinen,
+        first-img {
+            object-fit: cover;
+        }
+
+        .bottom-under {
+
+            border: 1px #FFFFFF solid;
+            height: 1px;
+            width: 100%;
+            opacity: 0.5;
+            margin-top: 194px;
+
+        }
+    }
     </style>
     <div class="container">
 
@@ -225,46 +225,46 @@
                 </div>
 
                 <style>
-                    .down-arrow {
-                        font-size: 24px;
-                        color: white;
-                    }
+                .down-arrow {
+                    font-size: 24px;
+                    color: white;
+                }
 
-                    .up-arrow {
-                        font-size: 24px;
-                        color: white;
+                .up-arrow {
+                    font-size: 24px;
+                    color: white;
 
-                    }
+                }
                 </style>
 
                 <!-- Read More Read Less -->
                 <script>
-                    $(document).ready(function () {
-                        $('.read-more-toggle').click(function (e) {
-                            e.preventDefault();
-                            var moreText = $(this).prev('.content1').find(
-                                '.more-text');
+                $(document).ready(function() {
+                    $('.read-more-toggle').click(function(e) {
+                        e.preventDefault();
+                        var moreText = $(this).prev('.content1').find(
+                            '.more-text');
 
 
-                            // Toggle visibility of additional text
-                            moreText.toggleClass('d-none');
+                        // Toggle visibility of additional text
+                        moreText.toggleClass('d-none');
 
 
-                            // Toggle arrow icon
-                            if (moreText.hasClass('d-none')) {
-                                $(this).html(
-                                    '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                                );
-                            } else {
-                                $(this).html(
-                                    '<span class="arrow fas fa-angle-up up-arrow" > </span>'
-                                );
-                            }
+                        // Toggle arrow icon
+                        if (moreText.hasClass('d-none')) {
+                            $(this).html(
+                                '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                            );
+                        } else {
+                            $(this).html(
+                                '<span class="arrow fas fa-angle-up up-arrow" > </span>'
+                            );
+                        }
 
-                            // Add or remove active class for arrow animation
-                            $(this).toggleClass('active');
-                        });
+                        // Add or remove active class for arrow animation
+                        $(this).toggleClass('active');
                     });
+                });
                 </script>
             </div>
 
@@ -406,10 +406,11 @@
                             </div>
                         </div>
                         <div class="col-12  col-lg-5 offset-lg-8" data-side="right">
-                            <h2>Enthousiast?<br> Neem contact op!</h2>
+                            <h2 style="line-height: 49px; letter-spacing: 5px;">Enthousiast?<br> Neem contact op!</h2>
                             <div class="col-lg-9">
                                 <div class="text">
-                                    <p><span style="font-weight: 400;">Ook zo’n groene tuin? Laat dat maar aan
+                                    <p><span style="font-weight: 400; line-height: 30px;letter-spacing: 1px;">Ook zo’n
+                                            groene tuin? Laat dat maar aan
                                             GROENtuinen
                                             over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span>
                                     </p>
@@ -437,26 +438,26 @@
         <!-- Contact Information Section on Sm Screen -->
 
         <style>
-            .dienst-line {
+        .dienst-line {
+            height: 1px;
+            width: 5595px;
+            /* background-color: #ffffff; */
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            position: relative;
+            opacity: 0.3;
+        }
+
+        @media (min-width: 768px) {
+            .dienstline {
                 height: 1px;
-                width: 5595px;
-                /* background-color: #ffffff; */
-                border: 1px solid #ffffff;
+                width: 928px;
+                background-color: #ffffff;
                 color: #ffffff;
                 position: relative;
-                opacity: 0.3;
+                opacity: 0.5;
             }
-
-            @media (min-width: 768px) {
-                .dienstline {
-                    height: 1px;
-                    width: 928px;
-                    background-color: #ffffff;
-                    color: #ffffff;
-                    position: relative;
-                    opacity: 0.5;
-                }
-            }
+        }
         </style>
 
         <div class="bg-leaf">
@@ -520,67 +521,67 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", {
 
-            // slidesPerView: 2.5,
+        // slidesPerView: 2.5,
 
-            slidesPerView: 1.2,
-            centeredSlides: true,
-            loop: true,
-            grabCursor: true,
-            spaceBetween: 5,
-            pagination: {
-                el: ".swiper-pagination",
-                // type: "fraction",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                992: {
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 5,
+        pagination: {
+            el: ".swiper-pagination",
+            // type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            992: {
 
-                    slidesPerView: 3.5,
-                }
+                slidesPerView: 3.5,
             }
-        });
+        }
+    });
 
-        var appendNumber = 4;
-        var prependNumber = 1;
-        document
-            .querySelector(".prepend-2-slides")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.prependSlide([
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                ]);
-            });
-        document
-            .querySelector(".prepend-slide")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.prependSlide(
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-                );
-            });
-        document
-            .querySelector(".append-slide")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.appendSlide(
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-                );
-            });
-        document
-            .querySelector(".append-2-slides")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.appendSlide([
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                ]);
-            });
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            ]);
+        });
+    document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            ]);
+        });
     </script>
 
 </main>

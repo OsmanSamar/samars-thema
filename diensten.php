@@ -671,7 +671,8 @@
                             </h2>
                             <div class="col-lg-9">
                                 <div class="text">
-                                    <p><span style="font-weight: 400;">Ook zo’n groene tuin? Laat dat maar aan
+                                    <p><span style="font-weight: 400; line-height: 30px;letter-spacing: 1px;">Ook zo’n
+                                            groene tuin? Laat dat maar aan
                                             GROENtuinen
                                             over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span>
                                     </p>

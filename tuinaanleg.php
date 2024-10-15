@@ -341,10 +341,11 @@
                             </div>
                         </div>
                         <div class="col-lg-5 offset-lg-8 " data-side="right">
-                            <h2>Enthousiast?<br> Neem contact op!</h2>
+                            <h2 style="line-height: 49px; letter-spacing: 5px;">Enthousiast?<br> Neem contact op!</h2>
                             <div class="col-lg-9">
                                 <div class="text">
-                                    <p><span style="font-weight: 400;">Ook zo’n groene tuin? Laat dat maar aan
+                                    <p><span style="font-weight: 400; line-height: 30px;letter-spacing: 1px;">Ook zo’n
+                                            groene tuin? Laat dat maar aan
                                             GROENtuinen
                                             over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span>
                                     </p>
