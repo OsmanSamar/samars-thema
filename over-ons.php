@@ -747,10 +747,10 @@
 
 
             <div class="col-12 col-lg-4 text-center text-lg-left" style="margin-top:20px; ">
-                <h2 style="font-size:40px;
+                <h2 style="font-size:38px;
                  padding-bottom: 39px; 
                  color: #fff;
-                line-height: 60px;
+                line-height: 66px;
                 font-weight: 100">
 
                     Ook een GROENtuin? Neem contact

@@ -3,45 +3,55 @@
 
 <main class="flex-grow-1">
     <style>
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: 1600px;
-        }
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 1600px;
+    }
 
 
-        .bg-img {
-            position: relative;
-            text-align: center;
-            color: #F8F4EA;
-            font-weight: bold;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-top: auto;
-            margin-bottom: 0;
-            background-size: cover;
+    .bg-img {
+        position: relative;
+        text-align: center;
+        color: #F8F4EA;
+        font-weight: bold;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: auto;
+        margin-bottom: 0;
+        background-size: cover;
 
-        }
+    }
 
-        .content {
-            position: absolute;
-            top: 62%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            text-align: center;
-            color: white;
-        }
+    .content {
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
 
-        .bottom-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+    .bottom-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        }
+    }
 
+    .groentuinen {
+        display: block;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 63vh
+    }
+
+    /* 'md': '768px', */
+    @media (min-width: 768px) {
         .groentuinen {
             display: block;
             object-fit: cover;
@@ -50,158 +60,162 @@
             height: 34vh
         }
 
-        .text-header {
 
-            font-size: 31px;
 
-            margin-bottom: 48px;
+    }
 
+    .text-header {
+
+        font-size: 31px;
+
+        margin-bottom: 48px;
+
+    }
+
+    .text {
+        font-size: 20px;
+
+        margin-bottom: 48px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        line-height: 70px;
+        font-weight: bold;
+    }
+
+    .content p {
+
+        font-size: 15px;
+        line-height: 20px;
+
+    }
+
+    .down {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        width: 45px;
+        cursor: pointer;
+    }
+
+    .groenoverons {
+
+        width: 100%;
+        /* height: 823px; */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+
+    .border-left {
+        /* display: none; */
+
+    }
+
+    /* MD Screens */
+    @media (min-width: 768px) {
+
+        .content {
+            position: absolute;
+            /* top: 50%; */
+            top: 73%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+    }
+
+
+    @media (min-width: 992px) {
+
+        .groentuinen {
+            display: block;
+            object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+            height: 566px;
         }
 
-        .text {
-            font-size: 20px;
 
-            margin-bottom: 48px;
+        /* Hide arrow on large screens */
+        .down {
+            display: none;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+
         }
 
         .content h1 {
-            font-size: 24px;
-            line-height: 70px;
-            font-weight: bold;
+
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 125px;
         }
 
         .content p {
 
-            font-size: 15px;
-            line-height: 20px;
+            font-size: 20px;
+            line-height: 35px;
 
-        }
-
-        .down {
-            display: inline-block;
-            transition: transform 0.3s ease;
-            width: 45px;
-            cursor: pointer;
         }
 
         .groenoverons {
-
-            width: 100%;
-            /* height: 823px; */
-            object-fit: cover;
-            border-radius: 10px;
+            height: 823px;
         }
 
 
         .border-left {
-            /* display: none; */
-
+            display: flex;
+            height: 100%;
+            border-left: 1px solid #ffffff;
+            padding-right: 10px;
+            /* opacity: .5; */
         }
 
-        /* MD Screens */
-        @media (min-width: 768px) {
-
-            .content {
-                position: absolute;
-                /* top: 50%; */
-                top: 73%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                text-align: center;
-                color: white;
-            }
-        }
-
-
-        @media (min-width: 992px) {
-
-            .groentuinen {
-                display: block;
-                object-fit: cover;
-                border-radius: 10px;
-                width: 100%;
-                height: 566px;
-            }
-
-
-            /* Hide arrow on large screens */
-            .down {
-                display: none;
-            }
-
-            .content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                text-align: center;
-                color: white;
-
-            }
-
-            .content h1 {
-
-                font-size: 90px;
-                font-weight: 700;
-                line-height: 125px;
-            }
-
-            .content p {
-
-                font-size: 20px;
-                line-height: 35px;
-
-            }
-
-            .groenoverons {
-                height: 823px;
-            }
-
-
-            .border-left {
-                display: flex;
-                height: 100%;
-                border-left: 1px solid #ffffff;
-                padding-right: 10px;
-                /* opacity: .5; */
-            }
-
-            /* .nextline {
+        /* .nextline {
             opacity: .5;
             border: 1px solid #ffffff;
             width: 53%;
             display: inline-flex;
         } */
+    }
+
+
+
+    @media (min-width: 768px) {
+        .line2 {
+            height: 1px;
+            width: 52vw;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            margin-right: 10px;
+            display: block;
+        }
+
+        .line3 {
+            height: 1px;
+            width: 50%;
+            background-color: #ffffff;
+            color: #ffffff;
+
         }
 
 
 
-        @media (min-width: 768px) {
-            .line2 {
-                height: 1px;
-                width: 52vw;
-                background-color: #ffffff;
-                color: #ffffff;
-                position: relative;
-                margin-right: 10px;
-                display: block;
-            }
 
-            .line3 {
-                height: 1px;
-                width: 50%;
-                background-color: #ffffff;
-                color: #ffffff;
-
-            }
-
-
-
-
-            .border-left {}
-        }
+        .border-left {}
+    }
     </style>
     <div class="bg-leaf ">
 
@@ -228,7 +242,10 @@
                             <h1>Onze werkwijze</h1>
 
                         </div>
-                        <div class=" bottom-center" style=" width: ;">
+
+
+
+                        <div class=" bottom-center " style=" width: ;">
                             <p style=" font-weight: 400; font-family: 'Inclusive Sans' , sans-serif; font-size:;">We
                                 steken
                                 onze
@@ -242,7 +259,6 @@
                                 geen muurbloempje maar een
                                 echte
                                 eyecatcher ! Weten hoe we dat aanpakken?</p>
-
                         </div>
 
                         <div class=" bottom-center">
@@ -301,47 +317,47 @@
                                         </div>
 
                                         <style>
-                                            .down-arrow {
-                                                font-size: 24px;
-                                                color: white;
-                                            }
+                                        .down-arrow {
+                                            font-size: 24px;
+                                            color: white;
+                                        }
 
-                                            .up-arrow {
-                                                font-size: 24px;
-                                                color: white;
+                                        .up-arrow {
+                                            font-size: 24px;
+                                            color: white;
 
-                                            }
+                                        }
                                         </style>
 
 
 
                                         <script>
-                                            $(document).ready(function () {
-                                                $('.read-more-toggle').click(function (e) {
-                                                    e.preventDefault();
-                                                    var moreText = $(this).prev('.content1').find(
-                                                        '.more-text');
+                                        $(document).ready(function() {
+                                            $('.read-more-toggle').click(function(e) {
+                                                e.preventDefault();
+                                                var moreText = $(this).prev('.content1').find(
+                                                    '.more-text');
 
 
-                                                    // Toggle visibility of additional text
-                                                    moreText.toggleClass('d-none');
+                                                // Toggle visibility of additional text
+                                                moreText.toggleClass('d-none');
 
 
-                                                    // Toggle arrow icon
-                                                    if (moreText.hasClass('d-none')) {
-                                                        $(this).html(
-                                                            '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                                                        );
-                                                    } else {
-                                                        $(this).html(
-                                                            '<span class="arrow fas fa-angle-up up-arrow" > </span>'
-                                                        );
-                                                    }
+                                                // Toggle arrow icon
+                                                if (moreText.hasClass('d-none')) {
+                                                    $(this).html(
+                                                        '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                                                    );
+                                                } else {
+                                                    $(this).html(
+                                                        '<span class="arrow fas fa-angle-up up-arrow" > </span>'
+                                                    );
+                                                }
 
-                                                    // Add or remove active class for arrow animation
-                                                    $(this).toggleClass('active');
-                                                });
+                                                // Add or remove active class for arrow animation
+                                                $(this).toggleClass('active');
                                             });
+                                        });
                                         </script>
 
                                     </div>
