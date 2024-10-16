@@ -490,7 +490,6 @@
                     </div>
                 </div>
                 <!-- End Column -->
-
             </div>
 
 
@@ -517,7 +516,7 @@
                                         prachtige meerstammige steeneik, vrouwenmantel (Alchemilla mollis), witte
                                         knoop (Anaphalis) en de dropplant (Agastache). Maar voor het ontwerp en de
                                         aanleg van jouw tuin, staan jouw wensen voorop.
-                                        <span class="more-text d-none"> Of het nu gaat om de aanleg
+                                        <span class="more-text d-none d-lg-block"> Of het nu gaat om de aanleg
                                             van je voortuin, achtertuin, stadstuin of dakterras.
                                         </span>
                                     </span>

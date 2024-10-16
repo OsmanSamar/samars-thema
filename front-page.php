@@ -112,11 +112,11 @@
                 <div class="row  g-4">
 
                     <!-- Left side: Text  -->
-                    <div class="col-lg-3 text-section  fadeIn" style="margin-top:8px;" data-side="left">
+                    <div class="col-lg-4 text-section  fadeIn" style="margin-top:8px;" data-side="left">
                         <h1 style="font-size: 40px;
                          font-family: Henderson-sans-basic, sans-serif;">
                             Maak van jouw tuin een bijzondere plek om te zijn.</h1>
-                        <p style="font-size: 23px;
+                        <p style="font-size: 19px;
                          opacity: 1;
                         letter-spacing: 0px;
                          margin-top: 50px;
@@ -133,7 +133,7 @@
                     <!-- Swiper On Small Screen -->
 
 
-                    <div id="swiperRef" class="swiper mySwiper smrow order-2 projecten-slider d-flex d-lg-none"
+                    <div id="swiperRef" class="fadeIn swiper mySwiper smrow order-2 projecten-slider d-flex d-lg-none"
                         style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -173,7 +173,7 @@
 
 
                     <!-- Right  side: Images on Bige Screen  -->
-                    <div class="container col-lg-9 images-section2 ">
+                    <div class="container col-lg-8 images-section2 ">
                         <div class="row2  fadeIn" data-side="right">
                             <div class="column1">
                                 <img class="backyardgarden"
@@ -229,7 +229,7 @@
 
 
                     <!-- Testimonials Section on Small Screen -->
-                    <div class="row testimonials-section-sm d-md-none text-center2  fadeIn">
+                    <div class="row  testimonials-section-sm d-md-none text-center2  fadeIn">
                         <div class="col-12 col-lg-3 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                                 class="testimonial-img" />
@@ -464,15 +464,15 @@
             </a>
 
             <!-- HR With Text swiper on Sm Screen -->
-            <div class="container mt-50 mb-50 d-none d-md-none d-lg-block">
+            <div class="container mt-50 mb-50 d-none d-md-none d-lg-block fadeIn">
                 <hr class="hr-text gradient" data-content="Projecten">
             </div>
-            <div class=" mt-50 mb-50 d-block d-md-block d-lg-none">
+            <div class=" mt-50 mb-50 d-block d-md-block d-lg-none fadeIn">
                 <hr class="hr-text gradient" data-content="Projecten" style="margin: 30px -75px;">
             </div>
 
             <!-- Swiper Slider -->
-            <div id="#swiperRef" class="swiper mySwiper projecten-slider"
+            <div id="#swiperRef" class="swiper fadeIn mySwiper projecten-slider"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="width:;">

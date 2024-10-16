@@ -52,16 +52,6 @@
     });
     </script>
 
-
-
-
-
-
-
-
-
-
-
 </head>
 
 <<?php body_class(); ?>>
