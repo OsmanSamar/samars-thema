@@ -539,7 +539,7 @@
                     <div class="col-lg-5 text-left  d-lg-none order-2">
                         <p style="font-size:31px;">Waarom GroenTuinen?</p>
                     </div>
-                    <div class="title d-none d-lg-flex align-items-olgter gap-3">
+                    <div class="title d-none d-lg-flex align-items-center gap-3">
                         <h2 class="mb-0" style="font-size:32px ">Waarom
                             GROENtuinen?</h2>
                         <div class="line2 between d-none d-lg-block"></div>
@@ -548,7 +548,7 @@
 
                     <!-- Testimonials Section on Small Screen -->
                     <div class="row testimonials-section-sm d-md-none text-center2">
-                        <div class="col-12   col-lg-4 testimonial fadeIn">
+                        <div class="col-12   col-lg-4 testimonial  fadeIn">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                                 class="testimonial-img" />
                             <h1>Vakkundig maatwerk</h1>

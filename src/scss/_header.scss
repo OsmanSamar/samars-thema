@@ -566,7 +566,7 @@ main {
   .line {
     height: 1px;
     // width: 58%;
-    // width: 58vw; 3
+    // width: 58vw;
     /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
@@ -1027,8 +1027,9 @@ a ::after {
 }
 
 .text-line-button-section h2 {
-  font-size: 42px;
-  margin-bottom: 20px;
+  // font-size: 42px;
+  // margin-bottom: 20px;
+  font-size: 40px;
 }
 
 .text-line-button-section p {

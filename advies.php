@@ -64,6 +64,7 @@
 
         .flex-container {
             text-align: left;
+            margin-top: 80px;
         }
 
 
@@ -130,7 +131,6 @@
         font-size: 40px;
         font-weight: 700;
         line-height: 125px;
-        margin-bottom: 45px;
         letter-spacing:2px;">Advies
             </h1>
 
@@ -147,8 +147,22 @@
         <!-- Here -->
         <div class="row">
 
-            <div class="col-12  col-md-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:80px;">
-                <div class="text-header ">
+            <div class="col-12  col-md-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:;">
+
+                <div class="text-header d-block  d-md-none d-lg-none ">
+                    <h2 style="color: #fff9f4;
+                    font-family: henderson-sans-basic, sans-serif;
+                    color: #fff;
+                    font-size: 39px;
+                    font-weight: 300;
+                    line-height: 60px;
+                    ">
+                        <span style="--i:1;">Geen blad voor</span> <br>
+                        <span style="--i:3;">de mond</span>
+
+                    </h2>
+                </div>
+                <div class="text-header d-none d-md-block d-lg-block ">
                     <h2 style="color: #fff9f4;
                     font-family: henderson-sans-basic, sans-serif;
                     color: #fff;
@@ -165,7 +179,7 @@
                     <div class="col-2">
                         <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
                     </div>
-                    <div class=" col-lg-9  mt-lg-1 mt-4">
+                    <div class=" col-lg-9  mt-lg-1 ">
                         <div class="text text-fix">
                             <div class="" style="--height: 400px;">
                                 <p><span style="font-weight: 400;">Je hebt een prachtige tuin, maar wil graag advies

@@ -49,7 +49,7 @@
         color: #FFFFFF;
         opacity: 1;
         letter-spacing: 0px;
-        margin-top: 80px;
+        /* margin-top: 80px; */
     }
 
     @media (min-width: 992px) {
@@ -64,6 +64,7 @@
 
         .flex-container {
             text-align: left;
+            margin-top: 80px;
         }
 
 
@@ -152,7 +153,7 @@
 
         </div>
         <div class="row">
-            <div class="col-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:80px;">
+            <div class="col-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:;">
 
                 <div class="text-header ">
                     <h2 style="color: #fff9f4;
@@ -179,28 +180,28 @@
                         <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
                     </div>
                     <div class="col-lg-9 mt-lg-1 mt-4">
-                        <div class="text ">
-                            <div class="text d-flex flex-column align-items-center" style="--height: 400px;">
-                                <p class="content1" style="font-weight: 400;"> Bij tuinaanleg hoort de volledige
-                                    aanleg van je tuin.
-                                    Van grondwerk tot aanleg. We werken
-                                    hiervoor met hoogwaardige en duurzame materialen, bijvoorbeeld hout met FSC
-                                    keurmerk. En
-                                    <span class="more-text d-none d-lg-block">
-                                        natuurlijk met veel groen! We ontzorgen je hierbij volledig. Heb je groene
-                                        vingers en wil je ook
-                                        zelf aan de slag? Dan maken we samen een plan voor de realisatie van je
-                                        groene
-                                        droomtuin.
-                                    </span>
-                                </p>
 
-                                <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-                                    <span class="arrow fas fa-angle-down down-arrow">
-                                    </span>
-                                </a>
-                            </div>
+                        <div class="text d-flex flex-column align-items-center" style="--height: 400px;">
+                            <p class="content1" style="font-weight: 400;"> Bij tuinaanleg hoort de volledige
+                                aanleg van je tuin.
+                                Van grondwerk tot aanleg. We werken
+                                hiervoor met hoogwaardige en duurzame materialen, bijvoorbeeld hout met FSC
+                                keurmerk. En
+                                <span class="more-text d-none d-lg-block">
+                                    natuurlijk met veel groen! We ontzorgen je hierbij volledig. Heb je groene
+                                    vingers en wil je ook
+                                    zelf aan de slag? Dan maken we samen een plan voor de realisatie van je
+                                    groene
+                                    droomtuin.
+                                </span>
+                            </p>
+
+                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                                <span class="arrow fas fa-angle-down down-arrow">
+                                </span>
+                            </a>
                         </div>
+
 
                         <div class=" circle-border">
                             <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies nodig?</a>
@@ -251,11 +252,9 @@
 
 
                 </div>
-
-
-
-
             </div>
+
+
             <div class="col-12 col-lg-6 fadeIn" data-side="right" style="margin-top:80px; ;">
                 <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="22scaled"
                     class="first-img rounded object-fit" style="" />
@@ -266,100 +265,103 @@
         <!-- Second Section -->
 
 
-        <div class=" ">
 
 
 
 
-            <div class="row fadeIn" style="margin-top:50px;">
-                <!-- Column Wrapper -->
-                <div class="">
-                    <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
-                        <!-- py-5 -->
-                        <div class="row gx-5">
-                            <!-- 1st Column -->
 
-                            <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
-                                <div class="mt-auto mb-5">
-                                    <img src="
+        <div class="row fadeIn" style="margin-top:50px;">
+            <!-- Column Wrapper -->
+            <div class="">
+                <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
+                    <!-- py-5 -->
+                    <div class="row gx-5">
+                        <!-- 1st Column -->
+
+                        <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
+                            <div class="mt-auto mb-5">
+                                <img src="
                                             <?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
-                                        alt="Groenoverons" class="img1" />
-                                </div>
-                                <div class="">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
-                                        alt="Beautifulpinkflowers" class="img2" />
-                                </div>
-                                <div class="mt-auto">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/growingtree.png"
-                                        alt="Ladybug" class="img3" />
-                                </div>
+                                    alt="Groenoverons" class="img1" />
                             </div>
-
+                            <div class="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
+                                    alt="Beautifulpinkflowers" class="img2" />
+                            </div>
+                            <div class="mt-auto">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/growingtree.png"
+                                    alt="Ladybug" class="img3" />
+                            </div>
                         </div>
+
                     </div>
                 </div>
-                <!-- End Column -->
-
             </div>
+            <!-- End Column -->
 
-            <!-- Text Section -->
-            <div class="order-1 order-md-1 order-lg-2 fadeIn" style="margin-top: 52px;">
-                <div class="text-block py-1">
-                    <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
-                        <h2 style="font-size:36px;
+        </div>
+
+        <!-- Text Section -->
+        <div class="order-1 order-md-1 order-lg-2 fadeIn" style="margin-top: 52px;">
+            <div class="text-block py-1">
+                <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
+                    <h2 style="font-size:36px;
                                                   padding-bottom: 39px; 
                                                 color: #fff;
                                                line-height: 55px;
                                                margin-top:20px;">
-                            Maar we doen nog veel meer
-                        </h2>
-                        <div class="text2 text-fix">
-                            <div class="inner" style="font-size:18px; line-height: 30px; letter-spacing: 2px;">
-                                <p><span style="font-weight: 400;">Na de beplanting gaan we aan de slag met de
-                                        bestrating, het beregeningssysteem, opslag van regenwater en/of de verlichting.
-                                        We nemen dit gelijk mee in het ontwerp, zodat het allemaal mooi op elkaar
-                                        aansluit. We werken met lokale partners die ons de materialen leveren. Zo zijn
-                                        we altijd verzekerd van topkwaliteit én investeren we in duurzame, lokale
-                                        samenwerkingen.</span></p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bottom-under"></div>
-            <!-- End of textSection -->
-
-
-
-            <!-- Swiper On Small Screen -->
-
-            <div class="swiper-container fadeIn" style="--swiper-pagination-color: #fff">
-                <div #swiperRef=""
-                    class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="
-                                         <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                alt="Groen Overons" class="swiper-img" style="width:100% ;" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                                alt="Beautifulpinkflowers" class="swiper-img" style="width:100% ;" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="Ladybug"
-                                class="swiper-img" style="width:100% ;" />
+                        Maar we doen nog veel meer
+                    </h2>
+                    <div class="text2 text-fix">
+                        <div class="inner" style="font-size:18px; line-height: 30px; letter-spacing: 2px;">
+                            <p><span style="font-weight: 400;">Na de beplanting gaan we aan de slag met de
+                                    bestrating, het beregeningssysteem, opslag van regenwater en/of de verlichting.
+                                    We nemen dit gelijk mee in het ontwerp, zodat het allemaal mooi op elkaar
+                                    aansluit. We werken met lokale partners die ons de materialen leveren. Zo zijn
+                                    we altijd verzekerd van topkwaliteit én investeren we in duurzame, lokale
+                                    samenwerkingen.</span></p>
                         </div>
 
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
+
+        <div class="bottom-under"></div>
+        <!-- End of textSection -->
+
+
+
+        <!-- Swiper On Small Screen -->
+
+        <div class="swiper-container fadeIn" style="--swiper-pagination-color: #fff">
+            <div #swiperRef=""
+                class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="
+                                         <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
+                            alt="Groen Overons" class="swiper-img" style="width:100% ;" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
+                            alt="Beautifulpinkflowers" class="swiper-img" style="width:100% ;" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="Ladybug"
+                            class="swiper-img" style="width:100% ;" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+
+
 
 
 

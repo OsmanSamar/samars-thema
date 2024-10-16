@@ -76,6 +76,7 @@
 
         .flex-container {
             text-align: left;
+            margin-top: 80px;
         }
 
         .text-header {
@@ -178,7 +179,7 @@
 
         <div class="row firstcontainer " style="margin-bottom:80px;">
 
-            <div class="col-12 col-lg-6 flex-container fadeIn  " data-side="left" style="margin-top:80px">
+            <div class="col-12 col-lg-6 flex-container fadeIn  " data-side="left" style="margin-top:">
                 <div class="d-flex flex-row   d-lg-flex align-items-center justify-content-center gap-1">
 
                     <div class="text-header" style="margin-bottom:40px; margin-right:40px;">In goede aarde</div>

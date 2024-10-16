@@ -63,6 +63,7 @@
 
         .flex-container {
             text-align: left;
+            margin-top: 80px;
         }
 
 
@@ -126,8 +127,8 @@
 
             <h1 class="fadeIn d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
-        font-size: 40px;
-        font-weight: 700;
+        font-size: 36px;
+        font-weight: 900;
         line-height: 125px;
         margin-bottom: 45px;
         letter-spacing:2px;">Tuinsonderhoud
@@ -145,7 +146,7 @@
 
 
         <div class="row">
-            <div class="col-12  col-md-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:80px;">
+            <div class="col-12  col-md-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:;">
                 <div class="text-header ">
                     <h2 style="color: #fff9f4;
                   font-family: henderson-sans-basic, sans-serif;
@@ -153,7 +154,7 @@
                  font-size: 39px;
                font-weight: 300;
                 line-height: 60px;
-                 margin-top:45px;">
+                 margin-top:5px;">
                         <span style="--i:1;">Wij doen het</span> <br>
                         <span style="--i:3;">takkenwerk</span>
 
@@ -163,7 +164,7 @@
                     <div class="col-2">
                         <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
                     </div>
-                    <div class=" col-lg-9  mt-lg-1 mt-4">
+                    <div class=" col-lg-9  mt-lg-1 ">
                         <div class="text text-fix">
                             <div class="" style="--height: 400px;">
                                 <p><span style="font-weight: 400;">Je tuin komt het best tot z’n recht als de planten,
