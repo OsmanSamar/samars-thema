@@ -156,7 +156,7 @@
                 <span class="last">Tuinontwerp</span>
             </div>
 
-            <h1 class="d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 40px;
         font-weight: 700;
@@ -165,7 +165,7 @@
         letter-spacing:2px;">Tuinontwerp
             </h1>
 
-            <h1 class="d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
@@ -178,14 +178,14 @@
 
         <div class="row firstcontainer " style="margin-bottom:80px;">
 
-            <div class="col-12 col-lg-6 flex-container   " style="margin-top:80px">
+            <div class="col-12 col-lg-6 flex-container fadeIn  " data-side="left" style="margin-top:80px">
                 <div class="d-flex flex-row   d-lg-flex align-items-center justify-content-center gap-1">
 
                     <div class="text-header" style="margin-bottom:40px; margin-right:40px;">In goede aarde</div>
                     <div class="dienstlinelg d-none  d-md-none  d-lg-flex "></div>
 
                 </div>
-                <!-- <div class="text-header" style="margin-bottom:40px;">In goede aarde <span>-</span></div> -->
+
 
                 <div class="row pb-lg-5 pb-0">
                     <div class="col-2">
@@ -269,7 +269,7 @@
             </div>
 
 
-            <div class="col-12 col-lg-6 " style="margin-top:80px; ;">
+            <div class="col-12 col-lg-6 fadeIn" data-side="right" style="margin-top:80px; ;">
                 <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/ontwerptuin.png" alt="ontwerptuin"
                     class="first-img" style="" />
             </div>
@@ -284,7 +284,7 @@
 
 
 
-            <div class="row">
+            <div class="row fadeIn">
                 <!-- Column Wrapper -->
                 <div class="">
                     <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
@@ -316,7 +316,7 @@
             </div>
 
             <!-- Text Section -->
-            <div class="order-1 order-md-1 order-lg-2 ">
+            <div class="order-1 order-md-1 order-lg-2 fadeIn ">
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
 
@@ -358,7 +358,7 @@
 
             <!-- Swiper On Small Screen -->
 
-            <div class="swiper-container" style="--swiper-pagination-color: #fff">
+            <div class="swiper-container fadeIn" style="--swiper-pagination-color: #fff">
                 <div #swiperRef=""
                     class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
                     style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
@@ -392,7 +392,7 @@
             <div class="container d-none d-lg-block" style="margin-top:60px;">
                 <div class="bottom-text">
                     <div class="row">
-                        <div class="col-lg-6  position-relative" data-side="left">
+                        <div class="col-lg-6  position-relative fadeIn" data-side="left">
                             <div class="grid-bottom">
 
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/mapofgardendesign.png"
@@ -405,7 +405,7 @@
 
                             </div>
                         </div>
-                        <div class="col-12  col-lg-5 offset-lg-8" data-side="right">
+                        <div class="col-12  col-lg-5 offset-lg-8 fadeIn" data-side="right">
                             <h2 style="line-height: 49px; letter-spacing: 5px;">Enthousiast?<br> Neem contact op!</h2>
                             <div class="col-lg-9">
                                 <div class="text">
@@ -463,7 +463,7 @@
         <div class="bg-leaf">
 
             <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
-                class="row    d-flex flex-column align-items-left justify-content-start d-lg-none">
+                class="row fadeIn    d-flex flex-column align-items-left justify-content-start d-lg-none">
                 <div class="line-top"></div>
 
 

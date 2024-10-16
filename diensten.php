@@ -372,7 +372,7 @@
 
 
         <div class="container bg-img mt-lg-auto mb-0">
-            <div class="position-relative">
+            <div class="position-relative fadeIn">
                 <div class=" overlay" style=" border-radius: 10px; "></div>
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="groentuinen"
                     style=" ;  object-fit: cover; border-radius: 10px; ;" />
@@ -409,18 +409,12 @@
         <div class="container">
 
             <div class="  row" style="margin-top:120px;">
-                <div class="col-12 col-lg-5 ">
-                    <!--  pt-lg-5 pt-0 -->
-
+                <div class="col-12 col-lg-5 fadeIn" data-side="left">
                     <div class="first-container" id="content">
-
-
 
                         <div class="second-container d-flex flex-column gap-2" style="">
 
-
-
-                            <div class=" d-flex flex-row align-items-center border-bottom" style="padding:30px ">
+                            <div class=" d-flex flex-row align-items-center border-bottom fadeIn" style="padding:30px ">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/design.svg"
                                     alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
 
@@ -440,7 +434,8 @@
 
 
 
-                            <div class=" d-flex flex-row align-items-center border-bottom  " style="padding:30px ">
+                            <div class=" d-flex flex-row align-items-center border-bottom fadeIn "
+                                style="padding:30px ">
 
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tools.svg"
                                     alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
@@ -461,7 +456,8 @@
 
 
 
-                            <div class=" d-flex flex-row align-items-center border-bottom    " style=" padding:30px">
+                            <div class=" d-flex flex-row align-items-center border-bottom fadeIn   "
+                                style=" padding:30px">
 
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/gardening.svg"
                                     alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
@@ -483,7 +479,7 @@
                             <div>
 
 
-                                <div class=" d-flex flex-row align-items-center   " style="padding:30px ">
+                                <div class=" d-flex flex-row align-items-center fadeIn  " style="padding:30px ">
 
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/growth.svg"
                                         alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
@@ -501,13 +497,10 @@
 
                         </div>
                     </div>
-
-
-
                 </div>
 
 
-                <div class="col-12 col-lg-7 pt-lg-5 pt-0">
+                <div class="col-12 col-lg-7 pt-lg-5 pt-0 fadeIn" data-side="right">
 
                     <div class="" style="; ">
                         <h2 style="; text-align: left;  letter-spacing: 2px;    font-size: 32px;"> <span
@@ -584,12 +577,12 @@
             </a>
 
             <!-- HR With Text swiper on Sm Screen -->
-            <div class="mt-50 mb-50">
+            <div class="mt-50 mb-50 fadeIn">
                 <hr class="hr-text gradient" data-content="Projecten">
             </div>
 
             <!-- Swiper Slider -->
-            <div #swiperRef="" class="swiper mySwiper projecten-slider"
+            <div #swiperRef="" class="swiper mySwiper projecten-slider fadeIn"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -660,7 +653,7 @@
             <div class="container d-none d-lg-block" style="margin-top:60px;">
                 <div class="bottom-text">
                     <div class="row">
-                        <div class="col-lg-6  position-relative fadeIn visible" data-side="left">
+                        <div class="col-lg-6  position-relative fadeIn" data-side="left">
                             <div class="grid-bottom">
 
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
@@ -673,7 +666,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-1 fadeIn visible" data-side="right">
+                        <div class="col-lg-5 offset-lg-1 fadeIn " data-side="right">
                             <h2 style="line-height:62px;">
                                 <span style="font-weight:100; font-size:40px;  letter-spacing:4px; 
                                     font-family: 'Henderson Sans Basic', sans-serif;">
@@ -715,7 +708,7 @@
         <div>
 
             <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
-                class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
+                class="row fadeIn flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
                 <div class="line-top"></div>
 
 

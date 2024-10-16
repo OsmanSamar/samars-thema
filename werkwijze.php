@@ -300,13 +300,12 @@
                                         We kijken hoe de stijl in je woning is, zodat we deze kunnen doorvoeren
                                         in je tuin. Wij vertellen wat we voor je kunnen betekenen en meten je
                                         tuin in.
-                                        <span class="more-text d-none">Vervolgens gaan we aan de slag met het
+                                        <span class="more-text d-none d-lg-block">Vervolgens gaan we aan de slag met het
                                             ontwerp van je tuin. Dit doen we op basis van alle input uit het
                                             eerste gesprek.
                                             We maken een offerte voor het realiseren van je droomtuin.</span>
                                     </p>
                                     <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-
                                         <span class="arrow fas fa-angle-down down-arrow">
                                         </span>
                                     </a>
@@ -384,7 +383,7 @@
                                         eerlijke
                                         en
                                         vaste prijs. Ook maken we samen afspraken over de planten in je
-                                        tuin.<span class="more-text d-none">Zo weet je precies waar je
+                                        tuin.<span class="more-text d-none d-lg-block">Zo weet je precies waar je
                                             aan toe
                                             bent.</span> </p>
                                     <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
@@ -438,7 +437,7 @@
                                             We presenteren het ontwerp en bespreken de mogelijkheden en de
                                             kosten
                                             met
-                                            je.<span class="more-text d-none">Zijn we het eens en is de
+                                            je.<span class="more-text d-none d-lg-block">Zijn we het eens en is de
                                                 offerte akkoord? Dan spreken
                                                 we af
                                                 wanneer
@@ -498,7 +497,7 @@
                                             We presenteren het ontwerp en bespreken de mogelijkheden en de
                                             kosten
                                             met
-                                            je.<span class="more-text d-none">Zijn we het eens en is de
+                                            je.<span class="more-text d-none d-lg-block">Zijn we het eens en is de
                                                 offerte akkoord? Dan spreken
                                                 we af
                                                 wanneer

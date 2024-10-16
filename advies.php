@@ -3,109 +3,109 @@
 
 <main id="page" class="flex-grow-1">
     <style>
-        .line-left {
-            background-color: #fff;
-            opacity: .5;
-            width: 1px;
-        }
+    .line-left {
+        background-color: #fff;
+        opacity: .5;
+        width: 1px;
+    }
 
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: ;
-        }
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: ;
+    }
 
-        .swiper-container {
-            position: relative;
+    .swiper-container {
+        position: relative;
 
+    }
+
+    .swiper-container .swiper-pagination {
+        bottom: -50px !important;
+        display: block;
+    }
+
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
+
+    .flex-container {
+        text-align: center;
+    }
+
+    .text-header {
+        font-family: 'Inclusive Sans', sans-serif;
+        font-size: 40px;
+        color: #FFFFFF;
+        opacity: 1;
+        letter-spacing: 0px;
+    }
+
+    .text {
+        font-family: 'Inclusive Sans', sans-serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        opacity: 1;
+        letter-spacing: 0px;
+        margin-top: 80px;
+    }
+
+    @media (min-width: 992px) {
+
+        .first-img {
+            height: 554px
         }
 
         .swiper-container .swiper-pagination {
-            bottom: -50px !important;
-            display: block;
-        }
-
-        .swiper-container .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
+            display: none;
         }
 
         .flex-container {
-            text-align: center;
+            text-align: left;
         }
 
-        .text-header {
-            font-family: 'Inclusive Sans', sans-serif;
-            font-size: 40px;
-            color: #FFFFFF;
-            opacity: 1;
-            letter-spacing: 0px;
-        }
 
-        .text {
-            font-family: 'Inclusive Sans', sans-serif;
-            font-size: 20px;
-            color: #FFFFFF;
-            opacity: 1;
-            letter-spacing: 0px;
-            margin-top: 80px;
-        }
-
-        @media (min-width: 992px) {
-
-            .first-img {
-                height: 554px
-            }
-
-            .swiper-container .swiper-pagination {
-                display: none;
-            }
-
-            .flex-container {
-                text-align: left;
-            }
-
-
-            .img1 {
-                border-radius: 10px;
-                /* width: 626px;
+        .img1 {
+            border-radius: 10px;
+            /* width: 626px;
             height: 377px; */
-                width: 640px;
-                height: 438px;
-            }
-
-            .img2 {
-                border-radius: 10px;
-                width: 525px;
-                height: 616px;
-            }
-
-            .img3 {
-                border-radius: 10px;
-                /* width: 626px;
-            height: 382px; */
-                width: 630px;
-                height: 438px;
-            }
-
-            .img3,
-            .img1,
-            .img2,
-            .groentuinen,
-            .first-img {
-                object-fit: cover;
-            }
-
-            .bottom-under {
-
-                border: 1px #FFFFFF solid;
-                height: 1px;
-                width: 100%;
-                opacity: 0.5;
-
-            }
+            width: 640px;
+            height: 438px;
         }
+
+        .img2 {
+            border-radius: 10px;
+            width: 525px;
+            height: 616px;
+        }
+
+        .img3 {
+            border-radius: 10px;
+            /* width: 626px;
+            height: 382px; */
+            width: 630px;
+            height: 438px;
+        }
+
+        .img3,
+        .img1,
+        .img2,
+        .groentuinen,
+        .first-img {
+            object-fit: cover;
+        }
+
+        .bottom-under {
+
+            border: 1px #FFFFFF solid;
+            height: 1px;
+            width: 100%;
+            opacity: 0.5;
+
+        }
+    }
     </style>
     <div class="container">
 
@@ -125,7 +125,7 @@
                 <span class="last">Advies</span>
             </div>
 
-            <h1 class="d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 40px;
         font-weight: 700;
@@ -135,7 +135,7 @@
             </h1>
 
 
-            <h1 class="d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
@@ -147,7 +147,7 @@
         <!-- Here -->
         <div class="row">
 
-            <div class="col-12  col-md-12 col-lg-6 flex-container   " style="margin-top:80px;">
+            <div class="col-12  col-md-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:80px;">
                 <div class="text-header ">
                     <h2 style="color: #fff9f4;
                     font-family: henderson-sans-basic, sans-serif;
@@ -185,7 +185,7 @@
             </div>
 
 
-            <div class="col-12 col-lg-6 " style="margin-top:80px; ;">
+            <div class="col-12 col-lg-6 fadeIn " style="margin-top:80px;" data-side="right">
                 <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/28scaled.jpg" alt="22scaled"
                     class="first-img rounded object-fit" style="" />
             </div>
@@ -196,7 +196,7 @@
 
 
         <div class=" ">
-            <div class="row" style="margin-top:50px;">
+            <div class="row fadeIn" style="margin-top:50px;">
                 <!-- Column Wrapper -->
                 <div class="">
                     <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
@@ -227,7 +227,7 @@
             </div>
 
             <!-- Text Section -->
-            <div class="order-1 order-md-1 order-lg-2 ">
+            <div class="order-1 order-md-1 order-lg-2 fadeIn ">
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
                         <h2 style="font-size:36px;
@@ -259,7 +259,7 @@
 
             <!-- Swiper On Small Screen -->
 
-            <div class="swiper-container" style="--swiper-pagination-color: #fff">
+            <div class="swiper-container fadeIn" style="--swiper-pagination-color: #fff">
                 <div #swiperRef=""
                     class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
                     style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
@@ -296,7 +296,7 @@
             <div class="container d-none d-lg-block" style="margin-top:60px;">
                 <div class="bottom-text">
                     <div class="row">
-                        <div class="col-lg-6  position-relative" data-side="left">
+                        <div class="col-lg-6  position-relative fadeIn" data-side="left">
                             <div class="grid-bottom">
 
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
@@ -309,7 +309,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-8" data-side="right">
+                        <div class="col-lg-5 offset-lg-8 fadeIn" data-side="right">
                             <h2 style="line-height: 62px; letter-spacing: 4px; 
                             font-size:36px;
                              font-family: 'Henderson Sans Basic', sans-serif;
@@ -347,32 +347,32 @@
         <!-- Contact Information Section on Sm Screen -->
 
         <style>
-            .dienst-line {
+        .dienst-line {
+            height: 1px;
+            width: 5595px;
+            /* background-color: #ffffff; */
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            position: relative;
+            opacity: 0.3;
+        }
+
+        @media (min-width: 768px) {
+            .dienstline {
                 height: 1px;
-                width: 5595px;
-                /* background-color: #ffffff; */
-                border: 1px solid #ffffff;
+                width: 928px;
+                background-color: #ffffff;
                 color: #ffffff;
                 position: relative;
-                opacity: 0.3;
+                opacity: 0.5;
             }
-
-            @media (min-width: 768px) {
-                .dienstline {
-                    height: 1px;
-                    width: 928px;
-                    background-color: #ffffff;
-                    color: #ffffff;
-                    position: relative;
-                    opacity: 0.5;
-                }
-            }
+        }
         </style>
 
         <div class="bg-leaf">
 
             <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
-                class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
+                class="row fadeIn flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
                 <div class="line-top"></div>
 
 
@@ -423,67 +423,67 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", {
 
-            // slidesPerView: 2.5,
+        // slidesPerView: 2.5,
 
-            slidesPerView: 1.2,
-            centeredSlides: true,
-            loop: true,
-            grabCursor: true,
-            spaceBetween: 5,
-            pagination: {
-                el: ".swiper-pagination",
-                // type: "fraction",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                992: {
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 5,
+        pagination: {
+            el: ".swiper-pagination",
+            // type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            992: {
 
-                    slidesPerView: 3.5,
-                }
+                slidesPerView: 3.5,
             }
-        });
+        }
+    });
 
-        var appendNumber = 4;
-        var prependNumber = 1;
-        document
-            .querySelector(".prepend-2-slides")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.prependSlide([
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                ]);
-            });
-        document
-            .querySelector(".prepend-slide")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.prependSlide(
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-                );
-            });
-        document
-            .querySelector(".append-slide")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.appendSlide(
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-                );
-            });
-        document
-            .querySelector(".append-2-slides")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.appendSlide([
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                ]);
-            });
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            ]);
+        });
+    document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            ]);
+        });
     </script>
 
 

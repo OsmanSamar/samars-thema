@@ -155,7 +155,7 @@
             <span class="last">Contact</span>
         </div>
 
-        <div class="container bg-img mt-lg-auto mb-0">
+        <div class="container bg-img mt-lg-auto mb-0 fadeIn">
             <div class="position-relative">
                 <div class=" overlay" style=" border-radius: 10px; "></div>
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groentuinen.png" alt="groentuinen"
@@ -186,7 +186,7 @@
                 <div class="col-10 mx-auto mt-5 my-lg-5 py-5">
                     <div class="row">
                         <!-- 1 -->
-                        <div class="col-12 col-md-12 col-lg-4 fadIn visible">
+                        <div class="col-12 col-md-12 col-lg-4 fadeIn ">
                             <div class="d-flex flex-column gap-3 text-center align-items-center contact-icon">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/map.svg" alt="Map Icon"
                                     class="mx-auto" />
@@ -204,7 +204,7 @@
                         </div>
 
                         <!-- 2 -->
-                        <div class="col-12 col-md-12 col-lg-4 fadIn visible">
+                        <div class="col-12 col-md-12 col-lg-4 fadeIn ">
                             <div class="d-flex flex-column gap-3 text-center align-items-center contact-icon">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/contacticon.svg"
                                     alt="Contact Icon" class="mx-auto" />
@@ -218,7 +218,7 @@
                             </div>
                         </div>
                         <!-- 3 -->
-                        <div class="col-12 col-md-12 col-lg-4 fadIn visible">
+                        <div class="col-12 col-md-12 col-lg-4 fadeIn">
                             <div class="d-flex flex-column gap-3 text-center align-items-center contact-icon">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/email.svg"
                                     alt="Email Icon" class="mx-auto" />

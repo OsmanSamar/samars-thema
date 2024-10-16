@@ -124,7 +124,7 @@
                 <span class="last">Tuinonderhoud</span>
             </div>
 
-            <h1 class="d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 40px;
         font-weight: 700;
@@ -134,7 +134,7 @@
             </h1>
 
 
-            <h1 class="d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
@@ -145,7 +145,7 @@
 
 
         <div class="row">
-            <div class="col-12  col-md-12 col-lg-6 flex-container   " style="margin-top:80px;">
+            <div class="col-12  col-md-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:80px;">
                 <div class="text-header ">
                     <h2 style="color: #fff9f4;
                   font-family: henderson-sans-basic, sans-serif;
@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 " style="margin-top:80px; ;">
+            <div class="col-12 col-lg-6 fadeIn" data-side="right" style="margin-top:80px; ;">
                 <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="22scaled"
                     class="first-img rounded object-fit" style="" />
             </div>
@@ -193,7 +193,7 @@
 
 
         <div class=" ">
-            <div class="row" style="margin-top:50px;">
+            <div class="row fadeIn" style="margin-top:50px;">
                 <!-- Column Wrapper -->
                 <div class="">
                     <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
@@ -224,7 +224,7 @@
             </div>
 
             <!-- Text Section -->
-            <div class="order-1 order-md-1 order-lg-2 ">
+            <div class="order-1 order-md-1 order-lg-2 fadeIn ">
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
                         <h2 style="font-size:36px;
@@ -256,7 +256,7 @@
 
             <!-- Swiper On Small Screen -->
 
-            <div class="swiper-container" style="--swiper-pagination-color: #fff">
+            <div class="swiper-container fadeIn" style="--swiper-pagination-color: #fff">
                 <div #swiperRef=""
                     class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
                     style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
@@ -293,7 +293,7 @@
             <div class="container d-none d-lg-block" style="margin-top:60px;">
                 <div class="bottom-text">
                     <div class="row">
-                        <div class="col-lg-6  position-relative" data-side="left">
+                        <div class="col-lg-6  position-relative fadeIn" data-side="left">
                             <div class="grid-bottom">
 
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/herobg.png"
@@ -307,7 +307,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-8" data-side="right">
+                        <div class="col-lg-5 offset-lg-8 fadeIn" data-side="right">
                             <h2 style="line-height: 49px; letter-spacing: 5px;">Enthousiast?<br> Neem contact op!</h2>
                             <div class="col-lg-9">
                                 <div class="text">
@@ -365,7 +365,7 @@
         <div class="bg-leaf">
 
             <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
-                class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
+                class="row fadeIn  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none" data-side="right">
                 <div class="line-top"></div>
 
 
