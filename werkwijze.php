@@ -406,13 +406,73 @@
                     </div>
 
                     <!-- Left Coulumn -->
-                    <div class="col-12 col-md-12 col-lg-6  mx-auto mt-5 my-lg-5 py-5  flex-container   ">
+                    <div class="d-none d-md-none d-lg-flex col-lg-6  mx-auto mt-5 my-lg-5 py-5  flex-container">
                         <div class="row pb-lg-5 pb-0">
                             <div class="col-2">
                                 <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
                             </div>
 
-                            <div class="d-flex flex-column text-left align-items-start gap-4 col-lg-9  mt-lg-1 mt-1">
+                            <div class="d-flex flex-column text-left align-items-start gap-4   col-lg-9  mt-lg-1 mt-1">
+                                <div>
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
+                                        alt="Groenoverons" class="groenoverons"
+                                        style="object-fit: cover; width:100% ;" />
+                                </div>
+
+                                <div>
+                                    <h2 class="text-header ">Ontwerp van jouw tuin</h2>
+                                    <div class="text d-flex flex-column align-items-center">
+                                        <p class="content1">Vervolgens gaan we aan de slag met het ontwerp
+                                            van
+                                            je
+                                            tuin. Dit doen
+                                            we
+                                            op
+                                            basis van alle input uit het eerste gesprek. We maken een
+                                            offerte
+                                            voor
+                                            het
+                                            realiseren van je droomtuin.
+
+                                            We presenteren het ontwerp en bespreken de mogelijkheden en de
+                                            kosten
+                                            met
+                                            je.<span class="more-text d-none">Zijn we het eens en is de
+                                                offerte akkoord? Dan spreken
+                                                we af
+                                                wanneer
+                                                we
+                                                voor je aan de slag gaan.</span>
+                                        </p>
+                                        <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+
+                                            <span class="arrow fas fa-angle-down "
+                                                style='font-size:24px;color:white'></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="circle-border">
+                                        <a href="/duurzaamheid" class="btn btn-secondary">Over duurzaamheid</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijzetuin.png"
+                                        alt="Werkwijzetuin" class="" style="object-fit: cover; width:100% ;" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- On Small Screen And Md Screen -->
+
+
+
+                    <div class="col-12 col-md-12 d-lg-none  mx-auto mt-5 my-lg-5 py-5  flex-container">
+                        <div class="row pb-lg-5 pb-0">
+
+
+                            <div class="d-flex flex-column text-left align-items-start gap-4 mt-lg-1 mt-1">
                                 <div>
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
                                         alt="Groenoverons" class="groenoverons"
@@ -479,7 +539,7 @@
                     <div class="col-lg-5 text-left  d-lg-none order-2">
                         <p style="font-size:31px;">Waarom GroenTuinen?</p>
                     </div>
-                    <div class="title d-none d-lg-flex align-items-center gap-3">
+                    <div class="title d-none d-lg-flex align-items-olgter gap-3">
                         <h2 class="mb-0" style="font-size:32px ">Waarom
                             GROENtuinen?</h2>
                         <div class="line2 between d-none d-lg-block"></div>

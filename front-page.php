@@ -481,7 +481,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="width:;">
                         <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
-                            class="" style="position:sitelative;">
+                            class="" style="position:;">
                         <!-- Overlay Img -->
                         <!-- <div class="overlay" style="border-radius: 12px;"></div> -->
                         <!-- Overlay Text and Button -->

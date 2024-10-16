@@ -14,7 +14,7 @@
 
 
 
-
+    <!-- Whatsapp Icon -->
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
@@ -56,6 +56,25 @@
 
 
 
+    <!-- Dropdown Menu -->
+    <script>
+    document.addEventListener('click', function(event) {
+        var isDropdownButton = event.target.matches('[data-bs-toggle="dropdown"]');
+        var dropdowns = document.querySelectorAll('.dropdown-menu.show');
+
+        if (!isDropdownButton) {
+            dropdowns.forEach(function(dropdown) {
+                dropdown.classList.remove('show');
+            });
+        }
+    });
+    </script>
+
+
+
+
+
+
 </head>
 
 <<?php body_class(); ?>>
@@ -65,9 +84,6 @@
         <nav class="navbar navbar-expand-lg   navbar-light sans-serif">
 
             <div class="container ">
-                <!-- Hier can word the hamburfer menu on small screen on right side  -->
-                <!-- <div class="position-relative d-flex w-100"> -->
-
 
                 <!-- Logo -->
                 <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
@@ -90,8 +106,6 @@
                         justify-content: center;">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
-
                 </div>
 
 
@@ -104,7 +118,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Onze diensten
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -128,6 +142,15 @@
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <!-- <div class="d-flex align-items-center justify-content-center">
+                                <a class="nav-link" href="<?= esc_url(home_url('/werkwijze')); ?>">Werkwijze</a>
+                                <div>
+                                    <a class="downarrow" aria-label="Go to the content" href="#Maaktuin">
+                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                            alt="downarrow Icon" class="downarrow-icon" />
+                                    </a>
+                                </div>
+                            </div> -->
                             <a class="nav-link" href="<?= esc_url(home_url('/werkwijze')); ?>">Werkwijze</a>
                         </li>
                         <li class="nav-item">
