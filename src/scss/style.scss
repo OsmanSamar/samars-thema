@@ -7,7 +7,7 @@
 
 @import "tailwindcss/utilities";
 
-@import url("https://fonts.googleapis.com/css2?family=Henderson+Sans&display=swap");
+@import url("https://use.typekit.net/tks8jzx.css");
 
 /* General styling */
 html,
@@ -24,10 +24,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-// body {
-//   font-family: "Henderson-sans-basic", sans-serif;
-// }
 
 body {
   background-color: #405f4f;
@@ -66,7 +62,7 @@ h3 {
 }
 
 p {
-  font-family: "Inclusive Sans", sans-serif;
+  font-family: "inclusive sans", "Henderson-sans-basic", sans-serif;
 }
 
 @media (max-width: 991.98px) {
@@ -97,3 +93,68 @@ p {
 @import "pages/contact";
 @import "pages/overons";
 @import "pages/login";
+
+// default en omhoog sliden
+.fadeIn {
+  opacity: 0 !important;
+  transform: translateY(10vh);
+  transition: all 0.5s ease;
+  transition-delay: 0;
+  transition-delay: var(--delay, 0);
+}
+
+// naar links
+.fadeIn[data-side="right"] {
+  transform: translate(10vh);
+}
+
+// naar rechts
+.fadeIn[data-side="left"] {
+  transform: translate(-10vh);
+}
+
+// naar beneden
+.fadeIn[data-side="down"] {
+  transform: translateY(-10vh);
+}
+
+.fadeIn.visible {
+  opacity: 1 !important;
+  transform: translate(0);
+}
+
+.fadeIn:nth-child(3n + 1) {
+  transition-delay: 75ms;
+}
+
+.fadeIn:nth-child(3n + 2) {
+  transition-delay: 0.15s;
+}
+
+.fadeIn:nth-child(3n + 3) {
+  transition-delay: 0.225s;
+}
+
+.fadeIn:nth-child(3n + 4) {
+  transition-delay: 0.3s;
+}
+
+.fadeIn:nth-child(3n + 5) {
+  transition-delay: 0.375s;
+}
+
+.fadeIn:nth-child(3n + 6) {
+  transition-delay: 0.45s;
+}
+
+.fadeIn:nth-child(3n + 7) {
+  transition-delay: 0.525s;
+}
+
+.fadeIn:nth-child(3n + 8) {
+  transition-delay: 0.6s;
+}
+
+.fadeIn:nth-child(3n + 9) {
+  transition-delay: 0.675s;
+}

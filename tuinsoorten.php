@@ -304,7 +304,7 @@
                         // </span>
                     <span class="" style="font-size:18px;">Tuinsoorten</span>
                 </div>
-                <h1 class="header ">Tuinsoorten</h1>
+                <h1 class="header fadeIn ">Tuinsoorten</h1>
             </div>
 
 
@@ -384,7 +384,7 @@
             <div id="landelijke tuin" class=" container " style=" margin-top: 300px">
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
-                    <div class="col-12 col-lg-6 mb-4">
+                    <div class="col-12 col-lg-6 mb-4 fadeIn ">
                         <div class="text-header">Landelijke tuin <span>-</span></div>
                         <div class="text">
                             <p>Een tuin met een natuurlijke uitstraling: dat is een landelijke tuin.
@@ -397,16 +397,16 @@
                                 gebruikt. </p>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
+                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
                         <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
                             alt="groenoverons" class="img1" />
                     </div>
                     <!-- 2nd Row: Two Images on LG, Stacked on SM -->
-                    <div class="col-12 col-lg-6 mb-4 text-center d-none  d-none d-md-none d-lg-flex">
+                    <div class="col-12 col-lg-6 mb-4 text-center d-none  d-none d-md-none d-lg-flex fadeIn">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
                             alt="groenoverons" class="img2" />
                     </div>
-                    <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex"><img
+                    <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex fadeIn"><img
                             src="<?= esc_url(get_template_directory_uri()); ?>/images/paarsflowers.png"
                             alt="Paarsflowers" class="img3" /></div>
                     <div class="lin3 d-none d-md-none d-lg-block"></div>
@@ -454,17 +454,17 @@
             <div id="moderne-tuin" class="container" style="margin-top: 80px">
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
-                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex"><img
+                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn"><img
                             src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
                             alt="Flower with droplets.png" class="img1" /></div>
 
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 ">
                         <div class="row soort-row">
                             <div class="col-2 justify-content-center d-flex ">
                                 <div class="border-left h-100"></div>
                             </div>
-                            <div class="col-lg-10 ">
+                            <div class="col-lg-10 fadeIn">
                                 <h2 class=" text-header">Moderne tuin</h2>
                                 <div class="text ">
                                     <p><span>Een moderne tuin heeft strakke lijnen, is
@@ -482,11 +482,11 @@
 
                     <!-- 2nd Row: Two -->
 
-                    <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex">
+                    <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex fadeIn ">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
                             alt="Houseinbackground" class="houseinbackground" />
                     </div>
-                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
+                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn ">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
                             alt="Beautifulpinkflowers" class="img2" />
                     </div>
@@ -521,10 +521,10 @@
 
     <!-- 3 -->
     <div class="container">
-        <div id="ecologische-tuin" class=" container" style="margin-top: 80px">
+        <div id="ecologische-tuin" class=" container " style="margin-top: 80px">
             <div class="row">
                 <!-- 1st Row: Text and Image on LG, Stacked on SM -->
-                <div class="col-12 col-lg-6 mb-4">
+                <div class="col-12 col-lg-6 mb-4 fadeIn">
                     <div class="text-header">Ecologische tuin <span>-</span></div>
                     <div class="text">
                         <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te
@@ -541,16 +541,16 @@
                             onkruid? Dat bestaat niet in een ecologische tuin! </p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="Scaled"
                         class="img1" />
                 </div>
                 <!-- 2nd Row: Two Images on LG, Stacked on SM -->
-                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/dutchgarden.png" alt="Dutch garden"
                         class="img2" />
                 </div>
-                <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex">
+                <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex fadeIn">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/gardeninsunlight.png"
                         alt="Gardeninsunlight" class="img3" />
                 </div>
@@ -593,7 +593,7 @@
         <div id="daktuin-of-dakterras" class="container" style="margin-top: 80px">
             <div class="row">
                 <!-- 1st Row: Text and Image on LG, Stacked on SM -->
-                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex"><img
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn"><img
                         src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
                         alt="Flower with droplets.png" class="img1" />
                 </div>
@@ -602,7 +602,7 @@
                         <div class="col-2 justify-content-center d-flex ">
                             <div class="border-left h-100"></div>
                         </div>
-                        <div class="col-lg-10 ">
+                        <div class="col-lg-10 fadeIn ">
                             <h2 class=" text-header">Daktuin of dakterras</h2>
                             <div class="text ">
                                 <p><span>Heb je geen tuin, maar wel een dakterras? Daar
@@ -614,11 +614,11 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex">
+                <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex fadeIn">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
                         alt="Houseinbackground" class="houseinbackground" />
                 </div>
-                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex">
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
                         alt="Beautifulpinkflowers" class="img2" />
                 </div>
@@ -662,7 +662,7 @@
 
 
     <!--Contact Information Section on Lg Screen  -->
-    <div class="container" style="margin-top:269px">
+    <div class="container fadeIn" style="margin-top:269px">
         <div class=" d-flex flex-lg-row    align-items-center justify-content-center d-none d-lg-flex"
             style="background-color:#2A3F31; border-radius: 50px; margin-top:40px; margin-bottom:40px;gap-20px; padding:20px ">
             <div class="d-flex justify-content-center justify-content-lg-start">
@@ -691,7 +691,7 @@
     <!-- Contact Information Section on Sm Screen  -->
     <div>
         <div style="background-color:#2A3F31; margin-top:40px; gap-20px; padding:20px "
-            class="row  flex-lg-row  d-flex flex-column align-items-center d-flex d-lg-none">
+            class="fadeIn row  flex-lg-row  d-flex flex-column align-items-center d-flex d-lg-none">
             <div class="col-12 col-lg-4 text-center text-lg-left" style="margin-top:20px; ">
                 <h2 style="font-size:36px;
                            padding-bottom: 39px;

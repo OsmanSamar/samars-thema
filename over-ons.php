@@ -350,7 +350,7 @@
                 <span class="last">Over ons</span>
             </div>
 
-            <div class="container bg-img mt-lg-auto mb-0">
+            <div class="container bg-img mt-lg-auto mb-0 fadeIn ">
                 <div class="position-relative">
                     <div class=" overlay" style=" border-radius: 10px;"></div>
                     <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/overons.png" alt="groentuinen"
@@ -397,7 +397,8 @@
 
 
                             <!-- 1st Column -->
-                            <div class="col-12 col-md-12 col-lg-5 order-2 order-lg-1 mb-4 mb-lg-0">
+                            <div class="col-12 col-md-12 col-lg-5 order-2 order-lg-1 mb-4 mb-lg-0 fadeIn "
+                                data-side="left">
                                 <div class="d-flex flex-column text-center align-items-center  ">
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
                                         alt="Groenoverons" class="groenoverons" />
@@ -405,7 +406,7 @@
                             </div>
                             <!--2nd Column -->
                             <div class="col-12 col-md-12 col-lg-7 ml-lg-4 order-1 order-lg-2 ">
-                                <div class="d-flex flex-column  text-left align-items-start ">
+                                <div class="d-flex flex-column  text-left align-items-start fadeIn  " data-side="right">
                                     <span class="text-header ">Vakkundig maatwerk <span
                                             style=" opacity: 0.3; ">-</span></span>
                                     <div class="text ">
@@ -430,13 +431,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- <div class="text d-lg-none d-flex flex-row  align-items-center ">
-                                            <div class="circle-border">
-                                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
-                                                    style="padding-left:;padding-right: ; font-size:18px;">kennismaken?</a>
-                                            </div>
-                                            <div class="nline"></div>
-                                        </div> -->
+
                                     </div>
 
                                     <div class="text d-lg-none d-flex flex-row  align-items-center "
@@ -469,7 +464,7 @@
 
             <div class="row">
                 <!-- Column Wrapper -->
-                <div class="">
+                <div class="fadeIn">
                     <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
                         <!-- py-5 -->
                         <div class="row gx-5">
@@ -504,7 +499,7 @@
             <div class="vl2 d-lg-none d-md-block"></div>
 
             <!-- Text Section -->
-            <div class="order-1 order-md-1 order-lg-2 ">
+            <div class="order-1 order-md-1 order-lg-2 fadeIn ">
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
                         <h2 style="font-size:36px;
@@ -647,7 +642,7 @@
 
                     <!-- Testimonials Section on Small Screen -->
                     <div class="row testimonials-section-sm d-md-none text-center2">
-                        <div class="col-sm-12 col-lg-4 testimonial">
+                        <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 75ms;">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                                 class="testimonial-img" />
                             <h1>Vakkundig maatwerk</h1>
@@ -655,14 +650,14 @@
                                     gemaakt</span></p>
 
                         </div>
-                        <div class="col-sm-12 col-lg-4 testimonial">
+                        <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 0.15s;">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
                                 class="testimonial-img w-84 h-126" />
                             <h1>Passie voor groen</h1>
                             <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
                                     natuur</span></p>
                         </div>
-                        <div class="col-sm-12 col-lg-4 testimonial">
+                        <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: .225s;">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
                                 class="testimonial-img" />
                             <h1>Écht out of the box</h1>
@@ -678,22 +673,22 @@
 
 
                 <!-- Testimonials Section on Large Screen -->
-                <div class="row testimonials-section d-none d-md-flex">
-                    <div class="col-sm-12 col-lg-4 testimonial">
+                <div class="row testimonials-section d-none d-md-flex ">
+                    <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 75ms;">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                             class="testimonial-img  w-84 h-126" />
                         <h1>Vakkundig maatwerk</h1>
                         <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
                                 gemaakt</span></p>
                     </div>
-                    <div class="col-sm-12 col-lg-4 testimonial">
+                    <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 0.15s;">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
                             class="testimonial-img  w-84 h-126" />
                         <h1>Passie voor groen</h1>
                         <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
                                 natuur</span></p>
                     </div>
-                    <div class="col-sm-12 col-lg-4 testimonial">
+                    <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: .225s;">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
                             class="testimonial-img  " />
                         <h1>Écht out of the box</h1>
@@ -706,7 +701,7 @@
 
         <!-- Contact Information Section on Lg Screen -->
 
-        <div class="container">
+        <div class="container fadeIn">
             <div class="  flex-lg-row  d-flex  align-items-center justify-content-center d-none d-lg-flex" style="background-color:#2A3F31; 
                 border-radius: 50px; 
                 margin-top:40px; margin-bottom:40px;
@@ -742,8 +737,8 @@
 
     <div>
 
-        <div style="background-color:#2A3F31; margin-top:40px; gap-20px; padding:20px "
-            class="row  flex-lg-row  d-flex flex-column align-items-center d-flex d-lg-none">
+        <div style="background-color:#2A3F31; margin-top:40px; gap-20px; padding:20px  "
+            class="fadeIn row  flex-lg-row  d-flex flex-column align-items-center d-flex d-lg-none">
 
 
             <div class="col-12 col-lg-4 text-center text-lg-left" style="margin-top:20px; ">

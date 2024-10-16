@@ -48,7 +48,7 @@
         <section class="hero">
             <div class="hero-content">
                 <div class="col-12  col-lg-12  pe-0 pe-lg-5">
-                    <h1>
+                    <h1 class="fadeIn " data-side="right" style="transition-delay: .25s;">
                         <span class="d-lg-none d-block">
                             <span style="--i:1;">Tuinen</span> <br> <span style="--i:2;">precies</span> <span
                                 style="--i:3;">zoals</span> <br> <span style="--i:4;">geplant</span>
@@ -65,7 +65,7 @@
 
 
 
-                <div>
+                <div class="fadeIn">
                     <div class="button-line-container">
                         <div class="button-group">
                             <div class="circle-border">
@@ -112,7 +112,7 @@
                 <div class="row  g-4">
 
                     <!-- Left side: Text  -->
-                    <div class="col-lg-3   text-section" style="margin-top:8px;">
+                    <div class="col-lg-3 text-section  fadeIn" style="margin-top:8px;" data-side="left">
                         <h1 style="font-size: 40px;
                          font-family: Henderson-sans-basic, sans-serif;">
                             Maak van jouw tuin een bijzondere plek om te zijn.</h1>
@@ -174,7 +174,7 @@
 
                     <!-- Right  side: Images on Bige Screen  -->
                     <div class="container col-lg-9 images-section2 ">
-                        <div class="row2">
+                        <div class="row2  fadeIn" data-side="right">
                             <div class="column1">
                                 <img class="backyardgarden"
                                     src="<?= esc_url(get_template_directory_uri()); ?>/images/69scaled.jpg"
@@ -229,7 +229,7 @@
 
 
                     <!-- Testimonials Section on Small Screen -->
-                    <div class="row testimonials-section-sm d-md-none text-center2">
+                    <div class="row testimonials-section-sm d-md-none text-center2  fadeIn">
                         <div class="col-12 col-lg-3 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                                 class="testimonial-img" />
@@ -268,21 +268,21 @@
 
                 <!-- Testimonials Section on Large Screen -->
                 <div class="row testimonials-section d-none d-md-flex">
-                    <div class="col-sm-12 col-lg-4 testimonial">
+                    <div class="col-sm-12 col-lg-4 testimonial fadeIn">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                             class="testimonial-img  w-84 h-126" />
                         <h1>Vakkundig maatwerk</h1>
                         <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
                                 gemaakt</span></p>
                     </div>
-                    <div class="col-sm-12 col-lg-4 testimonial">
+                    <div class="col-sm-12 col-lg-4 testimonial fadeIn">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
                             class="testimonial-img  w-84 h-126" />
                         <h1>Passie voor groen</h1>
                         <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
                                 natuur</span></p>
                     </div>
-                    <div class="col-sm-12 col-lg-4 testimonial">
+                    <div class="col-sm-12 col-lg-4 testimonial fadeIn">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
                             class="testimonial-img  " />
                         <h1>Écht out of the box</h1>
@@ -319,12 +319,8 @@
                 overflow: hidden;
                 position: absolute;
                 bottom: -129px;
-                /* bottom: -50px; */
                 transform: translate(50%, 50%);
-                /* position: fixed; */
                 right: 0;
-                /* right: 0; */
-                /* Position it at the right edge */
                 transform: translateY(-50%);
                 color: #fff;
                 border-radius: 50%;
@@ -447,7 +443,7 @@
 
 
         <!-- Full-Width Swiper Slider -->
-        <div class="swiper-container-fullwidth"
+        <div class="swiper-container-fullwidth  "
             style="position: relative; margin-bottom:70px; width: 100vw; left: 50%; transform: translateX(-50%);">
 
             <!-- Circle On The Right Side Of Projecten Slider -->
@@ -558,7 +554,7 @@
             <div class="container mt-50 d-none d-lg-block">
                 <div class="bottom-text">
                     <div class="row">
-                        <div class="col-lg-6  position-relative fadeIn visible" data-side="left">
+                        <div class="col-lg-6  position-relative fadeIn " data-side="left">
                             <div class="grid-bottom">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
                                     class="w-100 h-100 object-fit-cover rounded" alt="">
@@ -568,7 +564,7 @@
                                     class="w-100 h-100 object-fit-cover rounded" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-1 fadeIn visible" data-side="right">
+                        <div class="col-lg-5 offset-lg-1 fadeIn" data-side="right">
                             <h2>Enthousiast?<br> Laat het ons weten</h2>
                             <div class="col-lg-9">
                                 <div class="text">
@@ -630,7 +626,7 @@
     <div>
 
         <div style="background-color:; margin-top:120px; gap-20px; padding:20px; "
-            class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
+            class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none fadeIn" data-side="right">
             <div class="line-top"></div>
 
 

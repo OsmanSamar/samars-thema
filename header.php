@@ -56,19 +56,6 @@
 
 
 
-    <!-- Dropdown Menu -->
-    <script>
-    document.addEventListener('click', function(event) {
-        var isDropdownButton = event.target.matches('[data-bs-toggle="dropdown"]');
-        var dropdowns = document.querySelectorAll('.dropdown-menu.show');
-
-        if (!isDropdownButton) {
-            dropdowns.forEach(function(dropdown) {
-                dropdown.classList.remove('show');
-            });
-        }
-    });
-    </script>
 
 
 
@@ -81,18 +68,18 @@
     <?php wp_body_open(); ?>
     <header>
 
-        <nav class="navbar navbar-expand-lg   navbar-light sans-serif">
+        <nav class="navbar navbar-expand-lg   navbar-light sans-serif fadeIn ">
 
-            <div class="container ">
+            <div class="container  ">
 
                 <!-- Logo -->
-                <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
+                <a class="navbar-brand " href="<?= esc_url(home_url('/')); ?>">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenlogo.png"
                         alt="<?php bloginfo('name'); ?>" />
                 </a>
 
                 <!-- Hamburger button for mobile -->
-                <div class="d-lg-none " style="border-radius: 9999px; 
+                <div class="d-lg-none  " style="border-radius: 9999px; 
                             border: 1px solid #ffffff;">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -113,7 +100,7 @@
 
 
                 <!-- Navigation Menu -->
-                <div class="collapse navbar-collapse justify-content-lg-end justify-content-start"
+                <div class="collapse navbar-collapse justify-content-lg-end justify-content-start  "
                     id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
@@ -178,7 +165,7 @@
                 </div>
 
                 <!-- Button on the Right side (visible only on large screens) -->
-                <div class="circle-border d-none d-lg-block ms-auto">
+                <div class="circle-border d-none d-lg-block ms-auto ">
                     <div class="d-none d-lg-block ms-auto  ">
                         <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Contact</a>
                     </div>
