@@ -418,7 +418,7 @@
             <div class="container d-lg-grid d-none  " style="margin-top: 140px">
                 <div class="row ">
 
-                    <div class="col-12 col-lg-5 mb-4 ">
+                    <div class="col-12 col-lg-5 mb-4 fadeIn ">
                         <div class="text-header ">Projecten</div>
                         <div class="text d-lg-flex flex-row  align-items-center">
                             <div class="circle-border">
@@ -430,19 +430,19 @@
 
 
 
-                        <div class="grid-item " style="grid-row: span 2;  margin-top:140px; ">
+                        <div class="grid-item fadeIn " style="grid-row: span 2;  margin-top:140px; ">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
                                 class="object-fit-cover rounded" style="height:400px;" />
 
                         </div>
-                        <div class="grid-item mt-4" style="grid-row: span 2;  ">
+                        <div class="grid-item mt-4 fadeIn" style="grid-row: span 2;  ">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled13"
                                 class="object-fit-cover rounded" style="height:900px;" />
 
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-7 mb-4 text-center.grid-7 ">
+                    <div class="col-12 col-lg-7 mb-4 text-center.grid-7 fadeIn">
                         <div class="container-circle" style="position: relative;">
 
                             <!-- Circle On The Right Side Of Projecten Slider -->
@@ -462,9 +462,9 @@
                                     ?>
                                 </div>
                             </a>
-                            <div class=" img-wrap">
+                            <div class=" img-wrap ">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded " style="opacity:0.7;" />
+                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded  " style="opacity:0.7;" />
 
                                 <div class="middle1">
 
@@ -489,8 +489,8 @@
                         </div>
 
                         <div class="grid-7 mt-4">
-                            <div class="row me-0">
-                                <div class="col-12">
+                            <div class="row me-0 ">
+                                <div class="col-12 ">
                                     <div class="container-circle" style="position: relative;">
 
 
@@ -537,24 +537,24 @@
 
                                     </div>
 
-                                    <div class="grid-item  ratio ratio-custom mt-4" style="--x:53;--y:67;">
+                                    <div class="grid-item  ratio ratio-custom mt-4 " style="--x:53;--y:67;">
                                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
                                             alt="scaled19" class="object-fit-cover rounded"
                                             style="height:; width:; margin-left:; " />
                                     </div>
                                 </div>
                             </div>
-                            <div class="row ms-0">
-                                <div class="col-12">
+                            <div class="row ms-0 fadeIn">
+                                <div class="col-12 ">
 
-                                    <div class="grid-item ratio ratio-custom" style="--x:39;--y:53;">
+                                    <div class="grid-item ratio ratio-custom " style="--x:39;--y:53;">
                                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg"
                                             alt="scaled5" class="object-fit-cover rounded"
                                             style="height:; width:; margin-left:;" />
                                     </div>
 
 
-                                    <div class="container-circle" style="position: relative;">
+                                    <div class="container-circle " style="position: relative;">
 
                                         <!-- Circle On The Right Side Of Projecten Slider -->
                                         <a href="/projecten" id="demo2" class="circle text-circle">
@@ -618,12 +618,12 @@
 
 
     </div>
-    <div class="container d-flex d-lg-none  align-items-center">
+    <div class="container d-flex d-lg-none  align-items-center ">
         <div class="col-12 text-center">
-            <div class="text-header ">Projecten</div>
+            <div class="text-header fadeIn ">Projecten</div>
 
-            <div class="vlsm"></div>
-            <div class="text" style="margin-top:120px;">
+            <div class="vlsm fadeIn"></div>
+            <div class="text fadeIn" style="margin-top:120px;">
                 <div class="circle-border">
                     <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
                         style="padding-left: 40px;padding-right: 40px; font-size:18px;">Tuin op maat</a>
@@ -635,7 +635,7 @@
 
 
     <!-- The first swiper  -->
-    <div class="container" style="margin-bottom:80px;">
+    <div class="container fadeIn" style="margin-bottom:80px;">
 
         <!-- Swiper On Small Screen -->
         <div class="swiper-container" style="--swiper-pagination-color: #fff">
@@ -669,7 +669,7 @@
 
 
     <!-- The second swiper -->
-    <div class="container" style="margin-bottom:80px;">
+    <div class="container fadeIn" style="margin-bottom:80px;">
 
         <div class="swiper-container" style="--swiper-pagination-color: #fff">
 
@@ -706,7 +706,7 @@
 
     <!-- The third swiper -->
 
-    <div class="container" style="margin-bottom:80px;">
+    <div class="container fadeIn" style="margin-bottom:80px;">
 
 
         <div class="swiper-container" style="--swiper-pagination-color: #fff">
@@ -756,7 +756,7 @@
         <div class="container d-none d-lg-block" style="margin-top:60px;">
             <div class="bottom-text">
                 <div class="row">
-                    <div class="col-lg-6  position-relative fadeIn visible" data-side="left">
+                    <div class="col-lg-6  position-relative fadeIn " data-side="left">
                         <div class="grid-bottom">
 
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
@@ -769,7 +769,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-5 offset-lg-1 fadeIn visible" data-side="right">
+                    <div class="col-lg-5 offset-lg-1 fadeIn " data-side="right">
                         <h2>Enthousiast?<br> Neem contact op!</h2>
                         <div class="col-lg-9">
                             <div class="text">
@@ -802,8 +802,8 @@
     <div class="container">
 
         <div class="line-top d-block d-lg-none"></div>
-        <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
-            class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
+        <div style="background-color:; margin-top:40px; gap-20px; padding:20px;  "
+            class="row  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none fadeIn" data-side="right">
             <!-- <div class="line-top"></div> -->
 
 
