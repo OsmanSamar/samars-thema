@@ -316,7 +316,7 @@
 
         .slider-text-button-container-right {
             position: absolute;
-            bottom: -38px;
+            bottom: -55px;
             right: 0px;
             width: 100%;
             /* Add padding from edges */
@@ -327,9 +327,21 @@
 
         .line-before {
             border: 1px #fff solid;
-            width: 100%;
+            width: 39%;
             height: 1px;
         }
+    }
+
+    /* 'md': '768px', */
+    @media (min-width: 768px) {
+
+        .line-before {
+            border: 1px #fff solid;
+            /* width: 100%; */
+            width: 67%;
+            height: 1px;
+        }
+
     }
 
 
@@ -591,7 +603,7 @@
                                 <div class="line-before"></div>
                                 <div class="circle-border">
                                     <a class="btn btn-secondary" href="/contact"
-                                        style="padding: 8px 12px; white-space: nowrap;  min-width: 120px;">Bekijk
+                                        style="padding: 8px 12px; white-space: nowrap;  min-width: 160px; font-size:16px; text-align:center;">Bekijk
                                         projecten</a>
                                 </div>
                             </div>
@@ -603,12 +615,13 @@
                             alt="Image 2">
                         <!-- Overlay Text and Button -->
                         <div class="slider-text-button-container d-flex d-lg-none">
-                            <div class="text">Tuinonderhoud in Ede</div>
+                            <div class="text">Tuin onderhoud in Ede</div>
                             <div
                                 class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                 <div class="line-before"></div>
                                 <div class="circle-border">
-                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
+                                    <a class="btn btn-secondary" href="/contact"
+                                        style="padding: 8px 12px; white-space: nowrap;  min-width: 160px; font-size:16px; text-align:center;">Bekijk
                                         projecten</a>
                                 </div>
                             </div>
@@ -626,7 +639,8 @@
                                 class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                 <div class="line-before"></div>
                                 <div class="circle-border">
-                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
+                                    <a class="btn btn-secondary" href="/contact"
+                                        style="padding: 8px 12px; white-space: nowrap;  min-width: 160px; font-size:16px; text-align:center;">Bekijk
                                         projecten</a>
                                 </div>
                             </div>
