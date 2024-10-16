@@ -756,10 +756,11 @@ main {
   color: #334b3b;
   background-color: #f5a287;
 }
-
-/* Show the dropdown menu on hover */
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
+@media screen and (min-width: 992px) {
+  /* Show the dropdown menu on hover */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
 
 /* Main Style */
