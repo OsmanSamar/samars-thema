@@ -3,30 +3,129 @@
 
 <main class="flex-grow-1">
     <style>
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: 1600px;
-        }
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 1600px;
+    }
 
 
-        .bg-img {
-            position: relative;
-            text-align: center;
-            color: #F8F4EA;
-            font-weight: bold;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-top: auto;
-            margin-bottom: 0;
-            background-size: cover;
+    .bg-img {
+        position: relative;
+        text-align: center;
+        color: #F8F4EA;
+        font-weight: bold;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: auto;
+        margin-bottom: 0;
+        background-size: cover;
 
-        }
+    }
+
+    .content {
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .bottom-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .groentuinen {
+        display: block;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 63vh
+    }
+
+    /* 'Md Screen': '768px', */
+
+    @media (min-width: 768px) {
+        /* .groentuinen {
+            display: block;
+            object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+            height: 34vh
+        } */
+    }
+
+
+    .line-left {
+        background-color: #fff;
+        opacity: .5;
+        width: 1px;
+    }
+
+    .flex-container {
+        text-align: center;
+    }
+
+
+
+    .text-header {
+
+        font-size: 31px;
+
+        margin-bottom: 48px;
+
+    }
+
+    .text {
+        font-size: 20px;
+
+        margin-bottom: 48px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        line-height: 70px;
+        font-weight: bold;
+    }
+
+    .content p {
+
+        font-size: 15px;
+        line-height: 20px;
+
+    }
+
+    .down {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        width: 45px;
+        cursor: pointer;
+    }
+
+    .groenoverons {
+        width: 100%;
+        /* height: 823px; */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+
+
+
+    /* MD Screens */
+    @media (min-width: 768px) {
 
         .content {
             position: absolute;
-            top: 62%;
+            /* top: 50%; */
+            top: 73%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
@@ -34,188 +133,97 @@
             color: white;
         }
 
-        .bottom-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-        }
 
         .groentuinen {
             display: block;
             object-fit: cover;
             border-radius: 10px;
             width: 100%;
-            height: 63vh
+            height: 34vh
+        }
+    }
+
+
+    @media (min-width: 992px) {
+
+        .groentuinen {
+            display: block;
+            object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+            height: 566px;
         }
 
-        /* 'md': '768px', */
-        @media (min-width: 768px) {
-            .groentuinen {
-                display: block;
-                object-fit: cover;
-                border-radius: 10px;
-                width: 100%;
-                height: 34vh
-            }
 
-
-
+        /* Hide arrow on large screens */
+        .down {
+            display: none;
         }
 
-        .text-header {
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: white;
 
-            font-size: 31px;
-
-            margin-bottom: 48px;
-
-        }
-
-        .text {
-            font-size: 20px;
-
-            margin-bottom: 48px;
         }
 
         .content h1 {
-            font-size: 24px;
-            line-height: 70px;
-            font-weight: bold;
+
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 125px;
         }
 
         .content p {
 
-            font-size: 15px;
-            line-height: 20px;
+            font-size: 20px;
+            line-height: 35px;
 
-        }
-
-        .down {
-            display: inline-block;
-            transition: transform 0.3s ease;
-            width: 45px;
-            cursor: pointer;
         }
 
         .groenoverons {
-
-            width: 100%;
-            /* height: 823px; */
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-
-        .border-left {
-            /* display: none; */
-
-        }
-
-        /* MD Screens */
-        @media (min-width: 768px) {
-
-            .content {
-                position: absolute;
-                /* top: 50%; */
-                top: 73%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                text-align: center;
-                color: white;
-            }
-        }
-
-
-        @media (min-width: 992px) {
-
-            .groentuinen {
-                display: block;
-                object-fit: cover;
-                border-radius: 10px;
-                width: 100%;
-                height: 566px;
-            }
-
-
-            /* Hide arrow on large screens */
-            .down {
-                display: none;
-            }
-
-            .content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                text-align: center;
-                color: white;
-
-            }
-
-            .content h1 {
-
-                font-size: 90px;
-                font-weight: 700;
-                line-height: 125px;
-            }
-
-            .content p {
-
-                font-size: 20px;
-                line-height: 35px;
-
-            }
-
-            .groenoverons {
-                height: 823px;
-            }
-
-
-            .border-left {
-                display: flex;
-                height: 100%;
-                border-left: 1px solid #ffffff;
-                padding-right: 10px;
-                /* opacity: .5; */
-            }
-
-            /* .nextline {
-            opacity: .5;
-            border: 1px solid #ffffff;
-            width: 53%;
-            display: inline-flex;
-        } */
+            height: 722px;
+            width: 511px;
         }
 
 
 
-        @media (min-width: 768px) {
-            .line2 {
-                height: 1px;
-                width: 52vw;
-                background-color: #ffffff;
-                color: #ffffff;
-                position: relative;
-                margin-right: 10px;
-                display: block;
-            }
 
-            .line3 {
-                height: 1px;
-                width: 50%;
-                background-color: #ffffff;
-                color: #ffffff;
-
-            }
-
-
-
-
-            .border-left {}
+        .flex-container {
+            text-align: left;
         }
+    }
+
+
+
+    @media (min-width: 768px) {
+        .line2 {
+            height: 1px;
+            width: 52vw;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            margin-right: 10px;
+            display: block;
+        }
+
+        .line3 {
+            height: 1px;
+            width: 50%;
+            background-color: #ffffff;
+            color: #ffffff;
+
+        }
+
+
+
+
+        .border-left {}
+    }
     </style>
     <div class="bg-leaf ">
 
@@ -276,254 +284,188 @@
         <div class="text-lg-start text-center" id="content">
             <div class="container">
                 <div class="row">
+                    <div class="col-12 col-md-12 col-lg-5 mx-auto mt-5 my-lg-5 py-5">
+                        <div class="d-flex flex-column  text-left align-items-start gap-4 ">
+                            <div class="" style="">
+                                <h2 class=" text-header">Hoe wij
+                                    te werk gaan
+                                    <span style="font-weight:100; cursor:pointer;  opacity: .5; width:20px;">-
+                                    </span>
+                                </h2>
+                                <div class=" text d-flex flex-column align-items-center ">
+                                    <p class="content1">
+                                        We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven. Je
+                                        geeft aan welke stijl je mooi vindt en laat indien mogelijk een
+                                        moodboard zien.
+                                        We kijken hoe de stijl in je woning is, zodat we deze kunnen doorvoeren
+                                        in je tuin. Wij vertellen wat we voor je kunnen betekenen en meten je
+                                        tuin in.
+                                        <span class="more-text d-none">Vervolgens gaan we aan de slag met het
+                                            ontwerp van je tuin. Dit doen we op basis van alle input uit het
+                                            eerste gesprek.
+                                            We maken een offerte voor het realiseren van je droomtuin.</span>
+                                    </p>
+                                    <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
 
-
-                    <!-- Column Wrapper -->
-
-                    <div class=" col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
-                        <div class="row gx-5">
-                            <!--1st Column -->
-                            <div class="col-12 col-md-12 col-lg-6">
-                                <div class="d-flex flex-column  text-left align-items-start gap-4 ">
-                                    <div class="" style="">
-                                        <h2 class=" text-header">Hoe wij
-                                            te werk gaan
-                                            <span style="font-weight:100; cursor:pointer;  opacity: .5; width:20px;">-
-                                            </span>
-                                        </h2>
-                                        <div class=" text d-flex flex-column align-items-center ">
-                                            <p class="content1">
-                                                We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven. Je
-                                                geeft aan welke stijl je mooi vindt en laat indien mogelijk een
-                                                moodboard zien.
-                                                We kijken hoe de stijl in je woning is, zodat we deze kunnen doorvoeren
-                                                in je tuin. Wij vertellen wat we voor je kunnen betekenen en meten je
-                                                tuin in.
-                                                <span class="more-text d-none">Vervolgens gaan we aan de slag met het
-                                                    ontwerp van je tuin. Dit doen we op basis van alle input uit het
-                                                    eerste gesprek.
-                                                    We maken een offerte voor het realiseren van je droomtuin.</span>
-                                            </p>
-                                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-
-                                                <span class="arrow fas fa-angle-down down-arrow">
-                                                </span>
-                                            </a>
-                                        </div>
-
-                                        <div class=" circle-border">
-                                            <a href="<?= esc_url(home_url('/contact')); ?>"
-                                                class="btn btn-primary">Samen aan de slag</a>
-                                        </div>
-
-                                        <style>
-                                            .down-arrow {
-                                                font-size: 24px;
-                                                color: white;
-                                            }
-
-                                            .up-arrow {
-                                                font-size: 24px;
-                                                color: white;
-
-                                            }
-                                        </style>
-
-
-
-                                        <script>
-                                            $(document).ready(function () {
-                                                $('.read-more-toggle').click(function (e) {
-                                                    e.preventDefault();
-                                                    var moreText = $(this).prev('.content1').find(
-                                                        '.more-text');
-
-
-                                                    // Toggle visibility of additional text
-                                                    moreText.toggleClass('d-none');
-
-
-                                                    // Toggle arrow icon
-                                                    if (moreText.hasClass('d-none')) {
-                                                        $(this).html(
-                                                            '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                                                        );
-                                                    } else {
-                                                        $(this).html(
-                                                            '<span class="arrow fas fa-angle-up up-arrow" > </span>'
-                                                        );
-                                                    }
-
-                                                    // Add or remove active class for arrow animation
-                                                    $(this).toggleClass('active');
-                                                });
-                                            });
-                                        </script>
-
-                                    </div>
-
-
-                                    <div class="">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ontwerptuin.png"
-                                            alt="Ontwerptuin" class="" style="object-fit: cover; width:100% ;" />
-                                    </div>
-                                    <div>
-
-
-                                        <div
-                                            class=" d-lg-flex flex-row align-items-center justify-content-center gap-3">
-                                            <h2 class="text-header   ">Wat je krijgt</h2>
-
-
-
-                                            <div class="line3  d-none d-lg-block "></div>
-
-                                        </div>
-
-                                        <div class=" text d-flex flex-column align-items-center ">
-                                            <p class="content1 ">
-                                                Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
-                                                ontwerpen
-                                                jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
-                                                eerlijke
-                                                en
-                                                vaste prijs. Ook maken we samen afspraken over de planten in je
-                                                tuin.<span class="more-text d-none">Zo weet je precies waar je
-                                                    aan toe
-                                                    bent.</span> </p>
-                                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-
-                                                <span class="arrow fas fa-angle-down "
-                                                    style='font-size:24px;color:white'></span>
-                                            </a>
-                                        </div>
-
-                                        <div class=" circle-border">
-                                            <a href="<?= esc_url(home_url('/projecten')); ?>"
-                                                class="btn btn-primary">Bekijk onze
-                                                projecten</a>
-                                        </div>
-                                    </div>
-
-
+                                        <span class="arrow fas fa-angle-down down-arrow">
+                                        </span>
+                                    </a>
                                 </div>
-                            </div>
-                            <!-- Line Betwwen Cols -->
 
-                            <!-- <div class="vl  col-lg-1 order-2 d-none d-lg-flex"> </div> -->
-
-                            <!-- 2nd  Column  mb-4 mb-lg-0-->
-                            <!-- <div class="border-left">
-                                <div class="col-12 col-md-12 col-lg-6  ">
-                                    <div class="d-flex flex-column text-left align-items-start gap-4">
-
-
-
-                                        <div>
-                                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
-                                                alt="Groenoverons" class="" style="object-fit: cover; width:100% ;" />
-                                        </div>
-
-                                        <div>
-                                            <h2 class="text-header ">Wat je krijgt <span>-</span></h2>
-                                            <div class="text ">
-                                                <p>Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
-                                                    ontwerpen
-                                                    jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
-                                                    eerlijke
-                                                    en
-                                                    vaste prijs. Ook maken we samen afspraken over de planten in je
-                                                    tuin. Zo
-                                                    weet je precies waar je aan toe bent.
-                                                </p>
-
-                                                <div class="circle-border">
-                                                    <a href="#" class="btn btn-secondary">Over duurzaamheid</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijzetuin.png"
-                                                alt="Werkwijzetuin" class="" style="object-fit: cover; width:100% ;" />
-                                        </div>
-                                    </div>
+                                <div class=" circle-border">
+                                    <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Samen aan de
+                                        slag</a>
                                 </div>
-                            </div> -->
+
+                                <style>
+                                .down-arrow {
+                                    font-size: 24px;
+                                    color: white;
+                                }
+
+                                .up-arrow {
+                                    font-size: 24px;
+                                    color: white;
+
+                                }
+                                </style>
 
 
 
+                                <script>
+                                $(document).ready(function() {
+                                    $('.read-more-toggle').click(function(e) {
+                                        e.preventDefault();
+                                        var moreText = $(this).prev('.content1').find(
+                                            '.more-text');
 
 
-                            <div class="col-12 col-md-12 col-lg-6  border-left  ">
-                                <!-- border-left -->
-                                <div class="d-flex flex-column text-left align-items-start gap-4">
-                                    <div>
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
-                                            alt="Groenoverons" class="groenoverons"
-                                            style="object-fit: cover; width:100% ;" />
-                                    </div>
+                                        // Toggle visibility of additional text
+                                        moreText.toggleClass('d-none');
 
-                                    <div>
-                                        <h2 class="text-header ">Ontwerp van jouw tuin</h2>
-                                        <div class="text d-flex flex-column align-items-center">
-                                            <p class="content1">Vervolgens gaan we aan de slag met het ontwerp
-                                                van
-                                                je
-                                                tuin. Dit doen
-                                                we
-                                                op
-                                                basis van alle input uit het eerste gesprek. We maken een
-                                                offerte
-                                                voor
-                                                het
-                                                realiseren van je droomtuin.
 
-                                                We presenteren het ontwerp en bespreken de mogelijkheden en de
-                                                kosten
-                                                met
-                                                je.<span class="more-text d-none">Zijn we het eens en is de
-                                                    offerte akkoord? Dan spreken
-                                                    we af
-                                                    wanneer
-                                                    we
-                                                    voor je aan de slag gaan.</span>
-                                            </p>
-                                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-                                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/arrow.svg"
-                                                                                                                        alt="down arrow" class="arrow-icon down"> -->
-                                                <span class="arrow fas fa-angle-down "
-                                                    style='font-size:24px;color:white'></span>
-                                            </a>
-                                        </div>
+                                        // Toggle arrow icon
+                                        if (moreText.hasClass('d-none')) {
+                                            $(this).html(
+                                                '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                                            );
+                                        } else {
+                                            $(this).html(
+                                                '<span class="arrow fas fa-angle-up up-arrow" > </span>'
+                                            );
+                                        }
 
-                                        <div class="circle-border">
-                                            <a href="/duurzaamheid" class="btn btn-secondary">Over duurzaamheid</a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijzetuin.png"
-                                            alt="Werkwijzetuin" class="" style="object-fit: cover; width:100% ;" />
-                                    </div>
-                                </div>
+                                        // Add or remove active class for arrow animation
+                                        $(this).toggleClass('active');
+                                    });
+                                });
+                                </script>
+
                             </div>
 
 
+                            <div class="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ontwerptuin.png"
+                                    alt="Ontwerptuin" class="" style="object-fit: cover; width:100% ;" />
+                            </div>
+                            <div>
 
 
+                                <div class=" d-lg-flex flex-row align-items-center justify-content-center gap-3">
+                                    <h2 class="text-header   ">Wat je krijgt</h2>
+                                    <div class="line3  d-none d-lg-block "></div>
+                                </div>
 
+                                <div class=" text d-flex flex-column align-items-center ">
+                                    <p class="content1 ">
+                                        Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
+                                        ontwerpen
+                                        jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
+                                        eerlijke
+                                        en
+                                        vaste prijs. Ook maken we samen afspraken over de planten in je
+                                        tuin.<span class="more-text d-none">Zo weet je precies waar je
+                                            aan toe
+                                            bent.</span> </p>
+                                    <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
 
+                                        <span class="arrow fas fa-angle-down "
+                                            style='font-size:24px;color:white'></span>
+                                    </a>
+                                </div>
 
+                                <div class=" circle-border">
+                                    <a href="<?= esc_url(home_url('/projecten')); ?>" class="btn btn-primary">Bekijk
+                                        onze
+                                        projecten</a>
+                                </div>
+                            </div>
 
 
                         </div>
+                    </div>
 
+                    <!-- Left Coulumn -->
+                    <div class="col-12 col-md-12 col-lg-6  mx-auto mt-5 my-lg-5 py-5  flex-container   ">
+                        <div class="row pb-lg-5 pb-0">
+                            <div class="col-2">
+                                <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
+                            </div>
+
+                            <div class="d-flex flex-column text-left align-items-start gap-4 col-lg-9  mt-lg-1 mt-1">
+                                <div>
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
+                                        alt="Groenoverons" class="groenoverons"
+                                        style="object-fit: cover; width:100% ;" />
+                                </div>
+
+                                <div>
+                                    <h2 class="text-header ">Ontwerp van jouw tuin</h2>
+                                    <div class="text d-flex flex-column align-items-center">
+                                        <p class="content1">Vervolgens gaan we aan de slag met het ontwerp
+                                            van
+                                            je
+                                            tuin. Dit doen
+                                            we
+                                            op
+                                            basis van alle input uit het eerste gesprek. We maken een
+                                            offerte
+                                            voor
+                                            het
+                                            realiseren van je droomtuin.
+
+                                            We presenteren het ontwerp en bespreken de mogelijkheden en de
+                                            kosten
+                                            met
+                                            je.<span class="more-text d-none">Zijn we het eens en is de
+                                                offerte akkoord? Dan spreken
+                                                we af
+                                                wanneer
+                                                we
+                                                voor je aan de slag gaan.</span>
+                                        </p>
+                                        <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+
+                                            <span class="arrow fas fa-angle-down "
+                                                style='font-size:24px;color:white'></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="circle-border">
+                                        <a href="/duurzaamheid" class="btn btn-secondary">Over duurzaamheid</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijzetuin.png"
+                                        alt="Werkwijzetuin" class="" style="object-fit: cover; width:100% ;" />
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
 
 
         <!-- New Section after the text section -->
@@ -537,14 +479,10 @@
                     <div class="col-lg-5 text-left  d-lg-none order-2">
                         <p style="font-size:31px;">Waarom GroenTuinen?</p>
                     </div>
-
-
-
                     <div class="title d-none d-lg-flex align-items-center gap-3">
                         <h2 class="mb-0" style="font-size:32px ">Waarom
                             GROENtuinen?</h2>
                         <div class="line2 between d-none d-lg-block"></div>
-
                     </div>
 
 
@@ -555,60 +493,70 @@
                                 class="testimonial-img" />
                             <h1>Vakkundig maatwerk</h1>
                             <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
-                                    gemaakt</span></p>
-
+                                    gemaakt
+                                </span>
+                            </p>
                         </div>
-                        <div class="col-sm-12  col-lg-4 testimonial">
+
+                        <div class="col-12  col-lg-4 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
                                 class="testimonial-img w-84 h-126" />
                             <h1>Passie voor groen</h1>
                             <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
-                                    natuur</span></p>
+                                    natuur
+                                </span>
+                            </p>
                         </div>
-                        <div class="col-sm-12  col-lg-4 testimonial">
+                        <div class="col-12  col-lg-4 testimonial">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
                                 class="testimonial-img" />
                             <h1>Écht out of the box</h1>
                             <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
-                                    aanleg</span></p>
+                                    aanleg
+                                </span>
+                            </p>
                         </div>
                     </div>
-
-
-
                 </div>
 
 
 
                 <!-- Testimonials Section on Large Screen -->
                 <div class="row testimonials-section d-none d-md-flex">
-                    <div class="col-sm-12  col-lg-4 testimonial">
+                    <div class="col-12  col-lg-4 testimonial">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                             class="testimonial-img  w-84 h-126" />
                         <h1>Vakkundig maatwerk</h1>
                         <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
-                                gemaakt</span></p>
+                                gemaakt
+                            </span>
+                        </p>
                     </div>
-                    <div class="col-sm-12  col-lg-4 testimonial">
+                    <div class="col-sm-12   col-lg-4 testimonial">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
                             class="testimonial-img  w-84 h-126" />
                         <h1>Passie voor groen</h1>
                         <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
-                                natuur</span></p>
+                                natuur
+                            </span>
+                        </p>
                     </div>
-                    <div class="col-sm-12  col-lg-4 testimonial">
+                    <div class="col-sm-12   col-lg-4 testimonial">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
                             class="testimonial-img  " />
                         <h1>Écht out of the box</h1>
                         <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
-                                aanleg</span></p>
+                                aanleg
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Information Section on Lg Screen -->
 
+
+        <!-- Contact Information Section on Lg Screen -->
         <div class="container">
             <div class="  flex-lg-row  d-flex  align-items-center justify-content-center d-none d-lg-flex"
                 style="background-color:#2A3F31; border-radius: 50px; margin-top:40px; margin-bottom:40px;gap-20px; padding:20px ">
@@ -639,17 +587,15 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
 
-    </div>
-    </div>
+
     <!-- Contact Information Section on Sm Screen -->
-
     <div>
 
         <div style="background-color:#2A3F31; margin-top:40px; gap-20px; padding:20px "
             class="row  flex-lg-row  d-flex flex-column align-items-center d-flex d-lg-none">
-
-
             <div class="col-12 col-lg-4 text-center text-lg-left" style="margin-top:20px; ">
                 <h2 style="font-size:36px;
                 padding-bottom: 39px; 
@@ -659,6 +605,7 @@
                     op!
                 </h2>
             </div>
+
             <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column justify-content-center justify-content-lg-start "
                 style="margin-bottom:70px">
                 <div class="circle-border ">
@@ -666,9 +613,11 @@
                         href="tel:+31621830806">+31 6
                         21830806</a>
                 </div>
+
                 <div class="circle-border">
                     <a class="btn btn-primary" style="padding:10px 40px;" aria-label="Mail Contact"
-                        href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
+                        href="mailto:info@groentuinen.nl">info@groentuinen.nl
+                    </a>
                 </div>
             </div>
 
@@ -684,4 +633,5 @@
 
 
 
-</main><?php get_footer() ?>
+</main>
+<?php get_footer() ?>

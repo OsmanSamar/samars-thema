@@ -1024,7 +1024,7 @@ a ::after {
 
 /* its work here  on sm Screen  */
 .text-line-button-section .row {
-  flex-direction: row;
+  // flex-direction: row;
   text-align: center;
 }
 
@@ -1288,7 +1288,7 @@ a ::after {
   }
 
   .text-line-button-section .row {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
 

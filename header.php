@@ -76,17 +76,26 @@
                 </a>
 
                 <!-- Hamburger button for mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation" style="
+                <div class="d-lg-none " style="border-radius: 9999px; 
+                            border: 1px solid #ffffff;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" style="
                         width: 40px;
                         height: 40px;
                         border-radius: 50%;
                         padding: 0;
+                        margin:5px;
                         align-items: center;
                         justify-content: center;">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                </div>
+
+
+
 
 
                 <!-- Navigation Menu -->
