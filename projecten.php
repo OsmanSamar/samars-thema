@@ -5,21 +5,13 @@
     <style>
     .modal {
         display: none;
-        /* Hidden by default */
         position: fixed;
-        /* Stay in place */
         z-index: 1;
-        /* Sit on top */
-
         left: 0;
         top: 0;
         width: 100vw;
-
         height: 100vh;
-
         overflow: auto;
-
-
 
     }
 
@@ -32,7 +24,21 @@
         height: 100vh;
         background-color: rgba(33, 46, 37, .7);
         animation: slideInFromTop 0.5s;
+    }
 
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 20px;
+        text-align: left;
+        font-size: 24px;
+        align-items: start;
     }
 
     @keyframes slideInFromTop {
@@ -45,8 +51,6 @@
             top: 0;
             opacity: 1;
         }
-
-
     }
 
     /* The Close Button */
@@ -73,7 +77,6 @@
             width: 100vw;
         }
     }
-
 
     /* MD Screen */
     @media (min-width: 768px) {
@@ -536,14 +539,11 @@
                             </a>
                             <div class=" img-wrap ">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded  " style="opacity:0.7;"
-                                    id="myImg" />
+                                    alt="Tuinonderhoud in Ede" class="img1 object-fit-cover rounded  "
+                                    style="opacity:0.7;" id="myImg" />
 
 
-
-
-
-
+                                <!--  -->
 
 
                                 <div class="middle1">
@@ -594,7 +594,7 @@
                                         <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
                                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
                                                 alt="scaled19" class="object-fit-cover rounded"
-                                                style="height:; width:; margin-left:; opacity:0.7;" />
+                                                style="height:; width:; margin-left:; opacity:0.7;" id="myImg" />
 
 
                                             <div class="middle2">
@@ -840,7 +840,8 @@
                         <div class="grid-bottom">
 
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                alt="Groenoverons" class="object-fit-cover rounded" style="height:500px;" />
+                                alt="Groenoverons" class="object-fit-cover rounded" loading="lazy"
+                                style="height:500px;" />
 
                             <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
                                 src="<?= esc_url(get_template_directory_uri()); ?>/images/41scaled.jpg" alt="">
@@ -935,9 +936,11 @@
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-
-        <div class="  modal-content " data-side="">
+        <!-- <span class="close">&times;</span> -->
+        <!-- <div id="caption">Tuinonderhoud in Ede</div> -->
+        <div class="  modal-content  " data-side="">
+            <span class="close">&times;</span>
+            <div id="caption">Tuinonderhoud in Ede</div>
             <div class="swiper-container " style="--swiper-pagination-color: #fff">
                 <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider"
                     style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
@@ -954,12 +957,9 @@
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
                                 class="object-fit-cover rounded" style=" " />
                         </div>
-
                     </div>
-
-
                 </div>
-                <div class="swiper-pagination d-lg-none "></div>
+                <div class="swiper-pagination  "></div>
             </div>
         </div>
     </div>
@@ -969,30 +969,32 @@
     <script>
     // Get the modal
     var modal = document.getElementById("myModal");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    // Get the image 
     var img = document.getElementById("myImg");
     var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
     img.onclick = function() {
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     }
-
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
     }
+
+    // Close the modal when clicking outside of the modal content
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
     </script>
-
-
     <!--  -->
 
 
-    <!--  -->
 
 
     <!-- Swiper JS -->
@@ -1000,37 +1002,6 @@
     </script>
     <!-- Initialize Swiper -->
     <script>
-    // var swiper = new Swiper(".mySwiper", {
-
-
-
-    //         slidesPerView: 1.2,
-    //         centeredSlides: true,
-    //         loop: true,
-    //         grabCursor: true,
-    //         spaceBetween: 5,
-    //         pagination: {
-    //             el: ".swiper-pagination",
-
-    //         }
-
-    //         ,
-    //         navigation: {
-    //             nextEl: ".swiper-button-next",
-    //             prevEl: ".swiper-button-prev",
-    //         }
-
-    //         ,
-    //         breakpoints: {
-    //             992: {
-
-    //                 slidesPerView: 3.5,
-    //             }
-    //         }
-    //     }
-
-    // );
-
     document.querySelectorAll(".swiper-container").forEach(container => {
         var swiper = new Swiper(container.querySelector(".mySwiper"), {
                 slidesPerView: 1.2,

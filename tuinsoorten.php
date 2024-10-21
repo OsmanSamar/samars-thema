@@ -335,7 +335,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide" style=" ">
+                            <div class="swiper-slide" style="">
                                 <div class="circle-border"><a href="#moderne-tuin" class="btn btn-secondary">Ontdek
                                         Moderne
                                         tuinen</a>
