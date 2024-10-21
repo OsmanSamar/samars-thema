@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
   }
 
   var u = jQuery(".fadeIn");
-  // @todo: add scroll eventlistener
+
   function p() {
     for (
       var e = jQuery(document).scrollTop() + jQuery(window).height(), t = 0;

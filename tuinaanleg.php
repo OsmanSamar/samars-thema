@@ -380,11 +380,10 @@
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/herobg.png"
                                     alt="Groenoverons" class="object-fit-cover rounded" style="height:500px;" />
 
-                                <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/greenbackground.png"
-                                    alt="">
-                                <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinen6" alt="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/greenbackground.png"
+                                    alt="" class="w-100 h-100 object-fit-cover rounded">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinen6.jpg" alt=""
+                                    class="w-100 h-100 object-fit-cover rounded">
 
                             </div>
                         </div>

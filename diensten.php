@@ -586,8 +586,8 @@
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="//groentuinen.b-cdn.net/wp-content/uploads/2024/08/GROENtuinen-12-scaled.jpg" alt=""
-                            class="">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" class=""
+                            alt="Image 2">
                         <!-- Overlay Text and Button -->
                         <div class="slider-text-button-container d-flex d-lg-none">
                             <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
@@ -604,7 +604,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" class=""
                             alt="Image 2">
                         <!-- Overlay Text and Button -->
                         <div class="slider-text-button-container d-flex d-lg-none">
@@ -622,7 +622,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png" class=""
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" class=""
                             alt="Image 2">
 
                         <!-- Overlay Text and Button -->

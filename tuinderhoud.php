@@ -304,7 +304,7 @@
                                     src="<?= esc_url(get_template_directory_uri()); ?>/images/greenbackground.png"
                                     alt="">
                                 <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinen6" alt="">
+                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinen6.jpg" alt="">
 
                             </div>
                         </div>

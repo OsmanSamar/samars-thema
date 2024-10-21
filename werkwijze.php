@@ -317,6 +317,15 @@
                                 </div>
 
                                 <style>
+                                /* .more-text {
+                                    opacity: 0.3;
+                                    transition: opacity 0.5s ease-in-out;
+                                } */
+
+                                /* .more-text .show {
+                                    opacity: 1;
+                                } */
+
                                 .down-arrow {
                                     font-size: 24px;
                                     color: white;

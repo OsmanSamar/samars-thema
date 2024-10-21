@@ -3,6 +3,78 @@
 
 <main class="flex-grow-1">
     <style>
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+
+        left: 0;
+        top: 0;
+        width: 100vw;
+
+        height: 100vh;
+
+        overflow: auto;
+
+
+
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(33, 46, 37, .7);
+        animation: slideInFromTop 0.5s;
+
+    }
+
+    @keyframes slideInFromTop {
+        from {
+            top: -700px;
+            opacity: 0;
+        }
+
+        to {
+            top: 0;
+            opacity: 1;
+        }
+
+
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100vw;
+        }
+    }
+
+
     /* MD Screen */
     @media (min-width: 768px) {
         .swiper {
@@ -464,7 +536,15 @@
                             </a>
                             <div class=" img-wrap ">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded  " style="opacity:0.7;" />
+                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded  " style="opacity:0.7;"
+                                    id="myImg" />
+
+
+
+
+
+
+
 
                                 <div class="middle1">
 
@@ -846,6 +926,73 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <!--  -->
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+
+        <div class="  modal-content " data-side="">
+            <div class="swiper-container " style="--swiper-pagination-color: #fff">
+                <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider"
+                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
+                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
+                                class="object-fit-cover rounded" style="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
+                                class="object-fit-cover rounded" style=" " />
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination d-lg-none "></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    </script>
+
+
+    <!--  -->
+
+
+    <!--  -->
 
 
     <!-- Swiper JS -->
