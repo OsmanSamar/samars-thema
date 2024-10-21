@@ -17,13 +17,16 @@
 
     /* Modal Content (image) */
     .modal-content {
-        position: relative;
+        position: fixed;
         margin: auto;
         padding: 0;
         width: 100vw;
         height: 100vh;
         background-color: rgba(33, 46, 37, .7);
         animation: slideInFromTop 0.5s;
+        /* padding-bottom: 55px;
+        padding-top: 110px; */
+        transition: all .5s ease;
     }
 
     /* Caption of Modal Image */
@@ -38,10 +41,9 @@
         text-align: left;
         font-size: 50px;
 
-        /* margin-bottom: 120px; */
+        margin-bottom: 55px;
         align-items: start;
-        top: 15px;
-        left: 35px;
+
     }
 
     @keyframes slideInFromTop {
@@ -60,6 +62,7 @@
     .close {
         position: absolute;
         top: 15px;
+        /* top: 65px; */
         right: 35px;
         color: #f1f1f1;
         font-size: 40px;
