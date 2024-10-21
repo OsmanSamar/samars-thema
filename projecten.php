@@ -30,15 +30,18 @@
     #caption {
         margin: auto;
         display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
+        width: 100%;
+        max-width: 1400px;
         color: #ccc;
         padding: 10px 0;
         height: 20px;
         text-align: left;
-        font-size: 24px;
+        font-size: 50px;
+
+        /* margin-bottom: 120px; */
         align-items: start;
+        top: 15px;
+        left: 35px;
     }
 
     @keyframes slideInFromTop {
@@ -62,6 +65,7 @@
         font-size: 40px;
         font-weight: bold;
         transition: 0.3s;
+
     }
 
     .close:hover,
