@@ -37,14 +37,14 @@
     .swiper-container .swiper-pagination,
     .swiper-button-next,
     .swiper-button-prev {
-        bottom: -50px !important;
+        bottom: -70px !important;
         display: block;
     }
 
     .swiper-container .swiper-button-next,
     .swiper-button-prev {
         position: absolute;
-        top: 109% !important;
+        top: 113% !important;
     }
 
     /* Set font size for swiper buttons */
@@ -66,6 +66,7 @@
         border-radius: 25px;
         --swiper-navigation-color: #ffffff;
         z-index: 10;
+        cursor: pointer;
     }
 
     .left-line {
@@ -75,7 +76,7 @@
         left: 41%;
         position: absolute;
         display: flex;
-        top: 109%;
+        top: 113%;
         align-items: center;
         justify-content: center;
 
@@ -89,7 +90,7 @@
         left: 54%;
         position: absolute;
         display: flex;
-        top: 109%;
+        top: 113%;
         align-items: center;
         justify-content: center;
     }
@@ -649,15 +650,16 @@
                     </div>
                     <!-- <div class="swiper-pagination"></div> -->
                 </div>
-                <div class="d-none d-lg-block flex  flex-lg-row align-items-center justify-content-center">
+                <div class=" flex  flex-lg-row align-items-center justify-content-center">
 
-                    <div class="swiper-button-prev" style="left:36%"></div>
-                    <div class="left-line"></div>
-                    <div class="swiper-pagination"></div>
-                    <div class="right-line"></div>
-                    <div class="swiper-button-next" style="left:61%"></div>
+                    <div class="swiper-button-prev d-none d-lg-flex" style="left:36%"></div>
+                    <div class="left-line d-none d-lg-block"></div>
+                    <div class="swiper-pagination d-block d-lg-block"></div>
+                    <div class="right-line d-none d-lg-block"></div>
+                    <div class="swiper-button-next d-none d-lg-flex" style="left:61%"></div>
                 </div>
-                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- <div class="swiper-pagination "></div> -->
 
 
             </div>
