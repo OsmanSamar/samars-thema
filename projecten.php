@@ -29,18 +29,7 @@
         transition: all .5s ease;
     }
 
-    /* .swiper-slide1 {
-        margin: 20px;
-        width: 150%;
-    }
 
-    .swiper-slide1 img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    } */
 
     /* Caption of Modal Image */
     #caption {
@@ -56,6 +45,13 @@
 
         margin-bottom: 55px;
         align-items: start;
+
+
+        position: absolute;
+        top: 8px;
+        left: 16px;
+
+
 
     }
 
@@ -134,7 +130,11 @@
 
 
     .swiper-container {
-        position: relative;
+        /* position: relative; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
     }
 
@@ -165,7 +165,10 @@
 
     /* Show the CircleType on devices with a width of 1024px and up */
     @media (min-width: 1024px) {
-
+        .swiper {
+            width: 2200px;
+            height: 326px;
+        }
 
         #demo3 {
             display: flex;
