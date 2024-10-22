@@ -165,6 +165,8 @@
 
     /* Show the CircleType on devices with a width of 1024px and up */
     @media (min-width: 1024px) {
+
+
         #demo3 {
             display: flex;
             align-items: center;
@@ -951,7 +953,7 @@
 
 
 
-    <!--  -->
+
 
 
     <!-- The Modal -->
@@ -1026,7 +1028,7 @@
         var swiper = new Swiper(container.querySelector(".mySwiper"), {
                 slidesPerView: 1.2,
                 centeredSlides: true,
-                loop: true,
+                // loop: true,
                 grabCursor: true,
                 spaceBetween: 5,
                 pagination: {

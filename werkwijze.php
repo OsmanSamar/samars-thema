@@ -318,11 +318,12 @@
 
                                 <style>
                                 /* .more-text {
-                                    opacity: 0.3;
+                                    opacity: 0.3; 
                                     transition: opacity 0.5s ease-in-out;
-                                } */
+                                    background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
+                                }
 
-                                /* .more-text .show {
+                                .more-text .show {
                                     opacity: 1;
                                 } */
 
