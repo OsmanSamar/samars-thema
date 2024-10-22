@@ -29,6 +29,19 @@
         transition: all .5s ease;
     }
 
+    /* .swiper-slide1 {
+        margin: 20px;
+        width: 150%;
+    }
+
+    .swiper-slide1 img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    } */
+
     /* Caption of Modal Image */
     #caption {
         margin: auto;
@@ -950,19 +963,19 @@
             <div id="caption">Tuinonderhoud in Ede</div>
             <div class="swiper-container " style="--swiper-pagination-color: #fff">
                 <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287 ;">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" style="">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " />
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" style="">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
                                 class="object-fit-cover rounded" style="" />
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" style="">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
-                                class="object-fit-cover rounded" style=" " />
+                                class="object-fit-cover rounded" style="" />
                         </div>
                     </div>
                 </div>
@@ -1048,9 +1061,11 @@
             e.preventDefault();
             swiper.prependSlide([
                 '<div class="swiper-slide">Slide ' + --
+
                 prependNumber +
                 "</div>",
                 '<div class="swiper-slide">Slide ' + --
+
                 prependNumber + "</div>",
             ]);
         }
@@ -1063,6 +1078,7 @@
             e.preventDefault();
             swiper.prependSlide(
                 '<div class="swiper-slide">Slide ' + --
+
                 prependNumber +
                 "</div>");
         }
@@ -1075,6 +1091,7 @@
             e.preventDefault();
             swiper.appendSlide(
                 '<div class="swiper-slide">Slide ' + ++
+
                 appendNumber + "</div>");
         }
 
@@ -1086,8 +1103,10 @@
             e.preventDefault();
             swiper.appendSlide([
                 '<div class="swiper-slide">Slide ' + ++
+
                 appendNumber + "</div>",
                 '<div class="swiper-slide">Slide ' + ++
+
                 appendNumber + "</div>",
             ]);
         }
