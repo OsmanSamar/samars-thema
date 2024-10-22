@@ -34,12 +34,71 @@
 
     }
 
-    .swiper-container .swiper-pagination {
+    .swiper-container .swiper-pagination,
+    .swiper-button-next,
+    .swiper-button-prev {
         bottom: -50px !important;
         display: block;
     }
 
-    .swiper-container .swiper-pagination-bullet {
+    .swiper-container .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 109% !important;
+    }
+
+    /* Set font size for swiper buttons */
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after,
+    .swiper-button-next::after,
+    .swiper-rtl .swiper-button-prev::after {
+        font-size: 32px;
+        font-weight: 900;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        --swiper-navigation-color: #ffffff;
+        z-index: 10;
+    }
+
+    .left-line {
+        border: 1px solid #fff;
+        width: 5%;
+        opacity: 0.5;
+        left: 41%;
+        position: absolute;
+        display: flex;
+        top: 109%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .right-line {
+        border: 1px solid #fff;
+        width: 5%;
+        opacity: 0.5;
+        left: 54%;
+        position: absolute;
+        display: flex;
+        top: 109%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+    .swiper-container .swiper-pagination-bullet,
+        {
         width: 15px;
         height: 15px;
 
@@ -524,74 +583,84 @@
                 <hr class="hr-text gradient" data-content="Projecten" style="margin: 30px -75px;">
             </div>
 
+
+
+
             <!-- Swiper Slider -->
-            <div class="swiper-container" style="--swiper-pagination-color: #fff"></div>
-            <div id="#swiperRef" class="swiper fadeIn mySwiper projecten-slider"
-                style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="width:;">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" class=""
-                            alt="Image 2">
-                        <!-- Overlay Img -->
-                        <!-- <div class="overlay" style="border-radius: 12px;"></div> -->
-                        <!-- Overlay Text and Button -->
-                        <div class="slider-text-button-container d-flex d-lg-none">
-                            <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
-                            <div
-                                class="slider-text-button-container-right d-flex align-items-center justify-content-center ">
-                                <div class="line-before"></div>
-                                <div class="circle-border">
-                                    <a class="btn btn-secondary" href="/contact"
-                                        style="padding: 8px 12px; white-space: nowrap;  min-width: 160px; font-size:16px; text-align:center;">Bekijk
-                                        projecten</a>
+            <div class="swiper-container" style="--swiper-pagination-color: #fff">
+
+                <div id="#swiperRef" class="swiper fadeIn mySwiper projecten-slider"
+                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="width:;">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" class=""
+                                alt="Image 2">
+                            <!-- Overlay Img -->
+                            <!-- <div class="overlay" style="border-radius: 12px;"></div> -->
+                            <!-- Overlay Text and Button -->
+                            <div class="slider-text-button-container d-flex d-lg-none">
+                                <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
+                                <div
+                                    class="slider-text-button-container-right d-flex align-items-center justify-content-center ">
+                                    <div class="line-before"></div>
+                                    <div class="circle-border">
+                                        <a class="btn btn-secondary" href="/contact"
+                                            style="padding: 8px 12px; white-space: nowrap;  min-width: 160px; font-size:16px; text-align:center;">Bekijk
+                                            projecten</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" style="width:;">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" class=""
+                                alt="Image 2">
+                            <!-- Overlay Text and Button -->
+                            <div class="slider-text-button-container d-flex d-lg-none">
+                                <div class="text">Tuinonderhoud in Ede</div>
+                                <div
+                                    class="slider-text-button-container-right d-flex align-items-center justify-content-center">
+                                    <div class="line-before"></div>
+                                    <div class="circle-border">
+                                        <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
+                                            projecten</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" style="width:;">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" class=""
+                                alt="Image 2">
+
+                            <!-- Overlay Text and Button -->
+                            <div class="slider-text-button-container d-flex d-lg-none">
+                                <div class="text">Tuin bij Tiny House</div>
+                                <div
+                                    class="slider-text-button-container-right d-flex align-items-center justify-content-center">
+                                    <div class="line-before"></div>
+                                    <div class="circle-border">
+                                        <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
+                                            projecten</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="swiper-slide" style="width:;">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" class=""
-                            alt="Image 2">
-                        <!-- Overlay Text and Button -->
-                        <div class="slider-text-button-container d-flex d-lg-none">
-                            <div class="text">Tuinonderhoud in Ede</div>
-                            <div
-                                class="slider-text-button-container-right d-flex align-items-center justify-content-center">
-                                <div class="line-before"></div>
-                                <div class="circle-border">
-                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
-                                        projecten</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide" style="width:;">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" class=""
-                            alt="Image 2">
-
-                        <!-- Overlay Text and Button -->
-                        <div class="slider-text-button-container d-flex d-lg-none">
-                            <div class="text">Tuin bij Tiny House</div>
-                            <div
-                                class="slider-text-button-container-right d-flex align-items-center justify-content-center">
-                                <div class="line-before"></div>
-                                <div class="circle-border">
-                                    <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
-                                        projecten</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="d-none d-lg-block flex  flex-lg-row align-items-center justify-content-center">
+
+                    <div class="swiper-button-prev" style="left:36%"></div>
+                    <div class="left-line"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="right-line"></div>
+                    <div class="swiper-button-next" style="left:61%"></div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+
             </div>
-
-
-
-
-
-
         </div>
 
 
