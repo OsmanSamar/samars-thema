@@ -47,9 +47,9 @@
         align-items: start;
 
 
-        position: absolute;
+        /* position: absolute;
         top: 8px;
-        left: 16px;
+        left: 16px; */
 
 
 
@@ -130,11 +130,12 @@
 
 
     .swiper-container {
-        /* position: relative; */
-        position: absolute;
+        position: relative;
+
+        /* position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
 
     }
 
