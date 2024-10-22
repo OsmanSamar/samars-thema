@@ -3,240 +3,122 @@
 
 <main class="flex-grow-1">
     <style>
-    /* MD Screen */
-    @media (min-width: 768px) {
-        .swiper {
-            width: 100%;
-            height: 629px;
-            margin: 20px auto;
+        /* MD Screen */
+        @media (min-width: 768px) {
+            .swiper {
+                width: 100%;
+                height: 629px;
+                margin: 20px auto;
+            }
         }
-    }
 
-    .swiper-container {
-        position: relative;
+        .swiper-container {
+            position: relative;
 
-    }
-
-    .swiper-container .swiper-pagination {
-        bottom: -50px !important;
-        display: block;
-    }
-
-    .swiper-container .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
-
-    }
-
-
-
-
-    /*First Swiper Buttons  */
-    .header {
-        margin-bottom: 60px;
-        color: #FFFFFF;
-        opacity: 1;
-        font-family: 'Henderson Sans-basic', sans-serif;
-        letter-spacing: 5px;
-        font-size: 50px;
-        font-weight: 300;
-        line-height: 60px;
-    }
-
-    .swiper1 {
-        width: 100%;
-        /* height: 300px; */
-        /* margin: 20px auto; */
-    }
-
-    .swiper1 .swiper-slide {
-        margin: 0;
-        padding: 0;
-    }
-
-    .swiper1 {
-        /* margin-left: auto;
-        margin-right: auto; */
-        position: relative;
-        overflow: hidden;
-        list-style: none;
-        padding: 0;
-        z-index: 1;
-        display: block;
-    }
-
-    .swiper-slide .btn {
-        font-size: 18px;
-        padding: 12px 24px;
-        /* border: 2px solid #fff; */
-        /* Add a contrasting border */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        line-height: 22px;
-        font-family: 'Henderson Sans-basic', sans-serif;
-        letter-spacing: 1px;
-    }
-
-    .custom-swiper-prev {
-        position: absolute;
-        top: 607px;
-        z-index: 10;
-        right: 56px;
-        --swiper-navigation-color: #ffffff;
-        border: 1px solid #fff;
-        border-radius: 25px;
-
-    }
-
-    .custom-swiper-next {
-        position: absolute;
-        top: 607px;
-        z-index: 10;
-        right: 56px;
-        --swiper-navigation-color: #ffffff;
-        border: 1px solid #fff;
-        border-radius: 25px;
-    }
-
-
-    @media (max-width: 768px) {
-        .swiper-slide .btn {
-            font-size: 16px;
-            padding: 10px 20px;
         }
-    }
-
-    @media (min-width: 769px) {
-        .swiper-slide .btn {
-            font-size: 20px;
-            padding: 14px 28px;
-        }
-    }
-
-
-    .text-header {
-        margin-bottom: 30px;
-        color: #FFFFFF;
-        opacity: 1;
-        font-family: 'Henderson Sans-basic', sans-serif;
-        letter-spacing: 2px;
-        font-size: 40px;
-        font-weight: 300;
-        line-height: 60px;
-
-    }
-
-    .text {
-        margin-bottom: 35px;
-        font-size: 18px;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-        font-weight: 300;
-        line-height: 40px;
-
-    }
-
-    @media (min-width: 992px) {
 
         .swiper-container .swiper-pagination {
-            display: none;
+            bottom: -50px !important;
+            display: block;
         }
 
-
-
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: 1228px;
-            background-position: 669px 11px;
-
+        .swiper-container .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
 
         }
 
 
 
-        .img1 {
-            border-radius: 10px;
 
-            width: 626px;
-            height: 440px;
-        }
-
-        .img2 {
-            border-radius: 10px;
-
-            /* width: 370px;
-            height: 591px; */
-            width: 626px;
-            height: 440px;
-        }
-
-        .img3 {
-            border-radius: 10px;
-            width: 526px;
-            height: 382px;
-        }
-
-        .img3,
-        .img1,
-        .img2,
-        .groentuinen {
-            object-fit: cover;
-        }
-
-
-        /* .lin3 {
-            border: 1px solid #ffffff;
-            height: 1px;
-            width: 100%;
-            margin-top: 120px;
-
-        } */
-
-        .houseinbackground {
-            width: 500px;
-            height: 382px;
-            margin-left: 120px;
-        }
-
-        .position-relative {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-        }
-
-        .swiper {
-            flex-grow: 1;
-        }
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            color: #ffffff;
-            width: 50px;
-            height: 50px;
-
-        }
-
+        /*First Swiper Buttons  */
         .header {
             margin-bottom: 60px;
             color: #FFFFFF;
             opacity: 1;
             font-family: 'Henderson Sans-basic', sans-serif;
             letter-spacing: 5px;
-            font-size: 125px;
-            font-weight: 600;
+            font-size: 50px;
+            font-weight: 300;
             line-height: 60px;
-            margin-top: 60px;
         }
 
+        .swiper1 {
+            width: 100%;
+            /* height: 300px; */
+            /* margin: 20px auto; */
+        }
+
+        .swiper1 .swiper-slide {
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper1 {
+            /* margin-left: auto;
+        margin-right: auto; */
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            z-index: 1;
+            display: block;
+        }
+
+        .swiper-slide .btn {
+            font-size: 18px;
+            padding: 12px 24px;
+            /* border: 2px solid #fff; */
+            /* Add a contrasting border */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            line-height: 22px;
+            font-family: 'Henderson Sans-basic', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .custom-swiper-prev {
+            position: absolute;
+            top: 607px;
+            z-index: 10;
+            right: 56px;
+            --swiper-navigation-color: #ffffff;
+            border: 1px solid #fff;
+            border-radius: 25px;
+
+        }
+
+        .custom-swiper-next {
+            position: absolute;
+            top: 607px;
+            z-index: 10;
+            right: 56px;
+            --swiper-navigation-color: #ffffff;
+            border: 1px solid #fff;
+            border-radius: 25px;
+        }
+
+
+        @media (max-width: 768px) {
+            .swiper-slide .btn {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .swiper-slide .btn {
+                font-size: 20px;
+                padding: 14px 28px;
+            }
+        }
+
+
         .text-header {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
             color: #FFFFFF;
             opacity: 1;
             font-family: 'Henderson Sans-basic', sans-serif;
-            letter-spacing: 5px;
+            letter-spacing: 2px;
             font-size: 40px;
             font-weight: 300;
             line-height: 60px;
@@ -245,54 +127,172 @@
 
         .text {
             margin-bottom: 35px;
-            font-size: 20px;
-            letter-spacing: 2px;
+            font-size: 18px;
+            letter-spacing: 0px;
             color: #FFFFFF;
             opacity: 1;
-            font-weight: 400;
+            font-weight: 300;
             line-height: 40px;
 
         }
 
-        .border-left {
-            border-left: 1px #FFFFFF solid;
-            height: 440px;
+        @media (min-width: 992px) {
+
+            .swiper-container .swiper-pagination {
+                display: none;
+            }
+
+
+
+            .bg-leaf {
+                background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-size: 1228px;
+                background-position: 669px 11px;
+
+
+            }
+
+
+
+            .img1 {
+                border-radius: 10px;
+
+                width: 626px;
+                height: 440px;
+            }
+
+            .img2 {
+                border-radius: 10px;
+
+                /* width: 370px;
+            height: 591px; */
+                width: 626px;
+                height: 440px;
+            }
+
+            .img3 {
+                border-radius: 10px;
+                width: 526px;
+                height: 382px;
+            }
+
+            .img3,
+            .img1,
+            .img2,
+            .groentuinen {
+                object-fit: cover;
+            }
+
+
+            /* .lin3 {
+            border: 1px solid #ffffff;
+            height: 1px;
+            width: 100%;
+            margin-top: 120px;
+
+        } */
+
+            .houseinbackground {
+                width: 500px;
+                height: 382px;
+                margin-left: 120px;
+            }
+
+            .position-relative {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .swiper {
+                flex-grow: 1;
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                color: #ffffff;
+                width: 50px;
+                height: 50px;
+
+            }
+
+            .header {
+                margin-bottom: 60px;
+                color: #FFFFFF;
+                opacity: 1;
+                font-family: 'Henderson Sans-basic', sans-serif;
+                letter-spacing: 5px;
+                font-size: 125px;
+                font-weight: 600;
+                line-height: 60px;
+                margin-top: 60px;
+            }
+
+            .text-header {
+                margin-bottom: 60px;
+                color: #FFFFFF;
+                opacity: 1;
+                font-family: 'Henderson Sans-basic', sans-serif;
+                letter-spacing: 5px;
+                font-size: 40px;
+                font-weight: 300;
+                line-height: 60px;
+
+            }
+
+            .text {
+                margin-bottom: 35px;
+                font-size: 20px;
+                letter-spacing: 2px;
+                color: #FFFFFF;
+                opacity: 1;
+                font-weight: 400;
+                line-height: 40px;
+
+            }
+
+            .border-left {
+                border-left: 1px #FFFFFF solid;
+                height: 440px;
+                opacity: 0.5;
+
+            }
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 40px;
+                height: 40px;
+
+            }
+        }
+
+
+
+        .lin3 {
+            border: 1px solid #ffffff;
+            height: 1px;
+            width: 100%;
+            margin-top: 120px;
             opacity: 0.5;
 
         }
-    }
 
-
-
-    @media (max-width: 768px) {
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            width: 40px;
-            height: 40px;
-
+        /* Set font size for swiper buttons */
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after,
+        .swiper-button-next::after,
+        .swiper-rtl .swiper-button-prev::after {
+            font-size: 16px;
+            font-weight: 900;
         }
-    }
-
-
-
-    .lin3 {
-        border: 1px solid #ffffff;
-        height: 1px;
-        width: 100%;
-        margin-top: 120px;
-        opacity: 0.5;
-
-    }
-
-    /* Set font size for swiper buttons */
-    .swiper-button-prev:after,
-    .swiper-rtl .swiper-button-next:after,
-    .swiper-button-next::after,
-    .swiper-rtl .swiper-button-prev::after {
-        font-size: 16px;
-        font-weight: 900;
-    }
     </style>
     <div class="bg-leaf">
         <div class="container">
@@ -415,8 +415,7 @@
                 <!-- Swiper On Small Screen  First Swiper -->
                 <div class="swiper-container" style="--swiper-pagination-color: #fff">
 
-                    <div #swiperRef=""
-                        class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                    <div class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
                         style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: ">
 
                         <div class="swiper-wrapper">
@@ -433,9 +432,8 @@
                                     alt="groediverons" class="img3" />
                             </div>
                         </div>
-
-
                     </div>
+
                     <div class="swiper-pagination"></div>
 
                 </div>
@@ -720,8 +718,8 @@
     </script>
     <!-- Initialize Swiper -->
     <script>
-    document.querySelectorAll(".swiper-container").forEach(container => {
-        var swiper = new Swiper(container.querySelector(".mySwiper"), {
+        document.querySelectorAll(".swiper-container").forEach(container => {
+            var swiper = new Swiper(container.querySelector(".mySwiper"), {
                 slidesPerView: 1.2,
                 centeredSlides: true,
                 loop: true,
@@ -747,70 +745,70 @@
                 }
             }
 
+            );
+        })
+
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+
+        document.querySelector(".prepend-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>",
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber + "</div>",
+                ]);
+            }
+
         );
-    })
 
+        document.querySelector(".prepend-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>");
+            }
 
-    var appendNumber = 4;
-    var prependNumber = 1;
+        );
 
-    document.querySelector(".prepend-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>",
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber + "</div>",
-            ]);
-        }
+        document.querySelector(".append-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>");
+            }
 
-    );
+        );
 
-    document.querySelector(".prepend-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>");
-        }
+        document.querySelector(".append-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                ]);
+            }
 
-    );
-
-    document.querySelector(".append-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>");
-        }
-
-    );
-
-    document.querySelector(".append-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-            ]);
-        }
-
-    );
+        );
     </script>
 
     <!--  Swiper1 -->
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper1", {
+        var swiper = new Swiper(".mySwiper1", {
 
 
 
@@ -853,62 +851,62 @@
             }
         }
 
-    );
+        );
 
-    var appendNumber = 4;
-    var prependNumber = 1;
+        var appendNumber = 4;
+        var prependNumber = 1;
 
-    document.querySelector(".prepend-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>",
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber + "</div>",
-            ]);
-        }
+        document.querySelector(".prepend-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>",
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber + "</div>",
+                ]);
+            }
 
-    );
+        );
 
-    document.querySelector(".prepend-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>");
-        }
+        document.querySelector(".prepend-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>");
+            }
 
-    );
+        );
 
-    document.querySelector(".append-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>");
-        }
+        document.querySelector(".append-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>");
+            }
 
-    );
+        );
 
-    document.querySelector(".append-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-            ]);
-        }
+        document.querySelector(".append-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                ]);
+            }
 
-    );
+        );
     </script>
 </main>
 <?php get_footer() ?>

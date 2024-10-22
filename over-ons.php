@@ -89,13 +89,16 @@
 
     .vl3 {
         border-left: 1px solid white;
-        height: 110px;
+        /* height: 110px; */
+        height: 70px;
         position: absolute;
         left: 50%;
         margin-left: -3px;
-        top: 1837px;
+        /* top: 1837px; */
+        top: 218%;
         display: flex;
         opacity: .5;
+        transform: translate(-50%, -50%);
     }
 
 
