@@ -275,7 +275,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination" style="bottom:-50px !important"></div>
 
                     </div>
 
