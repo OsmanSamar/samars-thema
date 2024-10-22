@@ -43,7 +43,7 @@
         text-align: left;
         font-size: 50px;
 
-        margin-bottom: 55px;
+        /* margin-bottom: 55px; */
         align-items: start;
 
 
@@ -70,9 +70,9 @@
     /* The Close Button */
     .close {
         position: absolute;
-        top: 15px;
-        /* top: 65px; */
-        right: 35px;
+        top: 195px;
+        /* top: 15px; */
+        right: 65px;
         color: #f1f1f1;
         font-size: 40px;
         font-weight: bold;
@@ -169,6 +169,8 @@
         .swiper {
             width: 2200px;
             height: 326px;
+            top: -140px;
+
         }
 
         #demo3 {
@@ -962,9 +964,13 @@
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
-        <!-- <span class="close">&times;</span> -->
-        <!-- <div id="caption">Tuinonderhoud in Ede</div> -->
+
         <div class="  modal-content  " data-side="">
+            <!-- <div class="d-flex flex-lg-row justify-content-spacebetween align-items-center">
+                <span class="close">&times;</span>
+                <div id="caption">Tuinonderhoud in Ede</div>
+            </div> -->
+
             <span class="close">&times;</span>
             <div id="caption">Tuinonderhoud in Ede</div>
             <div class="swiper-container " style="--swiper-pagination-color: #fff">
