@@ -61,6 +61,8 @@
 
     @media (min-width: 992px) {
 
+
+
         .dienstlinelg {
             height: 1px;
             width: 169px;
@@ -87,6 +89,17 @@
 
         }
 
+        /* .text {
+            font-size: 18px;
+            margin-top: 50px;
+            margin-bottom: 60px;
+            letter-spacing: 2px;
+            line-height: 43px;
+            white-space: normal;
+
+        } */
+
+
         .text {
 
             font-size: 24px;
@@ -94,6 +107,7 @@
             margin-top: 80px;
             margin-bottom: 60px;
         }
+
 
 
         .first-img {
@@ -142,7 +156,19 @@
         ">Duurzaamheid
             </h1>
 
-            <div class="text  d-flex flex-column align-items-center fadeIn  ">
+            <div class="text  d-flex flex-column align-items-center text-center fadeIn  col-lg-6 col-12  " style="margin-left:50%;
+            margin-right:50%;
+    transform: translate(-50%, -6%);
+    position: relative;
+    font-size: 18px;
+            margin-top: 50px;
+            margin-bottom: 60px;
+            letter-spacing: -1px;
+            line-height: 34px;
+            white-space: normal;
+            font-weight:400;
+    
+    ">
                 <p class="">Een duurzame tuin is een tuin waarin jij volop kunt genieten van groen én waar de
                     natuur ook van profiteert. Door van je duurzame tuin een huis voor insecten en andere dieren te
                     maken. En door te kiezen voor duurzame materialen die lang mee gaan.
@@ -167,9 +193,9 @@
 
                 <div class="row pb-lg-5 pb-0">
                     <div class="col-2">
-                        <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
+                        <div class="line-left h-100 mt-lg-3 d-none d-md-none d-lg-flex"></div>
                     </div>
-                    <div class="col-lg-9 mt-lg-1 mt-4">
+                    <div class="col-lg-9  mt-lg-1 mt-4">
 
                         <div class="text  d-flex flex-column align-items-center  ">
                             <p class="content1 ">Wij maken van je buitenruimte een duurzame tuin door volop te variëren

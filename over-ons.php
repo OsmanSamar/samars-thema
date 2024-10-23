@@ -504,7 +504,7 @@
 
             <!-- Text Section -->
             <div class="order-1 order-md-1 order-lg-2 fadeIn ">
-                <div class="text-block py-1">
+                <div class=" py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
                         <h2 style="font-size:36px;
                                   padding-bottom: 39px; 
@@ -513,7 +513,7 @@
                                margin-top:20px;">
                             Laat jouw tuin opvallen
                         </h2>
-                        <div class="text2 text-fix">
+                        <div class="text2 ">
                             <div class="  d-flex flex-column align-items-center" style="font-size:20px">
                                 <p class="content1">
                                     <span style="font-weight: 400;">De favoriete bomen en planten van
