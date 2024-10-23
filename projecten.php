@@ -1115,17 +1115,10 @@
         captionText2.innerHTML = this.alt;
     }
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("close")[1];
     // Whextthe user clicks on <span> (x), close the modal
     span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // Close the modal when clicking outside of the modal content
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+        modal2.style.display = "none";
     }
     </script>
 
@@ -1225,17 +1218,10 @@
         captionText4.innerHTML = this.alt;
     }
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("close")[2];
     // Whextthe user clicks on <span> (x), close the modal
     span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // Close the modal when clicking outside of the modal content
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+        modal3.style.display = "none";
     }
     </script>
 
