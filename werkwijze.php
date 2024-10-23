@@ -3,227 +3,227 @@
 
 <main class="flex-grow-1">
     <style>
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-size: 1600px;
-    }
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 1600px;
+        }
 
 
-    .bg-img {
-        position: relative;
-        text-align: center;
-        color: #F8F4EA;
-        font-weight: bold;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-top: auto;
-        margin-bottom: 0;
-        background-size: cover;
+        .bg-img {
+            position: relative;
+            text-align: center;
+            color: #F8F4EA;
+            font-weight: bold;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: auto;
+            margin-bottom: 0;
+            background-size: cover;
 
-    }
+        }
 
-    .content {
-        position: absolute;
-        top: 62%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        text-align: center;
-        color: white;
-    }
+        .content {
+            position: absolute;
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
 
-    .bottom-center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        .bottom-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-    }
+        }
 
-    .groentuinen {
-        display: block;
-        object-fit: cover;
-        border-radius: 10px;
-        width: 100%;
-        height: 63vh
-    }
+        .groentuinen {
+            display: block;
+            object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+            height: 63vh
+        }
 
-    /* 'Md Screen': '768px', */
+        /* 'Md Screen': '768px', */
 
-    @media (min-width: 768px) {
-        /* .groentuinen {
+        @media (min-width: 768px) {
+            /* .groentuinen {
             display: block;
             object-fit: cover;
             border-radius: 10px;
             width: 100%;
             height: 34vh
         } */
-    }
+        }
 
 
-    .line-left {
-        background-color: #fff;
-        opacity: .5;
-        width: 1px;
-    }
+        .line-left {
+            background-color: #fff;
+            opacity: .5;
+            width: 1px;
+        }
 
-    .flex-container {
-        text-align: center;
-    }
-
-
-
-    .text-header {
-
-        font-size: 31px;
-
-        margin-bottom: 48px;
-
-    }
-
-    .text {
-        font-size: 20px;
-
-        margin-bottom: 48px;
-    }
-
-    .content h1 {
-        font-size: 24px;
-        line-height: 70px;
-        font-weight: bold;
-    }
-
-    .content p {
-
-        font-size: 15px;
-        line-height: 20px;
-
-    }
-
-    .down {
-        display: inline-block;
-        transition: transform 0.3s ease;
-        width: 45px;
-        cursor: pointer;
-    }
-
-    .groenoverons {
-        width: 100%;
-        /* height: 823px; */
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-
-
-
-    /* MD Screens */
-    @media (min-width: 768px) {
-
-        .content {
-            position: absolute;
-            /* top: 50%; */
-            top: 73%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
+        .flex-container {
             text-align: center;
-            color: white;
         }
 
 
-        .groentuinen {
-            display: block;
-            object-fit: cover;
-            border-radius: 10px;
-            width: 100%;
-            height: 34vh
-        }
-    }
 
+        .text-header {
 
-    @media (min-width: 992px) {
+            font-size: 31px;
 
-        .groentuinen {
-            display: block;
-            object-fit: cover;
-            border-radius: 10px;
-            width: 100%;
-            height: 566px;
+            margin-bottom: 48px;
+
         }
 
+        .text {
+            font-size: 20px;
 
-        /* Hide arrow on large screens */
-        .down {
-            display: none;
-        }
-
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            text-align: center;
-            color: white;
-
+            margin-bottom: 48px;
         }
 
         .content h1 {
-
-            font-size: 90px;
-            font-weight: 700;
-            line-height: 125px;
+            font-size: 24px;
+            line-height: 70px;
+            font-weight: bold;
         }
 
         .content p {
 
-            font-size: 20px;
-            line-height: 35px;
+            font-size: 15px;
+            line-height: 20px;
 
+        }
+
+        .down {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            width: 45px;
+            cursor: pointer;
         }
 
         .groenoverons {
-            height: 722px;
-            width: 511px;
+            width: 100%;
+            /* height: 823px; */
+            object-fit: cover;
+            border-radius: 10px;
         }
 
 
 
 
-        .flex-container {
-            text-align: left;
-        }
-    }
+        /* MD Screens */
+        @media (min-width: 768px) {
+
+            .content {
+                position: absolute;
+                /* top: 50%; */
+                top: 73%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+                color: white;
+            }
 
 
-
-    @media (min-width: 768px) {
-        .line2 {
-            height: 1px;
-            width: 52vw;
-            background-color: #ffffff;
-            color: #ffffff;
-            position: relative;
-            margin-right: 10px;
-            display: block;
-        }
-
-        .line3 {
-            height: 1px;
-            width: 50%;
-            background-color: #ffffff;
-            color: #ffffff;
-
+            .groentuinen {
+                display: block;
+                object-fit: cover;
+                border-radius: 10px;
+                width: 100%;
+                height: 34vh
+            }
         }
 
 
+        @media (min-width: 992px) {
+
+            .groentuinen {
+                display: block;
+                object-fit: cover;
+                border-radius: 10px;
+                width: 100%;
+                height: 566px;
+            }
 
 
-        .border-left {}
-    }
+            /* Hide arrow on large screens */
+            .down {
+                display: none;
+            }
+
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+                color: white;
+
+            }
+
+            .content h1 {
+
+                font-size: 90px;
+                font-weight: 700;
+                line-height: 125px;
+            }
+
+            .content p {
+
+                font-size: 20px;
+                line-height: 35px;
+
+            }
+
+            .groenoverons {
+                height: 722px;
+                width: 511px;
+            }
+
+
+
+
+            .flex-container {
+                text-align: left;
+            }
+        }
+
+
+
+        @media (min-width: 768px) {
+            .line2 {
+                height: 1px;
+                width: 52vw;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                margin-right: 10px;
+                display: block;
+            }
+
+            .line3 {
+                height: 1px;
+                width: 50%;
+                background-color: #ffffff;
+                color: #ffffff;
+
+            }
+
+
+
+
+            .border-left {}
+        }
     </style>
     <div class="bg-leaf ">
 
@@ -317,7 +317,7 @@
                                 </div>
 
                                 <style>
-                                /* .more-text {
+                                    /* .more-text {
                                     opacity: 0.3; 
                                     transition: opacity 0.5s ease-in-out;
                                     background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
@@ -327,47 +327,47 @@
                                     opacity: 1;
                                 } */
 
-                                .down-arrow {
-                                    font-size: 24px;
-                                    color: white;
-                                }
+                                    .down-arrow {
+                                        font-size: 24px;
+                                        color: white;
+                                    }
 
-                                .up-arrow {
-                                    font-size: 24px;
-                                    color: white;
+                                    .up-arrow {
+                                        font-size: 24px;
+                                        color: white;
 
-                                }
+                                    }
                                 </style>
 
 
 
                                 <script>
-                                $(document).ready(function() {
-                                    $('.read-more-toggle').click(function(e) {
-                                        e.preventDefault();
-                                        var moreText = $(this).prev('.content1').find(
-                                            '.more-text');
+                                    $(document).ready(function () {
+                                        $('.read-more-toggle').click(function (e) {
+                                            e.preventDefault();
+                                            var moreText = $(this).prev('.content1').find(
+                                                '.more-text');
 
 
-                                        // Toggle visibility of additional text
-                                        moreText.toggleClass('d-none');
+                                            // Toggle visibility of additional text
+                                            moreText.toggleClass('d-none');
 
 
-                                        // Toggle arrow icon
-                                        if (moreText.hasClass('d-none')) {
-                                            $(this).html(
-                                                '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                                            );
-                                        } else {
-                                            $(this).html(
-                                                '<span class="arrow fas fa-angle-up up-arrow" > </span>'
-                                            );
-                                        }
+                                            // Toggle arrow icon
+                                            if (moreText.hasClass('d-none')) {
+                                                $(this).html(
+                                                    '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                                                );
+                                            } else {
+                                                $(this).html(
+                                                    '<span class="arrow fas fa-angle-up up-arrow" > </span>'
+                                                );
+                                            }
 
-                                        // Add or remove active class for arrow animation
-                                        $(this).toggleClass('active');
+                                            // Add or remove active class for arrow animation
+                                            $(this).toggleClass('active');
+                                        });
                                     });
-                                });
                                 </script>
 
                             </div>

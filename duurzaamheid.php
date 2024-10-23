@@ -20,6 +20,7 @@
         color: #FFFFFF;
         opacity: 1;
         letter-spacing: 0px;
+        text-align: center;
     }
 
     .text {
@@ -28,6 +29,7 @@
         color: #FFFFFF;
         opacity: 1;
         letter-spacing: 0px;
+        margin-bottom: 34px;
         /* margin-top: 80px; */
     }
 
@@ -38,6 +40,22 @@
         background-repeat: no-repeat;
         background-size: ;
     }
+
+
+    @media (min-width: 768px) {
+        .line2 {
+            height: 1px;
+            width: 52vw;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            margin-right: 10px;
+            display: block;
+        }
+
+
+    }
+
 
 
 
@@ -78,12 +96,6 @@
         }
 
 
-
-
-
-
-
-
         .first-img {
             object-fit: cover;
         }
@@ -98,7 +110,7 @@
         <div class=" d-flex flex-column text-center my-4 ">
 
             <!-- Breadcrumb Links -->
-            <div class="d-inline-block" style="color: #fff9f4;
+            <div class="d-inline-block fadeIn" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 14px;
         font-weight: 400;
@@ -122,13 +134,23 @@
 
             <h1 class="fadeIn d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
-        font-size: 90px;
+        font-size: 80px;
         font-weight: 700;
         line-height: 125px;
         letter-spacing:2px;
        
         ">Duurzaamheid
             </h1>
+
+            <div class="text  d-flex flex-column align-items-center fadeIn  ">
+                <p class="">Een duurzame tuin is een tuin waarin jij volop kunt genieten van groen én waar de
+                    natuur ook van profiteert. Door van je duurzame tuin een huis voor insecten en andere dieren te
+                    maken. En door te kiezen voor duurzame materialen die lang mee gaan.
+                    </span>
+                </p>
+
+            </div>
+
         </div>
 
         <div class="row firstcontainer " style="margin-bottom:80px;">
@@ -136,7 +158,8 @@
             <div class="col-12 col-lg-6 flex-container fadeIn  " data-side="left" style="margin-top:">
                 <div class="d-flex flex-row   d-lg-flex align-items-center justify-content-center gap-1">
 
-                    <div class="text-header" style="margin-bottom:40px; margin-right:40px;">Een duurzame tuin</div>
+                    <div class="text-header" style="margin-bottom:40px; margin-right:40px; white-space:nowrap;">Een
+                        duurzame tuin</div>
                     <div class="dienstlinelg d-none  d-md-none  d-lg-flex "></div>
 
                 </div>
@@ -232,9 +255,9 @@
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="  col-lg-2 text-center d-lg-none order-1">
+                    <!-- <div class="  col-lg-2 text-center d-lg-none order-1">
                         <div class="horizontal-divider"></div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-5 text-left  d-lg-none order-2">
                         <p style="font-size:31px;">Waarom GroenTuinen?</p>
                     </div>
