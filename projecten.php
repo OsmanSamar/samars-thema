@@ -33,21 +33,25 @@
 
     /* Caption of Modal Image */
     #caption {
-        margin: auto;
-        display: block;
-        width: 100%;
-        max-width: 1400px;
+
+        display: flex;
         color: #ccc;
-        padding: 10px 0;
-        height: 20px;
+        padding: 192px 0;
+        height: 24px;
         text-align: left;
-        font-size: 50px;
-        /* margin-bottom: 55px; */
-        align-items: start;
-        /* position: absolute;
-        top: 8px;
-        left: 16px; */
+        font-size: 79px;
     }
+
+    #caption2 {
+
+        display: flex;
+        color: #ccc;
+        padding: 192px 0;
+        height: 24px;
+        text-align: left;
+        font-size: 79px;
+    }
+
 
 
 
@@ -68,7 +72,7 @@
         position: absolute;
         top: 195px;
         /* top: 15px; */
-        right: 65px;
+        right: 26px;
         color: #f1f1f1;
         font-size: 30px;
         font-weight: bold;
@@ -172,7 +176,7 @@
         .swiper {
             width: 2200px;
             height: 326px;
-            top: -140px;
+            top: -148px;
 
         }
 
@@ -625,7 +629,7 @@
                                         </a>
                                         <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
                                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
-                                                alt="scaled19" class="object-fit-cover rounded"
+                                                alt="Tuin in Voorthuizen" class="object-fit-cover rounded"
                                                 style="height:; width:; margin-left:; opacity:0.7;" id="myImg2" />
 
 
@@ -687,7 +691,7 @@
                                         </a>
                                         <div class="grid-item ratio ratio-custom  mt-4" style="--x:39;--y:53;">
                                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg"
-                                                alt="scaled65" class="tiny-house object-fit-cover rounded"
+                                                alt="Tuin Bij Tiny House" class="tiny-house object-fit-cover rounded"
                                                 style="height:620px; width:; margin-left:; display:block; opacity:0.7;"
                                                 id="myImg3" />
                                             <div class="middle">
@@ -823,7 +827,7 @@
 
 
         <div class="swiper-container" style="--swiper-pagination-color: #fff">
-            <div #swiperRef="" class=" swiper mySwiper smrow order-2 projecten-slider d-flex d-md-flex d-lg-none"
+            <div class=" swiper mySwiper smrow order-2 projecten-slider d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                 <div class="swiper-wrapper">
 
@@ -971,14 +975,16 @@
     <div id="myModal" class="modal">
 
         <div class="  modal-content  " data-side="">
-            <div class="contaier">
-                <div class="d-flex flex-lg-row justify-content-spacebetween align-items-center ">
+            <div class="container">
+                <div class="d-flex flex-lg-row justify-content-spacebetween  " style="position: relative;
+                    top: -116px;">
                     <span class="close">&times;</span>
                     <div id="caption">Tuinonderhoud in Ede</div>
                 </div>
 
                 <!-- <span class="close">&times;</span>
-            <div id="caption">Tuinonderhoud in Ede</div> -->
+                <div id="caption">Tuinonderhoud in Ede</div> -->
+
                 <div class="swiper-container " style="--swiper-pagination-color: #fff">
                     <div class="swiper mySwiper smrow order-2 projecten-slider"
                         style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287 ;overflow:visible">
@@ -1001,7 +1007,7 @@
                 </div>
 
                 <div class=" flex  flex-lg-row align-items-center justify-content-center">
-                    <div class="swiper-button-prev d-none d-lg-flex" style="left:15%; top:84%; position: absolute; color:white;
+                    <div class="swiper-button-prev d-none d-lg-flex" style="left:8%; top:84%; position: absolute; color:white;
                     border:1px solid white; border-radius:50px;width:50px;
                     height: 50px;
                      font-size: 20px;
@@ -1009,7 +1015,7 @@
                     
                     
                     "></div>
-                    <div class="swiper-button-next d-none d-lg-flex" style="left:20%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
+                    <div class="swiper-button-next d-none d-lg-flex" style="left:13%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
                    height: 50px;
                    font-size: 20px;
                    text-align: center;
@@ -1049,36 +1055,42 @@
     <div id="myModal2" class="modal">
 
         <div class="  modal-content  " data-side="">
-
-            <span class="close">&times;</span>
-            <div id="caption">Tuin in Voorthuizen</div>
-            <div class="swiper-container " style="--swiper-pagination-color: #fff">
-                <div class="swiper mySwiper smrow order-2 projecten-slider"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287 ;">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
-                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " id="img02" />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg"
-                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " id="img02" />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/16scaled.jpg" alt="scaled11"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/27scaled.jpg" alt="scaled19"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="d-flex flex-lg-row justify-content-spacebetween" style="position: relative;
+                    top: -116px;">
+                    <span class="close">&times;</span>
+                    <div id="caption2">Tuin in Voorthuizen</div>
                 </div>
 
-            </div>
+                <!-- <span class="close">&times;</span>
+            <div id="caption">Tuin in Voorthuizen</div> -->
+                <div class="swiper-container " style="--swiper-pagination-color: #fff">
+                    <div class="swiper mySwiper smrow order-2 projecten-slider"
+                        style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287; overflow:visible">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
+                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " id="img02" />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg"
+                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " id="img02" />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/16scaled.jpg"
+                                    alt="scaled11" class="object-fit-cover rounded" style="" />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/27scaled.jpg"
+                                    alt="scaled19" class="object-fit-cover rounded" style="" />
+                            </div>
+                        </div>
+                    </div>
 
-            <div class=" flex  flex-lg-row align-items-center justify-content-center">
-                <div class="swiper-button-prev d-none d-lg-flex" style="left:15%; top:84%; position: absolute; color:white;
+                </div>
+
+                <div class=" flex  flex-lg-row align-items-center justify-content-center">
+                    <div class="swiper-button-prev d-none d-lg-flex" style="left:8%; top:84%; position: absolute; color:white;
                         border:1px solid white; border-radius:50px;width:50px;
                         height: 50px;
                          font-size: 20px;
@@ -1086,13 +1098,18 @@
                          
                         
                         "></div>
-                <div class="swiper-button-next d-none d-lg-flex" style="left:20%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
+                    <div class="swiper-button-next d-none d-lg-flex" style="left:13%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
                        height: 50px;
                        font-size: 20px;
                        text-align: center;
                      ">
+                    </div>
                 </div>
+
+
+
             </div>
+
         </div>
     </div>
 
@@ -1104,7 +1121,7 @@
     // Get the image 
     var img2 = document.getElementById("myImg2");
     var modalImg2 = document.getElementById("img02");
-    var captionText2 = document.getElementById("caption");
+    var captionText2 = document.getElementById("caption2");
     img2.onclick = function() {
         modal2.style.display = "block";
         modalImg2.src = this.src;
@@ -1123,74 +1140,70 @@
     <div id="myModal3" class="modal ">
 
         <div class="  modal-content  " data-side="">
-            <!-- <div class="d-flex justify-content-spacebetween ">
-                <span class="close ">&times;</span>
-                <div id="caption" class="">Tuin bij Tiny House</div>
-
-            </div> -->
-
-            <span class="close ">&times;</span>
-            <div id="caption" class="">Tuin bij Tiny House</div>
-            <div class="swiper-container " style="--swiper-pagination-color: #fff">
-                <div class="swiper mySwiper smrow order-2 projecten-slider"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287 ;">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
-                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " id="img02" />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/51scaled.jpg"
-                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " id="img02" />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled11"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/69scaled.jpg" alt="scaled19"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/84scaled.jpg" alt="scaled19"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/58scaled.jpg" alt="scaled19"
-                                class="object-fit-cover rounded" style="" />
+            <div class="container">
+                <div class="d-flex justify-content-spacebetween" style="position: relative;
+                    top: -116px;">
+                    <span class="close ">&times;</span>
+                    <div id="caption" class="">Tuin bij Tiny House</div>
+                </div>
+                <div class="swiper-container " style="--swiper-pagination-color: #fff">
+                    <div class="swiper mySwiper smrow order-2 projecten-slider"
+                        style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287; overflow:visible">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
+                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " id="img02" />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/51scaled.jpg"
+                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " id="img02" />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg"
+                                    alt="scaled11" class="object-fit-cover rounded" style="" />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/69scaled.jpg"
+                                    alt="scaled19" class="object-fit-cover rounded" style="" />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/84scaled.jpg"
+                                    alt="scaled19" class="object-fit-cover rounded" style="" />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/58scaled.jpg"
+                                    alt="scaled19" class="object-fit-cover rounded" style="" />
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-            </div>
-
-            <div class=" flex  flex-lg-row align-items-center justify-content-center">
-                <div class="swiper-button-prev d-none d-lg-flex" style="left:15%; top:84%; position: absolute; color:white;
+                <div class=" flex  flex-lg-row align-items-center justify-content-center">
+                    <div class="swiper-button-prev d-none d-lg-flex" style="left:8%; top:84%; position: absolute; color:white;
                         border:1px solid white; border-radius:50px;width:50px;
                         height: 50px;
                          font-size: 20px;
                          text-align: center;
                          
                         "></div>
-                <div class="swiper-button-next d-none d-lg-flex" style="left:20%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
+                    <div class="swiper-button-next d-none d-lg-flex" style="left:13%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
                        height: 50px;
                        font-size: 20px;
                        text-align: center;
                       ">
+                    </div>
+                </div>
+                <div class="" id="caption2" style="   
+                    right: 3.5%;
+                      top: 84%;
+                     position: absolute;
+                    color: white;
+                    font-size: 20px;
+                    padding: 8px;">
+                    GROENtuinen heeft de aanleg van deze prachtige botanische tuin in Barneveld verzorgd.
                 </div>
             </div>
-            <div class="" id="caption2" style="   
-            right: 3.5%;
-            top: 84%;
-            position: absolute;
-            color: white;
-            font-size: 20px;
-            padding: 8px;">
-                GROENtuinen heeft de aanleg van deze prachtige botanische tuin in Barneveld verzorgd.
-            </div>
-
-
-
         </div>
     </div>
 

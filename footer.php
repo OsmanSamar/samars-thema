@@ -35,8 +35,8 @@
 
 
 
-            <div
-                class="logo  col-lg-4 col-12 d-flex flex-column align-items-center  justify-content-center  order-1 order-lg-2">
+            <div class="logo  col-lg-4 col-12 d-flex flex-column align-items-center  justify-content-center  order-1 order-lg-2"
+                style="margin-bottom:61px;">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenlogo.png"
                     alt="<?php bloginfo('name'); ?>" class="" />
                 <div class="d-none d-lg-block">

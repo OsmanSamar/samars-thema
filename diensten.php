@@ -586,9 +586,15 @@
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" class=""
-                            alt="Image 2">
-                        <!-- Overlay Text and Button -->
+                        <div class="ratio ratio-1x1 h-100">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" class=""
+                                alt="Image 2">
+                        </div>
+
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none" style="border-radius: 12px;"></div>
+
+
                         <div class="slider-text-button-container d-flex d-lg-none">
                             <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
                             <div
@@ -604,9 +610,12 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" class=""
-                            alt="Image 2">
-                        <!-- Overlay Text and Button -->
+                        <div class="ratio ratio-1x1 h-100">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" class=""
+                                alt="Image 2">
+                        </div>
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none" style="border-radius: 12px;"></div>
                         <div class="slider-text-button-container d-flex d-lg-none">
                             <div class="text">Tuin onderhoud in Ede</div>
                             <div
@@ -622,10 +631,13 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" class=""
-                            alt="Image 2">
+                        <div class="ratio ratio-1x1 h-100">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" class=""
+                                alt="Image 2">
 
-                        <!-- Overlay Text and Button -->
+                        </div>
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none" style="border-radius: 12px;"></div>
                         <div class="slider-text-button-container d-flex d-lg-none">
                             <div class="text">Tuin bij Tiny House</div>
                             <div

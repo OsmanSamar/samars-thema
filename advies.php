@@ -104,6 +104,8 @@
             height: 1px;
             width: 100%;
             opacity: 0.5;
+            margin-bottom: 96px;
+            margin-top: 188px;
 
         }
     }

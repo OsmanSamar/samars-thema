@@ -132,7 +132,7 @@
             height: 1px;
             width: 100%;
             opacity: 0.5;
-            margin-top: 194px;
+            margin-top: 188px;
 
         }
     }

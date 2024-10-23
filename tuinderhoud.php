@@ -103,6 +103,8 @@
             height: 1px;
             width: 100%;
             opacity: 0.5;
+            margin-bottom: 96px;
+            margin-top: 188px;
 
         }
     }
@@ -233,16 +235,17 @@
                                                 color: #fff;
                                                line-height: 55px;
                                                margin-top:20px;">
-                            Maar we doen nog veel meer
+                            Snoeien doet bloeien
                         </h2>
                         <div class="text2 text-fix">
                             <div class="inner" style="font-size:20px">
-                                <p><span style="font-weight: 400;">Na de beplanting gaan we aan de slag met de
-                                        bestrating, het beregeningssysteem, opslag van regenwater en/of de verlichting.
-                                        We nemen dit gelijk mee in het ontwerp, zodat het allemaal mooi op elkaar
-                                        aansluit. We werken met lokale partners die ons de materialen leveren. Zo zijn
-                                        we altijd verzekerd van topkwaliteit én investeren we in duurzame, lokale
-                                        samenwerkingen.</span></p>
+                                <p><span style="font-weight: 400; ">Iedereen vergeet wel eens zijn tuin op tijd te
+                                        snoeien of te bemesten. Of je stelt het uit, omdat je er eigenlijk niet zoveel
+                                        zin in hebt of omdat je niet zo goed weet hoe het moet. Dat begrijpen wij.
+                                        GROENtuinen kan hierin ontzorgen en bijvoorbeeld vaste snoeibeurten in het jaar
+                                        inplannen, zodat we precies op het goede moment bij jou in de tuin bezig zijn.
+
+                                        Lastig? Geen probleem, wij helpen je graag!</span></p>
                             </div>
 
                         </div>
@@ -309,7 +312,7 @@
                             </div>
                         </div>
                         <div class="col-lg-5 offset-lg-8 fadeIn" data-side="right">
-                            <h2 style="line-height: 49px; letter-spacing: 5px;">Enthousiast?<br> Neem contact op!</h2>
+                            <h2 style="line-height: 49px; letter-spacing: 5px;">Meer weten? Neem<br>contact op!</h2>
                             <div class="col-lg-9">
                                 <div class="text">
                                     <p><span style="font-weight: 400; line-height: 30px;letter-spacing: 1px;">Ook zo’n
