@@ -121,6 +121,15 @@ main {
   margin: 0 10px;
 }
 
+/* visited NavBar links */
+// .navbar-nav .nav-link:active {
+//   font-weight: bolder;
+// }
+
+#navlinkactive {
+  font-weight: bolder;
+}
+
 .navbar-nav .dropdown-item {
   color: #fff;
   padding: 8px 20px;

@@ -89,13 +89,11 @@
 
     .vl3 {
         border-left: 1px solid white;
-        /* height: 110px; */
         height: 70px;
         position: absolute;
         left: 50%;
         margin-left: -3px;
-        /* top: 1837px; */
-        top: 218%;
+        top: -5px;
         display: flex;
         opacity: .5;
         transform: translate(-50%, -50%);
@@ -128,11 +126,11 @@
 
         .vl2 {
             border-left: 1px solid white;
-            height: 113px;
+            height: 73px;
             position: absolute;
             left: 50%;
             margin-left: -3px;
-            top: 2071px;
+            top: -5px;
             display: flex;
             opacity: .5;
         }
@@ -462,7 +460,7 @@
 
         <!-- 3 -->
 
-        <div class=" ">
+        <div class="position-relative ">
 
 
 

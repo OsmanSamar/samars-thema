@@ -70,9 +70,14 @@
         /* top: 15px; */
         right: 65px;
         color: #f1f1f1;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
         transition: 0.3s;
+        border: 1px solid white;
+        border-radius: 50px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
 
     }
 
@@ -498,7 +503,8 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: left;
-        margin-left: 20px;
+        /* margin-left: 20px; */
+        margin-left: 10px;
     }
     </style>
     <div>
@@ -515,7 +521,7 @@
 
 
 
-            <!-- First Container -->
+            <!--------- First Container ------------>
             <div class="container d-lg-grid d-none  " style="margin-top: 140px">
                 <div class="row ">
 
@@ -546,7 +552,7 @@
                     <div class="col-12 col-lg-7 mb-4 text-center.grid-7 fadeIn">
                         <div class="container-circle" style="position: relative;">
 
-                            <!-- Circle On The Right Side Of Projecten Slider -->
+                            <!------------ Circle On The Right Side Of Projecten Slider ----------->
                             <a href="/projecten" id="demo3" class="circle text-circle">
                                 <div style="position: relative; height: 200px;">
                                     <?php
@@ -600,7 +606,7 @@
                                     <div class="container-circle" style="position: relative;">
 
 
-                                        <!-- Circle On The Right Side Of Projecten Slider -->
+                                        <!--------- Circle On The Right Side Of Projecten Slider ----------->
                                         <a href="/projecten" id="demo1" class="circle text-circle">
                                             <div style="position: relative; height: 200px;">
                                                 <?php
@@ -662,7 +668,7 @@
 
                                     <div class="container-circle " style="position: relative;">
 
-                                        <!-- Circle On The Right Side Of Projecten Slider -->
+                                        <!------- Circle On The Right Side Of Projecten Slider ----------->
                                         <a href="/projecten" id="demo2" class="circle text-circle">
                                             <div style="position: relative; height: 200px;">
                                                 <?php
@@ -741,10 +747,10 @@
     </div>
 
 
-    <!-- The first swiper  -->
+    <!------------ The first swiper ---------- -->
     <div class="container fadeIn" style="margin-bottom:80px;">
 
-        <!-- Swiper On Small Screen -->
+        <!------------ Swiper On Small Screen ----------->
         <div class="swiper-container" style="--swiper-pagination-color: #fff">
             <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
@@ -775,7 +781,7 @@
 
 
 
-    <!-- The second swiper -->
+    <!----------- The second swiper ------------>
     <div class="container fadeIn" style="margin-bottom:80px;">
 
         <div class="swiper-container" style="--swiper-pagination-color: #fff">
@@ -811,7 +817,7 @@
     </div>
 
 
-    <!-- The third swiper -->
+    <!--------- The third swiper --------->
 
     <div class="container fadeIn" style="margin-bottom:80px;">
 
@@ -858,7 +864,7 @@
 
 
 
-    <!--Contact Opnemen Section  -->
+    <!------Contact Opnemen Section  ---------->
     <div class="bg-leaf">
         <div class="container d-none d-lg-block" style="margin-top:60px;">
             <div class="bottom-text">
@@ -905,7 +911,7 @@
     </div>
 
 
-    <!-- Contact Information Section on Sm Screen -->
+    <!------- Contact Information Section on Sm Screen------------->
 
     <div class="container">
 
@@ -961,57 +967,56 @@
 
 
 
-    <!-- The Modal Tuin in Ede -->
+    <!------------ The Modal Tuin in Ede ----------->
     <div id="myModal" class="modal">
 
         <div class="  modal-content  " data-side="">
-            <!-- <div class="d-flex flex-lg-row justify-content-spacebetween align-items-center">
-                <span class="close">&times;</span>
-                <div id="caption">Tuinonderhoud in Ede</div>
-            </div> -->
-
-            <span class="close">&times;</span>
-            <div id="caption">Tuinonderhoud in Ede</div>
-            <div class="swiper-container " style="--swiper-pagination-color: #fff">
-                <div class="swiper mySwiper smrow order-2 projecten-slider"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287 ;">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/12scaled.jpg"
-                                alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                        <div class="swiper-slide" style="">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/17scaled.jpg" alt="scaled19"
-                                class="object-fit-cover rounded" style="" />
-                        </div>
-                    </div>
+            <div class="contaier">
+                <div class="d-flex flex-lg-row justify-content-spacebetween align-items-center ">
+                    <span class="close">&times;</span>
+                    <div id="caption">Tuinonderhoud in Ede</div>
                 </div>
 
-            </div>
+                <!-- <span class="close">&times;</span>
+            <div id="caption">Tuinonderhoud in Ede</div> -->
+                <div class="swiper-container " style="--swiper-pagination-color: #fff">
+                    <div class="swiper mySwiper smrow order-2 projecten-slider"
+                        style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287 ;overflow:visible">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/12scaled.jpg"
+                                    alt="chinaoldgarden" class="img1 object-fit-cover rounded" style=" " />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg"
+                                    alt="scaled11" class="object-fit-cover rounded" style="" />
+                            </div>
+                            <div class="swiper-slide" style="">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/17scaled.jpg"
+                                    alt="scaled19" class="object-fit-cover rounded" style="" />
+                            </div>
+                        </div>
+                    </div>
 
-            <div class=" flex  flex-lg-row align-items-center justify-content-center">
-                <div class="swiper-button-prev d-none d-lg-flex" style="left:15%; top:84%; position: absolute; color:white;
+                </div>
+
+                <div class=" flex  flex-lg-row align-items-center justify-content-center">
+                    <div class="swiper-button-prev d-none d-lg-flex" style="left:15%; top:84%; position: absolute; color:white;
                     border:1px solid white; border-radius:50px;width:50px;
                     height: 50px;
                      font-size: 20px;
                      text-align: center;
-                     align-items: center;
-                     padding: 8px;
+                    
                     
                     "></div>
-                <div class="swiper-button-next d-none d-lg-flex" style="left:20%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
+                    <div class="swiper-button-next d-none d-lg-flex" style="left:20%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
                    height: 50px;
                    font-size: 20px;
                    text-align: center;
-                   align-items: center;
-                  padding: 8px;">
+                 ">
+                    </div>
                 </div>
             </div>
-
 
 
         </div>
@@ -1037,17 +1042,10 @@
     span.onclick = function() {
         modal.style.display = "none";
     }
-
-    // Close the modal when clicking outside of the modal content
-    // window.onclick = function(event) {
-    //     if (event.target == modal) {
-    //         modal.style.display = "none";
-    //     }
-    // }
     </script>
 
 
-    <!-- Second Modal Tuin in Voorthuizen id="myImg2" -->
+    <!--------- Second Modal Tuin in Voorthuizen id="myImg2" ----------->
     <div id="myModal2" class="modal">
 
         <div class="  modal-content  " data-side="">
@@ -1085,16 +1083,14 @@
                         height: 50px;
                          font-size: 20px;
                          text-align: center;
-                         align-items: center;
-                         padding: 8px;
+                         
                         
                         "></div>
                 <div class="swiper-button-next d-none d-lg-flex" style="left:20%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
                        height: 50px;
                        font-size: 20px;
                        text-align: center;
-                       align-items: center;
-                      padding: 8px;">
+                     ">
                 </div>
             </div>
         </div>
@@ -1123,7 +1119,7 @@
     </script>
 
 
-    <!-- Third Modal Tuin in Voorthuizen id="myImg3" -->
+    <!------------ Third Modal Tuin in Voorthuizen id="myImg3" --------------->
     <div id="myModal3" class="modal ">
 
         <div class="  modal-content  " data-side="">
@@ -1174,25 +1170,22 @@
                         height: 50px;
                          font-size: 20px;
                          text-align: center;
-                         align-items: center;
-                         padding: 8px;
-                        
+                         
                         "></div>
                 <div class="swiper-button-next d-none d-lg-flex" style="left:20%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
                        height: 50px;
                        font-size: 20px;
                        text-align: center;
-                       align-items: center;
-                      padding: 8px;">
+                      ">
                 </div>
             </div>
             <div class="" id="caption2" style="   
-             right: 3.5%;
-              top: 84%;
+            right: 3.5%;
+            top: 84%;
             position: absolute;
-           color: white;
-           font-size: 20px;
-             padding: 8px;">
+            color: white;
+            font-size: 20px;
+            padding: 8px;">
                 GROENtuinen heeft de aanleg van deze prachtige botanische tuin in Barneveld verzorgd.
             </div>
 
