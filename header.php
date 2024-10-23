@@ -52,11 +52,11 @@
     });
     </script>
     <!-- NavBar Links Keep  Active  -->
-    <script>
+    <!-- <script>
     document.getElementById('navlinkactive').addEventListener('click', function() {
         this.classList.add('active');
     });
-    </script>
+    </script> -->
 
 </head>
 
@@ -197,8 +197,8 @@
                             <a class="nav-link" href="<?= esc_url(home_url('/tuinsoorten')); ?>">Tuinsoorten</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= esc_url(home_url('/projecten')); ?>"
-                                id="navlinkactive">Projecten</a>
+                            <a class="nav-link" href="<?= esc_url(home_url('/projecten')); ?>">Projecten</a>
+                            <!--  id="navlinkactive" -->
                         </li>
 
                         <!-- The button here for smaller screens -->

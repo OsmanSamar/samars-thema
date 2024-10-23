@@ -1006,21 +1006,25 @@
 
                 </div>
 
-                <div class=" flex  flex-lg-row align-items-center justify-content-center">
-                    <div class="swiper-button-prev d-none d-lg-flex" style="left:8%; top:84%; position: absolute; color:white;
-                    border:1px solid white; border-radius:50px;width:50px;
-                    height: 50px;
-                     font-size: 20px;
-                     text-align: center;
-                    
-                    
-                    "></div>
-                    <div class="swiper-button-next d-none d-lg-flex" style="left:13%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
-                   height: 50px;
-                   font-size: 20px;
-                   text-align: center;
-                 ">
+                <div class="d-flex justify-content-spacebetween" style="position: relative;
+                    top: -116px;">
+
+                    <div class=" flex  flex-lg-row align-items-center justify-content-center">
+                        <div class="swiper-button-prev d-none d-lg-flex" style="left:1%; top:84%; position: absolute; color:white;
+                        border:1px solid white; border-radius:50px;width:50px;
+                        height: 50px;
+                         font-size: 20px;
+                         text-align: center;
+                         
+                        "></div>
+                        <div class="swiper-button-next d-none d-lg-flex" style="left:7%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
+                       height: 50px;
+                       font-size: 20px;
+                       text-align: center;
+                      ">
+                        </div>
                     </div>
+
                 </div>
             </div>
 
@@ -1089,21 +1093,25 @@
 
                 </div>
 
-                <div class=" flex  flex-lg-row align-items-center justify-content-center">
-                    <div class="swiper-button-prev d-none d-lg-flex" style="left:8%; top:84%; position: absolute; color:white;
+                <div class="d-flex justify-content-spacebetween" style="position: relative;
+                    top: -116px;">
+
+                    <div class=" flex  flex-lg-row align-items-center justify-content-center">
+                        <div class="swiper-button-prev d-none d-lg-flex" style="left:1%; top:84%; position: absolute; color:white;
                         border:1px solid white; border-radius:50px;width:50px;
                         height: 50px;
                          font-size: 20px;
                          text-align: center;
                          
-                        
                         "></div>
-                    <div class="swiper-button-next d-none d-lg-flex" style="left:13%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
+                        <div class="swiper-button-next d-none d-lg-flex" style="left:7%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
                        height: 50px;
                        font-size: 20px;
                        text-align: center;
-                     ">
+                      ">
+                        </div>
                     </div>
+
                 </div>
 
 
@@ -1178,31 +1186,37 @@
                     </div>
 
                 </div>
+                <div class="d-flex justify-content-spacebetween" style="position: relative;
+                    top: -116px;">
 
-                <div class=" flex  flex-lg-row align-items-center justify-content-center">
-                    <div class="swiper-button-prev d-none d-lg-flex" style="left:8%; top:84%; position: absolute; color:white;
+                    <div class=" flex  flex-lg-row align-items-center justify-content-center">
+                        <div class="swiper-button-prev d-none d-lg-flex" style="left:1%; top:84%; position: absolute; color:white;
                         border:1px solid white; border-radius:50px;width:50px;
                         height: 50px;
                          font-size: 20px;
                          text-align: center;
                          
                         "></div>
-                    <div class="swiper-button-next d-none d-lg-flex" style="left:13%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
+                        <div class="swiper-button-next d-none d-lg-flex" style="left:7%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
                        height: 50px;
                        font-size: 20px;
                        text-align: center;
                       ">
+                        </div>
                     </div>
-                </div>
-                <div class="" id="caption2" style="   
-                    right: 3.5%;
+                    <div class="" id="caption2" style="   
+                    right: 1%;
                       top: 84%;
                      position: absolute;
                     color: white;
                     font-size: 20px;
                     padding: 8px;">
-                    GROENtuinen heeft de aanleg van deze prachtige botanische tuin in Barneveld verzorgd.
+                        GROENtuinen heeft de aanleg van deze prachtige botanische tuin in Barneveld verzorgd.
+                    </div>
+
                 </div>
+
+
             </div>
         </div>
     </div>
