@@ -368,7 +368,7 @@
                     </div>
 
                     <!-- Right: Button (Will be under testimonials on small screens) -->
-                    <div class="col-lg-5 text-right d-sm-block d-md-block d-lg-none">
+                    <div class="col-lg-5 text-right d-sm-block d-md-none d-lg-none">
                         <div class="circle-border"> <a href="/contact" class="btn btn-primary"
                                 style=" white-space: nowrap;">Kennismaken?</a>
                         </div>
@@ -381,7 +381,7 @@
 
                 <!-- Testimonials Section on Large Screen -->
                 <div class="row testimonials-section d-none d-md-flex">
-                    <div class="col-sm-12 col-lg-4 testimonial fadeIn">
+                    <div class="col-12 col-lg-4 testimonial fadeIn">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
                             class="testimonial-img  w-84 h-126" />
                         <h1>Vakkundig maatwerk</h1>
@@ -401,6 +401,13 @@
                         <h1>Écht out of the box</h1>
                         <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
                                 aanleg</span></p>
+                    </div>
+
+                    <div class="col-lg-5 text-right d-sm-none d-md-block d-lg-none">
+                        <div class="circle-border"> <a href="/contact" class="btn btn-primary"
+                                style=" white-space: nowrap;">Kennismaken?</a>
+                        </div>
+
                     </div>
                 </div>
             </div>

@@ -9,6 +9,7 @@
             class="whatsapp-icon" />
     </a>
 </div>
+
 <footer class="footer">
     <style>
     .border-top {
@@ -48,9 +49,8 @@
             </div>
             <div class="col-lg-5 col-12 mx-auto order-2 d-lg-none mt-lg-4">
                 <div class="socials d-flex justify-content-center flex-row gap-lg-3 gap-5 mt-lg-3 mt-lg-0 my-5">
-                    <a class="social-icon" target="_blank" aria-label="Instagram" href="">
-                        <img src="//groentuinen.b-cdn.net/wp-content/themes/groentuinen/public/images/instagram.8a59ff.svg"
-                            alt="Instagram">
+                    <a href="https://www.instagram.com" target="_blank" class="instagram-container">
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
@@ -74,20 +74,12 @@
 
         <div class="col-lg-5 col-12 mx-auto d-none d-lg-block order-lg-4 mt-lg-4">
             <div class="socials d-flex justify-content-center flex-row gap-lg-3 gap-5 mt-lg-3 mt-lg-0 my-5">
-                <a class="social-icon" target="_blank" aria-label="Instagram" href="">
-                    <img src="//groentuinen.b-cdn.net/wp-content/themes/groentuinen/public/images/instagram.8a59ff.svg"
-                        alt="Instagram">
+                <a href="https://www.instagram.com" target="_blank" class="instagram-container">
+                    <i class="fab fa-instagram"></i>
                 </a>
             </div>
         </div>
 
-        <!-- <div class="col-12 border-top d-block d-lg-none"></div>
-        <div class="d-block d-lg-none order-5 ">
-            <p class="text-center text-balance text-white text-opacity-50 copyright">
-                GROENtuinen <br>
-                Uit de grond gestampt <br>door <a href="">Code Blauw</a>
-            </p>
-        </div> -->
     </div>
 
     <div class="col-12 border-top d-block d-lg-none"></div>
