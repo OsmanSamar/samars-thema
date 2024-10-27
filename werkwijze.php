@@ -317,22 +317,38 @@
                                 </div>
 
                                 <style>
-                                    /* .more-text {
-                                    opacity: 0.3; 
-                                    transition: opacity 0.5s ease-in-out;
-                                    background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
-                                }
+                                    /* Overlay gradient effect and initial hidden state for small and tablet screens */
+                                    @media (max-width: 991px) {
+                                        .content1 {
+                                            position: relative;
+                                            max-height: 160px;
+                                            overflow: hidden;
+                                            transition: max-height 0.5s ease;
+                                        }
 
-                                .more-text .show {
-                                    opacity: 1;
-                                } */
+                                        .content1.show {
+                                            max-height: none;
+                                        }
 
-                                    .down-arrow {
-                                        font-size: 24px;
-                                        color: white;
+                                        .content1::after {
+                                            content: "";
+                                            position: absolute;
+                                            bottom: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 40px;
+                                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
+                                            pointer-events: none;
+                                            opacity: 0.5;
+                                        }
+
+                                        .more-text {
+                                            opacity: 1;
+                                        }
                                     }
 
-                                    .up-arrow {
+                                    .up-arrow,
+                                    .down-arrow {
                                         font-size: 24px;
                                         color: white;
 
@@ -342,16 +358,44 @@
 
 
                                 <script>
+                                    //  $(document).ready(function () {
+                                    //    $('.read-more-toggle').click(function (e) {
+                                    //        e.preventDefault();
+                                    //        var moreText = $(this).prev('.content1').find(
+                                    //            '.more-text');
+
+
+                                    // Toggle visibility of additional text
+                                    //      moreText.toggleClass('d-none');
+
+
+
+
+                                    // Toggle arrow icon
+                                    //   if (moreText.hasClass('d-none')) {
+                                    //    $(this).html(
+                                    //         '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                                    //      );
+                                    //  } else {
+                                    //      $(this).html(
+                                    //          '<span class="arrow fas fa-angle-up up-arrow" > </span>'
+                                    //      );
+                                    //  }
+
+                                    // Add or remove active class for arrow animation
+                                    //   $(this).toggleClass('active');
+                                    //  });
+                                    //  });
+
+
                                     $(document).ready(function () {
                                         $('.read-more-toggle').click(function (e) {
                                             e.preventDefault();
-                                            var moreText = $(this).prev('.content1').find(
-                                                '.more-text');
+                                            const moreText = $(this).prev('.content1').find('.more-text');
 
-
-                                            // Toggle visibility of additional text
+                                            // Toggle visibility and max-height of the content
+                                            $(this).prev('.content1').toggleClass('show');
                                             moreText.toggleClass('d-none');
-
 
                                             // Toggle arrow icon
                                             if (moreText.hasClass('d-none')) {
@@ -360,12 +404,9 @@
                                                 );
                                             } else {
                                                 $(this).html(
-                                                    '<span class="arrow fas fa-angle-up up-arrow" > </span>'
+                                                    '<span class="arrow fas fa-angle-up up-arrow"></span>'
                                                 );
                                             }
-
-                                            // Add or remove active class for arrow animation
-                                            $(this).toggleClass('active');
                                         });
                                     });
                                 </script>
