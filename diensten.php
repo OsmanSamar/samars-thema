@@ -3,6 +3,19 @@
 
 <main class="flex-grow-1">
     <style>
+    .container-text {
+        font-size: 17px;
+    }
+
+    .gardening-icon,
+    .growth-icon,
+    .design-icon,
+    .tools-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+
     /* MD Screen */
     @media (min-width: 768px) {
         .swiper {
@@ -47,8 +60,6 @@
         margin-top: auto;
         margin-bottom: 0;
         background-size: cover;
-
-
     }
 
     .bg-img img {
@@ -156,8 +167,23 @@
     }
 
 
-
+    /* LG Screen */
     @media (min-width: 992px) {
+
+
+        .container-text {
+            font-size: 24px;
+
+        }
+
+        .gardening-icon,
+        .growth-icon,
+        .design-icon,
+        .tools-icon {
+            width: 52px;
+            height: 52px;
+
+        }
 
         .swiper {
             width: 1781px;
@@ -198,7 +224,9 @@
 
         .bg-img img {
 
-            height: 690px
+            /* height: 690px; */
+            min-height: 50vh;
+
         }
 
 
@@ -406,7 +434,7 @@
 
         </div>
 
-        <div class="container">
+        <div class="container" style="margin-top:-82px">
 
             <div class="  row" style="margin-top:120px;">
                 <div class="col-12 col-lg-5 fadeIn" data-side="left">
@@ -416,10 +444,10 @@
 
                             <div class=" d-flex flex-row align-items-center border-bottom fadeIn" style="padding:30px ">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/design.svg"
-                                    alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
+                                    alt="Design Icon" class="design-icon" style="width:42px; height: 42px;" />
 
-                                <p class="flex-grow-1"
-                                    style="font-size:24px; line-height:33px; margin:0; text-align: center; ">
+                                <p class="flex-grow-1 container-text"
+                                    style="; line-height:33px; margin:0; text-align: center; ">
                                     Tuinontwerp
                                 </p>
 
@@ -438,11 +466,11 @@
                                 style="padding:30px ">
 
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tools.svg"
-                                    alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
+                                    alt="Tools Icon" class="tools-icon" style="width:42px; height: 42px;" />
 
 
-                                <p class="flex-grow-1"
-                                    style="font-size:24px; line-height:33px; margin:0; text-align: center; ">
+                                <p class="flex-grow-1 container-text"
+                                    style="line-height:33px; margin:0; text-align: center; ">
                                     Tuinaanleg
                                 </p>
 
@@ -460,10 +488,10 @@
                                 style=" padding:30px">
 
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/gardening.svg"
-                                    alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
+                                    alt="Gardening Icon" class="gardening-icon" />
 
 
-                                <p class="flex-grow-1" style=" font-size:24px; 
+                                <p class="flex-grow-1 container-text" style="
                                     line-height:33px; 
                                     text-align: center;
                                             margin:0; ">
@@ -482,9 +510,9 @@
                                 <div class=" d-flex flex-row align-items-center fadeIn  " style="padding:30px ">
 
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/growth.svg"
-                                        alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;" />
+                                        alt="Growth Icon" class="growth-icon" />
 
-                                    <p class="flex-grow-1" style="font-size:24px; line-height:33px; 
+                                    <p class="flex-grow-1 container-text" style=" line-height:33px; 
                                         margin:0; text-align: center; ">
                                         Advies</p>
 
@@ -499,17 +527,19 @@
                     </div>
                 </div>
 
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-12 col-lg-5 pt-lg-5 pt-0 fadeIn" data-side="right">
 
-                <div class="col-12 col-lg-7 pt-lg-5 pt-0 fadeIn" data-side="right">
-
-                    <div class="" style="; ">
-                        <h2 style="; text-align: left;  letter-spacing: 2px;    font-size: 32px;"> <span
+                    <div class="" style=" ">
+                        <h2 style="text-align:left;letter-spacing:2px;font-size:20px;line-height:33px;"> <span
                                 class="d-block d-lg-none py-4 pt-5 pt-lg-0">
                                 <span style="--i:1;">Onze </span> <span style="--i:2;"> diensten</span> <br>
                             </span>
                         </h2>
                         <p>
-                            <span>
+
+                            <span style="font-size:16px; line-height:0px; margin:0; text-align:left;  letter-spacing:1px;  
+                                   font-weight: 400; ">
                                 Bij GROENtuinen kun je terecht voor een écht groene tuin. We maken een tuinontwerp op
                                 basis
                                 van
@@ -526,17 +556,17 @@
                         </p>
 
                         <p>&nbsp;</p>
-                        <p>
-                            <span class="" style="font-size:20px; line-height:33px; margin:0; text-align: left;  letter-spacing: 2px;  
+
+                        <span style="font-size:16px; line-height:0px; margin:0; text-align:left;  letter-spacing:1px;  
                                    font-weight: 400; ">
 
-                                Voor onderhoud van tuinen richten wij ons onder andere op renovatie van de tuin,
-                                voorjaarsbeurten,
-                                zomersnoei, najaarsbeurt en bemesting. En wil je graag dat een tuinexpert meedenkt over
-                                jouw
-                                tuin?
-                                Krijg advies op maat over planten, ligging en verzorging van je tuin.
-                            </span>
+                            Voor onderhoud van tuinen richten wij ons onder andere op renovatie van de tuin,
+                            voorjaarsbeurten,
+                            zomersnoei, najaarsbeurt en bemesting. En wil je graag dat een tuinexpert meedenkt over
+                            jouw
+                            tuin?
+                            Krijg advies op maat over planten, ligging en verzorging van je tuin.
+                        </span>
 
                         </p>
 
@@ -577,7 +607,7 @@
             </a>
 
             <!-- HR With Text swiper on Sm Screen -->
-            <div class="mt-50 mb-50 fadeIn">
+            <div class="mt-50 mb-50 fadeIn container">
                 <hr class="hr-text gradient" data-content="Projecten">
             </div>
 
@@ -685,7 +715,7 @@
                                     Samen aan de slag?
                                 </span><br>
                                 <span style="font-weight:100; font-size:40px; 
-                                 letter-spacing:4px; font-family: 'Henderson Sans Basic', sans-serif;">Neem
+                                 letter-spacing:4px; font-family: 'Henderson Sans Basic', sans-serif; ">Neem
                                     contact op!</span>
                             </h2>
                             <div class="col-lg-9">
@@ -698,8 +728,9 @@
                                 </div>
                             </div>
                             <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
-                                <div class="circle-border">
-                                    <a class="btn btn-primary " href="/contact" style="padding: 10px 20px;">Neem contact
+                                <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
+                                    <a class="btn btn-primary " href="/contact" style="padding: 10px 20px; ">Neem
+                                        contact
                                         op
                                     </a>
                                 </div>

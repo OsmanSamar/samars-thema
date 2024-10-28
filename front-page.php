@@ -24,7 +24,8 @@
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: 1200px;
+        /* background-size: 1200px; */
+        background-size: 1104px;
 
     }
 
@@ -708,44 +709,47 @@
 
 
         <!--Contact Opnemen Section  -->
-        <div class="bg-leaf">
-            <div class="container mt-50 d-none d-lg-block">
-                <div class="bottom-text">
-                    <div class="row">
-                        <div class="col-lg-6  position-relative fadeIn " data-side="left">
-                            <div class="grid-bottom" style="left: calc(var(--bs-gutter-x)* 0.1);">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
-                                    class="w-100 h-100 object-fit-cover rounded" alt="">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
-                                    class="w-100 h-100 object-fit-cover rounded" alt="">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bg.png"
-                                    class="w-100 h-100 object-fit-cover rounded" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-5 offset-lg-1 fadeIn" data-side="right">
-                            <h2>Enthousiast?<br> Laat het ons weten</h2>
-                            <div class="col-lg-9">
-                                <div class="text">
-                                    <p><span style="font-weight: 400;">Ook een uniek tuinontwerp? Of op zoek naar de
-                                            hovenier voor jouw klus? Ga vrijblijvend in gesprek met GROENtuinen!</span>
-                                    </p>
+        <div style="margin-top:150px">
+            <div class="bg-leaf">
+                <div class="container mt-50 d-none d-lg-block">
+                    <div class="bottom-text">
+                        <div class="row">
+                            <div class="col-lg-6  position-relative fadeIn " data-side="left">
+                                <div class="grid-bottom" style="left: calc(var(--bs-gutter-x)* 0.1);">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
+                                        class="w-100 h-100 object-fit-cover rounded" alt="">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
+                                        class="w-100 h-100 object-fit-cover rounded" alt="">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bg.png"
+                                        class="w-100 h-100 object-fit-cover rounded" alt="">
                                 </div>
                             </div>
-                            <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
-                                <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.2);">
-                                    <a class="btn btn-primary " href="/contact">Neem contact op </a>
+                            <div class="col-lg-5 offset-lg-1 fadeIn" data-side="right">
+                                <h2>Enthousiast?<br> Laat het ons weten</h2>
+                                <div class="col-lg-9">
+                                    <div class="text">
+                                        <p><span style="font-weight: 400;">Ook een uniek tuinontwerp? Of op zoek naar de
+                                                hovenier voor jouw klus? Ga vrijblijvend in gesprek met
+                                                GROENtuinen!</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+                                <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
+                                    <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.2);">
+                                        <a class="btn btn-primary " href="/contact">Neem contact op </a>
+                                    </div>
+                                    <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+
+                                </div>
 
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
 
-
         </div>
+
 
 
 
