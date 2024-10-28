@@ -21,7 +21,10 @@
 
     }
     </style>
-    <div class="container">
+
+
+
+    <div class="container" style="margin-top:50px">
 
         <div class="row">
 
@@ -35,45 +38,44 @@
 
 
 
-            <div class="logo  col-lg-4 col-12 d-flex flex-column align-items-center  justify-content-center  order-1 order-lg-2"
+            <div class=" logo col-lg col-12 d-flex flex-column align-items-center  justify-content-center  order-1 order-lg-2"
                 style="margin-bottom:61px;">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenlogo.png"
                     alt="<?php bloginfo('name'); ?>" class="" />
-                <div class="d-none d-lg-block">
-                    <p class="text-center mt-3 text-white text-opacity-50 copyright">
+                <div class="d-none d-lg-block" style="margin-bottom:-75px; white-space:nowrap;">
+                    <p class="text-center mt-3 text-white text-opacity-50 copyright ">
                         © GROENtuinen -
-                        Uit de grond gestampt door <a target="_blank" href="">Code
+                        Uit de grond gestampt door <a target="_blank" href="https://code-blauw.nl/">Code
                             Blauw</a>
                     </p>
                 </div>
-            </div>
-            <div class="col-lg-5 col-12 mx-auto order-2 d-lg-none mt-lg-4">
-                <div class="socials d-flex justify-content-center flex-row gap-lg-3 gap-5 mt-lg-3 mt-lg-0 my-5">
-                    <a href="https://www.instagram.com" target="_blank" class="instagram-container">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
+
             </div>
 
+
+
             <div
-                class="col-lg mt-auto col-12 d-flex text-center text-lg-end flex-column order-3 order-lg-3 align-items-lg-end justify-content-lg-center adres">
-                <a aria-label="Neem contact op via telefoon" href="tel:+31621830806">06 21830806</a>
-                <a aria-label="Neem contact op via Mail" href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
-                <p></p>
+                class="col-lg col-12 d-flex text-lg-end text-center flex-column order-3 order-lg-3 align-items-lg-end justify-content-lg-center adres">
+                <ul class="nav pb-3 pb-lg-0 mt-auto d-flex flex-column mx-auto mx-lg-0 gap-2">
+
+                    <a aria-label="Neem contact op via telefoon" href="tel:+31621830806">06 21830806</a>
+                    <a aria-label="Neem contact op via Mail" href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
+
+                </ul>
             </div>
-            <div class="col-12 order-4 my-0">
+
+
+            <div class="col-12 order-4 " style="margin-top:122px">
                 <div class="mt-4 pt-3">
                     <div class="seperator  mt-lg-0"></div>
                 </div>
             </div>
 
-            <div class="mt-4 pt-3">
-                <div class="seperator  mt-lg-0"></div>
-            </div>
+
         </div>
 
-        <div class="col-lg-5 col-12 mx-auto d-none d-lg-block order-lg-4 mt-lg-4">
-            <div class="socials d-flex justify-content-center flex-row gap-lg-3 gap-5 mt-lg-3 mt-lg-0 my-5">
+        <div class="col-lg-5 col-12 mx-auto d-none d-lg-block order-lg-4 mt-lg-4  ">
+            <div class=" d-flex justify-content-center flex-row gap-lg-3 gap-5 mt-lg-3 mt-lg-0 my-5">
                 <a href="https://www.instagram.com" target="_blank" class="instagram-container">
                     <i class="fab fa-instagram"></i>
                 </a>
@@ -81,6 +83,7 @@
         </div>
 
     </div>
+
 
     <div class="col-12 border-top d-block d-lg-none"></div>
     <div class="container">
