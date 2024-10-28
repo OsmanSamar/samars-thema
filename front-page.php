@@ -144,7 +144,7 @@
 
 
 
-                <div class="fadeIn">
+                <div class="fadeIn container">
                     <div class="button-line-container">
                         <div class="button-group">
                             <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
@@ -915,7 +915,7 @@
         var swiper = new Swiper(container.querySelector(".mySwiper"), {
                 slidesPerView: 1.2,
                 centeredSlides: true,
-                loop: true,
+                // loop: true,
                 grabCursor: true,
                 spaceBetween: 5,
                 pagination: {
