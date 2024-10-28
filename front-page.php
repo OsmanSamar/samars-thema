@@ -4,108 +4,108 @@
 <div class="bg-container">
 
     <style>
-    .swiper-container {
-        position: relative;
+        .swiper-container {
+            position: relative;
 
-    }
+        }
 
-    .swiper-container .swiper-pagination {
-        pointer-events: none;
-        bottom: -50px !important;
+        .swiper-container .swiper-pagination {
+            pointer-events: none;
+            bottom: -50px !important;
 
-    }
+        }
 
-    .swiper-container .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
-    }
+        .swiper-container .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+        }
 
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* background-size: 1200px; */
-        background-size: 1104px;
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-size: 1200px; */
+            background-size: 1104px;
 
-    }
+        }
 
-    /*  */
+        /*  */
 
-    .swiper-container {
-        position: relative;
+        .swiper-container {
+            position: relative;
 
-    }
+        }
 
-    .swiper-container .swiper-pagination,
-    .swiper-button-next,
-    .swiper-button-prev {
-        bottom: -70px !important;
-        display: block;
-    }
+        .swiper-container .swiper-pagination,
+        .swiper-button-next,
+        .swiper-button-prev {
+            bottom: -70px !important;
+            display: block;
+        }
 
-    .swiper-container .swiper-button-next,
-    .swiper-button-prev {
-        position: absolute;
-        top: 113% !important;
-    }
+        .swiper-container .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 113% !important;
+        }
 
-    /* Set font size for swiper buttons */
-    .swiper-button-prev:after,
-    .swiper-rtl .swiper-button-next:after,
-    .swiper-button-next::after,
-    .swiper-rtl .swiper-button-prev::after {
-        font-size: 32px;
-        font-weight: 900;
-    }
+        /* Set font size for swiper buttons */
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after,
+        .swiper-button-next::after,
+        .swiper-rtl .swiper-button-prev::after {
+            font-size: 32px;
+            font-weight: 900;
+        }
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        border: 1px solid #fff;
-        border-radius: 25px;
-        --swiper-navigation-color: #ffffff;
-        z-index: 10;
-        cursor: pointer;
-    }
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #fff;
+            border-radius: 25px;
+            --swiper-navigation-color: #ffffff;
+            z-index: 10;
+            cursor: pointer;
+        }
 
-    .left-line {
-        border: 1px solid #fff;
-        width: 5%;
-        opacity: 0.5;
-        left: 41%;
-        position: absolute;
-        display: flex;
-        top: 113%;
-        align-items: center;
-        justify-content: center;
-
-
-    }
-
-    .right-line {
-        border: 1px solid #fff;
-        width: 5%;
-        opacity: 0.5;
-        left: 54%;
-        position: absolute;
-        display: flex;
-        top: 113%;
-        align-items: center;
-        justify-content: center;
-    }
+        .left-line {
+            border: 1px solid #fff;
+            width: 5%;
+            opacity: 0.5;
+            left: 41%;
+            position: absolute;
+            display: flex;
+            top: 113%;
+            align-items: center;
+            justify-content: center;
 
 
+        }
+
+        .right-line {
+            border: 1px solid #fff;
+            width: 5%;
+            opacity: 0.5;
+            left: 54%;
+            position: absolute;
+            display: flex;
+            top: 113%;
+            align-items: center;
+            justify-content: center;
+        }
 
 
-    .swiper-container .swiper-pagination-bullet,
+
+
+        .swiper-container .swiper-pagination-bullet,
         {
         width: 15px;
         height: 15px;
 
-    }
+        }
     </style>
 
 
@@ -126,7 +126,7 @@
         </div>
 
         <section class="hero">
-            <div class="hero-content">
+            <div class="hero-content Position-relative">
                 <div class="col-12  col-lg-12  pe-0 pe-lg-5">
                     <h1 class="fadeIn " data-side="right" style="transition-delay: .25s;">
                         <span class="d-lg-none d-block">
@@ -142,26 +142,64 @@
                 </div>
                 <!-- Line for Small Screen -->
                 <div class="line height d-flex d-md-none d-lg-none" style="--height:80px"></div>
+                <div class="vl2 d-none  d-lg-none d-md-flex" style="border-left: 1px solid white;
+    height: 73px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 167px;
+    display: flex;
+    opacity: 57.5;"></div>
 
 
-
-                <div class="fadeIn container">
+                <div class="fadeIn container d-block d-lg-none">
                     <div class="button-line-container">
-                        <div class="button-group">
-                            <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
+
+
+                        <div class="button-group ">
+
+                            <div class="circle-border ">
                                 <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
                                     style=" white-space: nowrap;">Tuin op maat</a>
                             </div>
-                            <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
+                            <div class="circle-border">
                                 <a href="<?= esc_url(home_url('/projecten')); ?>"
                                     class="btn btn-secondary">Projecten</a>
                             </div>
                         </div>
-                        <div class="line-container">
-                            <div class="line-hero"></div>
-                            <a href="https://www.instagram.com" target="_blank" class="instagram-container">
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="fadeIn container d-none d-lg-block">
+                    <div class="button-line-container">
+
+
+                        <div class="button-group ">
+
+                            <div class="circle-border " style="left: calc(var(--bs-gutter-x)* -1.0);">
+                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
+                                    style=" white-space: nowrap;">Tuin op maat</a>
+                            </div>
+                            <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.5);">
+                                <a href="<?= esc_url(home_url('/projecten')); ?>"
+                                    class="btn btn-secondary">Projecten</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com" target="_blank" class="instagram-container"
+                                style="left: calc(var(--bs-gutter-x)* 37);">
                                 <i class="fab fa-instagram"></i>
                             </a>
+                        </div>
+                        <div class="line-container">
+                            <div class="line-hero"></div>
+                            <!-- <a href="https://www.instagram.com" target="_blank" class="instagram-container">
+                                <i class="fab fa-instagram"></i>
+                            </a> -->
                         </div>
                     </div>
 
@@ -433,144 +471,144 @@
 
 
         <style>
-        .swiper-container-fullwidth {
-            width: 100vw;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+            .swiper-container-fullwidth {
+                width: 100vw;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
 
-        /* Hide the CircleType by default */
-        #demo3 {
-            display: none;
-        }
-
-        /* Show the CircleType on devices with a width of 1024px and up */
-        @media (min-width: 1024px) {
+            /* Hide the CircleType by default */
             #demo3 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                display: none;
+            }
+
+            /* Show the CircleType on devices with a width of 1024px and up */
+            @media (min-width: 1024px) {
+                #demo3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 200px;
+                    width: 200px;
+                    overflow: hidden;
+                    position: absolute;
+                    bottom: -129px;
+                    transform: translate(50%, 50%);
+                    right: 0;
+                    transform: translateY(-50%);
+                    color: #fff;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    letter-spacing: 3px;
+                    z-index: 1000;
+
+                }
+            }
+
+            #demo3 span {
+                position: absolute;
+                left: 50%;
+                transform-origin: 0 100px;
+
+            }
+
+            @keyframes rotating {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .text-circle {
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-name: rotating;
+                animation-timing-function: linear;
                 height: 200px;
                 width: 200px;
-                overflow: hidden;
-                position: absolute;
-                bottom: -129px;
-                transform: translate(50%, 50%);
-                right: 0;
-                transform: translateY(-50%);
-                color: #fff;
-                border-radius: 50%;
-                font-size: 12px;
-                letter-spacing: 3px;
-                z-index: 1000;
-
-            }
-        }
-
-        #demo3 span {
-            position: absolute;
-            left: 50%;
-            transform-origin: 0 100px;
-
-        }
-
-        @keyframes rotating {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .text-circle {
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-            animation-name: rotating;
-            animation-timing-function: linear;
-            height: 200px;
-            width: 200px;
-            overflow: visible;
-
-        }
-
-
-
-
-
-        /* Show text and button for devices less than 1024px */
-        @media (max-width: 1023px) {
-
-
-            .slider-text-button-container {
-                position: absolute;
-                /* Position from bottom */
-                bottom: 20px;
-                width: 100%;
-                justify-content: space-between;
-                /* Add padding from edges */
-                padding: 0 20px;
-                box-sizing: border-box;
-                z-index: 1000;
-                margin-bottom: 40px;
-            }
-
-            .slider-text-button-container-right {
-                position: absolute;
-                bottom: -55px;
-                right: 0px;
-                width: 100%;
-                /* Add padding from edges */
-                padding: 0 20px;
-                box-sizing: border-box;
-                z-index: 1000;
-
+                overflow: visible;
 
             }
 
-            .line-before {
-                border: 1px #fff solid;
-                /* width: 100%; */
-                width: 39%;
-                height: 1px;
+
+
+
+
+            /* Show text and button for devices less than 1024px */
+            @media (max-width: 1023px) {
+
+
+                .slider-text-button-container {
+                    position: absolute;
+                    /* Position from bottom */
+                    bottom: 20px;
+                    width: 100%;
+                    justify-content: space-between;
+                    /* Add padding from edges */
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    z-index: 1000;
+                    margin-bottom: 40px;
+                }
+
+                .slider-text-button-container-right {
+                    position: absolute;
+                    bottom: -55px;
+                    right: 0px;
+                    width: 100%;
+                    /* Add padding from edges */
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    z-index: 1000;
+
+
+                }
+
+                .line-before {
+                    border: 1px #fff solid;
+                    width: 21%;
+                    height: 1px;
+                    opacity: 0.3;
+                }
             }
-        }
 
-        /* 'md': '768px', */
-        @media (min-width: 768px) {
+            /* 'md': '768px', */
+            @media (min-width: 768px) {
 
-            .line-before {
-                border: 1px #fff solid;
-                /* width: 100%; */
-                width: 67%;
-                height: 1px;
+                .line-before {
+                    border: 1px #fff solid;
+                    width: 67%;
+                    height: 1px;
+                    opacity: 0.3;
+                }
+
             }
 
-        }
 
 
 
+            /* Text styling */
+            .slider-text-button-container .text {
 
-        /* Text styling */
-        .slider-text-button-container .text {
 
+                /* Take up available space */
+                flex: 1;
+                text-align: left;
 
-            /* Take up available space */
-            flex: 1;
-            text-align: left;
+            }
 
-        }
+            /* Button styling */
+            .slider-text-button-container button {
 
-        /* Button styling */
-        .slider-text-button-container button {
+                /* Do not grow */
+                flex: 0;
+                text-align: right;
 
-            /* Do not grow */
-            flex: 0;
-            text-align: right;
-
-        }
+            }
         </style>
 
 
@@ -632,7 +670,7 @@
                                     <div class="line-before"></div>
                                     <div class="circle-border">
                                         <a class="btn btn-secondary" href="/contact"
-                                            style="padding: 8px 12px; white-space: nowrap;  min-width: 160px; font-size:16px; text-align:center;">Bekijk
+                                            style="padding: 4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>
                                 </div>
@@ -653,7 +691,8 @@
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
+                                        <a class="btn btn-secondary" href="/contact"
+                                            style="padding: 4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>
                                 </div>
@@ -675,7 +714,8 @@
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/contact" style="padding: 4px 5px;">Bekijk
+                                        <a class="btn btn-secondary" href="/contact"
+                                            style="padding: 4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>
                                 </div>
@@ -763,26 +803,26 @@
 
     <!-- Contact Information Section on Sm Screen -->
     <style>
-    .dienst-line {
-        height: 1px;
-        width: 5595px;
-        /* background-color: #ffffff; */
-        border: 1px solid #ffffff;
-        color: #ffffff;
-        position: relative;
-        opacity: 0.3;
-    }
-
-    @media (min-width: 768px) {
-        .dienstline {
+        .dienst-line {
             height: 1px;
-            width: 928px;
-            background-color: #ffffff;
+            width: 5595px;
+            /* background-color: #ffffff; */
+            border: 1px solid #ffffff;
             color: #ffffff;
             position: relative;
-            opacity: 0.5;
+            opacity: 0.3;
         }
-    }
+
+        @media (min-width: 768px) {
+            .dienstline {
+                height: 1px;
+                width: 928px;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                opacity: 0.5;
+            }
+        }
     </style>
 
     <div>
@@ -851,72 +891,72 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1.2,
-        centeredSlides: true,
-        spaceBetween: 5,
-        pagination: {
-            el: ".swiper-pagination",
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            spaceBetween: 5,
+            pagination: {
+                el: ".swiper-pagination",
 
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            992: {
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                992: {
 
-                slidesPerView: 3.5,
+                    slidesPerView: 3.5,
+                }
             }
-        }
-    });
+        });
 
 
 
 
-    var appendNumber = 4;
-    var prependNumber = 1;
-    document
-        .querySelector(".prepend-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-            ]);
-        });
-    document
-        .querySelector(".prepend-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-            ]);
-        });
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                ]);
+            });
     </script>
 
 
     <!-- Initialize Swiper-container -->
     <script>
-    document.querySelectorAll(".swiper-container").forEach(container => {
-        var swiper = new Swiper(container.querySelector(".mySwiper"), {
+        document.querySelectorAll(".swiper-container").forEach(container => {
+            var swiper = new Swiper(container.querySelector(".mySwiper"), {
                 slidesPerView: 1.2,
                 centeredSlides: true,
                 // loop: true,
@@ -942,64 +982,64 @@
                 }
             }
 
+            );
+        })
+
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+
+        document.querySelector(".prepend-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>",
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber + "</div>",
+                ]);
+            }
+
         );
-    })
 
+        document.querySelector(".prepend-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>");
+            }
 
-    var appendNumber = 4;
-    var prependNumber = 1;
+        );
 
-    document.querySelector(".prepend-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>",
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber + "</div>",
-            ]);
-        }
+        document.querySelector(".append-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>");
+            }
 
-    );
+        );
 
-    document.querySelector(".prepend-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>");
-        }
+        document.querySelector(".append-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                ]);
+            }
 
-    );
-
-    document.querySelector(".append-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>");
-        }
-
-    );
-
-    document.querySelector(".append-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-            ]);
-        }
-
-    );
+        );
     </script>
 
 
