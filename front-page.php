@@ -4,107 +4,107 @@
 <div class="bg-container">
 
     <style>
-        .swiper-container {
-            position: relative;
+    .swiper-container {
+        position: relative;
 
-        }
+    }
 
-        .swiper-container .swiper-pagination {
-            pointer-events: none;
-            bottom: -50px !important;
+    .swiper-container .swiper-pagination {
+        pointer-events: none;
+        bottom: -50px !important;
 
-        }
+    }
 
-        .swiper-container .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
-        }
+    .swiper-container .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
 
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: 1200px;
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 1200px;
 
-        }
+    }
 
-        /*  */
+    /*  */
 
-        .swiper-container {
-            position: relative;
+    .swiper-container {
+        position: relative;
 
-        }
+    }
 
-        .swiper-container .swiper-pagination,
-        .swiper-button-next,
-        .swiper-button-prev {
-            bottom: -70px !important;
-            display: block;
-        }
+    .swiper-container .swiper-pagination,
+    .swiper-button-next,
+    .swiper-button-prev {
+        bottom: -70px !important;
+        display: block;
+    }
 
-        .swiper-container .swiper-button-next,
-        .swiper-button-prev {
-            position: absolute;
-            top: 113% !important;
-        }
+    .swiper-container .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 113% !important;
+    }
 
-        /* Set font size for swiper buttons */
-        .swiper-button-prev:after,
-        .swiper-rtl .swiper-button-next:after,
-        .swiper-button-next::after,
-        .swiper-rtl .swiper-button-prev::after {
-            font-size: 32px;
-            font-weight: 900;
-        }
+    /* Set font size for swiper buttons */
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after,
+    .swiper-button-next::after,
+    .swiper-rtl .swiper-button-prev::after {
+        font-size: 32px;
+        font-weight: 900;
+    }
 
-        .swiper-button-prev,
-        .swiper-button-next {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            border: 1px solid #fff;
-            border-radius: 25px;
-            --swiper-navigation-color: #ffffff;
-            z-index: 10;
-            cursor: pointer;
-        }
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        --swiper-navigation-color: #ffffff;
+        z-index: 10;
+        cursor: pointer;
+    }
 
-        .left-line {
-            border: 1px solid #fff;
-            width: 5%;
-            opacity: 0.5;
-            left: 41%;
-            position: absolute;
-            display: flex;
-            top: 113%;
-            align-items: center;
-            justify-content: center;
-
-
-        }
-
-        .right-line {
-            border: 1px solid #fff;
-            width: 5%;
-            opacity: 0.5;
-            left: 54%;
-            position: absolute;
-            display: flex;
-            top: 113%;
-            align-items: center;
-            justify-content: center;
-        }
+    .left-line {
+        border: 1px solid #fff;
+        width: 5%;
+        opacity: 0.5;
+        left: 41%;
+        position: absolute;
+        display: flex;
+        top: 113%;
+        align-items: center;
+        justify-content: center;
 
 
+    }
+
+    .right-line {
+        border: 1px solid #fff;
+        width: 5%;
+        opacity: 0.5;
+        left: 54%;
+        position: absolute;
+        display: flex;
+        top: 113%;
+        align-items: center;
+        justify-content: center;
+    }
 
 
-        .swiper-container .swiper-pagination-bullet,
+
+
+    .swiper-container .swiper-pagination-bullet,
         {
         width: 15px;
         height: 15px;
 
-        }
+    }
     </style>
 
 
@@ -147,11 +147,11 @@
                 <div class="fadeIn">
                     <div class="button-line-container">
                         <div class="button-group">
-                            <div class="circle-border">
+                            <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
                                 <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
                                     style=" white-space: nowrap;">Tuin op maat</a>
                             </div>
-                            <div class="circle-border">
+                            <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
                                 <a href="<?= esc_url(home_url('/projecten')); ?>"
                                     class="btn btn-secondary">Projecten</a>
                             </div>
@@ -203,7 +203,7 @@
                          font-family: Inclusive Sans, sans-serif; ">
                             Met een tuin van GROENTuin maak je jouw tuin uniek. Speciaal
                             ontworpen,aangelegd en onderhouden voor jou.</p>
-                        <div class="circle-border">
+                        <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
                             <a href="<?= esc_url(home_url('/over-ons')); ?>" class="btn btn-secondary">Over ons</a>
                         </div>
                     </div>
@@ -432,144 +432,144 @@
 
 
         <style>
-            .swiper-container-fullwidth {
-                width: 100vw;
-                position: relative;
-                left: 50%;
-                transform: translateX(-50%);
-            }
+        .swiper-container-fullwidth {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
-            /* Hide the CircleType by default */
+        /* Hide the CircleType by default */
+        #demo3 {
+            display: none;
+        }
+
+        /* Show the CircleType on devices with a width of 1024px and up */
+        @media (min-width: 1024px) {
             #demo3 {
-                display: none;
-            }
-
-            /* Show the CircleType on devices with a width of 1024px and up */
-            @media (min-width: 1024px) {
-                #demo3 {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 200px;
-                    width: 200px;
-                    overflow: hidden;
-                    position: absolute;
-                    bottom: -129px;
-                    transform: translate(50%, 50%);
-                    right: 0;
-                    transform: translateY(-50%);
-                    color: #fff;
-                    border-radius: 50%;
-                    font-size: 12px;
-                    letter-spacing: 3px;
-                    z-index: 1000;
-
-                }
-            }
-
-            #demo3 span {
-                position: absolute;
-                left: 50%;
-                transform-origin: 0 100px;
-
-            }
-
-            @keyframes rotating {
-                from {
-                    transform: rotate(0deg);
-                }
-
-                to {
-                    transform: rotate(360deg);
-                }
-            }
-
-            .text-circle {
-                animation-duration: 20s;
-                animation-iteration-count: infinite;
-                animation-name: rotating;
-                animation-timing-function: linear;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 height: 200px;
                 width: 200px;
-                overflow: visible;
+                overflow: hidden;
+                position: absolute;
+                bottom: -129px;
+                transform: translate(50%, 50%);
+                right: 0;
+                transform: translateY(-50%);
+                color: #fff;
+                border-radius: 50%;
+                font-size: 12px;
+                letter-spacing: 3px;
+                z-index: 1000;
+
+            }
+        }
+
+        #demo3 span {
+            position: absolute;
+            left: 50%;
+            transform-origin: 0 100px;
+
+        }
+
+        @keyframes rotating {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .text-circle {
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-name: rotating;
+            animation-timing-function: linear;
+            height: 200px;
+            width: 200px;
+            overflow: visible;
+
+        }
+
+
+
+
+
+        /* Show text and button for devices less than 1024px */
+        @media (max-width: 1023px) {
+
+
+            .slider-text-button-container {
+                position: absolute;
+                /* Position from bottom */
+                bottom: 20px;
+                width: 100%;
+                justify-content: space-between;
+                /* Add padding from edges */
+                padding: 0 20px;
+                box-sizing: border-box;
+                z-index: 1000;
+                margin-bottom: 40px;
+            }
+
+            .slider-text-button-container-right {
+                position: absolute;
+                bottom: -55px;
+                right: 0px;
+                width: 100%;
+                /* Add padding from edges */
+                padding: 0 20px;
+                box-sizing: border-box;
+                z-index: 1000;
+
 
             }
 
+            .line-before {
+                border: 1px #fff solid;
+                /* width: 100%; */
+                width: 39%;
+                height: 1px;
+            }
+        }
 
+        /* 'md': '768px', */
+        @media (min-width: 768px) {
 
-
-
-            /* Show text and button for devices less than 1024px */
-            @media (max-width: 1023px) {
-
-
-                .slider-text-button-container {
-                    position: absolute;
-                    /* Position from bottom */
-                    bottom: 20px;
-                    width: 100%;
-                    justify-content: space-between;
-                    /* Add padding from edges */
-                    padding: 0 20px;
-                    box-sizing: border-box;
-                    z-index: 1000;
-                    margin-bottom: 40px;
-                }
-
-                .slider-text-button-container-right {
-                    position: absolute;
-                    bottom: -55px;
-                    right: 0px;
-                    width: 100%;
-                    /* Add padding from edges */
-                    padding: 0 20px;
-                    box-sizing: border-box;
-                    z-index: 1000;
-
-
-                }
-
-                .line-before {
-                    border: 1px #fff solid;
-                    /* width: 100%; */
-                    width: 39%;
-                    height: 1px;
-                }
+            .line-before {
+                border: 1px #fff solid;
+                /* width: 100%; */
+                width: 67%;
+                height: 1px;
             }
 
-            /* 'md': '768px', */
-            @media (min-width: 768px) {
-
-                .line-before {
-                    border: 1px #fff solid;
-                    /* width: 100%; */
-                    width: 67%;
-                    height: 1px;
-                }
-
-            }
+        }
 
 
 
 
-            /* Text styling */
-            .slider-text-button-container .text {
+        /* Text styling */
+        .slider-text-button-container .text {
 
 
-                /* Take up available space */
-                flex: 1;
-                text-align: left;
+            /* Take up available space */
+            flex: 1;
+            text-align: left;
 
-            }
+        }
 
-            /* Button styling */
-            .slider-text-button-container button {
+        /* Button styling */
+        .slider-text-button-container button {
 
-                /* Do not grow */
-                flex: 0;
-                text-align: right;
+            /* Do not grow */
+            flex: 0;
+            text-align: right;
 
-            }
+        }
         </style>
 
 
@@ -713,7 +713,7 @@
                 <div class="bottom-text">
                     <div class="row">
                         <div class="col-lg-6  position-relative fadeIn " data-side="left">
-                            <div class="grid-bottom">
+                            <div class="grid-bottom" style="left: calc(var(--bs-gutter-x)* 0.1);">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
                                     class="w-100 h-100 object-fit-cover rounded" alt="">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
@@ -732,7 +732,7 @@
                                 </div>
                             </div>
                             <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
-                                <div class="circle-border">
+                                <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.2);">
                                     <a class="btn btn-primary " href="/contact">Neem contact op </a>
                                 </div>
                                 <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
@@ -759,26 +759,26 @@
 
     <!-- Contact Information Section on Sm Screen -->
     <style>
-        .dienst-line {
+    .dienst-line {
+        height: 1px;
+        width: 5595px;
+        /* background-color: #ffffff; */
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        position: relative;
+        opacity: 0.3;
+    }
+
+    @media (min-width: 768px) {
+        .dienstline {
             height: 1px;
-            width: 5595px;
-            /* background-color: #ffffff; */
-            border: 1px solid #ffffff;
+            width: 928px;
+            background-color: #ffffff;
             color: #ffffff;
             position: relative;
-            opacity: 0.3;
+            opacity: 0.5;
         }
-
-        @media (min-width: 768px) {
-            .dienstline {
-                height: 1px;
-                width: 928px;
-                background-color: #ffffff;
-                color: #ffffff;
-                position: relative;
-                opacity: 0.5;
-            }
-        }
+    }
     </style>
 
     <div>
@@ -847,72 +847,72 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1.2,
-            centeredSlides: true,
-            spaceBetween: 5,
-            pagination: {
-                el: ".swiper-pagination",
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        spaceBetween: 5,
+        pagination: {
+            el: ".swiper-pagination",
 
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                992: {
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            992: {
 
-                    slidesPerView: 3.5,
-                }
+                slidesPerView: 3.5,
             }
+        }
+    });
+
+
+
+
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            ]);
         });
-
-
-
-
-        var appendNumber = 4;
-        var prependNumber = 1;
-        document
-            .querySelector(".prepend-2-slides")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.prependSlide([
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                ]);
-            });
-        document
-            .querySelector(".prepend-slide")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.prependSlide(
-                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-                );
-            });
-        document
-            .querySelector(".append-slide")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.appendSlide(
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-                );
-            });
-        document
-            .querySelector(".append-2-slides")
-            .addEventListener("click", function (e) {
-                e.preventDefault();
-                swiper.appendSlide([
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                ]);
-            });
+    document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-slide")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+            );
+        });
+    document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            ]);
+        });
     </script>
 
 
     <!-- Initialize Swiper-container -->
     <script>
-        document.querySelectorAll(".swiper-container").forEach(container => {
-            var swiper = new Swiper(container.querySelector(".mySwiper"), {
+    document.querySelectorAll(".swiper-container").forEach(container => {
+        var swiper = new Swiper(container.querySelector(".mySwiper"), {
                 slidesPerView: 1.2,
                 centeredSlides: true,
                 loop: true,
@@ -938,64 +938,64 @@
                 }
             }
 
-            );
-        })
-
-
-        var appendNumber = 4;
-        var prependNumber = 1;
-
-        document.querySelector(".prepend-2-slides").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.prependSlide([
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber +
-                    "</div>",
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber + "</div>",
-                ]);
-            }
-
         );
+    })
 
-        document.querySelector(".prepend-slide").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.prependSlide(
-                    '<div class="swiper-slide">Slide ' + --
-                    prependNumber +
-                    "</div>");
-            }
 
-        );
+    var appendNumber = 4;
+    var prependNumber = 1;
 
-        document.querySelector(".append-slide").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.appendSlide(
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>");
-            }
+    document.querySelector(".prepend-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>",
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber + "</div>",
+            ]);
+        }
 
-        );
+    );
 
-        document.querySelector(".append-2-slides").addEventListener(
-            "click",
-            function (e) {
-                e.preventDefault();
-                swiper.appendSlide([
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>",
-                    '<div class="swiper-slide">Slide ' + ++
-                    appendNumber + "</div>",
-                ]);
-            }
+    document.querySelector(".prepend-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.prependSlide(
+                '<div class="swiper-slide">Slide ' + --
+                prependNumber +
+                "</div>");
+        }
 
-        );
+    );
+
+    document.querySelector(".append-slide").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide(
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>");
+        }
+
+    );
+
+    document.querySelector(".append-2-slides").addEventListener(
+        "click",
+        function(e) {
+            e.preventDefault();
+            swiper.appendSlide([
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + ++
+                appendNumber + "</div>",
+            ]);
+        }
+
+    );
     </script>
 
 
