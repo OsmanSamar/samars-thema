@@ -839,7 +839,8 @@ main {
 @media screen and (min-width: 992px) {
   .downarrow {
     // left: calc(var(--bs-gutter-x) * 1.5);
-    left: calc(var(--bs-gutter-x) * 0.1);
+    // left: calc(var(--bs-gutter-x) * 0.1);
+    left: calc(var(--bs-gutter-x) * -0);
   }
 }
 
