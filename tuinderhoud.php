@@ -2,6 +2,19 @@
 
 <main class="page" class="flex-grow-1">
     <style>
+    .vl3 {
+        border-left: 1px solid white;
+        height: 92px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: -34px;
+        display: flex;
+        opacity: .5;
+        transform: translate(-50%, -50%);
+    }
+
+
     .line-left {
         background-color: #fff;
         opacity: .5;
@@ -51,10 +64,34 @@
         margin-top: 80px;
     }
 
+
+    @media(min-width: 768px) {
+        .text {
+            font-family: 'Inclusive Sans', sans-serif;
+            font-size: 20px;
+            color: #FFFFFF;
+            opacity: 1;
+            letter-spacing: 0px;
+        }
+
+        .vl2 {
+            border-left: 1px solid white;
+            height: 84px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: -96px;
+            display: flex;
+            opacity: .5;
+        }
+    }
+
     @media (min-width: 992px) {
 
         .first-img {
-            height: 659px
+            height: 659px;
+            width: 618px;
+
         }
 
         .swiper-container .swiper-pagination {
@@ -108,6 +145,14 @@
 
         }
     }
+
+    .img3,
+    .img1,
+    .img2,
+    .groentuinen,
+    .first-img {
+        object-fit: cover;
+    }
     </style>
     <div class="container">
 
@@ -116,10 +161,11 @@
             <!-- Breadcrumb Links -->
             <div class="d-inline-block" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 45px;
-        margin-top:45px;">
+        margin-top:45px;
+       ">
                 <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span class="separator">
                     // </span>
                 <span class="last">Onze diensten</span>
@@ -131,17 +177,24 @@
         font-family: henderson-sans-basic, sans-serif;
         font-size: 36px;
         font-weight: 900;
-        line-height: 125px;
-        margin-bottom: 45px;
-        letter-spacing:2px;">Tuinsonderhoud
+        line-height: 60px;
+       ">Tuinsonderhoud
+            </h1>
+            <h1 class="fadeIn d-none d-md-block d-lg-none mb-3" style="color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 41px;
+        font-weight: 700;
+        line-height: 60px;
+       
+        ">Tuinsonderhoud
             </h1>
 
 
-            <h1 class="fadeIn d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-none d-md-none d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
-        line-height: 125px;
+        line-height: 60px;
         letter-spacing:2px;">Tuinsonderhoud</h1>
         </div>
 
@@ -149,7 +202,37 @@
 
         <div class="row">
             <div class="col-12  col-md-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:;">
-                <div class="text-header ">
+                <div class="text-header d-block d-md-none d-lg-none ">
+                    <h2 style="color: #fff9f4;
+                  font-family: henderson-sans-basic, sans-serif;
+                color: #fff;
+                 font-size: 29px;
+               font-weight: 300;
+                line-height: 60px;
+                ">
+                        <span style="--i:1;">Wij doen het</span> <br>
+                        <span style="--i:3;">takkenwerk</span>
+
+                    </h2>
+                </div>
+
+
+                <div class="text-header d-none d-md-block d-lg-none">
+                    <h2 style="color: #fff9f4;
+                  font-family: henderson-sans-basic, sans-serif;
+                color: #fff;
+                 font-size: 29px;
+               font-weight: 300;
+                line-height: 60px;
+                ">
+                        <span style="--i:1;">Wij doen het takkenwerk</span> <br>
+                        <span style="--i:3;"></span>
+
+                    </h2>
+                </div>
+
+
+                <div class="text-header d-none d-md-none d-lg-block ">
                     <h2 style="color: #fff9f4;
                   font-family: henderson-sans-basic, sans-serif;
                 color: #fff;
@@ -162,27 +245,142 @@
 
                     </h2>
                 </div>
+
+
+
+
                 <div class="row pb-lg-5 pb-0">
                     <div class="col-2">
                         <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
                     </div>
                     <div class=" col-lg-9  mt-lg-1 ">
-                        <div class="text text-fix">
-                            <div class="" style="--height: 400px;">
-                                <p><span style="font-weight: 400;">Je tuin komt het best tot z’n recht als de planten,
-                                        bloemen en bomen er op hun mooist bij staan. En om écht te kunnen genieten van
-                                        je tuin, moet deze goed onderhouden worden door jou of een hovenier. Wij
-                                        verzorgen voorjaarsbeurten, de zomersnoei, najaarsbeurten en kunnen zorgen voor
-                                        renovatie, herinrichten en bemesting van de tuin.</span></p>
-                            </div>
-                            <div class="read-more"></div>
+                        <div class="text d-none d-md-none d-lg-flex flex-column align-items-center"
+                            style="--height: 400px;">
+
+                            <p>
+                                <span style="font-weight: 400;">Je tuin komt het best tot z’n recht als de planten,
+                                    bloemen en bomen er op hun mooist bij staan. En om écht te kunnen genieten van
+                                    je tuin, moet deze goed onderhouden worden door jou of een hovenier. Wij
+                                    verzorgen voorjaarsbeurten, de zomersnoei, najaarsbeurten en kunnen zorgen voor
+                                    renovatie, herinrichten en bemesting van de tuin.</span>
+                            </p>
+
+
                         </div>
-                        <div class=" circle-border">
-                            <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary"
-                                style="white-space:nowrap; letter-spacing:1px;">Kennismaken?</a>
+                        <div class="d-none d-md-none d-lg-flex">
+                            <div class=" circle-border">
+                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary"
+                                    style="white-space:nowrap; letter-spacing:1px;">Kennismaken?</a>
+                            </div>
                         </div>
 
                     </div>
+
+
+                    <div class="text d-flex d-md-flex d-lg-none flex-column align-items-center"
+                        style="--height: 400px;">
+
+                        <p class="content1" style="font-weight: 400;">
+                            <span>Je tuin komt het best tot z’n recht als
+                                de planten,
+                                bloemen en bomen er op hun mooist bij staan. En om écht te kunnen genieten van
+                                je tuin, moet deze goed onderhouden worden door jou of een hovenier. Wij
+                            </span>
+                            <span class="more-text d-none d-lg-block">
+                                verzorgen voorjaarsbeurten, de zomersnoei, najaarsbeurten en kunnen zorgen voor
+                                renovatie, herinrichten en bemesting van de tuin.
+
+                            </span>
+                        </p>
+
+                        <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                            <span class="arrow fas fa-angle-down down-arrow">
+                            </span>
+                        </a>
+                        <div class="d-flex d-md-flex d-lg-none">
+                            <div class=" circle-border">
+                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies
+                                    nodig?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /* Overlay gradient effect and initial hidden state for small and tablet screens */ -->
+                    <style>
+                    @media (max-width: 991px) {
+                        .content1 {
+                            position: relative;
+                            max-height: 164px;
+                            overflow: hidden;
+                            transition: max-height 0.5s ease;
+                        }
+
+                        .content1.show {
+                            max-height: none;
+                        }
+
+
+                        .content1::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 15px;
+                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79,
+                                        0)) 0 0 no-repeat padding-box;
+                            pointer-events: none;
+                            opacity: 0.9;
+                        }
+
+                        .more-text {
+                            opacity: 1;
+                        }
+                    }
+
+                    .up-arrow,
+                    .down-arrow {
+                        font-size: 24px;
+                        color: white;
+
+                    }
+                    </style>
+
+                    <!-- Read More Read Less -->
+                    <script>
+                    $(document).ready(function() {
+                        $('.read-more-toggle').click(function(e) {
+                            e.preventDefault();
+                            const moreText = $(this).prev('.content1').find('.more-text');
+
+                            // Toggle visibility and max-height of the content
+                            $(this).prev('.content1').toggleClass('show');
+                            moreText.toggleClass('d-none');
+
+                            // Toggle arrow icon
+                            if (moreText.hasClass('d-none')) {
+                                $(this).html(
+                                    '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                                );
+                            } else {
+                                $(this).html(
+                                    '<span class="arrow fas fa-angle-up up-arrow"></span>'
+                                );
+                            }
+                        });
+                    });
+                    </script>
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
             <div class="col-12 col-lg-6 fadeIn" data-side="right" style="margin-top:80px; ;">
@@ -228,6 +426,13 @@
 
             <!-- Text Section -->
             <div class="order-1 order-md-1 order-lg-2 fadeIn ">
+
+                <!--Verticall line On Lg Screen  -->
+                <div class="vl3 d-lg-none d-md-none d-block"></div>
+                <div class="vl2 d-lg-none d-md-block"></div>
+
+
+
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
                         <h2 style="font-size:36px;
@@ -237,15 +442,30 @@
                                                margin-top:20px;">
                             Snoeien doet bloeien
                         </h2>
-                        <div class="text2 text-fix">
-                            <div class="inner" style="font-size:20px">
-                                <p><span style="font-weight: 400; ">Iedereen vergeet wel eens zijn tuin op tijd te
+                        <div class=" ">
+                            <div class="text d-flex flex-column align-items-center"
+                                style="font-size:18px; line-height: 30px; letter-spacing: 2px;">
+                                <p class="content1"><span style="font-weight: 400; ">Iedereen vergeet wel eens zijn tuin
+                                        op tijd te
                                         snoeien of te bemesten. Of je stelt het uit, omdat je er eigenlijk niet zoveel
                                         zin in hebt of omdat je niet zo goed weet hoe het moet. Dat begrijpen wij.
-                                        GROENtuinen kan hierin ontzorgen en bijvoorbeeld vaste snoeibeurten in het jaar
-                                        inplannen, zodat we precies op het goede moment bij jou in de tuin bezig zijn.
+                                        GROENtuinen kan </span>
 
-                                        Lastig? Geen probleem, wij helpen je graag!</span></p>
+
+                                    <span class="more-text d-none d-lg-block">hierin ontzorgen en
+                                        bijvoorbeeld vaste snoeibeurten in het jaar
+                                        inplannen, zodat we precies op het goede moment bij jou in de tuin bezig
+                                        zijn.
+
+                                        Lastig? Geen probleem, wij helpen je graag!
+                                    </span>
+                                </p>
+                                <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                                    <span class="arrow fas fa-angle-down down-arrow">
+                                    </span>
+                                </a>
+
+
                             </div>
 
                         </div>
