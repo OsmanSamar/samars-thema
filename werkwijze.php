@@ -3,30 +3,145 @@
 
 <main class="flex-grow-1">
     <style>
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: 1600px;
-        }
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 1600px;
+    }
 
 
-        .bg-img {
-            position: relative;
-            text-align: center;
-            color: #F8F4EA;
-            font-weight: bold;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-top: auto;
-            margin-bottom: 0;
-            background-size: cover;
+    .bg-img {
+        position: relative;
+        text-align: center;
+        color: #F8F4EA;
+        font-weight: bold;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: auto;
+        margin-bottom: 0;
+        background-size: cover;
 
-        }
+    }
+
+    .content {
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .bottom-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .groentuinen {
+        display: block;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 63vh
+    }
+
+    .text {
+        font-size: 20px;
+        margin-bottom: 48px;
+        text-align: left;
+    }
+
+
+    .nline {
+        border: 1px solid #ffffff;
+        opacity: 0.3;
+        width: 1308px;
+        height: 1px;
+    }
+
+
+
+
+    .vl3 {
+        border-left: 1px solid white;
+        height: 70px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: -5px;
+        display: flex;
+        opacity: .5;
+
+    }
+
+
+
+
+    .line-left {
+        background-color: #fff;
+        opacity: .5;
+        width: 1px;
+    }
+
+    .flex-container {
+        text-align: center;
+    }
+
+
+
+    .text-header {
+        font-size: 31px;
+        margin-bottom: 48px;
+    }
+
+    .text {
+        font-size: 20px;
+        margin-bottom: 48px;
+        text-align: left;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        line-height: 70px;
+        font-weight: bold;
+    }
+
+    .content p {
+
+        font-size: 15px;
+        line-height: 20px;
+
+    }
+
+    .down {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        width: 45px;
+        cursor: pointer;
+    }
+
+    .groenoverons {
+        width: 100%;
+        /* height: 823px; */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+
+
+
+    /* MD Screens */
+    @media (min-width: 768px) {
 
         .content {
             position: absolute;
-            top: 62%;
+            /* top: 50%; */
+            top: 73%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
@@ -34,196 +149,111 @@
             color: white;
         }
 
-        .bottom-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-        }
 
         .groentuinen {
             display: block;
             object-fit: cover;
             border-radius: 10px;
             width: 100%;
-            height: 63vh
+            height: 34vh
         }
 
-        /* 'Md Screen': '768px', */
 
-        @media (min-width: 768px) {
-            /* .groentuinen {
+        .vl2 {
+            border-left: 1px solid white;
+            height: 73px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: -5px;
+            display: flex;
+            opacity: .5;
+        }
+    }
+
+
+    @media (min-width: 992px) {
+
+        .groentuinen {
             display: block;
             object-fit: cover;
             border-radius: 10px;
             width: 100%;
-            height: 34vh
-        } */
+            height: 566px;
         }
 
 
-        .line-left {
-            background-color: #fff;
-            opacity: .5;
-            width: 1px;
+        /* Hide arrow on large screens */
+        .down {
+            display: none;
         }
 
-        .flex-container {
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
             text-align: center;
-        }
+            color: white;
 
-
-
-        .text-header {
-
-            font-size: 31px;
-
-            margin-bottom: 48px;
-
-        }
-
-        .text {
-            font-size: 20px;
-
-            margin-bottom: 48px;
         }
 
         .content h1 {
-            font-size: 24px;
-            line-height: 70px;
-            font-weight: bold;
+
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 125px;
         }
 
         .content p {
 
-            font-size: 15px;
-            line-height: 20px;
+            font-size: 20px;
+            line-height: 35px;
 
-        }
-
-        .down {
-            display: inline-block;
-            transition: transform 0.3s ease;
-            width: 45px;
-            cursor: pointer;
         }
 
         .groenoverons {
-            width: 100%;
-            /* height: 823px; */
-            object-fit: cover;
-            border-radius: 10px;
+            height: 722px;
+            width: 511px;
         }
 
 
 
 
-        /* MD Screens */
-        @media (min-width: 768px) {
-
-            .content {
-                position: absolute;
-                /* top: 50%; */
-                top: 73%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                text-align: center;
-                color: white;
-            }
+        .flex-container {
+            text-align: left;
+        }
+    }
 
 
-            .groentuinen {
-                display: block;
-                object-fit: cover;
-                border-radius: 10px;
-                width: 100%;
-                height: 34vh
-            }
+
+    @media (min-width: 768px) {
+        .line2 {
+            height: 1px;
+            width: 52vw;
+            background-color: #ffffff;
+            color: #ffffff;
+            position: relative;
+            margin-right: 10px;
+            display: block;
         }
 
+        .line3 {
+            height: 1px;
+            width: 50%;
+            background-color: #ffffff;
+            color: #ffffff;
+            margin-bottom: 48px;
+            opacity: 0.5;
 
-        @media (min-width: 992px) {
-
-            .groentuinen {
-                display: block;
-                object-fit: cover;
-                border-radius: 10px;
-                width: 100%;
-                height: 566px;
-            }
-
-
-            /* Hide arrow on large screens */
-            .down {
-                display: none;
-            }
-
-            .content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                text-align: center;
-                color: white;
-
-            }
-
-            .content h1 {
-
-                font-size: 90px;
-                font-weight: 700;
-                line-height: 125px;
-            }
-
-            .content p {
-
-                font-size: 20px;
-                line-height: 35px;
-
-            }
-
-            .groenoverons {
-                height: 722px;
-                width: 511px;
-            }
-
-
-
-
-            .flex-container {
-                text-align: left;
-            }
         }
 
 
 
-        @media (min-width: 768px) {
-            .line2 {
-                height: 1px;
-                width: 52vw;
-                background-color: #ffffff;
-                color: #ffffff;
-                position: relative;
-                margin-right: 10px;
-                display: block;
-            }
 
-            .line3 {
-                height: 1px;
-                width: 50%;
-                background-color: #ffffff;
-                color: #ffffff;
-
-            }
-
-
-
-
-            .border-left {}
-        }
+        .border-left {}
+    }
     </style>
     <div class="bg-leaf ">
 
@@ -287,12 +317,18 @@
                     <div class="col-12 col-md-12 col-lg-5 mx-auto mt-5 my-lg-5 py-5 fadeIn" data-side="left">
                         <div class="d-flex flex-column  text-left align-items-start gap-4 ">
                             <div class="" style="">
-                                <h2 class=" text-header">Hoe wij
+                                <h2 class=" text-header d-flex align-items-left d-md-none d-lg-none" style=" font-size: 31px;
+                                     margin-bottom: 48px;
+                                     text-align: left;">Hoe wij
+                                    te<br> werk gaan
+
+                                </h2>
+                                <h2 class=" text-header d-none d-md-block d-lg-block">Hoe wij
                                     te werk gaan
                                     <span style="font-weight:100; cursor:pointer;  opacity: .5; width:20px;">-
                                     </span>
                                 </h2>
-                                <div class=" text d-flex flex-column align-items-center ">
+                                <div class=" text d-flex flex-column align-items-center  ">
                                     <p class="content1">
                                         We plannen altijd een gesprek, waarin jij jouw wensen aan kunt geven. Je
                                         geeft aan welke stijl je mooi vindt en laat indien mogelijk een
@@ -311,106 +347,88 @@
                                     </a>
                                 </div>
 
-                                <div class=" circle-border">
-                                    <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Samen aan de
-                                        slag</a>
+                                <div class=" d-none d-lg-flex " style="margin-top:70px;">
+                                    <div class=" circle-border">
+                                        <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Samen
+                                            aan de
+                                            slag</a>
+                                    </div>
                                 </div>
 
                                 <style>
-                                    /* Overlay gradient effect and initial hidden state for small and tablet screens */
-                                    @media (max-width: 991px) {
-                                        .content1 {
-                                            position: relative;
-                                            max-height: 160px;
-                                            overflow: hidden;
-                                            transition: max-height 0.5s ease;
-                                        }
-
-                                        .content1.show {
-                                            max-height: none;
-                                        }
-
-                                        .content1::after {
-                                            content: "";
-                                            position: absolute;
-                                            bottom: 0;
-                                            left: 0;
-                                            width: 100%;
-                                            height: 40px;
-                                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
-                                            pointer-events: none;
-                                            opacity: 0.5;
-                                        }
-
-                                        .more-text {
-                                            opacity: 1;
-                                        }
+                                /* Overlay gradient effect and initial hidden state for small and tablet screens */
+                                @media (max-width: 991px) {
+                                    .content1 {
+                                        position: relative;
+                                        max-height: 160px;
+                                        overflow: hidden;
+                                        transition: max-height 0.5s ease;
                                     }
 
-                                    .up-arrow,
-                                    .down-arrow {
-                                        font-size: 24px;
-                                        color: white;
-
+                                    .content1.show {
+                                        max-height: none;
                                     }
+
+                                    .content1::after {
+                                        content: "";
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 40px;
+                                        background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
+                                        pointer-events: none;
+                                        opacity: 0.5;
+                                    }
+
+                                    .more-text {
+                                        opacity: 1;
+                                    }
+                                }
+
+                                .up-arrow,
+                                .down-arrow {
+                                    font-size: 24px;
+                                    color: white;
+
+                                }
                                 </style>
 
 
 
                                 <script>
-                                    //  $(document).ready(function () {
-                                    //    $('.read-more-toggle').click(function (e) {
-                                    //        e.preventDefault();
-                                    //        var moreText = $(this).prev('.content1').find(
-                                    //            '.more-text');
+                                $(document).ready(function() {
+                                    $('.read-more-toggle').click(function(e) {
+                                        e.preventDefault();
+                                        const moreText = $(this).prev('.content1').find('.more-text');
 
+                                        // Toggle visibility and max-height of the content
+                                        $(this).prev('.content1').toggleClass('show');
+                                        moreText.toggleClass('d-none');
 
-                                    // Toggle visibility of additional text
-                                    //      moreText.toggleClass('d-none');
-
-
-
-
-                                    // Toggle arrow icon
-                                    //   if (moreText.hasClass('d-none')) {
-                                    //    $(this).html(
-                                    //         '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                                    //      );
-                                    //  } else {
-                                    //      $(this).html(
-                                    //          '<span class="arrow fas fa-angle-up up-arrow" > </span>'
-                                    //      );
-                                    //  }
-
-                                    // Add or remove active class for arrow animation
-                                    //   $(this).toggleClass('active');
-                                    //  });
-                                    //  });
-
-
-                                    $(document).ready(function () {
-                                        $('.read-more-toggle').click(function (e) {
-                                            e.preventDefault();
-                                            const moreText = $(this).prev('.content1').find('.more-text');
-
-                                            // Toggle visibility and max-height of the content
-                                            $(this).prev('.content1').toggleClass('show');
-                                            moreText.toggleClass('d-none');
-
-                                            // Toggle arrow icon
-                                            if (moreText.hasClass('d-none')) {
-                                                $(this).html(
-                                                    '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                                                );
-                                            } else {
-                                                $(this).html(
-                                                    '<span class="arrow fas fa-angle-up up-arrow"></span>'
-                                                );
-                                            }
-                                        });
+                                        // Toggle arrow icon
+                                        if (moreText.hasClass('d-none')) {
+                                            $(this).html(
+                                                '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                                            );
+                                        } else {
+                                            $(this).html(
+                                                '<span class="arrow fas fa-angle-up up-arrow"></span>'
+                                            );
+                                        }
                                     });
+                                });
                                 </script>
 
+                            </div>
+                            <div class="text d-lg-none d-flex flex-row  align-items-center "
+                                style="white-space:no-wrap;">
+                                <div class="circle-border">
+                                    <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
+                                        style="padding-left:;padding-right: ; font-size:18px;">Samen aan de
+                                        slag</a>
+                                </div>
+                                <div class="nline"></div>
                             </div>
 
 
@@ -418,15 +436,33 @@
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ontwerptuin.png"
                                     alt="Ontwerptuin" class="" style="object-fit: cover; width:100% ;" />
                             </div>
-                            <div>
+                            <div class="position-relative">
 
 
-                                <div class=" d-lg-flex flex-row align-items-center justify-content-center gap-3">
-                                    <h2 class="text-header   ">Wat je krijgt</h2>
+                                <div class="vl3 d-lg-none d-md-none d-block"></div>
+                                <div class="vl2 d-lg-none d-md-block"></div>
+
+                                <h2 class="  d-flex  align-items-center justify-content-center d-md-flex d-lg-none"
+                                    style=" font-size: 31px;
+                                     margin-bottom:48px;
+                                     margin-top:75px;
+                                     text-align: center;">Ontwerp van
+                                    jouw tuin
+
+                                </h2>
+
+                                <div class=" d-lg-flex flex-row d-none d-md-none align-items-center justify-content-left gap-3"
+                                    style="margin-top:75px">
+
+                                    <h2 class=" text-header ">Wat je krijgt</h2>
                                     <div class="line3  d-none d-lg-block "></div>
                                 </div>
 
-                                <div class=" text d-flex flex-column align-items-center ">
+
+                                <div class=" d-flex flex-column align-items-center d-md-flex d-lg-none " style="   
+                                font-size: 20px;
+                                  margin-bottom: 48px;
+                                     text-align: center;">
                                     <p class="content1 ">
                                         Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
                                         ontwerpen
@@ -444,10 +480,39 @@
                                     </a>
                                 </div>
 
-                                <div class=" circle-border">
-                                    <a href="<?= esc_url(home_url('/projecten')); ?>" class="btn btn-primary">Bekijk
-                                        onze
-                                        projecten</a>
+                                <div class=" text d-flex flex-column align-items-center d-none d-md-none d-lg-flex ">
+                                    <p class="content1 ">
+                                        Bij GROENtuinen staan we voor duidelijkheid en transparantie. We
+                                        ontwerpen
+                                        jouw tuin, leggen de tuin aan en/of onderhouden deze voor een
+                                        eerlijke
+                                        en
+                                        vaste prijs. Ook maken we samen afspraken over de planten in je
+                                        tuin.<span class="more-text d-none d-lg-block">Zo weet je precies waar je
+                                            aan toe
+                                            bent.</span> </p>
+                                    <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+
+                                        <span class="arrow fas fa-angle-down "
+                                            style='font-size:24px;color:white'></span>
+                                    </a>
+                                </div>
+
+                                <div class="d-none d-md-none d-lg-block">
+                                    <div class=" circle-border ">
+                                        <a href="<?= esc_url(home_url('/projecten')); ?>" class="btn btn-primary">Bekijk
+                                            onze projecten
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-block d-md-block d-lg-none">
+                                    <div class=" circle-border ">
+                                        <a href="<?= esc_url(home_url('/duurzaamheid')); ?>"
+                                            class="btn btn-secondary">Over
+                                            duurzaamheid
+
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -464,6 +529,8 @@
 
                             <div class="d-flex flex-column text-left align-items-start gap-4   col-lg-9  mt-lg-1 mt-1  fadeIn "
                                 data-side="right">
+
+
                                 <div>
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
                                         alt="Groenoverons" class="groenoverons"
@@ -472,6 +539,11 @@
 
                                 <div>
                                     <h2 class="text-header ">Ontwerp van jouw tuin</h2>
+
+
+
+
+                                    </h2>
                                     <div class="text d-flex flex-column align-items-center">
                                         <p class="content1">Vervolgens gaan we aan de slag met het ontwerp
                                             van
@@ -506,6 +578,9 @@
                                         <a href="/duurzaamheid" class="btn btn-secondary">Over duurzaamheid</a>
                                     </div>
                                 </div>
+
+
+
                                 <div>
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijzetuin.png"
                                         alt="Werkwijzetuin" class="" style="object-fit: cover; width:100% ;" />
@@ -524,48 +599,56 @@
 
 
                             <div class="d-flex flex-column text-left align-items-start gap-4 mt-lg-1 mt-1">
-                                <div>
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/verticalplants.png"
-                                        alt="Groenoverons" class="groenoverons"
-                                        style="object-fit: cover; width:100% ;" />
+
+                                <h2 class=" text-header d-flex align-items-left d-md-flex d-lg-none" style=" font-size: 31px;
+                                     margin-bottom: 48px;
+                                     text-align: left;">Wat je krijgt
+
+
+                                </h2>
+
+                                <div class="text d-flex flex-column align-items-center justify-content-left">
+                                    <p class="content1">Vervolgens gaan we aan de slag met het ontwerp
+                                        van
+                                        je
+                                        tuin. Dit doen
+                                        we
+                                        op
+                                        basis van alle input uit het eerste gesprek. We maken een
+                                        offerte
+                                        voor
+                                        het
+                                        realiseren van je droomtuin.
+
+                                        We presenteren het ontwerp en bespreken de mogelijkheden en de
+                                        kosten
+                                        met
+                                        je.<span class="more-text d-none d-lg-block">Zijn we het eens en is de
+                                            offerte akkoord? Dan spreken
+                                            we af
+                                            wanneer
+                                            we
+                                            voor je aan de slag gaan.</span>
+                                    </p>
+                                    <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+
+                                        <span class="arrow fas fa-angle-down "
+                                            style='font-size:24px;color:white'></span>
+                                    </a>
                                 </div>
 
-                                <div>
-                                    <h2 class="text-header ">Ontwerp van jouw tuin</h2>
-                                    <div class="text d-flex flex-column align-items-center">
-                                        <p class="content1">Vervolgens gaan we aan de slag met het ontwerp
-                                            van
-                                            je
-                                            tuin. Dit doen
-                                            we
-                                            op
-                                            basis van alle input uit het eerste gesprek. We maken een
-                                            offerte
-                                            voor
-                                            het
-                                            realiseren van je droomtuin.
 
-                                            We presenteren het ontwerp en bespreken de mogelijkheden en de
-                                            kosten
-                                            met
-                                            je.<span class="more-text d-none d-lg-block">Zijn we het eens en is de
-                                                offerte akkoord? Dan spreken
-                                                we af
-                                                wanneer
-                                                we
-                                                voor je aan de slag gaan.</span>
-                                        </p>
-                                        <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
 
-                                            <span class="arrow fas fa-angle-down "
-                                                style='font-size:24px;color:white'></span>
+                                <div class="text d-lg-none d-flex flex-row  align-items-center "
+                                    style="white-space:no-wrap;">
+                                    <div class="circle-border">
+                                        <a href="<?= esc_url(home_url('/projecten')); ?>" class="btn btn-primary"
+                                            style="padding-left:;padding-right: ; font-size:18px;">Bekijk onze projecten
                                         </a>
                                     </div>
-
-                                    <div class="circle-border">
-                                        <a href="/duurzaamheid" class="btn btn-secondary">Over duurzaamheid</a>
-                                    </div>
+                                    <div class="nline"></div>
                                 </div>
+
                                 <div>
                                     <img src="<?= esc_url(get_template_directory_uri()); ?>/images/werkwijzetuin.png"
                                         alt="Werkwijzetuin" class="" style="object-fit: cover; width:100% ;" />
