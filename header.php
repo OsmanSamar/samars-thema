@@ -61,11 +61,12 @@
 
 
 
-    <!-- <script>
+    <script>
     const button = document.querySelector(".navbar-toggler");
-    button.addEventListener("click", () =>
-        button.classList.toggle("toggled"));
-    </script> -->
+    button.addEventListener("click", () => {
+        button.classList.toggle("toggled");
+    });
+    </script>
 
 
 
@@ -159,61 +160,55 @@
                     </button>
                 </div>
 
-                <style>
-                /* Added Style of navbar-toggle-icon */
+                <!--  <style>
+                 Added Style of navbar-toggle-icon 
 
-                /* .navbar-toggler,
+
+
+                .navbar-toggler {
+                    position: relative;
+
+                    width: 40px;
+                    height: 6px;
+                    background-color: #f5a287;
+
+                    transition: background-color 0.3s ease;
+                }
+
                 .navbar-toggler::before,
                 .navbar-toggler::after {
-                    width: 20px;
-                    height: 2px;
-                    border-radius: 4px;
-                    background-color: #f5a287;
-                } */
+                    content: "";
+                    position: absolute;
+                    width: 40px;
+                    height: 6px;
+                    background-color: red;
+                    transition: transform 0.3s ease, opacity 0.3s ease;
+                } 
 
-                /* To center the span element in the middle of its containing button */
-                /* .navbar-toggler {
-                    top: calc(50% - 1px);
-                    left: calc(50% - 10px);
-                } */
-
-                /* Position the two pseudo-elements to the very left */
-
-                /* .navbar-toggler::before,
-                .navbar-toggler::after {
-                    content: " ";
-                    left: 0;
-                }
-
-                .navbar-toggler::before {
-                    bottom: 8px;
+                Offset the top and bottom bars 
+                 .navbar-toggler::before {
+                    content: "";
+                    transform: translateY(-12px);
                 }
 
                 .navbar-toggler::after {
-                    top: 8px;
-                }
+                    content: "";
+                    transform: translateY(12px);
+                } 
 
-                .toggled .navbar-toggler {
-                    width: 20px;
-                    transform: rotate(-45deg);
-                    background-color: red;
-                }
-
-                .toggled .navbar-toggler::after {
-                    width: 20px;
-                    top: 0;
-                    transform: rotate(-270deg);
-                    background-color: red;
+                 Styles for the close (X) icon when toggled */
+                 .toggled .navbar-toggler {
+                    background-color: transparent;
                 }
 
                 .toggled .navbar-toggler::before {
-                    transform: scale(0);
+                    transform: rotate(45deg)
                 }
 
-                .navbar-toggler .navbar-toggler::after {
-                    transition: all 0.3s linear;
-                } */
-                </style>
+                .toggled .navbar-toggler::after {
+                    transform: rotate(-45deg)
+                }
+                </style>  -->
 
 
 
@@ -252,7 +247,7 @@
                             <!-- <div class="d-flex align-items-center justify-content-center">
                                 <a class="nav-link" href="<?= esc_url(home_url('/werkwijze')); ?>">Werkwijze</a>
                                 <div>
-                                    <a class="downarrow" aria-label="Go to the content" href="#Maaktuin">
+                                    <a class="downarrow d-block" aria-label="Go to the content" href="#Maaktuin">
                                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
                                             alt="downarrow Icon" class="downarrow-icon" />
                                     </a>
