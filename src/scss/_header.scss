@@ -93,17 +93,7 @@ main {
   max-width: 170px;
 }
 
-/*  Navbar Toggler Icon Style */
-.navbar-toggler {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-  color: #5b7d6c;
-  background-color: #f5a287;
-}
+///////////////////////////////////
 
 /* Ensure the logo and menu are aligned properly */
 .navbar-brand {
@@ -441,8 +431,8 @@ main {
   }
 
   .button-group {
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -565,19 +555,20 @@ main {
     align-items: center;
     position: relative;
   }
-  // Added wtg to line on bg on lg Screen
-  .line-hero {
-    height: 1px;
-    // width: 64vw;
-    width: 59vw;
-    /* Line stretches across the page */
-    background-color: #ffffff;
-    color: #ffffff;
-    position: relative;
-    margin-right: 10px; /* Space between line and Instagram icon */
-    display: block;
-    opacity: 0.5;
-  }
+  //  line on LG Screen
+  // .line-hero {
+  // height: 1px;
+  // width: 64vw;
+  // width: 59vw;
+  /* Line stretches across the page */
+  // background-color: #ffffff;
+  //  color: #ffffff;
+  // position: relative;
+  // margin-right: 10px; /* Space between line and Instagram icon */
+  // display: block;
+  // opacity: 0.5;
+  // margin-left: -41px;
+  //}
 
   .line {
     height: 1px;

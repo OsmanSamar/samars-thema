@@ -51,12 +51,24 @@
         });
     });
     </script>
+
     <!-- NavBar Links Keep  Active  -->
     <!-- <script>
     document.getElementById('navlinkactive').addEventListener('click', function() {
         this.classList.add('active');
     });
     </script> -->
+
+
+
+    <!-- <script>
+    const button = document.querySelector(".navbar-toggler");
+    button.addEventListener("click", () =>
+        button.classList.toggle("toggled"));
+    </script> -->
+
+
+
 
 </head>
 
@@ -139,11 +151,69 @@
                         border-radius: 50%;
                         padding: 0;
                         margin:5px;
-                        align-items: center;
-                        justify-content: center;">
+                        color: #5b7d6c;
+                        background-color: #f5a287;
+                        
+                       ">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
+
+                <style>
+                /* Added Style of navbar-toggle-icon */
+
+                /* .navbar-toggler,
+                .navbar-toggler::before,
+                .navbar-toggler::after {
+                    width: 20px;
+                    height: 2px;
+                    border-radius: 4px;
+                    background-color: #f5a287;
+                } */
+
+                /* To center the span element in the middle of its containing button */
+                /* .navbar-toggler {
+                    top: calc(50% - 1px);
+                    left: calc(50% - 10px);
+                } */
+
+                /* Position the two pseudo-elements to the very left */
+
+                /* .navbar-toggler::before,
+                .navbar-toggler::after {
+                    content: " ";
+                    left: 0;
+                }
+
+                .navbar-toggler::before {
+                    bottom: 8px;
+                }
+
+                .navbar-toggler::after {
+                    top: 8px;
+                }
+
+                .toggled .navbar-toggler {
+                    width: 20px;
+                    transform: rotate(-45deg);
+                    background-color: red;
+                }
+
+                .toggled .navbar-toggler::after {
+                    width: 20px;
+                    top: 0;
+                    transform: rotate(-270deg);
+                    background-color: red;
+                }
+
+                .toggled .navbar-toggler::before {
+                    transform: scale(0);
+                }
+
+                .navbar-toggler .navbar-toggler::after {
+                    transition: all 0.3s linear;
+                } */
+                </style>
 
 
 

@@ -143,16 +143,17 @@
                 <!-- Line for Small Screen -->
                 <div class="line height d-flex d-md-none d-lg-none" style="--height:80px"></div>
                 <div class="vl2 d-none  d-lg-none d-md-flex" style="border-left: 1px solid white;
-    height: 73px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 167px;
-    display: flex;
-    opacity: 57.5;"></div>
+                height: 73px;
+                position: absolute;
+                  left: 50%;
+               margin-left: -3px;
+                top: 189px;
+               display: flex;
+                 opacity: 57.5;">
+                </div>
 
-
-                <div class="fadeIn container d-block d-lg-none">
+                <!-- On Small Screen -->
+                <div class="fadeIn container d-block d-md-none d-lg-none">
                     <div class="button-line-container">
                         <div class="button-group ">
                             <div class="circle-border ">
@@ -168,7 +169,43 @@
                 </div>
 
 
-                <div class="fadeIn container d-none d-lg-block">
+                <!-- On Md Screen -->
+                <div class="fadeIn container d-none d-md-flex  align-items-center justify-content-center d-lg-none">
+                    <div class="button-line-container">
+                        <div class="button-group ">
+                            <div class="circle-border ">
+                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
+                                    style=" white-space: nowrap;">Tuin op maat</a>
+                            </div>
+                            <div class="circle-border">
+                                <a href="<?= esc_url(home_url('/projecten')); ?>"
+                                    class="btn btn-secondary">Projecten</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                @media (min-width: 768px) {
+
+                    .button-group {
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+
+                    .button-line-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        margin-top: 97px;
+
+                    }
+                }
+                </style>
+
+
+                <!-- On Lg Screen -->
+                <div class="fadeIn container d-none d-md-none d-lg-block">
                     <div class="button-line-container">
 
 
@@ -199,8 +236,52 @@
 
                 </div>
 
-                <div>
+                <style>
+                @media (min-width: 1024px) {
+
+                    .button-group {
+                        flex-direction: row;
+                        justify-content: flex-start;
+                    }
+
+                    .button-line-container {
+                        display: flex;
+                        align-items: left;
+                        justify-content: flex-start;
+                        margin-top: 70px;
+                        margin-bottom: 70px;
+                    }
+
+
+                    .line-hero {
+                        height: 1px;
+                        background-color: #ffffff;
+                        color: #ffffff;
+                        position: relative;
+                        display: block;
+                        opacity: 0.5;
+                        margin-left: -41px;
+                    }
+
+                }
+                </style>
+
+
+                <!-- Downarrow on SM Screen And Lg Screen -->
+                <div class="d-block  d-md-none d-lg-block">
                     <a class="downarrow" aria-label="Go to the content" href="#Maaktuin">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                            alt="downarrow Icon" class="downarrow-icon" />
+                    </a>
+                </div>
+
+
+                <!-- Downarrow on Md Screen -->
+                <div class="d-none d-md-block d-lg-none">
+                    <a class="downarrow" aria-label="Go to the content" href="#Maaktuin" style=" bottom: -238px;
+                           left: 50%;
+                          rotate: -360deg;
+                           transform: translateY(-50%) translateX(-50%);">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
                             alt="downarrow Icon" class="downarrow-icon" />
                     </a>
@@ -213,6 +294,8 @@
 
 
 </div>
+
+
 <!-- End Of bg-container -->
 
 
