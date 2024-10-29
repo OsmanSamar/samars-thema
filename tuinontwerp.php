@@ -3,68 +3,51 @@
 
 <main id="page" class="flex-grow-1">
     <style>
-    .vl3 {
-        border-left: 1px solid white;
-        height: 92px;
-        position: absolute;
-        left: 50%;
-        margin-left: -3px;
-        top: -34px;
-        display: flex;
-        opacity: .5;
-        transform: translate(-50%, -50%);
-    }
+        .vl3 {
+            border-left: 1px solid white;
+            height: 92px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: -34px;
+            display: flex;
+            opacity: .5;
+            transform: translate(-50%, -50%);
+        }
 
-    .line-left {
-        background-color: #fff;
-        opacity: .5;
-        width: 1px;
-    }
+        .line-left {
+            background-color: #fff;
+            opacity: .5;
+            width: 1px;
+        }
 
-    .swiper-container {
-        position: relative;
+        .swiper-container {
+            position: relative;
 
-    }
+        }
 
-    .swiper-container .swiper-pagination {
-        bottom: -50px !important;
-        display: block;
-    }
+        .swiper-container .swiper-pagination {
+            bottom: -50px !important;
+            display: block;
+        }
 
-    .swiper-container .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
-    }
+        .swiper-container .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+        }
 
-    .flex-container {
-        text-align: center;
-    }
+        .flex-container {
+            text-align: center;
+        }
 
-    .text-header {
-        font-family: 'Inclusive Sans', sans-serif;
-        font-size: 40px;
-        color: #FFFFFF;
-        opacity: 1;
-        letter-spacing: 0px;
-    }
+        .text-header {
+            font-family: 'Inclusive Sans', sans-serif;
+            font-size: 40px;
+            color: #FFFFFF;
+            opacity: 1;
+            letter-spacing: 0px;
+        }
 
-    .text {
-        font-family: 'Inclusive Sans', sans-serif;
-        font-size: 20px;
-        color: #FFFFFF;
-        opacity: 1;
-        letter-spacing: 0px;
-    }
-
-
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-size: ;
-    }
-
-    @media(min-width: 768px) {
         .text {
             font-family: 'Inclusive Sans', sans-serif;
             font-size: 20px;
@@ -73,100 +56,117 @@
             letter-spacing: 0px;
         }
 
-        .vl2 {
-            border-left: 1px solid white;
-            height: 98px;
-            position: absolute;
-            left: 50%;
-            margin-left: -3px;
-            top: -40px;
-            display: flex;
-            opacity: .5;
-        }
-    }
 
-
-    @media (min-width: 992px) {
-
-        .dienstlinelg {
-            height: 1px;
-            width: 169px;
-            background-color: #ffffff;
-            color: #ffffff;
-            position: relative;
-            opacity: 0.5;
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: ;
         }
 
-        .first-img {
-            height: 800px
-        }
+        @media(min-width: 768px) {
+            .text {
+                font-family: 'Inclusive Sans', sans-serif;
+                font-size: 20px;
+                color: #FFFFFF;
+                opacity: 1;
+                letter-spacing: 0px;
+            }
 
-        .swiper-container .swiper-pagination {
-            display: none;
-        }
-
-        .flex-container {
-            text-align: left;
-            margin-top: 80px;
-        }
-
-        .text-header {
-            font-family: 'Inclusive Sans', sans-serif;
-            font-size: 60px;
-
-        }
-
-        .text {
-
-            font-size: 24px;
-            margin-top: 50px;
-            margin-top: 80px;
-            margin-bottom: 60px;
+            .vl2 {
+                border-left: 1px solid white;
+                height: 98px;
+                position: absolute;
+                left: 50%;
+                margin-left: -3px;
+                top: -40px;
+                display: flex;
+                opacity: .5;
+            }
         }
 
 
+        @media (min-width: 992px) {
+
+            .dienstlinelg {
+                height: 1px;
+                width: 169px;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                opacity: 0.5;
+            }
+
+            .first-img {
+                height: 800px
+            }
+
+            .swiper-container .swiper-pagination {
+                display: none;
+            }
+
+            .flex-container {
+                text-align: left;
+                margin-top: 80px;
+            }
+
+            .text-header {
+                font-family: 'Inclusive Sans', sans-serif;
+                font-size: 60px;
+
+            }
+
+            .text {
+
+                font-size: 24px;
+                margin-top: 50px;
+                margin-top: 80px;
+                margin-bottom: 60px;
+            }
 
 
-        .img1 {
-            border-radius: 10px;
-            /* width: 626px;
+
+
+            .img1 {
+                border-radius: 10px;
+                /* width: 626px;
             height: 377px; */
-            width: 640px;
-            height: 438px;
-        }
+                width: 640px;
+                height: 438px;
+            }
 
-        .img2 {
-            border-radius: 10px;
-            width: 525px;
-            height: 616px;
-        }
+            .img2 {
+                border-radius: 10px;
+                width: 525px;
+                height: 616px;
+            }
 
-        .img3 {
-            border-radius: 10px;
-            /* width: 626px;
+            .img3 {
+                border-radius: 10px;
+                /* width: 626px;
             height: 382px; */
-            width: 630px;
-            height: 438px;
+                width: 630px;
+                height: 438px;
+            }
+
+            .img3,
+            .img1,
+            .img2,
+            .groentuinen,
+            first-img {
+                object-fit: cover;
+            }
+
+            .bottom-under {
+
+                border: 1px #FFFFFF solid;
+                height: 1px;
+                width: 100%;
+                opacity: 0.5;
+                margin-top: 188px;
+
+            }
         }
-
-        .img3,
-        .img1,
-        .img2,
-        .groentuinen,
-        first-img {
-            object-fit: cover;
-        }
-
-        .bottom-under {
-
-            border: 1px #FFFFFF solid;
-            height: 1px;
-            width: 100%;
-            opacity: 0.5;
-            margin-top: 188px;
-
-        }
-    }
     </style>
     <div class="container">
 
@@ -302,68 +302,68 @@
                 </div>
 
                 <style>
-                /* Overlay gradient effect and initial hidden state for small and tablet screens */
-                @media (max-width: 991px) {
-                    .content1 {
-                        position: relative;
-                        max-height: 164px;
-                        overflow: hidden;
-                        transition: max-height 0.5s ease;
+                    /* Overlay gradient effect and initial hidden state for small and tablet screens */
+                    @media (max-width: 991px) {
+                        .content1 {
+                            position: relative;
+                            max-height: 164px;
+                            overflow: hidden;
+                            transition: max-height 0.5s ease;
+                        }
+
+                        .content1.show {
+                            max-height: none;
+                        }
+
+
+                        .content1::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 15px;
+                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
+                            pointer-events: none;
+                            opacity: 0.9;
+                        }
+
+                        .more-text {
+                            opacity: 1;
+                        }
                     }
 
-                    .content1.show {
-                        max-height: none;
+                    .up-arrow,
+                    .down-arrow {
+                        font-size: 24px;
+                        color: white;
+
                     }
-
-
-                    .content1::after {
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 15px;
-                        background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
-                        pointer-events: none;
-                        opacity: 0.9;
-                    }
-
-                    .more-text {
-                        opacity: 1;
-                    }
-                }
-
-                .up-arrow,
-                .down-arrow {
-                    font-size: 24px;
-                    color: white;
-
-                }
                 </style>
 
                 <!-- Read More Read Less -->
                 <script>
-                $(document).ready(function() {
-                    $('.read-more-toggle').click(function(e) {
-                        e.preventDefault();
-                        const moreText = $(this).prev('.content1').find('.more-text');
+                    $(document).ready(function () {
+                        $('.read-more-toggle').click(function (e) {
+                            e.preventDefault();
+                            const moreText = $(this).prev('.content1').find('.more-text');
 
-                        // Toggle visibility and max-height of the content
-                        $(this).prev('.content1').toggleClass('show');
-                        moreText.toggleClass('d-none');
+                            // Toggle visibility and max-height of the content
+                            $(this).prev('.content1').toggleClass('show');
+                            moreText.toggleClass('d-none');
 
-                        // Toggle arrow icon
-                        if (moreText.hasClass('d-none')) {
-                            $(this).html(
-                                '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                            );
-                        } else {
-                            $(this).html(
-                                '<span class="arrow fas fa-angle-up up-arrow"></span>'
-                            );
-                        }
+                            // Toggle arrow icon
+                            if (moreText.hasClass('d-none')) {
+                                $(this).html(
+                                    '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                                );
+                            } else {
+                                $(this).html(
+                                    '<span class="arrow fas fa-angle-up up-arrow"></span>'
+                                );
+                            }
+                        });
                     });
-                });
                 </script>
             </div>
 
@@ -428,8 +428,6 @@
                                           padding-bottom: 39px; 
                                         color: #fff;
                                        line-height: 55px;
-                                      
-                                       line-height:57px;
                                           ">
                             Van schets naar beplantingsplan
                         </h2>
@@ -551,26 +549,26 @@
         <!-- Contact Information Section on Sm Screen -->
 
         <style>
-        .dienst-line {
-            height: 1px;
-            width: 5595px;
-            /* background-color: #ffffff; */
-            border: 1px solid #ffffff;
-            color: #ffffff;
-            position: relative;
-            opacity: 0.3;
-        }
-
-        @media (min-width: 768px) {
-            .dienstline {
+            .dienst-line {
                 height: 1px;
-                width: 928px;
-                background-color: #ffffff;
+                width: 5595px;
+                /* background-color: #ffffff; */
+                border: 1px solid #ffffff;
                 color: #ffffff;
                 position: relative;
-                opacity: 0.5;
+                opacity: 0.3;
             }
-        }
+
+            @media (min-width: 768px) {
+                .dienstline {
+                    height: 1px;
+                    width: 928px;
+                    background-color: #ffffff;
+                    color: #ffffff;
+                    position: relative;
+                    opacity: 0.5;
+                }
+            }
         </style>
 
         <div class="bg-leaf">
@@ -634,68 +632,68 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper", {
 
-        // slidesPerView: 2.5,
+            // slidesPerView: 2.5,
 
-        slidesPerView: 1.2,
-        centeredSlides: true,
-        loop: true,
-        grabCursor: true,
-        spaceBetween: 5,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            // type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            992: {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 5,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                // type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                992: {
 
-                slidesPerView: 3.5,
+                    slidesPerView: 3.5,
+                }
             }
-        }
-    });
+        });
 
-    var appendNumber = 4;
-    var prependNumber = 1;
-    document
-        .querySelector(".prepend-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-            ]);
-        });
-    document
-        .querySelector(".prepend-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-            ]);
-        });
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                ]);
+            });
     </script>
 
 </main>

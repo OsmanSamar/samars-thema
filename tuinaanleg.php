@@ -2,6 +2,21 @@
 
 <main class="page" class="flex-grow-1">
     <style>
+    .vl3 {
+        border-left: 1px solid white;
+        height: 92px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: -34px;
+        display: flex;
+        opacity: .5;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+
     .line-left {
         background-color: #fff;
         opacity: .5;
@@ -50,6 +65,29 @@
         opacity: 1;
         letter-spacing: 0px;
         /* margin-top: 80px; */
+    }
+
+
+
+    @media(min-width: 768px) {
+        .text {
+            font-family: 'Inclusive Sans', sans-serif;
+            font-size: 20px;
+            color: #FFFFFF;
+            opacity: 1;
+            letter-spacing: 0px;
+        }
+
+        .vl2 {
+            border-left: 1px solid white;
+            height: 84px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: -96px;
+            display: flex;
+            opacity: .5;
+        }
     }
 
     @media (min-width: 992px) {
@@ -141,7 +179,14 @@
         margin-bottom: 45px;">Tuinaanleg</h1>
 
 
-            <h1 class="fadeIn d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-none d-md-block d-lg-none mb-3" style="color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 125px;
+        margin-bottom: 45px;">Tuinaanleg</h1>
+
+            <h1 class="fadeIn d-none d-md-none d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
@@ -155,7 +200,39 @@
         <div class="row">
             <div class="col-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:;">
 
-                <div class="text-header ">
+                <div class="text-header d-block d-md-none d-lg-none">
+                    <h2 style="color: #fff9f4;
+                  font-family: henderson-sans-basic, sans-serif;
+                color: #fff;
+                 font-size: 29px;
+               font-weight: 300;
+                line-height: 60px;
+                ">
+                        <span style="--i:1;">We laten er gras</span> <br>
+                        <span style="--i:3;">over groeien</span>
+
+                    </h2>
+                </div>
+
+                <div class="text-header d-none d-md-block d-lg-none">
+                    <h2 style="color: #fff9f4;
+                  font-family: henderson-sans-basic, sans-serif;
+                color: #fff;
+                 font-size: 29px;
+               font-weight: 300;
+                line-height: 60px;
+                ">
+                        <span style="--i:1;">We laten er gras over groeien</span> <br>
+                        <span style="--i:3;"></span>
+
+                    </h2>
+                </div>
+
+
+
+
+
+                <div class="text-header d-none d-md-none d-lg-flex">
                     <h2 style="color: #fff9f4;
                   font-family: henderson-sans-basic, sans-serif;
                 color: #fff;
@@ -181,57 +258,118 @@
                     </div>
                     <div class="col-lg-9 mt-lg-1 mt-4">
 
-                        <div class="text d-flex flex-column align-items-center" style="--height: 400px;">
-                            <p class="content1" style="font-weight: 400;"> Bij tuinaanleg hoort de volledige
+                        <div class="text d-none d-md-none d-lg-flex flex-column align-items-center"
+                            style="--height: 400px;">
+                            <p class="content1" style="font-weight: 400;">
+                                Bij tuinaanleg hoort de volledige
                                 aanleg van je tuin.
                                 Van grondwerk tot aanleg. We werken
-                                hiervoor met hoogwaardige en duurzame materialen, bijvoorbeeld hout met FSC
+                                hiervoor met hoogwaardige en duurzame materialen, bijvoorbeeld
+
+                                hout met FSC
                                 keurmerk. En
-                                <span class="more-text d-none d-lg-block">
-                                    natuurlijk met veel groen! We ontzorgen je hierbij volledig. Heb je groene
-                                    vingers en wil je ook
-                                    zelf aan de slag? Dan maken we samen een plan voor de realisatie van je
-                                    groene
-                                    droomtuin.
-                                </span>
+                                natuurlijk met veel groen! We ontzorgen je hierbij volledig. Heb je groene
+                                vingers en wil je ook
+                                zelf aan de slag? Dan maken we samen een plan voor de realisatie van je
+                                groene
+                                droomtuin.
+
                             </p>
 
-                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-                                <span class="arrow fas fa-angle-down down-arrow">
-                                </span>
-                            </a>
+
                         </div>
 
 
-                        <div class=" circle-border">
-                            <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies nodig?</a>
+                        <div class="d-none d-md-none d-lg-flex">
+                            <div class=" circle-border">
+                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies nodig?</a>
+                            </div>
                         </div>
 
                     </div>
 
+                    <div class="text d-flex d-md-flex d-lg-none flex-column align-items-center"
+                        style="--height: 400px;">
+                        <p class="content1" style="font-weight: 400;"> <span>
+                                Bij tuinaanleg hoort de volledige
+                                aanleg van je tuin.
+                                Van grondwerk tot aanleg. We werken
+                                hiervoor met hoogwaardige en duurzame materialen, bijvoorbeeld hout met FSC
+                                keurmerk. En
+                            </span>
+                            <span class="more-text d-none d-lg-block">
+                                natuurlijk met veel groen! We ontzorgen je hierbij volledig. Heb je groene
+                                vingers en wil je ook
+                                zelf aan de slag? Dan maken we samen een plan voor de realisatie van je
+                                groene
+                                droomtuin.
+                            </span>
+                        </p>
+
+                        <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                            <span class="arrow fas fa-angle-down down-arrow">
+                            </span>
+                        </a>
+                        <div class="d-flex d-md-flex d-lg-none">
+                            <div class=" circle-border">
+                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies nodig?</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- /* Overlay gradient effect and initial hidden state for small and tablet screens */ -->
                     <style>
-                    .down-arrow {
-                        font-size: 24px;
-                        color: white;
+                    @media (max-width: 991px) {
+                        .content1 {
+                            position: relative;
+                            max-height: 164px;
+                            overflow: hidden;
+                            transition: max-height 0.5s ease;
+                        }
+
+                        .content1.show {
+                            max-height: none;
+                        }
+
+
+                        .content1::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 15px;
+                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79,
+                                        0)) 0 0 no-repeat padding-box;
+                            pointer-events: none;
+                            opacity: 0.9;
+                        }
+
+                        .more-text {
+                            opacity: 1;
+                        }
                     }
 
-                    .up-arrow {
+                    .up-arrow,
+                    .down-arrow {
                         font-size: 24px;
                         color: white;
 
                     }
                     </style>
+
+                    <!-- Read More Read Less -->
                     <script>
                     $(document).ready(function() {
                         $('.read-more-toggle').click(function(e) {
                             e.preventDefault();
-                            var moreText = $(this).prev('.content1').find(
-                                '.more-text');
+                            const moreText = $(this).prev('.content1').find('.more-text');
 
-
-                            // Toggle visibility of additional text
+                            // Toggle visibility and max-height of the content
+                            $(this).prev('.content1').toggleClass('show');
                             moreText.toggleClass('d-none');
-
 
                             // Toggle arrow icon
                             if (moreText.hasClass('d-none')) {
@@ -240,16 +378,12 @@
                                 );
                             } else {
                                 $(this).html(
-                                    '<span class="arrow fas fa-angle-up up-arrow" > </span>'
+                                    '<span class="arrow fas fa-angle-up up-arrow"></span>'
                                 );
                             }
-
-                            // Add or remove active class for arrow animation
-                            $(this).toggleClass('active');
                         });
                     });
                     </script>
-
 
                 </div>
             </div>
@@ -303,6 +437,12 @@
 
         <!-- Text Section -->
         <div class="order-1 order-md-1 order-lg-2 fadeIn" style="margin-top: 52px;">
+
+
+            <!--Verticall line On Lg Screen  -->
+            <div class="vl3 d-lg-none d-md-none d-block"></div>
+            <div class="vl2 d-lg-none d-md-block"></div>
+
             <div class="text-block py-1">
                 <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
                     <h2 style="font-size:36px;
@@ -312,14 +452,26 @@
                                                margin-top:20px;">
                         Maar we doen nog veel meer
                     </h2>
-                    <div class="text2 text-fix">
-                        <div class="inner" style="font-size:18px; line-height: 30px; letter-spacing: 2px;">
-                            <p><span style="font-weight: 400;">Na de beplanting gaan we aan de slag met de
+                    <div class="">
+                        <div class="text d-flex flex-column align-items-center"
+                            style="font-size:18px; line-height: 30px; letter-spacing: 2px;">
+                            <p class="content1"><span style="font-weight: 400;">Na de beplanting gaan we aan de slag met
+                                    de
                                     bestrating, het beregeningssysteem, opslag van regenwater en/of de verlichting.
                                     We nemen dit gelijk mee in het ontwerp, zodat het allemaal mooi op elkaar
                                     aansluit. We werken met lokale partners die ons de materialen leveren. Zo zijn
+                                </span>
+
+                                <span class="more-text d-none d-lg-block">
+
                                     we altijd verzekerd van topkwaliteit én investeren we in duurzame, lokale
-                                    samenwerkingen.</span></p>
+                                    samenwerkingen.
+                                </span>
+                            </p>
+                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                                <span class="arrow fas fa-angle-down down-arrow">
+                                </span>
+                            </a>
                         </div>
 
                     </div>
