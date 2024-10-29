@@ -330,6 +330,23 @@
                         }
                     }
 
+
+                    .arrow {
+                        font-size: 24px;
+                        color: white;
+                        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+                        /* Smooth elastic easing */
+                    }
+
+
+                    .arrow.down-arrow {
+                        transform: rotate(0deg);
+                    }
+
+                    .arrow.up-arrow {
+                        transform: rotate(180deg);
+                    }
+
                     .up-arrow,
                     .down-arrow {
                         font-size: 24px;
@@ -349,16 +366,11 @@
                             $(this).prev('.content1').toggleClass('show');
                             moreText.toggleClass('d-none');
 
-                            // Toggle arrow icon
-                            if (moreText.hasClass('d-none')) {
-                                $(this).html(
-                                    '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                                );
-                            } else {
-                                $(this).html(
-                                    '<span class="arrow fas fa-angle-up up-arrow"></span>'
-                                );
-                            }
+                            // Toggle rotation class
+                            $(this).find('.arrow').toggleClass('up-arrow down-arrow');
+
+
+
                         });
                     });
                     </script>
