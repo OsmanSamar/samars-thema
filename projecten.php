@@ -3,6 +3,16 @@
 
 <main class="flex-grow-1">
     <style>
+    /* Text styling */
+    .text {
+        text-align: left;
+        font-size: 19px;
+    }
+
+
+
+
+    /*  */
     .modal {
         display: none;
         position: fixed;
@@ -92,6 +102,10 @@
         cursor: pointer;
     }
 
+
+
+
+
     /* 100% Image Width on Smaller Screens */
     @media only screen and (max-width: 700px) {
         .modal-content {
@@ -103,6 +117,12 @@
 
     /* MD Screen */
     @media (min-width: 768px) {
+
+        .text {
+            text-align: left;
+            font-size: 30px;
+        }
+
         .swiper {
             width: 100%;
             height: 629px;
@@ -758,18 +778,32 @@
         <div class="swiper-container" style="--swiper-pagination-color: #fff">
             <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+
+                <div class="d-block d-md-none" style="position: absolute; z-index:4; bottom:-22px; padding:61px;">
+                    <div class="text">Tuinonderhoud in Ede</div>
+                </div>
+                <div class="d-none d-md-block" style="position: absolute; z-index:4; bottom:-22px; padding:82px;">
+                    <div class="text">Tuinonderhoud in Ede</div>
+                </div>
+
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
                             alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
                             class="object-fit-cover rounded" style="" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
                             class="object-fit-cover rounded" style=" " />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
 
                 </div>
@@ -792,23 +826,42 @@
 
             <div #swiperRef="" class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+
+                <div class="d-block d-md-none" style="position: absolute; z-index:4; bottom:-22px; padding:61px;">
+                    <div class="text">Tuin in Voorthuizen</div>
+                </div>
+                <div class="d-none d-md-block" style="position: absolute; z-index:4; bottom:-22px; padding:82px;">
+                    <div class="text">Tuin in Voorthuizen</div>
+                </div>
+
+
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
                             class="object-fit-cover rounded" style="" />
+
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
+
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
                             class="object-fit-cover rounded" style="" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
                             class="object-fit-cover rounded" style="  " />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
                             class="object-fit-cover rounded" style="" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                 </div>
 
@@ -829,31 +882,53 @@
         <div class="swiper-container" style="--swiper-pagination-color: #fff">
             <div class=" swiper mySwiper smrow order-2 projecten-slider d-flex d-md-flex d-lg-none"
                 style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+
+                <div class="d-block d-md-none" style="position: absolute; z-index:4; bottom:-22px; padding:61px;">
+                    <div class="text">Tuin bij Tiny House</div>
+                </div>
+                <div class="d-none d-md-block" style="position: absolute; z-index:4; bottom:-22px; padding:82px;">
+                    <div class="text">Tuin bij Tiny House</div>
+                </div>
+
+
+
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
                             class="object-fit-cover rounded" style="" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
                             class="object-fit-cover rounded" style="" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
                             class="object-fit-cover rounded" style="  " />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
                             class="object-fit-cover rounded" style="" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
                             alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
                             class="object-fit-cover rounded" style="" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                 </div>
 
@@ -1265,6 +1340,7 @@
                 spaceBetween: 5,
                 pagination: {
                     el: container.querySelector(".swiper-pagination"),
+                    clickable: true
 
                 }
 

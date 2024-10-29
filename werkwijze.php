@@ -375,10 +375,10 @@
                                         bottom: 0;
                                         left: 0;
                                         width: 100%;
-                                        height: 40px;
+                                        height: 15px;
                                         background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
                                         pointer-events: none;
-                                        opacity: 0.5;
+                                        opacity: 0.9;
                                     }
 
                                     .more-text {

@@ -3,6 +3,18 @@
 
 <main id="page" class="flex-grow-1">
     <style>
+    .vl3 {
+        border-left: 1px solid white;
+        height: 92px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: -34px;
+        display: flex;
+        opacity: .5;
+        transform: translate(-50%, -50%);
+    }
+
     .line-left {
         background-color: #fff;
         opacity: .5;
@@ -42,7 +54,6 @@
         color: #FFFFFF;
         opacity: 1;
         letter-spacing: 0px;
-        /* margin-top: 80px; */
     }
 
 
@@ -53,6 +64,26 @@
         background-size: ;
     }
 
+    @media(min-width: 768px) {
+        .text {
+            font-family: 'Inclusive Sans', sans-serif;
+            font-size: 20px;
+            color: #FFFFFF;
+            opacity: 1;
+            letter-spacing: 0px;
+        }
+
+        .vl2 {
+            border-left: 1px solid white;
+            height: 98px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: -40px;
+            display: flex;
+            opacity: .5;
+        }
+    }
 
 
     @media (min-width: 992px) {
@@ -166,7 +197,17 @@
         letter-spacing:2px;">Tuinontwerp
             </h1>
 
-            <h1 class="fadeIn d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-none d-md-block d-lg-none mb-3" style="color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 125px;
+        letter-spacing:2px;
+       
+        ">Tuinontwerp
+            </h1>
+
+            <h1 class="fadeIn d-none d-md-none d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
@@ -194,7 +235,42 @@
                     </div>
                     <div class="col-lg-9 mt-lg-1 mt-4">
 
-                        <div class="text  d-flex flex-column align-items-center  ">
+                        <div class="text  d-none d-md-none d-lg-flex flex-column align-items-center  ">
+                            <p class="content1 ">Wij maken een tuinontwerp op basis van jouw wensen. Maar daarbij geven
+                                wij ook onze eerlijke
+                                mening en kijken we naar de mogelijkheden. Deel je moodboard met ons en vertel wat je
+                                graag in
+                                je tuin zou willen zien.
+
+                                Tuinontwerp houdt in dat we een schets maken met daarbij een beplantingsplan. In de
+                                schets is te
+                                zien hoe de opzet van de tuin zal worden: waar komen planten en waar bestrating.
+                                <span class="more-text d-none"> En als je de
+                                    wens hebt voor een veranda, buitenkeuken of waterpartij, komt deze ook terug in de
+                                    schets.
+                                    Weten
+                                    hoe je schets er in het echt uit komt te zien? Het is mogelijk om een 3D-ontwerp te
+                                    ontvangen
+                                    van je tuin.
+                                </span>
+                            </p>
+                            <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                                <span class="arrow fas fa-angle-down down-arrow">
+                                </span>
+                            </a>
+                        </div>
+
+
+
+                        <div class="d-none d-md-none d-lg-flex">
+                            <div class=" circle-border">
+                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies nodig?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 d-lg-none">
+                        <div class="text  d-flex flex-column align-items-center d-md-flex d-lg-none  ">
                             <p class="content1 ">Wij maken een tuinontwerp op basis van jouw wensen. Maar daarbij geven
                                 wij ook onze eerlijke
                                 mening en kijken we naar de mogelijkheden. Deel je moodboard met ons en vertel wat je
@@ -226,12 +302,39 @@
                 </div>
 
                 <style>
-                .down-arrow {
-                    font-size: 24px;
-                    color: white;
+                /* Overlay gradient effect and initial hidden state for small and tablet screens */
+                @media (max-width: 991px) {
+                    .content1 {
+                        position: relative;
+                        max-height: 164px;
+                        overflow: hidden;
+                        transition: max-height 0.5s ease;
+                    }
+
+                    .content1.show {
+                        max-height: none;
+                    }
+
+
+                    .content1::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 15px;
+                        background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
+                        pointer-events: none;
+                        opacity: 0.9;
+                    }
+
+                    .more-text {
+                        opacity: 1;
+                    }
                 }
 
-                .up-arrow {
+                .up-arrow,
+                .down-arrow {
                     font-size: 24px;
                     color: white;
 
@@ -243,13 +346,11 @@
                 $(document).ready(function() {
                     $('.read-more-toggle').click(function(e) {
                         e.preventDefault();
-                        var moreText = $(this).prev('.content1').find(
-                            '.more-text');
+                        const moreText = $(this).prev('.content1').find('.more-text');
 
-
-                        // Toggle visibility of additional text
+                        // Toggle visibility and max-height of the content
+                        $(this).prev('.content1').toggleClass('show');
                         moreText.toggleClass('d-none');
-
 
                         // Toggle arrow icon
                         if (moreText.hasClass('d-none')) {
@@ -258,12 +359,9 @@
                             );
                         } else {
                             $(this).html(
-                                '<span class="arrow fas fa-angle-up up-arrow" > </span>'
+                                '<span class="arrow fas fa-angle-up up-arrow"></span>'
                             );
                         }
-
-                        // Add or remove active class for arrow animation
-                        $(this).toggleClass('active');
                     });
                 });
                 </script>
@@ -276,11 +374,11 @@
             </div>
 
 
-            <div class="lin3"></div>
+            <!-- <div class="lin3"></div> -->
         </div>
 
 
-        <div class=" ">
+        <div>
 
 
 
@@ -317,11 +415,25 @@
             </div>
 
             <!-- Text Section -->
-            <div class="order-1 order-md-1 order-lg-2 fadeIn ">
+            <div class="order-1 order-md-1 order-lg-2 fadeIn position-relative ">
+
+                <!--Verticall line On Lg Screen  -->
+                <div class="vl3 d-lg-none d-md-none d-block"></div>
+                <div class="vl2 d-lg-none d-md-block"></div>
+
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
 
-                        <h2 class="d-block d-md-block d-lg-none" style="font-size:36px;
+                        <h2 class="d-block d-md-none d-lg-none" style="font-size:36px;
+                                          padding-bottom: 39px; 
+                                        color: #fff;
+                                       line-height: 55px;
+                                      
+                                       line-height:57px;
+                                          ">
+                            Van schets naar beplantingsplan
+                        </h2>
+                        <h2 class="d-none d-md-block d-lg-none" style="font-size:36px;
                                           padding-bottom: 39px; 
                                         color: #fff;
                                        line-height: 55px;
@@ -533,6 +645,7 @@
         spaceBetween: 5,
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
             // type: "fraction",
         },
         navigation: {

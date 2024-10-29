@@ -832,6 +832,7 @@
                 spaceBetween: 5,
                 pagination: {
                     el: container.querySelector(".swiper-pagination"),
+                    clickable: true
 
                 }
 
