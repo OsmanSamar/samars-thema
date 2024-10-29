@@ -61,7 +61,7 @@
         color: #FFFFFF;
         opacity: 1;
         letter-spacing: 0px;
-        margin-top: 80px;
+        /* margin-top: 80px; */
     }
 
 
@@ -76,11 +76,11 @@
 
         .vl2 {
             border-left: 1px solid white;
-            height: 84px;
+            height: 77px;
             position: absolute;
             left: 50%;
             margin-left: -3px;
-            top: -96px;
+            top: -81px;
             display: flex;
             opacity: .5;
         }
@@ -144,14 +144,6 @@
             margin-top: 188px;
 
         }
-    }
-
-    .img3,
-    .img1,
-    .img2,
-    .groentuinen,
-    .first-img {
-        object-fit: cover;
     }
     </style>
     <div class="container">
@@ -384,7 +376,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 fadeIn" data-side="right" style="margin-top:80px; ;">
-                <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="22scaled"
+                <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/12scaled.jpg" alt="22scaled"
                     class="first-img rounded object-fit" style="" />
             </div>
         </div>
@@ -434,17 +426,21 @@
 
 
                 <div class="text-block py-1">
-                    <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
+                    <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center"
+                        style="margin-top:50px;">
                         <h2 style="font-size:36px;
-                                                  padding-bottom: 39px; 
+                                                  /* padding-bottom: 39px;  */
                                                 color: #fff;
                                                line-height: 55px;
                                                margin-top:20px;">
                             Snoeien doet bloeien
                         </h2>
                         <div class=" ">
-                            <div class="text d-flex flex-column align-items-center"
-                                style="font-size:18px; line-height: 30px; letter-spacing: 2px;">
+                            <div class="text d-flex flex-column align-items-center" style="font-size:18px;
+                                 /* line-height: 30px;  */
+                                /* letter-spacing: 2px; */
+                                
+                                ">
                                 <p class="content1"><span style="font-weight: 400; ">Iedereen vergeet wel eens zijn tuin
                                         op tijd te
                                         snoeien of te bemesten. Of je stelt het uit, omdat je er eigenlijk niet zoveel
@@ -652,6 +648,7 @@
         spaceBetween: 5,
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
             // type: "fraction",
         },
         navigation: {
