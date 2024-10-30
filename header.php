@@ -62,10 +62,15 @@
 
 
     <script>
-    const button = document.querySelector(".navbar-toggler");
-    button.addEventListener("click", () => {
-        button.classList.toggle("toggled");
-    });
+    // const button = document.querySelector(".navbar-toggler");
+    // button.addEventListener("click", () => {
+    //     button.classList.toggle("collapsed");
+    // });
+
+
+    // document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    //     this.classList.toggle('collapsed');
+    // });
     </script>
 
 
@@ -160,55 +165,61 @@
                     </button>
                 </div>
 
-                <!--  <style>
-                 Added Style of navbar-toggle-icon 
+                <style>
+                /* Added Style of navbar-toggle-icon  */
 
 
 
-                .navbar-toggler {
-                    position: relative;
+                /* .navbar-toggler {
 
-                    width: 40px;
-                    height: 6px;
+                    border: none;
                     background-color: #f5a287;
-
-                    transition: background-color 0.3s ease;
+                    outline: none;
                 }
 
-                .navbar-toggler::before,
-                .navbar-toggler::after {
-                    content: "";
-                    position: absolute;
+                .navbar-toggler-icon {
+                    position: relative;
                     width: 40px;
-                    height: 6px;
-                    background-color: red;
-                    transition: transform 0.3s ease, opacity 0.3s ease;
-                } 
+                    height: 40px;
+                    transition: all 0.3s ease-in-out;
+                    
+                    display: block;
+                } */
 
-                Offset the top and bottom bars 
-                 .navbar-toggler::before {
-                    content: "";
-                    transform: translateY(-12px);
+                /* .navbar-toggler-icon::before,
+                .navbar-toggler-icon::after {
+                    content: '';
+                    width: 30px;
+                    height: 3px;
+                    background-color: #333;
+                    position: absolute;
+                    transition: all 0.3s ease-in-out;
+                } */
+
+
+                /* .navbar-toggler-icon::before {
+                    top: -10px;
                 }
 
-                .navbar-toggler::after {
-                    content: "";
-                    transform: translateY(12px);
-                } 
-
-                 Styles for the close (X) icon when toggled */
-                 .toggled .navbar-toggler {
-                    background-color: transparent;
+                .navbar-toggler-icon::after {
+                    top: 10px;
                 }
 
-                .toggled .navbar-toggler::before {
-                    transform: rotate(45deg)
+
+                .navbar-toggler.collapsed .navbar-toggler-icon {
+                    transform: rotate(45deg);
                 }
 
-                .toggled .navbar-toggler::after {
-                    transform: rotate(-45deg)
+                .navbar-toggler.collapsed .navbar-toggler-icon:::before {
+                    transform: rotate(45deg);
+
                 }
-                </style>  -->
+
+                .navbar-toggler.collapsed .navbar-toggler-icon:::after {
+                    transform: rotate(-45deg);
+
+                } */
+                </style>
 
 
 
