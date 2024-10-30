@@ -302,7 +302,7 @@
                     @media (max-width: 991px) {
                         .content1 {
                             position: relative;
-                            max-height: 164px;
+                            max-height: 130px;
                             overflow: hidden;
                             transition: max-height 0.5s ease;
                         }
@@ -332,11 +332,11 @@
 
 
                     .arrow {
-                        font-size: 24px;
+                        font-size: 18px;
                         color: white;
-                        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-                        /* Smooth elastic easing */
+                        transition: transform 0.25s;
                     }
+
 
 
                     .arrow.down-arrow {
@@ -349,7 +349,7 @@
 
                     .up-arrow,
                     .down-arrow {
-                        font-size: 24px;
+                        font-size: 18px;
                         color: white;
 
                     }
@@ -369,21 +369,9 @@
                             // Toggle rotation class
                             $(this).find('.arrow').toggleClass('up-arrow down-arrow');
 
-
-
                         });
                     });
                     </script>
-
-
-
-
-
-
-
-
-
-
 
                 </div>
             </div>
@@ -575,7 +563,6 @@
         .dienst-line {
             height: 1px;
             width: 5595px;
-            /* background-color: #ffffff; */
             border: 1px solid #ffffff;
             color: #ffffff;
             position: relative;
@@ -596,7 +583,7 @@
 
         <div class="bg-leaf">
 
-            <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
+            <div style=" margin-top:40px; gap-20px; padding:20px; "
                 class="row fadeIn  flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none" data-side="right">
                 <div class="line-top"></div>
 

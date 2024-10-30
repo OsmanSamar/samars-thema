@@ -10,7 +10,7 @@
     }
 
     .swiper-container .swiper-pagination {
-        pointer-events: none;
+        /* pointer-events: none; */
         bottom: -50px !important;
 
     }
@@ -47,6 +47,7 @@
     .swiper-button-prev {
         position: absolute;
         top: 113% !important;
+
     }
 
     /* Set font size for swiper buttons */
@@ -974,6 +975,7 @@
         spaceBetween: 5,
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
 
         },
         navigation: {
