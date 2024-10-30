@@ -3,6 +3,18 @@
 
 <main id="page" class="flex-grow-1">
     <style>
+    .vl3 {
+        border-left: 1px solid white;
+        height: 92px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: -34px;
+        display: flex;
+        opacity: .5;
+        transform: translate(-50%, -50%);
+    }
+
     .line-left {
         background-color: #fff;
         opacity: .5;
@@ -45,11 +57,35 @@
 
     .text {
         font-family: 'Inclusive Sans', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         color: #FFFFFF;
         opacity: 1;
         letter-spacing: 0px;
-        margin-top: 80px;
+        /* margin-top: 80px; */
+    }
+
+    @media(min-width: 768px) {
+
+        .text {
+            font-family: 'Inclusive Sans', sans-serif;
+            font-size: 22px;
+            color: #FFFFFF;
+            opacity: 1;
+            letter-spacing: 0px;
+            /* margin-top: 80px; */
+        }
+
+        .vl2 {
+            border-left: 1px solid white;
+            height: 77px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: -81px;
+            display: flex;
+            opacity: .5;
+        }
+
     }
 
     @media (min-width: 992px) {
@@ -116,11 +152,11 @@
 
             <!-- Breadcrumb Links -->
             <div class="d-inline-block" style="color: #fff9f4;
-        font-family: henderson-sans-basic, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 45px;
-        margin-top:45px;">
+             font-family: henderson-sans-basic, sans-serif;
+               font-size: 14px;
+               font-weight: 400;
+               line-height: 45px;
+               margin-top:45px;">
                 <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span class="separator">
                     // </span>
                 <span class="last">Onze diensten</span>
@@ -129,33 +165,46 @@
             </div>
 
             <h1 class="fadeIn d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
-        font-family: henderson-sans-basic, sans-serif;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 125px;
-        letter-spacing:2px;">Advies
+                 font-family: henderson-sans-basic, sans-serif;
+                 font-size: 40px;
+                font-weight: 700;
+               line-height: 125px;
+                letter-spacing:2px;">Advies
             </h1>
 
 
-            <h1 class="fadeIn d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
-        font-family: henderson-sans-basic, sans-serif;
-        font-size: 90px;
-        font-weight: 700;
-        line-height: 125px;
-        letter-spacing:2px;">Advies</h1>
+            <h1 class="fadeIn d-none d-md-block d-lg-none mb-3" style="color: #fff9f4;
+             font-family: henderson-sans-basic, sans-serif;
+                 font-size: 58px;
+              font-weight: 700;
+                   line-height: 125px;
+             letter-spacing:2px;">Advies
+            </h1>
+
+
+            <h1 class="fadeIn d-none d-md-none d-lg-block mb-3" style="color: #fff9f4;
+             font-family: henderson-sans-basic, sans-serif;
+             font-size: 90px;
+              font-weight: 700;
+             line-height: 125px;
+              letter-spacing:2px;">Advies
+            </h1>
+
         </div>
+
+
 
 
         <!-- Here -->
         <div class="row">
 
-            <div class="col-12  col-md-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:;">
+            <div class="col-12  col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:;">
 
                 <div class="text-header d-block  d-md-none d-lg-none ">
                     <h2 style="color: #fff9f4;
                     font-family: henderson-sans-basic, sans-serif;
                     color: #fff;
-                    font-size: 39px;
+                    font-size: 29px;
                     font-weight: 300;
                     line-height: 60px;
                     ">
@@ -164,7 +213,21 @@
 
                     </h2>
                 </div>
-                <div class="text-header d-none d-md-block d-lg-block ">
+                <div class="text-header d-none d-md-block d-lg-none ">
+                    <h2 style="color: #fff9f4;
+                    font-family: henderson-sans-basic, sans-serif;
+                    color: #fff;
+                    font-size: 29px;
+                    font-weight: 300;
+                    line-height: 60px;
+                   ;">
+                        <span style="--i:1;">Geen blad voor de mond</span> <br>
+                        <span style="--i:3;"></span>
+
+                    </h2>
+                </div>
+
+                <div class="text-header d-none d-md-none d-lg-flex ">
                     <h2 style="color: #fff9f4;
                     font-family: henderson-sans-basic, sans-serif;
                     color: #fff;
@@ -177,26 +240,139 @@
 
                     </h2>
                 </div>
+
                 <div class="row pb-lg-5 pb-0">
                     <div class="col-2">
                         <div class="line-left h-100 mt-lg-3 d-none d-lg-flex"></div>
                     </div>
-                    <div class=" col-lg-9  mt-lg-1 ">
-                        <div class="text text-fix">
-                            <div class="" style="--height: 400px;">
-                                <p><span style="font-weight: 400;">Je hebt een prachtige tuin, maar wil graag advies
-                                        over bijvoorbeeld planten of verzorging. Dat kan! Laat een tuinexpert met je
-                                        meedenken en krijg advies op maat voor jouw tuin. We maken samen een plan om nóg
-                                        meer uit je tuin te halen.</span></p>
-                            </div>
-                            <div class="read-more"></div>
-                        </div>
-                        <div class=" circle-border">
-                            <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary"
-                                style=" white-space:nowrap; letter-spacing:1px; ">Kennismaken?</a>
+
+                    <div class=" col-lg-9  mt-lg-1 mt-4 ">
+                        <div class="text d-none d-md-none d-lg-flex flex-column align-items-center "
+                            style="--height: 400px;">
+
+                            <p><span style="font-weight: 400;">Je hebt een prachtige tuin, maar wil graag advies
+                                    over bijvoorbeeld planten of verzorging. Dat kan! Laat een tuinexpert met je
+                                    meedenken en krijg advies op maat voor jouw tuin. We maken samen een plan om nóg
+                                    meer uit je tuin te halen.
+                                </span>
+                            </p>
+
+
                         </div>
 
+
+                        <div class=" d-none d-md-none d-lg-flex">
+                            <div class=" circle-border">
+                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary"
+                                    style=" white-space:nowrap; letter-spacing:1px; ">Kennismaken?</a>
+                            </div>
+
+                        </div>
                     </div>
+
+
+                    <div class="text d-flex d-md-flex d-lg-none flex-column align-items-center "
+                        style="--height: 400px;">
+
+                        <p class="content1" style="font-weight: 400;">
+                            <span>Je hebt een prachtige tuin, maar wil graag
+                                advies
+                                over bijvoorbeeld planten of verzorging. Dat kan! Laat een tuinexpert met je
+                            </span>
+                            <span class="more-text d-none d-lg-block">
+                                meedenken
+                                en
+                                krijg advies op maat voor jouw tuin. We maken samen een plan om nóg
+                                meer uit je tuin te halen.
+                            </span>
+                        </p>
+                        <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                            <span class="arrow fas fa-angle-down down-arrow">
+                            </span>
+                        </a>
+                        <div class="d-flex d-md-flex d-lg-none">
+                            <div class=" circle-border">
+                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Kennismaken?</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- /* Overlay gradient effect and initial hidden state for small and tablet screens */ -->
+                    <style>
+                    @media (max-width: 991px) {
+                        .content1 {
+                            position: relative;
+                            max-height: 134px;
+                            overflow: hidden;
+                            transition: max-height 0.5s ease;
+                        }
+
+                        .content1.show {
+                            max-height: none;
+                        }
+
+
+                        .content1::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 15px;
+                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79,
+                                        0)) 0 0 no-repeat padding-box;
+                            pointer-events: none;
+                            opacity: 0.9;
+                        }
+
+                        .more-text {
+                            opacity: 1;
+                        }
+                    }
+
+                    .arrow {
+                        font-size: 18px;
+                        color: white;
+                        transition: transform 0.25s;
+                    }
+
+
+                    .arrow.down-arrow {
+                        transform: rotate(0deg);
+                    }
+
+                    .arrow.up-arrow {
+                        transform: rotate(180deg);
+                    }
+
+                    .up-arrow,
+                    .down-arrow {
+                        font-size: 18px;
+                        color: white;
+
+                    }
+                    </style>
+
+                    <!-- Read More Read Less -->
+                    <script>
+                    $(document).ready(function() {
+                        $('.read-more-toggle').click(function(e) {
+                            e.preventDefault();
+                            const moreText = $(this).prev('.content1').find('.more-text');
+
+                            // Toggle visibility and max-height of the content
+                            $(this).prev('.content1').toggleClass('show');
+                            moreText.toggleClass('d-none');
+
+                            // Toggle rotation class
+                            $(this).find('.arrow').toggleClass('up-arrow down-arrow');
+
+                        });
+                    });
+                    </script>
+
+
                 </div>
             </div>
 
@@ -243,24 +419,45 @@
             </div>
 
             <!-- Text Section -->
-            <div class="order-1 order-md-1 order-lg-2 fadeIn ">
+            <div class="order-1 order-md-1 order-lg-2 fadeIn position-relative ">
+
+                <!--Verticall line On Lg Screen  -->
+                <div class="vl3 d-lg-none d-md-none d-block"></div>
+                <div class="vl2 d-lg-none d-md-block"></div>
+
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
-                        <h2 style="font-size:36px;
+                        <h2 class="d-none d-md-none d-lg-flex" style="font-size:36px;
                                                   padding-bottom: 39px; 
                                                 color: #fff;
                                                line-height: 55px;
                                                margin-top:20px;">
                             Andere vragen?
                         </h2>
-                        <div class="text2 text-fix">
-                            <div class="inner" style="line-height: 34px;
-                                 letter-spacing: 0px;
-                                  font-size: 22px;">
-                                <p><span style="font-weight: 400;">Ook voor advies en vragen over verlichting,
+                        <h2 class="d-flex d-md-flex d-lg-none" style="font-size:;
+                                                  padding-bottom: 39px; 
+                                                color: #fff;
+                                               line-height: 55px;
+                                               margin-top:20px;">
+                            Andere vragen?
+                        </h2>
+                        <div class="text2 ">
+                            <div class=" text d-flex flex-column align-items-center" style="
+                                 ">
+                                <p class="content1"><span style="font-weight: 400;">Ook voor advies en vragen over
+                                        verlichting,
                                         bewatering, (zwem)vijvers, veranda’s en andere timmerwerkzaamheden ben je bij
-                                        GROENtuinen aan het juiste adres. Door onze jarenlange ervaring zijn we erg
-                                        breed inzetbaar!</span></p>
+                                        GROENtuinen aan het juiste adres. </span>
+
+                                    <span class=" more-text d-none d-lg-block">
+                                        Door onze jarenlange ervaring zijn we erg
+                                        breed inzetbaar!
+                                    </span>
+                                </p>
+                                <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                                    <span class="arrow fas fa-angle-down down-arrow">
+                                    </span>
+                                </a>
                             </div>
 
                         </div>
@@ -451,6 +648,7 @@
         pagination: {
             el: ".swiper-pagination",
             // type: "fraction",
+            clickable: true,
         },
         navigation: {
             nextEl: ".swiper-button-next",

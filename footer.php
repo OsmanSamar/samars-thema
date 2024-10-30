@@ -12,14 +12,14 @@
 
 <footer class="footer">
     <style>
-    .border-top {
-        border: 1px solid #ffff;
-        width: 100%;
-        height: 1px;
-        opacity: 0.5;
-        margin-bottom: 90px;
+        .border-top {
+            border: 1px solid #ffff;
+            width: 100%;
+            height: 1px;
+            opacity: 0.5;
+            margin-bottom: 90px;
 
-    }
+        }
     </style>
 
 

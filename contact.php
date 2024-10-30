@@ -206,9 +206,16 @@
                         <!-- 2 -->
                         <div class="col-12 col-md-12 col-lg-4 fadeIn ">
                             <div class="d-flex flex-column gap-3 text-center align-items-center contact-icon">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/contacticon.svg"
-                                    alt="Contact Icon" class="mx-auto" />
-                                <span class="text-header">+316 123 456 78</span>
+                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/contacticon.svg"
+                                    alt="Contact Icon" class="mx-auto" /> -->
+                                <a aria-label="Neem contact op via telefoon" href="tel:+31621830806">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/contacticon.svg"
+                                        alt="Contact Icon" class="mx-auto" />
+                                </a>
+                                <a aria-label="Neem contact op via telefoon" href="tel:+31621830806">
+                                    <span class="text-header">+316 123 456 78</span>
+                                </a>
+                                <!-- <span class="text-header">+316 123 456 78</span> -->
                                 <div class="text">
                                     <p><span style="font-weight: 400;">Enthousiast en direct een afspraak maken?
                                             Laat
@@ -220,9 +227,18 @@
                         <!-- 3 -->
                         <div class="col-12 col-md-12 col-lg-4 fadeIn">
                             <div class="d-flex flex-column gap-3 text-center align-items-center contact-icon">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/email.svg"
-                                    alt="Email Icon" class="mx-auto" />
-                                <span class="text-header">info@groentuinen.nl</span>
+                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/email.svg"
+                                    alt="Email Icon" class="mx-auto" /> -->
+
+                                <a aria-label="Neem contact op via Mail" href="mailto:info@groentuinen.nl">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/email.svg"
+                                        alt="Email Icon" class="mx-auto" />
+                                </a>
+                                <a aria-label="Neem contact op via Mail" href="mailto:info@groentuinen.nl">
+                                    <span class="text-header">info@groentuinen.nl</span>
+
+                                </a>
+                                <!-- <span class="text-header">info@groentuinen.nl</span> -->
                                 <div class="text">
                                     <p><span style="font-weight: 400;">Interesse in een GROENtuin? Stuur
                                             vrijblijvend

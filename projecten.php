@@ -4,8 +4,10 @@
 <main class="flex-grow-1">
     <style>
     /* Text styling */
+
+
     .text {
-        text-align: left;
+        /* text-align: left; */
         font-size: 19px;
     }
 
@@ -119,7 +121,7 @@
     @media (min-width: 768px) {
 
         .text {
-            text-align: left;
+            /* text-align: left; */
             font-size: 30px;
         }
 

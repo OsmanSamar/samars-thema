@@ -4,6 +4,15 @@
 <div class="bg-container">
 
     <style>
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-size: 1200px; */
+        background-size: 1104px;
+
+    }
+
     .swiper-container {
         position: relative;
 
@@ -13,6 +22,7 @@
         /* pointer-events: none; */
         bottom: -50px !important;
 
+
     }
 
     .swiper-container .swiper-pagination-bullet {
@@ -20,14 +30,7 @@
         height: 15px;
     }
 
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* background-size: 1200px; */
-        background-size: 1104px;
 
-    }
 
     /*  */
 
@@ -747,7 +750,7 @@
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center ">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/contact"
+                                        <a class="btn btn-secondary" href="/projecten"
                                             style="padding: 4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>
@@ -769,7 +772,7 @@
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/contact"
+                                        <a class="btn btn-secondary" href="/projecten"
                                             style="padding: 4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>
@@ -792,7 +795,7 @@
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/contact"
+                                        <a class="btn btn-secondary" href="/projecten"
                                             style="padding: 4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>

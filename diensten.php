@@ -15,6 +15,75 @@
         height: 46px;
     }
 
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        --swiper-navigation-color: #ffffff;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    /* Set font size for swiper buttons */
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after,
+    .swiper-button-next::after,
+    .swiper-rtl .swiper-button-prev::after {
+        font-size: 32px;
+        font-weight: 900;
+    }
+
+    .swiper-container .swiper-pagination,
+    .swiper-button-next,
+    .swiper-button-prev {
+        bottom: -70px !important;
+        display: block;
+    }
+
+    .swiper-container .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 113% !important;
+
+    }
+
+    .left-line {
+        border: 1px solid #fff;
+        width: 5%;
+        opacity: 0.5;
+        left: 41%;
+        position: absolute;
+        display: flex;
+        top: 113%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .right-line {
+        border: 1px solid #fff;
+        width: 5%;
+        opacity: 0.5;
+        left: 54%;
+        position: absolute;
+        display: flex;
+        top: 113%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
 
     /* MD Screen */
     @media (min-width: 768px) {
@@ -79,13 +148,6 @@
         /* bottom: 11%; */
     }
 
-    /* .content h1 {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-
-    } */
 
     .bottom-center {
         position: absolute;
@@ -148,6 +210,7 @@
 
     .swiper-container .swiper-pagination {
         bottom: -50px !important;
+        top: 110% !important;
 
     }
 
@@ -635,7 +698,7 @@
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center ">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/contact"
+                                        <a class="btn btn-secondary" href="/projecten"
                                             style="padding: 4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>
@@ -656,7 +719,7 @@
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/contact"
+                                        <a class="btn btn-secondary" href="/projecten"
                                             style="padding: 4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>
@@ -678,7 +741,7 @@
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/contact"
+                                        <a class="btn btn-secondary" href="/projecten"
                                             style="padding: 4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>
@@ -688,7 +751,16 @@
                     </div>
                     <!-- <div class="swiper-pagination"></div> -->
                 </div>
-                <div class="swiper-pagination d-block d-lg-none"></div>
+                <!-- <div class="swiper-pagination d-block d-lg-none"></div> -->
+
+                <div class=" flex  flex-lg-row align-items-center justify-content-center">
+
+                    <div class="swiper-button-prev d-none d-lg-flex" style="left:36%"></div>
+                    <div class="left-line d-none d-lg-block"></div>
+                    <div class="swiper-pagination d-block d-lg-block"></div>
+                    <div class="right-line d-none d-lg-block"></div>
+                    <div class="swiper-button-next d-none d-lg-flex" style="left:61%"></div>
+                </div>
 
 
             </div>
@@ -701,7 +773,7 @@
 
         <!--Contact Opnemen Section  -->
         <div class="bg-leaf">
-            <div class="container d-none d-lg-block" style="margin-top:60px;">
+            <div class="container d-none d-lg-block" style="margin-top:171px;">
                 <div class="bottom-text">
                     <div class="row">
                         <div class="col-lg-6  position-relative fadeIn" data-side="left">

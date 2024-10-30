@@ -24,7 +24,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-size: 1600px;
-        background-position: 39% -33%;
+        background-position: 47% -28%;
     }
 
 
@@ -565,16 +565,28 @@
                             }
                         }
 
+                        .arrow {
+                            font-size: 18px;
+                            color: white;
+                            transition: transform 0.25s;
+                        }
+
+                        .arrow.down-arrow {
+                            transform: rotate(0deg);
+                        }
+
+                        .arrow.up-arrow {
+                            transform: rotate(180deg);
+                        }
+
                         .up-arrow,
                         .down-arrow {
-                            font-size: 24px;
+                            font-size: 18px;
                             color: white;
-
                         }
                         </style>
 
-
-
+                        <!-- Read More Read Less -->
                         <script>
                         $(document).ready(function() {
                             $('.read-more-toggle').click(function(e) {
@@ -585,21 +597,12 @@
                                 $(this).prev('.content1').toggleClass('show');
                                 moreText.toggleClass('d-none');
 
-                                // Toggle arrow icon
-                                if (moreText.hasClass('d-none')) {
-                                    $(this).html(
-                                        '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                                    );
-                                } else {
-                                    $(this).html(
-                                        '<span class="arrow fas fa-angle-up up-arrow"></span>'
-                                    );
-                                }
+                                // Toggle rotation class
+                                $(this).find('.arrow').toggleClass('up-arrow down-arrow');
+
                             });
                         });
                         </script>
-
-
 
 
                     </div>
