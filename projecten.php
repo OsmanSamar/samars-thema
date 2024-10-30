@@ -14,7 +14,7 @@
 
 
 
-    /*  */
+
     .modal {
         display: none;
         position: fixed;
@@ -177,6 +177,40 @@
         width: 15px;
         height: 15px;
     }
+
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        --swiper-navigation-color: #ffffff;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    /* Set font size for swiper buttons */
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after,
+    .swiper-button-next::after,
+    .swiper-rtl .swiper-button-prev::after {
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     /* Circle Style */
 
@@ -1088,15 +1122,12 @@
 
                     <div class=" flex  flex-lg-row align-items-center justify-content-center">
                         <div class="swiper-button-prev d-none d-lg-flex" style="left:1%; top:84%; position: absolute; color:white;
-                        border:1px solid white; border-radius:50px;width:50px;
-                        height: 50px;
-                         font-size: 20px;
+                        border:1px solid white; 
                          text-align: center;
                          
                         "></div>
-                        <div class="swiper-button-next d-none d-lg-flex" style="left:7%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
-                       height: 50px;
-                       font-size: 20px;
+                        <div class="swiper-button-next d-none d-lg-flex" style="left:7%;top:84%; color:white; position:absolute; 
+                       
                        text-align: center;
                       ">
                         </div>
@@ -1175,15 +1206,12 @@
 
                     <div class=" flex  flex-lg-row align-items-center justify-content-center">
                         <div class="swiper-button-prev d-none d-lg-flex" style="left:1%; top:84%; position: absolute; color:white;
-                        border:1px solid white; border-radius:50px;width:50px;
-                        height: 50px;
-                         font-size: 20px;
+                       
                          text-align: center;
                          
                         "></div>
-                        <div class="swiper-button-next d-none d-lg-flex" style="left:7%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
-                       height: 50px;
-                       font-size: 20px;
+                        <div class="swiper-button-next d-none d-lg-flex" style="left:7%;top:84%; color:white; position:absolute;
+                        
                        text-align: center;
                       ">
                         </div>
@@ -1268,15 +1296,12 @@
 
                     <div class=" flex  flex-lg-row align-items-center justify-content-center">
                         <div class="swiper-button-prev d-none d-lg-flex" style="left:1%; top:84%; position: absolute; color:white;
-                        border:1px solid white; border-radius:50px;width:50px;
-                        height: 50px;
-                         font-size: 20px;
+                       
                          text-align: center;
                          
                         "></div>
-                        <div class="swiper-button-next d-none d-lg-flex" style="left:7%;top:84%; color:white; position:absolute; border:1px solid white; border-radius:50px;width:50px;
-                       height: 50px;
-                       font-size: 20px;
+                        <div class="swiper-button-next d-none d-lg-flex" style="left:7%;top:84%; color:white; position:absolute; 
+                       
                        text-align: center;
                       ">
                         </div>
