@@ -89,23 +89,15 @@
 
         }
 
-        /* .text {
-            font-size: 18px;
-            margin-top: 50px;
-            margin-bottom: 60px;
-            letter-spacing: 2px;
-            line-height: 43px;
-            white-space: normal;
 
-        } */
 
 
         .text {
 
-            font-size: 24px;
-            margin-top: 50px;
-            margin-top: 80px;
-            margin-bottom: 60px;
+            font-size: 20px;
+            margin-top: 30px;
+            /* margin-top: 80px; */
+            /* margin-bottom: 60px; */
         }
 
 
@@ -114,9 +106,10 @@
             object-fit: cover;
         }
 
-
     }
     </style>
+
+
     <div class="container">
 
 
@@ -139,14 +132,24 @@
 
             <h1 class="fadeIn d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 700;
         line-height: 125px;
         margin-bottom: 45px;
         letter-spacing:2px;">Duurzaamheid
             </h1>
 
-            <h1 class="fadeIn d-none d-md-block d-lg-block mb-3" style="color: #fff9f4;
+            <h1 class="fadeIn d-none d-md-block d-lg-none mb-3" style="color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 41px;
+        font-weight: 700;
+        line-height: 125px;
+        letter-spacing:2px;
+       
+        ">Duurzaamheid
+            </h1>
+
+            <h1 class="fadeIn d-none d-md-none d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 80px;
         font-weight: 700;
@@ -158,10 +161,10 @@
 
             <div class="text  d-flex flex-column align-items-center text-center fadeIn  col-lg-6 col-12  " style="margin-left:50%;
             margin-right:50%;
-    transform: translate(-50%, -6%);
-    position: relative;
-    font-size: 18px;
-            margin-top: 50px;
+            transform: translate(-50%, -6%);
+            position: relative;
+            font-size: 18px;
+            /* margin-top: 50px; */
             margin-bottom: 60px;
             letter-spacing: -1px;
             line-height: 34px;
@@ -184,8 +187,55 @@
             <div class="col-12 col-lg-6 flex-container fadeIn  " data-side="left" style="margin-top:">
                 <div class="d-flex flex-row   d-lg-flex align-items-center justify-content-center gap-1">
 
-                    <div class="text-header" style="margin-bottom:40px; margin-right:40px; white-space:nowrap;">Een
-                        duurzame tuin</div>
+                    <div class="text-header d-block d-md-none d-lg-none">
+                        <h2 style="color: #fff9f4;
+                        font-family: henderson-sans-basic, sans-serif;
+                        color: #fff;
+                        font-size: 25px;
+                        font-weight: 300;
+                        line-height: 60px;
+                        white-space:nowrap; ">
+                            Een
+                            duurzame tuin
+
+                        </h2>
+
+
+                    </div>
+                    <div class="text-header d-none d-md-block d-lg-none">
+                        <h2 style="color: #fff9f4;
+                        font-family: henderson-sans-basic, sans-serif;
+                        color: #fff;
+                        font-size: 33px;
+                        font-weight: 300;
+                        line-height: 60px;
+                        white-space:nowrap; ">
+                            Een
+                            duurzame tuin
+
+                        </h2>
+                    </div>
+
+                    <div class="text-header d-none d-md-bone d-lg-block "
+                        style="margin-bottom:40px; margin-right:40px; white-space:nowrap;">
+
+
+                        <h2 style="color: #fff9f4;
+                        font-family: henderson-sans-basic, sans-serif;
+                        color: #fff;
+                        font-size: 39px;
+                        font-weight: 300;
+                        line-height: 60px;
+                        white-space:nowrap; ">
+                            Een
+                            duurzame tuin
+
+                        </h2>
+                    </div>
+
+
+
+
                     <div class="dienstlinelg d-none  d-md-none  d-lg-flex "></div>
 
                 </div>
@@ -197,11 +247,12 @@
                     </div>
                     <div class="col-lg-9  mt-lg-1 mt-4">
 
-                        <div class="text  d-flex flex-column align-items-center  ">
+                        <div class="text  d-none d-md-none d-lg-flex flex-column align-items-center  ">
                             <p class="content1 ">Wij maken van je buitenruimte een duurzame tuin door volop te variëren
                                 met bloemen, planten en bomen. Bijen, vlinders en andere dieren en insecten kunnen zo
                                 volop meegenieten van je tuin. En
-                                <span class="more-text d-none"> jij hebt het hele jaar door een bloeiende tuin.
+                                <span class="more-text d-none d-lg-block"> jij hebt het hele jaar door een bloeiende
+                                    tuin.
                                     Voor de tuinaanleg gebruiken we duurzame materialen (hout met FSC keurmerk) en
                                     kiezen we voor zo min mogelijk bestrating. Regenwater wordt zo mogelijk opgevangen
                                     en teruggegeven aan de natuur. En het allerbelangrijkste: we planten volop groen in
@@ -214,23 +265,100 @@
                             </a>
                         </div>
 
-                        <div class=" circle-border">
-                            <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Samen aan de
-                                slag?</a>
+                        <div class="d-none d-md-bone d-lg-flex">
+                            <div class=" circle-border">
+                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Samen aan de
+                                    slag?</a>
+                            </div>
                         </div>
                     </div>
+
+
+
+
+
+                    <div class="text  d-flex d-md-flex d-lg-none flex-column align-items-center  ">
+                        <p class="content1 ">Wij maken van je buitenruimte een duurzame tuin door volop te variëren
+                            met bloemen, planten en bomen. Bijen, vlinders en andere dieren en insecten kunnen zo
+                            volop meegenieten van je tuin. En
+                            <span class="more-text d-none d-lg-block"> jij hebt het hele jaar door een bloeiende
+                                tuin.
+                                Voor de tuinaanleg gebruiken we duurzame materialen (hout met FSC keurmerk) en
+                                kiezen we voor zo min mogelijk bestrating. Regenwater wordt zo mogelijk opgevangen
+                                en teruggegeven aan de natuur. En het allerbelangrijkste: we planten volop groen in
+                                je tuin!
+                            </span>
+                        </p>
+                        <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                            <span class="arrow fas fa-angle-down down-arrow">
+                            </span>
+                        </a>
+                        <div class="d-flex d-md-flex d-lg-none">
+                            <div class=" circle-border">
+                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Samen aan de
+                                    slag?</a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
+
+
+
+                <!-- /* Overlay gradient effect and initial hidden state for small and tablet screens */ -->
                 <style>
-                .down-arrow {
-                    font-size: 24px;
-                    color: white;
+                @media (max-width: 991px) {
+                    .content1 {
+                        position: relative;
+                        max-height: 130px;
+                        overflow: hidden;
+                        transition: max-height 0.5s ease;
+                    }
+
+                    .content1.show {
+                        max-height: none;
+                    }
+
+
+                    .content1::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 15px;
+                        background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79,
+                                    0)) 0 0 no-repeat padding-box;
+                        pointer-events: none;
+                        opacity: 0.9;
+                    }
+
+                    .more-text {
+                        opacity: 1;
+                    }
                 }
 
-                .up-arrow {
-                    font-size: 24px;
-                    color: white;
 
+                .arrow {
+                    font-size: 18px;
+                    color: white;
+                    transition: transform 0.25s;
+                }
+
+                .arrow.down-arrow {
+                    transform: rotate(0deg);
+                }
+
+                .arrow.up-arrow {
+                    transform: rotate(180deg);
+                }
+
+                .up-arrow,
+                .down-arrow {
+                    font-size: 18px;
+                    color: white;
                 }
                 </style>
 
@@ -239,27 +367,15 @@
                 $(document).ready(function() {
                     $('.read-more-toggle').click(function(e) {
                         e.preventDefault();
-                        var moreText = $(this).prev('.content1').find(
-                            '.more-text');
+                        const moreText = $(this).prev('.content1').find('.more-text');
 
-
-                        // Toggle visibility of additional text
+                        // Toggle visibility and max-height of the content
+                        $(this).prev('.content1').toggleClass('show');
                         moreText.toggleClass('d-none');
 
+                        // Toggle rotation class
+                        $(this).find('.arrow').toggleClass('up-arrow down-arrow');
 
-                        // Toggle arrow icon
-                        if (moreText.hasClass('d-none')) {
-                            $(this).html(
-                                '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                            );
-                        } else {
-                            $(this).html(
-                                '<span class="arrow fas fa-angle-up up-arrow" > </span>'
-                            );
-                        }
-
-                        // Add or remove active class for arrow animation
-                        $(this).toggleClass('active');
                     });
                 });
                 </script>
@@ -273,120 +389,126 @@
 
 
             <div class="lin3"></div>
+
+
+
         </div>
 
 
-        <!-- New Section after the text section -->
-        <section class="text-line-button-section">
-            <div class="container">
-                <div class="row align-items-center">
+    </div>
 
-                    <!-- <div class="  col-lg-2 text-center d-lg-none order-1">
+
+    <!-- New Section after the text section -->
+    <section class="text-line-button-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- <div class="  col-lg-2 text-center d-lg-none order-1">
                         <div class="horizontal-divider"></div>
                     </div> -->
-                    <div class="col-lg-5 text-left  d-lg-none order-2">
-                        <p style="font-size:31px;">Waarom GroenTuinen?</p>
-                    </div>
-
-
-
-                    <div class="title d-none d-lg-flex align-items-center gap-3">
-                        <h2 class="mb-0" style="font-size:32px ">Waarom
-                            GROENtuinen?</h2>
-                        <div class="line2 between d-none d-lg-block"></div>
-
-                    </div>
-
-
-                    <!-- Testimonials Section on Small Screen -->
-                    <div class="row testimonials-section-sm d-md-none text-center2">
-                        <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 75ms;">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
-                                class="testimonial-img" />
-                            <h1>Vakkundig maatwerk</h1>
-                            <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
-                                    gemaakt</span></p>
-
-                        </div>
-                        <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 0.15s;">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
-                                class="testimonial-img w-84 h-126" />
-                            <h1>Passie voor groen</h1>
-                            <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
-                                    natuur</span></p>
-                        </div>
-                        <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: .225s;">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
-                                class="testimonial-img" />
-                            <h1>Écht out of the box</h1>
-                            <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
-                                    aanleg</span></p>
-                        </div>
-                    </div>
-
-
-
+                <div class="col-lg-5 text-left  d-lg-none order-2">
+                    <p style="font-size:31px;">Waarom GroenTuinen?</p>
                 </div>
 
 
 
-                <!-- Testimonials Section on Large Screen -->
-                <div class="row testimonials-section d-none d-md-flex ">
+                <div class="title d-none d-lg-flex align-items-center gap-3">
+                    <h2 class="mb-0" style="font-size:32px ">Waarom
+                        GROENtuinen?</h2>
+                    <div class="line2 between d-none d-lg-block"></div>
+
+                </div>
+
+
+                <!-- Testimonials Section on Small Screen -->
+                <div class="row testimonials-section-sm d-md-none text-center2">
                     <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 75ms;">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
-                            class="testimonial-img  w-84 h-126" />
+                            class="testimonial-img" />
                         <h1>Vakkundig maatwerk</h1>
                         <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
                                 gemaakt</span></p>
+
                     </div>
                     <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 0.15s;">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
-                            class="testimonial-img  w-84 h-126" />
+                            class="testimonial-img w-84 h-126" />
                         <h1>Passie voor groen</h1>
                         <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
                                 natuur</span></p>
                     </div>
                     <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: .225s;">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
-                            class="testimonial-img  " />
+                            class="testimonial-img" />
                         <h1>Écht out of the box</h1>
                         <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
                                 aanleg</span></p>
                     </div>
                 </div>
+
+
+
             </div>
-        </section>
 
-        <!-- Contact Information Section on Lg Screen -->
 
-        <div class="container fadeIn">
-            <div class="  flex-lg-row  d-flex  align-items-center justify-content-center d-none d-lg-flex" style="background-color:#2A3F31; 
-                border-radius: 50px; 
-                margin-top:40px; margin-bottom:40px;
-                gap-20px; padding:20px ">
-                <div class="d-flex justify-content-center justify-content-lg-start">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                        class="groentuinen" style="width:80px; height:80px" />
+
+            <!-- Testimonials Section on Large Screen -->
+            <div class="row testimonials-section d-none d-md-flex ">
+                <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 75ms;">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
+                        class="testimonial-img  w-84 h-126" />
+                    <h1>Vakkundig maatwerk</h1>
+                    <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
+                            gemaakt</span></p>
                 </div>
-                <div class=" text-center text-lg-left" style="margin-left:50px; font-size: 30px;
-                    font-weight:300; line-height:2px;
-                          font-family: 'Henderson Sans-basic', sans-serif;">
-                    <span>Ook een GROENtuin? Neem contact op!</span>
+                <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: 0.15s;">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
+                        class="testimonial-img  w-84 h-126" />
+                    <h1>Passie voor groen</h1>
+                    <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
+                            natuur</span></p>
                 </div>
-                <div class="button-group" style="margin-left:50px">
-                    <div class="circle-border ">
-                        <a class="btn btn-secondary" aria-label="telefoon Contact" href="tel:+31621830806"
-                            style="padding-left: 40px;padding-right: 40px; font-size:18px;"> +31
-                            6
-                            21830806</a>
-                    </div>
-                    <div class="circle-border">
-                        <a class="btn btn-primary" aria-label="Mail Contact" href="mailto:info@groentuinen.nl"
-                            style="padding-left: 40px;padding-right: 40px; font-size:18px;">info@groentuinen.nl</a>
-                    </div>
+                <div class="col-sm-12 col-lg-4 testimonial fadeIn" style="transition-delay: .225s;">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
+                        class="testimonial-img  " />
+                    <h1>Écht out of the box</h1>
+                    <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
+                            aanleg</span></p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Contact Information Section on Lg Screen -->
+
+    <div class="container fadeIn">
+        <div class="  flex-lg-row  d-flex  align-items-center justify-content-center d-none d-lg-flex" style="background-color:#2A3F31; 
+                border-radius: 50px; 
+                margin-top:40px; margin-bottom:40px;
+                gap-20px; padding:20px ">
+            <div class="d-flex justify-content-center justify-content-lg-start">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
+                    class="groentuinen" style="width:80px; height:80px" />
+            </div>
+            <div class=" text-center text-lg-left" style="margin-left:50px; font-size: 30px;
+                    font-weight:300; line-height:2px;
+                          font-family: 'Henderson Sans-basic', sans-serif;">
+                <span>Ook een GROENtuin? Neem contact op!</span>
+            </div>
+            <div class="button-group" style="margin-left:50px">
+                <div class="circle-border ">
+                    <a class="btn btn-secondary" aria-label="telefoon Contact" href="tel:+31621830806"
+                        style="padding-left: 40px;padding-right: 40px; font-size:18px;"> +31
+                        6
+                        21830806</a>
+                </div>
+                <div class="circle-border">
+                    <a class="btn btn-primary" aria-label="Mail Contact" href="mailto:info@groentuinen.nl"
+                        style="padding-left: 40px;padding-right: 40px; font-size:18px;">info@groentuinen.nl</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     </div>

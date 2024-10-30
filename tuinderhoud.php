@@ -144,6 +144,12 @@
                 margin-top: 188px;
 
             }
+
+            .text {
+                font-size: 20px;
+                margin-top: 50px;
+                /* margin-bottom: 50px; */
+            }
         }
     </style>
     <div class="container">
@@ -194,13 +200,15 @@
 
         <div class="row">
             <div class="col-12  col-md-12 col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:;">
+
+
                 <div class="text-header d-block d-md-none d-lg-none ">
                     <h2 style="color: #fff9f4;
-                  font-family: henderson-sans-basic, sans-serif;
-                color: #fff;
-                 font-size: 29px;
-               font-weight: 300;
-                line-height: 60px;
+                   font-family: henderson-sans-basic, sans-serif;
+                   color: #fff;
+                   font-size: 29px;
+                   font-weight: 300;
+                   line-height: 60px;
                 ">
                         <span style="--i:1;">Wij doen het</span> <br>
                         <span style="--i:3;">takkenwerk</span>
@@ -227,11 +235,11 @@
                 <div class="text-header d-none d-md-none d-lg-block ">
                     <h2 style="color: #fff9f4;
                   font-family: henderson-sans-basic, sans-serif;
-                color: #fff;
-                 font-size: 39px;
-               font-weight: 300;
-                line-height: 60px;
-                 margin-top:5px;">
+                  color: #fff;
+                  font-size: 39px;
+                  font-weight: 300;
+                  line-height: 60px;
+                  margin-top:5px;">
                         <span style="--i:1;">Wij doen het</span> <br>
                         <span style="--i:3;">takkenwerk</span>
 

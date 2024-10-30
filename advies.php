@@ -144,6 +144,12 @@
             margin-top: 188px;
 
         }
+
+        .text {
+            font-size: 20px;
+            margin-top: 44px;
+            /* margin-bottom: 50px; */
+        }
     }
     </style>
     <div class="container">
@@ -263,7 +269,7 @@
 
                         <div class=" d-none d-md-none d-lg-flex">
                             <div class=" circle-border">
-                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary"
+                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
                                     style=" white-space:nowrap; letter-spacing:1px; ">Kennismaken?</a>
                             </div>
 

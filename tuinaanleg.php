@@ -148,7 +148,7 @@
 
             .text {
 
-                font-size: 24px;
+                font-size: 20px;
                 margin-top: 50px;
                 margin-bottom: 60px;
             }

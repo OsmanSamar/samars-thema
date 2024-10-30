@@ -118,9 +118,9 @@
 
         .text {
 
-            font-size: 24px;
+            font-size: 20px;
             margin-top: 50px;
-            margin-top: 80px;
+            /* margin-top: 80px; */
             margin-bottom: 60px;
         }
 
