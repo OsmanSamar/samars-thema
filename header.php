@@ -62,15 +62,9 @@
 
 
     <script>
-    // const button = document.querySelector(".navbar-toggler");
-    // button.addEventListener("click", () => {
-    //     button.classList.toggle("collapsed");
-    // });
-
-
-    // document.querySelector('.navbar-toggler').addEventListener('click', function() {
-    //     this.classList.toggle('collapsed');
-    // });
+    document.querySelector('.navbar-toggler').addEventListener('click', function() {
+        this.classList.toggle('collapsed');
+    });
     </script>
 
 
@@ -148,8 +142,9 @@
 
                 <!-- Hamburger button for mobile -->
                 <div class="d-lg-none  " style="border-radius: 9999px; 
+                            height: 52px;
                             border: 1px solid #ffffff;">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation" style="
                         width: 40px;
@@ -169,56 +164,91 @@
                 /* Added Style of navbar-toggle-icon  */
 
 
-
-                /* .navbar-toggler {
-
+                /* Base Style for the Toggle Button */
+                .navbar-toggler {
                     border: none;
                     background-color: #f5a287;
                     outline: none;
+                    justify-content: center;
+                    position: relative;
+                    background-color: #3d3d3d;
+                    width: 60px;
+                    height: 60px;
+                    margin: 50px auto;
+                    border-radius: 50%;
+                    padding: 5px;
                 }
 
-                .navbar-toggler-icon {
-                    position: relative;
-                    width: 40px;
-                    height: 40px;
-                    transition: all 0.3s ease-in-out;
-                    
-                    display: block;
-                } */
+                /* Base Style for the Toggle Button */
 
-                /* .navbar-toggler-icon::before,
+                .navbar-toggler-icon {
+                    margin-left: 10px;
+                    top: 7.5px;
+                }
+
+                /* Base Style for the Hamburger Icon */
+
+                .navbar-toggler-icon,
+                .navbar-toggler-icon::before,
                 .navbar-toggler-icon::after {
                     content: '';
-                    width: 30px;
+                    left: 0;
+                    width: 20px;
                     height: 3px;
                     background-color: #333;
                     position: absolute;
                     transition: all 0.3s ease-in-out;
-                } */
+                    opacity: 1;
+                    transform: none;
+                }
 
 
-                /* .navbar-toggler-icon::before {
-                    top: -10px;
+
+                /* 2 */
+                .navbar-toggler-icon::before {
+                    top: 20px;
                 }
 
                 .navbar-toggler-icon::after {
                     top: 10px;
                 }
 
-
                 .navbar-toggler.collapsed .navbar-toggler-icon {
-                    transform: rotate(45deg);
+                    transform: translate(0px, 11px) rotate(45deg);
                 }
 
-                .navbar-toggler.collapsed .navbar-toggler-icon:::before {
-                    transform: rotate(45deg);
 
+
+                /* 1 */
+                /* .navbar-toggler.collapsed .navbar-toggler-icon::before {
+
+                    transform: translate(0px, -20px) rotate(-90deg);
                 }
 
-                .navbar-toggler.collapsed .navbar-toggler-icon:::after {
-                    transform: rotate(-45deg);
+                .navbar-toggler.collapsed .navbar-toggler-icon::after {
 
+                    transform: rotate(-45deg) translateX(100%);
+                    opacity: 0;
+                }
+
+                .navbar-toggler.collapsed .navbar-toggler-icon::after {
+
+                    transform: rotate(-45deg) translateX(100%);
+                    opacity: 0;
                 } */
+
+
+                /* 2 */
+                .navbar-toggler.collapsed .navbar-toggler-icon::before {
+
+                    transform: translate(0px, -20px) rotate(-90deg);
+                }
+
+                .navbar-toggler.collapsed .navbar-toggler-icon::after {
+
+                    transform: rotate(-45deg) translateX(100%);
+                    opacity: 0;
+                }
                 </style>
 
 

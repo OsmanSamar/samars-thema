@@ -158,7 +158,7 @@
 
                 <!-- On Small Screen -->
                 <div class="fadeIn container d-block d-md-none d-lg-none">
-                    <div class="button-line-container">
+                    <div class="button-line-container ">
                         <div class="button-group ">
                             <div class="circle-border ">
                                 <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
@@ -230,8 +230,8 @@
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
-                        <div class="line-container">
-                            <div class="line-hero"></div>
+                        <div class="line-container flex-grow-1">
+                            <div class="line-hero flex-grow-1"></div>
                             <!-- <a href="https://www.instagram.com" target="_blank" class="instagram-container">
                                 <i class="fab fa-instagram"></i>
                             </a> -->
