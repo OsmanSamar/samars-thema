@@ -16,26 +16,26 @@
 
     <!-- Whatsapp Icon -->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-            var whatsappIcon = document.querySelector('.whatsapp-fixed');
-            whatsappIcon.classList.add('open'); // Trigger the slide-in effect
-
-            setTimeout(function() {
-                whatsappIcon.classList.add('adjust-position');
-            }, 500); // Delay to adjust position after the animation
-        }, 900); // Initial delay before slide-in
-
-        // Close button functionality
-        var closeButton = document.querySelector('.close-button');
-        if (closeButton) {
-            closeButton.addEventListener('click', function() {
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
                 var whatsappIcon = document.querySelector('.whatsapp-fixed');
-                whatsappIcon.classList.remove('open', 'adjust-position');
-                whatsappIcon.classList.add('hide'); // Hide the icon after closing
-            });
-        }
-    });
+                whatsappIcon.classList.add('open'); // Trigger the slide-in effect
+
+                setTimeout(function () {
+                    whatsappIcon.classList.add('adjust-position');
+                }, 500); // Delay to adjust position after the animation
+            }, 900); // Initial delay before slide-in
+
+            // Close button functionality
+            var closeButton = document.querySelector('.close-button');
+            if (closeButton) {
+                closeButton.addEventListener('click', function () {
+                    var whatsappIcon = document.querySelector('.whatsapp-fixed');
+                    whatsappIcon.classList.remove('open', 'adjust-position');
+                    whatsappIcon.classList.add('hide'); // Hide the icon after closing
+                });
+            }
+        });
     </script>
 
 
@@ -43,13 +43,13 @@
     <!-- jQuery for dropdown menu -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $('.nav-item.dropdown').hover(function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-        }, function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+        $(document).ready(function () {
+            $('.nav-item.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+            });
         });
-    });
     </script>
 
     <!-- NavBar Links Keep  Active  -->
@@ -61,11 +61,11 @@
 
 
 
-    <script>
-    document.querySelector('.navbar-toggler').addEventListener('click', function() {
-        this.classList.toggle('collapsed');
-    });
-    </script>
+    <!-- <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            this.classList.toggle('collapsed');
+        });
+    </script> -->
 
 
 
@@ -123,19 +123,19 @@
 
                         </g>
                         <style>
-                        .cls-1 {
-                            transform-origin: center;
-                            fill: #f7b39a;
-                        }
+                            .cls-1 {
+                                transform-origin: center;
+                                fill: #f7b39a;
+                            }
 
-                        .cls-2 {
-                            transform-origin: center;
-                            fill: #fff;
-                        }
+                            .cls-2 {
+                                transform-origin: center;
+                                fill: #fff;
+                            }
 
-                        .animation-wrap :nth-child(1) {
-                            animation-delay: calc(1.5s + 0s);
-                        }
+                            .animation-wrap :nth-child(1) {
+                                animation-delay: calc(1.5s + 0s);
+                            }
                         </style>
                     </svg>
                 </a>
@@ -150,105 +150,78 @@
                         width: 40px;
                         height: 40px;
                         border-radius: 50%;
-                        padding: 0;
+                        padding: 5px;
                         margin:5px;
                         color: #5b7d6c;
                         background-color: #f5a287;
                         
                        ">
-                        <span class="navbar-toggler-icon"></span>
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon middle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
                     </button>
                 </div>
 
                 <style>
-                /* Added Style of navbar-toggle-icon  */
+                    .navbar-toggler {
+                        border: 0;
+                    }
+
+                    .navbar-toggler:focus,
+                    .navbar-toggler:active,
+                    .navbar-toggler-icon:focus {
+                        outline: none;
+                        box-shadow: none;
+                        border: 0;
+                    }
 
 
-                /* Base Style for the Toggle Button */
-                .navbar-toggler {
-                    border: none;
-                    background-color: #f5a287;
-                    outline: none;
-                    justify-content: center;
-                    position: relative;
-                    background-color: #3d3d3d;
-                    width: 60px;
-                    height: 60px;
-                    margin: 50px auto;
-                    border-radius: 50%;
-                    padding: 5px;
-                }
+                    /* X Icon */
+                    .toggler-icon {
+                        width: 30px;
+                        height: 3px;
+                        background-color: #5b7d6c;
+                        display: block;
+                        transition: all 0.2s;
+                    }
 
-                /* Base Style for the Toggle Button */
+                    .middle-bar {
+                        margin: 5px auto;
+                    }
 
-                .navbar-toggler-icon {
-                    margin-left: 10px;
-                    top: 7.5px;
-                }
+                    .navbar-toggler .top-bar {
+                        transform: rotate(45deg);
+                        transform-origin: 10% 10%;
+                    }
 
-                /* Base Style for the Hamburger Icon */
+                    .navbar-toggler .middle-bar {
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
 
-                .navbar-toggler-icon,
-                .navbar-toggler-icon::before,
-                .navbar-toggler-icon::after {
-                    content: '';
-                    left: 0;
-                    width: 20px;
-                    height: 3px;
-                    background-color: #333;
-                    position: absolute;
-                    transition: all 0.3s ease-in-out;
-                    opacity: 1;
-                    transform: none;
-                }
+                    .navbar-toggler .bottom-bar {
+                        transform: rotate(-45deg);
+                        transform-origin: 10% 10%;
+                    }
 
+                    .navbar-toggler.collapsed .top-bar {
+                        transform: rotate(0);
+                    }
 
+                    .navbar-toggler.collapsed .middle-bar {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
 
-                /* 2 */
-                .navbar-toggler-icon::before {
-                    top: 20px;
-                }
+                    .navbar-toggler.collapsed .bottom-bar {
+                        transform: rotate(0);
+                    }
 
-                .navbar-toggler-icon::after {
-                    top: 10px;
-                }
+                    .navbar-toggler.collapsed .toggler-icon {
 
-                .navbar-toggler.collapsed .navbar-toggler-icon {
-                    transform: translate(0px, 11px) rotate(45deg);
-                }
-
-
-
-                /* 1 */
-                /* .navbar-toggler.collapsed .navbar-toggler-icon::before {
-
-                    transform: translate(0px, -20px) rotate(-90deg);
-                }
-
-                .navbar-toggler.collapsed .navbar-toggler-icon::after {
-
-                    transform: rotate(-45deg) translateX(100%);
-                    opacity: 0;
-                }
-
-                .navbar-toggler.collapsed .navbar-toggler-icon::after {
-
-                    transform: rotate(-45deg) translateX(100%);
-                    opacity: 0;
-                } */
-
-
-                /* 2 */
-                .navbar-toggler.collapsed .navbar-toggler-icon::before {
-
-                    transform: translate(0px, -20px) rotate(-90deg);
-                }
-
-                .navbar-toggler.collapsed .navbar-toggler-icon::after {
-
-                    transform: rotate(-45deg) translateX(100%);
-                    opacity: 0;
-                }
+                        background-color: #5b7d6c;
+                    }
                 </style>
 
 
