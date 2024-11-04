@@ -3,110 +3,110 @@
 
 <main id="page" class="flex-grow-1">
     <style>
-    .line-left {
-        background-color: #fff;
-        opacity: .5;
-        width: 1px;
-    }
-
-
-    .flex-container {
-        text-align: center;
-    }
-
-    .text-header {
-        font-family: 'Inclusive Sans', sans-serif;
-        font-size: 40px;
-        color: #FFFFFF;
-        opacity: 1;
-        letter-spacing: 0px;
-        text-align: center;
-    }
-
-    .text {
-        font-family: 'Inclusive Sans', sans-serif;
-        font-size: 20px;
-        color: #FFFFFF;
-        opacity: 1;
-        letter-spacing: 0px;
-        margin-bottom: 34px;
-        /* margin-top: 80px; */
-    }
-
-
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-size: ;
-    }
-
-
-    @media (min-width: 768px) {
-        .line2 {
-            height: 1px;
-            width: 52vw;
-            background-color: #ffffff;
-            color: #ffffff;
-            position: relative;
-            margin-right: 10px;
-            display: block;
+        .line-left {
+            background-color: #fff;
+            opacity: .5;
+            width: 1px;
         }
-
-
-    }
-
-
-
-
-    @media (min-width: 992px) {
-
-
-
-        .dienstlinelg {
-            height: 1px;
-            width: 169px;
-            background-color: #ffffff;
-            color: #ffffff;
-            position: relative;
-            opacity: 0.5;
-        }
-
-        .first-img {
-            height: 800px
-        }
-
 
 
         .flex-container {
-            text-align: left;
-            margin-top: 80px;
+            text-align: center;
         }
 
         .text-header {
             font-family: 'Inclusive Sans', sans-serif;
-            font-size: 60px;
-
+            font-size: 40px;
+            color: #FFFFFF;
+            opacity: 1;
+            letter-spacing: 0px;
+            text-align: center;
         }
-
-
-
 
         .text {
-
+            font-family: 'Inclusive Sans', sans-serif;
             font-size: 20px;
-            margin-top: 30px;
+            color: #FFFFFF;
+            opacity: 1;
+            letter-spacing: 0px;
+            margin-bottom: 34px;
             /* margin-top: 80px; */
-            /* margin-bottom: 60px; */
+        }
+
+
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: ;
+        }
+
+
+        @media (min-width: 768px) {
+            .line2 {
+                height: 1px;
+                width: 52vw;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                margin-right: 10px;
+                display: block;
+            }
+
+
         }
 
 
 
-        .first-img {
-            object-fit: cover;
-        }
 
-    }
+        @media (min-width: 992px) {
+
+
+
+            .dienstlinelg {
+                height: 1px;
+                width: 169px;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                opacity: 0.5;
+            }
+
+            .first-img {
+                height: 800px
+            }
+
+
+
+            .flex-container {
+                text-align: left;
+                margin-top: 80px;
+            }
+
+            .text-header {
+                font-family: 'Inclusive Sans', sans-serif;
+                font-size: 60px;
+
+            }
+
+
+
+
+            .text {
+
+                font-size: 20px;
+                margin-top: 30px;
+                /* margin-top: 80px; */
+                /* margin-bottom: 60px; */
+            }
+
+
+
+            .first-img {
+                object-fit: cover;
+            }
+
+        }
     </style>
 
 
@@ -309,75 +309,75 @@
 
                 <!-- /* Overlay gradient effect and initial hidden state for small and tablet screens */ -->
                 <style>
-                @media (max-width: 991px) {
-                    .content1 {
-                        position: relative;
-                        max-height: 130px;
-                        overflow: hidden;
-                        transition: max-height 0.5s ease;
+                    @media (max-width: 991px) {
+                        .content1 {
+                            position: relative;
+                            max-height: 130px;
+                            overflow: hidden;
+                            transition: max-height 0.5s ease;
+                        }
+
+                        .content1.show {
+                            max-height: none;
+                        }
+
+
+                        .content1::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 15px;
+                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79,
+                                        0)) 0 0 no-repeat padding-box;
+                            pointer-events: none;
+                            opacity: 0.9;
+                        }
+
+                        .more-text {
+                            opacity: 1;
+                        }
                     }
 
-                    .content1.show {
-                        max-height: none;
+
+                    .arrow {
+                        font-size: 18px;
+                        color: white;
+                        transition: transform 0.25s;
                     }
 
-
-                    .content1::after {
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 15px;
-                        background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79,
-                                    0)) 0 0 no-repeat padding-box;
-                        pointer-events: none;
-                        opacity: 0.9;
+                    .arrow.down-arrow {
+                        transform: rotate(0deg);
                     }
 
-                    .more-text {
-                        opacity: 1;
+                    .arrow.up-arrow {
+                        transform: rotate(180deg);
                     }
-                }
 
-
-                .arrow {
-                    font-size: 18px;
-                    color: white;
-                    transition: transform 0.25s;
-                }
-
-                .arrow.down-arrow {
-                    transform: rotate(0deg);
-                }
-
-                .arrow.up-arrow {
-                    transform: rotate(180deg);
-                }
-
-                .up-arrow,
-                .down-arrow {
-                    font-size: 18px;
-                    color: white;
-                }
+                    .up-arrow,
+                    .down-arrow {
+                        font-size: 18px;
+                        color: white;
+                    }
                 </style>
 
                 <!-- Read More Read Less -->
                 <script>
-                $(document).ready(function() {
-                    $('.read-more-toggle').click(function(e) {
-                        e.preventDefault();
-                        const moreText = $(this).prev('.content1').find('.more-text');
+                    $(document).ready(function () {
+                        $('.read-more-toggle').click(function (e) {
+                            e.preventDefault();
+                            const moreText = $(this).prev('.content1').find('.more-text');
 
-                        // Toggle visibility and max-height of the content
-                        $(this).prev('.content1').toggleClass('show');
-                        moreText.toggleClass('d-none');
+                            // Toggle visibility and max-height of the content
+                            $(this).prev('.content1').toggleClass('show');
+                            moreText.toggleClass('d-none');
 
-                        // Toggle rotation class
-                        $(this).find('.arrow').toggleClass('up-arrow down-arrow');
+                            // Toggle rotation class
+                            $(this).find('.arrow').toggleClass('up-arrow down-arrow');
 
+                        });
                     });
-                });
                 </script>
             </div>
 
