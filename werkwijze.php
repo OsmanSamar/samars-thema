@@ -323,8 +323,13 @@
                                     te<br> werk gaan
 
                                 </h2>
-                                <h2 class=" text-header d-none d-md-block d-lg-block">Hoe wij
+                                <!-- <h2 class=" text-header d-none d-md-block d-lg-block">Hoe wij
                                     te werk gaan
+                                    <span style="font-weight:100; cursor:pointer;  opacity: .5; width:20px;">-
+                                    </span>
+                                </h2> -->
+                                <h2 class=" text-header d-none d-md-block d-lg-block">
+                                    <?= get_field("title_text") ?>
                                     <span style="font-weight:100; cursor:pointer;  opacity: .5; width:20px;">-
                                     </span>
                                 </h2>

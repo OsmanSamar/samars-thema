@@ -451,7 +451,7 @@
                         <?= get_field("warrom_text") ?>
                     </div>
 
-                    <!-- Lg Screen -->
+                    <!-- Lg Screen Warrom_text -->
 
                     <div class="title d-none d-lg-flex align-items-center gap-1">
                         <!-- <h2 class="mb-0">Waarom GROENtuinen?</h2> -->
@@ -466,83 +466,40 @@
                     </div>
 
 
-                    <!-- Testimonials Section on Small Screen -->
-                    <div class="row  testimonials-section-sm d-md-none text-center2  fadeIn">
-                        <div class="col-12 col-lg-3 testimonial">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
-                                class="testimonial-img" />
-                            <h1>Vakkundig maatwerk</h1>
+                    <!-- Testimonials Section on All Screens -->
+                    <div class="row  text-center2 order-3  fadeIn" style="margin-top: 100px;">
+                        <?php
+                        foreach (get_field("testimonials_section") as $testimonial) {
+                            ?>
+                        <div class="col-12 col-lg-4 testimonial">
+                            <img src="<?= $testimonial['afbeelding']['url'] ?>"
+                                alt="<?= $testimonial['afbeelding']['alt'] ?>" class="testimonial-img" />
+
                             <h1>
-                                <!-- <?= get_field("title_text") ?> -->
+                                <?= $testimonial["testimonials_section_title_text"] ?>
                             </h1>
-                            <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
-                                    gemaakt</span></p>
+
                             <p>
-                                <!-- <?= get_field("text") ?> -->
+                                <?= $testimonial["testimonials_section_text"] ?>
                             </p>
 
                         </div>
-                        <div class="col-12 col-lg-3 testimonial">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
-                                class="testimonial-img w-84 h-126" />
-                            <h1>Passie voor groen</h1>
-                            <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
-                                    natuur</span></p>
-                        </div>
-                        <div class="col-12 col-lg-3 testimonial">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
-                                class="testimonial-img" />
-                            <h1>Écht out of the box</h1>
-                            <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
-                                    aanleg</span></p>
-                        </div>
+                        <?php
+                        }
+                        ?>
                     </div>
 
                     <!-- Right: Button (Will be under testimonials on small screens) -->
-                    <div class="col-lg-5 text-right d-sm-block d-md-none d-lg-none">
-                        <div class="circle-border"> <a href="/contact" class="btn btn-primary"
-                                style=" white-space: nowrap;">Kennismaken?</a>
+                    <div class="col-lg-5 text-right d-sm-block d-lg-none">
+                        <div class="circle-border"><a href="<?= get_field("contact_btn")['url'] ?>"
+                                class="btn btn-primary"
+                                style=" white-space: nowrap;"><?= get_field("contact_btn")['title'] ?>?</a>
                         </div>
 
                     </div>
 
                 </div>
 
-
-
-                <!-- Testimonials Section on Large Screen -->
-                <div class="row testimonials-section d-none d-md-flex">
-                    <div class="col-12 col-lg-4 testimonial fadeIn">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group144.svg" alt=""
-                            class="testimonial-img  w-84 h-126" />
-                        <h1>Vakkundig maatwerk</h1>
-
-                        <p><span style="font-weight: 400;">Van ontwerp tot aanleg: jouw tuin wordt op maat
-                                gemaakt</span></p>
-
-                    </div>
-                    <div class="col-sm-12 col-lg-4 testimonial fadeIn">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group146.svg" alt=""
-                            class="testimonial-img  w-84 h-126" />
-                        <h1>Passie voor groen</h1>
-                        <p><span style="font-weight: 400;">Want groen zorgt voor meer geluk bij mensen én de
-                                natuur</span></p>
-                    </div>
-                    <div class="col-sm-12 col-lg-4 testimonial fadeIn">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/group148.svg" alt=""
-                            class="testimonial-img  " />
-                        <h1>Écht out of the box</h1>
-                        <p><span style="font-weight: 400;">Laat jouw tuin opvallen met een uniek ontwerp en
-                                aanleg</span></p>
-                    </div>
-
-                    <div class="col-lg-5 text-right d-sm-none d-md-block d-lg-none">
-                        <div class="circle-border"> <a href="/contact" class="btn btn-primary"
-                                style=" white-space: nowrap;">Kennismaken?</a>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </section>
 
