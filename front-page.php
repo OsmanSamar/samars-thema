@@ -339,7 +339,9 @@
                             <?= get_field("right-text") ?>
                         </div>
                         <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
-                            <a href="<?= esc_url(home_url('/over-ons')); ?>" class="btn btn-secondary">Over ons</a>
+                            <!-- <a href="<?= esc_url(home_url('/over-ons')); ?>" class="btn btn-secondary">Over ons</a> -->
+                            <a href="<?= get_field("overons_btn")['url'] ?>" class="btn btn-secondary"
+                                style=" white-space: nowrap;"><?= get_field("overons_btn")['title'] ?></a>
                         </div>
                     </div>
 
@@ -491,8 +493,8 @@
 
                     <!-- Right: Button (Will be under testimonials on small screens) -->
                     <div class="col-lg-5 text-right d-sm-block d-lg-none">
-                        <div class="circle-border"><a href="<?= get_field("contact_btn")['url'] ?>"
-                                class="btn btn-primary"
+                        <div class="circle-border">
+                            <a href="<?= get_field("contact_btn")['url'] ?>" class="btn btn-primary"
                                 style=" white-space: nowrap;"><?= get_field("contact_btn")['title'] ?>?</a>
                         </div>
 
