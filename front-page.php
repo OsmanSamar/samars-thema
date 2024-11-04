@@ -819,7 +819,10 @@
                                 </div>
                                 <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
                                     <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.4);">
-                                        <a class="btn btn-primary " href="/contact">Neem contact op </a>
+
+                                        <!-- <a class="btn btn-primary " href="/contact">Neem contact op </a> -->
+                                        <a href="<?= get_field("neemcontact_btn")['url'] ?>" class="btn btn-primary"
+                                            style=" white-space: nowrap;"><?= get_field("neemcontact_btn")['title'] ?></a>
                                     </div>
                                     <div class="line-contact between d-flex  d-md-flex  d-lg-flex flex-grow-1 "></div>
 
