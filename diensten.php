@@ -516,10 +516,14 @@
                                     style="; line-height:33px; margin:0; text-align: center; ">
                                     Tuinontwerp
                                 </p>
-
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                <a href="/tuinontwerp">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                        alt="downarrow Icon" class="downarrow-icon"
+                                        style=" width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
+                                </a>
+                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
                                     alt="downarrow Icon" class="downarrow-icon"
-                                    style=" width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
+                                    style=" width:42px; height: 42px; margin-left:auto; rotate:270deg;" /> -->
 
 
                             </div>
@@ -539,10 +543,15 @@
                                     style="line-height:33px; margin:0; text-align: center; ">
                                     Tuinaanleg
                                 </p>
+                                <a href="/tuinaanleg">
+                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                        alt="downarrow Icon" class="downarrow-icon"
+                                        style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
 
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                </a>
+                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
                                     alt="downarrow Icon" class="downarrow-icon"
-                                    style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
+                                    style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" /> -->
                             </div>
 
 
@@ -563,10 +572,15 @@
                                             margin:0; ">
                                     Tuinonderhoud
                                 </p>
+                                <a href="/tuinderhoud">
+                                    <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                        alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;
+                                             margin-left:auto; rotate:270deg;" />
 
-                                <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                </a>
+                                <!-- <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
                                     alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;
-                                         margin-left:auto; rotate:270deg;" />
+                                         margin-left:auto; rotate:270deg;" /> -->
                             </div>
 
 
@@ -581,10 +595,15 @@
                                     <p class="flex-grow-1 container-text" style=" line-height:33px; 
                                         margin:0; text-align: center; ">
                                         Advies</p>
+                                    <a href="/advies">
+                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                            alt="downarrow Icon" class="downarrow-icon"
+                                            style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
+                                    </a>
 
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
+                                    <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
                                         alt="downarrow Icon" class="downarrow-icon"
-                                        style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
+                                        style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" /> -->
                                 </div>
                             </div>
 
