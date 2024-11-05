@@ -65,8 +65,6 @@
         }
 
 
-
-
         .vl3 {
             border-left: 1px solid white;
             height: 70px;
@@ -79,9 +77,6 @@
 
         }
 
-
-
-
         .line-left {
             background-color: #fff;
             opacity: .5;
@@ -91,8 +86,6 @@
         .flex-container {
             text-align: center;
         }
-
-
 
         .text-header {
             font-size: 31px;
@@ -218,9 +211,6 @@
                 width: 511px;
             }
 
-
-
-
             .flex-container {
                 text-align: left;
             }
@@ -248,11 +238,6 @@
                 opacity: 0.5;
 
             }
-
-
-
-
-            .border-left {}
         }
     </style>
     <div class="bg-leaf ">
@@ -290,11 +275,10 @@
 
                         <div class=" bottom-center">
                             <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
-                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                    alt="downarrow Icon" class="downarrow-icon" /> -->
-
                                 <img src="<?= get_field("downarrow")['url'] ?>"
                                     alt="<?= get_field("downarrow")['alt'] ?>" class="downarrow-icon" />
+
+
                             </a>
                         </div>
                     </div>
