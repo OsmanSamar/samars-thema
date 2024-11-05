@@ -308,7 +308,10 @@
                         // </span>
                     <span class="" style="font-size:18px;">Tuinsoorten</span>
                 </div>
-                <h1 class="header fadeIn ">Tuinsoorten</h1>
+
+                <h1 class="header fadeIn ">
+                    <?= get_field("tuinsoorten_main_text") ?>
+                </h1>
             </div>
 
 
@@ -320,10 +323,6 @@
                 <div class="swiper-button-next custom-swiper-next d-none d-md-none d-lg-flex"></div>
 
                 <div class="position-relative d-flex align-items-center  ">
-                    <!-- Swiper Button Prev -->
-                    <!-- <div class="swiper-button-prev d-none d-md-none d-lg-flex"
-                        style="--swiper-navigation-color: #ffffff;  border: 1px solid #fff;border-radius: 25px; ">
-                    </div> -->
 
                     <!-- Swiper Slides Container -->
                     <div #swiperRef class=" swiper1 mySwiper1 "
@@ -369,17 +368,9 @@
                                         ecologische tuinen</a>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
-
-                    <!-- Swiper Button Next -->
-                    <!-- <div class="swiper-button-next d-none d-md-none d-lg-flex"
-                        style="--swiper-navigation-color: #ffffff;  border: 1px solid #fff;border-radius: 25px;">
-                    </div> -->
                 </div>
-
             </div>
             <!-- End Of swiper -->
 
@@ -390,30 +381,32 @@
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
                     <div class="col-12 col-lg-6 mb-4 fadeIn ">
-                        <div class="text-header">Landelijke tuin <span>-</span></div>
+                        <div class="text-header">
+
+                            <?= get_field("landelijke_tuin_title") ?>
+                            <span>-</span>
+                        </div>
                         <div class="text">
-                            <p>Een tuin met een natuurlijke uitstraling: dat is een landelijke tuin.
-                                Deze tuin heeft een gazon,
-                                veel groen,
-                                is volop beplant en ruim ingedeeld. Natuurlijk moet je tuin goed
-                                onderhouden worden,
-                                maar bij een landelijke tuin laat je de natuur ook haar gang gaan. In
-                                een landelijke tuin worden vooral natuurlijke en duurzame materialen
-                                gebruikt. </p>
+                            <p>
+                                <?= get_field("landelijke_tuin_text") ?>
+                            </p>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
-                        <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                            alt="groenoverons" class="img1" />
+                        <img src="<?= get_field("groenoverons_img")['url'] ?>"
+                            alt="<?= get_field("groenoverons_img")['alt'] ?>" class="img1" />
                     </div>
                     <!-- 2nd Row: Two Images on LG, Stacked on SM -->
                     <div class="col-12 col-lg-6 mb-4 text-center d-none  d-none d-md-none d-lg-flex fadeIn">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                            alt="groenoverons" class="img2" />
+                        <img src="<?= get_field("beautifulpinkflowers_img")['url'] ?>"
+                            alt="<?= get_field("beautifulpinkflowers_img")['alt'] ?>" class="img2" />
+
                     </div>
-                    <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex fadeIn"><img
-                            src="<?= esc_url(get_template_directory_uri()); ?>/images/paarsflowers.png"
-                            alt="Paarsflowers" class="img3" /></div>
+                    <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex fadeIn">
+                        <img src="<?= get_field("paarsflowers_img")['url'] ?>"
+                            alt="<?= get_field("paarsflowers_img")['alt'] ?>" class="img3" />
+
+                    </div>
                     <div class="lin3 d-none d-md-none d-lg-block"></div>
                 </div>
 
@@ -424,28 +417,23 @@
                         style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: ">
 
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                    alt="groenoverons" class="img1" />
+                            <div class="swiper-slide">
+                                <img src="<?= get_field("groenoverons_img")['url'] ?>"
+                                    alt="<?= get_field("groenoverons_img")['alt'] ?>" class="img1" />
                             </div>
-                            <div class="swiper-slide"><img
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                                    alt="groenoverons" class="img2" />
+                            <div class="swiper-slide">
+                                <img src="<?= get_field("beautifulpinkflowers_img")['url'] ?>"
+                                    alt="<?= get_field("beautifulpinkflowers_img")['alt'] ?>" class="img2" />
                             </div>
-                            <div class="swiper-slide"><img
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/paarsflowers.png"
-                                    alt="groediverons" class="img3" />
+                            <div class="swiper-slide">
+                                <img src="<?= get_field("paarsflowers_img")['url'] ?>"
+                                    alt="<?= get_field("paarsflowers_img")['alt'] ?>" class="img3" />
                             </div>
                         </div>
                     </div>
-
                     <div class="swiper-pagination"></div>
-
                 </div>
-
-
             </div>
-
         </div>
 
         <div class="lin3 d-block d-md-block d-lg-none"></div>
@@ -453,13 +441,14 @@
 
         <!-- 2  -->
         <div class="container">
-
             <div id="moderne-tuin" class="container" style="margin-top: 80px">
                 <div class="row">
                     <!-- 1st Row: Text and Image on LG, Stacked on SM -->
-                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn"><img
-                            src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
-                            alt="Flower with droplets.png" class="img1" /></div>
+                    <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
+
+                        <img src="<?= get_field("flowerdroplets_img")['url'] ?>"
+                            alt="<?= get_field("flowerdroplets_img")['alt'] ?>" class="img1" />
+                    </div>
 
 
                     <div class="col-lg-6 ">
@@ -468,14 +457,14 @@
                                 <div class="border-left h-100"></div>
                             </div>
                             <div class="col-lg-10 fadeIn">
-                                <h2 class=" text-header">Moderne tuin</h2>
+                                <h2 class=" text-header">
+                                    <?= get_field("moderne_tuin_title") ?>
+                                </h2>
                                 <div class="text ">
-                                    <p><span>Een moderne tuin heeft strakke lijnen, is
-                                            overzichtelijk en vraagt wat minder onderhoud. Een moderne tuin heeft meer
-                                            bestrating en er is over het algemeen minder groen te vinden. Toch kiezen
-                                            wij voor een moderne tuin met meer groene elementen. We zijn niet voor niets
-                                            GROENtuinen!
-                                        </span>
+                                    <p>
+
+                                        <?= get_field("moderne_tuin_text") ?>
+
                                     </p>
                                 </div>
                             </div>
@@ -486,12 +475,12 @@
                     <!-- 2nd Row: Two -->
 
                     <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex fadeIn ">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
-                            alt="Houseinbackground" class="houseinbackground" />
+                        <img src="<?= get_field("houseinbackground_img")['url'] ?>"
+                            alt="<?= get_field("houseinbackground_img")['alt'] ?>" class="houseinbackground" />
                     </div>
                     <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn ">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
-                            alt="Beautifulpinkflowers" class="img2" />
+                        <img src="<?= get_field("tuinenscaled_img")['url'] ?>"
+                            alt="<?= get_field("tuinenscaled_img")['alt'] ?>" class="img2" />
                     </div>
                     <div class="lin3 d-none d-md-none d-lg-block"></div>
                 </div>
@@ -502,15 +491,18 @@
                         class="swiper mySwiper smrow order-2 projecten-slider  d-flex d-md-flex d-lg-none"
                         style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
-                                    alt="groenoverons" class="img1" /></div>
-                            <div class="swiper-slide"><img
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
-                                    alt="groenoverons" class="img2" /></div>
-                            <div class="swiper-slide"><img
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
-                                    alt="groediverons" class="img3" /></div>
+                            <div class="swiper-slide">
+                                <img src="<?= get_field("houseinbackground_img")['url'] ?>"
+                                    alt="<?= get_field("houseinbackground_img")['alt'] ?>" class="img1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="<?= get_field("tuinenscaled_img")['url'] ?>"
+                                    alt="<?= get_field("tuinenscaled_img")['alt'] ?>" class="img2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="<?= get_field("flowerdroplets_img")['url'] ?>"
+                                    alt="<?= get_field("flowerdroplets_img")['alt'] ?>" class="img3" />
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -528,34 +520,28 @@
             <div class="row">
                 <!-- 1st Row: Text and Image on LG, Stacked on SM -->
                 <div class="col-12 col-lg-6 mb-4 fadeIn">
-                    <div class="text-header">Ecologische tuin <span>-</span></div>
+                    <div class="text-header">
+                        <?= get_field("ecologische_tuin_title") ?>
+                        <span>-</span>
+                    </div>
                     <div class="text">
-                        <p>Een ecologische tuin is een tuin die bruist van leven. Door de tuin zó aan te
-                            leggen
-                            dat
-                            er
-                            zo veel mogelijk beestjes en planten kunnen groeien. In een ecologische tuin
-                            wordt
-                            geen
-                            gif
-                            gebruikt. Er groeien vooral inheemse planten uit de streek, die hun gang mogen
-                            gaan.
-                            En
-                            onkruid? Dat bestaat niet in een ecologische tuin! </p>
+                        <p>
+                            <?= get_field("ecologische_tuin_text") ?>
+                        </p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="Scaled"
+                    <img src="<?= get_field("scaled_img")['url'] ?>" alt="<?= get_field("scaled_img")['alt'] ?>"
                         class="img1" />
                 </div>
                 <!-- 2nd Row: Two Images on LG, Stacked on SM -->
                 <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/dutchgarden.png" alt="Dutch garden"
-                        class="img2" />
+                    <img src="<?= get_field("dutchgarden_img")['url'] ?>"
+                        alt="<?= get_field("dutchgarden_img")['alt'] ?>" class="img2" />
                 </div>
                 <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex fadeIn">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/gardeninsunlight.png"
-                        alt="Gardeninsunlight" class="img3" />
+                    <img src="<?= get_field("gardeninsunlight_img")['url'] ?>"
+                        alt="<?= get_field("gardeninsunlight_img")['alt'] ?>" class="img3" />
                 </div>
 
             </div>
@@ -596,9 +582,9 @@
         <div id="daktuin-of-dakterras" class="container" style="margin-top: 80px">
             <div class="row">
                 <!-- 1st Row: Text and Image on LG, Stacked on SM -->
-                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn"><img
-                        src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
-                        alt="Flower with droplets.png" class="img1" />
+                <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
+                    <img src="<?= get_field("flowerdroplets_img")['url'] ?>"
+                        alt="<?= get_field("flowerdroplets_img")['alt'] ?>" class="img1" />
                 </div>
                 <div class="col-lg-6">
                     <div class="row soort-row">
@@ -606,24 +592,29 @@
                             <div class="border-left h-100"></div>
                         </div>
                         <div class="col-lg-10 fadeIn ">
-                            <h2 class=" text-header">Daktuin of dakterras</h2>
+                            <h2 class=" text-header">
+                                <?= get_field("daktuin_of_dakterras_title") ?>
+                            </h2>
                             <div class="text ">
-                                <p><span>Heb je geen tuin, maar wel een dakterras? Daar
-                                        kun je een prachtige daktuin van maken! Door een terras aan te leggen en te
-                                        werken met grote plantenbakken, maak je je dakterras groen. Wij denken mee
-                                        in het ontwerp en de realisatie van je groene daktuin.</span></p>
+                                <p>
+                                    <span>
+                                        <?= get_field("daktuin_of_dakterras_text") ?>
+                                    </span>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-6  text-center  mb-4 d-none d-md-none d-lg-flex fadeIn">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
-                        alt="Houseinbackground" class="houseinbackground" />
+                    <img src="<?= get_field("houseinbackground_img")['url'] ?>"
+                        alt="<?= get_field("houseinbackground_img")['alt'] ?>" class="houseinbackground" />
                 </div>
                 <div class="col-12 col-lg-6 mb-4 text-center d-none d-md-none d-lg-flex fadeIn">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
-                        alt="Beautifulpinkflowers" class="img2" />
+
+
+                    <img src="<?= get_field("tuinenscaled_img")['url'] ?>"
+                        alt="<?= get_field("tuinenscaled_img")['alt'] ?>" class="img2" />
                 </div>
 
             </div>
@@ -637,16 +628,17 @@
                     style="--swiper-navigation-color: #f5a287; ">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/houseinbackground.png"
-                                alt="groenoverons" class="img1" />
+                            <img src="<?= get_field("houseinbackground_img")['url'] ?>"
+                                alt="<?= get_field("houseinbackground_img")['alt'] ?>" class="img1" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinenscaled.jpg"
-                                alt="groenoverons" class="img2" />
+                                alt="groenoverons" class="img2" /><img src="<?= get_field("tuinenscaled_img")['url'] ?>"
+                                alt="<?= get_field("tuinenscaled_img")['alt'] ?>" class="img2" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flowerdroplets.png"
-                                alt="groediverons" class="img3" />
+                            <img src="<?= get_field("flowerdroplets_img")['url'] ?>"
+                                alt="<?= get_field("flowerdroplets_img")['alt'] ?>" class="img3" />
                         </div>
                     </div>
 
@@ -655,12 +647,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
 
 
 
@@ -677,16 +663,20 @@
             font-weight:300; line-height:2px;
                   font-family: 'Henderson Sans-basic', sans-serif;
                    ">
-                <span>Enthousiast?
-                    Neem contact op !</span>
+                <span>
+                    <?= get_field("contact_text") ?>
+                </span>
             </div>
             <div class="button-group" style="margin-left:50px">
-                <div class="circle-border "><a class="btn btn-secondary" aria-label="telefoon Contact"
-                        href="tel:+31621830806" style="padding-left: 40px; padding-right: 30px;font-size:18px;">+31 6
-                        21830806</a></div>
-                <div class="circle-border"><a class="btn btn-primary" aria-label="Mail Contact"
-                        href="mailto:info@groentuinen.nl"
-                        style="padding-left: 40px;padding-right: 30px;font-size:18px;">info@groentuinen.nl</a>
+                <div class="circle-border ">
+                    <a href="tel:<?= get_field("telefoon_contact") ?>" class="btn btn-secondary"
+                        style=" white-space: nowrap;"><?= get_field("telefoon_contact") ?>
+                    </a>
+                </div>
+                <div class="circle-border">
+                    <a href="mailto:<?= get_field("mail_contact") ?>" class="btn btn-primary"
+                        style=" white-space: nowrap;"><?= get_field("mail_contact") ?>
+                    </a>
                 </div>
             </div>
         </div>
@@ -700,19 +690,29 @@
                            padding-bottom: 39px;
                           color: #fff;
                          line-height: 55px; ">
-                    Enthousiast? Neem contact op ! </h2>
+                    <?= get_field("contact_text") ?>
+                </h2>
             </div>
             <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column justify-content-center justify-content-lg-start "
                 style="margin-bottom:70px">
-                <div class="circle-border "><a class="btn btn-secondary" style="padding:10px 40px;"
-                        aria-label="telefoon Contact" href="tel:+31621830806">+31 6 21830806</a></div>
-                <div class="circle-border"><a class="btn btn-primary" style="padding:10px 40px;"
-                        aria-label="Mail Contact" href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
+                <div class="circle-border ">
+                    <a href="tel:<?= get_field("telefoon_contact") ?>" class="btn btn-secondary"
+                        style=" white-space: nowrap;"><?= get_field("telefoon_contact") ?>
+                    </a>
+
+                </div>
+                <div class="circle-border">
+                    <a href="mailto:<?= get_field("mail_contact") ?>" class="btn btn-primary"
+                        style=" white-space: nowrap;"><?= get_field("mail_contact") ?>
+                    </a>
+
                 </div>
             </div>
             <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
-                style="margin-bottom:-50px"><img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png"
-                    alt="Avatar Image" class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
+                style="margin-bottom:-50px">
+
+                <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['alt'] ?>" class="groentuinen"
+                    style="width:120px; height:120px;  object-fit: cover;" />
             </div>
         </div>
     </div>
