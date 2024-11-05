@@ -11,10 +11,6 @@
         font-size: 19px;
     }
 
-
-
-
-
     .modal {
         display: none;
         position: fixed;
@@ -65,8 +61,6 @@
     }
 
 
-
-
     @keyframes slideInFromTop {
         from {
             top: -700px;
@@ -105,15 +99,11 @@
     }
 
 
-
-
-
     /* 100% Image Width on Smaller Screens */
     @media only screen and (max-width: 700px) {
         .modal-content {
             width: 100vw;
         }
-
 
     }
 
@@ -132,6 +122,7 @@
         }
     }
 
+
     .dienst-line {
         height: 1px;
         width: 595px;
@@ -144,8 +135,6 @@
 
 
     @media (min-width: 768px) {
-
-
         .dienstline {
             height: 1px;
             width: 928px;
@@ -160,12 +149,6 @@
 
     .swiper-container {
         position: relative;
-
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-
     }
 
     .swiper-container .swiper-pagination {
@@ -202,16 +185,6 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-
     /* Circle Style */
 
     /* Hide the CircleType by default */
@@ -233,7 +206,6 @@
             width: 2200px;
             height: 326px;
             top: -148px;
-
         }
 
         #demo3 {
@@ -257,7 +229,6 @@
             font-size: 12px;
             letter-spacing: 3px;
             z-index: 1000;
-
         }
 
         #demo2 {
@@ -269,11 +240,9 @@
             overflow: hidden;
             position: absolute;
             bottom: -255px;
-
             transform: translate(50%, 50%);
             /* position: fixed; */
             right: -70px;
-
             /* Position it at the right edge */
             transform: translateY(-50%);
             color: #fff;
@@ -281,7 +250,6 @@
             font-size: 12px;
             letter-spacing: 3px;
             z-index: 1000;
-
         }
 
         #demo1 {
@@ -293,7 +261,6 @@
             overflow: hidden;
             position: absolute;
             bottom: -65px;
-
             transform: translate(50%, 50%);
             /* position: fixed; */
             /* Position it at the right edge */
@@ -350,9 +317,6 @@
         overflow: visible;
 
     }
-
-
-
 
 
     .line-top {
@@ -589,8 +553,13 @@
                         <div class="text-header ">Projecten</div>
                         <div class="text d-lg-flex flex-row  align-items-center">
                             <div class="circle-border">
-                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
-                                    style="padding-left: 40px;padding-right: 40px; font-size:18px;">Tuin op maat</a>
+
+
+                                <a href="<?= get_field("tuin_op_maat_btn")['url'] ?>" class="btn btn-primary"
+                                    style="padding-left: 40px;padding-right: 40px; font-size:18px;">
+                                    <?= get_field("tuin_op_maat_btn")['title'] ?>
+                                </a>
+
                             </div>
                             <div class="nline"></div>
                         </div>
@@ -598,14 +567,13 @@
 
 
                         <div class="grid-item fadeIn " style="grid-row: span 2;  margin-top:140px; ">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
+                            <img src="<?= get_field("scaled")['url'] ?>" alt="<?= get_field("scaled")['alt'] ?>"
                                 class="object-fit-cover rounded" style="height:400px;" />
-
                         </div>
                         <div class="grid-item mt-4 fadeIn" style="grid-row: span 2;  ">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled13"
-                                class="object-fit-cover rounded" style="height:900px;" />
-
+                            <img src="<?= get_field("scaled13_img")['url'] ?>"
+                                alt="<?= get_field("scaled13_img")['alt'] ?>" class="object-fit-cover rounded"
+                                style="height:900px;" />
                         </div>
                     </div>
 
@@ -630,9 +598,13 @@
                                 </div>
                             </a>
                             <div class=" img-wrap ">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
+                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
                                     alt="Tuinonderhoud in Ede" class="img1 object-fit-cover rounded  "
-                                    style="opacity:0.7;" id="myImg" />
+                                    style="opacity:0.7;" id="myImg" /> -->
+
+                                <img src="<?= get_field("chinaoldgarden_img")['url'] ?>"
+                                    alt="<?= get_field("chinaoldgarden_img")['alt'] ?>"
+                                    class=" img1 object-fit-cover rounded" style="opacity:0.7;" id="myImg" />
 
 
                                 <!--  -->
@@ -684,9 +656,14 @@
                                             </div>
                                         </a>
                                         <div class="grid-item  ratio ratio-custom" style="--x:53;--y:67;">
+                                            <!-- <img src="<?= get_field("scaled_img2")['url'] ?>"
+                                                alt="<?= get_field("scaled_img2")['alt'] ?>"
+                                                class="object-fit-cover rounded" style="opacity:0.7;" id="myImg2" /> -->
+
                                             <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg"
                                                 alt="Tuin in Voorthuizen" class="object-fit-cover rounded"
                                                 style="height:; width:; margin-left:; opacity:0.7;" id="myImg2" />
+
 
 
                                             <div class="middle2">
@@ -710,9 +687,9 @@
                                     </div>
 
                                     <div class="grid-item  ratio ratio-custom mt-4 " style="--x:53;--y:67;">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg"
-                                            alt="scaled19" class="object-fit-cover rounded"
-                                            style="height:; width:; margin-left:; " />
+                                        <img src="<?= get_field("scaled_img")['url'] ?>"
+                                            alt="<?= get_field("scaled_img")['alt'] ?>"
+                                            class="object-fit-cover rounded" />
                                     </div>
                                 </div>
                             </div>
@@ -720,9 +697,9 @@
                                 <div class="col-12 ">
 
                                     <div class="grid-item ratio ratio-custom " style="--x:39;--y:53;">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg"
-                                            alt="scaled5" class="object-fit-cover rounded"
-                                            style="height:; width:; margin-left:;" />
+                                        <img src="<?= get_field("scaled5_img")['url'] ?>"
+                                            alt="<?= get_field("scaled5_img")['alt'] ?>"
+                                            class="object-fit-cover rounded" />
                                     </div>
 
 
@@ -746,8 +723,9 @@
                                             </div>
                                         </a>
                                         <div class="grid-item ratio ratio-custom  mt-4" style="--x:39;--y:53;">
-                                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg"
-                                                alt="Tuin Bij Tiny House" class="tiny-house object-fit-cover rounded"
+                                            <img src="<?= get_field("scaled51_img")['url'] ?>"
+                                                alt="<?= get_field("scaled51_img")['alt'] ?>"
+                                                class="tiny-house object-fit-cover rounded"
                                                 style="height:620px; width:; margin-left:; display:block; opacity:0.7;"
                                                 id="myImg3" />
                                             <div class="middle">
@@ -781,10 +759,7 @@
 
                 </div>
                 <div class="lin3"></div>
-
             </div>
-
-
         </div>
 
 
@@ -798,8 +773,11 @@
             <div class="vlsm fadeIn"></div>
             <div class="text fadeIn" style="margin-top:120px;">
                 <div class="circle-border">
-                    <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
-                        style="padding-left: 40px;padding-right: 40px; font-size:18px;">Tuin op maat</a>
+
+                    <a href="<?= get_field("tuin_op_maat_btn")['url'] ?>" class="btn btn-primary"
+                        style="padding-left:40px;padding-right:40px;font-size:18px;">
+                        <?= get_field("tuin_op_maat_btn")['title'] ?>
+                    </a>
                 </div>
 
             </div>
@@ -824,32 +802,27 @@
 
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                            alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                        <img src="<?= get_field("chinaoldgarden_img")['url'] ?>"
+                            alt="<?= get_field("chinaoldgarden_img")['alt'] ?>"
+                            class=" img1 object-fit-cover rounded" />
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= get_field("scaled11_img")['url'] ?>" alt="<?= get_field("scaled11_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
-                            class="object-fit-cover rounded" style="" />
+                        <img src="<?= get_field("scaled_img2")['url'] ?>" alt="<?= get_field("scaled_img2")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled19.jpg" alt="scaled19"
-                            class="object-fit-cover rounded" style=" " />
-                        <!-- Overlay Img -->
-                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
-                    </div>
-
                 </div>
-
-
             </div>
             <div class="swiper-pagination d-lg-none "></div>
         </div>
-
-
     </div>
 
 
@@ -874,28 +847,27 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
-                            class="object-fit-cover rounded" style="" />
 
-                        <!-- Overlay Img -->
-                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
-                            class="object-fit-cover rounded" style="" />
+                        <img src="<?= get_field("scaled5_img")['url'] ?>" alt="<?= get_field("scaled5_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
-                            class="object-fit-cover rounded" style="  " />
+                        <img src="<?= get_field("scaled51_img")['url'] ?>" alt="<?= get_field("scaled51_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
-                            class="object-fit-cover rounded" style="" />
+                        <img src="<?= get_field("scaled13_img")['url'] ?>" alt="<?= get_field("scaled13_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
+                        <!-- Overlay Img -->
+                        <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?= get_field("scaled65_img")['url'] ?>" alt="<?= get_field("scaled65_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
@@ -931,38 +903,39 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled5.jpg" alt="scaled5"
-                            class="object-fit-cover rounded" style="" />
+                        <img src="<?= get_field("scaled5_img")['url'] ?>" alt="<?= get_field("scaled5_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" alt="scaled13"
-                            class="object-fit-cover rounded" style="" />
+                        <img src="<?= get_field("scaled51_img")['url'] ?>" alt="<?= get_field("scaled51_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled13.jpg" alt="scaled65"
-                            class="object-fit-cover rounded" style="  " />
+                        <img src="<?= get_field("scaled13_img")['url'] ?>" alt="<?= get_field("scaled13_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled65.jpg" alt="scaled51"
-                            class="object-fit-cover rounded" style="" />
+                        <img src="<?= get_field("scaled65_img")['url'] ?>" alt="<?= get_field("scaled65_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/chinaoldgarden.png"
-                            alt="chinaoldgarden" class="img1 object-fit-cover rounded" />
+                        <img src="<?= get_field("chinaoldgarden_img")['url'] ?>"
+                            alt="<?= get_field("chinaoldgarden_img")['alt'] ?>"
+                            class=" img1 object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" alt="scaled11"
-                            class="object-fit-cover rounded" style="" />
+                        <img src="<?= get_field("scaled11_img")['url'] ?>" alt="<?= get_field("scaled11_img")['alt'] ?>"
+                            class="object-fit-cover rounded" />
                         <!-- Overlay Img -->
                         <div class="overlay d-block d-md-block d-lg-none  rounded"></div>
                     </div>
