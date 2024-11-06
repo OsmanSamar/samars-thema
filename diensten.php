@@ -616,7 +616,7 @@
                 <div class="bottom-text">
                     <div class="row">
                         <div class="col-lg-6  position-relative fadeIn" data-side="left">
-                            <div class="grid-bottom">
+                            <div class="grid-bottom" style="left:calc(var(--bs-gutter-x)* 0.1);">
                                 <img src="<?= get_field("left_contact_img")['url'] ?>"
                                     alt="<?= get_field("left_contact_img")['title'] ?>"
                                     class="w-100 h-100 object-fit-cover rounded" style="height:500px;" />
@@ -654,7 +654,7 @@
                                         <?= get_field("neem_contact_op_btn")['title'] ?>
                                     </a>
                                 </div>
-                                <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+                                <div class="line-contact between d-flex  d-md-flex  d-lg-flex  flex-grow-1"></div>
                             </div>
                         </div>
                     </div>
