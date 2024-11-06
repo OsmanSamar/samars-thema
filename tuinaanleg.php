@@ -589,14 +589,6 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
     </div>
 
 
@@ -611,7 +603,7 @@
 
         slidesPerView: 1.2,
         centeredSlides: true,
-        loop: true,
+        //loop: true,
         grabCursor: true,
         spaceBetween: 5,
         pagination: {
