@@ -3,138 +3,30 @@
 
 <main class="flex-grow-1">
     <style>
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-size: 1600px;
-    }
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 1600px;
+        }
 
 
-    .bg-img {
-        position: relative;
-        text-align: center;
-        color: #F8F4EA;
-        font-weight: bold;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-top: auto;
-        margin-bottom: 0;
-        background-size: cover;
+        .bg-img {
+            position: relative;
+            text-align: center;
+            color: #F8F4EA;
+            font-weight: bold;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: auto;
+            margin-bottom: 0;
+            background-size: cover;
 
-    }
-
-    .content {
-        position: absolute;
-        top: 62%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        text-align: center;
-        color: white;
-    }
-
-    .bottom-center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .groentuinen {
-        display: block;
-        object-fit: cover;
-        border-radius: 10px;
-        width: 100%;
-        height: 63vh
-    }
-
-    .text {
-        font-size: 20px;
-        margin-bottom: 48px;
-        text-align: left;
-    }
-
-
-    .nline {
-        border: 1px solid #ffffff;
-        opacity: 0.3;
-        width: 1308px;
-        height: 1px;
-    }
-
-
-    .vl3 {
-        border-left: 1px solid white;
-        height: 70px;
-        position: absolute;
-        left: 50%;
-        margin-left: -3px;
-        top: -5px;
-        display: flex;
-        opacity: .5;
-
-    }
-
-    .line-left {
-        background-color: #fff;
-        opacity: .5;
-        width: 1px;
-    }
-
-    .flex-container {
-        text-align: center;
-    }
-
-    .text-header {
-        font-size: 31px;
-        margin-bottom: 48px;
-    }
-
-    .text {
-        font-size: 20px;
-        margin-bottom: 48px;
-        text-align: left;
-    }
-
-    .content h1 {
-        font-size: 24px;
-        line-height: 70px;
-        font-weight: bold;
-    }
-
-    .content p {
-
-        font-size: 15px;
-        line-height: 20px;
-
-    }
-
-    .down {
-        display: inline-block;
-        transition: transform 0.3s ease;
-        width: 45px;
-        cursor: pointer;
-    }
-
-    .groenoverons {
-        width: 100%;
-        /* height: 823px; */
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-
-
-
-    /* MD Screens */
-    @media (min-width: 768px) {
+        }
 
         .content {
             position: absolute;
-            /* top: 50%; */
-            top: 73%;
+            top: 62%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
@@ -142,103 +34,211 @@
             color: white;
         }
 
+        .bottom-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
 
         .groentuinen {
             display: block;
             object-fit: cover;
             border-radius: 10px;
             width: 100%;
-            height: 34vh
+            height: 63vh
+        }
+
+        .text {
+            font-size: 20px;
+            margin-bottom: 48px;
+            text-align: left;
         }
 
 
-        .vl2 {
+        .nline {
+            border: 1px solid #ffffff;
+            opacity: 0.3;
+            width: 1308px;
+            height: 1px;
+        }
+
+
+        .vl3 {
             border-left: 1px solid white;
-            height: 73px;
+            height: 70px;
             position: absolute;
             left: 50%;
             margin-left: -3px;
             top: -5px;
             display: flex;
             opacity: .5;
-        }
-    }
 
-
-    @media (min-width: 992px) {
-
-        .groentuinen {
-            display: block;
-            object-fit: cover;
-            border-radius: 10px;
-            width: 100%;
-            height: 566px;
         }
 
-
-        /* Hide arrow on large screens */
-        .down {
-            display: none;
+        .line-left {
+            background-color: #fff;
+            opacity: .5;
+            width: 1px;
         }
 
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
+        .flex-container {
             text-align: center;
-            color: white;
+        }
 
+        .text-header {
+            font-size: 31px;
+            margin-bottom: 48px;
+        }
+
+        .text {
+            font-size: 20px;
+            margin-bottom: 48px;
+            text-align: left;
         }
 
         .content h1 {
-
-            font-size: 90px;
-            font-weight: 700;
-            line-height: 125px;
+            font-size: 24px;
+            line-height: 70px;
+            font-weight: bold;
         }
 
         .content p {
 
-            font-size: 20px;
-            line-height: 35px;
+            font-size: 15px;
+            line-height: 20px;
 
+        }
+
+        .down {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            width: 45px;
+            cursor: pointer;
         }
 
         .groenoverons {
-            height: 722px;
-            width: 511px;
+            width: 100%;
+            /* height: 823px; */
+            object-fit: cover;
+            border-radius: 10px;
         }
 
-        .flex-container {
-            text-align: left;
+
+
+
+        /* MD Screens */
+        @media (min-width: 768px) {
+
+            .content {
+                position: absolute;
+                /* top: 50%; */
+                top: 73%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+                color: white;
+            }
+
+
+            .groentuinen {
+                display: block;
+                object-fit: cover;
+                border-radius: 10px;
+                width: 100%;
+                height: 34vh
+            }
+
+
+            .vl2 {
+                border-left: 1px solid white;
+                height: 73px;
+                position: absolute;
+                left: 50%;
+                margin-left: -3px;
+                top: -5px;
+                display: flex;
+                opacity: .5;
+            }
         }
-    }
 
 
+        @media (min-width: 992px) {
 
-    @media (min-width: 768px) {
-        .line2 {
-            height: 1px;
-            width: 52vw;
-            background-color: #ffffff;
-            color: #ffffff;
-            position: relative;
-            margin-right: 10px;
-            display: block;
+            .groentuinen {
+                display: block;
+                object-fit: cover;
+                border-radius: 10px;
+                width: 100%;
+                height: 566px;
+            }
+
+
+            /* Hide arrow on large screens */
+            .down {
+                display: none;
+            }
+
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+                color: white;
+
+            }
+
+            .content h1 {
+
+                font-size: 90px;
+                font-weight: 700;
+                line-height: 125px;
+            }
+
+            .content p {
+
+                font-size: 20px;
+                line-height: 35px;
+
+            }
+
+            .groenoverons {
+                height: 722px;
+                width: 511px;
+            }
+
+            .flex-container {
+                text-align: left;
+            }
         }
 
-        .line3 {
-            height: 1px;
-            width: 50%;
-            background-color: #ffffff;
-            color: #ffffff;
-            margin-bottom: 48px;
-            opacity: 0.5;
 
+
+        @media (min-width: 768px) {
+            .line2 {
+                height: 1px;
+                width: 52vw;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                margin-right: 10px;
+                display: block;
+            }
+
+            .line3 {
+                height: 1px;
+                width: 50%;
+                background-color: #ffffff;
+                color: #ffffff;
+                margin-bottom: 48px;
+                opacity: 0.5;
+
+            }
         }
-    }
     </style>
     <div class="bg-leaf ">
 
@@ -324,68 +324,68 @@
                                 </div>
 
                                 <style>
-                                /* Overlay gradient effect and initial hidden state for small and tablet screens */
-                                @media (max-width: 991px) {
-                                    .content1 {
-                                        position: relative;
-                                        max-height: 160px;
-                                        overflow: hidden;
-                                        transition: max-height 0.5s ease;
+                                    /* Overlay gradient effect and initial hidden state for small and tablet screens */
+                                    @media (max-width: 991px) {
+                                        .content1 {
+                                            position: relative;
+                                            max-height: 160px;
+                                            overflow: hidden;
+                                            transition: max-height 0.5s ease;
+                                        }
+
+                                        .content1.show {
+                                            max-height: none;
+                                        }
+
+                                        .content1::after {
+                                            content: "";
+                                            position: absolute;
+                                            bottom: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 15px;
+                                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
+                                            pointer-events: none;
+                                            opacity: 0.9;
+                                        }
+
+                                        .more-text {
+                                            opacity: 1;
+                                        }
                                     }
 
-                                    .content1.show {
-                                        max-height: none;
+                                    .up-arrow,
+                                    .down-arrow {
+                                        font-size: 24px;
+                                        color: white;
+
                                     }
-
-                                    .content1::after {
-                                        content: "";
-                                        position: absolute;
-                                        bottom: 0;
-                                        left: 0;
-                                        width: 100%;
-                                        height: 15px;
-                                        background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
-                                        pointer-events: none;
-                                        opacity: 0.9;
-                                    }
-
-                                    .more-text {
-                                        opacity: 1;
-                                    }
-                                }
-
-                                .up-arrow,
-                                .down-arrow {
-                                    font-size: 24px;
-                                    color: white;
-
-                                }
                                 </style>
 
 
 
                                 <script>
-                                $(document).ready(function() {
-                                    $('.read-more-toggle').click(function(e) {
-                                        e.preventDefault();
-                                        const moreText = $(this).prev('.content1').find('.more-text');
+                                    $(document).ready(function () {
+                                        $('.read-more-toggle').click(function (e) {
+                                            e.preventDefault();
+                                            const moreText = $(this).prev('.content1').find('.more-text');
 
-                                        // Toggle visibility and max-height of the content
-                                        $(this).prev('.content1').toggleClass('show');
-                                        moreText.toggleClass('d-none');
+                                            // Toggle visibility and max-height of the content
+                                            $(this).prev('.content1').toggleClass('show');
+                                            moreText.toggleClass('d-none');
 
-                                        // Toggle arrow icon
-                                        if (moreText.hasClass('d-none')) {
-                                            $(this).html(
-                                                '<span class="arrow fas fa-angle-down down-arrow"></span>'
-                                            );
-                                        } else {
-                                            $(this).html(
-                                                '<span class="arrow fas fa-angle-up up-arrow"></span>'
-                                            );
-                                        }
+                                            // Toggle arrow icon
+                                            if (moreText.hasClass('d-none')) {
+                                                $(this).html(
+                                                    '<span class="arrow fas fa-angle-down down-arrow"></span>'
+                                                );
+                                            } else {
+                                                $(this).html(
+                                                    '<span class="arrow fas fa-angle-up up-arrow"></span>'
+                                                );
+                                            }
+                                        });
                                     });
-                                });
                                 </script>
 
                             </div>
@@ -602,20 +602,20 @@
                         <?php
                         foreach (get_field("testimonials_section") as $testimonial) {
                             ?>
-                        <div class="col-12 col-lg-4 testimonial">
-                            <img src="<?= $testimonial['afbeelding']['url'] ?>"
-                                alt=" <?= $testimonial['afbeelding']['alt'] ?>" class="testimonial-img" />
+                            <div class="col-12 col-lg-4 testimonial">
+                                <img src="<?= $testimonial['afbeelding']['url'] ?>"
+                                    alt=" <?= $testimonial['afbeelding']['alt'] ?>" class="testimonial-img" />
 
-                            <h1>
-                                <?= $testimonial["testimonials_section_title"] ?>
-                            </h1>
+                                <h1>
+                                    <?= $testimonial["testimonials_section_title"] ?>
+                                </h1>
 
-                            <p>
-                                <?= $testimonial["testimonials_section_text"] ?>
-                            </p>
+                                <p>
+                                    <?= $testimonial["testimonials_section_text"] ?>
+                                </p>
 
-                        </div>
-                        <?php
+                            </div>
+                            <?php
                         }
                         ?>
                     </div>
@@ -647,12 +647,12 @@
                 <div class="button-group" style="margin-left:50px">
                     <div class="circle-border ">
                         <a href="tel:<?= get_field("telefoon_contact") ?>" class="btn btn-secondary"
-                            style=" white-space: nowrap;"><?= get_field("telefoon_contact") ?>
+                            style=" white-space:nowrap;"><?= get_field("telefoon_contact") ?>
                         </a>
                     </div>
                     <div class="circle-border">
                         <a href="mailto:<?= get_field("mail_contact") ?>" class="btn btn-primary"
-                            style=" white-space: nowrap;"><?= get_field("mail_contact") ?>
+                            style=" white-space:nowrap;"><?= get_field("mail_contact") ?>
                         </a>
                     </div>
                 </div>
