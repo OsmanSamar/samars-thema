@@ -3,6 +3,16 @@
 
 <main id="page" class="flex-grow-1">
     <style>
+    .responsive-header {
+        font-size: 40px;
+        color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-weight: 700;
+        line-height: 125px;
+        margin-bottom: 45px;
+        letter-spacing: 2px;
+    }
+
     .vl3 {
         border-left: 1px solid white;
         height: 92px;
@@ -65,6 +75,10 @@
     }
 
     @media(min-width: 768px) {
+        .responsive-header {
+            font-size: 58px;
+        }
+
         .text {
             font-family: 'Inclusive Sans', sans-serif;
             font-size: 20px;
@@ -88,6 +102,10 @@
 
     @media (min-width: 992px) {
 
+        .responsive-header {
+            font-size: 90px;
+        }
+
         .dienstlinelg {
             height: 1px;
             width: 169px;
@@ -98,7 +116,8 @@
         }
 
         .first-img {
-            height: 800px
+            height: 744px;
+            width: 618px;
         }
 
         .swiper-container .swiper-pagination {
@@ -120,15 +139,12 @@
 
             font-size: 20px;
             margin-top: 50px;
-            /* margin-top: 80px; */
             margin-bottom: 60px;
         }
 
 
         .img1 {
             border-radius: 10px;
-            /* width: 626px;
-            height: 377px; */
             width: 640px;
             height: 438px;
         }
@@ -141,8 +157,6 @@
 
         .img3 {
             border-radius: 10px;
-            /* width: 626px;
-            height: 382px; */
             width: 630px;
             height: 438px;
         }
@@ -185,33 +199,10 @@
                 <span class="last">Tuinontwerp</span>
             </div>
 
-            <h1 class="fadeIn d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
-        font-family: henderson-sans-basic, sans-serif;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 125px;
-        margin-bottom: 45px;
-        letter-spacing:2px;">Tuinontwerp
+            <h1 class="fadeIn  mb-3 responsive-header">
+                <?= get_field("header") ?>
             </h1>
 
-            <h1 class="fadeIn d-none d-md-block d-lg-none mb-3" style="color: #fff9f4;
-        font-family: henderson-sans-basic, sans-serif;
-        font-size: 58px;
-        font-weight: 700;
-        line-height: 125px;
-        letter-spacing:2px;
-        ">
-                <?= get_field("header") ?>
-            </h1>
-            <h1 class="fadeIn d-none d-md-none d-lg-block mb-3" style="color: #fff9f4;
-        font-family: henderson-sans-basic, sans-serif;
-        font-size: 90px;
-        font-weight: 700;
-        line-height: 125px;
-        letter-spacing:2px;
-        ">
-                <?= get_field("header") ?>
-            </h1>
         </div>
 
         <div class="row firstcontainer " style="margin-bottom:80px;">
@@ -221,11 +212,9 @@
 
                     <div class="text-header" style="margin-bottom:40px; margin-right:40px;">
                         <?= get_field("left_title") ?>
-
-
                     </div>
-                    <div class="dienstlinelg d-none  d-md-none  d-lg-flex "></div>
 
+                    <div class="dienstlinelg d-none  d-md-none  d-lg-flex "></div>
                 </div>
 
 
@@ -289,7 +278,6 @@
                         max-height: none;
                     }
 
-
                     .content1::after {
                         content: "";
                         position: absolute;
@@ -349,19 +337,15 @@
 
 
             <div class="col-12 col-lg-6 fadeIn" data-side="right" style="margin-top:80px; ;">
-                <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/ontwerptuin.png" alt="ontwerptuin"
-                    class="first-img" style="" />
+                <img src="<?= get_field("tuinontwerp_img")['url'] ?>" alt="<?= get_field("tuinontwerp_img")['title'] ?>"
+                    class="first-img" />
+
             </div>
 
-
-            <!-- <div class="lin3"></div> -->
         </div>
 
 
         <div>
-
-
-
 
             <div class="row fadeIn">
                 <!-- Column Wrapper -->
@@ -409,7 +393,7 @@
                                        line-height: 55px;
                                           ">
                             <?= get_field("second_header") ?>
-                            <!-- Van schets naar beplantingsplan -->
+
                         </h2>
                         <h2 class="d-none d-md-block d-lg-none" style="font-size:36px;
                                           padding-bottom: 39px; 
@@ -419,7 +403,7 @@
                                        line-height:57px;
                                           ">
                             <?= get_field("second_header") ?>
-                            <!-- Van schets naar beplantingsplan -->
+
                         </h2>
                         <h2 class="d-none d-md-none d-lg-block" style="font-size:36px;
                                           padding-bottom: 39px; 
@@ -429,7 +413,7 @@
                                        line-height:57px;
                                            letter-spacing: 8px;">
                             <?= get_field("second_header") ?>
-                            <!-- Van schets naar beplantingsplan -->
+
                         </h2>
                         <div class="text2 text-fix">
                             <div class="inner" style="font-size:20px">
