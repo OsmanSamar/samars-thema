@@ -125,8 +125,6 @@
         }
 
 
-
-
         .img1 {
             border-radius: 10px;
             /* width: 626px;
@@ -168,19 +166,18 @@
         }
     }
     </style>
+
     <div class="container">
-
-
 
         <div class=" d-flex flex-column text-center my-4 ">
 
             <!-- Breadcrumb Links -->
             <div class="d-inline-block" style="color: #fff9f4;
-        font-family: henderson-sans-basic, sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 45px;
-        margin-top:-4px;">
+            font-family: henderson-sans-basic, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 45px;
+            margin-top:-4px;">
 
                 <a class="text-white" href="<?= esc_url(home_url('/')); ?>">Home</a><span class="separator"> // </span>
                 <span class="last">Onze diensten</span>
@@ -203,18 +200,17 @@
         font-weight: 700;
         line-height: 125px;
         letter-spacing:2px;
-       
-        ">Tuinontwerp
+        ">
+                <?= get_field("header") ?>
             </h1>
-
             <h1 class="fadeIn d-none d-md-none d-lg-block mb-3" style="color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
         font-size: 90px;
         font-weight: 700;
         line-height: 125px;
         letter-spacing:2px;
-       
-        ">Tuinontwerp
+        ">
+                <?= get_field("header") ?>
             </h1>
         </div>
 
@@ -223,7 +219,11 @@
             <div class="col-12 col-lg-6 flex-container fadeIn  " data-side="left" style="margin-top:">
                 <div class="d-flex flex-row   d-lg-flex align-items-center justify-content-center gap-1">
 
-                    <div class="text-header" style="margin-bottom:40px; margin-right:40px;">In goede aarde</div>
+                    <div class="text-header" style="margin-bottom:40px; margin-right:40px;">
+                        <?= get_field("left_title") ?>
+
+
+                    </div>
                     <div class="dienstlinelg d-none  d-md-none  d-lg-flex "></div>
 
                 </div>
@@ -236,22 +236,8 @@
                     <div class="col-lg-9 mt-lg-1 mt-4">
 
                         <div class="text  d-none d-md-none d-lg-flex flex-column align-items-center  ">
-                            <p class="content1 ">Wij maken een tuinontwerp op basis van jouw wensen. Maar daarbij geven
-                                wij ook onze eerlijke
-                                mening en kijken we naar de mogelijkheden. Deel je moodboard met ons en vertel wat je
-                                graag in
-                                je tuin zou willen zien.
-
-                                Tuinontwerp houdt in dat we een schets maken met daarbij een beplantingsplan. In de
-                                schets is te
-                                zien hoe de opzet van de tuin zal worden: waar komen planten en waar bestrating.
-                                <span class="more-text d-none"> En als je de
-                                    wens hebt voor een veranda, buitenkeuken of waterpartij, komt deze ook terug in de
-                                    schets.
-                                    Weten
-                                    hoe je schets er in het echt uit komt te zien? Het is mogelijk om een 3D-ontwerp te
-                                    ontvangen
-                                    van je tuin.
+                            <p class="content1 ">
+                                <?= get_field("left_text") ?>
                                 </span>
                             </p>
                             <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
@@ -260,33 +246,19 @@
                             </a>
                         </div>
 
-
-
                         <div class="d-none d-md-none d-lg-flex">
                             <div class=" circle-border">
-                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies nodig?</a>
+                                <a href="<?= get_field("advies_btn")['url'] ?>" class="btn btn-primary">
+                                    <?= get_field("advies_btn")['title'] ?>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-12 col-md-12 d-lg-none">
                         <div class="text  d-flex flex-column align-items-center d-md-flex d-lg-none  ">
-                            <p class="content1 ">Wij maken een tuinontwerp op basis van jouw wensen. Maar daarbij geven
-                                wij ook onze eerlijke
-                                mening en kijken we naar de mogelijkheden. Deel je moodboard met ons en vertel wat je
-                                graag in
-                                je tuin zou willen zien.
-
-                                Tuinontwerp houdt in dat we een schets maken met daarbij een beplantingsplan. In de
-                                schets is te
-                                zien hoe de opzet van de tuin zal worden: waar komen planten en waar bestrating.
-                                <span class="more-text d-none"> En als je de
-                                    wens hebt voor een veranda, buitenkeuken of waterpartij, komt deze ook terug in de
-                                    schets.
-                                    Weten
-                                    hoe je schets er in het echt uit komt te zien? Het is mogelijk om een 3D-ontwerp te
-                                    ontvangen
-                                    van je tuin.
+                            <p class="content1 ">
+                                <?= get_field("left_text") ?>
                                 </span>
                             </p>
                             <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
@@ -296,7 +268,9 @@
                         </div>
 
                         <div class=" circle-border">
-                            <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Advies nodig?</a>
+                            <a href="<?= get_field("advies_btn")['url'] ?>" class="btn btn-primary">
+                                <?= get_field("advies_btn")['title'] ?>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -399,17 +373,16 @@
 
                             <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
                                 <div class="mt-auto mb-5">
-                                    <img src="
-                                            <?= esc_url(get_template_directory_uri()); ?>/images/58scaled.jpg"
-                                        alt="Groenoverons" class="img1" />
+                                    <img src="<?= get_field("left_img")['url'] ?>"
+                                        alt="<?= get_field("left_img")['title'] ?>" class="img1" />
                                 </div>
                                 <div class="">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/Rick.png"
-                                        alt="Beautifulpinkflowers" class="img2" />
+                                    <img src="<?= get_field("center_img")['url'] ?>"
+                                        alt="<?= get_field("center_img")['title'] ?>" class="img2" />
                                 </div>
                                 <div class="mt-auto">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/16scaled.jpg"
-                                        alt="Ladybug" class="img3" />
+                                    <img src="<?= get_field("right_img")['url'] ?>"
+                                        alt="<?= get_field("right_img")['title'] ?>" class="img3" />
                                 </div>
                             </div>
 
@@ -435,7 +408,8 @@
                                         color: #fff;
                                        line-height: 55px;
                                           ">
-                            Van schets naar beplantingsplan
+                            <?= get_field("second_header") ?>
+                            <!-- Van schets naar beplantingsplan -->
                         </h2>
                         <h2 class="d-none d-md-block d-lg-none" style="font-size:36px;
                                           padding-bottom: 39px; 
@@ -444,7 +418,8 @@
                                        margin-top:110px;
                                        line-height:57px;
                                           ">
-                            Van schets naar beplantingsplan
+                            <?= get_field("second_header") ?>
+                            <!-- Van schets naar beplantingsplan -->
                         </h2>
                         <h2 class="d-none d-md-none d-lg-block" style="font-size:36px;
                                           padding-bottom: 39px; 
@@ -453,46 +428,44 @@
                                        margin-top:110px;
                                        line-height:57px;
                                            letter-spacing: 8px;">
-                            Van schets naar beplantingsplan
+                            <?= get_field("second_header") ?>
+                            <!-- Van schets naar beplantingsplan -->
                         </h2>
                         <div class="text2 text-fix">
                             <div class="inner" style="font-size:20px">
-                                <p><span style="font-weight: 400;">In het beplantingsplan maken wij een opzet van de
-                                        planten die in je tuin komen. We kijken daarbij naar de ligging van de tuin,
-                                        kleur, welke planten goed bij elkaar kunnen staan en natuurlijk jouw
-                                        smaak.</span></p>
+                                <p><span style="font-weight: 400;">
+                                        <?= get_field("center_text") ?>
+                                    </span></p>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="bottom-under"></div>
-            <!-- End of textSection -->
-
 
 
             <!-- Swiper On Small Screen -->
-
             <div class="swiper-container fadeIn" style="--swiper-pagination-color: #fff">
                 <div #swiperRef=""
                     class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
                     style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
 
                     <div class="swiper-wrapper">
+
                         <div class="swiper-slide">
-                            <img src="
-                                 <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                alt="Groen Overons" class="swiper-img" style="width:100% ;" />
+                            <img src="<?= get_field("left_img")['url'] ?>" alt="<?= get_field("left_img")['title'] ?>"
+                                class="swiper-img" style="width:100%;" />
                         </div>
+
                         <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/beautifulpinkflowers.png"
-                                alt="Beautifulpinkflowers" class="swiper-img" style="width:100% ;" />
+                            <img src="<?= get_field("center_img")['url'] ?>"
+                                alt="<?= get_field("center_img")['title'] ?>" class="swiper-img" style="width:100%;" />
                         </div>
+
                         <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="Ladybug"
-                                class="swiper-img" style="width:100% ;" />
+                            <img src="<?= get_field("right_img")['url'] ?>" alt="<?= get_field("right_img")['title'] ?>"
+                                class="swiper-img" style="width:100%;" />
                         </div>
 
                     </div>
@@ -512,37 +485,43 @@
                         <div class="col-lg-6  position-relative fadeIn" data-side="left">
                             <div class="grid-bottom">
 
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/mapofgardendesign.png"
-                                    alt="Groenoverons" class="object-fit-cover rounded" style="height:500px;" />
+                                <img loading="lazy" src="<?= get_field("contact_left_img")['url'] ?>"
+                                    alt="<?= get_field("contact_left_img")['title'] ?>" class="object-fit-cover rounded"
+                                    style="height:500px;" />
 
-                                <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/web2.jpg" alt="">
-                                <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/27scaled.jpg" alt="">
+                                <img loading="lazy" src="<?= get_field("contact_top_img")['url'] ?>"
+                                    alt="<?= get_field("contact_top_img")['title'] ?>"
+                                    class="w-100 h-100 object-fit-cover rounded" />
+
+                                <img loading="lazy" src="<?= get_field("contact_bottom_img")['url'] ?>"
+                                    alt="<?= get_field("contact_bottom_img")['title'] ?>"
+                                    class="w-100 h-100 object-fit-cover rounded" />
 
                             </div>
                         </div>
-                        <div class="col-12  col-lg-5 offset-lg-8 fadeIn" data-side="right">
-                            <h2 style="line-height: 49px; letter-spacing: 5px;">Enthousiast?<br> Neem contact op!</h2>
+                        <div class="col-12  col-lg-5 offset-lg-1 fadeIn" data-side="right">
+                            <h2 style="line-height:62px; letter-spacing:4px;">
+                                <?= get_field("contact_title") ?>
+                            </h2>
                             <div class="col-lg-9">
                                 <div class="text">
-                                    <p><span style="font-weight: 400; line-height: 30px;letter-spacing: 1px;">Ook zo’n
-                                            groene tuin? Laat dat maar aan
-                                            GROENtuinen
-                                            over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span>
+                                    <p>
+                                        <span style="font-weight:400; line-height:30px;letter-spacing:1px;">
+                                            <?= get_field("contact_text") ?>
+                                        </span>
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-12  title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
-                                <div class="circle-border">
-                                    <a class="btn btn-primary " href="/contact"
+                            <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
+                                <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
+                                    <a href="<?= get_field("contact_opnemen_btn")['url'] ?>" class="btn btn-primary"
                                         style="padding:10px 20px; white-space:nowrap; letter-spacing:1px; ">
-                                        Contact opnemen
-
+                                        <?= get_field("contact_opnemen_btn")['title'] ?>
                                     </a>
                                 </div>
-                                <div class="line-contact between  "></div>
+                                <div class="line-contact between  d-flex  d-md-flex  d-lg-flex  flex-grow-1 "></div>
                             </div>
+
 
                         </div>
                     </div>
@@ -583,20 +562,18 @@
                 class="row fadeIn    d-flex flex-column align-items-left justify-content-start d-lg-none">
                 <div class="line-top"></div>
 
-
                 <div class="col-12 col-lg-4  text-left" style="margin-top:20px; ">
                     <h2 style="font-size:36px;
-                padding-bottom: 39px; 
-                color: #fff;
-                line-height: 55px;">
-                        Enthousiast? Neem contact
-                        op!
+                    padding-bottom: 39px; 
+                    color: #fff;
+                    line-height: 55px;">
+                        <?= get_field("contact_title") ?>
                     </h2>
                     <div class="col-lg-9">
                         <div class="">
-                            <p><span style="font-weight: 400; ;">Ook zo’n groene tuin? Laat dat maar aan
-                                    GROENtuinen
-                                    over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span></p>
+                            <p><span style="font-weight: 400; ;">
+                                    <?= get_field("contact_text") ?>
+                                </span></p>
                         </div>
                     </div>
                 </div>
@@ -604,34 +581,27 @@
                     <div
                         class="title d-flex flex-row  d-md-flex d-lg-flex align-items-center justify-content-start gap-1">
                         <div class="circle-border">
-                            <a class="btn btn-primary " href="/contact" style="padding: 10px 40px; font-size:;">Neem
-                                contact
-                                op
+                            <a href="<?= get_field("contact_opnemen_btn")['url'] ?>" class="btn btn-primary"
+                                style="padding:10px 20px; white-space:nowrap; letter-spacing:1px; left:calc(var(--bs-gutter-x)* 0.1);">
+                                <?= get_field("contact_opnemen_btn")['title'] ?>
                             </a>
                         </div>
                         <!-- <div class="line-contact  d-flex  d-md-flex  d-lg-flex "></div> -->
                         <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
                         <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
-
                     </div>
-
                 </div>
 
                 <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
                     style="margin-bottom:-50px">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                        class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
+                    <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
+                        class="groentuinen" style="width:120px; height:120px; object-fit:cover;" />
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
     </div>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
