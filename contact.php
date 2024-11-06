@@ -4,9 +4,6 @@
 
 <main class="flex-grow-1">
 
-
-
-
     <style>
     .bg-leaf {
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");

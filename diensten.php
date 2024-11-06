@@ -78,13 +78,6 @@
     }
 
 
-
-
-
-
-
-
-
     /* MD Screen */
     @media (min-width: 768px) {
         .swiper {
@@ -105,7 +98,6 @@
 
 
     @media (min-width: 768px) {
-
 
         .dienstline {
             height: 1px;
@@ -138,8 +130,6 @@
     }
 
 
-
-
     .content {
         position: absolute;
         left: 50%;
@@ -157,21 +147,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
 
-
     h1 {
-
         margin-bottom: 180px;
         font-size: 40px;
         line-height: 70px;
         font-weight: bold;
     }
-
-
-
 
 
     .down {
@@ -185,43 +169,38 @@
         border: 1px solid #fff;
         border-radius: 10px;
         height: 461px;
-
     }
 
     .second-container {
         background-color: #5B7D6C;
         margin: 10px 10px;
         border-radius: 10px;
-
         height: 437px;
     }
 
     .border-bottom {
-
         border-bottom-width: 1px;
-        /* margin-bottom: 22px; */
+    }
 
+    .border-bottom:last-child {
+        border-bottom-width: 0;
     }
 
     .swiper-container {
         position: relative;
-
     }
 
     .swiper-container .swiper-pagination {
         bottom: -50px !important;
         top: 110% !important;
-
     }
 
     .swiper-container .swiper-button-next {
         bottom: -50px !important;
-
     }
 
     .swiper-container .swiper-button-prev {
         bottom: -50px !important;
-
     }
 
     .swiper-container .swiper-pagination-bullet {
@@ -232,11 +211,8 @@
 
     /* LG Screen */
     @media (min-width: 992px) {
-
-
         .container-text {
             font-size: 24px;
-
         }
 
         .gardening-icon,
@@ -245,7 +221,6 @@
         .tools-icon {
             width: 52px;
             height: 52px;
-
         }
 
         .swiper {
@@ -253,8 +228,6 @@
             height: 529px;
             margin: 20px auto;
         }
-
-
 
         .content {
             position: absolute;
@@ -269,9 +242,6 @@
             display: none;
         }
 
-
-
-
         .down {
             display: none;
         }
@@ -282,19 +252,14 @@
             font-size: 90px;
             line-height: 70px;
             font-weight: bold;
-
         }
 
         .bg-img img {
-
             /* height: 690px; */
             min-height: 50vh;
-
         }
 
-
         .content h1 {
-
             font-size: 90px;
             font-weight: 700;
             line-height: 125px;
@@ -310,14 +275,6 @@
             transform: translate(-50%, -50%);
         }
     }
-
-    /* .swiper-container-fullwidth {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    } */
-
 
 
 
@@ -357,7 +314,6 @@
         position: absolute;
         left: 50%;
         transform-origin: 0 100px;
-
     }
 
     @keyframes rotating {
@@ -378,10 +334,7 @@
         height: 200px;
         width: 200px;
         overflow: visible;
-
     }
-
-
 
     /* Hide the text and button container by default */
     .slider-text-button-container {
@@ -390,7 +343,6 @@
 
     /* Show text and button for devices less than 1024px */
     @media (max-width: 1023px) {
-
 
         .slider-text-button-container {
             position: absolute;
@@ -435,16 +387,13 @@
             height: 1px;
             opacity: 0.3;
         }
-
     }
-
 
     /* Text styling */
     .slider-text-button-container .text {
         flex: 1;
         /* Take up available space */
         text-align: left;
-
     }
 
     /* Button styling */
@@ -452,10 +401,10 @@
         flex: 0;
         /* Do not grow */
         text-align: right;
-
     }
     </style>
     <div class="container">
+
         <div class="d-inline-block" style="margin-top:23px; margin-bottom:23px; ">
             <a class="text-white" style="font-size:18px;" href="<?= esc_url(home_url('/')); ?>">Home</a>
             <span class="separator"> // </span>
@@ -463,154 +412,62 @@
                 diensten</span>
         </div>
 
-
-
         <div class="container bg-img mt-lg-auto mb-0">
             <div class="position-relative fadeIn">
                 <div class=" overlay" style=" border-radius: 10px; "></div>
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" alt="groentuinen"
-                    style=" ;  object-fit: cover; border-radius: 10px; ;" />
+                <img src="<?= get_field("bg_img")['url'] ?>" alt="<?= get_field("bg_img")['title'] ?>"
+                    style="object-fit:cover; border-radius:10px; ;" />
                 <div class="content center">
                     <div class="col-12 col-lg-7 bottom-center">
-
                         <h1>
+                            <!-- <span class="d-lg-none d-block">
 
-                            <span class="d-lg-none d-block">
-                                <span style="--i:1;">Onze</span> <br> <span style="--i:2;"></span> <span
-                                    style="--i:3;">diensten</span> <br> <span style="--i:4;"></span>
+                                <?= get_field("bg_img_text") ?>
+
+                            </span> class="d-none d-lg-block"-->
+                            <span>
+                                <?= get_field("bg_img_text") ?>
                             </span>
-                            <span class="d-none d-lg-block">
-                                <span style="--i:1;">Onze </span> <span style="--i:2;"></span> <br> <span
-                                    style="--i:3;">diensten</span> <span style="--i:4;"></span> <span
-                                    style="--i:5;"></span>
-                            </span>
-
-
-
                         </h1>
                     </div>
                     <div class="col-12 col-lg-7 bottom-center">
                         <a class="down d-lg-none d-block" aria-label="Go to the content" href="#content">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                alt="downarrow Icon" class="downarrow-icon" />
+                            <img src="<?= get_field("downarrow")['url'] ?>" alt="<?= get_field("downarrow")['title'] ?>"
+                                class="downarrow-icon" />
                         </a>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="container" style="margin-top:-82px">
 
-            <div class="  row" style="margin-top:120px;">
+            <div class="row" style="margin-top:120px;">
+
                 <div class="col-12 col-lg-5 fadeIn" data-side="left">
                     <div class="first-container" id="content">
-
                         <div class="second-container d-flex flex-column gap-2" style="">
-
+                            <?php
+                            foreach (get_field("left_table") as $table) {
+                                ?>
                             <div class=" d-flex flex-row align-items-center border-bottom fadeIn" style="padding:30px ">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/design.svg"
-                                    alt="Design Icon" class="design-icon" style="width:42px; height: 42px;" />
-
+                                <img src="<?= $table['left_img']['url'] ?>" alt=" <?= $table['left_img']['alt'] ?>"
+                                    class="design-icon" style="width:42px; height: 42px;" />
                                 <p class="flex-grow-1 container-text"
-                                    style="; line-height:33px; margin:0; text-align: center; ">
-                                    Tuinontwerp
+                                    style="line-height:33px; margin:0; text-align:center;">
+                                    <?= $table["center_text"] ?>
                                 </p>
-                                <a href="/tuinontwerp">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                        alt="downarrow Icon" class="downarrow-icon"
-                                        style=" width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
-                                </a>
-                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                    alt="downarrow Icon" class="downarrow-icon"
-                                    style=" width:42px; height: 42px; margin-left:auto; rotate:270deg;" /> -->
-
-
+                                <img src="<?= $table['right_img']['url'] ?>" alt=" <?= $table['right_img']['alt'] ?>"
+                                    class="downarrow-icon"
+                                    style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
                             </div>
-
-
-
-
-
-                            <div class=" d-flex flex-row align-items-center border-bottom fadeIn "
-                                style="padding:30px ">
-
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tools.svg"
-                                    alt="Tools Icon" class="tools-icon" style="width:42px; height: 42px;" />
-
-
-                                <p class="flex-grow-1 container-text"
-                                    style="line-height:33px; margin:0; text-align: center; ">
-                                    Tuinaanleg
-                                </p>
-                                <a href="/tuinaanleg">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                        alt="downarrow Icon" class="downarrow-icon"
-                                        style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
-
-                                </a>
-                                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                    alt="downarrow Icon" class="downarrow-icon"
-                                    style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" /> -->
-                            </div>
-
-
-
-
-
-
-                            <div class=" d-flex flex-row align-items-center border-bottom fadeIn   "
-                                style=" padding:30px">
-
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/gardening.svg"
-                                    alt="Gardening Icon" class="gardening-icon" />
-
-
-                                <p class="flex-grow-1 container-text" style="
-                                    line-height:33px; 
-                                    text-align: center;
-                                            margin:0; ">
-                                    Tuinonderhoud
-                                </p>
-                                <a href="/tuinderhoud">
-                                    <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                        alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;
-                                             margin-left:auto; rotate:270deg;" />
-
-                                </a>
-                                <!-- <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                    alt="downarrow Icon" class="downarrow-icon" style="width:42px; height: 42px;
-                                         margin-left:auto; rotate:270deg;" /> -->
-                            </div>
-
-
-                            <div>
-
-
-                                <div class=" d-flex flex-row align-items-center fadeIn  " style="padding:30px ">
-
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/growth.svg"
-                                        alt="Growth Icon" class="growth-icon" />
-
-                                    <p class="flex-grow-1 container-text" style=" line-height:33px; 
-                                        margin:0; text-align: center; ">
-                                        Advies</p>
-                                    <a href="/advies">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                            alt="downarrow Icon" class="downarrow-icon"
-                                            style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" />
-                                    </a>
-
-                                    <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                                        alt="downarrow Icon" class="downarrow-icon"
-                                        style="width:42px; height: 42px; margin-left:auto; rotate:270deg;" /> -->
-                                </div>
-                            </div>
-
-
+                            <?php
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
+
 
                 <div class="col-lg-1 d-none d-lg-block"></div>
                 <div class="col-12 col-lg-5 pt-lg-5 pt-0 fadeIn" data-side="right">
@@ -618,56 +475,31 @@
                     <div class="" style=" ">
                         <h2 style="text-align:left;letter-spacing:2px;font-size:20px;line-height:33px;"> <span
                                 class="d-block d-lg-none py-4 pt-5 pt-lg-0">
-                                <span style="--i:1;">Onze </span> <span style="--i:2;"> diensten</span> <br>
+                                <!-- <span style="--i:1;">Onze </span> <span style="--i:2;"> diensten</span> <br> -->
+                                <?= get_field("left_text_on_small_screen") ?>
                             </span>
                         </h2>
                         <p>
-
                             <span style="font-size:16px; line-height:0px; margin:0; text-align:left;  letter-spacing:1px;  
                                    font-weight: 400; ">
-                                Bij GROENtuinen kun je terecht voor een écht groene tuin. We maken een tuinontwerp op
-                                basis
-                                van
-                                jouw
-                                wensen. En vervolgens nemen wij de complete tuinaanleg op ons. Van grondwerk en
-                                bestrating
-                                tot
-                                het
-                                plaatsen van schuttingen. En van veranda’s en buitenkeukens tot beplanting. Zo zijn wij
-                                de
-                                allround
-                                hovenier voor jouw tuin.
+                                <?= get_field("right_text") ?>
                             </span>
                         </p>
-
                         <p>&nbsp;</p>
-
                         <span style="font-size:16px; line-height:0px; margin:0; text-align:left;  letter-spacing:1px;  
                                    font-weight: 400; ">
-
-                            Voor onderhoud van tuinen richten wij ons onder andere op renovatie van de tuin,
-                            voorjaarsbeurten,
-                            zomersnoei, najaarsbeurt en bemesting. En wil je graag dat een tuinexpert meedenkt over
-                            jouw
-                            tuin?
-                            Krijg advies op maat over planten, ligging en verzorging van je tuin.
+                            <?= get_field("right_text_second_line") ?>
                         </span>
-
                         </p>
-
                         <div class=" circle-border">
-                            <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary">Samen aan de
-                                slag</a>
+                            <a href="<?= get_field("samen_aan_de_slag_btn")['url'] ?>"
+                                class="btn btn-primary"><?= get_field("samen_aan_de_slag_btn")['title'] ?>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
-
-
 
 
         <!-- Full-Width Swiper Slider -->
@@ -703,14 +535,11 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="ratio ratio-1x1 h-100">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" class=""
-                                    alt="Image 2">
+                                <img src="<?= get_field("scaled11_img")['url'] ?>"
+                                    alt="<?= get_field("scaled11_img")['title'] ?>" />
                             </div>
-
                             <!-- Overlay Img -->
                             <div class="overlay d-block d-md-block d-lg-none" style="border-radius: 12px;"></div>
-
-
                             <div class="slider-text-button-container d-flex d-lg-none">
                                 <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
                                 <div
@@ -727,8 +556,8 @@
 
                         <div class="swiper-slide">
                             <div class="ratio ratio-1x1 h-100">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" class=""
-                                    alt="Image 2">
+                                <img src="<?= get_field("scaled22_img")['url'] ?>"
+                                    alt="<?= get_field("scaled22_img")['title'] ?>" />
                             </div>
                             <!-- Overlay Img -->
                             <div class="overlay d-block d-md-block d-lg-none" style="border-radius: 12px;"></div>
@@ -748,9 +577,8 @@
 
                         <div class="swiper-slide">
                             <div class="ratio ratio-1x1 h-100">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" class=""
-                                    alt="Image 2">
-
+                                <img src="<?= get_field("scaled51_img")['url'] ?>"
+                                    alt="<?= get_field("scaled51_img")['title'] ?>" />
                             </div>
                             <!-- Overlay Img -->
                             <div class="overlay d-block d-md-block d-lg-none" style="border-radius: 12px;"></div>
@@ -761,32 +589,24 @@
                                     <div class="line-before"></div>
                                     <div class="circle-border">
                                         <a class="btn btn-secondary" href="/projecten"
-                                            style="padding: 4px 31px;  white-space: nowrap;">Bekijk
+                                            style="padding:4px 31px;  white-space: nowrap;">Bekijk
                                             projecten</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="swiper-pagination"></div> -->
                 </div>
-                <!-- <div class="swiper-pagination d-block d-lg-none"></div> -->
 
                 <div class=" flex  flex-lg-row align-items-center justify-content-center">
-
                     <div class="swiper-button-prev d-none d-lg-flex" style="left:36%"></div>
                     <div class="left-line d-none d-lg-block"></div>
                     <div class="swiper-pagination d-block d-lg-block"></div>
                     <div class="right-line d-none d-lg-block"></div>
                     <div class="swiper-button-next d-none d-lg-flex" style="left:61%"></div>
                 </div>
-
-
             </div>
-
         </div>
-
-
 
 
 
@@ -797,52 +617,49 @@
                     <div class="row">
                         <div class="col-lg-6  position-relative fadeIn" data-side="left">
                             <div class="grid-bottom">
+                                <img src="<?= get_field("left_contact_img")['url'] ?>"
+                                    alt="<?= get_field("left_contact_img")['title'] ?>"
+                                    class="w-100 h-100 object-fit-cover rounded" style="height:500px;" />
 
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                    alt="Groenoverons" class="object-fit-cover rounded" style="height:500px;" />
+                                <img src="<?= get_field("top_contact_img")['url'] ?>"
+                                    alt="<?= get_field("top_contact_img")['title'] ?>"
+                                    class="w-100 h-100 object-fit-cover rounded" style="height:500px;" />
 
-                                <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/40scaled.jpg" alt="">
-                                <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/43scaled.jpg" alt="">
-
+                                <img src="<?= get_field("bottom_contact_img")['url'] ?>"
+                                    alt="<?= get_field("bottom_contact_img")['title'] ?>"
+                                    class="object-fit-cover rounded w-100 h-100" style="height:500px;" />
                             </div>
                         </div>
                         <div class="col-lg-5 offset-lg-1 fadeIn " data-side="right">
                             <h2 style="line-height:62px;">
                                 <span style="font-weight:100; font-size:40px;  letter-spacing:4px; 
                                     font-family: 'Henderson Sans Basic', sans-serif;">
-                                    Samen aan de slag?
-                                </span><br>
-                                <span style="font-weight:100; font-size:40px; 
-                                 letter-spacing:4px; font-family: 'Henderson Sans Basic', sans-serif; ">Neem
-                                    contact op!</span>
+                                    <?= get_field("samen_aan_de_slag_title") ?>
+                                </span>
+
                             </h2>
                             <div class="col-lg-9">
                                 <div class="text">
-                                    <p><span style="font-weight: 400; line-height: 30px;letter-spacing: 1px;">Ook zo’n
-                                            groene tuin? Laat dat maar aan
-                                            GROENtuinen
-                                            over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span>
+                                    <p>
+                                        <span style="font-weight:400; line-height:30px;letter-spacing:1px;">
+                                            <?= get_field("samen_aan_de_slag_text") ?>
+                                        </span>
                                     </p>
                                 </div>
                             </div>
                             <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
                                 <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
-                                    <a class="btn btn-primary " href="/contact" style="padding: 10px 20px; ">Neem
-                                        contact
-                                        op
+                                    <a href="<?= get_field("neem_contact_op_btn")['url'] ?>" class="btn btn-primary"
+                                        style="padding:10px 20px;">
+                                        <?= get_field("neem_contact_op_btn")['title'] ?>
                                     </a>
                                 </div>
                                 <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
 
@@ -852,22 +669,21 @@
 
             <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
                 class="row fadeIn flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
-                <div class="line-top"></div>
 
+                <div class="line-top"></div>
 
                 <div class="col-12 col-lg-4  text-left" style="margin-top:20px; ">
                     <h2 style="font-size:36px;
                 padding-bottom: 39px; 
                 color: #fff;
                 line-height: 55px;">
-                        Enthousiast? Neem contact
-                        op!
+                        <?= get_field("contact_title_on_small_screen") ?>
                     </h2>
                     <div class="col-lg-9">
                         <div class="">
-                            <p><span style="font-weight: 400; ;">Ook zo’n groene tuin? Laat dat maar aan
-                                    GROENtuinen
-                                    over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span></p>
+                            <p><span style="font-weight: 400; ;">
+                                    <?= get_field("samen_aan_de_slag_text") ?>
+                                </span></p>
                         </div>
                     </div>
                 </div>
@@ -876,9 +692,9 @@
                     <div
                         class="title d-flex  flex-row d-md-flex d-lg-none align-items-center justify-content-start gap-1">
                         <div class="circle-border">
-                            <a class="btn btn-primary " href="/contact" style="padding: 10px 40px; font-size:;">Neem
-                                contact
-                                op
+                            <a href="<?= get_field("neem_contact_op_btn")['url'] ?>" class="btn btn-primary"
+                                style="padding:10px 20px;">
+                                <?= get_field("neem_contact_op_btn")['title'] ?>
                             </a>
                         </div>
                         <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
@@ -891,8 +707,8 @@
 
                 <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
                     style="margin-bottom:-50px">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                        class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
+                    <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
+                        class="groentuinen" style="width:120px; height:120px;  object-fit:cover;" />
                 </div>
             </div>
         </div>
