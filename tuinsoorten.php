@@ -161,8 +161,6 @@
             background-repeat: no-repeat;
             background-size: 1228px;
             background-position: 669px 11px;
-
-
         }
 
 
@@ -176,9 +174,6 @@
 
         .img2 {
             border-radius: 10px;
-
-            /* width: 370px;
-            height: 591px; */
             width: 626px;
             height: 440px;
         }
@@ -195,15 +190,6 @@
         .groentuinen {
             object-fit: cover;
         }
-
-
-        /* .lin3 {
-            border: 1px solid #ffffff;
-            height: 1px;
-            width: 100%;
-            margin-top: 120px;
-
-        } */
 
         .houseinbackground {
             width: 500px;

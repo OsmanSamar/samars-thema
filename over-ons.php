@@ -24,10 +24,7 @@
         background-repeat: no-repeat;
         background-size: 1200px;
         background-position: 110% 2.5%;
-
-
     }
-
 
 
     .bg-img {
@@ -60,7 +57,6 @@
 
     .content {
         position: absolute;
-        /* top: 94%; */
         top: 73%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -78,8 +74,6 @@
 
 
     .content h1 {
-
-        /* margin-bottom: 338px; */
         font-size: 40px;
         line-height: 70px;
         font-weight: bold;
@@ -113,7 +107,6 @@
 
         .content {
             position: absolute;
-            /* top: 94%; */
             top: 83%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -152,7 +145,6 @@
 
     .groenoverons {
         width: 100%;
-        /* height: 823px; */
         object-fit: cover;
         border-radius: 10px;
     }
@@ -162,7 +154,6 @@
     @media (min-width: 768px) {
         .swiper {
             width: 100%;
-            /* height: 716px; */
             height: 629px;
             margin: 20px auto;
         }
@@ -175,7 +166,7 @@
             height: 823px;
         }
 
-        /* height:566px */
+
         .groentuinen {
             display: block;
             object-fit: cover;
@@ -248,8 +239,6 @@
 
         .img1 {
             border-radius: 10px;
-            /* width: 626px;
-                height: 377px; */
             width: 640px;
             height: 438px;
         }
@@ -262,8 +251,6 @@
 
         .img3 {
             border-radius: 10px;
-            /* width: 626px;
-                height: 382px; */
             width: 630px;
             height: 438px;
         }
@@ -432,9 +419,7 @@
                     <!-- Column Wrapper -->
                     <div class="fadeIn">
                         <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
-                            <!-- py-5 -->
                             <div class="row gx-5">
-                                <!-- 1st Column -->
                                 <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
                                     <div class="mt-auto mb-5">
                                         <img src="<?= get_field("left_img")['url'] ?>"
@@ -456,7 +441,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Column -->
                 </div>
 
 
@@ -464,7 +448,7 @@
                 <div class="vl3 d-lg-none d-md-none d-block"></div>
                 <div class="vl2 d-lg-none d-md-block"></div>
 
-                <!-- Text Section -->
+
                 <div class="order-1 order-md-1 order-lg-2 fadeIn ">
                     <div class=" py-1">
                         <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
@@ -565,7 +549,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- End of textSection -->
+
 
 
 
@@ -675,7 +659,6 @@
                             <a href="mailto:<?= get_field("mail_contact") ?>"
                                 style="padding-left:40px;padding-right:40px; font-size:18px;"
                                 class="btn btn-primary"><?= get_field("mail_contact") ?>
-
                             </a>
                         </div>
                     </div>
@@ -704,27 +687,30 @@
                 line-height: 66px;
                 font-weight: 100">
 
-                    Ook een GROENtuin? Neem contact
-                    op!
+                    <?= get_field("contact_text") ?>
                 </h2>
             </div>
             <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column justify-content-center justify-content-lg-start "
                 style="margin-bottom:70px">
                 <div class="circle-border ">
-                    <a class="btn btn-secondary" style="padding:10px 40px;" aria-label="telefoon Contact"
-                        href="tel:+31621830806">+31 6
-                        21830806</a>
+                    <a href="tel:<?= get_field("telefoon_contact") ?>"
+                        style="padding-left:40px;padding-right:40px; font-size:18px;"
+                        class="btn btn-secondary"><?= get_field("telefoon_contact") ?>
+                    </a>
                 </div>
                 <div class="circle-border">
-                    <a class="btn btn-primary" style="padding:10px 40px;" aria-label="Mail Contact"
-                        href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
+                    <a href="mailto:<?= get_field("mail_contact") ?>"
+                        style="padding-left:40px;padding-right:40px; font-size:18px;"
+                        class="btn btn-primary"><?= get_field("mail_contact") ?>
+                    </a>
                 </div>
             </div>
 
             <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
                 style="margin-bottom:-50px">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                    class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
+
+                <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
+                    style="width:120px; height:120px; object-fit:cover;" />
             </div>
         </div>
     </div>

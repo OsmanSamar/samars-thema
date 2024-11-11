@@ -351,10 +351,7 @@
                 <!-- Column Wrapper -->
                 <div class="">
                     <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
-                        <!-- py-5 -->
                         <div class="row gx-5">
-                            <!-- 1st Column -->
-
                             <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
                                 <div class="mt-auto mb-5">
                                     <img src="<?= get_field("left_img")['url'] ?>"
@@ -373,11 +370,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- End Column -->
+
 
             </div>
 
-            <!-- Text Section -->
+
             <div class="order-1 order-md-1 order-lg-2 fadeIn position-relative ">
 
                 <!--Verticall line On Lg Screen  -->
@@ -387,33 +384,17 @@
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
 
-                        <h2 class="d-block d-md-none d-lg-none" style="font-size:36px;
-                                          padding-bottom: 39px; 
-                                        color: #fff;
-                                       line-height: 55px;
-                                          ">
+                        <h2 class="d-block d-md-none d-lg-none"
+                            style="font-size:36px; padding-bottom: 39px;  color: #fff; line-height: 55px; ">
                             <?= get_field("second_header") ?>
-
                         </h2>
-                        <h2 class="d-none d-md-block d-lg-none" style="font-size:36px;
-                                          padding-bottom: 39px; 
-                                        color: #fff;
-                                       line-height: 55px;
-                                       margin-top:110px;
-                                       line-height:57px;
-                                          ">
+                        <h2 class="d-none d-md-block d-lg-none"
+                            style="font-size:36px; padding-bottom: 39px; color: #fff; line-height: 55px; margin-top:110px; line-height:57px;">
                             <?= get_field("second_header") ?>
-
                         </h2>
-                        <h2 class="d-none d-md-none d-lg-block" style="font-size:36px;
-                                          padding-bottom: 39px; 
-                                        color: #fff;
-                                       line-height: 55px;
-                                       margin-top:110px;
-                                       line-height:57px;
-                                           letter-spacing: 8px;">
+                        <h2 class="d-none d-md-none d-lg-block"
+                            style="font-size:36px; padding-bottom: 39px; color: #fff; line-height: 55px; margin-top:110px; line-height:57px; letter-spacing: 8px;">
                             <?= get_field("second_header") ?>
-
                         </h2>
                         <div class="text2 text-fix">
                             <div class="inner" style="font-size:20px">
@@ -462,7 +443,6 @@
         <div class="bg-leaf">
 
             <!--Contact Opnemen Section On Large Screen  -->
-
             <div class="container d-none d-lg-block" style="margin-top:60px;">
                 <div class="bottom-text">
                     <div class="row">
@@ -521,7 +501,6 @@
         .dienst-line {
             height: 1px;
             width: 5595px;
-            /* background-color: #ffffff; */
             border: 1px solid #ffffff;
             color: #ffffff;
             position: relative;
@@ -570,7 +549,6 @@
                                 <?= get_field("contact_opnemen_btn")['title'] ?>
                             </a>
                         </div>
-                        <!-- <div class="line-contact  d-flex  d-md-flex  d-lg-flex "></div> -->
                         <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
                         <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
                     </div>

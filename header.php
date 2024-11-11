@@ -52,23 +52,6 @@
     });
     </script>
 
-    <!-- NavBar Links Keep  Active  -->
-    <!-- <script>
-    document.getElementById('navlinkactive').addEventListener('click', function() {
-        this.classList.add('active');
-    });
-    </script> -->
-
-
-
-    <!-- <script>
-        document.querySelector('.navbar-toggler').addEventListener('click', function () {
-            this.classList.toggle('collapsed');
-        });
-    </script> -->
-
-
-
 
 </head>
 
@@ -146,17 +129,9 @@
                             border: 1px solid #ffffff;">
                     <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation" style="
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 50%;
-                        padding: 5px;
-                        margin:5px;
-                        color: #5b7d6c;
-                        background-color: #f5a287;
-                        
-                       ">
-                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        aria-expanded="false" aria-label="Toggle navigation"
+                        style=" width: 40px; height: 40px; border-radius: 50%; padding: 5px; margin:5px; color: #5b7d6c;  background-color: #f5a287;">
+
                         <span class="toggler-icon top-bar"></span>
                         <span class="toggler-icon middle-bar"></span>
                         <span class="toggler-icon bottom-bar"></span>

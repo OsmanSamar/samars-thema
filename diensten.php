@@ -673,10 +673,7 @@
                 <div class="line-top"></div>
 
                 <div class="col-12 col-lg-4  text-left" style="margin-top:20px; ">
-                    <h2 style="font-size:36px;
-                padding-bottom: 39px; 
-                color: #fff;
-                line-height: 55px;">
+                    <h2 style="font-size:36px;  padding-bottom: 39px;   color: #fff;  line-height: 55px;">
                         <?= get_field("contact_title_on_small_screen") ?>
                     </h2>
                     <div class="col-lg-9">

@@ -91,8 +91,6 @@
 
 
             <div>
-                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/404.svg" alt="Groenoverons"
-                    class="groenoverons" /> -->
                 <img src="<?= get_field("404_img")['url'] ?>" alt="<?= get_field("404_img")['title'] ?>"
                     class="error-img" />
 

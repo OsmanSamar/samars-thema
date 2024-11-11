@@ -57,7 +57,6 @@
     }
 
     .text-header {
-        /* font-family: 'Inclusive Sans', sans-serif; */
         font-family: henderson-sans-basic, sans-serif;
         opacity: 1;
         letter-spacing: 0px;
@@ -74,8 +73,6 @@
         opacity: 1;
         letter-spacing: 0px;
     }
-
-
 
     @media(min-width: 768px) {
 
@@ -126,10 +123,7 @@
         }
 
 
-        .text-header {
-            /* font-size: 49px;
-            margin-top: 45px; */
-        }
+
 
         .first-img {
             height: 659px;
@@ -368,10 +362,7 @@
             <!-- Column Wrapper -->
             <div class="">
                 <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
-                    <!-- py-5 -->
                     <div class="row gx-5">
-                        <!-- 1st Column -->
-
                         <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
                             <div class="mt-auto mb-5">
                                 <img src="<?= get_field("left_img")['url'] ?>"
@@ -390,8 +381,6 @@
                     </div>
                 </div>
             </div>
-            <!-- End Column -->
-
         </div>
 
 
@@ -452,13 +441,6 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-
-
-
-
-
-
-
 
 
         <div class="bg-leaf">
@@ -547,43 +529,38 @@
                 data-side="right">
                 <div class="line-top"></div>
 
-
                 <div class="col-12 col-lg-4  text-left" style="margin-top:20px; ">
-                    <h2 style="font-size:36px;
-                padding-bottom: 39px; 
-                color: #fff;
-                line-height: 55px;">
-                        Enthousiast? Neem contact
-                        op!
+                    <h2 style="font-size:36px; padding-bottom: 39px; color: #fff; line-height: 55px;">
+                        <?= get_field("contact_title") ?>
                     </h2>
                     <div class="col-lg-9">
                         <div class="">
-                            <p><span style="font-weight: 400; ;">Ook zo’n groene tuin? Laat dat maar aan
-                                    GROENtuinen
-                                    over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span></p>
+                            <p><span style="font-weight: 400; ;">
+                                    <?= get_field("contact_text") ?>
+                                </span>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="button-group col-12 d-flex flex-row  justify-content-start  " style="margin-bottom:70px">
                     <div
                         class="title d-flex flex-row  d-md-flex d-lg-flex align-items-center justify-content-start gap-1">
-                        <div class="circle-border">
-                            <a class="btn btn-primary " href="/contact" style="padding: 10px 20px; font-size:;">Neem
-                                contact
-                                op
+                        <div class="circle-border" style="left:calc(var(--bs-gutter-x)* -0.3);">
+                            <a href="<?= get_field("contact_nemen_btn")['url'] ?>" class="btn btn-primary"
+                                style="padding:10px 20px; letter-spacing:1px; white-space:nowrap;">
+                                <?= get_field("contact_nemen_btn")['title'] ?>
                             </a>
                         </div>
                         <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
                         <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
-
                     </div>
 
                 </div>
 
                 <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
                     style="margin-bottom:-50px">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                        class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
+                    <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
+                        style="width:120px; height:120px;  object-fit: cover;" />
                 </div>
             </div>
         </div>

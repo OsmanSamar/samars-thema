@@ -8,22 +8,16 @@
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        /* background-size: 1200px; */
         background-size: 1150px;
-        /* background-size: 1090px; */
-
     }
 
     .swiper-container {
         position: relative;
-
     }
 
     .swiper-container .swiper-pagination {
-        /* pointer-events: none; */
+
         bottom: -50px !important;
-
-
     }
 
     .swiper-container .swiper-pagination-bullet {
@@ -31,9 +25,6 @@
         height: 15px;
     }
 
-
-
-    /*  */
 
     .swiper-container {
         position: relative;
@@ -87,7 +78,6 @@
         align-items: center;
         justify-content: center;
 
-
     }
 
     .right-line {
@@ -103,30 +93,19 @@
     }
 
 
-
-
     .swiper-container .swiper-pagination-bullet,
         {
         width: 15px;
         height: 15px;
-
     }
     </style>
 
 
     <div class="overlay"></div>
 
-
-
     <!-- Hero Section -->
     <div class="container my-4">
-        <div style="   
-     color: #fff;
-    /* min-height: 100vh; */
-    /* padding-bottom: 150px;
-    padding-top: 100px;  */
-    
-    ">
+        <div style=" color: #fff;">
 
         </div>
 
@@ -136,32 +115,20 @@
                     <h1 class="fadeIn " data-side="right" style="transition-delay: .25s;">
                         <span class="d-block">
                             <?= get_field("titel") ?>
-                            <!-- <span style="--i:1;">Tuinen</span> <br> <span style="--i:2;">precies</span> <span
-                                style="--i:3;">zoals</span> <br> <span style="--i:4;">geplant</span> -->
                         </span>
 
                     </h1>
                 </div>
                 <!-- Line for Small Screen -->
                 <div class="line height d-flex d-md-none d-lg-none" style="--height:80px"></div>
-                <div class="vl2 d-none  d-lg-none d-md-flex" style="border-left: 1px solid white;
-                height: 73px;
-                position: absolute;
-                  left: 50%;
-               margin-left: -3px;
-                top: 143px;
-               display: flex;
-                 opacity: 57.5;">
+                <div class="vl2 d-none  d-lg-none d-md-flex"
+                    style="border-left: 1px solid white; height: 73px; position: absolute; left: 50%;  margin-left: -3px; top: 143px; display: flex; opacity: 57.5;">
                 </div>
 
                 <!-- On Small Screen -->
                 <div class="fadeIn container d-block d-md-none d-lg-none">
-                    <div class="button-line-container " style="  display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    margin-top: 139px;
-                    margin-bottom: 70px;">
+                    <div class="button-line-container "
+                        style="  display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 139px; margin-bottom: 70px;">
                         <div class="button-group ">
                             <div class="circle-border ">
                                 <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
@@ -205,7 +172,6 @@
                         justify-content: center;
                         text-align: center;
                         margin-top: 97px;
-
                     }
                 }
                 </style>
@@ -214,8 +180,6 @@
                 <!-- On Lg Screen -->
                 <div class="fadeIn container d-none d-md-none d-lg-block">
                     <div class="button-line-container">
-
-
                         <div class="button-group ">
 
                             <div class="circle-border " style="left: calc(var(--bs-gutter-x)* -1.0);">
@@ -235,9 +199,6 @@
                         </div>
                         <div class="line-container flex-grow-1">
                             <div class="line-hero flex-grow-1"></div>
-                            <!-- <a href="https://www.instagram.com" target="_blank" class="instagram-container">
-                                <i class="fab fa-instagram"></i>
-                            </a> -->
                         </div>
                     </div>
 
@@ -303,9 +264,6 @@
 </div>
 
 
-<!-- End Of bg-container -->
-
-
 <main class="page">
     <div class="container" id="Maaktuin">
         <!-- New Section under Hero Section  -->
@@ -315,37 +273,20 @@
 
                     <!-- Left side: Text  -->
                     <div class="col-lg-4 text-section  fadeIn" style="margin-top:8px;" data-side="left">
-                        <!-- <h1 style="font-size: 40px;
-                         font-family: Henderson-sans-basic, sans-serif;">
-                            Maak van jouw tuin een bijzondere plek om te zijn.</h1> -->
+
                         <h1>
                             <?= get_field("right_title") ?>
                         </h1>
 
-                        <!-- <p style="font-size: 19px;
-                         opacity: 1;
-                        letter-spacing: 0px;
-                         margin-top: 50px;
-                        line-height: 2;
-                         font-family: Inclusive Sans, sans-serif; ">
-                            Met een tuin van GROENTuin maak je jouw tuin uniek. Speciaal
-                            ontworpen,aangelegd en onderhouden voor jou.</p> -->
-                        <div style="font-size: 19px;
-                         opacity: 1;
-                        letter-spacing: 0px;
-                         margin-top: 50px;
-                         margin-bottom:33px;
-                        line-height: 2;">
+                        <div
+                            style="font-size: 19px; opacity: 1; letter-spacing: 0px;  margin-top: 50px;  margin-bottom:33px; line-height: 2;">
                             <?= get_field("right-text") ?>
                         </div>
                         <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.3);">
-                            <!-- <a href="<?= esc_url(home_url('/over-ons')); ?>" class="btn btn-secondary">Over ons</a> -->
                             <a href="<?= get_field("overons_btn")['url'] ?>" class="btn btn-secondary"
                                 style=" white-space: nowrap;"><?= get_field("overons_btn")['title'] ?></a>
                         </div>
                     </div>
-
-
 
 
                     <!-- Swiper On Small Screen   -->
@@ -390,22 +331,13 @@
                                         <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flower.png"
                                             class=" " alt="Image 5">
                                     </div>
-
                                 </div>
-
-
                             </div>
                         </div>
 
                         <div class="swiper-pagination" style="bottom:-50px !important"></div>
 
                     </div>
-
-
-
-
-
-
 
                     <!-- Right  side: Images on Bige Screen  -->
                     <div class="container col-lg-8 images-section2 ">
@@ -449,21 +381,17 @@
                         <div class="horizontal-divider"></div>
                     </div>
                     <div class="col-lg-5 text-left d-block  d-lg-none order-2">
-                        <!-- <p style="font-size:36px; line-height:2;">Waarom GroenTuinen?</p> -->
                         <?= get_field("warrom_text") ?>
                     </div>
 
                     <!-- Lg Screen Warrom_text -->
-
                     <div class="title d-none d-lg-flex align-items-center gap-1">
-                        <!-- <h2 class="mb-0">Waarom GROENtuinen?</h2> -->
                         <h2 style="margin-left:-9px;">
                             <?= get_field("warrom_text") ?>
                         </h2>
                         <div class="line between d-none d-lg-block flex-grow-1"></div>
                         <div class="circle-border">
                             <a class="btn btn-primary d-none d-md-none d-lg-block" href="/contact">Kennismaken? </a>
-
                         </div>
                     </div>
 
@@ -572,9 +500,6 @@
         }
 
 
-
-
-
         /* Show text and button for devices less than 1024px */
         @media (max-width: 1023px) {
 
@@ -601,8 +526,6 @@
                 padding: 0 20px;
                 box-sizing: border-box;
                 z-index: 1000;
-
-
             }
 
             .line-before {
@@ -613,7 +536,7 @@
             }
         }
 
-        /* 'md': '768px', */
+
         @media (min-width: 768px) {
 
             .line-before {
@@ -625,12 +548,8 @@
 
         }
 
-
-
-
         /* Text styling */
         .slider-text-button-container .text {
-
 
             /* Take up available space */
             flex: 1;
@@ -682,8 +601,6 @@
             <div class=" mt-50 mb-50 d-block d-md-block d-lg-none fadeIn">
                 <hr class="hr-text gradient" data-content="Projecten" style="margin: 30px -75px;">
             </div>
-
-
 
 
             <!-- Swiper Slider -->
@@ -790,16 +707,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-5 offset-lg-1 fadeIn" data-side="right">
-                                <!-- <h2>Enthousiast?<br> Laat het ons weten</h2> -->
                                 <h2>
                                     <?= get_field("contact_title") ?>
                                 </h2>
                                 <div class="col-lg-9">
                                     <div class="text">
-                                        <!-- <p><span style="font-weight: 400;">Ook een uniek tuinontwerp? Of op zoek naar de
-                                                hovenier voor jouw klus? Ga vrijblijvend in gesprek met
-                                                GROENtuinen!</span>
-                                        </p> -->
                                         <P style="margin-top:50px;">
                                             <?= get_field("contact_text") ?>
                                         </P>
@@ -807,8 +719,6 @@
                                 </div>
                                 <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
                                     <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.4);">
-
-                                        <!-- <a class="btn btn-primary " href="/contact">Neem contact op </a> -->
                                         <a href="<?= get_field("neemcontact_btn")['url'] ?>" class="btn btn-primary"
                                             style=" white-space: nowrap;"><?= get_field("neemcontact_btn")['title'] ?></a>
                                     </div>
@@ -840,7 +750,6 @@
     .dienst-line {
         height: 1px;
         width: 5595px;
-        /* background-color: #ffffff; */
         border: 1px solid #ffffff;
         color: #ffffff;
         position: relative;
@@ -891,13 +800,6 @@
                             op
                         </a>
                     </div>
-                    <!-- <div class=" d-flex  d-md-flex  d-lg-flex " style=" height: 1px;
-                      width: 66vw;
-                       background-color: #ffffff;
-                    color: #ffffff;
-                     position: relative;">
-                    </div> -->
-
                     <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
                     <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
 
