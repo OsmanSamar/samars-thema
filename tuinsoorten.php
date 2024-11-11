@@ -32,6 +32,13 @@
 
     }
 
+    .line-left {
+        background-color: #fff;
+        opacity: .5;
+        width: 1px;
+        height: 92% !important;
+    }
+
 
 
 
@@ -249,8 +256,9 @@
 
         .text {
             margin-bottom: 35px;
-            font-size: 20px;
-            letter-spacing: 2px;
+            font-size: 16px;
+            font-family: 'Inclusive Sans', sans-serif;
+            letter-spacing: 0px;
             color: #FFFFFF;
             opacity: 1;
             font-weight: 400;
@@ -453,8 +461,8 @@
 
                     <div class="col-lg-6 ">
                         <div class="row soort-row">
-                            <div class="col-2 justify-content-center d-flex ">
-                                <div class="border-left h-100"></div>
+                            <div class="col-2  ">
+                                <div class="line-left  mb-lg-3 d-none d-lg-flex"></div>
                             </div>
                             <div class="col-lg-10 fadeIn">
                                 <h2 class=" text-header">
@@ -462,7 +470,6 @@
                                 </h2>
                                 <div class="text ">
                                     <p>
-
                                         <?= get_field("moderne_tuin_text") ?>
 
                                     </p>

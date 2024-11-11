@@ -40,7 +40,8 @@
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: ;
+        background-size: 1240px;
+        ;
     }
 
     .swiper-container {
@@ -183,10 +184,14 @@
         }
 
         .text {
-            font-size: 20px;
+            font-size: 18px;
             margin-top: 50px;
-            /* margin-bottom: 50px; */
+            text-align: left;
+            font-weight: 400;
+            line-height: 30px;
         }
+
+
     }
     </style>
     <div class="container">
@@ -247,7 +252,7 @@
                             </div>
 
                             <div class="d-none d-md-none d-lg-flex">
-                                <div class=" circle-border">
+                                <div class=" circle-border" style="left:calc(var(--bs-gutter-x)* -0.3);">
                                     <a href="<?= get_field("kennismaken_btn")['url'] ?>" class="btn btn-primary">
                                         <?= get_field("kennismaken_btn")['title'] ?>
                                     </a>
@@ -468,7 +473,6 @@
                                     <img loading="lazy" src="<?= get_field("contact_bottom_img")['url'] ?>"
                                         alt="<?= get_field("contact_bottom_img")['title'] ?>"
                                         class="w-100 h-100 object-fit-cover rounded" />
-
                                 </div>
                             </div>
                             <div class="col-lg-5 offset-lg-1 fadeIn" data-side="right">
@@ -477,9 +481,8 @@
                                 </h2>
                                 <div class="col-lg-9">
                                     <div class="text">
-                                        <p><span style="font-weight:400; line-height:30px; text-align:left;">
-                                                <?= get_field("contact_text") ?>
-                                            </span>
+                                        <p>
+                                            <?= get_field("contact_text") ?>
                                         </p>
                                     </div>
                                 </div>
@@ -491,9 +494,7 @@
                                         </a>
                                     </div>
                                     <div class="line-contact between flex-grow-1 "></div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>

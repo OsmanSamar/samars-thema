@@ -491,7 +491,7 @@
                             <?= get_field("right_text_second_line") ?>
                         </span>
                         </p>
-                        <div class=" circle-border">
+                        <div class=" circle-border" style="left:calc(var(--bs-gutter-x)* -0.3);">
                             <a href="<?= get_field("samen_aan_de_slag_btn")['url'] ?>"
                                 class="btn btn-primary"><?= get_field("samen_aan_de_slag_btn")['title'] ?>
                             </a>

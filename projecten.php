@@ -111,8 +111,13 @@
     @media (min-width: 768px) {
 
         .text {
-            /* text-align: left; */
-            font-size: 30px;
+
+            text-align: left;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 30px 0;
+            letter-spacing: 0px;
+            line-height: 35px;
         }
 
         .swiper {
@@ -341,7 +346,7 @@
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        /* background-size: 1600px; */
+        background-size: 1210px;
     }
 
     .image-grid {
@@ -972,22 +977,23 @@
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1 fadeIn " data-side="right">
-                        <h2>Enthousiast?<br> Neem contact op!</h2>
+                        <h2 style="margin:30px 0;"><?= get_field("contact_title") ?></h2>
                         <div class="col-lg-9">
                             <div class="text">
-                                <p><span style="font-weight: 400;">Ook zo’n groene tuin? Laat dat maar aan
-                                        GROENtuinen
-                                        over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span>
+                                <p><span style="font-weight:400; line-height:30px;letter-spacing:1px;">
+                                        <?= get_field("contact_text") ?>
+                                    </span>
                                 </p>
                             </div>
                         </div>
-                        <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
-                            <div class="circle-border">
-                                <a class="btn btn-primary " href="/contact" style="padding: 10px 20px;">Neem contact
-                                    op
+                        <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-1">
+                            <div class="circle-border" style="left:calc(var(--bs-gutter-x)* -0.3);">
+                                <a href="<?= get_field("contact_btn")['url'] ?>" class="btn btn-primary"
+                                    style="padding: 10px 20px;">
+                                    <?= get_field("contact_btn")['title'] ?>
                                 </a>
                             </div>
-                            <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div>
+                            <div class="line-contact between d-flex  d-md-flex  d-lg-flex flex-grow-1 "></div>
 
                         </div>
 
@@ -1010,27 +1016,25 @@
 
 
             <div class="col-12 col-lg-4  text-left" style="margin-top:20px; ">
-                <h2 style="font-size:36px;
-                padding-bottom: 39px; 
-                color: #fff;
-                line-height: 55px;">
-                    Enthousiast? Neem contact
-                    op!
+                <h2 style="font-size:36px;padding-bottom: 39px;  color: #fff; line-height: 55px;">
+                    <?= get_field("contact_title") ?>
                 </h2>
                 <div class="col-lg-9">
                     <div class="">
-                        <p><span style="font-weight: 400; ;">Ook zo’n groene tuin? Laat dat maar aan
-                                GROENtuinen
-                                over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span></p>
+                        <p>
+                            <span style="font-weight:400; ">
+                                <?= get_field("contact_text") ?>
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="button-group col-12 col-lg-4 d-flex flex-row  justify-content-start" style="margin-bottom:70px">
                 <div class="title d-flex  flex-row d-md-flex d-lg-none align-items-center justify-content-start gap-1">
-                    <div class="circle-border">
-                        <a class="btn btn-primary " href="/contact" style="padding: 10px 40px; font-size:;">Neem
-                            contact
-                            op
+                    <div class="circle-border" style="left:calc(var(--bs-gutter-x)* -0.3);">
+                        <a href="<?= get_field("contact_btn")['url'] ?>" class="btn btn-primary"
+                            style="padding: 10px 20px;">
+                            <?= get_field("contact_btn")['title'] ?>
                         </a>
                     </div>
                     <!-- <div class="line-contact between d-flex  d-md-flex  d-lg-flex "></div> -->
@@ -1043,8 +1047,8 @@
 
             <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
                 style="margin-bottom:-50px">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                    class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
+                <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
+                    style="width:120px; height:120px;  object-fit: cover;" />
             </div>
         </div>
     </div>

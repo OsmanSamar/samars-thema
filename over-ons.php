@@ -22,9 +22,12 @@
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: 1600px;
-        background-position: 47% -28%;
+        background-size: 1200px;
+        background-position: 110% 2.5%;
+
+
     }
+
 
 
     .bg-img {
@@ -356,329 +359,336 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="text-lg-start text-center" id="content">
-            <div class="container">
-                <!-- Down Arrow -->
-                <a class="down1 d-lg-flex d-none mb-0" aria-label="Go to the content" href="#content">
-                    <img src="<?= get_field("downarrow")['url'] ?>" alt="<?= get_field("downarrow")['alt'] ?>"
-                        class="downarrow-icon" />
-                </a>
-                <div class="row">
-                    <!-- Column Wrapper -->
-                    <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
-                        <div class="row gx-5">
-                            <!-- 1st Column -->
-                            <div class="col-12 col-md-12 col-lg-5 order-2 order-lg-1 mb-4 mb-lg-0 fadeIn "
-                                data-side="left">
-                                <div class="d-flex flex-column text-center align-items-center  ">
-                                    <img src="<?= get_field("groenoverons_img")['url'] ?>"
-                                        alt="<?= get_field("groenoverons_img")['alt'] ?>" class="groenoverons" />
+        <div class="container">
+            <div class="text-lg-start text-center" id="content">
+                <div class="container">
+                    <!-- Down Arrow -->
+                    <a class="down1 d-lg-flex d-none mb-0" aria-label="Go to the content" href="#content">
+                        <img src="<?= get_field("downarrow")['url'] ?>" alt="<?= get_field("downarrow")['alt'] ?>"
+                            class="downarrow-icon" />
+                    </a>
+                    <div class="row">
+                        <!-- Column Wrapper -->
+                        <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5 py-5">
+                            <div class="row gx-5">
+                                <!-- 1st Column -->
+                                <div class="col-12 col-md-12 col-lg-5 order-2 order-lg-1 mb-4 mb-lg-0 fadeIn "
+                                    data-side="left">
+                                    <div class="d-flex flex-column text-center align-items-center  ">
+                                        <img src="<?= get_field("groenoverons_img")['url'] ?>"
+                                            alt="<?= get_field("groenoverons_img")['alt'] ?>" class="groenoverons" />
+                                    </div>
                                 </div>
-                            </div>
-                            <!--2nd Column -->
-                            <div class="col-12 col-md-12 col-lg-7 ml-lg-4 order-1 order-lg-2 ">
-                                <div class="d-flex flex-column  text-left align-items-start fadeIn  " data-side="right">
-                                    <span class="text-header ">
-                                        <?= get_field("vakkundig_maatwerk_title") ?>
-                                        <span style=" opacity: 0.3; ">-</span>
-                                    </span>
-                                    <div class="text ">
-                                        <p>
-                                            <?= get_field("vakkundig_maatwerk_text") ?>
-                                        </p>
+                                <!--2nd Column -->
+                                <div class="col-12 col-md-12 col-lg-7 ml-lg-4 order-1 order-lg-2 ">
+                                    <div class="d-flex flex-column  text-left align-items-start fadeIn  "
+                                        data-side="right">
+                                        <span class="text-header ">
+                                            <?= get_field("vakkundig_maatwerk_title") ?>
+                                            <span style=" opacity: 0.3; ">-</span>
+                                        </span>
+                                        <div class="text ">
+                                            <p>
+                                                <?= get_field("vakkundig_maatwerk_text") ?>
+                                            </p>
 
-                                        <div class=" d-none d-lg-flex " style="margin-top:70px;">
+                                            <div class=" d-none d-lg-flex " style="margin-top:70px;">
+                                                <div class="circle-border" style="left:calc(var(--bs-gutter-x)* -0.1);">
+                                                    <a href="<?= get_field("kennismaken_btn")['url'] ?>"
+                                                        class="btn btn-primary"
+                                                        style=" white-space: nowrap; padding-left: 40px;padding-right: 40px; font-size:18px;">
+                                                        <?= get_field("kennismaken_btn")['title'] ?>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text d-lg-none d-flex flex-row  align-items-center "
+                                            style="white-space:no-wrap;">
                                             <div class="circle-border">
                                                 <a href="<?= get_field("kennismaken_btn")['url'] ?>"
                                                     class="btn btn-primary"
-                                                    style=" white-space: nowrap; padding-left: 40px;padding-right: 40px; font-size:18px;">
-                                                    <?= get_field("kennismaken_btn")['title'] ?>
+                                                    style=" white-space: nowrap;font-size:18px;"><?= get_field("kennismaken_btn")['title'] ?>
                                                 </a>
                                             </div>
+                                            <div class="nline"></div>
                                         </div>
                                     </div>
 
-                                    <div class="text d-lg-none d-flex flex-row  align-items-center "
-                                        style="white-space:no-wrap;">
-                                        <div class="circle-border">
-                                            <a href="<?= get_field("kennismaken_btn")['url'] ?>" class="btn btn-primary"
-                                                style=" white-space: nowrap;font-size:18px;"><?= get_field("kennismaken_btn")['title'] ?>
-                                            </a>
-                                        </div>
-                                        <div class="nline"></div>
-                                    </div>
+                                    <!--Verticall line On Lg Screen  -->
+                                    <div class="vl"></div>
                                 </div>
-
-                                <!--Verticall line On Lg Screen  -->
-                                <div class="vl"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- 3 -->
+            <!-- 3 -->
 
-        <div class="position-relative ">
-            <div class="row">
-                <!-- Column Wrapper -->
-                <div class="fadeIn">
-                    <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
-                        <!-- py-5 -->
-                        <div class="row gx-5">
-                            <!-- 1st Column -->
-                            <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
-                                <div class="mt-auto mb-5">
-                                    <img src="<?= get_field("left_img")['url'] ?>"
-                                        alt="<?= get_field("left_img")['alt'] ?>" class="img1"
-                                        style="object-fit:cover;" />
+            <div class="position-relative ">
+                <div class="row">
+                    <!-- Column Wrapper -->
+                    <div class="fadeIn">
+                        <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
+                            <!-- py-5 -->
+                            <div class="row gx-5">
+                                <!-- 1st Column -->
+                                <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
+                                    <div class="mt-auto mb-5">
+                                        <img src="<?= get_field("left_img")['url'] ?>"
+                                            alt="<?= get_field("left_img")['alt'] ?>" class="img1"
+                                            style="object-fit:cover;" />
+                                    </div>
+                                    <div class="">
+                                        <img src="<?= get_field("middel_img")['url'] ?>"
+                                            alt="<?= get_field("middel_img")['alt'] ?>" class="img2"
+                                            style="object-fit:cover;" />
+                                    </div>
+                                    <div class="mt-auto">
+                                        <img src="<?= get_field("right_img")['url'] ?>"
+                                            alt="<?= get_field("right_img")['alt'] ?>" class="img3"
+                                            style="object-fit:cover;" />
+                                    </div>
                                 </div>
-                                <div class="">
-                                    <img src="<?= get_field("middel_img")['url'] ?>"
-                                        alt="<?= get_field("middel_img")['alt'] ?>" class="img2"
-                                        style="object-fit:cover;" />
-                                </div>
-                                <div class="mt-auto">
-                                    <img src="<?= get_field("right_img")['url'] ?>"
-                                        alt="<?= get_field("right_img")['alt'] ?>" class="img3"
-                                        style="object-fit:cover;" />
-                                </div>
+
                             </div>
-
                         </div>
                     </div>
+                    <!-- End Column -->
                 </div>
-                <!-- End Column -->
-            </div>
 
 
-            <!--Verticall line On Lg Screen  -->
-            <div class="vl3 d-lg-none d-md-none d-block"></div>
-            <div class="vl2 d-lg-none d-md-block"></div>
+                <!--Verticall line On Lg Screen  -->
+                <div class="vl3 d-lg-none d-md-none d-block"></div>
+                <div class="vl2 d-lg-none d-md-block"></div>
 
-            <!-- Text Section -->
-            <div class="order-1 order-md-1 order-lg-2 fadeIn ">
-                <div class=" py-1">
-                    <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
-                        <h2 style="font-size:36px;
+                <!-- Text Section -->
+                <div class="order-1 order-md-1 order-lg-2 fadeIn ">
+                    <div class=" py-1">
+                        <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
+                            <h2 style="font-size:36px;
                                   padding-bottom: 39px; 
                                 color: #fff;
                                line-height: 55px;
                                margin-top:20px;">
 
-                            <?= get_field("laat_jouw_tuin_opvallen_title") ?>
-                        </h2>
-                        <div class="text2 ">
-                            <div class="  d-flex flex-column align-items-center" style="font-size:20px">
-                                <p class="content1">
-                                    <span style="font-weight: 400;">
-                                        <?= get_field("laat_jouw_tuin_opvallen_text") ?>
-                                    </span>
-                                </p>
-                                <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
-                                    <span class="arrow fas fa-angle-down down-arrow">
-                                    </span>
-                                </a>
+                                <?= get_field("laat_jouw_tuin_opvallen_title") ?>
+                            </h2>
+                            <div class="text2 ">
+                                <div class="  d-flex flex-column align-items-center" style="font-size:20px">
+                                    <p class="content1">
+                                        <span style="font-weight: 400;">
+                                            <?= get_field("laat_jouw_tuin_opvallen_text") ?>
+                                        </span>
+                                    </p>
+                                    <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
+                                        <span class="arrow fas fa-angle-down down-arrow">
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
 
-                        <style>
-                        /* Overlay gradient effect and initial hidden state for small and tablet screens */
-                        @media (max-width: 991px) {
-                            .content1 {
-                                position: relative;
-                                max-height: 164px;
-                                overflow: hidden;
-                                transition: max-height 0.5s ease;
+                            <style>
+                            /* Overlay gradient effect and initial hidden state for small and tablet screens */
+                            @media (max-width: 991px) {
+                                .content1 {
+                                    position: relative;
+                                    max-height: 164px;
+                                    overflow: hidden;
+                                    transition: max-height 0.5s ease;
+                                }
+
+                                .content1.show {
+                                    max-height: none;
+                                }
+
+
+                                .content1::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 15px;
+                                    background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
+                                    pointer-events: none;
+                                    opacity: 0.9;
+                                }
+
+                                .more-text {
+                                    opacity: 1;
+                                }
                             }
 
-                            .content1.show {
-                                max-height: none;
+                            .arrow {
+                                font-size: 18px;
+                                color: white;
+                                transition: transform 0.25s;
                             }
 
-
-                            .content1::after {
-                                content: "";
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 15px;
-                                background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
-                                pointer-events: none;
-                                opacity: 0.9;
+                            .arrow.down-arrow {
+                                transform: rotate(0deg);
                             }
 
-                            .more-text {
-                                opacity: 1;
+                            .arrow.up-arrow {
+                                transform: rotate(180deg);
                             }
-                        }
 
-                        .arrow {
-                            font-size: 18px;
-                            color: white;
-                            transition: transform 0.25s;
-                        }
+                            .up-arrow,
+                            .down-arrow {
+                                font-size: 18px;
+                                color: white;
+                            }
+                            </style>
 
-                        .arrow.down-arrow {
-                            transform: rotate(0deg);
-                        }
+                            <!-- Read More Read Less -->
+                            <script>
+                            $(document).ready(function() {
+                                $('.read-more-toggle').click(function(e) {
+                                    e.preventDefault();
+                                    const moreText = $(this).prev('.content1').find('.more-text');
 
-                        .arrow.up-arrow {
-                            transform: rotate(180deg);
-                        }
+                                    // Toggle visibility and max-height of the content
+                                    $(this).prev('.content1').toggleClass('show');
+                                    moreText.toggleClass('d-none');
 
-                        .up-arrow,
-                        .down-arrow {
-                            font-size: 18px;
-                            color: white;
-                        }
-                        </style>
+                                    // Toggle rotation class
+                                    $(this).find('.arrow').toggleClass('up-arrow down-arrow');
 
-                        <!-- Read More Read Less -->
-                        <script>
-                        $(document).ready(function() {
-                            $('.read-more-toggle').click(function(e) {
-                                e.preventDefault();
-                                const moreText = $(this).prev('.content1').find('.more-text');
-
-                                // Toggle visibility and max-height of the content
-                                $(this).prev('.content1').toggleClass('show');
-                                moreText.toggleClass('d-none');
-
-                                // Toggle rotation class
-                                $(this).find('.arrow').toggleClass('up-arrow down-arrow');
-
+                                });
                             });
-                        });
-                        </script>
+                            </script>
 
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End of textSection -->
+                <!-- End of textSection -->
 
 
 
-            <!-- Swiper On Small Screen -->
-            <div class="swiper-container" style="--swiper-pagination-color: #fff">
-                <div #swiperRef=""
-                    class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
-                    style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="<?= get_field("left_img")['url'] ?>" alt="<?= get_field("left_img")['alt'] ?>"
-                                class="swiper-img" style="object-fit:cover; width:100%;" />
+                <!-- Swiper On Small Screen -->
+                <div class="swiper-container" style="--swiper-pagination-color: #fff">
+                    <div #swiperRef=""
+                        class="swiper mySwiper smrow order-2 order-md-2 projecten-slider  d-flex d-md-flex d-lg-none"
+                        style="--swiper-navigation-color: #f5a287; --swiper-pagination-color: #f5a287">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="<?= get_field("left_img")['url'] ?>" alt="<?= get_field("left_img")['alt'] ?>"
+                                    class="swiper-img" style="object-fit:cover; width:100%;" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="<?= get_field("middel_img")['url'] ?>"
+                                    alt="<?= get_field("middel_img")['alt'] ?>" class="swiper-img"
+                                    style="object-fit:cover; width:100%;" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="<?= get_field("right_img")['url'] ?>"
+                                    alt="<?= get_field("right_img")['alt'] ?>" class="swiper-img"
+                                    style="object-fit:cover; width:100%;" />
+                            </div>
+
                         </div>
-                        <div class="swiper-slide">
-                            <img src="<?= get_field("middel_img")['url'] ?>" alt="<?= get_field("middel_img")['alt'] ?>"
-                                class="swiper-img" style="object-fit:cover; width:100%;" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= get_field("right_img")['url'] ?>" alt="<?= get_field("right_img")['alt'] ?>"
-                                class="swiper-img" style="object-fit:cover; width:100%;" />
-                        </div>
-
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
+
             </div>
 
-        </div>
-
-        <!-- New Section after the text section -->
-        <section class="text-line-button-section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="  col-lg-2 text-center d-lg-none order-1">
-                        <div class="horizontal-divider"></div>
-                    </div>
-                    <div class="col-lg-5 text-left  d-lg-none order-2">
-                        <p style="font-size:31px;">
-                            <?= get_field("_waarom_groentuinen_text") ?>
-                        </p>
-                    </div>
-
-                    <div class="title d-none d-lg-flex align-items-center gap-3">
-                        <h2 class="mb-0" style="font-size:32px ">
-                            <?= get_field("_waarom_groentuinen_text") ?>
-                        </h2>
-                        <div class="line2 between d-none d-lg-block"></div>
-                    </div>
-
-                    <!-- Testimonials Section on All Screens -->
-                    <div class="row  text-center2 order-3  fadeIn" style="margin-top: 100px;">
-                        <?php
-                        foreach (get_field("testimonials_section") as $testimonial) {
-                            ?>
-                        <div class="col-12 col-lg-4 testimonial">
-                            <img src="<?= $testimonial['afbeelding']['url'] ?>"
-                                alt=" <?= $testimonial['afbeelding']['alt'] ?>" class="testimonial-img" />
-
-                            <h1>
-                                <?= $testimonial["testimonials_section_title"] ?>
-                            </h1>
-
-                            <p>
-                                <?= $testimonial["testimonials_section_text"] ?>
+            <!-- New Section after the text section -->
+            <section class="text-line-button-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="  col-lg-2 text-center d-lg-none order-1">
+                            <div class="horizontal-divider"></div>
+                        </div>
+                        <div class="col-lg-5 text-left  d-lg-none order-2">
+                            <p style="font-size:31px;">
+                                <?= get_field("_waarom_groentuinen_text") ?>
                             </p>
-
                         </div>
-                        <?php
-                        }
-                        ?>
+
+                        <div class="title d-none d-lg-flex align-items-center gap-3">
+                            <h2 class="mb-0" style="font-size:32px ">
+                                <?= get_field("_waarom_groentuinen_text") ?>
+                            </h2>
+                            <div class="line2 between d-none d-lg-block"></div>
+                        </div>
+
+                        <!-- Testimonials Section on All Screens -->
+                        <div class="row  text-center2 order-3  fadeIn" style="margin-top: 100px;">
+                            <?php
+                            foreach (get_field("testimonials_section") as $testimonial) {
+                                ?>
+                            <div class="col-12 col-lg-4 testimonial">
+                                <img src="<?= $testimonial['afbeelding']['url'] ?>"
+                                    alt=" <?= $testimonial['afbeelding']['alt'] ?>" class="testimonial-img" />
+
+                                <h1>
+                                    <?= $testimonial["testimonials_section_title"] ?>
+                                </h1>
+
+                                <p>
+                                    <?= $testimonial["testimonials_section_text"] ?>
+                                </p>
+
+                            </div>
+                            <?php
+                            }
+                            ?>
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
-        </section>
+            </section>
 
 
-        <!-- Contact Information Section on Lg Screen -->
-        <div class="container fadeIn">
-            <div class="flex-lg-row  d-flex  align-items-center justify-content-center d-none d-lg-flex" style="background-color:#2A3F31; 
+            <!-- Contact Information Section on Lg Screen -->
+            <div class="container fadeIn">
+                <div class="flex-lg-row  d-flex  align-items-center justify-content-center d-none d-lg-flex" style="background-color:#2A3F31; 
                 border-radius: 50px; 
                 margin-top:40px; margin-bottom:40px;
                 gap-20px; padding:20px ">
-                <div class="d-flex justify-content-center justify-content-lg-start">
-                    <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
-                        class="groentuinen" style="width:80px; height:80px" />
-                </div>
-                <div class=" text-center text-lg-left" style="margin-left:50px; font-size:30px;
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
+                            class="groentuinen" style="width:80px; height:80px" />
+                    </div>
+                    <div class=" text-center text-lg-left" style="margin-left:50px; font-size:30px;
                   font-weight:300; line-height:2px;
                   font-family:'Henderson Sans-basic', sans-serif;">
-                    <span>
-                        <?= get_field("contact_text") ?>
-                    </span>
-                </div>
-                <div class="button-group" style="margin-left:50px">
-                    <div class="circle-border ">
-
-                        <a href="tel:<?= get_field("telefoon_contact") ?>"
-                            style="padding-left:40px;padding-right:40px; font-size:18px;"
-                            class="btn btn-secondary"><?= get_field("telefoon_contact") ?>
-                        </a>
+                        <span>
+                            <?= get_field("contact_text") ?>
+                        </span>
                     </div>
-                    <div class="circle-border">
+                    <div class="button-group" style="margin-left:50px">
+                        <div class="circle-border ">
 
-                        <a href="mailto:<?= get_field("mail_contact") ?>"
-                            style="padding-left:40px;padding-right:40px; font-size:18px;"
-                            class="btn btn-primary"><?= get_field("mail_contact") ?>
+                            <a href="tel:<?= get_field("telefoon_contact") ?>"
+                                style="padding-left:40px;padding-right:40px; font-size:18px;"
+                                class="btn btn-secondary"><?= get_field("telefoon_contact") ?>
+                            </a>
+                        </div>
+                        <div class="circle-border">
 
-                        </a>
+                            <a href="mailto:<?= get_field("mail_contact") ?>"
+                                style="padding-left:40px;padding-right:40px; font-size:18px;"
+                                class="btn btn-primary"><?= get_field("mail_contact") ?>
+
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
 
-
-
     </div>
+
+
     <!-- Contact Information Section on Sm Screen -->
 
     <div>

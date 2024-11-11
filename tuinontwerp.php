@@ -71,7 +71,7 @@
         background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: ;
+        background-size: 1300px;
     }
 
     @media(min-width: 768px) {
@@ -236,7 +236,7 @@
                         </div>
 
                         <div class="d-none d-md-none d-lg-flex">
-                            <div class=" circle-border">
+                            <div class=" circle-border" style="left:calc(var(--bs-gutter-x)* -0.3);">
                                 <a href="<?= get_field("advies_btn")['url'] ?>" class="btn btn-primary">
                                     <?= get_field("advies_btn")['title'] ?>
                                 </a>

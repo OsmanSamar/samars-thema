@@ -10,7 +10,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-size: 1200px;
-        background-position: 149% 112%;
+        background-position: 140% 100%;
     }
 
 
@@ -131,11 +131,11 @@
             <span class="last">Contact</span>
         </div>
 
-        <div class="container bg-img mt-lg-auto mb-0 fadeIn">
+        <div class="container bg-img mt-lg-auto mb-0 fadeIn ">
             <div class="position-relative">
-                <div class="overlay" style="border-radius:1px; "></div>
+                <div class="overlay  rounded" style="border-radius:2px; "></div>
                 <img src="<?= get_field("contact_bg_img")['url'] ?>" alt="<?= get_field("contact_bg_img")['alt'] ?>"
-                    class="groentuinen" style="object-fit:cover;" />
+                    class="groentuinen rounded" style="object-fit:cover;" />
                 <div class="content center">
                     <div class="col-12 col-lg-7 bottom-center">
                         <h1>
