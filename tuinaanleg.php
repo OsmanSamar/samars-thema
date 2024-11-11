@@ -484,8 +484,7 @@
                             </div>
                         </div>
                         <div class="col-lg-5 offset-lg-1 fadeIn" data-side="right">
-                            <h2 style="line-height: 49px; letter-spacing: 5px;">
-
+                            <h2 style="line-height:49px; letter-spacing:5px;">
                                 <?= get_field("contact_title") ?>
                             </h2>
                             <div class="col-lg-9">
