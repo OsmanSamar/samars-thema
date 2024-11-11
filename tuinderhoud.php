@@ -566,10 +566,13 @@
                     </div>
 
                     <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
-                        style="margin-bottom:-50px">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" class="groentuinen"
-                            style="width:120px; height:120px;  object-fit: cover;" />
+                        style="margin-bottom:-94px">
+                        <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
+                            style="width:120px; height:120px; object-fit:cover;" />
                     </div>
+
+
+
                 </div>
             </div>
 

@@ -3,6 +3,23 @@
 
 <main id="page" class="flex-grow-1">
     <style>
+    .responsive-header {
+        color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 125px;
+        letter-spacing: 2px;
+    }
+
+    .header-block {
+        font-size: 30px;
+        padding-bottom: 39px;
+        color: #fff;
+        line-height: 55px;
+        margin-top: 20px;
+    }
+
     .vl3 {
         border-left: 1px solid white;
         height: 92px;
@@ -66,6 +83,11 @@
 
     @media(min-width: 768px) {
 
+
+        .responsive-header {
+            font-size: 49px;
+        }
+
         .text {
             font-family: 'Inclusive Sans', sans-serif;
             font-size: 22px;
@@ -89,6 +111,14 @@
     }
 
     @media (min-width: 992px) {
+        .responsive-header {
+            font-size: 90px;
+        }
+
+        .header-block {
+            font-size: 39px;
+        }
+
 
         .first-img {
             height: 554px
@@ -170,80 +200,40 @@
                 <span class="last">Advies</span>
             </div>
 
-            <h1 class="fadeIn d-block d-md-none d-lg-none mb-3" style="color: #fff9f4;
-                 font-family: henderson-sans-basic, sans-serif;
-                 font-size: 40px;
-                font-weight: 700;
-               line-height: 125px;
-                letter-spacing:2px;">Advies
+            <h1 class="fadeIn d-block d-md-none d-lg-none mb-3 responsive-header">
+                <?= get_field("main_header") ?>
             </h1>
 
-
-            <h1 class="fadeIn d-none d-md-block d-lg-none mb-3" style="color: #fff9f4;
-             font-family: henderson-sans-basic, sans-serif;
-                 font-size: 58px;
-              font-weight: 700;
-                   line-height: 125px;
-             letter-spacing:2px;">Advies
+            <h1 class="fadeIn d-none d-md-block d-lg-none mb-3 responsive-header">
+                <?= get_field("main_header") ?>
             </h1>
-
-
-            <h1 class="fadeIn d-none d-md-none d-lg-block mb-3" style="color: #fff9f4;
-             font-family: henderson-sans-basic, sans-serif;
-             font-size: 90px;
-              font-weight: 700;
-             line-height: 125px;
-              letter-spacing:2px;">Advies
+            <h1 class="fadeIn d-none d-md-none d-lg-block mb-3 responsive-header">
+                <?= get_field("main_header") ?>
             </h1>
 
         </div>
 
-
-
-
-        <!-- Here -->
         <div class="row">
 
             <div class="col-12  col-lg-6 flex-container fadeIn" data-side="left" style="margin-top:;">
 
                 <div class="text-header d-block  d-md-none d-lg-none ">
-                    <h2 style="color: #fff9f4;
-                    font-family: henderson-sans-basic, sans-serif;
-                    color: #fff;
-                    font-size: 29px;
-                    font-weight: 300;
-                    line-height: 60px;
-                    ">
-                        <span style="--i:1;">Geen blad voor</span> <br>
-                        <span style="--i:3;">de mond</span>
-
+                    <h2
+                        style="color: #fff9f4; font-family: henderson-sans-basic, sans-serif; color: #fff; font-size: 29px; font-weight: 300; line-height: 60px;">
+                        <?= get_field("left_title") ?>
                     </h2>
                 </div>
                 <div class="text-header d-none d-md-block d-lg-none ">
-                    <h2 style="color: #fff9f4;
-                    font-family: henderson-sans-basic, sans-serif;
-                    color: #fff;
-                    font-size: 29px;
-                    font-weight: 300;
-                    line-height: 60px;
-                   ;">
-                        <span style="--i:1;">Geen blad voor de mond</span> <br>
-                        <span style="--i:3;"></span>
-
+                    <h2
+                        style="color: #fff9f4;font-family: henderson-sans-basic, sans-serif;color: #fff; font-size: 29px; font-weight: 300;line-height: 60px;">
+                        <?= get_field("left_title_on_sm_screen") ?>
                     </h2>
                 </div>
 
                 <div class="text-header d-none d-md-none d-lg-flex ">
-                    <h2 style="color: #fff9f4;
-                    font-family: henderson-sans-basic, sans-serif;
-                    color: #fff;
-                    font-size: 39px;
-                    font-weight: 300;
-                    line-height: 60px;
-                    margin-top:45px;">
-                        <span style="--i:1;">Geen blad voor</span> <br>
-                        <span style="--i:3;">de mond</span>
-
+                    <h2
+                        style="color: #fff9f4;font-family: henderson-sans-basic, sans-serif;color: #fff;font-size: 39px; font-weight: 300;line-height: 60px;margin-top:45px;">
+                        <?= get_field("left_title") ?>
                     </h2>
                 </div>
 
@@ -255,24 +245,18 @@
                     <div class=" col-lg-9  mt-lg-1 mt-4 ">
                         <div class="text d-none d-md-none d-lg-flex flex-column align-items-center "
                             style="--height: 400px;">
-
-                            <p><span style="font-weight: 400;">Je hebt een prachtige tuin, maar wil graag advies
-                                    over bijvoorbeeld planten of verzorging. Dat kan! Laat een tuinexpert met je
-                                    meedenken en krijg advies op maat voor jouw tuin. We maken samen een plan om nóg
-                                    meer uit je tuin te halen.
+                            <p>
+                                <span style="font-weight: 400;">
+                                    <?= get_field("left_text") ?>
                                 </span>
                             </p>
-
-
                         </div>
-
-
                         <div class=" d-none d-md-none d-lg-flex">
                             <div class=" circle-border">
-                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
-                                    style=" white-space:nowrap; letter-spacing:1px; ">Kennismaken?</a>
+                                <a href="<?= get_field("kennismaken_btn")['url'] ?>" class="btn btn-primary">
+                                    <?= get_field("kennismaken_btn")['title'] ?>
+                                </a>
                             </div>
-
                         </div>
                     </div>
 
@@ -281,15 +265,8 @@
                         style="--height: 400px;">
 
                         <p class="content1" style="font-weight: 400;">
-                            <span>Je hebt een prachtige tuin, maar wil graag
-                                advies
-                                over bijvoorbeeld planten of verzorging. Dat kan! Laat een tuinexpert met je
-                            </span>
-                            <span class="more-text d-none d-lg-block">
-                                meedenken
-                                en
-                                krijg advies op maat voor jouw tuin. We maken samen een plan om nóg
-                                meer uit je tuin te halen.
+                            <span>
+                                <?= get_field("left_text") ?>
                             </span>
                         </p>
                         <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
@@ -298,7 +275,9 @@
                         </a>
                         <div class="d-flex d-md-flex d-lg-none">
                             <div class=" circle-border">
-                                <a href="<?= esc_url(home_url('/advies')); ?>" class="btn btn-primary">Kennismaken?</a>
+                                <a href="<?= get_field("kennismaken_btn")['url'] ?>" class="btn btn-primary">
+                                    <?= get_field("kennismaken_btn")['title'] ?>
+                                </a>
                             </div>
                         </div>
 
@@ -326,8 +305,7 @@
                             left: 0;
                             width: 100%;
                             height: 15px;
-                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79,
-                                        0)) 0 0 no-repeat padding-box;
+                            background: transparent linear-gradient(0deg, #405f4f, rgba(64, 95, 79, .961) 40%, rgba(64, 95, 79, 0)) 0 0 no-repeat padding-box;
                             pointer-events: none;
                             opacity: 0.9;
                         }
@@ -384,13 +362,11 @@
 
 
             <div class="col-12 col-lg-6 fadeIn " style="margin-top:80px;" data-side="right">
-                <img src=" <?= esc_url(get_template_directory_uri()); ?>/images/28scaled.jpg" alt="22scaled"
-                    class="first-img rounded object-fit" style="" />
+                <img src="<?= get_field("advies_img")['url'] ?>" alt="<?= get_field("advies_img")['title'] ?>"
+                    class="first-img rounded object-fit" />
             </div>
         </div>
 
-
-        <!-- Second Section -->
 
 
         <div class=" ">
@@ -398,33 +374,28 @@
                 <!-- Column Wrapper -->
                 <div class="">
                     <div class="col-12 col-lg-10 mx-auto mt-5 my-lg-5  ">
-                        <!-- py-5 -->
                         <div class="row gx-5">
-                            <!-- 1st Column -->
-
                             <div class="d-none d-md-none d-lg-flex justify-content-center flex-row gap-3  ">
                                 <div class="mt-auto mb-5">
-                                    <img src="
-                                            <?= esc_url(get_template_directory_uri()); ?>/images/garden50.jpg"
-                                        alt="Groenoverons" class="img1" />
+                                    <img src="<?= get_field("left_img")['url'] ?>"
+                                        alt="<?= get_field("left_img")['title'] ?>" class="img1" />
                                 </div>
                                 <div class="">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinen6.jpg"
-                                        alt="Beautifulpinkflowers" class="img2" />
+                                    <img src="<?= get_field("center_img")['url'] ?>"
+                                        alt="<?= get_field("center_img")['title'] ?>" class="img2" />
                                 </div>
                                 <div class="mt-auto">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/51scaled.jpg"
-                                        alt="Ladybug" class="img3" />
+                                    <img src="<?= get_field("right_img")['url'] ?>"
+                                        alt="<?= get_field("right_img")['title'] ?>" class="img3" />
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <!-- End Column -->
+
             </div>
 
-            <!-- Text Section -->
+
             <div class="order-1 order-md-1 order-lg-2 fadeIn position-relative ">
 
                 <!--Verticall line On Lg Screen  -->
@@ -433,31 +404,15 @@
 
                 <div class="text-block py-1">
                     <div class="col-lg-7 col-12 mx-auto text-center d-flex flex-column  align-items-center">
-                        <h2 class="d-none d-md-none d-lg-flex" style="font-size:36px;
-                                                  padding-bottom: 39px; 
-                                                color: #fff;
-                                               line-height: 55px;
-                                               margin-top:20px;">
-                            Andere vragen?
+                        <h2 class="d-flex d-md-flex d-lg-flex header-block">
+                            <?= get_field("andere_vragen_title") ?>
                         </h2>
-                        <h2 class="d-flex d-md-flex d-lg-none" style="font-size:;
-                                                  padding-bottom: 39px; 
-                                                color: #fff;
-                                               line-height: 55px;
-                                               margin-top:20px;">
-                            Andere vragen?
-                        </h2>
-                        <div class="text2 ">
-                            <div class=" text d-flex flex-column align-items-center" style="
-                                 ">
-                                <p class="content1"><span style="font-weight: 400;">Ook voor advies en vragen over
-                                        verlichting,
-                                        bewatering, (zwem)vijvers, veranda’s en andere timmerwerkzaamheden ben je bij
-                                        GROENtuinen aan het juiste adres. </span>
 
-                                    <span class=" more-text d-none d-lg-block">
-                                        Door onze jarenlange ervaring zijn we erg
-                                        breed inzetbaar!
+                        <div class="text2 ">
+                            <div class=" text d-flex flex-column align-items-center">
+                                <p class="content1">
+                                    <span style="font-weight: 400;">
+                                        <?= get_field("andere_vragen_text") ?>
                                     </span>
                                 </p>
                                 <a href="#" class="read-more-toggle btn  d-flex  d-lg-none">
@@ -472,7 +427,7 @@
             </div>
 
             <div class="bottom-under"></div>
-            <!-- End of textSection -->
+
 
 
 
@@ -485,17 +440,16 @@
 
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="
-                                         <?= esc_url(get_template_directory_uri()); ?>/images/groenoverons.png"
-                                alt="Groen Overons" class="swiper-img" style="width:100% ;" />
+                            <img loading="lazy" src="<?= get_field("left_img")['url'] ?>"
+                                alt="<?= get_field("left_img")['title'] ?>" class="swiper-img" style="width:100%;" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/tuinen6.jpg"
-                                alt="Beautifulpinkflowers" class="swiper-img" style="width:100% ;" />
+                            <img loading="lazy" src="<?= get_field("center_img")['url'] ?>"
+                                alt="<?= get_field("center_img")['title'] ?>" class="swiper-img" style="width:100%;" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?= esc_url(get_template_directory_uri()); ?>/images/ladybug.png" alt="Ladybug"
-                                class="swiper-img" style="width:100% ;" />
+                            <img loading="lazy" src="<?= get_field("right_img")['url'] ?>"
+                                alt="<?= get_field("right_img")['title'] ?>" class="swiper-img" style="width:100%;" />
                         </div>
 
                     </div>
@@ -517,41 +471,42 @@
                     <div class="row">
                         <div class="col-lg-6  position-relative fadeIn" data-side="left">
                             <div class="grid-bottom">
+                                <img loading="lazy" src="<?= get_field("contact_left_img")['url'] ?>"
+                                    alt="<?= get_field("contact_left_img")['title'] ?>" class="object-fit-cover rounded"
+                                    style="height:500px;" />
 
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
-                                    alt="Groenoverons" class="object-fit-cover rounded" style="height:500px;" />
+                                <img loading="lazy" src="<?= get_field("contact_top_img")['url'] ?>"
+                                    alt="<?= get_field("contact_top_img")['title'] ?>"
+                                    class="w-100 h-100 object-fit-cover rounded" />
 
-                                <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/64scaled.jpg" alt="">
-                                <img loading="lazy" class="w-100 h-100 object-fit-cover rounded"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/65scaled.jpg" alt="">
+                                <img loading="lazy" src="<?= get_field("contact_bottom_img")['url'] ?>"
+                                    alt="<?= get_field("contact_bottom_img")['title'] ?>"
+                                    class="w-100 h-100 object-fit-cover rounded" />
 
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-8 fadeIn" data-side="right">
-                            <h2 style="line-height: 62px; letter-spacing: 4px; 
-                            font-size:36px;
-                             font-family: 'Henderson Sans Basic', sans-serif;
-                            
-                            ">Ook advies op maat?<br> Neem contact op!
+                        <div class="col-lg-5 offset-lg-1 fadeIn" data-side="right">
+                            <h2
+                                style="line-height: 62px; letter-spacing:4px; font-size:36px; font-family: 'Henderson Sans Basic', sans-serif;">
+
+                                <?= get_field("contact_title") ?>
                             </h2>
                             <div class="col-lg-9">
                                 <div class="text">
-                                    <p><span style="font-weight: 400; line-height: 30px;letter-spacing: 1px;">Ook zo’n
-                                            groene tuin? Laat dat maar aan
-                                            GROENtuinen over! Neem vrijblijvend contact op om de mogelijkheden te
-                                            bespreken.</span>
+                                    <p>
+                                        <span style="font-weight: 400; line-height: 30px;letter-spacing: 1px;">
+                                            <?= get_field("contact_text") ?>
+                                        </span>
                                     </p>
                                 </div>
                             </div>
                             <div class="title d-flex  d-md-flex d-lg-flex align-items-center gap-2">
-                                <div class="circle-border">
-                                    <a class="btn btn-primary " href="/contact"
-                                        style="padding: 10px 20px; white-space:nowrap; letter-spacing:1px;">Contact
-                                        opnemen
+                                <div class="circle-border" style="left:calc(var(--bs-gutter-x)* -0.3);">
+                                    <a href="<?= get_field("contact_btn")['url'] ?>" class="btn btn-primary">
+                                        <?= get_field("contact_btn")['title'] ?>
                                     </a>
                                 </div>
-                                <div class="line-contact between "></div>
+                                <div class="line-contact between flex-grow-1 "></div>
 
                             </div>
 
@@ -591,33 +546,28 @@
         <div class="bg-leaf">
 
             <div style="background-color:; margin-top:40px; gap-20px; padding:20px; "
-                class="row fadeIn flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none">
+                class="row fadeIn flex-lg-row  d-flex flex-column align-items-left d-flex d-lg-none" data-side="right">
                 <div class="line-top"></div>
 
 
                 <div class="col-12 col-lg-4  text-left" style="margin-top:20px; ">
-                    <h2 style="font-size:36px;
-                padding-bottom: 39px; 
-                color: #fff;
-                line-height: 55px;">
-                        Enthousiast? Neem contact
-                        op!
+                    <h2 style="font-size:36px; padding-bottom:32px;  color:#fff; line-height:55px; letter-spacing:3px;">
+                        <?= get_field("contact_title_on_sm_screen") ?>
                     </h2>
                     <div class="col-lg-9">
                         <div class="">
-                            <p><span style="font-weight: 400; ;">Ook zo’n groene tuin? Laat dat maar aan
-                                    GROENtuinen
-                                    over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span></p>
+                            <p><span style="font-weight: 400; ;">
+                                    <?= get_field("contact_text") ?>
+                                </span></p>
                         </div>
                     </div>
                 </div>
                 <div class="button-group col-12 d-flex flex-row  justify-content-start" style="margin-bottom:70px">
                     <div
                         class="title d-flex flex-row  d-md-flex d-lg-flex align-items-center justify-content-start gap-1">
-                        <div class="circle-border">
-                            <a class="btn btn-primary " href="/contact" style="padding: 10px 20px; font-size:;">Neem
-                                contact
-                                op
+                        <div class="circle-border" style="left:calc(var(--bs-gutter-x)* -0.3);">
+                            <a href="<?= get_field("contact_btn")['url'] ?>" class="btn btn-primary">
+                                <?= get_field("contact_btn")['title'] ?>
                             </a>
                         </div>
                         <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
@@ -629,8 +579,8 @@
 
                 <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
                     style="margin-bottom:-50px">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" altget_atar Image"
-                        class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
+                    <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
+                        style="width:120px; height:120px; object-fit:cover;" />
                 </div>
             </div>
         </div>
