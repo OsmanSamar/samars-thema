@@ -9,7 +9,7 @@
         color: white;
     }
 
-    .groenoverons {
+    .error-img {
         width: 100%;
         /* Limits the image width on large screens */
         max-width: 600px;
@@ -39,7 +39,7 @@
     .bottom {
         position: absolute;
         top: 70%;
-        left: 50%;
+        left: 52%;
         transform: translate(-50%, -50%);
     }
 
@@ -91,15 +91,24 @@
 
 
             <div>
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/404.svg" alt="Groenoverons"
-                    class="groenoverons" />
+                <!-- <img src="<?= esc_url(get_template_directory_uri()); ?>/images/404.svg" alt="Groenoverons"
+                    class="groenoverons" /> -->
+                <img src="<?= get_field("404_img")['url'] ?>" alt="<?= get_field("404_img")['title'] ?>"
+                    class="error-img" />
 
-                <div class="top">Oeps!</div>
-                <div class="centered"><span>Te diep</span> <br><br> <span>gegraven</span></div>
+                <div class="top">
+                    <?= get_field("top_text") ?>
+
+                </div>
+                <div class="centered">
+                    <?= get_field("centered_text") ?>
+                </div>
                 <div class=" bottom d-flex d-lg-flex">
                     <div class="circle-border">
-                        <a href="#" class="btn btn-primary"
-                            style="padding-left: 50px;padding-right: 50px; font-size:18px;">Terug naar Home</a>
+                        <a href="<?= get_field("home_page_btn")['url'] ?>"
+                            style="padding-left:55px;padding-right:55px; font-size:18px;" class="btn btn-primary">
+                            <?= get_field("home_page_btn")['title'] ?>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -113,24 +122,67 @@
             <div class="  flex-lg-row  d-flex flex-column align-items-center d-none d-lg-flex"
                 style="background-color:#2A3F31; border-radius: 50px; margin-top:40px; margin-bottom:40px;gap-20px; padding:20px ">
                 <div class="d-flex justify-content-center justify-content-lg-start">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                        class="groentuinen" style="width:80px; height:80px" />
+                    <img src="<?= get_field("contact_img")['url'] ?>" alt="<?= get_field("contact_img")['title'] ?>"
+                        style="width:80px;height:80px;object-fit:cover" />
                 </div>
                 <div class=" text-center text-lg-left" style="margin-left:50px; font-size: 30px;">
-                    <span>Jouw tuindroom werkelijkheid maken?</span>
+                    <span>
+                        <?= get_field("contact_text") ?>
+                    </span>
                 </div>
                 <div class="button-group" style="margin-left:50px">
                     <div class="circle-border ">
-                        <a class="btn btn-secondary" aria-label="telefoon Contact" href="tel:+31621830806"
-                            style="padding-left: 40px;padding-right: 40px"> +31
-                            6
-                            21830806</a>
+                        <a href="tel:<?= get_field("contact_tele") ?>" style="padding-left:40px;padding-right:40px"
+                            class="btn btn-secondary">
+                            <?= get_field("contact_tele") ?>
+                        </a>
                     </div>
                     <div class="circle-border">
-                        <a class="btn btn-primary" aria-label="Mail Contact" href="mailto:info@groentuinen.nl"
-                            style="padding-left: 40px;padding-right: 40px">info@groentuinen.nl</a>
+                        <a href="mailto:<?= get_field("contact_mail") ?>" style="padding-left:40px;padding-right:40px"
+                            class="btn btn-primary">
+                            <?= get_field("contact_mail") ?>
+                        </a>
+
+
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Information Section on Sm Screen -->
+    <div>
+
+        <div style="background-color:#2A3F31; margin-top:40px; gap-20px; padding:20px  "
+            class="fadeIn row  flex-lg-row  d-flex flex-column align-items-center d-flex d-lg-none">
+
+
+            <div class="col-12 col-lg-4 text-center text-lg-left" style="margin-top:20px; ">
+                <h2 style="font-size:38px; padding-bottom:39px; color:#fff; line-height:66px; font-weight:100">
+                    <?= get_field("contact_text") ?>
+                </h2>
+            </div>
+            <div class="button-group col-12 col-lg-4 flex-lg-row d-flex flex-column justify-content-center justify-content-lg-start "
+                style="margin-bottom:70px">
+                <div class="circle-border ">
+                    <a href="tel:<?= get_field("contact_tele") ?>"
+                        style="padding-left:40px;padding-right:40px;font-size:18px;" class="btn btn-secondary">
+                        <?= get_field("contact_tele") ?>
+                    </a>
+                </div>
+                <div class="circle-border">
+                    <a href="mailto:<?= get_field("contact_mail") ?>"
+                        style="padding-left: 40px;padding-right: 40px; font-size:18px;" class="btn btn-primary">
+                        <?= get_field("contact_mail") ?>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
+                style="margin-bottom:-50px">
+                <img src="<?= get_field("contact_img")['url'] ?>" alt="<?= get_field("contact_img")['title'] ?>"
+                    style="width:120px;height:120px;object-fit:cover" />
             </div>
         </div>
     </div>
