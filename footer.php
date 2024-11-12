@@ -45,6 +45,18 @@
                 style="margin-bottom:61px;">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/images/groenlogo.png"
                     alt="<?php bloginfo('name'); ?>" class="" />
+
+
+                <div class="d-block d-lg-none ">
+                    <div class=" d-flex justify-content-center flex-row" style="margin-top:8rem;">
+                        <a href="https://www.instagram.com" target="_blank" class="instagram-container">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+
                 <div class="d-none d-lg-block" style="margin-bottom:-75px; white-space:nowrap;">
                     <p class="text-center mt-3 text-white text-opacity-50 copyright ">
 

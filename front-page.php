@@ -187,6 +187,12 @@
 
                 <!-- On Lg Screen -->
                 <div class="fadeIn container d-none d-md-none d-lg-block">
+                    <div class="d-flex justify-content-end">
+                        <a href="https://www.instagram.com" target="_blank" class="instagram-container"
+                            style=" width: 40px;height: 40px;background-color: #ffff; border-radius: 50%; border: none; text-align: center; line-height: 40px;  position: absolute;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                     <div class="button-line-container">
                         <div class="button-group ">
 
@@ -203,12 +209,9 @@
                                 </a>
                             </div>
                         </div>
-                        <div>
-                            <a href="https://www.instagram.com" target="_blank" class="instagram-container"
-                                style="left: calc(var(--bs-gutter-x)* 37);">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
+
+
+
                         <div class="line-container flex-grow-1">
                             <div class="line-hero flex-grow-1"></div>
                         </div>

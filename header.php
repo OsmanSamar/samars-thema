@@ -16,26 +16,26 @@
 
     <!-- Whatsapp Icon -->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-            var whatsappIcon = document.querySelector('.whatsapp-fixed');
-            whatsappIcon.classList.add('open'); // Trigger the slide-in effect
-
-            setTimeout(function() {
-                whatsappIcon.classList.add('adjust-position');
-            }, 500); // Delay to adjust position after the animation
-        }, 900); // Initial delay before slide-in
-
-        // Close button functionality
-        var closeButton = document.querySelector('.close-button');
-        if (closeButton) {
-            closeButton.addEventListener('click', function() {
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
                 var whatsappIcon = document.querySelector('.whatsapp-fixed');
-                whatsappIcon.classList.remove('open', 'adjust-position');
-                whatsappIcon.classList.add('hide'); // Hide the icon after closing
-            });
-        }
-    });
+                whatsappIcon.classList.add('open'); // Trigger the slide-in effect
+
+                setTimeout(function () {
+                    whatsappIcon.classList.add('adjust-position');
+                }, 500); // Delay to adjust position after the animation
+            }, 900); // Initial delay before slide-in
+
+            // Close button functionality
+            var closeButton = document.querySelector('.close-button');
+            if (closeButton) {
+                closeButton.addEventListener('click', function () {
+                    var whatsappIcon = document.querySelector('.whatsapp-fixed');
+                    whatsappIcon.classList.remove('open', 'adjust-position');
+                    whatsappIcon.classList.add('hide'); // Hide the icon after closing
+                });
+            }
+        });
     </script>
 
 
@@ -43,13 +43,13 @@
     <!-- jQuery for dropdown menu -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $('.nav-item.dropdown').hover(function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-        }, function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+        $(document).ready(function () {
+            $('.nav-item.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+            });
         });
-    });
     </script>
 
 
@@ -106,19 +106,19 @@
 
                         </g>
                         <style>
-                        .cls-1 {
-                            transform-origin: center;
-                            fill: #f7b39a;
-                        }
+                            .cls-1 {
+                                transform-origin: center;
+                                fill: #f7b39a;
+                            }
 
-                        .cls-2 {
-                            transform-origin: center;
-                            fill: #fff;
-                        }
+                            .cls-2 {
+                                transform-origin: center;
+                                fill: #fff;
+                            }
 
-                        .animation-wrap :nth-child(1) {
-                            animation-delay: calc(1.5s + 0s);
-                        }
+                            .animation-wrap :nth-child(1) {
+                                animation-delay: calc(1.5s + 0s);
+                            }
                         </style>
                     </svg>
                 </a>
@@ -139,64 +139,64 @@
                 </div>
 
                 <style>
-                .navbar-toggler {
-                    border: 0;
-                }
+                    .navbar-toggler {
+                        border: 0;
+                    }
 
-                .navbar-toggler:focus,
-                .navbar-toggler:active,
-                .navbar-toggler-icon:focus {
-                    outline: none;
-                    box-shadow: none;
-                    border: 0;
-                }
+                    .navbar-toggler:focus,
+                    .navbar-toggler:active,
+                    .navbar-toggler-icon:focus {
+                        outline: none;
+                        box-shadow: none;
+                        border: 0;
+                    }
 
 
-                /* X Icon */
-                .toggler-icon {
-                    width: 30px;
-                    height: 3px;
-                    background-color: #5b7d6c;
-                    display: block;
-                    transition: all 0.2s;
-                }
+                    /* X Icon */
+                    .toggler-icon {
+                        width: 30px;
+                        height: 3px;
+                        background-color: #5b7d6c;
+                        display: block;
+                        transition: all 0.2s;
+                    }
 
-                .middle-bar {
-                    margin: 5px auto;
-                }
+                    .middle-bar {
+                        margin: 5px auto;
+                    }
 
-                .navbar-toggler .top-bar {
-                    transform: rotate(45deg);
-                    transform-origin: 10% 10%;
-                }
+                    .navbar-toggler .top-bar {
+                        transform: rotate(45deg);
+                        transform-origin: 10% 10%;
+                    }
 
-                .navbar-toggler .middle-bar {
-                    opacity: 0;
-                    filter: alpha(opacity=0);
-                }
+                    .navbar-toggler .middle-bar {
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
 
-                .navbar-toggler .bottom-bar {
-                    transform: rotate(-45deg);
-                    transform-origin: 10% 10%;
-                }
+                    .navbar-toggler .bottom-bar {
+                        transform: rotate(-45deg);
+                        transform-origin: 10% 10%;
+                    }
 
-                .navbar-toggler.collapsed .top-bar {
-                    transform: rotate(0);
-                }
+                    .navbar-toggler.collapsed .top-bar {
+                        transform: rotate(0);
+                    }
 
-                .navbar-toggler.collapsed .middle-bar {
-                    opacity: 1;
-                    filter: alpha(opacity=100);
-                }
+                    .navbar-toggler.collapsed .middle-bar {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
 
-                .navbar-toggler.collapsed .bottom-bar {
-                    transform: rotate(0);
-                }
+                    .navbar-toggler.collapsed .bottom-bar {
+                        transform: rotate(0);
+                    }
 
-                .navbar-toggler.collapsed .toggler-icon {
+                    .navbar-toggler.collapsed .toggler-icon {
 
-                    background-color: #5b7d6c;
-                }
+                        background-color: #5b7d6c;
+                    }
                 </style>
 
 
