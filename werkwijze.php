@@ -610,7 +610,10 @@
                     <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['alt'] ?>"
                         class="groentuinen" style="object-fit:cover;width:80px; height:80px" />
                 </div>
-                <div class=" text-center text-lg-left" style="margin-left:50px; 
+                <div class=" text-center text-lg-left" style="
+                /* margin-left:50px;  */
+                 margin-left: 20px;
+                 margin-right: 20px;
                 font-size: 30px; 
                 font-weight:300; 
                 line-height:2px;
