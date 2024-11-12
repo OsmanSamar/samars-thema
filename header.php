@@ -130,7 +130,7 @@
                     <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation"
-                        style=" width: 40px; height: 40px; border-radius: 50%; padding: 5px; margin:5px; color: #5b7d6c;  background-color: #f5a287;">
+                        style=" width:40px; height:40px; border-radius:50%; padding:5px; margin:5px; color:#5b7d6c;  background-color:#f5a287;">
 
                         <span class="toggler-icon top-bar"></span>
                         <span class="toggler-icon middle-bar"></span>
@@ -154,11 +154,13 @@
 
                     /* X Icon */
                     .toggler-icon {
-                        width: 30px;
-                        height: 3px;
-                        background-color: #5b7d6c;
+                        width: 28px;
+                        height: 2px;
+                        /* background-color: #5b7d6c; */
+                        background-color: black;
                         display: block;
                         transition: all 0.2s;
+
                     }
 
                     .middle-bar {
@@ -166,7 +168,8 @@
                     }
 
                     .navbar-toggler .top-bar {
-                        transform: rotate(45deg);
+                        /* transform: rotate(45deg); */
+                        transform: rotate(34deg);
                         transform-origin: 10% 10%;
                     }
 
@@ -176,7 +179,8 @@
                     }
 
                     .navbar-toggler .bottom-bar {
-                        transform: rotate(-45deg);
+                        /* transform: rotate(-45deg); */
+                        transform: rotate(-40deg);
                         transform-origin: 10% 10%;
                     }
 
@@ -245,13 +249,13 @@
                             <a class="nav-link" href="<?= esc_url(home_url('/werkwijze')); ?>">Werkwijze</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= esc_url(home_url('/over-ons')); ?>">Over ons</a>
+                            <a class="nav-link " href="<?= esc_url(home_url('/over-ons')); ?>">Over ons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= esc_url(home_url('/tuinsoorten')); ?>">Tuinsoorten</a>
+                            <a class="nav-link " href="<?= esc_url(home_url('/tuinsoorten')); ?>">Tuinsoorten</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= esc_url(home_url('/projecten')); ?>">Projecten</a>
+                            <a class="nav-link " href="<?= esc_url(home_url('/projecten')); ?>">Projecten</a>
                             <!--  id="navlinkactive" -->
                         </li>
 

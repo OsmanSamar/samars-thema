@@ -106,8 +106,8 @@ main {
   letter-spacing: 0px;
   opacity: 1;
   font-size: 18px;
-  padding: 10px;
-  margin: 0 10px;
+  // padding: 10px;
+  // margin: 0 10px;
 }
 
 .navbar-nav .dropdown-item {
@@ -612,16 +612,16 @@ main {
   }
 
   /* Background color for the expanded hamburger menu */
-  .navbar-collapse {
-    background-color: #f5a287;
-    padding: 10px 5px;
-    border-radius: 8px;
-    margin-top: 2px;
-  }
+  // .navbar-collapse {
+  //   background-color: #f5a287;
+  //   padding: 10px 5px;
+  //   border-radius: 8px;
+  //   margin-top: 2px;
+  // }
 
   /* Menu items background and bottom border */
   .navbar-nav .nav-link {
-    background-color: #f5a287;
+    // background-color: #f5a287; to ipad pro remove the color
     color: #fff;
     padding: 10px 10px;
     border-bottom: 1px solid #fff;
@@ -629,20 +629,20 @@ main {
     font-size: small;
   }
 
-  /* Ensure the navbar and dropdown are correctly styled on smaller screens */
-  .navbar-collapse {
-    background-color: #f5a287;
-    padding: 10px;
-    border-radius: 8px;
-  }
+  /* Ensure the navbar and dropdown are correctly styled on smaller screens  1 commet uit */
+  // .navbar-collapse {
+  //   background-color: #f5a287;
+  //   padding: 10px;
+  //   border-radius: 8px;
+  // }
 
-  .navbar-nav .nav-link {
-    background-color: #f5a287;
-    color: #fff;
-    padding: 10px;
-    border-bottom: 1px solid #fff;
-    text-align: left;
-  }
+  // .navbar-nav .nav-link { 3
+  //   background-color: #f5a287;
+  //   color: #fff;
+  //   padding: 10px;
+  //   border-bottom: 1px solid #fff;
+  //   text-align: left;
+  // }
 }
 
 /* Styles for mobile devices */
@@ -663,33 +663,33 @@ main {
 
   /* Background color for the expanded hamburger menu */
   .navbar-collapse {
-    background-color: #f5a287;
+    // background-color: #f5a287; to remove the color to ipadpro
     padding: 10px 5px;
     border-radius: 8px;
     margin-top: 2px;
   }
 
-  /* Menu items background and bottom border */
-  .navbar-nav .nav-link {
-    background-color: #f5a287;
-    color: #fff;
-    padding: 10px 10px;
-    border-bottom: 1px solid #fff;
-    text-align: left;
-    font-size: small;
-  }
+  /* Menu items background and bottom border 2 */
+  // .navbar-nav .nav-link {
+  //   background-color: #f5a287;
+  //   color: #fff;
+  //   padding: 10px 10px;
+  //   border-bottom: 1px solid #fff;
+  //   text-align: left;
+  //   font-size: small;
+  // }
 
   /* Ensure the navbar and dropdown are correctly styled on smaller screens */
   .navbar-collapse {
-    background-color: #f5a287;
+    // background-color: #f5a287; to remove the color to ipadpro
     padding: 10px;
     border-radius: 8px;
   }
 
   .navbar-nav .nav-link {
-    background-color: #f5a287;
+    // background-color: #f5a287; te test for ipadprod
     color: #fff;
-    padding: 10px;
+    // padding: 10px;
     border-bottom: 1px solid #fff;
     text-align: left;
   }
@@ -742,24 +742,26 @@ main {
   border-bottom: 1px solid #fff;
 }
 
-// Remove the border-bottom from the last child
+// Remove the border-bottom from the last child on the dropdown menu
 @media screen and (min-width: 992px) {
   .navbar-nav .dropdown-menu li:last-child .dropdown-item,
   .nav-item.dropdown a:not(.dropdown-item),
   .nav-item:not(.dropdown) a {
     border-bottom: none;
   }
+  /* Show the dropdown menu on hover */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .downarrow {
+    left: calc(var(--bs-gutter-x) * -0);
+  }
 }
 
 .navbar-nav .dropdown-item:hover {
   color: #334b3b;
   background-color: #f5a287;
-}
-@media screen and (min-width: 992px) {
-  /* Show the dropdown menu on hover */
-  .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-  }
 }
 
 /* Main Style */
@@ -795,12 +797,6 @@ main {
   rotate: -360deg;
   width: 45px;
   background-color: transparent;
-}
-
-@media screen and (min-width: 992px) {
-  .downarrow {
-    left: calc(var(--bs-gutter-x) * -0);
-  }
 }
 
 @media (max-width: 991.98px) {
