@@ -735,12 +735,15 @@
                         <div class="row">
                             <div class="col-lg-6  position-relative fadeIn " data-side="left">
                                 <div class="grid-bottom" style="left: calc(var(--bs-gutter-x)* 0.1);">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bus.png"
-                                        class="w-100 h-100 object-fit-cover rounded" alt="">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
-                                        class="w-100 h-100 object-fit-cover rounded" alt="">
-                                    <img src="<?= esc_url(get_template_directory_uri()); ?>/images/bg.png"
-                                        class="w-100 h-100 object-fit-cover rounded" alt="">
+                                    <img src="<?= get_field("contact_left_img")['url'] ?>"
+                                        alt="<?= get_field("contact_left_img")['title'] ?>"
+                                        class="w-100 h-100 object-fit-cover rounded" />
+                                    <img src="<?= get_field("contact_top_img")['url'] ?>"
+                                        alt="<?= get_field("contact_top_img")['title'] ?>"
+                                        class="w-100 h-100 object-fit-cover rounded" />
+                                    <img src="<?= get_field("contact_bottom_img")['url'] ?>"
+                                        alt="<?= get_field("contact_bottom_img")['title'] ?>"
+                                        class="w-100 h-100 object-fit-cover rounded" />
                                 </div>
                             </div>
                             <div class="col-lg-5 offset-lg-1 fadeIn" data-side="right">
@@ -770,14 +773,7 @@
             </div>
 
         </div>
-
-
-
-
-
     </div>
-
-
     </div>
 
 
@@ -813,18 +809,15 @@
 
 
             <div class="col-12 col-lg-4  text-left" style="margin-top:20px; margin-left:12px; ">
-                <h2 style="font-size:36px;
-                padding-bottom: 39px; 
-                color: #fff;
-                line-height: 55px;">
-                    Enthousiast?<br>Laat het ons weten
+                <h2 style="font-size:36px;padding-bottom:39px; color:#fff; line-height: 55px;">
+                    <?= get_field("contact_title") ?>
                 </h2>
 
                 <div class="col-lg-9">
                     <div class="">
-                        <p><span style="font-weight: 400; ;">Ook zo’n groene tuin? Laat dat maar aan
-                                GROENtuinen
-                                over! Neem vrijblijvend contact op om de mogelijkheden te bespreken.</span></p>
+                        <p><span style="font-weight: 400; ;">
+                                <?= get_field("contact_text") ?>
+                            </span></p>
                     </div>
                 </div>
             </div>
@@ -832,10 +825,8 @@
                 style="margin-bottom:70px">
                 <div class="title d-flex flex-row d-md-flex d-lg-none align-items-center justify-content-start gap-1">
                     <div class="circle-border">
-                        <a class="btn btn-primary " href="/contact" style="padding: 10px 40px; font-size:;">Neem
-                            contact
-                            op
-                        </a>
+                        <a href="<?= get_field("neemcontact_btn")['url'] ?>" class="btn btn-primary"
+                            style=" white-space: nowrap;"><?= get_field("neemcontact_btn")['title'] ?></a>
                     </div>
                     <div class="dienst-line d-flex  d-md-none  d-lg-none "></div>
                     <div class="dienstline d-none  d-md-flex  d-lg-none "></div>
@@ -846,16 +837,11 @@
 
             <div class="col-12 col-lg-1 d-flex justify-content-center justify-content-lg-start"
                 style="margin-bottom:-50px">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/avatar.png" alt="Avatar Image"
-                    class="groentuinen" style="width:120px; height:120px;  object-fit: cover;" />
+                <img src="<?= get_field("avatar")['url'] ?>" alt="<?= get_field("avatar")['title'] ?>"
+                    style="width:120px; height:120px; object-fit:cover;" />
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
 
