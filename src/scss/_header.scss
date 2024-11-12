@@ -103,22 +103,12 @@ main {
 .navbar-nav .nav-link {
   color: #ffffff;
   text-align: center;
-  // font: normal normal normal;
   letter-spacing: 0px;
   opacity: 1;
   font-size: 18px;
   padding: 10px;
   margin: 0 10px;
 }
-
-/* visited NavBar links */
-// .navbar-nav .nav-link:active {
-//   font-weight: bolder;
-// }
-
-// #navlinkactive {
-//   font-weight: bolder;
-// }
 
 .navbar-nav .dropdown-item {
   color: #fff;
@@ -158,7 +148,6 @@ main {
 /* Inner Button */
 .btn {
   border-radius: 9999px;
-  // font-size: 18px;
   border: none;
   padding: 8px 32px;
   line-height: 22px;
@@ -227,6 +216,7 @@ main {
 .circle-border {
   padding: 0 !important;
 }
+
 /* Hover effect for the button */
 .btn-secondary:hover {
   color: #f8f4ea;
@@ -245,16 +235,6 @@ main {
   align-items: center;
 }
 
-/* Container for buttons and line On Small Screen 1*/
-.button-line-container {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // text-align: center;
-  // margin-top: 139px;
-  // margin-bottom: 70px;
-}
-
 @media (min-width: 768px) {
 }
 
@@ -265,7 +245,6 @@ main {
   align-items: center;
 }
 
-/* Line container */
 .line-container {
   display: none;
 }
@@ -309,7 +288,6 @@ main {
   color: #ffffff;
 }
 
-//2
 /* Instagram icon styling */
 .instagram-container {
   display: inline-flex;
@@ -334,7 +312,6 @@ main {
 
 /* Instagram icon hover effect */
 .instagram-container:hover {
-  // background-color: #334b3b;
   background-color: #010a03;
   color: #ffff;
   transition: color 0.3s ease;
@@ -402,8 +379,6 @@ main {
   background-color: #fff;
   color: #2a3f31;
   font-size: 12px;
-  /* Prevent text from breaking */
-  /* white-space: nowrap;  */
   z-index: -1;
   padding: 0px 8px;
   position: relative;
@@ -448,7 +423,6 @@ main {
   transition: right 0.5s ease; /* Match the transition time */
 }
 
-/* Media query for tablets screens */
 @media (min-width: 768px) {
   .hero-content {
     text-align: center;
@@ -458,7 +432,6 @@ main {
     font-size: 48px;
   }
 
-  /* Line container */
   .line-container {
     display: none;
   }
@@ -481,7 +454,7 @@ main {
   .hero-content h1 {
     font-size: 30px;
   }
-  // 2
+
   .button-line-container {
     display: flex;
     align-items: left;
@@ -490,7 +463,6 @@ main {
     margin-bottom: 70px;
   }
 
-  /* Line container */
   .line-container {
     display: flex;
     align-items: center;
@@ -502,7 +474,7 @@ main {
     background-color: #ffffff;
     color: #ffffff;
     position: relative;
-    margin-right: 10px; /* Space between line and Instagram icon */
+    margin-right: 10px;
     display: block;
     opacity: 0.5;
   }
@@ -515,40 +487,32 @@ main {
 
 /* Media query for tablets and larger screens */
 @media (min-width: 768px) {
-  /* Line container */
   .line-container {
     display: flex;
     align-items: center;
     position: relative;
   }
 
-  // Added width to Line on Tablets
-
   .line-hero {
     height: 1px;
-
-    /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
     position: relative;
-    margin-right: 10px; /* Space between line and Instagram icon */
+    margin-right: 10px;
     display: block;
   }
   .line-contact {
     height: 1px;
-    // width: 22vw; Update to 22
     width: 14vw;
   }
 
   .line {
     height: 1px;
-    // width: 47vw;
-    // width: 34vw;
     width: 26vw;
     background-color: #ffffff;
     color: #ffffff;
     position: relative;
-    margin-right: 10px; /* Space between line and Instagram icon */
+    margin-right: 10px;
     display: block;
   }
 }
@@ -583,38 +547,18 @@ main {
     justify-content: flex-start;
   }
 
-  // 3
-
-  /* Line container */
   .line-container {
     display: flex;
     align-items: center;
     position: relative;
   }
-  //  line on LG Screen
-  // .line-hero {
-  // height: 1px;
-  // width: 64vw;
-  // width: 59vw;
-  /* Line stretches across the page */
-  // background-color: #ffffff;
-  //  color: #ffffff;
-  // position: relative;
-  // margin-right: 10px; /* Space between line and Instagram icon */
-  // display: block;
-  // opacity: 0.5;
-  // margin-left: -41px;
-  //}
 
   .line {
     height: 1px;
-    // width: 58%;
-    // width: 58vw;
-    /* Line stretches across the page */
     background-color: #ffffff;
     color: #ffffff;
     position: relative;
-    margin-right: 2px; /* Space between line and Instagram icon */
+    margin-right: 2px;
     display: block;
   }
 
@@ -626,18 +570,9 @@ main {
     display: block;
     opacity: 0.5;
   }
-
-  // 1
-  .instagram-container {
-    // Its  should between 30-38
-    // margin-left: 30px;
-    //  right: calc(var(--bs-gutter-x) * -1.5);
-  }
 }
 
 /* Hamburger Icon */
-/* Styles for tablets */
-/* @media (max-width: 768px) { */
 
 @media (min-width: 576px) and (max-width: 1024px) {
   .navbar-brand {
@@ -651,7 +586,6 @@ main {
   .navbar {
     display: flex;
     justify-content: space-between;
-
     margin-top: 46px;
   }
 
@@ -739,7 +673,6 @@ main {
   }
 
   .navbar-nav .dropdown-menu {
-    // background-color: #f5a287;
     border-radius: 5px;
     padding: 10px;
     border: none;
@@ -749,7 +682,6 @@ main {
 
   .line-contact {
     height: 1px;
-    // width: 36vw;
     width: 30vw;
     background-color: #ffffff;
     color: #ffffff;
@@ -773,11 +705,6 @@ main {
   border-radius: 5px;
   padding: 10px;
   border: none;
-  /* position: absolute;
-        z-index: 3;
-        top: 100%;
-        left: 0;
-        width: 100%; */
 }
 
 /* Ensure dropdown menu is correctly positioned relative to the toggle */
@@ -820,13 +747,11 @@ main {
 
 .text-section {
   position: relative;
-  /* margin-left: -1rem; */
   text-align: center;
   color: #ffffff;
   padding: 50px 0;
 }
 
-//  'md': '768px',
 @media (min-width: 768px) {
   .text-section h1 {
     font-size: 40px;
@@ -851,8 +776,6 @@ main {
   line-height: 1.4;
 }
 
-/* Desktop styles */
-
 .downarrow {
   bottom: -120px;
   height: 45px;
@@ -865,8 +788,6 @@ main {
 
 @media screen and (min-width: 992px) {
   .downarrow {
-    // left: calc(var(--bs-gutter-x) * 1.5);
-    // left: calc(var(--bs-gutter-x) * 0.1);
     left: calc(var(--bs-gutter-x) * -0);
   }
 }
@@ -941,7 +862,6 @@ a ::after {
 .images-section2 {
   position: relative;
   margin: 0;
-  /* Reset the margin if necessary */
 
   transform: translate(14rem, -16.5rem);
   /* Moves right by 14rem, and up by 6.5rem */
@@ -1011,9 +931,7 @@ a ::after {
   display: none;
 }
 
-/* its work here  on sm Screen  */
 .text-line-button-section .row {
-  // flex-direction: row;
   text-align: center;
 }
 
@@ -1052,15 +970,11 @@ a ::after {
   margin-top: 20px;
 }
 
-/* New Section */
-
 .text-line-button-section {
   padding: 50px 0;
 }
 
 .text-line-button-section h2 {
-  // font-size: 42px;
-  // margin-bottom: 20px;
   font-size: 40px;
 }
 
@@ -1078,7 +992,6 @@ a ::after {
   font-size: 18px;
 }
 
-/* Line on Small Screen  */
 .line.height {
   border-left: 2px solid white;
   height: 78px;
@@ -1100,8 +1013,6 @@ a ::after {
   gap: 20px;
   position: relative;
 }
-
-/*End Line On Small Screen  */
 
 /*swiper  */
 
@@ -1240,7 +1151,6 @@ a ::after {
     order: 2;
     display: flex;
     flex-direction: row;
-    /* overflow-x: scroll; */
     scroll-behavior: smooth;
     white-space: nowrap;
     justify-content: center;
@@ -1266,11 +1176,10 @@ a ::after {
 
   .smrow .carousel-item img {
     width: 322px;
-    /* Set a fixed width for all images */
+
     height: 404px;
-    /* Set a fixed height for all images */
+
     object-fit: cover;
-    /* Ensures the image covers the area without stretching */
   }
 
   .carousel-indicators button {
@@ -1283,7 +1192,7 @@ a ::after {
   }
 
   /* Ensure the line appears first on Mobile styles */
-  //  width: 100%; replace 50%
+
   .text-line-button-section .horizontal-divider {
     order: 1;
     margin-bottom: 20px;
@@ -1325,8 +1234,6 @@ a ::after {
     order: 4;
     margin-top: 20px;
   }
-
-  /* End of New Section */
 }
 
 /* Large screen layout */
