@@ -670,14 +670,14 @@ main {
   }
 
   /* Menu items background and bottom border 2 */
-  // .navbar-nav .nav-link {
-  //   background-color: #f5a287;
-  //   color: #fff;
-  //   padding: 10px 10px;
-  //   border-bottom: 1px solid #fff;
-  //   text-align: left;
-  //   font-size: small;
-  // }
+  .navbar-nav .nav-link {
+    background-color: #f5a287;
+    color: #fff;
+    padding: 10px 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    font-size: small;
+  }
 
   /* Ensure the navbar and dropdown are correctly styled on smaller screens */
   .navbar-collapse {
