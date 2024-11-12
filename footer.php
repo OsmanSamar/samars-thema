@@ -1,13 +1,13 @@
 <div class="whatsapp-fixed">
     <span class="close-button">&times;</span>
     <div class="background-text">
-        <span>Een vraag of advies nodig?</span>
-        <span>Stuur ons een appje!</span>
+        <?= get_field("whatsapp_text", 'options') ?>
     </div>
-    <a href="https://wa.me/0621493752" target="_blank">
-        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/whatsappicon.svg" alt="WhatsApp Icon"
-            class="whatsapp-icon" />
+    <a href="https://wa.me/<?= get_field('whatsapp_number', 'options') ?>" target="_blank">
+        <img src="<?= get_field('whatsapp_img', 'options')['url'] ?>"
+            alt="  <?= get_field('whatsapp_img', 'options')['title'] ?>" class="whatsapp-icon" />
     </a>
+
 </div>
 
 <footer class="footer">
@@ -31,7 +31,10 @@
             <div class="col-lg col-12 d-flex order-4 order-lg-1 text-lg-start text-center">
                 <ul class="nav pb-3 pb-lg-0 mt-auto d-flex flex-column mx-auto mx-lg-0 gap-2">
                     <li class="nav-item">
-                        <a href="" class="nav-link text-white p-0">Privacyverklaring</a>
+                        <a href="<?= get_field("privacyverklaring_link", 'options')['url'] ?> "
+                            class="nav-link text-white p-0">
+                            <?= get_field("privacyverklaring_link", 'options')['title'] ?>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -44,23 +47,26 @@
                     alt="<?php bloginfo('name'); ?>" class="" />
                 <div class="d-none d-lg-block" style="margin-bottom:-75px; white-space:nowrap;">
                     <p class="text-center mt-3 text-white text-opacity-50 copyright ">
-                        © GROENtuinen -
-                        Uit de grond gestampt door <a target="_blank" href="https://code-blauw.nl/">Code
-                            Blauw</a>
+
+                        <?= get_field("copyright_text", 'options') ?>
+                        <a target="_blank" href="https://code-blauw.nl/">
+                            <?= get_field("copyright_code_blauw", 'options') ?>
+                        </a>
                     </p>
                 </div>
-
             </div>
-
 
 
             <div
                 class="col-lg col-12 d-flex text-lg-end text-center flex-column order-3 order-lg-3 align-items-lg-end justify-content-lg-center adres">
                 <ul class="nav pb-3 pb-lg-0 mt-auto d-flex flex-column mx-auto mx-lg-0 gap-2">
 
-                    <a aria-label="Neem contact op via telefoon" href="tel:+31621830806">06 21830806</a>
-                    <a aria-label="Neem contact op via Mail" href="mailto:info@groentuinen.nl">info@groentuinen.nl</a>
-
+                    <a href="tel:<?= get_field("contact_number", 'options') ?>"
+                        style=" white-space: nowrap;"><?= get_field("contact_number", 'options') ?>
+                    </a>
+                    <a href="mailto:<?= get_field("contact_mail", 'options') ?>"
+                        style=" white-space: nowrap;"><?= get_field("contact_mail", 'options') ?>
+                    </a>
                 </ul>
             </div>
 
@@ -89,8 +95,10 @@
     <div class="container">
         <div class="d-block d-lg-none order-5 ">
             <p class="text-center text-balance text-white text-opacity-50 copyright">
-                GROENtuinen <br>
-                Uit de grond gestampt <br>door <a href="">Code Blauw</a>
+                <?= get_field("copyright_text_sm_screen", 'options') ?>
+                <a target="_blank" href="https://code-blauw.nl/">
+                    <?= get_field("copyright_code_blauw_sm_screen", 'options') ?>
+                </a>
             </p>
         </div>
     </div>
