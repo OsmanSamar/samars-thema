@@ -4,100 +4,100 @@
 <div class="bg-container">
 
     <style>
-    .bg-leaf {
-        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-size: 1150px;
-    }
+        .bg-leaf {
+            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 1150px;
+        }
 
-    .swiper-container {
-        position: relative;
-    }
+        .swiper-container {
+            position: relative;
+        }
 
-    .swiper-container .swiper-pagination {
+        .swiper-container .swiper-pagination {
 
-        bottom: -50px !important;
-    }
+            bottom: -50px !important;
+        }
 
-    .swiper-container .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
-    }
-
-
-    .swiper-container {
-        position: relative;
-
-    }
-
-    .swiper-container .swiper-pagination,
-    .swiper-button-next,
-    .swiper-button-prev {
-        bottom: -70px !important;
-        display: block;
-    }
-
-    .swiper-container .swiper-button-next,
-    .swiper-button-prev {
-        position: absolute;
-        top: 113% !important;
-
-    }
-
-    /* Set font size for swiper buttons */
-    .swiper-button-prev:after,
-    .swiper-rtl .swiper-button-next:after,
-    .swiper-button-next::after,
-    .swiper-rtl .swiper-button-prev::after {
-        font-size: 16px;
-        font-weight: 900;
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        border: 1px solid #fff;
-        border-radius: 25px;
-        --swiper-navigation-color: #ffffff;
-        z-index: 10;
-        cursor: pointer;
-    }
-
-    .left-line {
-        border: 1px solid #fff;
-        width: 5%;
-        opacity: 0.5;
-        left: 41%;
-        position: absolute;
-        display: flex;
-        top: 113%;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .right-line {
-        border: 1px solid #fff;
-        width: 5%;
-        opacity: 0.5;
-        left: 54%;
-        position: absolute;
-        display: flex;
-        top: 113%;
-        align-items: center;
-        justify-content: center;
-    }
+        .swiper-container .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+        }
 
 
-    .swiper-container .swiper-pagination-bullet,
+        .swiper-container {
+            position: relative;
+
+        }
+
+        .swiper-container .swiper-pagination,
+        .swiper-button-next,
+        .swiper-button-prev {
+            bottom: -70px !important;
+            display: block;
+        }
+
+        .swiper-container .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 113% !important;
+
+        }
+
+        /* Set font size for swiper buttons */
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after,
+        .swiper-button-next::after,
+        .swiper-rtl .swiper-button-prev::after {
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #fff;
+            border-radius: 25px;
+            --swiper-navigation-color: #ffffff;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        .left-line {
+            border: 1px solid #fff;
+            width: 5%;
+            opacity: 0.5;
+            left: 41%;
+            position: absolute;
+            display: flex;
+            top: 113%;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .right-line {
+            border: 1px solid #fff;
+            width: 5%;
+            opacity: 0.5;
+            left: 54%;
+            position: absolute;
+            display: flex;
+            top: 113%;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .swiper-container .swiper-pagination-bullet,
         {
         width: 15px;
         height: 15px;
-    }
+        }
     </style>
 
 
@@ -131,12 +131,16 @@
                         style="  display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 139px; margin-bottom: 70px;">
                         <div class="button-group ">
                             <div class="circle-border ">
-                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
-                                    style=" white-space: nowrap;">Tuin op maat</a>
+                                <a href="<?= get_field("tuin_op_maat_btn")['url'] ?>" style="white-space:nowrap;"
+                                    class="btn btn-primary">
+                                    <?= get_field("tuin_op_maat_btn")['title'] ?>
+                                </a>
                             </div>
                             <div class="circle-border">
-                                <a href="<?= esc_url(home_url('/projecten')); ?>"
-                                    class="btn btn-secondary">Projecten</a>
+                                <a href="<?= get_field("projecten_btn")['url'] ?>" style="white-space:nowrap;"
+                                    class="btn btn-secondary">
+                                    <?= get_field("projecten_btn")['title'] ?>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -148,32 +152,36 @@
                     <div class="button-line-container">
                         <div class="button-group ">
                             <div class="circle-border ">
-                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
-                                    style=" white-space: nowrap;">Tuin op maat</a>
+                                <a href="<?= get_field("tuin_op_maat_btn")['url'] ?>" style="white-space:nowrap;"
+                                    class="btn btn-primary">
+                                    <?= get_field("tuin_op_maat_btn")['title'] ?>
+                                </a>
                             </div>
                             <div class="circle-border">
-                                <a href="<?= esc_url(home_url('/projecten')); ?>"
-                                    class="btn btn-secondary">Projecten</a>
+                                <a href="<?= get_field("projecten_btn")['url'] ?>" style="white-space:nowrap;"
+                                    class="btn btn-secondary">
+                                    <?= get_field("projecten_btn")['title'] ?>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <style>
-                @media (min-width: 768px) {
+                    @media (min-width: 768px) {
 
-                    .button-group {
-                        flex-direction: column;
-                        justify-content: center;
-                    }
+                        .button-group {
+                            flex-direction: column;
+                            justify-content: center;
+                        }
 
-                    .button-line-container {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;
-                        margin-top: 97px;
+                        .button-line-container {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            margin-top: 97px;
+                        }
                     }
-                }
                 </style>
 
 
@@ -183,12 +191,16 @@
                         <div class="button-group ">
 
                             <div class="circle-border " style="left: calc(var(--bs-gutter-x)* -1.0);">
-                                <a href="<?= esc_url(home_url('/contact')); ?>" class="btn btn-primary"
-                                    style=" white-space: nowrap;">Tuin op maat</a>
+                                <a href="<?= get_field("tuin_op_maat_btn")['url'] ?>" style="white-space:nowrap;"
+                                    class="btn btn-primary">
+                                    <?= get_field("tuin_op_maat_btn")['title'] ?>
+                                </a>
                             </div>
                             <div class="circle-border" style="left: calc(var(--bs-gutter-x)* -0.5);">
-                                <a href="<?= esc_url(home_url('/projecten')); ?>"
-                                    class="btn btn-secondary">Projecten</a>
+                                <a href="<?= get_field("projecten_btn")['url'] ?>" style="white-space:nowrap;"
+                                    class="btn btn-secondary">
+                                    <?= get_field("projecten_btn")['title'] ?>
+                                </a>
                             </div>
                         </div>
                         <div>
@@ -205,44 +217,43 @@
                 </div>
 
                 <style>
-                @media (min-width: 1024px) {
+                    @media (min-width: 1024px) {
 
-                    .button-group {
-                        flex-direction: row;
-                        justify-content: flex-start;
+                        .button-group {
+                            flex-direction: row;
+                            justify-content: flex-start;
+                        }
+
+                        .button-line-container {
+                            display: flex;
+                            align-items: left;
+                            justify-content: flex-start;
+                            margin-top: 70px;
+                            margin-bottom: 70px;
+                        }
+
+
+                        .line-hero {
+                            height: 1px;
+                            background-color: #ffffff;
+                            color: #ffffff;
+                            position: relative;
+                            display: block;
+                            opacity: 0.5;
+                            margin-left: -41px;
+                        }
+
                     }
-
-                    .button-line-container {
-                        display: flex;
-                        align-items: left;
-                        justify-content: flex-start;
-                        margin-top: 70px;
-                        margin-bottom: 70px;
-                    }
-
-
-                    .line-hero {
-                        height: 1px;
-                        background-color: #ffffff;
-                        color: #ffffff;
-                        position: relative;
-                        display: block;
-                        opacity: 0.5;
-                        margin-left: -41px;
-                    }
-
-                }
                 </style>
 
 
                 <!-- Downarrow on SM Screen And Lg Screen -->
                 <div class="d-block  d-md-none d-lg-block">
                     <a class="downarrow" aria-label="Go to the content" href="#Maaktuin">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                            alt="downarrow Icon" class="downarrow-icon" />
+                        <img src="<?= get_field("downarrow")['url'] ?>" alt="<?= get_field("downarrow")['title'] ?>"
+                            class="downarrow-icon" />
                     </a>
                 </div>
-
 
                 <!-- Downarrow on Md Screen -->
                 <div class="d-none d-md-block d-lg-none">
@@ -250,8 +261,8 @@
                            left: 50%;
                           rotate: -360deg;
                            transform: translateY(-50%) translateX(-50%);">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/downarrow.svg"
-                            alt="downarrow Icon" class="downarrow-icon" />
+                        <img src="<?= get_field("downarrow")['url'] ?>" alt="<?= get_field("downarrow")['title'] ?>"
+                            class="downarrow-icon" />
                     </a>
                 </div>
 
@@ -300,38 +311,48 @@
 
                                 <div class="swiper-slide">
                                     <div class="ratio ratio-1x1 h-100">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/backyardgarden.png"
-                                            class=" " alt="Image 1">
+
+                                        <img src="<?= get_field("top_left_img")['url'] ?>"
+                                            alt="<?= get_field("top_left_img")['title'] ?>" />
                                     </div>
 
                                 </div>
+
                                 <div class="swiper-slide">
                                     <div class="ratio ratio-1x1 h-100">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/greendesign.png"
-                                            class=" " alt="Image 2">
+
+                                        <img src="<?= get_field("bottom_left_img")['url'] ?>"
+                                            alt="<?= get_field("top_left_img")['title'] ?>" />
                                     </div>
 
                                 </div>
+
                                 <div class="swiper-slide">
                                     <div class="ratio ratio-1x1 h-100">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/Rick.png"
-                                            class=" " alt="Image 3">
+
+                                        <img src="<?= get_field("top_center_img")['url'] ?>"
+                                            alt="<?= get_field("top_center_img")['title'] ?>" />
                                     </div>
 
                                 </div>
+
                                 <div class="swiper-slide">
                                     <div class="ratio ratio-1x1 h-100">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/naturalgrass.png"
-                                            class="" alt="Image 4">
+
+                                        <img src="<?= get_field("bottom_center_img")['url'] ?>"
+                                            alt="<?= get_field("top_center_img")['title'] ?>" />
                                     </div>
 
                                 </div>
+
                                 <div class="swiper-slide">
                                     <div class="ratio ratio-1x1 h-100">
-                                        <img src="<?= esc_url(get_template_directory_uri()); ?>/images/flower.png"
-                                            class=" " alt="Image 5">
+
+                                        <img src="<?= get_field("right_img")['url'] ?>"
+                                            alt="<?= get_field("right_img")['title'] ?>" />
                                     </div>
                                 </div>
+
                             </div>
                         </div>
 
@@ -343,22 +364,23 @@
                     <div class="container col-lg-8 images-section2 ">
                         <div class="row2  fadeIn" data-side="right">
                             <div class="column1">
-                                <img class="backyardgarden"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/69scaled.jpg"
-                                    alt="Image 1">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/13scaled.jpg"
-                                    alt="Image 4" class="img2">
+                                <img src="<?= get_field("top_left_img")['url'] ?>"
+                                    alt="<?= get_field("top_left_img")['title'] ?>" />
+                                <img src="<?= get_field("bottom_left_img")['url'] ?>"
+                                    alt="<?= get_field("top_left_img")['title'] ?>" />
+
                             </div>
                             <div class="column2">
-                                <img class="Rick"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/56scaled.jpg"
-                                    alt="Image 2">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/16scaled.jpg"
-                                    alt="Image 5">
+                                <img src="<?= get_field("top_center_img")['url'] ?>"
+                                    alt="<?= get_field("top_center_img")['title'] ?>" />
+                                <img src="<?= get_field("bottom_center_img")['url'] ?>"
+                                    alt="<?= get_field("top_center_img")['title'] ?>" />
+
                             </div>
                             <div class="column3">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/43scaled.jpg"
-                                    alt="Image 3">
+
+                                <img src="<?= get_field("right_img")['url'] ?>"
+                                    alt="<?= get_field("right_img")['title'] ?>" />
                             </div>
                         </div>
                     </div>
@@ -391,7 +413,11 @@
                         </h2>
                         <div class="line between d-none d-lg-block flex-grow-1"></div>
                         <div class="circle-border">
-                            <a class="btn btn-primary d-none d-md-none d-lg-block" href="/contact">Kennismaken? </a>
+                            <!-- <a class="btn btn-primary d-none d-md-none d-lg-block" href="/contact">Kennismaken? </a> -->
+                            <a href="<?= get_field("kennismaken_btn")['url'] ?>"
+                                class="btn btn-primary d-none d-md-none d-lg-block">
+                                <?= get_field("kennismaken_btn")['title'] ?>
+                            </a>
                         </div>
                     </div>
 
@@ -401,20 +427,20 @@
                         <?php
                         foreach (get_field("testimonials_section") as $testimonial) {
                             ?>
-                        <div class="col-12 col-lg-4 testimonial">
-                            <img src="<?= $testimonial['afbeelding']['url'] ?>"
-                                alt="<?= $testimonial['afbeelding']['alt'] ?>" class="testimonial-img" />
+                            <div class="col-12 col-lg-4 testimonial">
+                                <img src="<?= $testimonial['afbeelding']['url'] ?>"
+                                    alt="<?= $testimonial['afbeelding']['alt'] ?>" class="testimonial-img" />
 
-                            <h1>
-                                <?= $testimonial["testimonials_section_title_text"] ?>
-                            </h1>
+                                <h1>
+                                    <?= $testimonial["testimonials_section_title_text"] ?>
+                                </h1>
 
-                            <p>
-                                <?= $testimonial["testimonials_section_text"] ?>
-                            </p>
+                                <p>
+                                    <?= $testimonial["testimonials_section_text"] ?>
+                                </p>
 
-                        </div>
-                        <?php
+                            </div>
+                            <?php
                         }
                         ?>
                     </div>
@@ -436,135 +462,135 @@
 
 
         <style>
-        .swiper-container-fullwidth {
-            width: 100vw;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+            .swiper-container-fullwidth {
+                width: 100vw;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
 
-        /* Hide the CircleType by default */
-        #demo3 {
-            display: none;
-        }
-
-        /* Show the CircleType on devices with a width of 1024px and up */
-        @media (min-width: 1024px) {
+            /* Hide the CircleType by default */
             #demo3 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                display: none;
+            }
+
+            /* Show the CircleType on devices with a width of 1024px and up */
+            @media (min-width: 1024px) {
+                #demo3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 200px;
+                    width: 200px;
+                    overflow: hidden;
+                    position: absolute;
+                    bottom: -129px;
+                    transform: translate(50%, 50%);
+                    right: 0;
+                    transform: translateY(-50%);
+                    color: #fff;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    letter-spacing: 3px;
+                    z-index: 1000;
+
+                }
+            }
+
+            #demo3 span {
+                position: absolute;
+                left: 50%;
+                transform-origin: 0 100px;
+
+            }
+
+            @keyframes rotating {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .text-circle {
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-name: rotating;
+                animation-timing-function: linear;
                 height: 200px;
                 width: 200px;
-                overflow: hidden;
-                position: absolute;
-                bottom: -129px;
-                transform: translate(50%, 50%);
-                right: 0;
-                transform: translateY(-50%);
-                color: #fff;
-                border-radius: 50%;
-                font-size: 12px;
-                letter-spacing: 3px;
-                z-index: 1000;
+                overflow: visible;
 
             }
-        }
 
-        #demo3 span {
-            position: absolute;
-            left: 50%;
-            transform-origin: 0 100px;
 
-        }
+            /* Show text and button for devices less than 1024px */
+            @media (max-width: 1023px) {
 
-        @keyframes rotating {
-            from {
-                transform: rotate(0deg);
+
+                .slider-text-button-container {
+                    position: absolute;
+                    /* Position from bottom */
+                    bottom: 20px;
+                    width: 100%;
+                    justify-content: space-between;
+                    /* Add padding from edges */
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    z-index: 1000;
+                    margin-bottom: 40px;
+                }
+
+                .slider-text-button-container-right {
+                    position: absolute;
+                    bottom: -55px;
+                    right: 0px;
+                    width: 100%;
+                    /* Add padding from edges */
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    z-index: 1000;
+                }
+
+                .line-before {
+                    border: 1px #fff solid;
+                    width: 21%;
+                    height: 1px;
+                    opacity: 0.3;
+                }
             }
 
-            to {
-                transform: rotate(360deg);
-            }
-        }
 
-        .text-circle {
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-            animation-name: rotating;
-            animation-timing-function: linear;
-            height: 200px;
-            width: 200px;
-            overflow: visible;
+            @media (min-width: 768px) {
 
-        }
+                .line-before {
+                    border: 1px #fff solid;
+                    width: 67%;
+                    height: 1px;
+                    opacity: 0.3;
+                }
 
-
-        /* Show text and button for devices less than 1024px */
-        @media (max-width: 1023px) {
-
-
-            .slider-text-button-container {
-                position: absolute;
-                /* Position from bottom */
-                bottom: 20px;
-                width: 100%;
-                justify-content: space-between;
-                /* Add padding from edges */
-                padding: 0 20px;
-                box-sizing: border-box;
-                z-index: 1000;
-                margin-bottom: 40px;
             }
 
-            .slider-text-button-container-right {
-                position: absolute;
-                bottom: -55px;
-                right: 0px;
-                width: 100%;
-                /* Add padding from edges */
-                padding: 0 20px;
-                box-sizing: border-box;
-                z-index: 1000;
+            /* Text styling */
+            .slider-text-button-container .text {
+
+                /* Take up available space */
+                flex: 1;
+                text-align: left;
+
             }
 
-            .line-before {
-                border: 1px #fff solid;
-                width: 21%;
-                height: 1px;
-                opacity: 0.3;
+            /* Button styling */
+            .slider-text-button-container button {
+
+                /* Do not grow */
+                flex: 0;
+                text-align: right;
+
             }
-        }
-
-
-        @media (min-width: 768px) {
-
-            .line-before {
-                border: 1px #fff solid;
-                width: 67%;
-                height: 1px;
-                opacity: 0.3;
-            }
-
-        }
-
-        /* Text styling */
-        .slider-text-button-container .text {
-
-            /* Take up available space */
-            flex: 1;
-            text-align: left;
-
-        }
-
-        /* Button styling */
-        .slider-text-button-container button {
-
-            /* Do not grow */
-            flex: 0;
-            text-align: right;
-
-        }
         </style>
 
 
@@ -611,21 +637,24 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" style="width:;">
                             <div class="ratio ratio-1x1 h-100">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled11.jpg" class=""
-                                    alt="Image 2">
+                                <img src="<?= get_field("tuin_in_voorthuizen_img")['url'] ?>"
+                                    alt="<?= get_field("tuin_in_voorthuizen_img")['title'] ?>" />
                             </div>
                             <!-- Overlay Img -->
                             <div class="overlay d-block d-md-block d-lg-none" style="border-radius: 12px;"></div>
                             <!-- Overlay Text and Button -->
                             <div class="slider-text-button-container d-flex d-lg-none">
-                                <div class="text" style=" white-space: nowrap;">Tuin in Voorthuizen</div>
+                                <div class="text" style=" white-space: nowrap;">
+                                    <?= get_field("tuin_in_voorthuizen_text") ?>
+                                </div>
                                 <div
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center ">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/projecten"
-                                            style="padding: 4px 31px;  white-space: nowrap;">Bekijk
-                                            projecten</a>
+                                        <a href="<?= get_field("projecten_btn")['url'] ?>" class="btn btn-secondary"
+                                            style="padding:4px 31px;white-space:nowrap;">
+                                            <?= get_field("projecten_btn")['title'] ?>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -633,21 +662,25 @@
 
                         <div class="swiper-slide" style="width:;">
                             <div class="ratio ratio-1x1 h-100">
-                                <img src="<?= esc_url(get_template_directory_uri()); ?>/images/22scaled.jpg" class=""
-                                    alt="Image 2">
+                                <img src="<?= get_field("tuin_in_ede_img")['url'] ?>"
+                                    alt="<?= get_field("tuin_in_ede_img")['title'] ?>" />
                             </div>
                             <!-- Overlay Img -->
                             <div class="overlay d-block d-md-block d-lg-none" style="border-radius: 12px;"></div>
                             <!-- Overlay Text and Button -->
                             <div class="slider-text-button-container d-flex d-lg-none">
-                                <div class="text">Tuinonderhoud in Ede</div>
+                                <div class="text">
+
+                                    <?= get_field("tuin_in_ede_text") ?>
+                                </div>
                                 <div
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/projecten"
-                                            style="padding: 4px 31px;  white-space: nowrap;">Bekijk
-                                            projecten</a>
+                                        <a href="<?= get_field("projecten_btn")['url'] ?>" class="btn btn-secondary"
+                                            style="padding:4px 31px;white-space:nowrap;">
+                                            <?= get_field("projecten_btn")['title'] ?>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -655,22 +688,26 @@
 
                         <div class="swiper-slide" style="width:;">
                             <div class="ratio ratio-1x1 h-100">
-                                <img class="w-100 h-100 object-fit-cover"
-                                    src="<?= esc_url(get_template_directory_uri()); ?>/images/scaled51.jpg" class=""
-                                    alt="Image 2">
+
+                                <img src="<?= get_field("tuin_bij_tiny_houe_img")['url'] ?>"
+                                    alt="<?= get_field("tuin_bij_tiny_houe_img")['title'] ?>" />
                             </div>
                             <!-- Overlay Img -->
                             <div class="overlay d-block d-md-block d-lg-none" style="border-radius: 12px;"></div>
                             <!-- Overlay Text and Button -->
                             <div class="slider-text-button-container d-flex d-lg-none">
-                                <div class="text">Tuin bij Tiny House</div>
+                                <div class="text">
+                                    <?= get_field("tuin_bij_tiny_house_text") ?>
+
+                                </div>
                                 <div
                                     class="slider-text-button-container-right d-flex align-items-center justify-content-center">
                                     <div class="line-before"></div>
                                     <div class="circle-border">
-                                        <a class="btn btn-secondary" href="/projecten"
-                                            style="padding: 4px 31px;  white-space: nowrap;">Bekijk
-                                            projecten</a>
+                                        <a href="<?= get_field("projecten_btn")['url'] ?>" class="btn btn-secondary"
+                                            style="padding:4px 31px;white-space:nowrap;">
+                                            <?= get_field("projecten_btn")['title'] ?>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -747,25 +784,25 @@
 
     <!-- Contact Information Section on Sm Screen -->
     <style>
-    .dienst-line {
-        height: 1px;
-        width: 5595px;
-        border: 1px solid #ffffff;
-        color: #ffffff;
-        position: relative;
-        opacity: 0.3;
-    }
-
-    @media (min-width: 768px) {
-        .dienstline {
+        .dienst-line {
             height: 1px;
-            width: 928px;
-            background-color: #ffffff;
+            width: 5595px;
+            border: 1px solid #ffffff;
             color: #ffffff;
             position: relative;
-            opacity: 0.5;
+            opacity: 0.3;
         }
-    }
+
+        @media (min-width: 768px) {
+            .dienstline {
+                height: 1px;
+                width: 928px;
+                background-color: #ffffff;
+                color: #ffffff;
+                position: relative;
+                opacity: 0.5;
+            }
+        }
     </style>
 
     <div>
@@ -827,73 +864,73 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1.2,
-        centeredSlides: true,
-        spaceBetween: 5,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            spaceBetween: 5,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
 
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            992: {
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                992: {
 
-                slidesPerView: 3.5,
+                    slidesPerView: 3.5,
+                }
             }
-        }
-    });
+        });
 
 
 
 
-    var appendNumber = 4;
-    var prependNumber = 1;
-    document
-        .querySelector(".prepend-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-            ]);
-        });
-    document
-        .querySelector(".prepend-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-slide")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-            );
-        });
-    document
-        .querySelector(".append-2-slides")
-        .addEventListener("click", function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-            ]);
-        });
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                ]);
+            });
     </script>
 
 
     <!-- Initialize Swiper-container -->
     <script>
-    document.querySelectorAll(".swiper-container").forEach(container => {
-        var swiper = new Swiper(container.querySelector(".mySwiper"), {
+        document.querySelectorAll(".swiper-container").forEach(container => {
+            var swiper = new Swiper(container.querySelector(".mySwiper"), {
                 slidesPerView: 1.2,
                 centeredSlides: true,
                 // loop: true,
@@ -920,64 +957,64 @@
                 }
             }
 
+            );
+        })
+
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+
+        document.querySelector(".prepend-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>",
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber + "</div>",
+                ]);
+            }
+
         );
-    })
 
+        document.querySelector(".prepend-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --
+                    prependNumber +
+                    "</div>");
+            }
 
-    var appendNumber = 4;
-    var prependNumber = 1;
+        );
 
-    document.querySelector(".prepend-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>",
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber + "</div>",
-            ]);
-        }
+        document.querySelector(".append-slide").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>");
+            }
 
-    );
+        );
 
-    document.querySelector(".prepend-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --
-                prependNumber +
-                "</div>");
-        }
+        document.querySelector(".append-2-slides").addEventListener(
+            "click",
+            function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++
+                    appendNumber + "</div>",
+                ]);
+            }
 
-    );
-
-    document.querySelector(".append-slide").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>");
-        }
-
-    );
-
-    document.querySelector(".append-2-slides").addEventListener(
-        "click",
-        function(e) {
-            e.preventDefault();
-            swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++
-                appendNumber + "</div>",
-            ]);
-        }
-
-    );
+        );
     </script>
 
 
