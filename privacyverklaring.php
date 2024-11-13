@@ -16,13 +16,13 @@
     .responsive-header {
         color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
-        font-size: 1.5em;
+        font-size: 6vw;
         font-weight: 700;
         line-height: 125px;
         margin-bottom: 45px;
     }
 
-    @media(min-width: 768px) {
+    /* @media(min-width: 768px) {
         .responsive-header {
             font-size: 2em;
         }
@@ -32,7 +32,7 @@
         .responsive-header {
             font-size: 3em;
         }
-    }
+    } */
     </style>
     <div class="bg-leaf">
         <div class="container">
