@@ -217,7 +217,8 @@
 
 
                 <!-- Navigation Menu -->
-                <div class="collapse navbar-collapse justify-content-lg-end justify-content-start ul-bg"
+                <!-- justify-content-lg-end justify-content-start -->
+                <div class="collapse navbar-collapse  ul-bg justify-content-center flex-grow-1"
                     id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">

@@ -131,7 +131,7 @@
 
         .first-img {
             height: 659px;
-            width: 618px;
+            /* width: 618px; */
         }
 
         .swiper-container .swiper-pagination {
