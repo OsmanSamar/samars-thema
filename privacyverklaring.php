@@ -16,7 +16,7 @@
     .responsive-header {
         color: #fff9f4;
         font-family: henderson-sans-basic, sans-serif;
-        font-size: 35px;
+        font-size: 1.5em;
         font-weight: 700;
         line-height: 125px;
         margin-bottom: 45px;
@@ -24,23 +24,13 @@
 
     @media(min-width: 768px) {
         .responsive-header {
-            color: #fff9f4;
-            font-family: henderson-sans-basic, sans-serif;
-            font-size: 58px;
-            font-weight: 700;
-            line-height: 125px;
-            margin-bottom: 45px;
+            font-size: 2em;
         }
     }
 
     @media (min-width: 992px) {
         .responsive-header {
-            color: #fff9f4;
-            font-family: henderson-sans-basic, sans-serif;
-            font-size: 90px;
-            font-weight: 700;
-            line-height: 125px;
-            margin-bottom: 45px;
+            font-size: 3em;
         }
     }
     </style>
@@ -68,8 +58,8 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+                <div class="col-lg-3 "></div>
+                <div class=" col-lg-6 max-auto d-flex flex-column align-items-center">
                     <div>
                         <span style="margin:50px 0;">
                             <?= get_field("year") ?>
@@ -165,7 +155,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3"></div>
+                <div class="col-lg-3 "></div>
             </div>
 
             <!-- Contact Information Section on Lg Screen -->
