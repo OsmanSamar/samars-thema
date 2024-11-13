@@ -218,9 +218,8 @@
 
                 <!-- Navigation Menu -->
                 <!-- justify-content-lg-end justify-content-start -->
-                <div class="collapse navbar-collapse  ul-bg justify-content-center flex-grow-1"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse  ul-bg " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto justify-content-center flex-grow-1">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
