@@ -12,14 +12,14 @@
 
 <footer class="footer">
     <style>
-        .border-top {
-            border: 1px solid #ffff;
-            width: 100%;
-            height: 1px;
-            opacity: 0.5;
-            margin-bottom: 90px;
+    .border-top {
+        border: 1px solid #ffff;
+        width: 100%;
+        height: 1px;
+        opacity: 0.5;
+        margin-bottom: 90px;
 
-        }
+    }
     </style>
 
 
@@ -49,7 +49,8 @@
 
                 <div class="d-block d-lg-none ">
                     <div class=" d-flex justify-content-center flex-row" style="margin-top:8rem;">
-                        <a href="https://www.instagram.com" target="_blank" class="instagram-container">
+                        <a href="https://www.instagram.com" target="_blank" class="instagram-container"
+                            style=" width: 40px;height: 40px;background-color: #ffff; border-radius: 50%; border: none; text-align: center; line-height: 40px;  position: absolute;">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -94,7 +95,8 @@
 
         <div class="col-lg-5 col-12 mx-auto d-none d-lg-block order-lg-4 mt-lg-4  ">
             <div class=" d-flex justify-content-center flex-row gap-lg-3 gap-5 mt-lg-3 mt-lg-0 my-5">
-                <a href="https://www.instagram.com" target="_blank" class="instagram-container">
+                <a href="https://www.instagram.com" target="_blank" class="instagram-container"
+                    style=" width: 40px;height: 40px;background-color: #ffff; border-radius: 50%; border: none; text-align: center; line-height: 40px;  position: absolute;">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>

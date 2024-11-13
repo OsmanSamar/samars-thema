@@ -5,44 +5,44 @@
 <main class="flex-grow-1">
 
     <style>
-        .bg-leaf {
-            background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: 1200px;
-            background-position: 112% 99%;
-        }
+    .bg-leaf {
+        background-image: url("<?= esc_url(get_template_directory_uri()); ?>/images/leaf.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 1200px;
+        background-position: 112% 99%;
+    }
 
+    .responsive-header {
+        color: #fff9f4;
+        font-family: henderson-sans-basic, sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 125px;
+        margin-bottom: 45px;
+    }
+
+    @media(min-width: 768px) {
         .responsive-header {
             color: #fff9f4;
             font-family: henderson-sans-basic, sans-serif;
-            font-size: 35px;
+            font-size: 58px;
             font-weight: 700;
             line-height: 125px;
             margin-bottom: 45px;
         }
+    }
 
-        @media(min-width: 768px) {
-            .responsive-header {
-                color: #fff9f4;
-                font-family: henderson-sans-basic, sans-serif;
-                font-size: 58px;
-                font-weight: 700;
-                line-height: 125px;
-                margin-bottom: 45px;
-            }
+    @media (min-width: 992px) {
+        .responsive-header {
+            color: #fff9f4;
+            font-family: henderson-sans-basic, sans-serif;
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 125px;
+            margin-bottom: 45px;
         }
-
-        @media (min-width: 992px) {
-            .responsive-header {
-                color: #fff9f4;
-                font-family: henderson-sans-basic, sans-serif;
-                font-size: 90px;
-                font-weight: 700;
-                line-height: 125px;
-                margin-bottom: 45px;
-            }
-        }
+    }
     </style>
     <div class="bg-leaf">
         <div class="container">
@@ -242,6 +242,7 @@
             </div>
         </div>
     </div>
+
 </main>
 
 <?php get_footer() ?>
