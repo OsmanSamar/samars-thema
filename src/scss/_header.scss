@@ -106,8 +106,9 @@ main {
   letter-spacing: 0px;
   opacity: 1;
   font-size: 18px;
-  // padding: 10px;
-  // margin: 0 10px;
+  // 1
+  padding: 10px;
+  margin: 0 10px;
 }
 
 .navbar-nav .dropdown-item {
@@ -557,7 +558,7 @@ main {
   .navbar-nav .dropdown-menu {
     background-color: #f5a287;
     border-radius: 5px;
-    padding: 10px;
+    // padding: 10px;
     border: none;
     position: relative;
     z-index: 1050;
@@ -611,17 +612,18 @@ main {
     margin-top: 46px;
   }
 
-  /* Background color for the expanded hamburger menu */
-  // .navbar-collapse {
-  //   background-color: #f5a287;
-  //   padding: 10px 5px;
-  //   border-radius: 8px;
-  //   margin-top: 2px;
-  // }
+  /* Background color for the expanded hamburger menu 1*/
+  .navbar-collapse {
+    // background-color: #f5a287;
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin-top: 2px;
+  }
 
-  /* Menu items background and bottom border */
+  /* Menu items background and bottom border2 */
   .navbar-nav .nav-link {
-    // background-color: #f5a287; to ipad pro remove the color
+    // background-color: #f5a287;
+    //to ipad pro remove the color
     color: #fff;
     padding: 10px 10px;
     border-bottom: 1px solid #fff;
@@ -629,20 +631,21 @@ main {
     font-size: small;
   }
 
-  /* Ensure the navbar and dropdown are correctly styled on smaller screens  1 commet uit */
-  // .navbar-collapse {
-  //   background-color: #f5a287;
-  //   padding: 10px;
-  //   border-radius: 8px;
-  // }
+  /* Ensure the navbar and dropdown are correctly styled on smaller screens  1 commet uit 3*/
+  .navbar-collapse {
+    // background-color: #f5a287;
+    padding: 10px;
+    border-radius: 8px;
+  }
 
-  // .navbar-nav .nav-link { 3
-  //   background-color: #f5a287;
-  //   color: #fff;
-  //   padding: 10px;
-  //   border-bottom: 1px solid #fff;
-  //   text-align: left;
-  // }
+  .navbar-nav .nav-link {
+    //4
+    // background-color: #f5a287;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+  }
 }
 
 /* Styles for mobile devices */
@@ -663,7 +666,9 @@ main {
 
   /* Background color for the expanded hamburger menu */
   .navbar-collapse {
-    // background-color: #f5a287; to remove the color to ipadpro
+    // background-color: red;
+    //5
+    //to remove the color to ipadpro
     padding: 10px 5px;
     border-radius: 8px;
     margin-top: 2px;
@@ -671,7 +676,7 @@ main {
 
   /* Menu items background and bottom border 2 */
   .navbar-nav .nav-link {
-    background-color: #f5a287;
+    // background-color: #f5a287;
     color: #fff;
     padding: 10px 10px;
     border-bottom: 1px solid #fff;
@@ -681,15 +686,20 @@ main {
 
   /* Ensure the navbar and dropdown are correctly styled on smaller screens */
   .navbar-collapse {
-    // background-color: #f5a287; to remove the color to ipadpro
+    // background-color: #f5a287;
+    //7 not working
+    // to remove the color to ipadpro
     padding: 10px;
     border-radius: 8px;
   }
 
   .navbar-nav .nav-link {
-    // background-color: #f5a287; te test for ipadprod
+    // background-color: #f5a287;
+    // background-color: yellow;
+    //
+    // te test for ipadprod not work goed apply for all navbar link
     color: #fff;
-    // padding: 10px;
+    padding: 10px;
     border-bottom: 1px solid #fff;
     text-align: left;
   }
@@ -725,7 +735,7 @@ main {
 .navbar-nav .dropdown-menu {
   background-color: #f5a287;
   border-radius: 5px;
-  padding: 10px;
+  // padding: 10px;
   border: none;
 }
 
